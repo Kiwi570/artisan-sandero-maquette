@@ -89,7 +89,8 @@
    "legendeTitre": "Sous la tuile : le liteau",
    "legende": "Pin posé à l'écartement des tuiles, sur l'écran sous-toiture.",
    "region": "Toit de tuiles vu du faîtage, les pavillons de Taverny au loin. En faisant défiler, on passe sous les tuiles, couche après couche ; la grande tuile du premier plan se soulève à la souris ou au doigt.",
-   "court": "Couverture, zinguerie, charpente, peinture et ravalement, à Taverny et dans les communes voisines."
+   "court": "Couverture, zinguerie, charpente, peinture et ravalement, à Taverny et dans les communes voisines.",
+   "indice": "Faites défiler : on passe sous les tuiles"
   },
   "couches": {
    "titre": "Cinq couches, un seul toit.",

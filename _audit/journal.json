@@ -173,6 +173,28 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 4,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil"
+   ],
+   "etapes": [
+    {
+     "etape": "premier écran en panneau, plongée refaite dans une seule toile",
+     "budget": 60,
+     "debut": "2026-11-12T18:03:00+01:00",
+     "fin": "2026-11-12T18:12:00+01:00"
+    },
+    {
+     "etape": "audit, corrections et livraison",
+     "budget": 15,
+     "debut": "2026-11-12T18:12:00+01:00",
+     "fin": "2026-11-12T18:17:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

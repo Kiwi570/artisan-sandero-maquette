@@ -2,6 +2,17 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v4 — un premier écran net, une plongée fluide
+
+- **Accueil, premier écran** : le titre, le bouton devis et le numéro sont posés sur un panneau de chaux à gauche ; la photo du faîtage, nette et sans voile, occupe la droite. Une ligne discrète invite à faire défiler. Au premier défilement, le panneau glisse et la photo prend tout l'écran.
+- **Accueil, la plongée refaite** : toute la scène est dessinée dans une seule toile, et le défilement est lissé image par image. Les découpes de calques qui faisaient saccader ont disparu ; les sauts (liens, retour arrière) arrivent directement.
+  - Les tuiles du premier plan viennent d'une version double définition de la photo : la grande tuile est plus nette.
+  - Sous la tuile, on voit la vraie couche des liteaux, puis on passe par le trou. Les bords de chaque ouverture sont dans l'ombre ; les liteaux dessinés en double ont disparu.
+  - On passe du liteau à l'écran par le vide entre deux liteaux, de l'écran à l'isolant par une fente qui s'ouvre, et de l'isolant aux chevrons par un trou dans la laine.
+  - Chaque couche se voit d'abord au fond de l'ouverture, plus petite, puis vient à sa place.
+  - À son arrivée, la grande tuile se soulève à peine : on voit tout de suite laquelle soulever.
+- **Toutes les pages** : le numéro de version des fichiers passe à 4.
+
 ## v3 — la plongée sous les tuiles
 
 - **Accueil, ouverture** : une seule grande scène en plein écran remplace la petite tuile du coin et le diaporama des cinq couches.

@@ -722,20 +722,27 @@ html { overflow-x: clip; }
 .plan .mention-ia { display: none; }
 /* La mention « Illustration générée » : celle de la photo du toit tant qu'on la voit, puis celle de la scène. */
 .plan--toit .mention-ia { display: block; z-index: 4; right: 10px; bottom: 10px; }
-.plongee:not(.sous-toit) .plongee-mention { display: none; }
 .plan-camera { position: absolute; inset: 0; transform-origin: 0 0; }
 .toit { position: absolute; inset: 0; background: #8db3dc; touch-action: pan-y; }
 .toit-photo { position: absolute; inset: 0; }
-.toit-toile { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; display: block; pointer-events: none; }
+.toit-toile { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; display: block; pointer-events: none; visibility: hidden; }
+.toit.toile-prete .toit-toile { visibility: visible; }
 .toit.sur-tuile { cursor: pointer; }
 .plongee-ombre { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0;
   background: linear-gradient(90deg, rgba(18,12,8,.86) 0, rgba(18,12,8,.66) 34%, rgba(18,12,8,0) 64%), linear-gradient(0deg, rgba(18,12,8,.78) 0, rgba(18,12,8,.3) 40%, rgba(18,12,8,0) 62%); }
 
-/* Premier écran : le titre, un seul bouton devis, le numéro. Rien d'autre. */
-.plongee-une { position: absolute; z-index: 6; left: 0; top: 0; width: min(100%, 1040px); padding: calc(var(--entete-h) + clamp(18px, 4vh, 52px)) var(--gouttiere) 0; color: var(--encre); }
-.plongee-une::before { content: ""; position: absolute; z-index: -1; inset: 0 -30% -40% 0; pointer-events: none;
-  background: radial-gradient(ellipse 80% 88% at 0 0, rgba(242,235,225,.95) 0, rgba(242,235,225,.88) 48%, rgba(242,235,225,.55) 74%, rgba(242,235,225,0) 100%); }
-.plongee-une h1 { font-size: clamp(2.7rem, min(6.4vw, 10.6vh), 7rem); line-height: .92; letter-spacing: -.035em; margin: 0 0 clamp(18px, 3.4vh, 34px); max-width: 11.5ch; text-wrap: balance; }
+/* Premier écran : un panneau de chaux à gauche (le titre, un seul bouton devis, le numéro), la photo nette à droite.
+   Au premier défilement, le panneau glisse et la photo prend tout l'écran. */
+.plongee-une { position: absolute; z-index: 6; left: 0; top: 0; bottom: 0; width: clamp(440px, 41vw, 660px); display: flex; flex-direction: column; justify-content: center;
+  padding: calc(var(--entete-h) + 24px) clamp(28px, 3.6vw, 64px) 36px max(var(--gouttiere), calc((100vw - var(--largeur)) / 2)); background: var(--chaux); color: var(--encre); will-change: transform;
+  box-shadow: 1px 0 0 var(--ligne); }
+.plongee-une h1 { font-size: clamp(2.6rem, min(5vw, 10vh), 6.2rem); line-height: .94; letter-spacing: -.035em; margin: 0 0 clamp(20px, 4vh, 40px); text-wrap: balance; }
+.plongee-indice { position: absolute; left: inherit; bottom: clamp(18px, 4vh, 36px); margin: 0; display: flex; align-items: center; gap: 12px; font-size: .875rem; font-weight: 700; color: var(--doux); }
+.plongee-indice { left: max(var(--gouttiere), calc((100vw - var(--largeur)) / 2)); }
+.plongee-indice span { position: relative; width: 2px; height: 34px; background: var(--ligne); overflow: hidden; }
+.plongee-indice span::after { content: ""; position: absolute; left: 0; top: -40%; width: 100%; height: 40%; background: var(--tuile); animation: plongee-indice 1.8s cubic-bezier(.6, 0, .3, 1) infinite; }
+@keyframes plongee-indice { to { top: 100%; } }
+.plongee-couche { will-change: transform, opacity; }
 .une-titre .mot { text-shadow: 0 calc(2px + var(--o, 0) * 26px) calc(3px + var(--o, 0) * 18px) rgba(34, 24, 15, calc(.12 + var(--o, 0) * .05)); }
 .plongee-une .une-actions { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; margin: 0; }
 .plongee-une .bouton { font-size: 1.02rem; padding-inline: 1.25em; min-height: 52px; }
@@ -775,27 +782,25 @@ html { overflow-x: clip; }
 .plongee-rail a:hover, .plongee-rail a:focus-visible { color: #fbf7f1; }
 .plongee-rail li.actif a { color: #fbf7f1; }
 .plongee-rail li.actif a::after { width: 46px; background: var(--liteau); }
-.plongee-mention { position: absolute; z-index: 6; right: 10px; bottom: 10px; top: auto; left: auto; }
 
 /* Avec JavaScript : la scène dure sept écrans, le cadre reste collé. */
 html.js:not(.secours) .plongee { height: 700svh; }
 html.js:not(.secours) .plongee-collant { position: sticky; top: 0; height: 100vh; height: 100svh; }
-html.js:not(.secours) .plan-couche { visibility: hidden; }
+html.js:not(.secours) .plan-couche { display: none; }
 
 /* Téléphone et petites tablettes : la place manque, le fil s'efface (les couches se suivent au défilement). */
 @media (max-width: 899px) { .plongee-rail { display: none; } }
 @media (max-width: 760px) {
   /* Téléphone : le titre sur une bande de chaux, la photo en pleine couleur dessous. */
-  .plongee-une { width: 100%; padding: calc(var(--entete-h) + 14px) var(--gouttiere) 18px; background: var(--chaux); }
-  .plongee-une::before { display: none; }
+  .plongee-une { bottom: auto; width: 100%; display: block; padding: calc(var(--entete-h) + 14px) var(--gouttiere) 20px; box-shadow: 0 1px 0 var(--ligne); }
   .plongee-une h1 { font-size: clamp(2.2rem, 10.2vw, 3.1rem); max-width: none; margin-bottom: 16px; }
+  .plongee-indice { display: none; }
   .plongee-une .une-actions { gap: 10px; }
   .plongee-une .bouton { min-height: 48px; font-size: .98rem; padding-inline: 1em; }
   .plongee-couche { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
   .plongee-couche h3 { font-size: clamp(2.6rem, 13vw, 3.6rem); margin-bottom: 10px; }
   .plongee-phrase { font-size: 1rem; max-width: none; }
   .plongee-ombre { background: linear-gradient(0deg, rgba(18,12,8,.92) 0, rgba(18,12,8,.82) 38%, rgba(18,12,8,.4) 58%, rgba(18,12,8,0) 74%); }
-  .plongee-mention { z-index: 5; bottom: auto; top: calc(var(--entete-h) + 8px); }
   /* Au premier écran, la bande de chaux couvre le haut : la mention passe juste sous elle, sur la photo. */
   .plan--toit .mention-ia { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
 }
@@ -809,13 +814,13 @@ html.js:not(.secours) .plan-couche { visibility: hidden; }
 :is(html:not(.js), html.secours) .plongee-collant { display: flex; flex-direction: column; }
 :is(html:not(.js), html.secours) .plan { position: relative; inset: auto; height: 70svh; min-height: 320px; }
 :is(html:not(.js), html.secours) .plan--toit { order: 1; height: 62svh; }
-:is(html:not(.js), html.secours) .plongee-une { position: relative; order: 0; width: auto; background: var(--chaux); padding-bottom: 24px; }
+:is(html:not(.js), html.secours) .plongee-une { position: relative; order: 0; width: auto; padding-bottom: 24px; }
+:is(html:not(.js), html.secours) .plongee-indice { display: none; }
 :is(html:not(.js), html.secours) .plongee-une::before { display: none; }
 :is(html:not(.js), html.secours) .plongee-couches { order: 2; }
 :is(html:not(.js), html.secours) .plongee-couche { position: relative; left: auto; bottom: auto; width: auto; opacity: 1; visibility: visible; transform: none; padding: 36px var(--gouttiere); border-top: 1px solid rgba(239,231,219,.14); }
 :is(html:not(.js), html.secours) .plongee-geste, :is(html:not(.js), html.secours) .plongee-rail, :is(html:not(.js), html.secours) .plongee-ombre, :is(html:not(.js), html.secours) .toit-toile { display: none; }
 :is(html:not(.js), html.secours) .plan-couche { order: 3; height: 46svh; }
-:is(html:not(.js), html.secours) .plongee-mention { display: none; }
 :is(html:not(.js), html.secours) .plan--toit .mention-ia { bottom: 10px; }
 :is(html:not(.js), html.secours) .plan .mention-ia { display: block; }
 
@@ -825,3 +830,5 @@ html.js:not(.secours) .plan-couche { visibility: hidden; }
 .metier p, .rang-tuile p, .temps p, .finition-texte span, .famille-faits li, .prestation p, .avis-liste cite { font-size: .9375rem; }
 @media (max-width: 760px) { .rang-tuile p { font-size: .9375rem; } .liteau .rubrique { letter-spacing: .1em; } }
 @media (max-width: 760px) { .logos--labels { grid-template-columns: repeat(2, minmax(0, 1fr)); } .logos--labels li span { hyphens: manual; } }
+/* Le numéro reste à côté du bouton devis dans le panneau d'ouverture, même sur un écran bas. */
+.plongee-une .une-actions .bouton--contour { display: inline-flex; }

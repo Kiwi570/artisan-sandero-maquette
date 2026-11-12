@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=3';
+import { demarrer, etat, versObjet } from './socle/index.js?v=4';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -93,27 +93,37 @@ function soleil(d = new Date()) {
 }
 
 /* ---------- Ouverture de l'accueil : la plongée sous les tuiles (grille wouahou : scène, manipuler) ----------
-   Une seule scène en plein écran. On part du faîtage au-dessus de Taverny (photo ouverture-faitage, 1920 × 1289, dessinée
-   dans la toile par une caméra). Au défilement, la caméra plonge jusqu'à une tuile du pan droit, grande (400 px au moins
-   sur ordinateur) : on peut la soulever soi-même. Puis elle s'envole, on passe par son trou : le liteau ; entre deux
-   liteaux : l'écran sous-toiture ; une fente dans l'écran : l'isolant ; à travers l'isolant : les chevrons.
-   Une tuile levée garde sa tête accrochée au liteau ; son nez se soulève : le dessus se raccourcit, la tranche de terre
-   cuite apparaît et, dans la fente, le liteau en pin sur l'écran noir. Son ombre suit le soleil réel sur Taverny. */
+   Une seule scène en plein écran, dessinée dans une seule toile (rien d'autre ne bouge que la toile et les textes,
+   déplacés par transform) : le défilement est lissé image par image, sans à-coups.
+   Premier écran : le titre sur un panneau de chaux à gauche, le toit vu du faîtage à droite. Au défilement, le panneau
+   glisse, la photo prend tout l'écran et la caméra plonge jusqu'à une grande tuile du pan droit (400 à 520 px sur
+   ordinateur), qu'on soulève soi-même. Puis elle s'envole et l'on passe par son trou : les liteaux ; par le vide entre
+   deux liteaux : l'écran sous-toiture ; par une fente dans l'écran : l'isolant ; à travers la laine : les chevrons.
+   Chaque couche se voit d'abord au fond de l'ouverture, plus petite, puis vient à sa place (profondeur). */
 const borne = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
 const lin = (a, b, x) => borne((x - a) / (b - a));
 const doux = (a, b, x) => { const t = lin(a, b, x); return t * t * (3 - 2 * t); };
 const melange = (a, b, t) => a + (b - a) * t;
-/* Calendrier de la scène : progression de 0 à 1 sur toute la hauteur de la section (sept écrans). */
+/* Calendrier : progression de 0 à 1 sur toute la hauteur de la section (sept écrans). */
 const SCENE = {
-  une: [.02, .095],
-  plonge: [.03, .2],
+  panneau: [.012, .085],
+  plonge: [.045, .2],
+  repos: [.19, .225],
   leve: [.285, .33],
   envol: [.33, .39],
-  trou: [.385, .5],
-  passages: [[.555, .65, 'vide'], [.70, .79, 'fente'], [.835, .915, 'fondu']],
-  legendes: [[.16, .345], [.475, .585], [.625, .73], [.765, .865], [.885, 1.01]],
+  passages: [[.385, .5], [.56, .65], [.70, .79], [.84, .92]],
+  legendes: [[.16, .345], [.47, .585], [.625, .73], [.765, .865], [.885, 1.01]],
   arrets: [.25, .53, .68, .815, .97],
 };
+/* Couches sous la tuile : image (1920 px), point visé, zoom de repos (fois la couverture de l'écran), fenêtre vers la suivante. */
+const COUCHES = [
+  null,
+  { src: 'liteaux-ecran', w: 1920, h: 1289, foyer: [1059, 577], repos: 1.9, fenetre: { type: 'vide', r: [967, 557, 1151, 597] } },
+  { src: 'couche-ecran', w: 1920, h: 1280, foyer: [1150, 602], repos: 1.15, fenetre: { type: 'fente', r: [985, 572, 1315, 632] } },
+  { src: 'couche-isolant', w: 1920, h: 1280, foyer: [976, 760], repos: 1.1, fenetre: { type: 'laine', c: [976, 760], rx: 150, ry: 112 } },
+  { src: 'charpente-neuve', w: 1920, h: 1280, foyer: [1010, 640], repos: 1.02 },
+];
+const HD = { x: 880, y: 880, w: 1040, h: 409 };
 const HEROS = CELLULES.find(([r, q]) => r === 'd' && q === 1)[2];
 const HEROS_P = [0, 2, 4, 6].map((i) => [HEROS[i], HEROS[i + 1]]);
 const HEROS_C = [HEROS_P.reduce((s, a) => s + a[0], 0) / 4, HEROS_P.reduce((s, a) => s + a[1], 0) / 4];
@@ -125,125 +135,121 @@ function plongeeScene() {
   if (!sec || !gsap || !window.ScrollTrigger) return;
   const scene = $('.plongee-collant', sec), zone = $('.toit', sec), toile = $('.toit-toile', sec), img = $('.toit-photo img', sec);
   if (!scene || !zone || !toile || !img) return;
-  const planToit = $('.plan--toit', sec);
-  const plans = $$('.plan-couche', sec).map((el) => ({ el, cam: $('.plan-camera', el), img: $('img', el) }));
   const legendes = $$('.plongee-couche', sec), rail = $$('.plongee-rail li', sec), une = $('.plongee-une', sec), ombreTexte = $('.plongee-ombre', sec);
   const legende = $('.toit-soleil', sec);
-  const ctx = toile.getContext('2d');
-  const photo = new Image();
-  photo.decoding = 'async';
-  photo.src = (img.currentSrc || img.src).replace(/-\d+\.webp(\?.*)?$/, '-1920.webp');
-  let W = 0, H = 0, dpr = 1, mobile = false, pret = false, raf = 0, dernierT = 0;
-  let base = null, etape = null, zoomTrou = 6, cam = { S: 1, tx: 0, ty: 0 }, vide = null;
-  const etat = { p: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2 };
-  let ombre = { x: -.3, y: .6, l: 1, flou: 8, nuit: false };
+  const ctx = toile.getContext('2d', { alpha: false });
+  const charge = (url) => { const im = new Image(); im.decoding = 'async'; im.src = url; return im; };
+  const photo = charge('/assets/images/grok/zone-faitage-1920.webp');
+  let hd = null, couches = [];
+  let W = 0, H = 0, dpr = 1, mobile = false, panneau = 0, raf = 0, dernierT = 0;
+  let base = null, region = null, etape = null, cam = { S: 1, tx: 0, ty: 0, a: 0 }, repos = [];
+  const etat = { p: 0, cible: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2, fil: -2 };
+  let ombre = { x: -.3, y: .6, l: 1, nuit: false };
 
+  const pret = (im) => im && im.complete && im.naturalWidth > 0;
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); };
-  const dedans = ([x, y], p) => { let ok = false; for (let i = 0, j = 3; i < 4; j = i++) { const [xi, yi] = p[i], [xj, yj] = p[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) ok = !ok; } return ok; };
-  /* Morceau de photo sous un rectangle de l'écran (coordonnées de la photo en pixels réels). */
-  const src = (x, y, w, h) => { const k = photo.naturalWidth / PHOTO.w; return [(x - cam.tx) / cam.S * k, (y - cam.ty) / cam.S * k, w / cam.S * k, h / cam.S * k]; };
-  const versEcran = ([x, y]) => [cam.tx + x * cam.S, cam.ty + y * cam.S];
-  function cellule() {
-    const p = HEROS_P.map(versEcran), xs = p.map((a) => a[0]), ys = p.map((a) => a[1]);
-    const bx = Math.min(...xs), by = Math.min(...ys);
-    return { p, bx, by, bw: Math.max(...xs) - bx, bh: Math.max(...ys) - by, h: (p[3][1] - p[0][1] + p[2][1] - p[1][1]) / 2 };
+  const dedans = ([x, y], p) => { let ok = false; for (let i = 0, j = p.length - 1; i < p.length; j = i++) { const [xi, yi] = p[i], [xj, yj] = p[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) ok = !ok; } return ok; };
+  const vers = (c, [x, y]) => [c.tx + x * c.S, c.ty + y * c.S];
+  /* Caméra qui couvre un rectangle de l'écran (x0, y0, x1, y1) avec un point de l'image au centre. */
+  function couvrir(w, h, foyer, zoom, x0, y0, x1, y1, cible) {
+    const S = Math.max((x1 - x0) / w, (y1 - y0) / h) * zoom;
+    const c = cible || [(x0 + x1) / 2, (y0 + y1) / 2];
+    return { S, tx: borne(c[0] - foyer[0] * S, x1 - w * S, x0), ty: borne(c[1] - foyer[1] * S, y1 - h * S, y0) };
+  }
+  /* Interpolation de caméra : échelle en logarithme, un point de l'image glisse d'une position à l'autre. */
+  function entre(A, B, t, f) {
+    const S = A.S * Math.pow(B.S / A.S, t);
+    const x = melange(f[0] * A.S + A.tx, f[0] * B.S + B.tx, t), y = melange(f[1] * A.S + A.ty, f[1] * B.S + B.ty, t);
+    return { S, tx: x - f[0] * S, ty: y - f[1] * S };
   }
 
   function mesurer() {
     W = scene.clientWidth; H = scene.clientHeight;
     if (!W || !H) return false;
-    dpr = Math.min(2, devicePixelRatio || 1); mobile = W < 761;
+    dpr = Math.max(1, Math.min(2, devicePixelRatio || 1, Math.sqrt(3.4e6 / (W * H)))); mobile = W < 761;
     toile.width = Math.round(W * dpr); toile.height = Math.round(H * dpr);
-    const pos = getComputedStyle(img).objectPosition.split(' ').map((v) => (v.endsWith('%') ? parseFloat(v) / 100 : .5));
-    const S0 = Math.max(W / PHOTO.w, H / PHOTO.h);
-    base = { S: S0, tx: (W - PHOTO.w * S0) * pos[0], ty: (H - PHOTO.h * S0) * (pos[1] ?? 1) };
+    panneau = une ? (mobile ? une.offsetHeight : une.offsetWidth) : 0;
+    /* Premier écran : la photo couvre ce qui reste à droite du panneau (ou sous la bande, au téléphone). */
+    const foyer = mobile ? [1180, 900] : [1010, 880];
+    region = mobile ? couvrir(PHOTO.w, PHOTO.h, foyer, 1, 0, panneau, W, H) : couvrir(PHOTO.w, PHOTO.h, foyer, 1, panneau, 0, W, H);
+    base = couvrir(PHOTO.w, PHOTO.h, foyer, 1, 0, 0, W, H, mobile ? [W * .5, H * .62] : [W * .5, H * .55]);
     /* La tuile au premier plan : 400 à 520 px de large sur ordinateur, 70 % de l'écran sur téléphone. */
     const largeur = mobile ? W * .7 : Math.min(520, Math.max(400, W * .33));
-    const S = Math.max(largeur / HEROS_NEZ, S0 * 1.05);
-    const cible = mobile ? [W * .5, H * .4] : [W * .64, H * .47];
-    etape = { S, tx: borne(cible[0] - HEROS_C[0] * S, W - PHOTO.w * S, 0), ty: borne(cible[1] - HEROS_C[1] * S, H - PHOTO.h * S, 0) };
-    const c0 = { bw: 224, bh: 90 };
-    zoomTrou = Math.max(W * 1.5 / (c0.bw * S), H * 1.5 / (c0.bh * S));
-    vide = null;
-    pret = !!photo.naturalWidth;
+    etape = couvrir(PHOTO.w, PHOTO.h, HEROS_C, Math.max(largeur / HEROS_NEZ, base.S * 1.05) / Math.max(W / PHOTO.w, H / PHOTO.h), 0, 0, W, H, mobile ? [W * .5, H * .38] : [W * .63, H * .46]);
+    repos = COUCHES.map((c) => c && couvrir(c.w, c.h, c.foyer, c.repos, 0, 0, W, H, mobile ? [W * .5, H * .42] : [W * .56, H * .48]));
+    /* Redessiner tout de suite : une toile retaillée est vide. */
+    if (pret(photo)) { dessiner(etat.p); zone.classList.add('toile-prete'); }
     demander();
     return true;
   }
 
-  function camera(p) {
-    const a = doux(SCENE.plonge[0], SCENE.plonge[1], p), b = doux(SCENE.trou[0], SCENE.trou[1], p);
-    let S, tx, ty;
-    if (b <= 0) {
-      S = base.S * Math.pow(etape.S / base.S, a);
-      const fx = melange(HEROS_C[0] * base.S + base.tx, HEROS_C[0] * etape.S + etape.tx, a);
-      const fy = melange(HEROS_C[1] * base.S + base.ty, HEROS_C[1] * etape.S + etape.ty, a);
-      tx = fx - HEROS_C[0] * S; ty = fy - HEROS_C[1] * S;
-      if (etat.intro !== 1) { const z = etat.intro, cx = W * .5, cy = H * .7; S *= z; tx = cx + (tx - cx) * z; ty = cy + (ty - cy) * z; }
-      tx = borne(tx, W - PHOTO.w * S, 0); ty = borne(ty, H - PHOTO.h * S, 0);
-    } else {
-      S = etape.S * Math.pow(zoomTrou, b);
-      const fx = melange(HEROS_C[0] * etape.S + etape.tx, W / 2, b), fy = melange(HEROS_C[1] * etape.S + etape.ty, H / 2, b);
-      tx = fx - HEROS_C[0] * S; ty = fy - HEROS_C[1] * S;
-    }
-    return { S, tx, ty, a, b };
+  /* ----- Couche 0 : le toit vu du faîtage, puis la tuile ----- */
+  function camera0(p) {
+    const ep = doux(SCENE.panneau[0], SCENE.panneau[1], p), a = doux(SCENE.plonge[0], SCENE.plonge[1], p);
+    let c = entre(region, base, ep, HEROS_C);
+    if (etat.intro !== 1) { const z = etat.intro, cx = mobile ? W * .5 : (panneau + W) / 2, cy = H * .7; c = { S: c.S * z, tx: cx + (c.tx - cx) * z, ty: cy + (c.ty - cy) * z }; }
+    c = entre(c, etape, a, HEROS_C);
+    /* La photo couvre toujours la partie libre de l'écran (à droite du panneau, ou sous la bande). */
+    const x0 = mobile ? 0 : panneau * (1 - ep), y0 = mobile ? panneau * (1 - ep) : 0;
+    c.tx = borne(c.tx, W - PHOTO.w * c.S, x0); c.ty = borne(c.ty, H - PHOTO.h * c.S, y0);
+    c.a = a; c.ep = ep;
+    return c;
   }
-
-  /* ----- Peinture ----- */
-  function liteau(x, y, w, h) {
-    const g = ctx.createLinearGradient(0, y, 0, y + h);
-    g.addColorStop(0, '#f2d58f'); g.addColorStop(.42, '#e2b95c'); g.addColorStop(1, '#9c7128');
-    ctx.fillStyle = g; ctx.fillRect(x, y, w, h);
-    ctx.fillStyle = 'rgba(120,80,24,.22)';
-    for (let i = 1; i < 4; i++) ctx.fillRect(x, y + (h * i) / 4, w, Math.max(.6, h * .05));
-    const o = ctx.createLinearGradient(0, y + h, 0, y + h * 1.9);
-    o.addColorStop(0, 'rgba(0,0,0,.7)'); o.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = o; ctx.fillRect(x, y + h, w, h * .9);
-    const r = Math.max(1.6, h * .17);
-    for (const fx of [.28, .74]) {
-      const cx = x + w * fx, cy = y + h * .5, n = ctx.createRadialGradient(cx - r * .3, cy - r * .3, 0, cx, cy, r);
-      n.addColorStop(0, '#f3f5f6'); n.addColorStop(1, '#6b7378');
-      ctx.fillStyle = n; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+  /* Morceau de la photo sous un rectangle de l'écran ; la zone du pan droit vient de la version double définition. */
+  function source(c, x, y, w, h) {
+    const px = (x - c.tx) / c.S, py = (y - c.ty) / c.S, pw = w / c.S, ph = h / c.S;
+    if (hd && pret(hd) && c.S > .9 && px >= HD.x && py >= HD.y && px + pw <= HD.x + HD.w && py + ph <= HD.y + HD.h) return [hd, (px - HD.x) * 2, (py - HD.y) * 2, pw * 2, ph * 2];
+    const k = photo.naturalWidth / PHOTO.w;
+    return [photo, px * k, py * k, pw * k, ph * k];
+  }
+  function peindrePhoto(c) {
+    const k = photo.naturalWidth / PHOTO.w;
+    const x0 = Math.max(0, -c.tx / c.S), y0 = Math.max(0, -c.ty / c.S), x1 = Math.min(PHOTO.w, (W - c.tx) / c.S), y1 = Math.min(PHOTO.h, (H - c.ty) / c.S);
+    if (x1 > x0 && y1 > y0) ctx.drawImage(photo, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
+    if (hd && pret(hd) && c.S > .9) {
+      const a0 = Math.max(x0, HD.x), b0 = Math.max(y0, HD.y), a1 = Math.min(x1, HD.x + HD.w), b1 = Math.min(y1, HD.y + HD.h);
+      if (a1 > a0 && b1 > b0) ctx.drawImage(hd, (a0 - HD.x) * 2, (b0 - HD.y) * 2, (a1 - a0) * 2, (b1 - b0) * 2, c.tx + a0 * c.S, c.ty + b0 * c.S, (a1 - a0) * c.S, (b1 - b0) * c.S);
     }
   }
-  /* Ce qu'on voit sous la tuile : l'écran noir, le liteau en pin, la tête de la tuile du dessous dans l'ombre. */
-  function cavite(c, y0, entier) {
-    const bas = Math.max(c.p[2][1], c.p[3][1]), x0 = c.bx - 3, w = c.bw + 6, h0 = Math.max(1, bas - y0);
-    ctx.save(); poly(c.p); ctx.clip();
-    ctx.beginPath(); ctx.rect(x0, y0, w, h0 + 3); ctx.clip();
-    let g = ctx.createLinearGradient(0, y0, 0, bas);
-    g.addColorStop(0, '#0b0a09'); g.addColorStop(1, '#1d1915');
-    ctx.fillStyle = g; ctx.fillRect(x0, y0, w, h0 + 3);
-    if (entier) { liteau(x0, y0 + h0 * .1, w, Math.max(5, c.h * .14)); liteau(x0, y0 + h0 * .58, w, Math.max(5, c.h * .14)); }
-    else if (h0 > 7) liteau(x0, y0 + h0 * .2, w, Math.max(4, Math.min(c.h * .13, h0 * .34)));
-    g = ctx.createLinearGradient(0, bas - h0 * .3, 0, bas);
-    g.addColorStop(0, 'rgba(120,46,18,0)'); g.addColorStop(1, 'rgba(150,60,26,.92)');
-    ctx.fillStyle = g; ctx.fillRect(x0, bas - h0 * .3, w, h0 * .3 + 3);
-    g = ctx.createLinearGradient(0, y0, 0, y0 + Math.min(h0, c.h * .24));
-    g.addColorStop(0, 'rgba(0,0,0,.8)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = g; ctx.fillRect(x0, y0, w, Math.min(h0, c.h * .24));
-    ctx.restore();
+  function cellule(c) {
+    const p = HEROS_P.map((a) => vers(c, a)), xs = p.map((a) => a[0]), ys = p.map((a) => a[1]);
+    const bx = Math.min(...xs), by = Math.min(...ys);
+    return { p, bx, by, bw: Math.max(...xs) - bx, bh: Math.max(...ys) - by, h: (p[3][1] - p[0][1] + p[2][1] - p[1][1]) / 2 };
   }
   function nez(c, k) {
     const [, , br, bl] = c.p, d = c.h * .5 * k, ex = .06 * k, cx = (bl[0] + br[0]) / 2;
     return { bl: [cx + (bl[0] - cx) * (1 + ex), bl[1] - d], br: [cx + (br[0] - cx) * (1 + ex), br[1] - d], d, ex, cx, ep: c.h * .15 * Math.min(1, k * 1.8) };
   }
+  /* Sous la tuile : la couche des liteaux elle-même, vue au fond, avec l'ombre du rang du dessus. */
+  function cavite(c, y0, cam1) {
+    const bas = Math.max(c.p[2][1], c.p[3][1]), x0 = c.bx - 3, w = c.bw + 6, h0 = Math.max(1, bas - y0);
+    ctx.save(); poly(c.p); ctx.clip();
+    ctx.beginPath(); ctx.rect(x0, y0, w, h0 + 3); ctx.clip();
+    ctx.fillStyle = '#0d0c0b'; ctx.fillRect(x0, y0, w, h0 + 3);
+    peindreCouche(1, cam1);
+    let g = ctx.createLinearGradient(0, y0, 0, y0 + Math.max(8, c.h * .45));
+    g.addColorStop(0, 'rgba(0,0,0,.82)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g; ctx.fillRect(x0, y0, w, Math.max(8, c.h * .45));
+    g = ctx.createLinearGradient(0, bas - h0 * .25, 0, bas);
+    g.addColorStop(0, 'rgba(110,40,14,0)'); g.addColorStop(1, 'rgba(120,46,18,.75)');
+    ctx.fillStyle = g; ctx.fillRect(x0, bas - h0 * .25, w, h0 * .25 + 3);
+    ctx.restore();
+  }
+  /* Ombre portée douce, sans flou coûteux : trois passes de plus en plus larges et légères. */
   function ombrePortee(c, n, k) {
     const L = c.h * .85 * Math.min(1.2, k) * ombre.l, ox = ombre.x * L, oy = ombre.y * L;
     const pts = [c.p[0], c.p[1], [n.br[0] + ox, n.br[1] + n.ep + oy], [n.bl[0] + ox, n.bl[1] + n.ep + oy]];
-    ctx.save();
-    ctx.shadowColor = `rgba(30,11,3,${ombre.nuit ? .38 : .55})`;
-    ctx.shadowBlur = (ombre.flou * c.h / 60 + c.h * .05) * dpr;
-    ctx.shadowOffsetX = 9000 * dpr;
-    ctx.translate(-9000, 0); poly(pts); ctx.fillStyle = '#000'; ctx.fill();
-    ctx.restore();
+    const cx = pts.reduce((s, a) => s + a[0], 0) / 4, cy = pts.reduce((s, a) => s + a[1], 0) / 4, f = ombre.nuit ? .7 : 1;
+    [[1.1, .1], [1.05, .14], [1, .2]].forEach(([s, al]) => { poly(pts.map(([x, y]) => [cx + (x - cx) * s, cy + (y - cy) * s])); ctx.fillStyle = `rgba(30,11,3,${(al * f).toFixed(3)})`; ctx.fill(); });
   }
-  function dessus(c, n, k) {
+  function dessus(c, n, k, cam0) {
     const [tl, tr] = c.p, haut = Math.min(tl[1], tr[1]), bas = Math.max(c.p[2][1], c.p[3][1]), hc = bas - haut, s = 1 - n.d / hc;
     ctx.save(); poly([tl, tr, n.br, n.bl]); ctx.clip();
-    const N = Math.max(10, Math.min(160, Math.round(hc / 3))), sx = c.bx - 8, sw = c.bw + 16;
+    const N = Math.round(borne(hc / 5, 14, 56)), sx = c.bx - 8, sw = c.bw + 16;
     for (let i = 0; i < N; i++) {
       const a = i / N, b = (i + 1) / N, f = 1 + n.ex * (a + b) / 2, y0 = haut + hc * a, y1 = haut + hc * b;
-      ctx.drawImage(photo, ...src(sx, y0, sw, y1 - y0), n.cx + (sx - n.cx) * f, haut + (y0 - haut) * s, sw * f, (y1 - y0) * s + .8);
+      const [im, ...r] = source(cam0, sx, y0, sw, y1 - y0);
+      ctx.drawImage(im, ...r, n.cx + (sx - n.cx) * f, haut + (y0 - haut) * s, sw * f, (y1 - y0) * s + .9);
     }
     ctx.fillStyle = `rgba(255,238,220,${(.1 * Math.min(1, k)).toFixed(3)})`; ctx.fillRect(sx - 20, haut, sw + 40, hc);
     const g = ctx.createLinearGradient(0, haut, 0, haut + hc * .2);
@@ -251,13 +257,14 @@ function plongeeScene() {
     ctx.fillStyle = g; ctx.fillRect(sx - 20, haut, sw + 40, hc * .2);
     ctx.restore();
   }
-  function tranche(c, n, k) {
+  function tranche(c, n, k, cam0) {
     if (n.ep < .8) return;
     const bas = Math.max(c.p[2][1], c.p[3][1]), haut = Math.min(n.bl[1], n.br[1]);
     ctx.save();
     poly([n.bl, n.br, [n.br[0], n.br[1] + n.ep], [n.bl[0], n.bl[1] + n.ep]]); ctx.clip();
     const sh = c.h * .17, x = Math.min(n.bl[0], n.br[0]) - 6, w = Math.abs(n.br[0] - n.bl[0]) + 12;
-    ctx.drawImage(photo, ...src(c.bx - 6, bas - sh, c.bw + 12, sh), x, haut - 1, w, n.ep + Math.abs(n.br[1] - n.bl[1]) + 2);
+    const [im, ...r] = source(cam0, c.bx - 6, bas - sh, c.bw + 12, sh);
+    ctx.drawImage(im, ...r, x, haut - 1, w, n.ep + Math.abs(n.br[1] - n.bl[1]) + 2);
     const g = ctx.createLinearGradient(0, haut, 0, haut + n.ep + 2);
     g.addColorStop(0, 'rgba(70,24,8,.12)'); g.addColorStop(1, 'rgba(40,12,3,.74)');
     ctx.fillStyle = g; ctx.fillRect(x - 4, haut - 2, w + 8, n.ep + Math.abs(n.br[1] - n.bl[1]) + 6);
@@ -265,170 +272,160 @@ function plongeeScene() {
     ctx.strokeStyle = `rgba(255,226,192,${(.6 * Math.min(1, k * 2)).toFixed(2)})`; ctx.lineWidth = Math.max(1.3, c.h / 70);
     ctx.beginPath(); ctx.moveTo(n.bl[0], n.bl[1] + .5); ctx.lineTo(n.br[0], n.br[1] + .5); ctx.stroke();
   }
+
+  /* ----- Couches 1 à 4 ----- */
+  function peindreCouche(j, c) {
+    const im = couches[j], d = COUCHES[j];
+    if (!pret(im)) { ctx.fillStyle = '#16120f'; ctx.fillRect(0, 0, W, H); return; }
+    const k = im.naturalWidth / d.w;
+    const x0 = Math.max(0, -c.tx / c.S), y0 = Math.max(0, -c.ty / c.S), x1 = Math.min(d.w, (W - c.tx) / c.S), y1 = Math.min(d.h, (H - c.ty) / c.S);
+    if (x1 > x0 && y1 > y0) ctx.drawImage(im, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
+  }
+  /* Caméra d'une couche au repos, avec une lente dérive pendant l'arrêt. */
+  function cameraRepos(j, p) {
+    const r = repos[j], debut = SCENE.passages[j - 1][1], fin = j < 4 ? SCENE.passages[j][0] : 1;
+    const z = 1 + .035 * doux(debut, fin, p), cx = mobile ? W * .5 : W * .56, cy = H * .48;
+    return { S: r.S * z, tx: cx + (r.tx - cx) * z, ty: cy + (r.ty - cy) * z };
+  }
+  /* Fenêtre d'une couche vers la suivante, en points de l'écran (polygone), selon la caméra de la couche. */
+  function fenetre(j, c, u) {
+    const f = COUCHES[j].fenetre;
+    if (f.type === 'laine') {
+      const [cx, cy] = vers(c, f.c), n = 28, pts = [];
+      for (let i = 0; i < n; i++) { const a = i / n * Math.PI * 2, b = 1 + .07 * Math.sin(a * 5 + 1.3) + .04 * Math.sin(a * 9); pts.push([cx + Math.cos(a) * f.rx * c.S * b, cy + Math.sin(a) * f.ry * c.S * b]); }
+      return pts;
+    }
+    let [x0, y0, x1, y1] = f.r;
+    if (f.type === 'fente') { const o = Math.max(.03, doux(0, .3, u)), m = (y0 + y1) / 2, hh = (y1 - y0) / 2 * o; y0 = m - hh; y1 = m + hh; }
+    return [[x0, y0], [x1, y0], [x1, y1], [x0, y1]].map((a) => vers(c, a));
+  }
+  const centre = (pts) => [pts.reduce((s, a) => s + a[0], 0) / pts.length, pts.reduce((s, a) => s + a[1], 0) / pts.length];
+  /* La fenêtre s'ouvre jusqu'à déborder l'écran : chaque point part vers le bord, dans sa direction. */
+  function ouvrir(pts, g) {
+    if (g <= 0) return pts;
+    const [cx, cy] = centre(pts), R = Math.hypot(W, H);
+    return pts.map(([x, y]) => { const dx = x - cx, dy = y - cy, l = Math.hypot(dx, dy) || 1; return [melange(x, cx + dx / l * R, g), melange(y, cy + dy / l * R, g)]; });
+  }
+  /* Bords d'une ouverture : l'ombre de l'épaisseur traversée, plus forte en haut. */
+  function bordOmbre(pts, force) {
+    if (force <= .01) return;
+    const xs = pts.map((a) => a[0]), ys = pts.map((a) => a[1]), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys), w = x1 - x0, h = y1 - y0;
+    const bande = (gx0, gy0, gx1, gy1, a, rx, ry, rw, rh) => { const g = ctx.createLinearGradient(gx0, gy0, gx1, gy1); g.addColorStop(0, `rgba(8,6,4,${(a * force).toFixed(3)})`); g.addColorStop(1, 'rgba(8,6,4,0)'); ctx.fillStyle = g; ctx.fillRect(rx, ry, rw, rh); };
+    bande(0, y0, 0, y0 + h * .34, .85, x0, y0, w, h * .34);
+    bande(x0, 0, x0 + w * .14, 0, .5, x0, y0, w * .14, h);
+    bande(x1, 0, x1 - w * .14, 0, .5, x1 - w * .14, y0, w * .14, h);
+    bande(0, y1, 0, y1 - h * .16, .35, x0, y1 - h * .16, w, h * .16);
+  }
+  /* Passage de la couche j à j + 1 (j = 0 : par le trou de la tuile). */
+  function passage(j, u, camAvant, fen0) {
+    const e = doux(0, 1, u), ez = j === 2 ? doux(.16, 1, u) : doux(0, .92, u), g = Math.pow(lin(.32, 1, u), 1.5);
+    /* Caméra de la couche j : elle avance vers le centre de sa fenêtre. */
+    const pts0 = fen0 || fenetre(j, camAvant, u), [fx, fy] = centre(pts0);
+    const xs = pts0.map((a) => a[0]), ys = pts0.map((a) => a[1]), fw = Math.max(...xs) - Math.min(...xs), fh = Math.max(...ys) - Math.min(...ys);
+    const Z = borne(Math.min(W * 1.1 / Math.max(fw, 1), H * 1.1 / Math.max(fh, 1)), 1.6, 3.4), z = Math.pow(Z, ez);
+    const px = melange(fx, W / 2, e), py = melange(fy, H / 2, e);
+    const S = camAvant.S * z, cAv = { S, tx: px - (fx - camAvant.tx) / camAvant.S * S, ty: py - (fy - camAvant.ty) / camAvant.S * S };
+    /* La fenêtre suit la caméra, puis s'ouvre jusqu'aux bords. */
+    const pts = ouvrir(pts0.map(([x, y]) => [px + (x - fx) * z, py + (y - fy) * z]), g);
+    /* Caméra de la couche j + 1 : vue au fond de la fenêtre, plus petite, puis à sa place. */
+    const B = cameraRepos(j + 1, SCENE.passages[j][1]), fB = COUCHES[j + 1].foyer;
+    const [wx, wy] = centre(pts), A = { S: B.S * .62, tx: wx - fB[0] * B.S * .62, ty: wy - fB[1] * B.S * .62 };
+    const cAp = entre(A, B, doux(0, 1, u), fB);
+    return { cAv, pts, cAp, ombre: 1 - g, couvre: g >= .999 };
+  }
+
   function dessiner(p) {
-    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, toile.width, toile.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
-    const k = photo.naturalWidth / PHOTO.w;
-    const x0 = Math.max(0, -cam.tx / cam.S), y0 = Math.max(0, -cam.ty / cam.S);
-    const x1 = Math.min(PHOTO.w, (W - cam.tx) / cam.S), y1 = Math.min(PHOTO.h, (H - cam.ty) / cam.S);
-    if (x1 > x0 && y1 > y0) ctx.drawImage(photo, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, cam.tx + x0 * cam.S, cam.ty + y0 * cam.S, (x1 - x0) * cam.S, (y1 - y0) * cam.S);
-    const c = cellule(), env = doux(SCENE.envol[0], SCENE.envol[1], p);
+    const P = SCENE.passages.map(([d, f]) => lin(d, f, p));
+    let fait = 0; while (fait < 4 && P[fait] >= 1) fait++;
+    const enCours = fait < 4 && P[fait] > 0;
+    /* Arrêt sur une couche (1 à 4) */
+    if (fait > 0 && !enCours) { peindreCouche(fait, cameraRepos(fait, p)); return; }
+    /* Passage entre deux couches (1 → 2, 2 → 3, 3 → 4) */
+    if (fait > 0) {
+      const t = passage(fait, P[fait], cameraRepos(fait, SCENE.passages[fait][0]));
+      if (!t.couvre) peindreCouche(fait, t.cAv);
+      ctx.save(); if (!t.couvre) { poly(t.pts); ctx.clip(); }
+      peindreCouche(fait + 1, t.cAp); bordOmbre(t.pts, t.ombre * .9);
+      ctx.restore();
+      if (COUCHES[fait].fenetre.type === 'fente' && P[fait] < .45) { ctx.strokeStyle = `rgba(150,150,150,${(.55 * (1 - lin(.2, .45, P[fait]))).toFixed(2)})`; ctx.lineWidth = 1.2; poly(t.pts); ctx.stroke(); }
+      return;
+    }
+    /* Couche 0 : le toit, la tuile, puis le trou */
+    if (!pret(photo)) return;
+    const c0 = cam = camera0(p);
+    const env = doux(SCENE.envol[0], SCENE.envol[1], p);
+    const camTrouDebut = (() => { const cel = cellule(etape); const [wx, wy] = centre(cel.p), B = cameraRepos(1, SCENE.passages[0][1]), f = COUCHES[1].foyer; return { S: B.S * .62, tx: wx - f[0] * B.S * .62, ty: wy - f[1] * B.S * .62 }; })();
+    if (enCours) {
+      const t = passage(0, P[0], etape, cellule(etape).p);
+      cam = t.cAv;
+      if (!t.couvre) peindrePhoto(t.cAv);
+      ctx.save(); if (!t.couvre) { poly(t.pts); ctx.clip(); }
+      ctx.fillStyle = '#0d0c0b'; ctx.fillRect(0, 0, W, H);
+      peindreCouche(1, t.cAp); bordOmbre(t.pts, t.ombre);
+      ctx.restore();
+      return;
+    }
+    peindrePhoto(c0);
+    const c = cellule(c0);
+    /* La couche des liteaux, vue au fond du trou, suit la caméra du toit. */
+    const r = c0.S / etape.S, cx = vers(c0, HEROS_C), cxE = vers(etape, HEROS_C);
+    const cam1 = { S: camTrouDebut.S * r, tx: cx[0] + (camTrouDebut.tx - cxE[0]) * r, ty: cx[1] + (camTrouDebut.ty - cxE[1]) * r };
     if (env > 0) {
-      cavite(c, Math.min(c.p[0][1], c.p[1][1]), true);
+      cavite(c, Math.min(c.p[0][1], c.p[1][1]), cam1);
       if (env >= 1) return;
-      /* La tuile s'envole vers nous : son nez monte, elle grandit, s'élève et s'efface. */
       const kk = Math.min(1.7, Math.max(etat.k, 1) + env * .7), n = nez(c, kk), px = (c.p[0][0] + c.p[1][0]) / 2, py = c.p[0][1], s = 1 + env * .55;
       ctx.save();
       ctx.globalAlpha = 1 - doux(.35, 1, env);
       ctx.translate(px, py - env * c.h * 1.8); ctx.scale(s, s); ctx.translate(-px, -py);
-      dessus(c, n, kk); tranche(c, n, kk);
+      dessus(c, n, kk, c0); tranche(c, n, kk, c0);
       ctx.restore();
       return;
     }
     if (etat.k < .012) return;
     const n = nez(c, etat.k);
-    cavite(c, Math.min(n.bl[1], n.br[1]) + n.ep * .6, false);
+    cavite(c, Math.min(n.bl[1], n.br[1]) + n.ep * .6, cam1);
     ombrePortee(c, n, etat.k);
-    dessus(c, n, etat.k);
-    tranche(c, n, etat.k);
+    dessus(c, n, etat.k, c0);
+    tranche(c, n, etat.k, c0);
   }
 
-  /* ----- Plans des couches : chacun s'ouvre dans une fenêtre du précédent (trou, vide entre liteaux, fente, fondu). ----- */
-  const plein = () => [-W * .1, -H * .1, W * 1.1, H * 1.1];
-  function trouverVide(im) {
-    if (!im || !im.complete || !im.naturalWidth) return null;
-    try {
-      const iw = im.naturalWidth, ih = im.naturalHeight, s = Math.max(W / iw, H / ih);
-      const pos = getComputedStyle(im).objectPosition.split(' ').map((v) => (v.endsWith('%') ? parseFloat(v) / 100 : .5));
-      const q = 4, cw = Math.ceil(W / q), ch = Math.ceil(H / q);
-      const cv = document.createElement('canvas'); cv.width = cw; cv.height = ch;
-      const g = cv.getContext('2d', { willReadFrequently: true });
-      g.drawImage(im, (W - iw * s) * pos[0] / q, (H - ih * s) * pos[1] / q, iw * s / q, ih * s / q);
-      const d = g.getImageData(0, 0, cw, ch).data, noir = (i) => d[i * 4] + d[i * 4 + 1] + d[i * 4 + 2] < 190;
-      const cx = cw * .5, cy = ch * (mobile ? .42 : .46);
-      let meilleur = -1, md = Infinity;
-      for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) { const i = y * cw + x; if (noir(i)) { const dd = (x - cx) ** 2 + (y - cy) ** 2; if (dd < md) { md = dd; meilleur = i; } } }
-      if (meilleur < 0) return null;
-      const vu = new Uint8Array(cw * ch), file = [meilleur]; vu[meilleur] = 1;
-      let x0 = cw, y0 = ch, x1 = 0, y1 = 0, n = 0;
-      while (file.length && n < cw * ch * .2) {
-        const i = file.pop(), x = i % cw, y = (i / cw) | 0; n++;
-        x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y);
-        for (const j of [i - 1, i + 1, i - cw, i + cw]) if (j >= 0 && j < cw * ch && !vu[j] && Math.abs((j % cw) - x) <= 1 && noir(j)) { vu[j] = 1; file.push(j); }
-      }
-      const bw = (x1 - x0 + 1) * q, bh = (y1 - y0 + 1) * q;
-      if (bw < 24 || bh < 10 || bw > W * .6 || bh > H * .4 || n < (x1 - x0 + 1) * (y1 - y0 + 1) * .6) return null;
-      return [x0 * q + 2, y0 * q + 2, (x1 + 1) * q - 2, (y1 + 1) * q - 2];
-    } catch { return null; }
-  }
-  function fenetre(type) {
-    if (type === 'vide') {
-      if (!vide) vide = trouverVide(plans[0] && plans[0].img);
-      if (vide) return vide;
-      return [W * .5 - Math.min(W * .1, 120), H * .45 - 22, W * .5 + Math.min(W * .1, 120), H * .45 + 22];
-    }
-    const lw = mobile ? W * .34 : Math.min(W * .2, 260), lh = mobile ? H * .09 : H * .11;
-    return [W * .5 - lw, H * .47 - lh, W * .5 + lw, H * .47 + lh];
-  }
-  const appliquer = (el, s, ox, oy) => { el.style.transform = `translate3d(${ox.toFixed(2)}px, ${oy.toFixed(2)}px, 0) scale(${s.toFixed(5)})`; };
-  const montrer = (pl, v) => { if (pl._v !== v) { pl._v = v; pl.el.style.visibility = v ? 'visible' : 'hidden'; } };
-  function majPlans(p) {
-    const b = doux(SCENE.trou[0], SCENE.trou[1], p);
-    if (planToit) planToit.style.visibility = b >= 1 ? 'hidden' : '';
-    sec.classList.toggle('sous-toit', b >= 1);
-    plans.forEach((pl, j) => {
-      /* Entrée du plan j : par le trou de la tuile (j = 0) ou par la fenêtre du passage précédent. */
-      let r, typeEntree, fen = null, sortie = 0, typeSortie = null;
-      if (j === 0) { r = b; typeEntree = 'trou'; }
-      else { const [d, f, t] = SCENE.passages[j - 1]; r = lin(d, f, p); typeEntree = t; }
-      if (j < plans.length - 1) { const [d, f, t] = SCENE.passages[j]; sortie = lin(d, f, p); typeSortie = t; }
-      if (r <= 0 || sortie >= 1) { montrer(pl, false); return; }
-      montrer(pl, true);
-      /* Dérive lente pendant l'arrêt, puis plongée dans la fenêtre de sortie. */
-      const debutArret = j === 0 ? SCENE.trou[1] : SCENE.passages[j - 1][1];
-      const finArret = j < plans.length - 1 ? SCENE.passages[j][0] : 1;
-      const sd = 1 + .035 * lin(debutArret, finArret, p);
-      let s = sd, ox = W * .5 * (1 - sd), oy = H * .5 * (1 - sd), op = 1;
-      if (sortie > 0) {
-        const e = doux(0, 1, sortie);
-        if (typeSortie === 'fondu') { const z = 1 + .6 * e; s = sd * z; ox = W * .5 - (W * .5 - ox) * z; oy = H * .5 - (H * .5 - oy) * z; op = 1 - lin(.25, .95, sortie); }
-        else {
-          fen = fenetre(typeSortie);
-          const fx = (fen[0] + fen[2]) / 2, fy = (fen[1] + fen[3]) / 2, sx = ox + sd * fx, sy = oy + sd * fy;
-          const Z = borne(Math.min(W / (fen[2] - fen[0]), H / (fen[3] - fen[1])) * .9, 2.2, 6);
-          const z = Math.pow(Z, typeSortie === 'fente' ? doux(.18, 1, sortie) : e);
-          s = sd * z; ox = sx - fx * s; oy = sy - fy * s;
-        }
-      }
-      appliquer(pl.cam, s, ox, oy);
-      pl._s = s; pl._ox = ox; pl._oy = oy;
-      if (r >= 1) { pl.el.style.clipPath = ''; pl.el.style.opacity = String(op); return; }
-      /* Pendant l'entrée : le plan se voit à travers la fenêtre, de plus loin, et vient à sa place. */
-      const e = doux(0, 1, r);
-      if (typeEntree === 'trou') {
-        const c = cellule(), cx = (c.p[0][0] + c.p[2][0]) / 2, cy = (c.p[0][1] + c.p[2][1]) / 2, si = melange(.5, 1, e) * s;
-        appliquer(pl.cam, si, cx - (cx - ox) * si / s, cy - (cy - oy) * si / s);
-        pl.el.style.clipPath = b < .985 ? `polygon(${c.p.map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(',')})` : '';
-        pl.el.style.opacity = lin(.1, .55, r).toFixed(3);
-        return;
-      }
-      if (typeEntree === 'fondu') {
-        const si = melange(1.22, 1, e) * s;
-        appliquer(pl.cam, si, W * .5 - (W * .5 - ox) * si / s, H * .5 - (H * .5 - oy) * si / s);
-        pl.el.style.clipPath = ''; pl.el.style.opacity = lin(0, .7, r).toFixed(3);
-        return;
-      }
-      const prec = plans[j - 1];
-      const f = fenetre(typeEntree), ps = prec._s || 1, pox = prec._ox || 0, poy = prec._oy || 0;
-      let R = [pox + f[0] * ps, poy + f[1] * ps, pox + f[2] * ps, poy + f[3] * ps];
-      if (typeEntree === 'fente') { const o = doux(0, .3, r), my = (R[1] + R[3]) / 2, hh = (R[3] - R[1]) / 2 * Math.max(.03, o); R = [R[0], my - hh, R[2], my + hh]; }
-      const g = Math.pow(lin(.35, 1, r), 1.6), P = plein();
-      R = R.map((v, i) => melange(v, P[i], g));
-      const cx = (R[0] + R[2]) / 2, cy = (R[1] + R[3]) / 2, si = melange(.6, 1, e) * s;
-      appliquer(pl.cam, si, cx - (cx - ox) * si / s, cy - (cy - oy) * si / s);
-      pl.el.style.clipPath = g >= 1 ? '' : `inset(${Math.max(0, R[1]).toFixed(1)}px ${Math.max(0, W - R[2]).toFixed(1)}px ${Math.max(0, H - R[3]).toFixed(1)}px ${Math.max(0, R[0]).toFixed(1)}px)`;
-      pl.el.style.opacity = lin(0, .4, r).toFixed(3);
-    });
-  }
-
-  /* ----- Textes : le titre s'efface, une couche à la fois, le fil à droite ----- */
+  /* ----- Textes : le panneau glisse, une couche à la fois, le fil à droite ----- */
+  let hautUne = 0;
   function majTextes(p) {
-    /* Le titre ne s'efface pas : il monte et sort de l'écran, comme une page qu'on fait défiler. */
     if (une) {
-      const e = doux(SCENE.une[0], SCENE.une[1], p);
-      une.style.transform = e > 0 ? `translate3d(0, ${(-(une.offsetHeight + 40) * e).toFixed(1)}px, 0)` : '';
+      const e = doux(SCENE.panneau[0], SCENE.panneau[1], p);
+      une.style.transform = e > 0 ? (mobile ? `translate3d(0, ${(-(panneau + 2) * e).toFixed(1)}px, 0)` : `translate3d(${(-(panneau + 2) * e).toFixed(1)}px, 0, 0)`) : '';
       une.style.visibility = e >= 1 ? 'hidden' : '';
     }
     if (ombreTexte) ombreTexte.style.opacity = doux(.1, .17, p).toFixed(3);
     let actif = -1;
     SCENE.legendes.forEach(([d, f], i) => { if (p >= d && p < f) actif = i; });
-    if (actif !== etat.actif) {
-      etat.actif = actif;
-      legendes.forEach((l, i) => l.classList.toggle('actif', i === actif));
-    }
+    if (actif !== etat.actif) { etat.actif = actif; legendes.forEach((l, i) => l.classList.toggle('actif', i === actif)); }
     let fil = 0;
     SCENE.legendes.forEach(([d], i) => { if (p >= d - .02) fil = i; });
-    rail.forEach((li, i) => li.classList.toggle('actif', i === fil));
-    sec.classList.toggle('dessous', p > .13);
+    if (fil !== etat.fil) { etat.fil = fil; rail.forEach((li, i) => li.classList.toggle('actif', i === fil)); }
+    const dessous = p > .13;
+    if (dessous !== sec.classList.contains('dessous')) sec.classList.toggle('dessous', dessous);
   }
 
-  /* ----- Boucle : ressort de la tuile, caméra, plans ----- */
-  const interactif = () => cam.a > .9 && etat.p < SCENE.envol[0];
+  /* ----- Boucle unique : progression lissée, ressort de la tuile, dessin ----- */
+  const interactif = () => cam.a > .9 && etat.p < SCENE.envol[0] && etat.p > SCENE.repos[0];
   function rendre(t) {
     raf = 0;
     const dt = Math.min(.05, (t - (dernierT || t)) / 1000); dernierT = t;
+    /* Le défilement est suivi avec un léger amorti (constante de temps 0,14 s). */
+    const d = etat.cible - etat.p;
+    etat.p = Math.abs(d) < .00005 ? etat.cible : etat.p + d * (1 - Math.exp(-dt / .14));
     const p = etat.p;
-    const auto = doux(SCENE.leve[0], SCENE.leve[1], p);
-    const cible = Math.max(auto, interactif() && (etat.survol || etat.garde) ? 1 : 0);
-    const acc = 120 * (cible - etat.k) - 13 * etat.v;
-    etat.v += acc * dt; etat.k += etat.v * dt;
+    const posee = doux(SCENE.repos[0], SCENE.repos[1], p) * (1 - doux(SCENE.leve[0], SCENE.leve[1], p));
+    const cible = Math.max(.16 * posee, doux(SCENE.leve[0], SCENE.leve[1], p), interactif() && (etat.survol || etat.garde) ? 1 : 0);
+    etat.v += (120 * (cible - etat.k) - 13 * etat.v) * dt; etat.k += etat.v * dt;
     if (etat.k < 0) { etat.k = 0; etat.v = -etat.v * .3; if (Math.abs(etat.v) < .2) etat.v = 0; }
-    const bouge = Math.abs(cible - etat.k) > .002 || Math.abs(etat.v) > .003;
-    cam = camera(p);
-    if (cam.a > .97 && !etat.invite && p < SCENE.leve[0]) { etat.invite = true; etat.v = 3.4; }
-    if (pret && cam.b < 1) dessiner(p);
-    majPlans(p);
+    if (posee > .98 && !etat.invite) { etat.invite = true; etat.v = 3.2; }
+    const bouge = Math.abs(cible - etat.k) > .002 || Math.abs(etat.v) > .003 || etat.p !== etat.cible;
+    if (W && pret(photo)) { dessiner(p); if (!zone.classList.contains('toile-prete')) zone.classList.add('toile-prete'); }
     majTextes(p);
     if (bouge) demander(); else dernierT = 0;
   }
@@ -442,7 +439,7 @@ function plongeeScene() {
   };
   zone.addEventListener('pointermove', (e) => {
     const s = surTuile(e);
-    zone.classList.toggle('sur-tuile', s);
+    if (s !== zone.classList.contains('sur-tuile')) zone.classList.toggle('sur-tuile', s);
     if (e.pointerType !== 'touch' && s !== etat.survol) { etat.survol = s; demander(); }
   });
   zone.addEventListener('pointerleave', () => { etat.survol = false; zone.classList.remove('sur-tuile'); demander(); });
@@ -454,10 +451,10 @@ function plongeeScene() {
     const rel = ((s.az - 180) * Math.PI) / 180;
     if (s.el > 0) {
       const l = Math.min(2.2, Math.max(.45, .32 / Math.tan((Math.max(5, s.el) * Math.PI) / 180)));
-      ombre = { x: -Math.sin(rel) * .9, y: Math.max(.2, Math.cos(rel)) * .75, l, flou: 5 + l * 3, nuit: false };
+      ombre = { x: -Math.sin(rel) * .9, y: Math.max(.2, Math.cos(rel)) * .75, l, nuit: false };
       if (legende) legende.textContent = `Son ombre suit le soleil de Taverny, ${heure}.`;
     } else {
-      ombre = { x: 0, y: .4, l: .6, flou: 14, nuit: true };
+      ombre = { x: 0, y: .4, l: .6, nuit: true };
       if (legende) legende.textContent = `Soleil couché sur Taverny, ${heure} : ombre douce.`.replace(' :', ' :');
     }
     demander();
@@ -465,10 +462,11 @@ function plongeeScene() {
   majSoleil();
   setInterval(majSoleil, 60000);
 
-  /* ----- Défilement : progression amortie, sans à-coups ----- */
-  const suivi = { p: 0 };
-  const vers = (p) => gsap.to(suivi, { p, duration: .65, ease: 'power2.out', overwrite: true, onUpdate: () => { etat.p = suivi.p; demander(); } });
-  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (s) => vers(s.progress), onRefresh: (s) => { suivi.p = etat.p = s.progress; demander(); } });
+  /* ----- Défilement ----- */
+  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom',
+    /* Un saut (lien, retour, ancre) ne se rejoue pas : on y est tout de suite. Le défilement à la main reste lissé. */
+    onUpdate: (s) => { etat.cible = s.progress; if (Math.abs(etat.cible - etat.p) > .15) etat.p = etat.cible; demander(); },
+    onRefresh: (s) => { etat.cible = etat.p = s.progress; demander(); } });
   rail.forEach((li, i) => $('a', li).addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: st.start + SCENE.arrets[i] * (st.end - st.start), behavior: 'smooth' });
@@ -477,18 +475,20 @@ function plongeeScene() {
 
   let attente;
   new ResizeObserver(() => { clearTimeout(attente); attente = setTimeout(mesurer, 100); }).observe(scene);
-  plans.forEach((pl) => pl.img && pl.img.addEventListener('load', () => { vide = null; demander(); }));
-  /* Les plans des couches se chargent dès que la photo du toit est là (jamais avant l'image d'ouverture). */
-  const charger = () => { pret = true; zone.classList.add('toile-prete'); mesurer(); plans.forEach((pl) => { if (pl.img) pl.img.loading = 'eager'; }); };
-  photo.addEventListener('load', () => (photo.decode ? photo.decode() : Promise.resolve()).catch(() => {}).then(charger));
-  if (photo.complete && photo.naturalWidth) charger();
+  /* Les couches et la version fine des tuiles se chargent une fois la photo du toit là. */
+  const suite = () => {
+    hd = charge('/assets/images/grok/zone-faitage-tuiles.webp');
+    couches = COUCHES.map((c) => c && charge(`/assets/images/grok/${c.src}-1920.webp`));
+    [hd, ...couches].forEach((im) => im && im.addEventListener('load', demander));
+    mesurer();
+  };
+  if (pret(photo)) suite(); else photo.addEventListener('load', suite, { once: true });
   mesurer();
 
   plongee = {
-    /* Intro : la photo se pose en reculant légèrement pendant que le panneau du logo s'efface. */
-    intro(tl, a = .2) { const o = { z: 1.09 }; etat.intro = 1.09; demander(); tl.to(o, { z: 1, duration: 1.7, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
+    intro(tl, a = .2) { const o = { z: 1.07 }; etat.intro = 1.07; demander(); tl.to(o, { z: 1, duration: 1.6, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
     final() { etat.intro = 1; demander(); },
-    arriver() { const o = { z: 1.05 }; etat.intro = 1.05; gsap.to(o, { z: 1, duration: 1.4, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }); },
+    arriver() { const o = { z: 1.04 }; etat.intro = 1.04; gsap.to(o, { z: 1, duration: 1.3, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }); },
   };
 }
 
@@ -569,7 +569,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=3'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=4'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */

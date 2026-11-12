@@ -30,6 +30,7 @@ export default (c) => {
         ${c.lien('devis', { ancre: 'demande', classe: 'bouton', texte: c.t('accueil.hero.action'), attrs: 'data-action-principale data-survol="magnetique"' })}
         <a class="bouton bouton--contour une-tel" href="tel:${c.site.contact.telephoneLien}">${c.site.contact.telephone}</a>
       </p>
+      <p class="plongee-indice" aria-hidden="true"><span></span>${c.t('accueil.hero.indice')}</p>
     </div>
     <div class="plongee-couches">
       <h2 class="visuellement-cache">${c.t('accueil.couches.titre')}</h2>
@@ -48,7 +49,6 @@ export default (c) => {
     <ol class="plongee-rail" aria-label="${c.s('accueil.couches.rail')}">
       ${d.couches.map((x, i) => html`<li><a href="#couche-${i + 1}" data-aller="${i}"><span>${String(i + 1).padStart(2, '0')}</span> ${x.court || x.nom}</a></li>`)}
     </ol>
-    <p class="mention-ia plongee-mention">${c.t('accueil.couches.mention')}</p>
   </div>
 </section>
 
