@@ -141,10 +141,3 @@
   .fpe__puce { padding: 0 14px; }
 }
 
-/* Réduire les animations, mode calme : état final immédiat. */
-@media (prefers-reduced-motion: reduce) {
-  .fpe__coche path, .fpe__coche circle { animation: none; stroke-dashoffset: 0; }
-  .fpe__bouton:hover { transform: none; }
-}
-.calme .fpe__coche path, .calme .fpe__coche circle { animation: none; stroke-dashoffset: 0; }
-.calme .fpe__bouton:hover { transform: none; }

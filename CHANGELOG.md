@@ -2,6 +2,28 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v3 — la plongée sous les tuiles
+
+- **Accueil, ouverture** : une seule grande scène en plein écran remplace la petite tuile du coin et le diaporama des cinq couches.
+  - On part du faîtage au-dessus de Taverny. Au défilement, la caméra plonge dans le toit, couche après couche : tuile, liteau, écran sous-toiture, isolant, chevrons.
+  - Chaque couche s'affiche en grand, avec son nom et une phrase.
+  - Au premier plan, une tuile de 400 à 520 px sur ordinateur (70 % de l'écran sur téléphone) se soulève à la souris ou au doigt, avec son ombre au soleil de Taverny. Puis elle s'envole, et l'on passe par son trou.
+  - On passe du liteau à l'écran par le vide entre deux liteaux, de l'écran à l'isolant par une fente, et l'on traverse l'isolant jusqu'aux chevrons.
+  - Un fil à droite indique la couche en cours et y mène directement. La scène se termine sur « Diagnostic gratuit de votre toit » et le numéro.
+- **Accueil, premier écran épuré** : le titre, un seul bouton devis et le numéro. Le surtitre, le chapeau, l'encart, la bulle et la pastille du soleil sont retirés. Sur téléphone, le titre est posé sur une bande de chaux, au-dessus de la photo en pleine couleur.
+- **Accueil, intro** : le logo seul dure moins de 0,6 s, puis la photo du faîtage se pose en reculant légèrement.
+- **Couverture** : la mousse ne pousse plus que sur les tuiles, jamais sur le ciel, les arbres, la fenêtre de toit ni l'écran.
+  - C'est une vraie texture : voile verdâtre, coussins de mousse dans les joints, lichen.
+  - La brosse la retire tuile par tuile, dans un petit nuage de brins, et découvre la terre cuite propre.
+  - Une invite bien visible indique le geste (« Passez la souris sur le toit pour le démousser »), avec une jauge qui se remplit. Le devis de démoussage apparaît au bout.
+- **Photos de chantier** :
+  - Seules les plus nettes sont en grand : la vue de drone du toit refait sur la grande carte Couverture, le chéneau en zinc sur la carte Zinguerie.
+  - Recadrages serrés : plus de palissade, de sac, de bouteille ni de chaussures (liteaux neufs, liteaux autour du Velux, fenêtre de toit, charpente, drone).
+  - La photo floue de la soudure ne sert plus en grand.
+- **Lisibilité** : surtitres et étiquettes à 13 px au moins, textes des cartes à 15 px. Les labels restent à 64 px avec leur nom, sur deux colonnes au téléphone.
+- **Mode calme retiré** : le lien « Réduire les animations » (menu et pied de page) et le suivi du réglage de l'appareil sont supprimés. Les animations jouent toujours. Le pied de page propose à la place l'itinéraire.
+- **Toutes les pages** : le numéro de version des fichiers passe à 3.
+
 ## v2 — la scène des couches, plus lente
 
 - **Accueil, « Cinq couches, un seul toit »** : la scène défile beaucoup plus lentement. Elle mesure 300 svh au lieu de 160, soit environ un demi-écran de défilement par couche, et les couches suivent le défilement avec un léger amorti, sans à-coups.

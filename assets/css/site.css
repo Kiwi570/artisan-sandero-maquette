@@ -80,77 +80,6 @@ html.js:not(.calme) .liteau:not(.pose) .clou { transform: scale(0); }
 [data-titre-pose] .mot { display: inline-block; transform-origin: 50% 0; }
 html.js:not(.calme) [data-titre-pose]:not(.pose) .mot { transform: perspective(600px) rotateX(-88deg); opacity: 0; }
 
-/* ---------- Bandeau de magazine sous l'en-tête ---------- */
-.ligne-magazine { display: flex; justify-content: space-between; gap: 16px; padding: 9px var(--gouttiere); border-bottom: 1px solid var(--ligne);
-  font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--doux); }
-
-/* ---------- Ouverture de l'accueil : le toit vu du faîtage en plein cadre, le titre posé dessus ---------- */
-.une { padding-top: var(--entete-h); display: flex; flex-direction: column; height: 100vh; height: 100svh; min-height: 600px; }
-.une .ligne-magazine { flex: none; }
-.une-scene { position: relative; flex: 1 1 auto; min-height: 0; overflow: hidden; }
-.toit { position: absolute; inset: 0; overflow: hidden; background: #8db3dc; isolation: isolate; touch-action: pan-y; }
-.toit-photo { position: absolute; top: 0; bottom: 0; left: -8%; width: 116%; border-radius: 0; }
-.toit-photo > .mention-ia { z-index: 6; top: 12px; bottom: auto; right: calc(8% / 1.16 + 12px); }
-.toit-toile { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; display: block; pointer-events: none; }
-.toit::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: radial-gradient(ellipse 64% 80% at 0 0, rgba(242,235,225,.96) 0, rgba(242,235,225,.9) 40%, rgba(242,235,225,.62) 66%, rgba(242,235,225,0) 100%); }
-.toit.sur-tuile { cursor: pointer; }
-.toit-trou { position: absolute; z-index: 0; left: 70%; top: 78%; width: 160px; height: 90px; pointer-events: none; }
-.une-orage { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0;
-  background: linear-gradient(180deg, rgba(48,56,68,.82) 0, rgba(58,64,72,.6) 50%, rgba(40,36,34,.38) 100%); }
-html.js:not(.calme) .une-orage.orage { opacity: 1; }
-.une-texte { position: absolute; z-index: 5; left: 0; top: 0; width: min(100%, 980px); padding: clamp(18px, 3.6vh, 44px) var(--gouttiere) 0; pointer-events: none; }
-.une-texte > * { pointer-events: auto; }
-.une h1 { font-size: clamp(2.6rem, min(6.1vw, 10.4vh), 6.6rem); line-height: .93; letter-spacing: -.03em; margin: 0; max-width: 11.5ch; text-wrap: balance; }
-.une-titre .mot { text-shadow: 0 calc(2px + var(--o, 0) * 26px) calc(3px + var(--o, 0) * 18px) rgba(34, 24, 15, calc(.16 + var(--o, 0) * .05)); }
-.une-cote { position: absolute; z-index: 5; left: var(--gouttiere); bottom: clamp(14px, 3vh, 28px); width: min(410px, 44%); padding: 18px 20px 16px; background: var(--chaux); border-radius: 3px; box-shadow: 0 18px 40px rgba(30,15,5,.3); }
-.une .chapo { margin: 0 0 14px; color: var(--doux); font-size: 1.02rem; }
-.une-actions { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: center; margin: 0 0 12px; }
-.une-actions .bouton { padding-inline: 1.1em; font-size: .98rem; }
-.une-actions .bouton--contour { font-variant-numeric: tabular-nums; }
-.une-info { margin: 0; font-size: .88rem; font-weight: 700; color: var(--doux); }
-.toit-soleil { position: absolute; z-index: 5; right: 16px; bottom: 16px; margin: 0; display: inline-flex; align-items: center; gap: 7px; color: #fffaf3; font-size: .82rem; font-weight: 700; font-style: italic; text-shadow: 0 1px 2px rgba(30,12,4,.85), 0 0 10px rgba(30,12,4,.55); pointer-events: none; white-space: nowrap; }
-.toit-soleil::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: #ffc95c; box-shadow: 0 0 0 3px rgba(255,201,92,.3), 0 1px 3px rgba(30,12,4,.6); }
-.toit-soleil .court { display: none; }
-@media (max-width: 760px) { .toit-soleil .court { display: inline; } }
-.toit-soleil.nuit::before { background: #c9cfe0; box-shadow: none; }
-@media (max-width: 899px) {
-  .une-texte { width: 100%; }
-  .une-cote { width: min(380px, 52%); }
-  .toit::after { background: linear-gradient(180deg, rgba(242,235,225,.95) 0, rgba(242,235,225,.88) 30%, rgba(242,235,225,.5) 44%, rgba(242,235,225,0) 56%); }
-}
-@media (max-width: 760px) {
-  .une { height: calc(100svh - 76px); min-height: 560px; }
-  .une-scene { display: flex; flex-direction: column; }
-  .une-texte, .une-cote { position: relative; left: auto; bottom: auto; width: 100%; background: var(--chaux); }
-  .une-texte { padding-top: 16px; }
-  .une-cote { padding: 12px var(--gouttiere) 14px; box-shadow: none; border-radius: 0; }
-  .toit { position: relative; inset: auto; flex: 1 1 auto; min-height: 240px; order: 3; }
-  .une-texte { order: 1; } .une-cote { order: 2; }
-  .toit::after { display: none; }
-  .une .surtitre { font-size: .72rem; letter-spacing: .08em; margin-bottom: 8px; }
-  .une .chapo { display: none; }
-  .une h1 { max-width: none; }
-  .une .une-info { display: inline-block; padding: 3px 8px; border-radius: 2px; background: rgba(242,235,225,.92); }
-  .toit-soleil .long { display: none; }
-  .ligne-magazine span:nth-child(2) { display: none; }
-  .toit-photo { top: auto; height: 170%; left: 0; width: 100%; }
-  .toit-photo > .mention-ia { right: 10px; top: auto; bottom: 46px; }
-  .une h1 { font-size: clamp(2.1rem, 9.4vw, 3rem); }
-  .une-actions .bouton--contour { display: none; }
-  .une-info { font-size: .84rem; }
-  .toit-soleil { right: 10px; bottom: 10px; font-size: .74rem; }
-}
-@media (max-height: 820px) and (min-width: 900px) {
-  .une h1 { font-size: clamp(2.4rem, min(5.6vw, 9.6vh), 5rem); }
-  .une .chapo { font-size: 1rem; }
-}
-@media (max-height: 500px) and (min-width: 761px) {
-  .ligne-magazine { display: none; }
-  .une h1 { font-size: clamp(1.7rem, 8vh, 2.6rem); }
-  .une .chapo, .une .surtitre { display: none; }
-  .une-cote { padding: 12px 14px; }
-}
 
 /* ---------- Sections ---------- */
 .section { padding-block: clamp(52px, 6.5vw, 96px); }
@@ -161,56 +90,6 @@ html.js:not(.calme) .une-orage.orage { opacity: 1; }
 .sombre { background: var(--ecran); color: #efe7db; }
 .sombre .section-tete p, .sombre .chapo { color: #c9bfb2; }
 .sombre h2 em { color: #e8875c; }
-
-/* ---------- Scène : les cinq couches du toit (data-scene) ---------- */
-.couches { position: relative; }
-.couches-collant { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(20px, 4vw, 56px); align-items: center; padding: calc(var(--entete-h) + 20px) var(--gouttiere) 28px; max-width: calc(var(--largeur) + 2 * var(--gouttiere)); margin-inline: auto; }
-.couches-texte h2 { font-size: clamp(2.2rem, min(4.6vw, 8vh), 4.2rem); line-height: 1; margin: 0 0 14px; }
-.couches-texte > p { color: #c9bfb2; margin: 0 0 22px; max-width: 40ch; }
-.couches-liste { list-style: none; padding: 0; margin: 0; counter-reset: c; }
-.couches-liste li { display: grid; grid-template-columns: 2.4em minmax(0, 1fr); gap: 0 12px; padding: 10px 0; border-top: 1px solid rgba(239,231,219,.14); }
-.couches-liste li::before { content: attr(data-n); grid-row: span 2; font-family: var(--police-titres); font-style: italic; font-size: 1.3rem; color: #e8875c; }
-.couches-liste h3 { font-size: 1.25rem; margin: 0; }
-.couches-liste p { margin: 4px 0 0; font-size: .92rem; color: #c9bfb2; }
-.couches-liste a { color: var(--liteau); font-weight: 700; }
-.couches-pile { position: relative; }
-.couches-pile .plaque { margin: 0; }
-.plaque .media { aspect-ratio: 3 / 2; border-radius: 2px; }
-.couches-pile .plaque { position: relative; }
-.plaque .plaque-nom { margin: 0; position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: var(--police-titres); font-style: italic; font-size: 1.3rem; background: var(--chaux); color: var(--encre); padding: 4px 12px; border-radius: 2px; }
-.couches-compte { font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--liteau); margin: 0 0 10px; font-variant-numeric: tabular-nums; }
-/* Avec JavaScript et animations : section haute, cadre collant, plaques empilées qui se soulèvent. */
-html.js:not(.calme):not(.secours) .couches { height: 300svh; }
-html.js:not(.calme):not(.secours) .couches-collant { position: sticky; top: 0; height: 100svh; }
-html.js:not(.calme):not(.secours) .couches-pile { aspect-ratio: 3 / 2; max-height: calc(100svh - var(--entete-h) - 80px); perspective: 1400px; perspective-origin: 50% -10%; }
-html.js:not(.calme):not(.secours) .couches-pile .plaque { position: absolute; inset: 0; transform-origin: 50% 0; }
-html.js:not(.calme):not(.secours) .couches-pile .plaque .media { height: 100%; aspect-ratio: auto; box-shadow: 0 28px 40px -18px rgba(0,0,0,.7); }
-html.js:not(.calme):not(.secours) .couches-liste li { opacity: .62; transition: opacity .35s; }
-html.js:not(.calme):not(.secours) .couches-liste li.actif { opacity: 1; }
-html.js:not(.calme):not(.secours) .couches-liste li:not(.actif) p { display: none; }
-/* Sans animation : les cinq couches en liste, chacune avec sa photo. */
-:is(html.calme, html.secours, html:not(.js)) .couches-pile { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-:is(html.calme, html.secours, html:not(.js)) .couches-compte { display: none; }
-@media (max-width: 899px) {
-  .couches-collant { grid-template-columns: minmax(0, 1fr); align-content: center; gap: 14px; padding-top: calc(var(--entete-h) + 12px); }
-  .couches-texte > p { display: none; }
-  .couches-liste li { padding: 6px 0; }
-  .couches-liste li p { font-size: .88rem; }
-  html.js:not(.calme):not(.secours) .couches-texte h2 { font-size: clamp(1.8rem, 8vw, 2.6rem); }
-  html.js:not(.calme):not(.secours) .couches-liste li:not(.actif) { display: none; }
-  html.js:not(.calme):not(.secours) .couches-liste li { border-top: 0; }
-  html.js:not(.calme):not(.secours) .couches-pile { order: -1; width: 100%; max-height: 40svh; }
-  :is(html.calme, html.secours, html:not(.js)) .couches-pile { grid-template-columns: minmax(0, 1fr); }
-}
-@media (max-height: 820px) and (min-width: 900px) {
-  .couches-texte > p { display: none; }
-  .couches-liste li { padding: 6px 0; }
-}
-@media (max-height: 500px) and (min-width: 761px) {
-  .couches-texte h2 { font-size: 1.7rem; }
-  .couches-liste li p, .couches-liste a { display: none; }
-  html.js:not(.calme):not(.secours) .couches-pile { max-height: calc(100svh - var(--entete-h) - 40px); }
-}
 
 /* ---------- Métiers : grille qui se recompose ---------- */
 .filtres { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; padding: 0; list-style: none; }
@@ -359,12 +238,6 @@ html.js:not(.calme):not(.secours) .couches-liste li:not(.actif) p { display: non
   --couleur-erreur: #a3271b; --police-mono: var(--police-texte); --ple-fond-planche: #fbf7f1;
 }
 .socle-sr { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-.toit-dessous.fond-calibre img { visibility: hidden; }
-.toit-dessous .mention-ia { display: none; }
-html.js:not(.calme):not(.secours) .couches-pile { transform-style: preserve-3d; }
-html.js:not(.calme):not(.secours) .couches-pile .plaque { transform-style: preserve-3d; }
-.toit.decoupe .toit-dessus { background: transparent; }
-@media (max-width: 899px) { html.js:not(.calme):not(.secours) .couches-pile { overflow: clip; } }
 
 /* ---------- Devis et contact ---------- */
 .devis-une { padding-top: calc(var(--entete-h) + clamp(24px, 4vw, 48px)); padding-bottom: clamp(24px, 4vw, 40px);
@@ -425,32 +298,20 @@ html.js:not(.calme) .rangs:not(.pose) .rang-tuile { transform: perspective(800px
 .metier-n { margin: 0; font-family: var(--police-titres); font-style: italic; font-size: 1.5rem; line-height: 1; color: var(--tuile-texte); }
 .metier-sous { font-size: .82rem !important; font-weight: 700; color: var(--encre) !important; }
 .metier.grande .media { min-height: 300px; }
-.metier .mention-ia, .chantier .mention-ia, .plaque .mention-ia { font-size: .75rem; padding: 3px 6px; opacity: .92; }
+.metier .mention-ia, .chantier .mention-ia { font-size: .75rem; padding: 3px 6px; opacity: .92; }
 .avis-liste .etoiles { display: block; margin: 0 0 2px; }
-.plaque .mention-ia { top: 8px; bottom: auto; }
 .communes li { background: rgba(24,17,11,.62); border-color: rgba(242,235,225,.45); color: #fbf7f1; }
 
 /* La tuile mène au devis. */
-.toit-bulle { position: absolute; z-index: 7; display: flex; flex-direction: column; padding: 10px 14px 9px; border-radius: 3px; background: var(--chaux); color: var(--encre); box-shadow: 0 14px 30px rgba(0,0,0,.35); }
-.toit-devis { display: inline-flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; color: var(--encre); text-decoration: none; font-size: .92rem; font-weight: 700; }
-.toit-bulle-geste { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--ligne); font-size: .8rem; font-weight: 700; color: var(--doux); }
-.toit-bulle-geste .tactile { display: none; }
-@media (hover: none) { .toit-bulle-geste .souris { display: none; } .toit-bulle-geste .tactile { display: inline; } }
-.toit-devis b { font-family: var(--police-titres); font-weight: 500; font-style: italic; font-size: 1.1rem; color: var(--tuile-texte); }
-.toit-bulle::after { content: ""; position: absolute; left: 36px; bottom: -8px; border: 8px solid transparent; border-bottom: 0; border-top-color: var(--chaux); }
 .chantier-titre { font-size: .84rem; }
 .logos .media { height: 64px; }
 .logos li { min-height: 86px; }
-@media (max-width: 760px) { .toit-devis { font-size: .84rem; padding: 8px 10px; } }
 .rang-tuile { padding: 14px 16px 22px; }
 .rang-tuile h3 { margin: 4px 0 4px; }
 .rang-n { font-size: 2.1rem; }
 .chantiers-grille { grid-auto-rows: clamp(92px, 8vw, 116px); }
 
 /* Couches à la main : on tire la couche du dessus vers le haut pour la soulever. */
-html.js:not(.calme):not(.secours) .couches-pile { cursor: grab; touch-action: pan-y; }
-.couches-geste { position: absolute; z-index: 4; right: 12px; top: 12px; padding: 6px 10px; border-radius: 999px; background: rgba(242,235,225,.92); color: var(--encre); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; pointer-events: none; }
-:is(html.calme, html.secours, html:not(.js)) .couches-geste { display: none; }
 
 /* ======================= Pages d'onglet ======================= */
 .titre-geant { font-size: clamp(3.4rem, min(11vw, 17vh), 10rem); line-height: .86; letter-spacing: -.035em; margin: 0 0 .22em; }
@@ -676,9 +537,6 @@ html.js:not(.calme) .taloche.lisse > .media { -webkit-mask-size: 290% 330%; mask
 }
 
 /* La tuile du logo, pendant l'intro de l'accueil */
-.tuile-vol { position: fixed; z-index: 2147483000; visibility: hidden; pointer-events: none; transform-origin: 50% 50%; filter: drop-shadow(0 calc(var(--o, 0) * 22px) calc(var(--o, 0) * 16px + 2px) rgba(30, 10, 2, calc(.2 + var(--o, 0) * .25))); }
-.tuile-vol-face, .tuile-vol-logo { position: absolute; inset: 0; width: 100%; height: 100%; }
-.tuile-vol-logo { object-fit: contain; }
 
 /* Audit des pages d'onglet */
 .prestations-grille { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: clamp(20px, 3vw, 44px); align-items: start; }
@@ -740,13 +598,6 @@ body { overflow-x: clip; }
 .chantiers { overflow: hidden; overflow: clip; }
 .liteau .rubrique { overflow-wrap: anywhere; }
 @media (max-width: 420px) { .liteau .rubrique { letter-spacing: .08em; } .entete-nom { display: inline; font-size: .78rem; letter-spacing: .04em; } }
-.une .surtitre { display: inline-block; padding: 3px 8px; margin-left: -8px; background: rgba(242,235,225,.92); border-radius: 2px; }
-.une-court { display: none; }
-.toit-soleil { position: static; display: flex; margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--ligne); font-size: .78rem; font-style: normal; font-weight: 700; color: var(--doux); text-shadow: none; white-space: normal; }
-.toit-soleil::before { box-shadow: 0 0 0 3px rgba(255,201,92,.35); }
-.toit-bulle { max-width: 270px; }
-.couches-texte { position: relative; z-index: 3; }
-.couches-compte { font-size: max(.74rem, 12.5px); }
 .logos--labels li { min-width: 0; }
 .logos--labels li span { overflow-wrap: anywhere; hyphens: auto; }
 .ravalement .vignette-legende { color: #cfc5b8; }
@@ -764,15 +615,7 @@ body { overflow-x: clip; }
 .alerte:has(input:checked) { background: #fff4ec; border-left-color: var(--tuile); }
 .alertes .signes-fin { grid-column: auto; margin-top: 8px; }
 .alertes .signes-compte { color: #e9dfd0; }
-@media (max-width: 760px) {
-  .une .surtitre { font-size: .76rem; letter-spacing: .06em; margin-left: 0; padding: 0; background: none; }
-  .toit-bulle { max-width: 230px; padding: 8px 12px 7px; }
-  .toit-bulle .toit-soleil { display: none; }
-}
 @media (max-height: 500px) and (min-width: 761px) {
-  .une { min-height: 0; }
-  .une .une-info { display: block; }
-  .une-cote { width: min(330px, 42%); padding: 10px 14px; bottom: 10px; }
   .une-actions { margin-bottom: 4px; }
 }
 @media (max-width: 420px) and (max-height: 700px) {
@@ -788,7 +631,6 @@ body { overflow-x: clip; }
 @media (max-width: 760px) { .introuvable-grille { grid-template-columns: minmax(0, 1fr); min-height: 0; } }
 @media (max-height: 640px) and (min-width: 600px) { .introuvable-grille { grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); padding-block: 12px; } .introuvable .chapo { display: none; } .introuvable h1 { font-size: clamp(1.8rem, 10vh, 2.6rem); } .introuvable-media { aspect-ratio: auto; height: 70vh; } }
 
-@media (max-width: 760px) and (min-height: 860px) { .une-court { display: block; margin: 8px 0 0; font-size: .95rem; line-height: 1.45; color: var(--doux); } }
 
 .signes > div:first-child { grid-row: span 2; }
 @media (max-width: 899px) { .signes > div:first-child { grid-row: auto; } }
@@ -806,16 +648,15 @@ body { overflow-x: clip; }
 @media (max-width: 420px) and (max-height: 700px) {
   .zinc-une .chapo, .rubrique-une .chapo, .facade-tete .chapo { display: none; }
 }
-html:not(.js) .une { height: auto; }
-html:not(.js) .une-scene { height: calc(100svh - 120px); min-height: 280px; flex: none; }
 
 /* Regard neuf */
-.mousse { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; display: block; touch-action: pan-y; cursor: crosshair; }
+.mousse, .mousse-brins { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; display: block; touch-action: pan-y; cursor: crosshair; }
+.mousse-brins { z-index: 2; pointer-events: none; }
 .pente .mention-ia { z-index: 3; }
 .mousse-geste { position: absolute; z-index: 3; left: 16px; bottom: 16px; margin: 0; padding: 8px 12px; border-radius: 999px; background: rgba(27,28,30,.84); color: #f2ebe1; font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; pointer-events: none; transition: opacity .5s; }
 .mousse-geste .tactile { display: none; }
 @media (hover: none) { .mousse-geste .souris { display: none; } .mousse-geste .tactile { display: inline; } }
-.pente.mousse-touchee .mousse-geste { opacity: 0; }
+
 :is(html.calme, html:not(.js)) .mousse-geste { display: none; }
 .taloche-enduit { position: absolute; inset: 0; z-index: 1; pointer-events: none; display: none;
   background: linear-gradient(180deg, rgba(120,116,108,.25), rgba(70,66,60,.35)), url(/assets/images/grok/finition-grattee-784.webp) center / 420px auto repeat, #b9b2a6; }
@@ -828,8 +669,6 @@ html.js:not(.calme) .taloche > .media, html.js:not(.calme) .taloche.lisse > .med
 .echantillon-texte p { margin: 0 0 10px; }
 .echantillon-detail { font-family: var(--police-texte); font-size: .98rem; line-height: 1.5; color: var(--doux); }
 .camion-photo { aspect-ratio: 4 / 3; border-radius: 3px; margin-top: 12px; max-width: 260px; }
-.couches-texte { z-index: 20; }
-@media (max-width: 899px) { .couches-texte { padding-top: 26px; } }
 .fpe__nav { position: sticky; bottom: 0; z-index: 5; background: var(--couleur-surface, #fbf7f1); padding-bottom: 12px; }
 #demande { scroll-margin-top: calc(var(--entete-h) - 28px); }
 html { overflow-x: clip; }
@@ -841,28 +680,148 @@ html { overflow-x: clip; }
 .devis-choix .lien { font: inherit; color: var(--tuile-texte); text-decoration: underline; background: none; border: 0; padding: 0; cursor: pointer; }
 .pieces li { background: none; box-shadow: none; padding: 6px 0; border-bottom: 2px solid var(--zinc); border-radius: 0; color: var(--encre); margin-right: 8px; }
 .vignettes { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 300px)); }
-@media (min-width: 761px) and (max-width: 899px) { .une-cote { width: min(330px, 44%); } }
 @media (min-width: 761px) { .famille-photos { position: relative; } .camion-photo { position: absolute; left: -48px; bottom: -28px; width: 210px; margin: 0; border: 6px solid var(--ecran); box-shadow: 0 16px 30px rgba(0,0,0,.4); } }
 
 /* Écrans bas (portable 1000 × 560) : le titre et l'encart ne se gênent pas, l'essentiel reste au premier écran. */
-@media (max-height: 640px) and (min-width: 761px) {
-  .une h1 { font-size: clamp(2.2rem, min(5vw, 9.6vh), 4rem); }
-  .une .chapo { display: none; }
-  .une-cote { padding: 12px 16px; width: min(320px, 40%); }
-}
 /* Repères du formulaire : seul le nom de l'étape en cours s'affiche quand la place manque. */
 @media (max-width: 1300px) { .fpe__repere:not(.est-actif) .fpe__nom { display: none; } .fpe__repere:not(.est-actif) { flex: 0 0 auto; } .fpe__repere.est-actif .fpe__nom { overflow: visible; } }
 
 /* Vérification finale : écrans bas, sans JavaScript */
-@media (max-height: 640px) and (min-width: 761px) { .une { min-height: 0; } }
-@media (max-height: 820px) and (min-width: 900px) { .une h1 { max-width: 13ch; } }
-html:not(.js) .une { height: auto; min-height: 0; }
-html:not(.js) .une-scene { display: flex; flex-direction: column; height: auto; min-height: 0; overflow: visible; }
-html:not(.js) .une-texte, html:not(.js) .une-cote { position: relative; left: auto; bottom: auto; width: auto; }
-html:not(.js) .une-cote { margin: 14px var(--gouttiere) 0; align-self: flex-start; box-shadow: none; padding-left: 0; background: none; }
-html:not(.js) .toit { position: relative; inset: auto; order: 3; height: min(70vh, 640px); margin-top: 18px; }
-html:not(.js) .toit::after { display: none; }
 .echantillon-corps { grid-template-rows: minmax(0, 1fr); }
 .echantillon-texte { overflow: hidden; min-height: 0; }
 @media (max-height: 640px) { .echantillon-detail { display: none; } }
 @media (max-width: 760px) { .echantillon-corps { grid-template-rows: auto; } }
+
+/* Invite du démoussage : bien visible, avec une jauge qui se remplit et la suite au bout. */
+.pente .mousse { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='17' fill='rgba(255,255,255,.18)' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='20' cy='20' r='17' fill='none' stroke='%2322180f' stroke-width='1' stroke-dasharray='3 3'/%3E%3C/svg%3E") 20 20, crosshair; }
+.mousse-geste { position: absolute; z-index: 4; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; align-items: center; gap: 12px; padding: 10px 18px 10px 12px; max-width: calc(100% - 32px); border-radius: 999px; background: rgba(242,235,225,.95); color: var(--encre); box-shadow: 0 12px 28px rgba(20,10,4,.35); font-size: .95rem; font-weight: 700; letter-spacing: 0; text-transform: none; pointer-events: none; white-space: nowrap; }
+.mousse-icone { position: relative; flex: none; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--tuile); color: #fff; }
+.mousse-icone::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--tuile); animation: mousse-pouls 1.6s ease-out infinite; }
+@keyframes mousse-pouls { from { transform: scale(.8); opacity: .9; } to { transform: scale(1.35); opacity: 0; } }
+.mousse-geste.en-cours .mousse-icone::after { animation: none; opacity: 0; }
+.mousse-geste .tactile { display: none; }
+@media (hover: none) { .mousse-geste .souris { display: none; } .mousse-geste .tactile { display: inline; } }
+.mousse-jauge { display: none; width: 90px; height: 6px; border-radius: 3px; background: rgba(34,24,15,.15); overflow: hidden; }
+.mousse-jauge span { display: block; height: 100%; background: var(--tuile); transform-origin: 0 50%; transform: scaleX(0); transition: transform .25s; }
+.mousse-geste.en-cours .mousse-jauge { display: block; }
+.mousse-fin { display: none; }
+.pente.mousse-fini .mousse-texte, .pente.mousse-fini .mousse-jauge { display: none; }
+.pente.mousse-fini .mousse-fin { display: inline; }
+.pente.mousse-fini .mousse-geste { pointer-events: auto; }
+.mousse-lien { color: var(--tuile-texte); }
+@media (max-width: 760px) { .mousse-geste { font-size: .82rem; bottom: 14px; padding: 8px 14px 8px 8px; white-space: normal; width: max-content; } .mousse-icone { width: 32px; height: 32px; } .mousse-jauge { width: 60px; } }
+
+/* ---------- v3 · Ouverture de l'accueil : la plongée sous les tuiles ----------
+   Une seule scène en plein écran. Section haute, cadre collant ; le script règle la caméra (toile du toit) et les plans
+   des couches. Sans JavaScript ou en secours : le toit en grand avec le titre, puis les cinq couches l'une sous l'autre. */
+.plongee { position: relative; background: var(--ecran); color: #f6efe6; }
+.plongee-collant { position: relative; overflow: hidden; }
+.plan { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
+.plan .media, .plan .media picture, .plan .media img { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 0; }
+.plan .media img { object-fit: cover; object-position: var(--cadrage, 50% 50%); }
+.plan .mention-ia { display: none; }
+/* La mention « Illustration générée » : celle de la photo du toit tant qu'on la voit, puis celle de la scène. */
+.plan--toit .mention-ia { display: block; z-index: 4; right: 10px; bottom: 10px; }
+.plongee:not(.sous-toit) .plongee-mention { display: none; }
+.plan-camera { position: absolute; inset: 0; transform-origin: 0 0; }
+.toit { position: absolute; inset: 0; background: #8db3dc; touch-action: pan-y; }
+.toit-photo { position: absolute; inset: 0; }
+.toit-toile { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; display: block; pointer-events: none; }
+.toit.sur-tuile { cursor: pointer; }
+.plongee-ombre { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0;
+  background: linear-gradient(90deg, rgba(18,12,8,.86) 0, rgba(18,12,8,.66) 34%, rgba(18,12,8,0) 64%), linear-gradient(0deg, rgba(18,12,8,.78) 0, rgba(18,12,8,.3) 40%, rgba(18,12,8,0) 62%); }
+
+/* Premier écran : le titre, un seul bouton devis, le numéro. Rien d'autre. */
+.plongee-une { position: absolute; z-index: 6; left: 0; top: 0; width: min(100%, 1040px); padding: calc(var(--entete-h) + clamp(18px, 4vh, 52px)) var(--gouttiere) 0; color: var(--encre); }
+.plongee-une::before { content: ""; position: absolute; z-index: -1; inset: 0 -30% -40% 0; pointer-events: none;
+  background: radial-gradient(ellipse 80% 88% at 0 0, rgba(242,235,225,.95) 0, rgba(242,235,225,.88) 48%, rgba(242,235,225,.55) 74%, rgba(242,235,225,0) 100%); }
+.plongee-une h1 { font-size: clamp(2.7rem, min(6.4vw, 10.6vh), 7rem); line-height: .92; letter-spacing: -.035em; margin: 0 0 clamp(18px, 3.4vh, 34px); max-width: 11.5ch; text-wrap: balance; }
+.une-titre .mot { text-shadow: 0 calc(2px + var(--o, 0) * 26px) calc(3px + var(--o, 0) * 18px) rgba(34, 24, 15, calc(.12 + var(--o, 0) * .05)); }
+.plongee-une .une-actions { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; margin: 0; }
+.plongee-une .bouton { font-size: 1.02rem; padding-inline: 1.25em; min-height: 52px; }
+.plongee-une .une-tel { color: var(--encre); border-color: var(--encre); background: rgba(242,235,225,.55); font-variant-numeric: tabular-nums; }
+
+/* Les cinq couches : grand nom, une phrase, au bas à gauche ; une seule à la fois. */
+.plongee-couches ol { list-style: none; margin: 0; padding: 0; }
+.plongee-couche { position: absolute; z-index: 6; left: var(--gouttiere); bottom: clamp(28px, 8vh, 84px); width: min(560px, calc(100% - 2 * var(--gouttiere))); margin: 0;
+  opacity: 0; visibility: hidden; transform: translateY(26px); transition: opacity .45s ease, transform .6s cubic-bezier(.2, .7, .2, 1), visibility 0s linear .45s; }
+.plongee-couche.actif { opacity: 1; visibility: visible; transform: none; transition: opacity .5s ease .08s, transform .7s cubic-bezier(.2, .7, .2, 1) .05s, visibility 0s; }
+.plongee-n { margin: 0 0 12px; font-size: .8125rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #eadbc8; font-variant-numeric: tabular-nums; }
+.plongee-n span { color: var(--liteau); }
+.plongee-couche h3 { font-size: clamp(3rem, min(7.4vw, 12vh), 7.4rem); line-height: .9; letter-spacing: -.035em; margin: 0 0 16px; color: #fbf7f1; text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.plongee-couche h3 em { color: #f0a37c; }
+.plongee-phrase { margin: 0 0 14px; font-size: clamp(1.05rem, .98rem + .35vw, 1.28rem); line-height: 1.5; max-width: 34ch; color: #f2e9dd; text-shadow: 0 1px 12px rgba(0,0,0,.4); }
+.plongee-lien { margin: 0; }
+.plongee-lien a { display: inline-flex; align-items: center; min-height: 44px; color: var(--liteau); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+/* L'appel final sur une plaque de chaux, comme une fiche posée sur la charpente. */
+.plongee-fin { display: inline-flex; padding: 14px; background: var(--chaux); border-radius: 3px; box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+.plongee-fin .bouton--contour { color: var(--encre); border-color: var(--encre); background: transparent; font-variant-numeric: tabular-nums; }
+.plongee-n, .plongee-rail a { text-shadow: 0 1px 2px rgba(0,0,0,.75), 0 0 14px rgba(0,0,0,.55); }
+.plongee-geste { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 0 0 14px; font-size: .9375rem; font-weight: 700; color: #fbf7f1; }
+.plongee-geste .tactile { display: none; }
+@media (hover: none) { .plongee-geste .souris { display: none; } .plongee-geste .tactile { display: inline; } }
+.plongee-geste .souris::before, .plongee-geste .tactile::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 9px; border-radius: 50%; background: var(--liteau); box-shadow: 0 0 0 4px rgba(226,185,92,.3); vertical-align: 1px; }
+.toit-soleil { font-size: .875rem; font-weight: 500; font-style: italic; color: #e6d8c6; }
+.plongee-fin { display: flex; flex-wrap: wrap; gap: 12px; margin: 6px 0 0; }
+.plongee-fin .bouton { min-height: 52px; font-size: 1.02rem; }
+
+/* Fil des couches, à droite : où l'on est, et un accès direct à chacune. */
+.plongee-rail { position: absolute; z-index: 6; right: var(--gouttiere); top: 50%; transform: translateY(-50%); list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px;
+  opacity: 0; visibility: hidden; transition: opacity .4s, visibility 0s linear .4s; }
+.plongee.dessous .plongee-rail { opacity: 1; visibility: visible; transition: opacity .4s; }
+.plongee-rail a { display: flex; align-items: center; justify-content: flex-end; gap: 10px; min-height: 44px; padding: 0 0 0 12px; color: rgba(251,247,241,.62); font-size: .875rem; font-weight: 700; text-decoration: none; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+.plongee-rail a::after { content: ""; width: 26px; height: 3px; border-radius: 2px; background: currentColor; transition: width .35s, background-color .35s; }
+.plongee-rail a span { font-variant-numeric: tabular-nums; color: inherit; }
+.plongee-rail a:hover, .plongee-rail a:focus-visible { color: #fbf7f1; }
+.plongee-rail li.actif a { color: #fbf7f1; }
+.plongee-rail li.actif a::after { width: 46px; background: var(--liteau); }
+.plongee-mention { position: absolute; z-index: 6; right: 10px; bottom: 10px; top: auto; left: auto; }
+
+/* Avec JavaScript : la scène dure sept écrans, le cadre reste collé. */
+html.js:not(.secours) .plongee { height: 700svh; }
+html.js:not(.secours) .plongee-collant { position: sticky; top: 0; height: 100vh; height: 100svh; }
+html.js:not(.secours) .plan-couche { visibility: hidden; }
+
+/* Téléphone et petites tablettes : la place manque, le fil s'efface (les couches se suivent au défilement). */
+@media (max-width: 899px) { .plongee-rail { display: none; } }
+@media (max-width: 760px) {
+  /* Téléphone : le titre sur une bande de chaux, la photo en pleine couleur dessous. */
+  .plongee-une { width: 100%; padding: calc(var(--entete-h) + 14px) var(--gouttiere) 18px; background: var(--chaux); }
+  .plongee-une::before { display: none; }
+  .plongee-une h1 { font-size: clamp(2.2rem, 10.2vw, 3.1rem); max-width: none; margin-bottom: 16px; }
+  .plongee-une .une-actions { gap: 10px; }
+  .plongee-une .bouton { min-height: 48px; font-size: .98rem; padding-inline: 1em; }
+  .plongee-couche { bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
+  .plongee-couche h3 { font-size: clamp(2.6rem, 13vw, 3.6rem); margin-bottom: 10px; }
+  .plongee-phrase { font-size: 1rem; max-width: none; }
+  .plongee-ombre { background: linear-gradient(0deg, rgba(18,12,8,.92) 0, rgba(18,12,8,.82) 38%, rgba(18,12,8,.4) 58%, rgba(18,12,8,0) 74%); }
+  .plongee-mention { z-index: 5; bottom: auto; top: calc(var(--entete-h) + 8px); }
+  /* Au premier écran, la bande de chaux couvre le haut : la mention passe juste sous elle, sur la photo. */
+  .plan--toit .mention-ia { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-height: 640px) and (min-width: 761px) {
+  .plongee-une h1 { font-size: clamp(2.2rem, min(5.4vw, 10vh), 4.4rem); }
+  .plongee-couche h3 { font-size: clamp(2.4rem, 11vh, 4.4rem); }
+  .plongee-phrase { font-size: 1rem; }
+}
+
+/* Sans JavaScript, ou si le script ne prend pas la main : tout est posé, lisible, l'un sous l'autre. */
+:is(html:not(.js), html.secours) .plongee-collant { display: flex; flex-direction: column; }
+:is(html:not(.js), html.secours) .plan { position: relative; inset: auto; height: 70svh; min-height: 320px; }
+:is(html:not(.js), html.secours) .plan--toit { order: 1; height: 62svh; }
+:is(html:not(.js), html.secours) .plongee-une { position: relative; order: 0; width: auto; background: var(--chaux); padding-bottom: 24px; }
+:is(html:not(.js), html.secours) .plongee-une::before { display: none; }
+:is(html:not(.js), html.secours) .plongee-couches { order: 2; }
+:is(html:not(.js), html.secours) .plongee-couche { position: relative; left: auto; bottom: auto; width: auto; opacity: 1; visibility: visible; transform: none; padding: 36px var(--gouttiere); border-top: 1px solid rgba(239,231,219,.14); }
+:is(html:not(.js), html.secours) .plongee-geste, :is(html:not(.js), html.secours) .plongee-rail, :is(html:not(.js), html.secours) .plongee-ombre, :is(html:not(.js), html.secours) .toit-toile { display: none; }
+:is(html:not(.js), html.secours) .plan-couche { order: 3; height: 46svh; }
+:is(html:not(.js), html.secours) .plongee-mention { display: none; }
+:is(html:not(.js), html.secours) .plan--toit .mention-ia { bottom: 10px; }
+:is(html:not(.js), html.secours) .plan .mention-ia { display: block; }
+
+/* v3 · Lisibilité (regard du directeur artistique) : surtitres et étiquettes à 13 px au moins, textes des cartes à 15 px. */
+.surtitre, .liteau .rubrique, .labels-grille h3, .devis-carte h2, .echantillon-n, .ouverture-ligne, .metier-n { font-size: max(.8125rem, 13px); }
+.logos li span, .logos--labels li span, .schema-note, .chantier-titre, .vignette-legende, .media-legende, .avis-cote p, .devis-simule, .fpe__note, .metier-sous { font-size: max(.8125rem, 13px) !important; }
+.metier p, .rang-tuile p, .temps p, .finition-texte span, .famille-faits li, .prestation p, .avis-liste cite { font-size: .9375rem; }
+@media (max-width: 760px) { .rang-tuile p { font-size: .9375rem; } .liteau .rubrique { letter-spacing: .1em; } }
+@media (max-width: 760px) { .logos--labels { grid-template-columns: repeat(2, minmax(0, 1fr)); } .logos--labels li span { hyphens: manual; } }

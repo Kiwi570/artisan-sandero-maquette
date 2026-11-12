@@ -2,7 +2,7 @@
  {
   "cle": "couverture",
   "nom": "Couverture",
-  "image": "chantier-velux",
+  "image": "chantier-drone",
   "texte": "Pose, rénovation, nettoyage et démoussage, sur tuiles, ardoises, zinc ou béton.",
   "sous": [
    "Isolation",
@@ -18,7 +18,7 @@
  {
   "cle": "zinguerie",
   "nom": "Zinguerie",
-  "image": "chantier-soudure",
+  "image": "chantier-cheneau",
   "texte": "Gouttières soudées, chéneaux, noues, solins et rives sur mesure.",
   "sous": [
    "Cheminées"
@@ -28,7 +28,8 @@
    "toit"
   ],
   "page": "zinguerie-charpente",
-  "lienTexte": "Gouttières et cheminées"
+  "lienTexte": "Gouttières et cheminées",
+  "cadrage": "50% 55%"
  },
  {
   "cle": "charpente",
@@ -44,7 +45,8 @@
   ],
   "page": "zinguerie-charpente",
   "ancre": "charpente",
-  "lienTexte": "Diagnostic de charpente"
+  "lienTexte": "Diagnostic de charpente",
+  "cadrage": "50% 40%"
  },
  {
   "cle": "peinture",

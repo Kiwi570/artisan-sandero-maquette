@@ -8,13 +8,12 @@ Accueil · Couverture · Zinguerie et charpente · Peinture et façades · Devis
 Non reprises dans cette version (disponibles ensuite si le client les veut) : À propos (son contenu est sur l'accueil), Actualité et conseils de pro, pages par commune (Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis), sous-pages de la couverture (regroupées sur la page Couverture).
 
 ## Ce que montre la maquette
-- Ouverture de l'accueil : le toit vu du faîtage. Le logo devient la tuile qui tombe dans son trou, puis on peut soulever les tuiles du pan droit (liteau et écran dessous). L'ombre suit le soleil réel sur Taverny, et la tuile levée mène au devis.
+- Ouverture de l'accueil : une seule scène en plein écran, la plongée. On part du faîtage au-dessus de Taverny ; au défilement, la caméra plonge dans le toit, couche après couche (tuile, liteau, écran sous-toiture, isolant, chevrons). Au premier plan, une grande tuile se soulève à la souris ou au doigt ; son ombre suit le soleil réel sur Taverny. Premier écran : le titre, un bouton devis et le numéro.
 - Accueil :
-  - les cinq couches du toit, à soulever ;
   - les métiers sur de vraies photos de chantier, avec un filtre ;
   - les chantiers en galerie, et la méthode en six rangs ;
   - « De père en fils », les neuf avis, les labels et la zone avec « joignable maintenant ».
-- Couverture : la pente se découvre rang par rang, puis le nuancier des quatre matériaux s'empile.
+- Couverture : la pente se découvre rang par rang, moussue sur ses tuiles ; la brosse la démousse tuile par tuile. Puis le nuancier des quatre matériaux s'empile.
 - Zinguerie et charpente : un cordon d'étain se trace sous le titre. Les signes de la gouttière se cochent et sont joints au devis. La charpente apparaît en profondeur.
 - Peinture et façades : un coup de taloche révèle la façade, puis viennent les cinq étapes de préparation, le ravalement en quatre temps et les finitions qui se recomposent.
 - Devis : un formulaire en cinq étapes, prérempli depuis les pages, avec le tampon « Reçu ». L'envoi est simulé.

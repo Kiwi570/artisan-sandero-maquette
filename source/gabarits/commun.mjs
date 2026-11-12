@@ -88,7 +88,6 @@ function entete(c) {
   <p><a class="bouton" href="tel:${c.site.contact.telephoneLien}">${c.t('commun.appeler')} ${c.site.contact.telephone}</a></p>
   <p class="menu-adresse">${c.site.contact.adresse}<br>${c.t('commun.horaires')}<br><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(c.site.contact.adresse)}" target="_blank" rel="noopener">${c.t('commun.itineraire')} →</a></p>
   ${autreLangue.map((a) => html`<p><a class="entete-langue" href="${a.url}" hreflang="${a.l}" lang="${a.l}" data-langue="${a.l}">${c.s('commun.langueAutre')}</a></p>`)}
-  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="${c.s('commun.calmeReduire')}" data-libelle-retablir="${c.s('commun.calmeRetablir')}" data-libelle-systeme="${c.s('commun.calmeSysteme')}"><span data-libelle-bouton>${c.t('commun.calmeReduire')}</span></button></p>
 </div>`;
 }
 
@@ -107,7 +106,7 @@ function pied(c) {
     <div>
       <p><strong>${c.t('commun.confort')}</strong></p>
       <ul>
-        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="${c.s('commun.calmeReduire')}" data-libelle-retablir="${c.s('commun.calmeRetablir')}" data-libelle-systeme="${c.s('commun.calmeSysteme')}"><span data-libelle-bouton>${c.t('commun.calmeReduire')}</span></button></li>
+        <li><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(c.site.contact.adresse)}" target="_blank" rel="noopener">${c.t('commun.itineraire')} →</a></li>
         <li><a href="#haut" data-sans-transition>${c.t('commun.retourHaut')}</a></li>
       </ul>
     </div>

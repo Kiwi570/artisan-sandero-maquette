@@ -1,0 +1,40 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 4 s
+… mesures
+  fait en 17 s
+… mesures:balayage
+  fait en 0 s
+… films
+  fait en 39 s
+… bords
+  fait en 13 s
+… parcours:intro
+  fait en 16 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 59 s
+… parcours:hauteur
+  fait en 11 s
+… parcours:calme
+  fait en 17 s
+… parcours:projet
+  fait en 0 s
+… ecran
+  fait en 12 s
+… fluidite
+  fait en 50 s
+… mouvement
+  fait en 41 s
+… vitesse
+  fait en 6 s
+… captures
+  fait en 35 s
+… safari
+  fait en 0 s
+
+Échecs : 42 · À regarder : 20 · Non lancé : 2 (dont 1 requis : audit INCOMPLET)
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --rapide --seulement=fichiers,mesures,parcours
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261112-164242-rapide)

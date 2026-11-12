@@ -1,12 +1,13 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=2';
+import { demarrer, etat, versObjet } from './socle/index.js?v=3';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-const calme = () => etat.calme || document.documentElement.classList.contains('calme') || matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* Mode calme retiré en v3 (à la demande du client) : les animations jouent toujours. */
+const calme = () => false;
 
 /* ---------- Titres posés tuile par tuile (data-titre-pose, grille wouahou point 5) ---------- */
 function decouperMots(el) {
@@ -73,16 +74,11 @@ function liteaux() {
   tous.forEach((l) => io.observe(l));
 }
 
-/* ---------- Ouverture : soulever une tuile sur le toit vu du faîtage (grille wouahou point 1, effet signature) ----------
-   Photo paysage ouverture-faitage (1920 × 1289) en plein cadre. Sur le pan de droite, trois rangs de tuiles mécaniques
-   relevés sur la photo (lignes des nez, joints) donnent douze cellules à quatre coins [rang, colonne, x1 y1 … x4 y4]
-   (haut gauche, haut droite, nez droite, nez gauche). Une tuile levée garde sa tête accrochée au liteau ; son nez se
-   soulève : le dessus se raccourcit, la tranche de terre cuite apparaît et, dans la fente, le liteau en pin sur l'écran
-   noir. Son ombre portée suit le soleil réel sur Taverny à l'heure de la visite. À l'arrivée, le logo glisse jusqu'au
-   trou d'une tuile manquante et devient cette tuile, qui se pose ; elle reste levée avec l'étiquette du devis. */
+/* Toit vu du faîtage (photo ouverture-faitage, 1920 × 1289) : trois rangs de tuiles mécaniques relevés sur le pan droit
+   (lignes des nez, joints), douze cellules à quatre coins [rang, colonne, x1 y1 … x4 y4]
+   (haut gauche, haut droite, nez droite, nez gauche). */
 const PHOTO = { w: 1920, h: 1289 };
 const CELLULES = [["c",0,[1030,970,1183,977,1205,1040,1037,1037]],["c",1,[1183,977,1349,983,1370,1043,1205,1040]],["c",2,[1349,983,1505,989,1525,1046,1370,1043]],["c",3,[1505,989,1653,994,1672,1049,1525,1046]],["d",0,[1037,1037,1206,1041,1240,1127,1047,1125]],["d",1,[1206,1041,1396,1044,1430,1129,1240,1127]],["d",2,[1396,1044,1579,1048,1612,1130,1430,1129]],["d",3,[1579,1048,1750,1051,1782,1132,1612,1130]],["e",0,[1046,1125,1249,1127,1286,1251,1060,1251]],["e",1,[1249,1127,1468,1129,1504,1251,1286,1251]],["e",2,[1468,1129,1684,1131,1720,1251,1504,1251]],["e",3,[1684,1131,1882,1133,1917,1251,1720,1251]]];
-const RANGS_TOIT = 'cde';
 
 /* Position du soleil sur Taverny (49,016 N ; 2,220 E), formule simplifiée : azimut depuis le nord, hauteur en degrés. */
 function soleil(d = new Date()) {
@@ -96,64 +92,100 @@ function soleil(d = new Date()) {
   return { az: (az + 360) % 360, el: el / rad };
 }
 
-let toit = null;
-function tuiles() {
-  const zone = $('.toit');
-  if (!zone) return;
-  const toile = $('.toit-toile', zone), img = $('.toit-photo img', zone), trou = $('.toit-trou', zone);
-  const etiquette = $('.toit-bulle', zone), legende = $('.toit-soleil', zone);
-  if (!toile || !img) return;
-  const ctx = toile.getContext('2d'), fond = document.createElement('canvas'), fctx = fond.getContext('2d');
-  const anime = !calme() && !!gsap;
-  let cases = [], dpr = 1, W = 0, H = 0, heros = null, survol = null, actif = false, dernier = 0, pret = false;
-  let phase = anime ? 'attente' : 'fini';
+/* ---------- Ouverture de l'accueil : la plongée sous les tuiles (grille wouahou : scène, manipuler) ----------
+   Une seule scène en plein écran. On part du faîtage au-dessus de Taverny (photo ouverture-faitage, 1920 × 1289, dessinée
+   dans la toile par une caméra). Au défilement, la caméra plonge jusqu'à une tuile du pan droit, grande (400 px au moins
+   sur ordinateur) : on peut la soulever soi-même. Puis elle s'envole, on passe par son trou : le liteau ; entre deux
+   liteaux : l'écran sous-toiture ; une fente dans l'écran : l'isolant ; à travers l'isolant : les chevrons.
+   Une tuile levée garde sa tête accrochée au liteau ; son nez se soulève : le dessus se raccourcit, la tranche de terre
+   cuite apparaît et, dans la fente, le liteau en pin sur l'écran noir. Son ombre suit le soleil réel sur Taverny. */
+const borne = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lin = (a, b, x) => borne((x - a) / (b - a));
+const doux = (a, b, x) => { const t = lin(a, b, x); return t * t * (3 - 2 * t); };
+const melange = (a, b, t) => a + (b - a) * t;
+/* Calendrier de la scène : progression de 0 à 1 sur toute la hauteur de la section (sept écrans). */
+const SCENE = {
+  une: [.02, .095],
+  plonge: [.03, .2],
+  leve: [.285, .33],
+  envol: [.33, .39],
+  trou: [.385, .5],
+  passages: [[.555, .65, 'vide'], [.70, .79, 'fente'], [.835, .915, 'fondu']],
+  legendes: [[.16, .345], [.475, .585], [.625, .73], [.765, .865], [.885, 1.01]],
+  arrets: [.25, .53, .68, .815, .97],
+};
+const HEROS = CELLULES.find(([r, q]) => r === 'd' && q === 1)[2];
+const HEROS_P = [0, 2, 4, 6].map((i) => [HEROS[i], HEROS[i + 1]]);
+const HEROS_C = [HEROS_P.reduce((s, a) => s + a[0], 0) / 4, HEROS_P.reduce((s, a) => s + a[1], 0) / 4];
+const HEROS_NEZ = Math.hypot(HEROS_P[2][0] - HEROS_P[3][0], HEROS_P[2][1] - HEROS_P[3][1]);
+
+let plongee = null;
+function plongeeScene() {
+  const sec = $('.plongee');
+  if (!sec || !gsap || !window.ScrollTrigger) return;
+  const scene = $('.plongee-collant', sec), zone = $('.toit', sec), toile = $('.toit-toile', sec), img = $('.toit-photo img', sec);
+  if (!scene || !zone || !toile || !img) return;
+  const planToit = $('.plan--toit', sec);
+  const plans = $$('.plan-couche', sec).map((el) => ({ el, cam: $('.plan-camera', el), img: $('img', el) }));
+  const legendes = $$('.plongee-couche', sec), rail = $$('.plongee-rail li', sec), une = $('.plongee-une', sec), ombreTexte = $('.plongee-ombre', sec);
+  const legende = $('.toit-soleil', sec);
+  const ctx = toile.getContext('2d');
+  const photo = new Image();
+  photo.decoding = 'async';
+  photo.src = (img.currentSrc || img.src).replace(/-\d+\.webp(\?.*)?$/, '-1920.webp');
+  let W = 0, H = 0, dpr = 1, mobile = false, pret = false, raf = 0, dernierT = 0;
+  let base = null, etape = null, zoomTrou = 6, cam = { S: 1, tx: 0, ty: 0 }, vide = null;
+  const etat = { p: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2 };
   let ombre = { x: -.3, y: .6, l: 1, flou: 8, nuit: false };
 
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); };
-  const trouver = (r, q) => cases.find((c) => c.r === r && c.q === q);
   const dedans = ([x, y], p) => { let ok = false; for (let i = 0, j = 3; i < 4; j = i++) { const [xi, yi] = p[i], [xj, yj] = p[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) ok = !ok; } return ok; };
+  /* Morceau de photo sous un rectangle de l'écran (coordonnées de la photo en pixels réels). */
+  const src = (x, y, w, h) => { const k = photo.naturalWidth / PHOTO.w; return [(x - cam.tx) / cam.S * k, (y - cam.ty) / cam.S * k, w / cam.S * k, h / cam.S * k]; };
+  const versEcran = ([x, y]) => [cam.tx + x * cam.S, cam.ty + y * cam.S];
+  function cellule() {
+    const p = HEROS_P.map(versEcran), xs = p.map((a) => a[0]), ys = p.map((a) => a[1]);
+    const bx = Math.min(...xs), by = Math.min(...ys);
+    return { p, bx, by, bw: Math.max(...xs) - bx, bh: Math.max(...ys) - by, h: (p[3][1] - p[0][1] + p[2][1] - p[1][1]) / 2 };
+  }
 
-  function construire() {
-    W = zone.clientWidth; H = zone.clientHeight;
-    if (!W || !H || !img.naturalWidth) return false;
-    dpr = Math.min(2, devicePixelRatio || 1);
-    toile.width = fond.width = Math.round(W * dpr); toile.height = fond.height = Math.round(H * dpr);
-    /* Même cadrage que l'image : object-fit cover dans sa boîte, object-position lu sur la page. */
-    const fig = $('.toit-photo', zone), garde = fig ? fig.style.transform : '';
-    if (fig) fig.style.transform = '';
-    const zr = zone.getBoundingClientRect(), ir = img.getBoundingClientRect();
-    if (fig) fig.style.transform = garde;
-    const sc = Math.max(ir.width / PHOTO.w, ir.height / PHOTO.h);
+  function mesurer() {
+    W = scene.clientWidth; H = scene.clientHeight;
+    if (!W || !H) return false;
+    dpr = Math.min(2, devicePixelRatio || 1); mobile = W < 761;
+    toile.width = Math.round(W * dpr); toile.height = Math.round(H * dpr);
     const pos = getComputedStyle(img).objectPosition.split(' ').map((v) => (v.endsWith('%') ? parseFloat(v) / 100 : .5));
-    const ox = ir.left - zr.left + (ir.width - PHOTO.w * sc) * pos[0], oy = ir.top - zr.top + (ir.height - PHOTO.h * sc) * (pos[1] ?? .5);
-    fctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    fctx.clearRect(0, 0, W, H);
-    fctx.drawImage(img, ox, oy, PHOTO.w * sc, PHOTO.h * sc);
-    const anciens = new Map(cases.map((c) => [c.cle, c]));
-    const basUtile = H - (W < 761 ? 6 : 4);
-    cases = CELLULES.map(([r, q, v]) => {
-      const p = [0, 2, 4, 6].map((i) => [ox + v[i] * sc, oy + v[i + 1] * sc]);
-      const xs = p.map((a) => a[0]), ys = p.map((a) => a[1]);
-      const bx = Math.min(...xs), by = Math.min(...ys), bw = Math.max(...xs) - bx, bh = Math.max(...ys) - by;
-      const a = anciens.get(r + q);
-      return { cle: r + q, r, q, p, bx, by, bw, bh, h: (p[3][1] - p[0][1] + p[2][1] - p[1][1]) / 2, k: a ? a.k : 0, v: 0, cible: 0, garde: a ? a.garde : false, absent: false, vague: 0 };
-    }).filter((c) => c.bx > 2 && c.bx + c.bw < W - 2 && c.by > H * .3 && c.by + c.bh < basUtile);
-    const cible = W < 761 ? [W * .55, H * .8] : [W * .72, H * .86];
-    const d = (c) => Math.hypot(c.bx + c.bw / 2 - cible[0], c.by + c.bh / 2 - cible[1]);
-    heros = cases.slice().sort((a, b) => d(a) - d(b))[0] || null;
-    placerLegende();
-    if (heros && trou) {
-      const tw = Math.max(66, heros.bw), th = Math.max(66, heros.bh);
-      trou.style.cssText = `left:${(heros.bx + heros.bw / 2 - tw / 2).toFixed(0)}px;top:${(heros.by + heros.bh / 2 - th / 2).toFixed(0)}px;width:${tw.toFixed(0)}px;height:${th.toFixed(0)}px`;
-    }
-    if (heros) {
-      if (phase === 'attente') heros.absent = true;
-      if (phase === 'fini' && !cases.some((c) => c.garde)) { heros.garde = true; heros.k = 1; }
-    }
-    pret = true;
-    dessiner();
-    if (phase === 'fini' && heros && heros.garde) montrerDevis(heros, false);
+    const S0 = Math.max(W / PHOTO.w, H / PHOTO.h);
+    base = { S: S0, tx: (W - PHOTO.w * S0) * pos[0], ty: (H - PHOTO.h * S0) * (pos[1] ?? 1) };
+    /* La tuile au premier plan : 400 à 520 px de large sur ordinateur, 70 % de l'écran sur téléphone. */
+    const largeur = mobile ? W * .7 : Math.min(520, Math.max(400, W * .33));
+    const S = Math.max(largeur / HEROS_NEZ, S0 * 1.05);
+    const cible = mobile ? [W * .5, H * .4] : [W * .64, H * .47];
+    etape = { S, tx: borne(cible[0] - HEROS_C[0] * S, W - PHOTO.w * S, 0), ty: borne(cible[1] - HEROS_C[1] * S, H - PHOTO.h * S, 0) };
+    const c0 = { bw: 224, bh: 90 };
+    zoomTrou = Math.max(W * 1.5 / (c0.bw * S), H * 1.5 / (c0.bh * S));
+    vide = null;
+    pret = !!photo.naturalWidth;
+    demander();
     return true;
+  }
+
+  function camera(p) {
+    const a = doux(SCENE.plonge[0], SCENE.plonge[1], p), b = doux(SCENE.trou[0], SCENE.trou[1], p);
+    let S, tx, ty;
+    if (b <= 0) {
+      S = base.S * Math.pow(etape.S / base.S, a);
+      const fx = melange(HEROS_C[0] * base.S + base.tx, HEROS_C[0] * etape.S + etape.tx, a);
+      const fy = melange(HEROS_C[1] * base.S + base.ty, HEROS_C[1] * etape.S + etape.ty, a);
+      tx = fx - HEROS_C[0] * S; ty = fy - HEROS_C[1] * S;
+      if (etat.intro !== 1) { const z = etat.intro, cx = W * .5, cy = H * .7; S *= z; tx = cx + (tx - cx) * z; ty = cy + (ty - cy) * z; }
+      tx = borne(tx, W - PHOTO.w * S, 0); ty = borne(ty, H - PHOTO.h * S, 0);
+    } else {
+      S = etape.S * Math.pow(zoomTrou, b);
+      const fx = melange(HEROS_C[0] * etape.S + etape.tx, W / 2, b), fy = melange(HEROS_C[1] * etape.S + etape.ty, H / 2, b);
+      tx = fx - HEROS_C[0] * S; ty = fy - HEROS_C[1] * S;
+    }
+    return { S, tx, ty, a, b };
   }
 
   /* ----- Peinture ----- */
@@ -200,18 +232,18 @@ function tuiles() {
     const pts = [c.p[0], c.p[1], [n.br[0] + ox, n.br[1] + n.ep + oy], [n.bl[0] + ox, n.bl[1] + n.ep + oy]];
     ctx.save();
     ctx.shadowColor = `rgba(30,11,3,${ombre.nuit ? .38 : .55})`;
-    ctx.shadowBlur = (ombre.flou + c.h * .05) * dpr;
-    ctx.shadowOffsetX = 5000 * dpr;
-    ctx.translate(-5000, 0); poly(pts); ctx.fillStyle = '#000'; ctx.fill();
+    ctx.shadowBlur = (ombre.flou * c.h / 60 + c.h * .05) * dpr;
+    ctx.shadowOffsetX = 9000 * dpr;
+    ctx.translate(-9000, 0); poly(pts); ctx.fillStyle = '#000'; ctx.fill();
     ctx.restore();
   }
   function dessus(c, n, k) {
     const [tl, tr] = c.p, haut = Math.min(tl[1], tr[1]), bas = Math.max(c.p[2][1], c.p[3][1]), hc = bas - haut, s = 1 - n.d / hc;
     ctx.save(); poly([tl, tr, n.br, n.bl]); ctx.clip();
-    const N = Math.max(10, Math.round(hc / 3)), sx = c.bx - 8, sw = c.bw + 16;
+    const N = Math.max(10, Math.min(160, Math.round(hc / 3))), sx = c.bx - 8, sw = c.bw + 16;
     for (let i = 0; i < N; i++) {
       const a = i / N, b = (i + 1) / N, f = 1 + n.ex * (a + b) / 2, y0 = haut + hc * a, y1 = haut + hc * b;
-      ctx.drawImage(fond, sx * dpr, y0 * dpr, sw * dpr, (y1 - y0) * dpr, n.cx + (sx - n.cx) * f, haut + (y0 - haut) * s, sw * f, (y1 - y0) * s + .8);
+      ctx.drawImage(photo, ...src(sx, y0, sw, y1 - y0), n.cx + (sx - n.cx) * f, haut + (y0 - haut) * s, sw * f, (y1 - y0) * s + .8);
     }
     ctx.fillStyle = `rgba(255,238,220,${(.1 * Math.min(1, k)).toFixed(3)})`; ctx.fillRect(sx - 20, haut, sw + 40, hc);
     const g = ctx.createLinearGradient(0, haut, 0, haut + hc * .2);
@@ -225,238 +257,239 @@ function tuiles() {
     ctx.save();
     poly([n.bl, n.br, [n.br[0], n.br[1] + n.ep], [n.bl[0], n.bl[1] + n.ep]]); ctx.clip();
     const sh = c.h * .17, x = Math.min(n.bl[0], n.br[0]) - 6, w = Math.abs(n.br[0] - n.bl[0]) + 12;
-    ctx.drawImage(fond, (c.bx - 6) * dpr, (bas - sh) * dpr, (c.bw + 12) * dpr, sh * dpr, x, haut - 1, w, n.ep + Math.abs(n.br[1] - n.bl[1]) + 2);
+    ctx.drawImage(photo, ...src(c.bx - 6, bas - sh, c.bw + 12, sh), x, haut - 1, w, n.ep + Math.abs(n.br[1] - n.bl[1]) + 2);
     const g = ctx.createLinearGradient(0, haut, 0, haut + n.ep + 2);
     g.addColorStop(0, 'rgba(70,24,8,.12)'); g.addColorStop(1, 'rgba(40,12,3,.74)');
     ctx.fillStyle = g; ctx.fillRect(x - 4, haut - 2, w + 8, n.ep + Math.abs(n.br[1] - n.bl[1]) + 6);
     ctx.restore();
-    ctx.strokeStyle = `rgba(255,226,192,${(.6 * Math.min(1, k * 2)).toFixed(2)})`; ctx.lineWidth = 1.3;
+    ctx.strokeStyle = `rgba(255,226,192,${(.6 * Math.min(1, k * 2)).toFixed(2)})`; ctx.lineWidth = Math.max(1.3, c.h / 70);
     ctx.beginPath(); ctx.moveTo(n.bl[0], n.bl[1] + .5); ctx.lineTo(n.br[0], n.br[1] + .5); ctx.stroke();
   }
-  function dessiner() {
-    if (!pret) return;
+  function dessiner(p) {
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, toile.width, toile.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    for (const c of cases) {
-      if (c.absent) { cavite(c, Math.min(c.p[0][1], c.p[1][1]), true); continue; }
-      if (c.k < .012) continue;
-      const k = c.k, n = nez(c, k);
-      cavite(c, Math.min(n.bl[1], n.br[1]) + n.ep * .6, false);
-      ombrePortee(c, n, k);
-      dessus(c, n, k);
-      tranche(c, n, k);
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+    const k = photo.naturalWidth / PHOTO.w;
+    const x0 = Math.max(0, -cam.tx / cam.S), y0 = Math.max(0, -cam.ty / cam.S);
+    const x1 = Math.min(PHOTO.w, (W - cam.tx) / cam.S), y1 = Math.min(PHOTO.h, (H - cam.ty) / cam.S);
+    if (x1 > x0 && y1 > y0) ctx.drawImage(photo, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, cam.tx + x0 * cam.S, cam.ty + y0 * cam.S, (x1 - x0) * cam.S, (y1 - y0) * cam.S);
+    const c = cellule(), env = doux(SCENE.envol[0], SCENE.envol[1], p);
+    if (env > 0) {
+      cavite(c, Math.min(c.p[0][1], c.p[1][1]), true);
+      if (env >= 1) return;
+      /* La tuile s'envole vers nous : son nez monte, elle grandit, s'élève et s'efface. */
+      const kk = Math.min(1.7, Math.max(etat.k, 1) + env * .7), n = nez(c, kk), px = (c.p[0][0] + c.p[1][0]) / 2, py = c.p[0][1], s = 1 + env * .55;
+      ctx.save();
+      ctx.globalAlpha = 1 - doux(.35, 1, env);
+      ctx.translate(px, py - env * c.h * 1.8); ctx.scale(s, s); ctx.translate(-px, -py);
+      dessus(c, n, kk); tranche(c, n, kk);
+      ctx.restore();
+      return;
     }
+    if (etat.k < .012) return;
+    const n = nez(c, etat.k);
+    cavite(c, Math.min(n.bl[1], n.br[1]) + n.ep * .6, false);
+    ombrePortee(c, n, etat.k);
+    dessus(c, n, etat.k);
+    tranche(c, n, etat.k);
   }
 
-  /* ----- Mouvement : un ressort par tuile, une seule levée à la fois ----- */
-  function pas(t) {
-    const dt = Math.min(.05, (t - (dernier || t)) / 1000);
-    dernier = t;
-    let bouge = false;
-    for (const c of cases) {
-      if (c.absent) continue;
-      let cible = c.garde ? 1 : 0;
-      if (survol === c) cible = 1;
-      if (c.vague && t > c.vague && t < c.vague + 260) cible = 3.2 / (.5 * c.h);
-      const [raideur, frein] = c.lent && cible > 0 ? [38, 11.5] : [175, 15];
-      const acc = raideur * (cible - c.k) - frein * c.v;
-      c.v += acc * dt; c.k += c.v * dt;
-      if (c.k < 0) { c.k = 0; c.v = -c.v * .3; if (Math.abs(c.v) < .2) c.v = 0; }
-      if (Math.abs(cible - c.k) > .002 || Math.abs(c.v) > .003) bouge = true;
-    }
-    dessiner();
-    if (bouge || cases.some((c) => c.vague && t < c.vague + 700)) requestAnimationFrame(pas);
-    else { actif = false; dernier = 0; }
+  /* ----- Plans des couches : chacun s'ouvre dans une fenêtre du précédent (trou, vide entre liteaux, fente, fondu). ----- */
+  const plein = () => [-W * .1, -H * .1, W * 1.1, H * 1.1];
+  function trouverVide(im) {
+    if (!im || !im.complete || !im.naturalWidth) return null;
+    try {
+      const iw = im.naturalWidth, ih = im.naturalHeight, s = Math.max(W / iw, H / ih);
+      const pos = getComputedStyle(im).objectPosition.split(' ').map((v) => (v.endsWith('%') ? parseFloat(v) / 100 : .5));
+      const q = 4, cw = Math.ceil(W / q), ch = Math.ceil(H / q);
+      const cv = document.createElement('canvas'); cv.width = cw; cv.height = ch;
+      const g = cv.getContext('2d', { willReadFrequently: true });
+      g.drawImage(im, (W - iw * s) * pos[0] / q, (H - ih * s) * pos[1] / q, iw * s / q, ih * s / q);
+      const d = g.getImageData(0, 0, cw, ch).data, noir = (i) => d[i * 4] + d[i * 4 + 1] + d[i * 4 + 2] < 190;
+      const cx = cw * .5, cy = ch * (mobile ? .42 : .46);
+      let meilleur = -1, md = Infinity;
+      for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) { const i = y * cw + x; if (noir(i)) { const dd = (x - cx) ** 2 + (y - cy) ** 2; if (dd < md) { md = dd; meilleur = i; } } }
+      if (meilleur < 0) return null;
+      const vu = new Uint8Array(cw * ch), file = [meilleur]; vu[meilleur] = 1;
+      let x0 = cw, y0 = ch, x1 = 0, y1 = 0, n = 0;
+      while (file.length && n < cw * ch * .2) {
+        const i = file.pop(), x = i % cw, y = (i / cw) | 0; n++;
+        x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y);
+        for (const j of [i - 1, i + 1, i - cw, i + cw]) if (j >= 0 && j < cw * ch && !vu[j] && Math.abs((j % cw) - x) <= 1 && noir(j)) { vu[j] = 1; file.push(j); }
+      }
+      const bw = (x1 - x0 + 1) * q, bh = (y1 - y0 + 1) * q;
+      if (bw < 24 || bh < 10 || bw > W * .6 || bh > H * .4 || n < (x1 - x0 + 1) * (y1 - y0 + 1) * .6) return null;
+      return [x0 * q + 2, y0 * q + 2, (x1 + 1) * q - 2, (y1 + 1) * q - 2];
+    } catch { return null; }
   }
-  function relancer() { if (!anime) { cases.forEach((c) => { c.k = c.garde || survol === c ? 1 : 0; }); dessiner(); return; } if (!actif) { actif = true; dernier = 0; requestAnimationFrame(pas); } }
-
-  const toucher = () => zone.classList.add('toit-touche');
-  /* Toit en profondeur à la souris : la photo, la toile et la bulle glissent ensemble, le titre en sens opposé. */
-  const calques = [$('.toit-photo', zone), toile, etiquette].filter(Boolean), titreUne = $('.une-texte');
-  let dec = { x: 0, y: 0, s: 1 }, vise = [0, 0], suivi = [0, 0], rafP = 0;
-  const sourisFine = matchMedia('(hover: hover) and (pointer: fine)').matches;
-  function profondeur() {
-    rafP = 0;
-    suivi = suivi.map((v, i) => v + (vise[i] - v) * .09);
-    const tx = -suivi[0] * 20, ty = -suivi[1] * 12, s = 1 + 2 * Math.max(Math.abs(tx) / (W || 1), Math.abs(ty) / (H || 1)) + (tx || ty ? .004 : 0);
-    dec = { x: tx, y: ty, s };
-    const tr = tx || ty ? `translate3d(${tx.toFixed(2)}px, ${ty.toFixed(2)}px, 0) scale(${s.toFixed(4)})` : '';
-    calques.forEach((el) => {
-      el.style.transform = tr;
-      if (el === etiquette) el.style.transformOrigin = `${(W / 2 - el.offsetLeft).toFixed(0)}px ${(H / 2 - el.offsetTop).toFixed(0)}px`;
+  function fenetre(type) {
+    if (type === 'vide') {
+      if (!vide) vide = trouverVide(plans[0] && plans[0].img);
+      if (vide) return vide;
+      return [W * .5 - Math.min(W * .1, 120), H * .45 - 22, W * .5 + Math.min(W * .1, 120), H * .45 + 22];
+    }
+    const lw = mobile ? W * .34 : Math.min(W * .2, 260), lh = mobile ? H * .09 : H * .11;
+    return [W * .5 - lw, H * .47 - lh, W * .5 + lw, H * .47 + lh];
+  }
+  const appliquer = (el, s, ox, oy) => { el.style.transform = `translate3d(${ox.toFixed(2)}px, ${oy.toFixed(2)}px, 0) scale(${s.toFixed(5)})`; };
+  const montrer = (pl, v) => { if (pl._v !== v) { pl._v = v; pl.el.style.visibility = v ? 'visible' : 'hidden'; } };
+  function majPlans(p) {
+    const b = doux(SCENE.trou[0], SCENE.trou[1], p);
+    if (planToit) planToit.style.visibility = b >= 1 ? 'hidden' : '';
+    sec.classList.toggle('sous-toit', b >= 1);
+    plans.forEach((pl, j) => {
+      /* Entrée du plan j : par le trou de la tuile (j = 0) ou par la fenêtre du passage précédent. */
+      let r, typeEntree, fen = null, sortie = 0, typeSortie = null;
+      if (j === 0) { r = b; typeEntree = 'trou'; }
+      else { const [d, f, t] = SCENE.passages[j - 1]; r = lin(d, f, p); typeEntree = t; }
+      if (j < plans.length - 1) { const [d, f, t] = SCENE.passages[j]; sortie = lin(d, f, p); typeSortie = t; }
+      if (r <= 0 || sortie >= 1) { montrer(pl, false); return; }
+      montrer(pl, true);
+      /* Dérive lente pendant l'arrêt, puis plongée dans la fenêtre de sortie. */
+      const debutArret = j === 0 ? SCENE.trou[1] : SCENE.passages[j - 1][1];
+      const finArret = j < plans.length - 1 ? SCENE.passages[j][0] : 1;
+      const sd = 1 + .035 * lin(debutArret, finArret, p);
+      let s = sd, ox = W * .5 * (1 - sd), oy = H * .5 * (1 - sd), op = 1;
+      if (sortie > 0) {
+        const e = doux(0, 1, sortie);
+        if (typeSortie === 'fondu') { const z = 1 + .6 * e; s = sd * z; ox = W * .5 - (W * .5 - ox) * z; oy = H * .5 - (H * .5 - oy) * z; op = 1 - lin(.25, .95, sortie); }
+        else {
+          fen = fenetre(typeSortie);
+          const fx = (fen[0] + fen[2]) / 2, fy = (fen[1] + fen[3]) / 2, sx = ox + sd * fx, sy = oy + sd * fy;
+          const Z = borne(Math.min(W / (fen[2] - fen[0]), H / (fen[3] - fen[1])) * .9, 2.2, 6);
+          const z = Math.pow(Z, typeSortie === 'fente' ? doux(.18, 1, sortie) : e);
+          s = sd * z; ox = sx - fx * s; oy = sy - fy * s;
+        }
+      }
+      appliquer(pl.cam, s, ox, oy);
+      pl._s = s; pl._ox = ox; pl._oy = oy;
+      if (r >= 1) { pl.el.style.clipPath = ''; pl.el.style.opacity = String(op); return; }
+      /* Pendant l'entrée : le plan se voit à travers la fenêtre, de plus loin, et vient à sa place. */
+      const e = doux(0, 1, r);
+      if (typeEntree === 'trou') {
+        const c = cellule(), cx = (c.p[0][0] + c.p[2][0]) / 2, cy = (c.p[0][1] + c.p[2][1]) / 2, si = melange(.5, 1, e) * s;
+        appliquer(pl.cam, si, cx - (cx - ox) * si / s, cy - (cy - oy) * si / s);
+        pl.el.style.clipPath = b < .985 ? `polygon(${c.p.map(([x, y]) => `${x.toFixed(1)}px ${y.toFixed(1)}px`).join(',')})` : '';
+        pl.el.style.opacity = lin(.1, .55, r).toFixed(3);
+        return;
+      }
+      if (typeEntree === 'fondu') {
+        const si = melange(1.22, 1, e) * s;
+        appliquer(pl.cam, si, W * .5 - (W * .5 - ox) * si / s, H * .5 - (H * .5 - oy) * si / s);
+        pl.el.style.clipPath = ''; pl.el.style.opacity = lin(0, .7, r).toFixed(3);
+        return;
+      }
+      const prec = plans[j - 1];
+      const f = fenetre(typeEntree), ps = prec._s || 1, pox = prec._ox || 0, poy = prec._oy || 0;
+      let R = [pox + f[0] * ps, poy + f[1] * ps, pox + f[2] * ps, poy + f[3] * ps];
+      if (typeEntree === 'fente') { const o = doux(0, .3, r), my = (R[1] + R[3]) / 2, hh = (R[3] - R[1]) / 2 * Math.max(.03, o); R = [R[0], my - hh, R[2], my + hh]; }
+      const g = Math.pow(lin(.35, 1, r), 1.6), P = plein();
+      R = R.map((v, i) => melange(v, P[i], g));
+      const cx = (R[0] + R[2]) / 2, cy = (R[1] + R[3]) / 2, si = melange(.6, 1, e) * s;
+      appliquer(pl.cam, si, cx - (cx - ox) * si / s, cy - (cy - oy) * si / s);
+      pl.el.style.clipPath = g >= 1 ? '' : `inset(${Math.max(0, R[1]).toFixed(1)}px ${Math.max(0, W - R[2]).toFixed(1)}px ${Math.max(0, H - R[3]).toFixed(1)}px ${Math.max(0, R[0]).toFixed(1)}px)`;
+      pl.el.style.opacity = lin(0, .4, r).toFixed(3);
     });
-    if (titreUne) titreUne.style.transform = tx || ty ? `translate3d(${(suivi[0] * 10).toFixed(2)}px, ${(suivi[1] * 6).toFixed(2)}px, 0)` : '';
-    if (Math.abs(vise[0] - suivi[0]) > .002 || Math.abs(vise[1] - suivi[1]) > .002) rafP = requestAnimationFrame(profondeur);
   }
-  if (anime && sourisFine && titreUne) {
-    const scene = zone.parentElement;
-    scene.addEventListener('pointermove', (e) => { if (phase !== 'fini' || e.pointerType !== 'mouse') return; const r = scene.getBoundingClientRect(); vise = [(e.clientX - r.left) / r.width - .5, (e.clientY - r.top) / r.height - .5]; if (!rafP) rafP = requestAnimationFrame(profondeur); });
-    scene.addEventListener('pointerleave', () => { vise = [0, 0]; if (!rafP) rafP = requestAnimationFrame(profondeur); });
+
+  /* ----- Textes : le titre s'efface, une couche à la fois, le fil à droite ----- */
+  function majTextes(p) {
+    /* Le titre ne s'efface pas : il monte et sort de l'écran, comme une page qu'on fait défiler. */
+    if (une) {
+      const e = doux(SCENE.une[0], SCENE.une[1], p);
+      une.style.transform = e > 0 ? `translate3d(0, ${(-(une.offsetHeight + 40) * e).toFixed(1)}px, 0)` : '';
+      une.style.visibility = e >= 1 ? 'hidden' : '';
+    }
+    if (ombreTexte) ombreTexte.style.opacity = doux(.1, .17, p).toFixed(3);
+    let actif = -1;
+    SCENE.legendes.forEach(([d, f], i) => { if (p >= d && p < f) actif = i; });
+    if (actif !== etat.actif) {
+      etat.actif = actif;
+      legendes.forEach((l, i) => l.classList.toggle('actif', i === actif));
+    }
+    let fil = 0;
+    SCENE.legendes.forEach(([d], i) => { if (p >= d - .02) fil = i; });
+    rail.forEach((li, i) => li.classList.toggle('actif', i === fil));
+    sec.classList.toggle('dessous', p > .13);
   }
-  const caseSous = (e) => {
-    const r = zone.getBoundingClientRect();
-    let x = e.clientX - r.left, y = e.clientY - r.top;
-    x = (x - W / 2 - dec.x) / dec.s + W / 2; y = (y - H / 2 - dec.y) / dec.s + H / 2;
-    return cases.find((c) => !c.absent && dedans([x, y], c.p)) || null;
+
+  /* ----- Boucle : ressort de la tuile, caméra, plans ----- */
+  const interactif = () => cam.a > .9 && etat.p < SCENE.envol[0];
+  function rendre(t) {
+    raf = 0;
+    const dt = Math.min(.05, (t - (dernierT || t)) / 1000); dernierT = t;
+    const p = etat.p;
+    const auto = doux(SCENE.leve[0], SCENE.leve[1], p);
+    const cible = Math.max(auto, interactif() && (etat.survol || etat.garde) ? 1 : 0);
+    const acc = 120 * (cible - etat.k) - 13 * etat.v;
+    etat.v += acc * dt; etat.k += etat.v * dt;
+    if (etat.k < 0) { etat.k = 0; etat.v = -etat.v * .3; if (Math.abs(etat.v) < .2) etat.v = 0; }
+    const bouge = Math.abs(cible - etat.k) > .002 || Math.abs(etat.v) > .003;
+    cam = camera(p);
+    if (cam.a > .97 && !etat.invite && p < SCENE.leve[0]) { etat.invite = true; etat.v = 3.4; }
+    if (pret && cam.b < 1) dessiner(p);
+    majPlans(p);
+    majTextes(p);
+    if (bouge) demander(); else dernierT = 0;
+  }
+  function demander() { if (!raf) raf = requestAnimationFrame(rendre); }
+
+  /* ----- Gestes sur la grande tuile ----- */
+  const surTuile = (e) => {
+    if (!interactif()) return false;
+    const r = scene.getBoundingClientRect();
+    return dedans([(e.clientX - r.left - cam.tx) / cam.S, (e.clientY - r.top - cam.ty) / cam.S], HEROS_P);
   };
   zone.addEventListener('pointermove', (e) => {
-    const c = caseSous(e);
-    zone.classList.toggle('sur-tuile', !!c);
-    if ((e.pointerType === 'mouse' || e.pointerType === 'pen') && c !== survol) { survol = c; if (c) toucher(); relancer(); }
+    const s = surTuile(e);
+    zone.classList.toggle('sur-tuile', s);
+    if (e.pointerType !== 'touch' && s !== etat.survol) { etat.survol = s; demander(); }
   });
-  zone.addEventListener('pointerleave', () => { survol = null; zone.classList.remove('sur-tuile'); relancer(); });
-  zone.addEventListener('click', (e) => {
-    if (e.target.closest('a')) return;
-    const c = caseSous(e);
-    if (!c) return;
-    toucher();
-    const garde = !c.garde;
-    cases.forEach((x) => { x.garde = false; });
-    c.garde = garde; relancer();
-    if (garde) setTimeout(() => montrerDevis(c), anime ? 230 : 0); else cacherDevis();
-  });
+  zone.addEventListener('pointerleave', () => { etat.survol = false; zone.classList.remove('sur-tuile'); demander(); });
+  zone.addEventListener('click', (e) => { if (!surTuile(e)) return; etat.garde = !etat.garde; demander(); });
 
-  /* La tuile mène au devis : au-dessus de la tuile levée, « Un doute sur la vôtre ? Diagnostic gratuit ». */
-  function montrerDevis(c, joue = true) {
-    if (!etiquette || !c) return;
-    etiquette.hidden = false;
-    const w = etiquette.offsetWidth || 250, h = etiquette.offsetHeight || 60;
-    etiquette.style.left = `${Math.min(W - w - 12, Math.max(12, c.bx + c.bw / 2 - 40)).toFixed(0)}px`;
-    etiquette.style.top = `${Math.max(12, c.by - h - 14).toFixed(0)}px`;
-    if (joue && anime) gsap.fromTo(etiquette, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: .45, ease: 'back.out(1.6)' });
-  }
-  function cacherDevis() { if (etiquette) etiquette.hidden = true; }
-
-  /* Arrivée : la tuile du logo se pose dans son trou, ses deux voisines frémissent de 3 px, puis elle se lève
-     lentement et la bulle du devis apparaît au-dessus. */
-  function poser(depuisLogo = false) {
-    if (phase !== 'attente') return;
-    phase = 'pose';
-    if (!heros) return;
-    heros.absent = false;
-    if (depuisLogo) { heros.k = .08; heros.v = -1.2; } else { heros.k = 1.2; heros.v = 0; }
-    relancer();
-    setTimeout(() => {
-      const t0 = performance.now();
-      const voisines = [trouver(heros.r, heros.q - 1), trouver(heros.r, heros.q + 1)].filter(Boolean);
-      voisines.forEach((c, i) => { c.vague = t0 + i * 280; });
-      relancer();
-      setTimeout(() => {
-        heros.garde = true; heros.lent = true; phase = 'fini'; relancer();
-        setTimeout(() => { heros.lent = false; montrerDevis(heros); }, 900);
-      }, voisines.length * 280 + 320);
-    }, depuisLogo ? 420 : 820);
-  }
-  /* Intro de l'accueil : le logo prend la couleur et la forme de la tuile manquante, puis tombe dans son trou. */
-  function intro(tl, panneau) {
-    if (!anime || !heros || !panneau) return false;
-    const logo = $('[data-ouverture-objet]', panneau);
-    if (!logo) return false;
-    const zr = zone.getBoundingClientRect(), L = logo.getBoundingClientRect();
-    const face = document.createElement('canvas');
-    face.width = Math.max(1, Math.round(heros.bw * dpr)); face.height = Math.max(1, Math.round(heros.bh * dpr));
-    face.getContext('2d').drawImage(fond, heros.bx * dpr, heros.by * dpr, heros.bw * dpr, heros.bh * dpr, 0, 0, face.width, face.height);
-    face.className = 'tuile-vol-face';
-    face.style.clipPath = `polygon(${heros.p.map(([x, y]) => `${(x - heros.bx).toFixed(1)}px ${(y - heros.by).toFixed(1)}px`).join(',')})`;
-    const image = logo.cloneNode(true);
-    image.removeAttribute('data-ouverture-objet'); image.className = 'tuile-vol-logo';
-    const vol = document.createElement('div');
-    vol.className = 'tuile-vol';
-    vol.style.cssText = `left:${(zr.left + heros.bx).toFixed(1)}px;top:${(zr.top + heros.by).toFixed(1)}px;width:${heros.bw.toFixed(1)}px;height:${heros.bh.toFixed(1)}px`;
-    vol.append(face, image);
-    document.body.append(vol);
-    const cx = zr.left + heros.bx + heros.bw / 2, cy = zr.top + heros.by + heros.bh / 2;
-    gsap.set(vol, { x: L.left + L.width / 2 - cx, y: L.top + L.height / 2 - cy, scale: L.width / heros.bw, transformPerspective: 900, '--o': 1 });
-    gsap.set(face, { opacity: 0 });
-    let fini = false;
-    const atterrir = () => { if (fini) return; fini = true; vol.remove(); poser(true); };
-    tl.set(logo, { opacity: 0 }, .18)
-      .set(vol, { visibility: 'visible' }, .18)
-      .to(panneau, { opacity: 0, duration: .32, ease: 'power2.out' }, .22)
-      .to(face, { opacity: 1, duration: .22 }, .3)
-      .to(image, { opacity: 0, duration: .22 }, .34)
-      .to(vol, { x: 0, y: -50, scale: 1.14, rotationX: 30, duration: .5, ease: 'power2.inOut' }, .24)
-      .to(vol, { y: 0, scale: 1, rotationX: 0, '--o': 0, duration: .42, ease: 'bounce.out' }, .74)
-      .call(atterrir, null, 1.17);
-    setTimeout(atterrir, 3200);
-    return true;
-  }
-  function placerLegende() {}
-  function final() {
-    phase = 'fini';
-    if (!heros) return;
-    heros.absent = false; heros.garde = true; heros.k = 1; heros.v = 0;
-    dessiner(); montrerDevis(heros, false);
-  }
-
-  /* Lumière de l'heure : l'ombre de la tuile levée suit le soleil réel sur Taverny (on regarde vers le sud). */
+  /* ----- Lumière de l'heure : l'ombre de la tuile levée suit le soleil réel sur Taverny (on regarde vers le sud). ----- */
   function majSoleil() {
     const s = soleil(), heure = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', hour: 'numeric', minute: '2-digit' }).format(new Date()).replace(':', ' h ');
     const rel = ((s.az - 180) * Math.PI) / 180;
     if (s.el > 0) {
       const l = Math.min(2.2, Math.max(.45, .32 / Math.tan((Math.max(5, s.el) * Math.PI) / 180)));
       ombre = { x: -Math.sin(rel) * .9, y: Math.max(.2, Math.cos(rel)) * .75, l, flou: 5 + l * 3, nuit: false };
-      if (legende) { legende.textContent = `L’ombre suit le soleil de Taverny, ${heure}`; legende.classList.remove('nuit'); }
+      if (legende) legende.textContent = `Son ombre suit le soleil de Taverny, ${heure}.`;
     } else {
       ombre = { x: 0, y: .4, l: .6, flou: 14, nuit: true };
-      if (legende) { legende.textContent = `Soleil couché sur Taverny, ${heure} : ombre douce`.replace(' :', '\u00a0:'); legende.classList.add('nuit'); }
+      if (legende) legende.textContent = `Soleil couché sur Taverny, ${heure} : ombre douce.`.replace(' :', ' :');
     }
-    if (legende) { legende.hidden = false; placerLegende(); }
-    dessiner();
+    demander();
   }
   majSoleil();
   setInterval(majSoleil, 60000);
 
-  let attente;
-  new ResizeObserver(() => { clearTimeout(attente); attente = setTimeout(() => { construire(); if (heros && heros.garde && etiquette && !etiquette.hidden) montrerDevis(heros, false); }, 120); }).observe(zone);
-  const charger = () => construire();
-  if (img.complete && img.naturalWidth) (img.decode ? img.decode() : Promise.resolve()).catch(() => {}).then(charger);
-  img.addEventListener('load', charger);
-  toit = { construire, poser, final, intro, arriver: () => setTimeout(poser, 300) };
-}
-
-/* ---------- Scène : les couches du toit se soulèvent une à une (data-grille="scene") ---------- */
-function couches() {
-  const sec = $('.couches');
-  if (!sec || calme() || !gsap || !window.ScrollTrigger) return;
-  const plaques = $$('.plaque', sec), items = $$('.couches-liste li', sec), n = plaques.length;
-  const compte = $('[data-couche-n]', sec);
-  const lisse = (x) => x * x * (3 - 2 * x);
-  let actifAvant = -1;
-  const maj = (p) => {
-    let actif = 0;
-    plaques.forEach((pl, k) => {
-      const debut = .05 + k * (.86 / (n - 1)), l = Math.min(1, Math.max(0, (p - debut) / (.86 / (n - 1) * .8)));
-      const e = lisse(l);
-      /* Couches encore dessous : décalées en profondeur, elles remontent d'un cran à chaque couche soulevée. */
-      const rang = Math.max(0, k - p * (n - 1) / .86 + .05 * (n - 1) / .86);
-      const fond = `translate3d(0, ${(rang * 2.2).toFixed(2)}%, ${(-rang * 40).toFixed(1)}px)`;
-      if (k === n - 1) { pl.style.transform = fond; return; }
-      pl.style.transform = l > 0 ? `translateY(${(-e * 6).toFixed(2)}%) rotateX(${(e * 104).toFixed(2)}deg)` : fond;
-      pl.style.opacity = e > .82 ? String(Math.max(0, 1 - (e - .82) / .18)) : '';
-      if (l >= .5) actif = k + 1;
-    });
-    if (actif !== actifAvant) {
-      actifAvant = actif;
-      items.forEach((it, i) => it.classList.toggle('actif', i === actif));
-      if (compte) compte.textContent = String(actif + 1);
-    }
-  };
-  /* Progression amortie : les couches suivent le défilement avec un léger retard, sans à-coups. */
+  /* ----- Défilement : progression amortie, sans à-coups ----- */
   const suivi = { p: 0 };
-  const vers = (p) => gsap.to(suivi, { p, duration: .7, ease: 'power2.out', overwrite: true, onUpdate: () => maj(suivi.p) });
-  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (s) => vers(s.progress), onRefresh: (s) => { suivi.p = s.progress; maj(s.progress); } });
-  /* Couches à la main (souris) : tirer la couche vers le haut la soulève ; on avance dans la scène du même geste. */
-  const pile = $('.couches-pile', sec);
-  let tire = null;
-  pile.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') return; tire = { y: e.clientY, s: scrollY }; pile.setPointerCapture(e.pointerId); e.preventDefault(); });
-  pile.addEventListener('pointermove', (e) => {
-    if (!tire) return;
-    const cible = tire.s + (tire.y - e.clientY) * ((st.end - st.start) / (pile.clientHeight * 2.4));
-    window.scrollTo(0, Math.min(st.end, Math.max(st.start, cible)));
-  });
-  const fin = () => { tire = null; };
-  pile.addEventListener('pointerup', fin); pile.addEventListener('pointercancel', fin);
+  const vers = (p) => gsap.to(suivi, { p, duration: .65, ease: 'power2.out', overwrite: true, onUpdate: () => { etat.p = suivi.p; demander(); } });
+  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (s) => vers(s.progress), onRefresh: (s) => { suivi.p = etat.p = s.progress; demander(); } });
+  rail.forEach((li, i) => $('a', li).addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: st.start + SCENE.arrets[i] * (st.end - st.start), behavior: 'smooth' });
+    try { history.replaceState(null, '', `#couche-${i + 1}`); } catch {}
+  }));
+
+  let attente;
+  new ResizeObserver(() => { clearTimeout(attente); attente = setTimeout(mesurer, 100); }).observe(scene);
+  plans.forEach((pl) => pl.img && pl.img.addEventListener('load', () => { vide = null; demander(); }));
+  /* Les plans des couches se chargent dès que la photo du toit est là (jamais avant l'image d'ouverture). */
+  const charger = () => { pret = true; zone.classList.add('toile-prete'); mesurer(); plans.forEach((pl) => { if (pl.img) pl.img.loading = 'eager'; }); };
+  photo.addEventListener('load', () => (photo.decode ? photo.decode() : Promise.resolve()).catch(() => {}).then(charger));
+  if (photo.complete && photo.naturalWidth) charger();
+  mesurer();
+
+  plongee = {
+    /* Intro : la photo se pose en reculant légèrement pendant que le panneau du logo s'efface. */
+    intro(tl, a = .2) { const o = { z: 1.09 }; etat.intro = 1.09; demander(); tl.to(o, { z: 1, duration: 1.7, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
+    final() { etat.intro = 1; demander(); },
+    arriver() { const o = { z: 1.05 }; etat.intro = 1.05; gsap.to(o, { z: 1, duration: 1.4, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }); },
+  };
 }
 
 /* ---------- Métiers : la grille se recompose comme des tuiles qu'on réarrange (Flip) ---------- */
@@ -536,7 +569,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=2'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=3'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
@@ -628,54 +661,209 @@ function finitions() {
   }));
 }
 
-/* Couverture : la pente d'ouverture arrive moussue ; la souris ou le doigt la démousse (brosse douce, gomme sur la toile). */
+/* Couverture : la pente d'ouverture arrive moussue, mais seulement sur les tuiles (jamais sur le ciel, les arbres, la
+   fenêtre de toit ni l'écran). Une carte de cellules (assets/images/mousse-cellules*.png, une couleur par tuile ou
+   groupe de tuiles, découpée sur la photo) dit où est chaque tuile. La mousse pousse dans les joints et sur les nez ;
+   la brosse la retire tuile par tuile, dans un petit nuage de brins, et découvre la terre cuite propre. */
 let mousse = null;
 function demoussage() {
   const toile = $('.mousse');
-  if (!toile || calme()) { if (toile) toile.hidden = true; return; }
-  const pente = toile.parentElement, ctx = toile.getContext('2d');
-  let W = 0, H = 0, dpr = 1, frotte = 0, dernier = null, demo = false;
+  if (!toile) return;
+  const pente = toile.parentElement, ctx = toile.getContext('2d'), img = $('.media img', pente);
+  const jauge = $('.mousse-jauge span', pente), geste = $('.mousse-geste', pente);
+  let W = 0, H = 0, dpr = 1, carte = null, demo = false, frotte = 0, dernier = null, raf = 0;
+  const propres = new Set(), enCours = new Map(), brins = [];
   const alea = (n) => { let s = n * 9301 + 49297; return () => ((s = (s * 9301 + 49297) % 233280) / 233280); };
+
+  /* Carte des cellules : lue une fois par cadrage (paysage ou téléphone). */
+  const cartes = {};
+  function lireCarte(mobile) {
+    const cle = mobile ? 'mobile' : 'paysage';
+    if (cartes[cle]) return cartes[cle];
+    return (cartes[cle] = new Promise((ok) => {
+      const im = new Image();
+      im.onload = () => {
+        const cw = im.naturalWidth, ch = im.naturalHeight, cv = document.createElement('canvas');
+        cv.width = cw; cv.height = ch;
+        const g = cv.getContext('2d', { willReadFrequently: true });
+        g.drawImage(im, 0, 0);
+        const d = g.getImageData(0, 0, cw, ch).data, lab = new Uint16Array(cw * ch);
+        let n = 0;
+        for (let i = 0; i < cw * ch; i++) if (d[i * 4 + 2] > 127) { lab[i] = d[i * 4] + d[i * 4 + 1] * 256; n = Math.max(n, lab[i]); }
+        const boites = Array.from({ length: n + 1 }, () => [cw, ch, -1, -1, 0]);
+        for (let y = 0; y < ch; y++) for (let x = 0; x < cw; x++) { const l = lab[y * cw + x]; if (!l) continue; const b = boites[l]; if (x < b[0]) b[0] = x; if (y < b[1]) b[1] = y; if (x > b[2]) b[2] = x; if (y > b[3]) b[3] = y; b[4]++; }
+        /* Masque des tuiles (blanc opaque là où il y a une tuile), pour découper la mousse. */
+        const m = g.createImageData(cw, ch);
+        for (let i = 0; i < cw * ch; i++) if (lab[i]) { m.data[i * 4] = m.data[i * 4 + 1] = m.data[i * 4 + 2] = 255; m.data[i * 4 + 3] = 255; }
+        const masque = document.createElement('canvas'); masque.width = cw; masque.height = ch; masque.getContext('2d').putImageData(m, 0, 0);
+        ok({ cw, ch, lab, boites, n, masque, formes: new Map() });
+      };
+      im.onerror = () => ok(null);
+      im.src = `/assets/images/mousse-cellules${mobile ? '-mobile' : ''}.png`;
+    }));
+  }
+  /* Où la photo est posée dans la pente (object-fit: cover et son cadrage). */
+  let pose = { x: 0, y: 0, l: 1, h: 1 };
+  function poser() {
+    const iw = img.naturalWidth || 16, ih = img.naturalHeight || 9, s = Math.max(W / iw, H / ih);
+    const pos = getComputedStyle(img).objectPosition.split(' ').map((v) => (v.endsWith('%') ? parseFloat(v) / 100 : .5));
+    pose = { x: (W - iw * s) * pos[0], y: (H - ih * s) * (pos[1] ?? .5), l: iw * s, h: ih * s };
+  }
+  const versCarte = (x, y) => [Math.floor((x - pose.x) / pose.l * carte.cw), Math.floor((y - pose.y) / pose.h * carte.ch)];
+  const etiquette = (x, y) => { const [cx, cy] = versCarte(x, y); return cx < 0 || cy < 0 || cx >= carte.cw || cy >= carte.ch ? 0 : carte.lab[cy * carte.cw + cx]; };
+  /* Forme d'une cellule (petit masque à sa taille), faite à la demande. */
+  function forme(l) {
+    let f = carte.formes.get(l);
+    if (f) return f;
+    const [x0, y0, x1, y1] = carte.boites[l], w = x1 - x0 + 1, h = y1 - y0 + 1, cv = document.createElement('canvas');
+    cv.width = w; cv.height = h;
+    const g = cv.getContext('2d'), m = g.createImageData(w, h);
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (carte.lab[(y0 + y) * carte.cw + x0 + x] === l) m.data[(y * w + x) * 4 + 3] = 255;
+    g.putImageData(m, 0, 0);
+    f = { cv, x: x0, y: y0, w, h };
+    carte.formes.set(l, f);
+    return f;
+  }
+  /* Cellules utiles : celles qui se voient dans le cadre (la jauge compte celles-là). */
+  let utiles = 0;
+  function compterUtiles() {
+    utiles = 0;
+    for (let l = 1; l <= carte.n; l++) {
+      const b = carte.boites[l]; if (b[4] < 12) continue;
+      const cx = pose.x + (b[0] + b[2]) / 2 / carte.cw * pose.l, cy = pose.y + (b[1] + b[3]) / 2 / carte.ch * pose.h;
+      if (cx > 8 && cx < W - 8 && cy > 8 && cy < H - 8) utiles++;
+    }
+  }
+
+  /* ----- La mousse : un voile sale, des coussins de mousse dans les joints, des taches de lichen ----- */
   function peindre() {
-    W = pente.clientWidth; H = pente.clientHeight; dpr = Math.min(2, devicePixelRatio || 1);
-    toile.width = Math.round(W * dpr); toile.height = Math.round(H * dpr);
+    ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, toile.width, toile.height);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const r = alea(7);
-    ctx.fillStyle = 'rgba(64,72,44,.42)'; ctx.fillRect(0, 0, W, H);
-    const teintes = ['74,86,44', '92,104,58', '58,64,40', '120,124,78', '160,156,96', '40,44,34'];
-    for (let i = 0; i < 2600; i++) {
-      const x = r() * W, y = H * .08 + r() * H * .97, rr = 2 + r() * r() * 22, c = teintes[Math.floor(r() * teintes.length)];
-      const g = ctx.createRadialGradient(x, y, 0, x, y, rr);
-      g.addColorStop(0, `rgba(${c},${(.35 + r() * .45).toFixed(2)})`); g.addColorStop(1, `rgba(${c},0)`);
+    const r = alea(11), sx = pose.l / carte.cw, sy = pose.h / carte.ch;
+    /* Voile : la terre cuite ternie, verdâtre. */
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.fillStyle = 'rgba(58,62,38,.5)'; ctx.fillRect(0, 0, W, H);
+    for (let i = 0; i < 260; i++) {
+      const x = r() * W, y = r() * H, rr = 20 + r() * 70, t = ['48,56,30', '84,88,52', '36,38,28', '102,98,64'][Math.floor(r() * 4)];
+      const g = ctx.createRadialGradient(x, y, 0, x, y, rr); g.addColorStop(0, `rgba(${t},${(.18 + r() * .3).toFixed(2)})`); g.addColorStop(1, `rgba(${t},0)`);
       ctx.fillStyle = g; ctx.fillRect(x - rr, y - rr, rr * 2, rr * 2);
     }
-    for (let i = 0; i < 260; i++) { ctx.fillStyle = `rgba(20,24,16,${(.12 + r() * .2).toFixed(2)})`; ctx.fillRect(r() * W, r() * H, 1 + r() * 2, 6 + r() * 30); }
+    /* Joints : la mousse pousse là où deux tuiles se touchent (bords des cellules), surtout en bas des nez. */
+    const { cw, ch, lab } = carte, joints = [];
+    for (let y = 1; y < ch - 1; y += 1) for (let x = 1; x < cw - 1; x += 1) {
+      const l = lab[y * cw + x]; if (!l) continue;
+      if (lab[y * cw + x + 1] !== l || lab[(y + 1) * cw + x] !== l) joints.push(x, y);
+    }
+    const coussin = (x, y, taille) => {
+      const n = Math.round(14 + taille * 26);
+      for (let k = 0; k < n; k++) {
+        const a = r() * Math.PI * 2, d = Math.sqrt(r()) * taille * 7, px = x + Math.cos(a) * d * 1.3, py = y + Math.sin(a) * d * .8;
+        const haut = py < y - d * .2, ton = haut ? ['142,152,62', '168,170,78', '120,134,52'] : ['62,76,30', '78,94,36', '44,54,24', '96,110,42'];
+        ctx.fillStyle = `rgba(${ton[Math.floor(r() * ton.length)]},${(.65 + r() * .35).toFixed(2)})`;
+        const e = .7 + r() * 1.6; ctx.fillRect(px, py, e, e * (.8 + r() * .9));
+      }
+      /* Brins dressés, plus clairs au bout. */
+      ctx.strokeStyle = 'rgba(176,180,92,.7)'; ctx.lineWidth = .7;
+      ctx.beginPath();
+      for (let k = 0; k < 4 + taille * 4; k++) { const px = x + (r() - .5) * taille * 12, py = y + (r() - .5) * taille * 6; ctx.moveTo(px, py); ctx.lineTo(px + (r() - .5) * 3, py - 2 - r() * 4); }
+      ctx.stroke();
+    };
+    const nJ = joints.length / 2;
+    for (let i = 0; i < Math.min(5200, nJ * .5); i++) {
+      const k = Math.floor(r() * nJ), x = pose.x + (joints[k * 2] + .5) * sx, y = pose.y + (joints[k * 2 + 1] + .5) * sy;
+      if (x < -10 || x > W + 10 || y < -10 || y > H + 10) continue;
+      coussin(x, y, .35 + r() * r() * 1.4);
+    }
+    /* Lichen : rosettes pâles. */
+    for (let i = 0; i < 160; i++) {
+      const x = r() * W, y = r() * H, rr = 2 + r() * 6;
+      ctx.fillStyle = `rgba(${r() < .5 ? '206,204,156' : '214,196,110'},${(.35 + r() * .35).toFixed(2)})`;
+      ctx.beginPath(); for (let k = 0; k < 9; k++) { const a = k / 9 * Math.PI * 2, d = rr * (.7 + r() * .45); k ? ctx.lineTo(x + Math.cos(a) * d, y + Math.sin(a) * d) : ctx.moveTo(x + d, y); } ctx.closePath(); ctx.fill();
+    }
+    /* Seulement sur les tuiles : la carte découpe la mousse. */
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.drawImage(carte.masque, pose.x, pose.y, pose.l, pose.h);
+    ctx.globalCompositeOperation = 'source-over';
+    /* Tuiles déjà brossées (après un changement de taille). */
+    propres.forEach((l) => effacer(l, 1));
   }
+  function effacer(l, a) {
+    const f = forme(l), sx = pose.l / carte.cw, sy = pose.h / carte.ch;
+    ctx.save(); ctx.globalCompositeOperation = 'destination-out'; ctx.globalAlpha = a;
+    ctx.drawImage(f.cv, pose.x + (f.x - .6) * sx, pose.y + (f.y - .6) * sy, (f.w + 1.2) * sx, (f.h + 1.2) * sy);
+    ctx.restore();
+  }
+  /* Un coup de brosse : chaque tuile touchée se nettoie d'un coup, avec un petit nuage de brins. */
+  function nettoyer(l, x, y) {
+    if (!l || propres.has(l)) return;
+    propres.add(l); enCours.set(l, 0);
+    const b = carte.boites[l], cx = pose.x + (b[0] + b[2]) / 2 / carte.cw * pose.l, cy = pose.y + (b[1] + b[3]) / 2 / carte.ch * pose.h;
+    for (let k = 0; k < 7; k++) brins.push({ x: cx + (Math.random() - .5) * 16, y: cy + (Math.random() - .5) * 8, vx: (x - (dernier ? dernier[0] : x)) * .05 + (Math.random() - .5) * 60, vy: -30 - Math.random() * 50, t: 0, c: ['74,88,34', '120,132,52', '160,164,80'][k % 3], e: 1 + Math.random() * 1.8 });
+    demander();
+  }
+  const brosseR = () => Math.max(26, Math.min(44, W * .035));
   function brosser(x, y) {
-    ctx.save(); ctx.globalCompositeOperation = 'destination-out';
-    const pas = dernier ? Math.max(1, Math.ceil(Math.hypot(x - dernier[0], y - dernier[1]) / 8)) : 1;
+    if (!carte) return;
+    const pas = dernier ? Math.max(1, Math.ceil(Math.hypot(x - dernier[0], y - dernier[1]) / 10)) : 1, R = brosseR();
     for (let k = 1; k <= pas; k++) {
       const px = dernier ? dernier[0] + (x - dernier[0]) * k / pas : x, py = dernier ? dernier[1] + (y - dernier[1]) * k / pas : y;
-      const g = ctx.createRadialGradient(px, py, 0, px, py, 46);
-      g.addColorStop(0, 'rgba(0,0,0,.9)'); g.addColorStop(.6, 'rgba(0,0,0,.5)'); g.addColorStop(1, 'rgba(0,0,0,0)');
-      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px, py, 46, 0, Math.PI * 2); ctx.fill();
+      for (const [ox, oy] of [[0, 0], [.55, 0], [-.55, 0], [0, .45], [0, -.45], [.4, .35], [-.4, -.35], [.4, -.35], [-.4, .35]]) nettoyer(etiquette(px + ox * R, py + oy * R), x, y);
     }
-    ctx.restore(); dernier = [x, y];
-    if (!demo && ++frotte > 4) pente.classList.add('mousse-touchee');
+    dernier = [x, y];
+    if (!demo) { if (++frotte > 3) pente.classList.add('mousse-touchee'); if (geste) geste.classList.add('en-cours'); }
+    majJauge();
   }
+  function majJauge() {
+    const pc = utiles ? Math.min(100, Math.round(propres.size / (utiles * .85) * 100)) : 0;
+    if (jauge) jauge.style.transform = `scaleX(${(pc / 100).toFixed(3)})`;
+    if (pc >= 100 && !demo) pente.classList.add('mousse-fini');
+  }
+  /* Animation : les tuiles brossées s'éclaircissent en 0,3 s, les brins tombent. */
+  let dernierT = 0;
+  function pas(t) {
+    raf = 0;
+    const dt = Math.min(.05, (t - (dernierT || t)) / 1000); dernierT = t;
+    enCours.forEach((v, l) => { const n = Math.min(1, v + dt / .3); effacer(l, Math.min(1, (n - v) / Math.max(.01, 1 - v))); if (n >= 1) enCours.delete(l); else enCours.set(l, n); });
+    debris.setTransform(1, 0, 0, 1, 0, 0); debris.clearRect(0, 0, eclats.width, eclats.height); debris.setTransform(dpr, 0, 0, dpr, 0, 0);
+    for (let i = brins.length - 1; i >= 0; i--) {
+      const b = brins[i]; b.t += dt; b.vy += 260 * dt; b.x += b.vx * dt; b.y += b.vy * dt;
+      if (b.t > .9) { brins.splice(i, 1); continue; }
+      debris.fillStyle = `rgba(${b.c},${(1 - b.t / .9).toFixed(2)})`; debris.fillRect(b.x, b.y, b.e, b.e * 1.6);
+    }
+    if (enCours.size || brins.length) demander(); else dernierT = 0;
+  }
+  function demander() { if (!raf) raf = requestAnimationFrame(pas); }
+  /* Les brins qui tombent ont leur propre calque, au-dessus. */
+  const eclats = document.createElement('canvas');
+  eclats.className = 'mousse-brins'; eclats.setAttribute('aria-hidden', 'true');
+  toile.after(eclats);
+  const debris = eclats.getContext('2d');
+
   const point = (e) => { const r = toile.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; };
   pente.addEventListener('pointermove', (e) => { if (e.pointerType === 'mouse' || e.buttons) brosser(...point(e)); });
   pente.addEventListener('pointerdown', (e) => brosser(...point(e)));
   pente.addEventListener('pointerleave', () => { dernier = null; });
   pente.addEventListener('pointerup', () => { dernier = null; });
-  new ResizeObserver(() => { if (Math.abs(pente.clientWidth - W) > 40) { peindre(); } }).observe(pente);
-  peindre();
+
+  async function preparer() {
+    W = pente.clientWidth; H = pente.clientHeight; dpr = Math.min(2, devicePixelRatio || 1);
+    if (!W || !H) return;
+    toile.width = eclats.width = Math.round(W * dpr); toile.height = eclats.height = Math.round(H * dpr);
+    const mobile = /-mobile-/.test(img.currentSrc || '');
+    const c = await lireCarte(mobile);
+    if (!c) { toile.hidden = true; return; }
+    if (carte !== c) { carte = c; propres.clear(); }
+    poser(); compterUtiles(); peindre(); majJauge();
+  }
+  let attente, largeur = 0;
+  new ResizeObserver(() => { if (Math.abs(pente.clientWidth - largeur) < 2 && Math.abs(pente.clientHeight - H) < 2) return; largeur = pente.clientWidth; clearTimeout(attente); attente = setTimeout(preparer, 120); }).observe(pente);
+  if (img.complete && img.naturalWidth) preparer(); else img.addEventListener('load', preparer, { once: true });
   /* Démonstration : un coup de brosse en diagonale, une fois la pente découverte. */
   mousse = {
     demo() {
       if (!gsap) return;
-      const o = { t: 0 }; dernier = null;
-      gsap.to(o, { t: 1, duration: 1.1, delay: .9, ease: 'power1.inOut', onStart: () => { demo = true; }, onUpdate: () => brosser(W * (.18 + .55 * o.t), H * (.78 - .38 * o.t)), onComplete: () => { dernier = null; demo = false; } });
+      const o = { t: 0 };
+      gsap.to(o, { t: 1, duration: 1.2, delay: 1, ease: 'power1.inOut', onStart: () => { demo = true; dernier = null; }, onUpdate: () => brosser(W * (.2 + .5 * o.t), H * (.86 - .3 * o.t)), onComplete: () => { dernier = null; demo = false; } });
     },
   };
 }
@@ -684,8 +872,7 @@ demarrer({
   preparer() {
     titres();
     liteaux();
-    tuiles();
-    couches();
+    plongeeScene();
     metiers();
     rangs();
     joignable();
@@ -702,33 +889,31 @@ demarrer({
   jouer() {
     if (!gsap) return null;
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-    const orage = $('.une-orage'), panneau = $('[data-ouverture]');
-    const accueil = !!(toit && toit.construire());
-    if (orage) { orage.classList.add('orage'); tl.call(() => gsap.to(orage, { opacity: 0, duration: 1.4, ease: 'power2.inOut', onComplete: () => orage.classList.remove('orage') }), null, accueil ? .35 : .8); }
+    const panneau = $('[data-ouverture]');
+    const accueil = !!plongee;
     tl.fromTo('.ouverture-trait', { scaleX: 0 }, { scaleX: 1, duration: accueil ? .16 : .3, ease: 'power2.inOut' }, .02)
       .fromTo('.ouverture-ligne', { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: .16 }, .04)
       .to('.ouverture-nom, .ouverture-ligne, .ouverture-trait', { opacity: 0, duration: .14 }, accueil ? .16 : .36);
-    /* Accueil : le logo devient la tuile qui tombe dans son trou. Autres pages : il glisse jusqu'à l'objet d'ouverture. */
-    if (!(accueil && toit.intro(tl, panneau))) {
-      versObjet(tl, { a: .22, duree: .36, ouverture: .6 });
-      tl.call(() => toit && toit.poser(), null, .8);
-    }
-    tl.call(() => poserOuverture(premierTitre()), null, accueil ? .62 : .95);
-    tl.call(() => { $$('.une .liteau, .page-une .liteau').forEach((l) => l.classList.add('pose')); }, null, 1.05);
+    /* Accueil : le logo s'efface en 0,6 s au plus, la photo du faîtage se pose en reculant. Autres pages : le logo
+       glisse jusqu'à l'objet d'ouverture de la page. */
+    if (accueil && panneau) {
+      tl.to(panneau, { opacity: 0, duration: .38, ease: 'power2.out' }, .2);
+      plongee.intro(tl, .18);
+    } else versObjet(tl, { a: .22, duree: .36, ouverture: .6 });
+    tl.call(() => poserOuverture(premierTitre()), null, accueil ? .42 : .95);
+    tl.call(() => { $$('.page-une .liteau').forEach((l) => l.classList.add('pose')); }, null, 1.05);
     tl.call(() => ouvrirPage(), null, accueil ? .9 : 1.1);
     return tl;
   },
   etatFinal() {
     $$('[data-titre-pose], .rangs').forEach((t) => t.classList.add('pose'));
-    if (toit) toit.final();
+    if (plongee) plongee.final();
     ouvrirPage(true);
     $$('.liteau').forEach((l) => { const r = l.getBoundingClientRect(); if (r.top < innerHeight) l.classList.add('pose'); });
   },
   arrivee() {
-    const orage = $('.une-orage');
-    if (orage && gsap) { orage.classList.add('orage'); gsap.fromTo(orage, { opacity: 1 }, { opacity: 0, duration: 1.3, delay: .2, ease: 'power2.inOut', onComplete: () => orage.classList.remove('orage') }); }
     poserOuverture(premierTitre(), .15);
-    if (toit) toit.arriver();
+    if (plongee) plongee.arriver();
     setTimeout(() => ouvrirPage(), 250);
   },
 });

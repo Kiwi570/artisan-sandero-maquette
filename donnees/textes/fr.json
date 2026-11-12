@@ -10,7 +10,7 @@
   "calmeRetablir": "Rétablir les animations",
   "calmeSysteme": "Animations réduites par le réglage de votre appareil",
   "sommaire": "Sommaire",
-  "confort": "Confort de lecture",
+  "confort": "Pratique",
   "retourHaut": "Retour en haut",
   "maquette": "Maquette de démonstration : les formulaires sont simulés, rien n'est envoyé.",
   "evitement": "Aller au contenu",
@@ -84,17 +84,21 @@
    "chapo": "Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Le père et le fils regardent tout avant de reposer la moindre tuile.",
    "action": "Demander un devis gratuit",
    "secondaire": "Voir les chantiers",
-   "geste": "ou soulevez-en une autre",
-   "gesteTactile": "ou touchez-en une autre",
+   "geste": "Passez la souris sur la tuile : elle se soulève.",
+   "gesteTactile": "Touchez la tuile : elle se soulève.",
    "legendeTitre": "Sous la tuile : le liteau",
    "legende": "Pin posé à l'écartement des tuiles, sur l'écran sous-toiture.",
-   "region": "Toit de tuiles vu du faîtage, les pavillons de Taverny au loin : soulevez une tuile pour voir le liteau et l'écran dessous",
+   "region": "Toit de tuiles vu du faîtage, les pavillons de Taverny au loin. En faisant défiler, on passe sous les tuiles, couche après couche ; la grande tuile du premier plan se soulève à la souris ou au doigt.",
    "court": "Couverture, zinguerie, charpente, peinture et ravalement, à Taverny et dans les communes voisines."
   },
   "couches": {
    "titre": "Cinq couches, un seul toit.",
    "intro": "Avant un devis, chaque couche est regardée. Faites défiler : elles se soulèvent une à une.",
-   "voir": "Voir"
+   "voir": "Voir",
+   "sur": "Sous les tuiles",
+   "rail": "Les cinq couches du toit",
+   "diagnostic": "Diagnostic gratuit de votre toit →",
+   "mention": "Illustrations générées"
   },
   "metiers": {
    "titre": "Cinq métiers, une même famille.",
@@ -169,8 +173,10 @@
   "rubriqueNuancier": "Rubrique 02 · Le nuancier",
   "rubriqueChantiers": "Rubrique 03 · Sur les chantiers",
   "prestationsAlt": "Liteaux posés sur l'écran d'une toiture en cours de réfection",
-  "mousseGeste": "Passez la brosse : démoussage",
-  "mousseGesteTactile": "Frottez la mousse du doigt"
+  "mousseGeste": "Passez la souris sur le toit pour le démousser",
+  "mousseGesteTactile": "Frottez le toit du doigt pour le démousser",
+  "mousseFini": "Toit démoussé",
+  "mousseLien": "Devis démoussage"
  },
  "zinguerie": {
   "sur": "Rubrique · Zinguerie et charpente",

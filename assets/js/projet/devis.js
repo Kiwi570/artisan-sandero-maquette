@@ -1,7 +1,7 @@
 /* Demande de devis Artisan Sandero : formulaire par étapes (module de la bibliothèque), prérempli par l'adresse
    (?prestation=couverture, ?signes=…) ; retour physique de l'action (grille wouahou, point 7) : la fiche se pose sur un
    liteau et reçoit le tampon « Reçu ». Démonstration : rien n'est envoyé. */
-import { init } from '../modules/formulaire-par-etapes/module.js?v=2';
+import { init } from '../modules/formulaire-par-etapes/module.js?v=3';
 
 export async function devis(root) {
   const params = new URLSearchParams(location.search);
@@ -37,8 +37,7 @@ export async function devis(root) {
     requestAnimationFrame(revenir); setTimeout(revenir, 120);
     const gsap = window.gsap;
     const tampon = root.querySelector('.tampon-recu');
-    const calme = document.documentElement.classList.contains('calme') || matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!gsap || calme || !tampon) { tampon && tampon.classList.add('pose'); return; }
+    if (!gsap || !tampon) { tampon && tampon.classList.add('pose'); return; }
     gsap.timeline()
       .fromTo(fiche, { y: -26, rotation: -1.2 }, { y: 0, rotation: 0, duration: .55, ease: 'bounce.out' })
       .fromTo(tampon, { scale: 2.4, opacity: 0, rotation: -24 }, { scale: 1, opacity: 1, rotation: -12, duration: .42, ease: 'power4.in', onComplete: () => tampon.classList.add('pose') }, .25)

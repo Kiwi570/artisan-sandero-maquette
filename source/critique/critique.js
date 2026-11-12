@@ -2,17 +2,14 @@
    avant les feuilles de style. Il décide du mode d'arrivée avant le premier affichage :
    - intro  : arrivée sur le site depuis l'extérieur, ou rechargement
    - voile  : changement de page à l'intérieur du site (le voile couvre déjà l'écran)
-   - retour : retour arrière ou avant, ou rechargement dû au bouton du mode calme
-              (état final directement, sans intro) */
+   - retour : retour arrière ou avant (état final directement, sans intro) */
 (function () {
   var d = document.documentElement, ss = null, ls = null;
   try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
   d.classList.add('js');
 
-  var calme = false;
-  try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
-  if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
-  if (calme) d.classList.add('calme');
+  /* Mode calme retiré (v3) : les animations jouent toujours ; un ancien choix « réduire » mémorisé est oublié. */
+  try { ls && ls.removeItem('socle:calme'); } catch (e) {}
 
   var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
   var type = nav ? nav.type : 'navigate';

@@ -1,34 +1,32 @@
 [
  {
-  "image": "chantier-drone",
-  "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins",
-  "titre": "Réfection vue du ciel"
+  "image": "chantier-ecran",
+  "alt": "Pose de l'écran sous-toiture par un couvreur de l'entreprise",
+  "titre": "Écran sous-toiture",
+  "cadrage": null
  },
  {
   "image": "chantier-liteaux",
   "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser",
   "titre": "Liteaux neufs",
-  "cadrage": "50% 100%"
+  "cadrage": "50% 50%"
  },
  {
   "image": "chantier-faitage-vue",
   "alt": "Faîtage et rive en zinc refaits, les toits voisins et les arbres au loin",
-  "titre": "Rive en zinc et faîtage"
+  "titre": "Rive en zinc et faîtage",
+  "cadrage": null
  },
  {
   "image": "chantier-renovation",
   "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit",
   "titre": "Liteaux autour du Velux",
-  "cadrage": "45% 74%"
+  "cadrage": "50% 50%"
  },
  {
-  "image": "chantier-ecran",
-  "alt": "Pose de l'écran sous-toiture par un couvreur de l'entreprise",
-  "titre": "Écran sous-toiture"
- },
- {
-  "image": "chantier-cheneau",
-  "alt": "Chéneau en zinc neuf posé chez un particulier",
-  "titre": "Chéneau en zinc"
+  "titre": "Fenêtre de toit entre les liteaux",
+  "image": "chantier-velux",
+  "alt": "Fenêtre de toit posée entre les liteaux neufs, tuiles brunes autour",
+  "cadrage": "50% 50%"
  }
 ]

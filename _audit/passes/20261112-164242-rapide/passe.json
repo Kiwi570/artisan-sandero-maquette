@@ -1,0 +1,13 @@
+{
+ "id": "20261112-164242-rapide",
+ "date": "2026-11-12T16:48:05.794Z",
+ "niveau": "rapide",
+ "pages": "toutes",
+ "etapes": "toutes",
+ "version": "3",
+ "echecs": 42,
+ "aRegarder": 20,
+ "nonLances": 2,
+ "manquants": 1,
+ "statut": "échecs"
+}

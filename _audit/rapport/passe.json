@@ -1,13 +1,17 @@
 {
- "id": "20261112-155907-rapide-cible",
- "date": "2026-11-12T16:03:49.596Z",
+ "id": "20261112-165353-rapide-cible-partiel",
+ "date": "2026-11-12T16:55:54.727Z",
  "niveau": "rapide",
  "pages": "/",
- "etapes": "toutes",
- "version": "2",
- "echecs": 0,
- "aRegarder": 7,
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "parcours"
+ ],
+ "version": "3",
+ "echecs": 2,
+ "aRegarder": 18,
  "nonLances": 1,
- "manquants": 0,
- "statut": "complet"
+ "manquants": 1,
+ "statut": "échecs"
 }

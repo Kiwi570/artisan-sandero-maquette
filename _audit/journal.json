@@ -121,6 +121,58 @@
    "effetsRetires": [],
    "grilleDispenses": {},
    "notes": "Bibliothèque : h-renovation-maquette (Samuel Hortica, Herblay) porte le même nom de famille que le dirigeant ; maquette à distinguer nettement. Planches empilées (module) testées puis remplacées par des rangs de tuiles posés à l'écran : l'accueil passait à 17 écrans. Regard DA : REFAIRE 3,25 (19:47), accueil repris (ouverture en scène, métiers, chantiers, famille, zone) ; second regard REFAIRE 3,25 (20:03) : aperçu montré à l'utilisateur avec le rapport. Troisième regard REFAIRE 3,1 (12/11 14:53) après l'ouverture en une seule photo : tuile pas lisible comme objet, photo portrait jugée montage, partage trop sage, cartes métiers en images générées, 10,4 écrans. Quatrième regard AJUSTER 3,5 (12/11 15:25) après l'ouverture en plein cadre (logo qui devient la tuile, titre posé sur le toit, ombre au soleil de Taverny) : corrections faites (intro du logo raccourcie, trou visible dès la première image, voisines qui frémissent, tuile plus grande, bulle avec le geste, bandeau magazine retiré, titre sur bande crème au téléphone, méthode sans photo collante au téléphone, vraies photos recadrées, tuile mécanique dans les couches, textes et labels agrandis). Page devis construite pendant l'accueil, le 11 au soir (temps compté dans l'accueil). Boosts de fin d'accueil : toit en profondeur à la souris, chiffres qui comptent, chantiers en galerie épinglée."
+  },
+  {
+   "version": 2,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil"
+   ],
+   "etapes": [
+    {
+     "etape": "scène des couches plus lente",
+     "budget": 10,
+     "debut": "2026-11-12T17:00:00+01:00",
+     "fin": "2026-11-12T17:08:00+01:00"
+    }
+   ],
+   "attentes": []
+  },
+  {
+   "version": 3,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil",
+    "couverture",
+    "toutes les pages (lisibilité, mode calme)"
+   ],
+   "etapes": [
+    {
+     "etape": "plongée d'ouverture de l'accueil",
+     "budget": 40,
+     "debut": "2026-11-12T17:17:00+01:00",
+     "fin": "2026-11-12T17:37:00+01:00"
+    },
+    {
+     "etape": "mousse tuile par tuile (Couverture)",
+     "budget": 25,
+     "debut": "2026-11-12T17:37:00+01:00",
+     "fin": "2026-11-12T17:45:00+01:00"
+    },
+    {
+     "etape": "photos recadrées, lisibilité, mode calme retiré",
+     "budget": 15,
+     "debut": "2026-11-12T17:45:00+01:00",
+     "fin": "2026-11-12T17:48:00+01:00"
+    },
+    {
+     "etape": "audit, corrections et livraison",
+     "budget": 15,
+     "debut": "2026-11-12T17:48:00+01:00",
+     "fin": "2026-11-12T17:57:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

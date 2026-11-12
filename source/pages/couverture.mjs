@@ -24,7 +24,12 @@ export default (c) => {
     <div class="pente" data-iris-centre data-effet="pente-rangs">
       ${c.media({ nom: 'grok/couverture-ouverture', alt: c.s('couverture.alt'), cadrage: '55% 50%', priorite: true, sizes: '(max-width: 899px) 100vw, 58vw' })}
       <canvas class="mousse" data-effet="demoussage" data-grille="manipuler" data-souris aria-hidden="true"></canvas>
-      <p class="mousse-geste" aria-hidden="true"><span class="souris">${c.t('couverture.mousseGeste')}</span><span class="tactile">${c.t('couverture.mousseGesteTactile')}</span></p>
+      <div class="mousse-geste" aria-hidden="true">
+        <span class="mousse-icone"><svg viewBox="0 0 32 32" width="22" height="22" focusable="false"><path d="M20 3 L29 12 L17 24 L8 15 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M8 15 L3 26 L6 29 L17 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 19 L7 26 M15 21 L10 28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span class="mousse-texte"><span class="souris">${c.t('couverture.mousseGeste')}</span><span class="tactile">${c.t('couverture.mousseGesteTactile')}</span></span>
+        <span class="mousse-jauge"><span></span></span>
+        <span class="mousse-fin">${c.t('couverture.mousseFini')} · ${c.lien('devis', { ancre: 'demande', params: 'prestation=couverture', texte: html`${c.t('couverture.mousseLien')} →`, classe: 'mousse-lien' })}</span>
+      </div>
       <div class="pente-rangs" aria-hidden="true">${[0, 1, 2, 3, 4, 5, 6].map((i) => html`<span style="--i:${i}"></span>`)}</div>
     </div>
   </div>

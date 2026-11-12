@@ -336,11 +336,12 @@
   "beaute": 4
  },
  {
-  "source": "recu/site/prise-vue-drone-refection.webp",
+  "source": "recu/site/recadre/chantier-drone.webp",
   "nom": "chantier-drone",
   "role": "galerie",
-  "beaute": 3,
-  "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins"
+  "beaute": 4,
+  "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins",
+  "recadrage": "serré, sans palissade, sac ni chaussures (v3)"
  },
  {
   "source": "recu/site/travaux-couverture-realises-entreprise.webp",
@@ -357,25 +358,28 @@
   "alt": "Un couvreur de l'entreprise pose le faîtage"
  },
  {
-  "source": "recu/site/pose-tuiles-orange.webp",
+  "source": "recu/site/recadre/chantier-liteaux.webp",
   "nom": "chantier-liteaux",
   "role": "galerie",
   "beaute": 3,
-  "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser"
+  "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser",
+  "recadrage": "serré, sans palissade, sac ni chaussures (v3)"
  },
  {
-  "source": "recu/site/professionnel-batisse.webp",
+  "source": "recu/site/recadre/chantier-ciel.webp",
   "nom": "chantier-ciel",
   "role": "galerie",
   "beaute": 3,
-  "alt": "Un couvreur sur la charpente ouverte, sous un ciel de nuages"
+  "alt": "Un couvreur sur la charpente ouverte, sous un ciel de nuages",
+  "recadrage": "serré, sans palissade, sac ni chaussures (v3)"
  },
  {
-  "source": "recu/site/fenetre-toit-nouvellement-posee.webp",
+  "source": "recu/site/recadre/chantier-velux.webp",
   "nom": "chantier-velux",
   "role": "galerie",
   "beaute": 3,
-  "alt": "Fenêtre de toit posée entre les liteaux"
+  "alt": "Fenêtre de toit posée entre les liteaux",
+  "recadrage": "serré, sans palissade, sac ni chaussures (v3)"
  },
  {
   "source": "recu/site/artisan-sandero-couvreurs-40-2.webp",
@@ -385,11 +389,12 @@
   "alt": "Soudure d'une gouttière en zinc au fer à souder"
  },
  {
-  "source": "recu/site/renovation-toiture-professionnel.webp",
+  "source": "recu/site/recadre/chantier-renovation.webp",
   "nom": "chantier-renovation",
   "role": "galerie",
   "beaute": 3,
-  "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit"
+  "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit",
+  "recadrage": "serré, sans palissade, sac ni chaussures (v3)"
  },
  {
   "source": "recu/site/pose-isolant-impermeabilisant-sous.webp",
