@@ -728,7 +728,7 @@ html { overflow-x: clip; }
 .toit-toile { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; display: block; pointer-events: none; visibility: hidden; }
 .toit.toile-prete .toit-toile { visibility: visible; }
 .toit.sur-tuile { cursor: pointer; }
-.plongee-ombre { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0;
+.plongee-ombre { position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: 0; will-change: opacity;
   background: linear-gradient(90deg, rgba(18,12,8,.86) 0, rgba(18,12,8,.66) 34%, rgba(18,12,8,0) 64%), linear-gradient(0deg, rgba(18,12,8,.78) 0, rgba(18,12,8,.3) 40%, rgba(18,12,8,0) 62%); }
 
 /* Premier écran : un panneau de chaux à gauche (le titre, un seul bouton devis, le numéro), la photo nette à droite.
@@ -832,3 +832,17 @@ html.js:not(.secours) .plan-couche { display: none; }
 @media (max-width: 760px) { .logos--labels { grid-template-columns: repeat(2, minmax(0, 1fr)); } .logos--labels li span { hyphens: manual; } }
 /* Le numéro reste à côté du bouton devis dans le panneau d'ouverture, même sur un écran bas. */
 .plongee-une .une-actions .bouton--contour { display: inline-flex; }
+
+/* Fil des couches : une plaque sombre derrière, lisible sur toutes les images (liteaux clairs compris). */
+.plongee-rail { gap: 0; padding: 8px 6px 8px 4px; background: rgba(18, 12, 8, .92); border-radius: 4px; box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+.plongee-rail a { min-height: 44px; padding: 0 12px 0 16px; color: rgba(251, 247, 241, .86); text-shadow: none; }
+.plongee-rail a span { color: rgba(251, 247, 241, .74); }
+.plongee-rail li.actif a, .plongee-rail li.actif a span { color: #fff; }
+.plongee-rail li.actif a span { color: var(--liteau); }
+/* La plaque est portée par chaque ligne : le texte a toujours son fond sombre juste derrière lui. */
+.plongee-rail { padding: 0; background: none; overflow: hidden; }
+.plongee-rail a { background: rgba(18, 12, 8, .92); }
+.plongee-rail li:first-child a { padding-top: 6px; border-radius: 4px 4px 0 0; }
+.plongee-rail li:last-child a { padding-bottom: 6px; border-radius: 0 0 4px 4px; }
+/* Le fil apparaît d'un coup sous le titre (pas de fondu : jamais de texte à moitié transparent sur l'image). */
+.plongee-rail, .plongee.dessous .plongee-rail { transition: none; }

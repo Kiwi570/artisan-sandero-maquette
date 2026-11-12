@@ -195,6 +195,22 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 5,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil"
+   ],
+   "etapes": [
+    {
+     "etape": "fluidité de la plongée, fil des couches lisible",
+     "budget": 20,
+     "debut": "2026-11-12T18:30:00+01:00",
+     "fin": "2026-11-12T18:42:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

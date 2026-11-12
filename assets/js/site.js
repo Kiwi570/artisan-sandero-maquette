@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=4';
+import { demarrer, etat, versObjet } from './socle/index.js?v=5';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -138,15 +138,24 @@ function plongeeScene() {
   const legendes = $$('.plongee-couche', sec), rail = $$('.plongee-rail li', sec), une = $('.plongee-une', sec), ombreTexte = $('.plongee-ombre', sec);
   const legende = $('.toit-soleil', sec);
   const ctx = toile.getContext('2d', { alpha: false });
-  const charge = (url) => { const im = new Image(); im.decoding = 'async'; im.src = url; return im; };
+  /* Images décodées d'avance (ImageBitmap) : aucun décodage ni envoi au processeur graphique pendant le défilement. */
+  const charge = (url) => {
+    const im = new Image(); im.decoding = 'async'; im.src = url;
+    im.addEventListener('load', () => {
+      const fini = (b) => { if (b) im.bmp = b; try { ctx.drawImage(im.bmp || im, 0, 0, 2, 2); } catch {} demander(); };
+      if (window.createImageBitmap) createImageBitmap(im).then(fini, () => fini(null)); else fini(null);
+    }, { once: true });
+    return im;
+  };
+  const bmp = (im) => im.bmp || im;
   const photo = charge('/assets/images/grok/zone-faitage-1920.webp');
   let hd = null, couches = [];
-  let W = 0, H = 0, dpr = 1, mobile = false, panneau = 0, raf = 0, dernierT = 0;
+  let W = 0, H = 0, dpr = 1, mobile = false, panneau = 0, raf = 0, dernierT = 0, st = null;
   let base = null, region = null, etape = null, cam = { S: 1, tx: 0, ty: 0, a: 0 }, repos = [];
   const etat = { p: 0, cible: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2, fil: -2 };
   let ombre = { x: -.3, y: .6, l: 1, nuit: false };
 
-  const pret = (im) => im && im.complete && im.naturalWidth > 0;
+  const pret = (im) => !!im && (!!im.bmp || (im.complete && im.naturalWidth > 0));
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); };
   const dedans = ([x, y], p) => { let ok = false; for (let i = 0, j = p.length - 1; i < p.length; j = i++) { const [xi, yi] = p[i], [xj, yj] = p[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) ok = !ok; } return ok; };
   const vers = (c, [x, y]) => [c.tx + x * c.S, c.ty + y * c.S];
@@ -166,7 +175,7 @@ function plongeeScene() {
   function mesurer() {
     W = scene.clientWidth; H = scene.clientHeight;
     if (!W || !H) return false;
-    dpr = Math.max(1, Math.min(2, devicePixelRatio || 1, Math.sqrt(3.4e6 / (W * H)))); mobile = W < 761;
+    dpr = Math.max(1, Math.min(2, devicePixelRatio || 1, Math.sqrt(2.2e6 / (W * H)))); mobile = W < 761;
     toile.width = Math.round(W * dpr); toile.height = Math.round(H * dpr);
     panneau = une ? (mobile ? une.offsetHeight : une.offsetWidth) : 0;
     /* Premier écran : la photo couvre ce qui reste à droite du panneau (ou sous la bande, au téléphone). */
@@ -198,17 +207,17 @@ function plongeeScene() {
   /* Morceau de la photo sous un rectangle de l'écran ; la zone du pan droit vient de la version double définition. */
   function source(c, x, y, w, h) {
     const px = (x - c.tx) / c.S, py = (y - c.ty) / c.S, pw = w / c.S, ph = h / c.S;
-    if (hd && pret(hd) && c.S > .9 && px >= HD.x && py >= HD.y && px + pw <= HD.x + HD.w && py + ph <= HD.y + HD.h) return [hd, (px - HD.x) * 2, (py - HD.y) * 2, pw * 2, ph * 2];
+    if (hd && pret(hd) && c.S > .9 && px >= HD.x && py >= HD.y && px + pw <= HD.x + HD.w && py + ph <= HD.y + HD.h) return [bmp(hd), (px - HD.x) * 2, (py - HD.y) * 2, pw * 2, ph * 2];
     const k = photo.naturalWidth / PHOTO.w;
-    return [photo, px * k, py * k, pw * k, ph * k];
+    return [bmp(photo), px * k, py * k, pw * k, ph * k];
   }
   function peindrePhoto(c) {
     const k = photo.naturalWidth / PHOTO.w;
     const x0 = Math.max(0, -c.tx / c.S), y0 = Math.max(0, -c.ty / c.S), x1 = Math.min(PHOTO.w, (W - c.tx) / c.S), y1 = Math.min(PHOTO.h, (H - c.ty) / c.S);
-    if (x1 > x0 && y1 > y0) ctx.drawImage(photo, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
+    if (x1 > x0 && y1 > y0) ctx.drawImage(bmp(photo), x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
     if (hd && pret(hd) && c.S > .9) {
       const a0 = Math.max(x0, HD.x), b0 = Math.max(y0, HD.y), a1 = Math.min(x1, HD.x + HD.w), b1 = Math.min(y1, HD.y + HD.h);
-      if (a1 > a0 && b1 > b0) ctx.drawImage(hd, (a0 - HD.x) * 2, (b0 - HD.y) * 2, (a1 - a0) * 2, (b1 - b0) * 2, c.tx + a0 * c.S, c.ty + b0 * c.S, (a1 - a0) * c.S, (b1 - b0) * c.S);
+      if (a1 > a0 && b1 > b0) ctx.drawImage(bmp(hd), (a0 - HD.x) * 2, (b0 - HD.y) * 2, (a1 - a0) * 2, (b1 - b0) * 2, c.tx + a0 * c.S, c.ty + b0 * c.S, (a1 - a0) * c.S, (b1 - b0) * c.S);
     }
   }
   function cellule(c) {
@@ -279,7 +288,7 @@ function plongeeScene() {
     if (!pret(im)) { ctx.fillStyle = '#16120f'; ctx.fillRect(0, 0, W, H); return; }
     const k = im.naturalWidth / d.w;
     const x0 = Math.max(0, -c.tx / c.S), y0 = Math.max(0, -c.ty / c.S), x1 = Math.min(d.w, (W - c.tx) / c.S), y1 = Math.min(d.h, (H - c.ty) / c.S);
-    if (x1 > x0 && y1 > y0) ctx.drawImage(im, x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
+    if (x1 > x0 && y1 > y0) ctx.drawImage(bmp(im), x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
   }
   /* Caméra d'une couche au repos, avec une lente dérive pendant l'arrêt. */
   function cameraRepos(j, p) {
@@ -334,9 +343,10 @@ function plongeeScene() {
     return { cAv, pts, cAp, ombre: 1 - g, couvre: g >= .999 };
   }
 
-  function dessiner(p) {
+  function dessiner(p, fin = true) {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+    /* En mouvement, lissage simple (rapide) ; à l'arrêt, la dernière image est refaite en haute qualité. */
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = fin ? 'high' : 'medium';
     const P = SCENE.passages.map(([d, f]) => lin(d, f, p));
     let fait = 0; while (fait < 4 && P[fait] >= 1) fait++;
     const enCours = fait < 4 && P[fait] > 0;
@@ -392,14 +402,15 @@ function plongeeScene() {
   }
 
   /* ----- Textes : le panneau glisse, une couche à la fois, le fil à droite ----- */
-  let hautUne = 0;
+  const ecrit = new Map();
+  const poser = (el, prop, v) => { const k = el, m = ecrit.get(k) || {}; if (m[prop] === v) return; m[prop] = v; ecrit.set(k, m); el.style[prop] = v; };
   function majTextes(p) {
     if (une) {
       const e = doux(SCENE.panneau[0], SCENE.panneau[1], p);
-      une.style.transform = e > 0 ? (mobile ? `translate3d(0, ${(-(panneau + 2) * e).toFixed(1)}px, 0)` : `translate3d(${(-(panneau + 2) * e).toFixed(1)}px, 0, 0)`) : '';
-      une.style.visibility = e >= 1 ? 'hidden' : '';
+      poser(une, 'transform', e > 0 ? (mobile ? `translate3d(0, ${(-(panneau + 2) * e).toFixed(1)}px, 0)` : `translate3d(${(-(panneau + 2) * e).toFixed(1)}px, 0, 0)`) : '');
+      poser(une, 'visibility', e >= 1 ? 'hidden' : '');
     }
-    if (ombreTexte) ombreTexte.style.opacity = doux(.1, .17, p).toFixed(3);
+    if (ombreTexte) poser(ombreTexte, 'opacity', doux(.1, .17, p).toFixed(3));
     let actif = -1;
     SCENE.legendes.forEach(([d, f], i) => { if (p >= d && p < f) actif = i; });
     if (actif !== etat.actif) { etat.actif = actif; legendes.forEach((l, i) => l.classList.toggle('actif', i === actif)); }
@@ -415,9 +426,11 @@ function plongeeScene() {
   function rendre(t) {
     raf = 0;
     const dt = Math.min(.05, (t - (dernierT || t)) / 1000); dernierT = t;
-    /* Le défilement est suivi avec un léger amorti (constante de temps 0,14 s). */
+    /* Position lue à chaque image (pas seulement aux évènements de défilement) ; un saut arrive tout de suite,
+       le défilement à la main est suivi avec un léger amorti (constante de temps 0,12 s). */
+    if (st) { etat.cible = borne((window.scrollY - st.start) / Math.max(1, st.end - st.start)); if (Math.abs(etat.cible - etat.p) > .15) etat.p = etat.cible; }
     const d = etat.cible - etat.p;
-    etat.p = Math.abs(d) < .00005 ? etat.cible : etat.p + d * (1 - Math.exp(-dt / .14));
+    etat.p = Math.abs(d) < .00004 ? etat.cible : etat.p + d * (1 - Math.exp(-dt / .12));
     const p = etat.p;
     const posee = doux(SCENE.repos[0], SCENE.repos[1], p) * (1 - doux(SCENE.leve[0], SCENE.leve[1], p));
     const cible = Math.max(.16 * posee, doux(SCENE.leve[0], SCENE.leve[1], p), interactif() && (etat.survol || etat.garde) ? 1 : 0);
@@ -425,7 +438,7 @@ function plongeeScene() {
     if (etat.k < 0) { etat.k = 0; etat.v = -etat.v * .3; if (Math.abs(etat.v) < .2) etat.v = 0; }
     if (posee > .98 && !etat.invite) { etat.invite = true; etat.v = 3.2; }
     const bouge = Math.abs(cible - etat.k) > .002 || Math.abs(etat.v) > .003 || etat.p !== etat.cible;
-    if (W && pret(photo)) { dessiner(p); if (!zone.classList.contains('toile-prete')) zone.classList.add('toile-prete'); }
+    if (W && pret(photo)) { dessiner(p, !bouge); if (!zone.classList.contains('toile-prete')) zone.classList.add('toile-prete'); }
     majTextes(p);
     if (bouge) demander(); else dernierT = 0;
   }
@@ -463,10 +476,10 @@ function plongeeScene() {
   setInterval(majSoleil, 60000);
 
   /* ----- Défilement ----- */
-  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom',
-    /* Un saut (lien, retour, ancre) ne se rejoue pas : on y est tout de suite. Le défilement à la main reste lissé. */
-    onUpdate: (s) => { etat.cible = s.progress; if (Math.abs(etat.cible - etat.p) > .15) etat.p = etat.cible; demander(); },
+  st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom',
+    onUpdate: () => demander(),
     onRefresh: (s) => { etat.cible = etat.p = s.progress; demander(); } });
+  addEventListener('scroll', demander, { passive: true });
   rail.forEach((li, i) => $('a', li).addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({ top: st.start + SCENE.arrets[i] * (st.end - st.start), behavior: 'smooth' });
@@ -569,7 +582,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=4'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=5'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */

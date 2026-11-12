@@ -2,6 +2,16 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v5 — la plongée plus fluide, le fil des couches lisible
+
+- **Accueil, fluidité de la plongée** :
+  - Les images de la scène sont décodées d'avance, et la position est lue à chaque image ; le suivi du défilement est plus serré (0,12 s).
+  - Le lissage des images est simple pendant le mouvement ; la dernière image est refaite en haute qualité à l'arrêt.
+  - La toile est limitée à 2,2 millions de points.
+  - Le voile sombre sous les textes est sur son propre calque, et seuls les styles qui changent sont réécrits.
+- **Accueil, fil des couches à droite** : il est posé sur une plaque sombre, lisible sur toutes les images, y compris les liteaux clairs. La couche en cours est en blanc avec son numéro et son trait jaunes.
+- **Toutes les pages** : le numéro de version des fichiers passe à 5.
+
 ## v4 — un premier écran net, une plongée fluide
 
 - **Accueil, premier écran** : le titre, le bouton devis et le numéro sont posés sur un panneau de chaux à gauche ; la photo du faîtage, nette et sans voile, occupe la droite. Une ligne discrète invite à faire défiler. Au premier défilement, le panneau glisse et la photo prend tout l'écran.
