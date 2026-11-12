@@ -227,6 +227,28 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 7,
+   "skill": "v10.10",
+   "perimetre": [
+    "toutes les pages"
+   ],
+   "etapes": [
+    {
+     "etape": "audit standard et revue visuelle de toutes les pages",
+     "budget": 40,
+     "debut": "2026-11-12T19:04:00+01:00",
+     "fin": "2026-11-12T19:30:00+01:00"
+    },
+    {
+     "etape": "corrections, audit de contrôle et livraison",
+     "budget": 40,
+     "debut": "2026-11-12T19:30:00+01:00",
+     "fin": "2026-11-12T19:38:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

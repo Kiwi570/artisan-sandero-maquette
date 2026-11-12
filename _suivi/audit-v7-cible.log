@@ -1,0 +1,29 @@
+… fichiers
+  fait en 0 s
+… mesures
+  19/84
+  46/84
+  73/84
+  fait en 106 s
+… mesures:balayage
+  fait en 25 s
+… films
+  fait en 145 s
+… parcours:intro
+  fait en 38 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 88 s
+… parcours:hauteur
+  fait en 20 s
+… parcours:calme
+  fait en 59 s
+… parcours:projet
+  fait en 0 s
+… fluidite
+  fait en 169 s
+
+Échecs : 16 · À regarder : 11 · Non lancé : 1 (dont 1 requis : audit INCOMPLET)
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --seulement=fichiers,mesures,parcours,fluidite
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261112-182547-standard-partiel)

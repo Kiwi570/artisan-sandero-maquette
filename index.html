@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="6">
+<html lang="fr" data-v="7">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=6">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=6">
-<link rel="stylesheet" href="/assets/css/site.css?v=6">
-<link rel="modulepreload" href="/assets/js/site.js?v=6">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=6">
+<link rel="stylesheet" href="/assets/css/socle.css?v=7">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=7">
+<link rel="stylesheet" href="/assets/css/site.css?v=7">
+<link rel="modulepreload" href="/assets/js/site.js?v=7">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=7">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=6"></script>
+<script type="module" src="/assets/js/site.js?v=7"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -181,7 +181,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </ol>
     </div>
     <ol class="plongee-rail" aria-label="Les cinq couches du toit">
-      <li><a href="#couche-1" data-aller="0"><span>01</span> Tuile</a></li><li><a href="#couche-2" data-aller="1"><span>02</span> Liteau</a></li><li><a href="#couche-3" data-aller="2"><span>03</span> Écran</a></li><li><a href="#couche-4" data-aller="3"><span>04</span> Isolant</a></li><li><a href="#couche-5" data-aller="4"><span>05</span> Chevrons</a></li>
+      <li data-rail><a href="#couche-1" data-aller="0"><span>01</span> Tuile</a></li><li data-rail><a href="#couche-2" data-aller="1"><span>02</span> Liteau</a></li><li data-rail><a href="#couche-3" data-aller="2"><span>03</span> Écran</a></li><li data-rail><a href="#couche-4" data-aller="3"><span>04</span> Isolant</a></li><li data-rail><a href="#couche-5" data-aller="4"><span>05</span> Chevrons</a></li>
+      <li class="plongee-passer"><a href="#metiers">Passer la plongée ↓</a></li>
     </ol>
   </div>
 </section>
@@ -379,7 +380,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="zone" id="zone" aria-labelledby="zone-titre">
-  <figure class="media zone-fond" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 48%">
+  <figure class="media zone-fond" data-grok data-fx="zoom" data-fx-force="12" style="--cadrage:50% 74%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/faitage-vue-mobile-640.webp 640w, /assets/images/grok/faitage-vue-mobile-1080.webp 1080w" sizes="100vw">
     <img src="/assets/images/grok/faitage-vue-1280.webp" srcset="/assets/images/grok/faitage-vue-640.webp 640w, /assets/images/grok/faitage-vue-1280.webp 1280w, /assets/images/grok/faitage-vue-1920.webp 1920w" sizes="100vw" alt="Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin" width="1280" height="853" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>

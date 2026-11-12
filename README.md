@@ -8,7 +8,7 @@ Accueil · Couverture · Zinguerie et charpente · Peinture et façades · Devis
 Non reprises dans cette version (disponibles ensuite si le client les veut) : À propos (son contenu est sur l'accueil), Actualité et conseils de pro, pages par commune (Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis), sous-pages de la couverture (regroupées sur la page Couverture).
 
 ## Ce que montre la maquette
-- Ouverture de l'accueil : une seule scène en plein écran, la plongée. On part du faîtage au-dessus de Taverny ; au défilement, la caméra plonge dans le toit, couche après couche (tuile, liteau, écran sous-toiture, isolant, chevrons). Au premier plan, une grande tuile se soulève à la souris ou au doigt ; son ombre suit le soleil réel sur Taverny. Premier écran : le titre, un bouton devis et le numéro.
+- Ouverture de l'accueil : une seule scène en plein écran, la plongée. On part du faîtage au-dessus de Taverny ; au défilement, la caméra plonge dans le toit, couche après couche (tuile, liteau, écran sous-toiture, isolant, chevrons). Au premier plan, une grande tuile se soulève à la souris ou au doigt ; son ombre suit le soleil réel sur Taverny. Premier écran : le titre, un bouton devis et le numéro, sur un panneau de chaux à gauche de la photo. Un fil à droite mène à chaque couche, ou permet de passer la plongée.
 - Accueil :
   - les métiers sur de vraies photos de chantier, avec un filtre ;
   - les chantiers en galerie, et la méthode en six rangs ;

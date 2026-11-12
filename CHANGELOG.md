@@ -2,6 +2,24 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v7 — audit complet et finitions
+
+Audit automatique standard sur toutes les pages (6 tailles, sans JavaScript, films, fluidité, parcours), puis revue de chaque page en captures sur ordinateur et téléphone.
+
+- **Accueil, plongée** :
+  - L'image affichée sous la toile a maintenant le même cadrage que la toile (zone à droite du panneau sur ordinateur, sous la bande au téléphone). Au retour arrière, plus de saut d'image au premier affichage.
+  - Quand la version fine des tuiles couvre tout l'écran, elle seule est dessinée, et le lissage est plus simple pendant le mouvement : deux fois moins de travail par image à l'arrivée sur la tuile.
+  - Sur un appareil sans processeur graphique (rendu logiciel), la toile est dessinée en plus petit. Le contrôle de fluidité de l'audit (processeur ralenti quatre fois) passe désormais.
+  - Le fil des couches propose « Passer la plongée ↓ », qui mène directement aux métiers.
+  - Sur téléphone, le voile sous les textes monte plus haut : les chevrons et leur texte restent lisibles devant la fenêtre claire.
+- **Accueil, labels et marques au téléphone** : les deux blocs passent l'un sous l'autre. Les quatre labels sont sur une ligne avec leur nom entier (plus de « Quali-bat » ni « décenna-le »), les marques sur trois colonnes.
+- **Accueil, zone** : la photo de fond est cadrée plus bas, avec plus de toits et moins de ciel vide sous le titre.
+- **Couverture, nuancier** : le texte de chaque matériau est en haut de l'échantillon. Il reste lisible tant que l'échantillon suivant ne le recouvre pas (avant, il était caché dès l'arrivée du suivant).
+- **Pages d'onglet, photos de chantier au téléphone** : deux par rang sur toute la largeur, au lieu d'une petite colonne à gauche.
+- **Peinture et façades, finitions au téléphone** : une liste, la finition choisie en grand et les autres en bandeaux lisibles. La mention « Illustration générée » ne recouvre plus les petites vignettes.
+- **Restent signalés par l'audit, comme prévu** : les contrôles du mode calme (retiré à la demande du client), et la galerie des chantiers vue en mode « animations réduites », qui n'existe plus.
+- **Toutes les pages** : le numéro de version des fichiers passe à 7.
+
 ## v6 — l'image de Couverture sans raccord visible
 
 - **Couverture, image d'ouverture** : le village derrière le toit commençait par un bord vertical net, un défaut de l'image générée qui faisait croire à un bug d'affichage. Les arbres et les maisons se fondent maintenant doucement dans la brume du ciel, sur ordinateur comme sur téléphone. Le toit, ses tuiles et la mousse n'ont pas changé.

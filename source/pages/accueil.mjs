@@ -47,7 +47,8 @@ export default (c) => {
       </ol>
     </div>
     <ol class="plongee-rail" aria-label="${c.s('accueil.couches.rail')}">
-      ${d.couches.map((x, i) => html`<li><a href="#couche-${i + 1}" data-aller="${i}"><span>${String(i + 1).padStart(2, '0')}</span> ${x.court || x.nom}</a></li>`)}
+      ${d.couches.map((x, i) => html`<li data-rail><a href="#couche-${i + 1}" data-aller="${i}"><span>${String(i + 1).padStart(2, '0')}</span> ${x.court || x.nom}</a></li>`)}
+      <li class="plongee-passer"><a href="#metiers">${c.t('accueil.couches.passer')} ↓</a></li>
     </ol>
   </div>
 </section>
@@ -147,7 +148,7 @@ export default (c) => {
 </section>
 
 <section class="zone" id="zone" aria-labelledby="zone-titre">
-  ${c.media({ nom: 'grok/faitage-vue', alt: 'Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin', classe: 'zone-fond', cadrage: '50% 48%', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="12"' })}
+  ${c.media({ nom: 'grok/faitage-vue', alt: 'Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin', classe: 'zone-fond', cadrage: '50% 74%', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="12"' })}
   <div class="conteneur">
     ${liteau(c, 'Rubrique 06 · La zone', true)}
     <h2 id="zone-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.zone.titre')}</h2>

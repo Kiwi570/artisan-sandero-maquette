@@ -1,0 +1,391 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "contenu inaccessible",
+      "detail": "1 élément(s) de galerie hors de l'écran, sans défilement possible",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "calme",
+      "selecteur": "section#chantiers > div.chantiers-piste:nth-of-type(2) > div.chantier:nth-of-type(5) « Fenêtre de toit entre les liteaux · Chantier de l' »",
+      "lieux": [
+        "1366×768 calme",
+        "844×390 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (113 images par seconde)",
+      "etape": "parcours",
+      "page": "/couverture",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (111 images par seconde)",
+      "etape": "parcours",
+      "page": "/devis",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (64 images par seconde)",
+      "etape": "parcours",
+      "page": "/facades",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (82 images par seconde)",
+      "etape": "parcours",
+      "page": "/zinguerie-charpente",
+      "taille": "390×844",
+      "mode": "calme",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "animation en boucle toujours active : SPAN",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "défilement adouci toujours actif",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (115 images par seconde)",
+      "etape": "parcours",
+      "page": "/couverture",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "défilement adouci toujours actif",
+      "etape": "parcours",
+      "page": "/couverture",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (112 images par seconde)",
+      "etape": "parcours",
+      "page": "/devis",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "défilement adouci toujours actif",
+      "etape": "parcours",
+      "page": "/devis",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "défilement adouci toujours actif",
+      "etape": "parcours",
+      "page": "/facades",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "une boucle tourne encore (84 images par seconde)",
+      "etape": "parcours",
+      "page": "/zinguerie-charpente",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mode calme",
+      "detail": "défilement adouci toujours actif",
+      "etape": "parcours",
+      "page": "/zinguerie-charpente",
+      "taille": "1366×768",
+      "mode": "calme",
+      "lieux": [
+        "1366×768 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "fluidité",
+      "detail": "12 % d'images de plus de 50 ms, tâche la plus longue 93 ms",
+      "etape": "fluidite",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "défilement à la molette, processeur ralenti 4 fois",
+      "lieux": [
+        "1366×768 défilement à la molette, processeur ralenti 4 fois"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "clearProps « all »",
+      "detail": "assets/js/modules/formulaire-par-etapes/module.js : efface aussi les variables CSS posées dans le HTML ; nommer les propriétés (clearProps: 'transform,opacity')",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "numéro de version",
+      "detail": "?v=7 est celui de la dernière livraison : à changer avant de livrer",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "journal du projet",
+      "detail": "aucune entrée pour la version 7 de donnees/site.json",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "contraste sur image",
+      "detail": "1.16:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "li#couche-5 > p.plongee-n:nth-of-type(1) > span « 05 »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "contraste sur image",
+      "detail": "1.23:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "li#couche-5 > p.plongee-n:nth-of-type(1) « 05 / 05 · SOUS LES TUILES »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "contraste sur image",
+      "detail": "1.75:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "li#couche-5 > h3 « Les chevrons »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "contraste sur image",
+      "detail": "1.49:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "li#couche-5 > h3 > em « chevrons »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "contraste sur image",
+      "detail": "2.01:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "li#couche-5 > p.plongee-phrase:nth-of-type(2) « La charpente est diagnostiquée, renforcée ou rempl »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 90 ms (différence 21 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "au retour arrière, élément qui réapparaît en s’animant",
+      "detail": "",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "selecteur": "div.plan.plan--toit > div.toit > canvas.toit-toile",
+      "lieux": [
+        "1366×768 retour arrière",
+        "390×844 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (16.8 %), voir comparaisons/rechargement-*.png",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "bouton du mode calme",
+      "raison": "aucune section ou aucun bouton [data-calme-bascule]",
+      "etape": "parcours"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "mesures": 84,
+    "balayage": 5,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 12,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 2,
+    "mode calme": 10,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=7",
+    "Audit standard : étapes lourdes sur /, /couverture, /devis, /facades, /zinguerie-charpente.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 2079 ms depuis le premier octet",
+    "Ouverture /couverture (1366×768) : 1446 ms depuis le premier octet",
+    "Ouverture /devis (1366×768) : 1372 ms depuis le premier octet",
+    "Ouverture /facades (1366×768) : 1475 ms depuis le premier octet",
+    "film de l'ouverture /facades 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /zinguerie-charpente (1366×768) : 1410 ms depuis le premier octet",
+    "film de l'ouverture /zinguerie-charpente 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture / (390×844) : 2060 ms depuis le premier octet",
+    "film de l'ouverture / 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /couverture (390×844) : 1454 ms depuis le premier octet",
+    "Ouverture /devis (390×844) : 1428 ms depuis le premier octet",
+    "Ouverture /facades (390×844) : 1469 ms depuis le premier octet",
+    "Ouverture /zinguerie-charpente (390×844) : 1382 ms depuis le premier octet",
+    "Changements de hauteur /couverture : aucun effet ScrollTrigger, rien à recalculer.",
+    "Changements de hauteur /facades : aucun effet ScrollTrigger, rien à recalculer.",
+    "Changements de hauteur /zinguerie-charpente : aucun effet ScrollTrigger, rien à recalculer.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.",
+    "Fluidité /couverture 1366×768 (molette) : 0 % d'images lentes sur 298, tâche la plus longue 0 ms",
+    "Fluidité /devis 1366×768 (molette) : 0 % d'images lentes sur 125, tâche la plus longue 0 ms",
+    "Fluidité /facades 1366×768 (molette) : 1 % d'images lentes sur 235, tâche la plus longue 0 ms",
+    "Fluidité /zinguerie-charpente 1366×768 (molette) : 0 % d'images lentes sur 232, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1366, tâche la plus longue 0 ms",
+    "Fluidité /couverture 390×844 (doigt) : 0 % d'images lentes sur 1348, tâche la plus longue 0 ms",
+    "Fluidité /devis 390×844 (doigt) : 0 % d'images lentes sur 1339, tâche la plus longue 0 ms",
+    "Fluidité /facades 390×844 (doigt) : 0 % d'images lentes sur 1345, tâche la plus longue 0 ms",
+    "Fluidité /zinguerie-charpente 390×844 (doigt) : 0 % d'images lentes sur 1352, tâche la plus longue 0 ms"
+  ],
+  "grille": []
+}

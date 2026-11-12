@@ -846,3 +846,32 @@ html.js:not(.secours) .plan-couche { display: none; }
 .plongee-rail li:last-child a { padding-bottom: 6px; border-radius: 0 0 4px 4px; }
 /* Le fil apparaît d'un coup sous le titre (pas de fondu : jamais de texte à moitié transparent sur l'image). */
 .plongee-rail, .plongee.dessous .plongee-rail { transition: none; }
+
+/* ---------- v7 · Audit complet : corrections ---------- */
+/* Plongée : l'image sous la toile occupe la même zone libre que la toile au premier écran (pas de saut au retour arrière). */
+@media (min-width: 761px) { html.js:not(.secours) .plan--toit .toit-photo { left: clamp(440px, 41vw, 660px); right: 0; width: auto; } html.js:not(.secours) .plan--toit .toit-photo img { object-position: 60% 100%; } }
+@media (max-width: 760px) { html.js:not(.secours) .plan--toit .toit-photo { top: var(--bande, 330px); bottom: 0; height: auto; } html.js:not(.secours) .plan--toit .toit-photo img { object-position: 73% 50%; } }
+/* Plongée : « Passer la plongée », sous le fil des couches. */
+.plongee-rail .plongee-passer a { justify-content: flex-end; border-top: 1px solid rgba(251, 247, 241, .14); color: var(--liteau); font-size: .8125rem; letter-spacing: .02em; }
+.plongee-rail .plongee-passer a::after { display: none; }
+/* Plongée sur téléphone : le voile sous les textes monte plus haut (dernière couche, fenêtre claire). */
+@media (max-width: 760px) { .plongee-ombre { background: linear-gradient(0deg, rgba(18,12,8,.94) 0, rgba(18,12,8,.88) 44%, rgba(18,12,8,.58) 64%, rgba(18,12,8,0) 82%); } }
+/* Nuancier : le texte en haut de l'échantillon, lisible tant que le suivant ne le recouvre pas. */
+@media (min-width: 761px) { .echantillon-texte { align-self: start; } }
+/* Vignettes de chantier : deux par rang au téléphone, sur toute la largeur. */
+@media (max-width: 760px) { .vignettes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Labels et marques au téléphone : l'un sous l'autre, labels sur quatre colonnes, noms entiers. */
+@media (max-width: 760px) {
+  .labels-grille { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .logos--labels { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .logos--labels li span { hyphens: manual; overflow-wrap: normal; word-break: normal; font-size: 13px !important; }
+  .logos--marques { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+/* Finitions au téléphone : une liste, la finition choisie en grand, les autres en bandeaux lisibles. */
+@media (max-width: 760px) {
+  .finitions { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 88px; }
+  .finition, .finition.choisie { grid-column: 1; }
+  .finition.choisie { grid-row: span 3; }
+  .finition:not(.choisie) .finition-texte { padding: 12px 14px; }
+  .finition .mention-ia { top: 8px; right: 8px; bottom: auto; }
+}

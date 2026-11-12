@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=6';
+import { demarrer, etat, versObjet } from './socle/index.js?v=7';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -135,7 +135,7 @@ function plongeeScene() {
   if (!sec || !gsap || !window.ScrollTrigger) return;
   const scene = $('.plongee-collant', sec), zone = $('.toit', sec), toile = $('.toit-toile', sec), img = $('.toit-photo img', sec);
   if (!scene || !zone || !toile || !img) return;
-  const legendes = $$('.plongee-couche', sec), rail = $$('.plongee-rail li', sec), une = $('.plongee-une', sec), ombreTexte = $('.plongee-ombre', sec);
+  const legendes = $$('.plongee-couche', sec), rail = $$('.plongee-rail li[data-rail]', sec), une = $('.plongee-une', sec), ombreTexte = $('.plongee-ombre', sec);
   const legende = $('.toit-soleil', sec);
   const ctx = toile.getContext('2d', { alpha: false });
   /* Images décodées d'avance (ImageBitmap) : aucun décodage ni envoi au processeur graphique pendant le défilement. */
@@ -151,6 +151,8 @@ function plongeeScene() {
   const photo = charge('/assets/images/grok/zone-faitage-1920.webp');
   let hd = null, couches = [];
   let W = 0, H = 0, dpr = 1, mobile = false, panneau = 0, raf = 0, dernierT = 0, st = null;
+  /* Sans processeur graphique (rendu logiciel), la toile est dessinée en plus petit : la scène reste fluide. */
+  const lent = (() => { try { const g = document.createElement('canvas').getContext('webgl'); const e = g && g.getExtension('WEBGL_debug_renderer_info'); const r = e ? String(g.getParameter(e.UNMASKED_RENDERER_WEBGL)) : ''; return !g || /swiftshader|llvmpipe|software|basic render/i.test(r); } catch { return true; } })();
   let base = null, region = null, etape = null, cam = { S: 1, tx: 0, ty: 0, a: 0 }, repos = [];
   const etat = { p: 0, cible: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2, fil: -2 };
   let ombre = { x: -.3, y: .6, l: 1, nuit: false };
@@ -175,9 +177,11 @@ function plongeeScene() {
   function mesurer() {
     W = scene.clientWidth; H = scene.clientHeight;
     if (!W || !H) return false;
-    dpr = Math.max(1, Math.min(2, devicePixelRatio || 1, Math.sqrt(2.2e6 / (W * H)))); mobile = W < 761;
+    dpr = Math.max(lent ? .6 : 1, Math.min(2, devicePixelRatio || 1, Math.sqrt((lent ? 5e5 : 2.2e6) / (W * H)))); mobile = W < 761;
     toile.width = Math.round(W * dpr); toile.height = Math.round(H * dpr);
     panneau = une ? (mobile ? une.offsetHeight : une.offsetWidth) : 0;
+    /* L'image sous la toile (premier affichage, retour arrière) est cadrée comme la toile : même zone libre. */
+    sec.style.setProperty('--bande', mobile ? `${panneau}px` : '0px');
     /* Premier écran : la photo couvre ce qui reste à droite du panneau (ou sous la bande, au téléphone). */
     const foyer = mobile ? [1180, 900] : [1010, 880];
     region = mobile ? couvrir(PHOTO.w, PHOTO.h, foyer, 1, 0, panneau, W, H) : couvrir(PHOTO.w, PHOTO.h, foyer, 1, panneau, 0, W, H);
@@ -214,7 +218,9 @@ function plongeeScene() {
   function peindrePhoto(c) {
     const k = photo.naturalWidth / PHOTO.w;
     const x0 = Math.max(0, -c.tx / c.S), y0 = Math.max(0, -c.ty / c.S), x1 = Math.min(PHOTO.w, (W - c.tx) / c.S), y1 = Math.min(PHOTO.h, (H - c.ty) / c.S);
-    if (x1 > x0 && y1 > y0) ctx.drawImage(bmp(photo), x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
+    /* Quand la version fine des tuiles couvre tout l'écran, elle seule est dessinée (une image par image, pas deux). */
+    const couvreHD = hd && pret(hd) && c.S > .9 && x0 >= HD.x && y0 >= HD.y && x1 <= HD.x + HD.w && y1 <= HD.y + HD.h && c.tx <= 0 && c.ty <= 0 && c.tx + PHOTO.w * c.S >= W && c.ty + PHOTO.h * c.S >= H;
+    if (x1 > x0 && y1 > y0 && !couvreHD) ctx.drawImage(bmp(photo), x0 * k, y0 * k, (x1 - x0) * k, (y1 - y0) * k, c.tx + x0 * c.S, c.ty + y0 * c.S, (x1 - x0) * c.S, (y1 - y0) * c.S);
     if (hd && pret(hd) && c.S > .9) {
       const a0 = Math.max(x0, HD.x), b0 = Math.max(y0, HD.y), a1 = Math.min(x1, HD.x + HD.w), b1 = Math.min(y1, HD.y + HD.h);
       if (a1 > a0 && b1 > b0) ctx.drawImage(bmp(hd), (a0 - HD.x) * 2, (b0 - HD.y) * 2, (a1 - a0) * 2, (b1 - b0) * 2, c.tx + a0 * c.S, c.ty + b0 * c.S, (a1 - a0) * c.S, (b1 - b0) * c.S);
@@ -346,7 +352,7 @@ function plongeeScene() {
   function dessiner(p, fin = true) {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     /* En mouvement, lissage simple (rapide) ; à l'arrêt, la dernière image est refaite en haute qualité. */
-    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = fin ? 'high' : 'medium';
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = fin ? 'high' : 'low';
     const P = SCENE.passages.map(([d, f]) => lin(d, f, p));
     let fait = 0; while (fait < 4 && P[fait] >= 1) fait++;
     const enCours = fait < 4 && P[fait] > 0;
@@ -582,7 +588,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=6'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=7'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
