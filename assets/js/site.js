@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=7';
+import { demarrer, etat, versObjet } from './socle/index.js?v=8';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -112,7 +112,8 @@ const SCENE = {
   leve: [.285, .33],
   envol: [.33, .39],
   passages: [[.385, .5], [.56, .65], [.70, .79], [.84, .92]],
-  legendes: [[.16, .345], [.47, .585], [.625, .73], [.765, .865], [.885, 1.01]],
+  /* Légendes en relais : chacune reste jusqu'à l'entrée de la suivante (au milieu du passage), jamais d'écran sans texte. */
+  legendes: [[.03, .455], [.455, .615], [.615, .755], [.755, .89], [.89, 1.01]],
   arrets: [.25, .53, .68, .815, .97],
 };
 /* Couches sous la tuile : image (1920 px), point visé, zoom de repos (fois la couverture de l'écran), fenêtre vers la suivante. */
@@ -416,15 +417,70 @@ function plongeeScene() {
       poser(une, 'transform', e > 0 ? (mobile ? `translate3d(0, ${(-(panneau + 2) * e).toFixed(1)}px, 0)` : `translate3d(${(-(panneau + 2) * e).toFixed(1)}px, 0, 0)`) : '');
       poser(une, 'visibility', e >= 1 ? 'hidden' : '');
     }
-    if (ombreTexte) poser(ombreTexte, 'opacity', doux(.1, .17, p).toFixed(3));
+    if (ombreTexte) poser(ombreTexte, 'opacity', doux(.03, .075, p).toFixed(3));
     let actif = -1;
     SCENE.legendes.forEach(([d, f], i) => { if (p >= d && p < f) actif = i; });
-    if (actif !== etat.actif) { etat.actif = actif; legendes.forEach((l, i) => l.classList.toggle('actif', i === actif)); }
-    let fil = 0;
-    SCENE.legendes.forEach(([d], i) => { if (p >= d - .02) fil = i; });
+    if (actif !== etat.actif) { relais(etat.actif, actif); etat.actif = actif; }
+    const fil = Math.max(0, actif);
     if (fil !== etat.fil) { etat.fil = fil; rail.forEach((li, i) => li.classList.toggle('actif', i === fil)); }
-    const dessous = p > .13;
+    const dessous = p >= SCENE.legendes[0][0];
     if (dessous !== sec.classList.contains('dessous')) sec.classList.toggle('dessous', dessous);
+  }
+
+  /* ----- Légendes : passage de relais. La suivante entre pendant que l'autre sort ; les lettres du nom se soulèvent
+     comme des tuiles (vers le haut en descendant, vers le bas en remontant), les lignes glissent dans leur masque,
+     le lien se pose comme un liteau. Le texte n'est jamais à moitié transparent : il est entier, ou masqué. ----- */
+  const Decoupe = window.SplitText;
+  const morceaux = legendes.map((li) => {
+    const o = { li, extras: $$('.plongee-geste, .plongee-lien, .plongee-fin', li), tl: null, vu: false };
+    if (Decoupe) {
+      const n = $('.plongee-n', li), h = $('h3', li), ph = $('.plongee-phrase', li);
+      try {
+        if (n) new Decoupe(n, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true });
+        if (h) new Decoupe(h, { type: 'lines,words,chars', mask: 'lines', linesClass: 'pc-titre', wordsClass: 'pc-mot', charsClass: 'pc-lettre', autoSplit: true });
+        if (ph) new Decoupe(ph, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true });
+        li.classList.add('decoupe');
+      } catch {}
+    }
+    return o;
+  });
+  const pieces = (o) => ({
+    haut: $$('.plongee-n .pc-ligne', o.li), lettres: $$('h3 .pc-lettre', o.li), phrase: $$('.plongee-phrase .pc-ligne', o.li),
+  });
+  function sortir(o, dir) {
+    if (o.tl) o.tl.kill();
+    o.li.classList.remove('actif'); o.li.classList.add('sortie');
+    const fin = () => { o.li.classList.remove('sortie'); o.vu = false; };
+    o.extras.forEach((e) => { if (!e.style.clipPath) e.style.clipPath = 'inset(-20% -6% -60% -6%)'; });
+    if (!o.li.classList.contains('decoupe')) { o.tl = gsap.to(o.li, { autoAlpha: 0, y: -16 * dir, duration: .3, ease: 'power2.in', onComplete: () => { gsap.set(o.li, { clearProps: 'transform,opacity,visibility' }); fin(); } }); return; }
+    const { haut, lettres, phrase } = pieces(o);
+    o.tl = gsap.timeline({ onComplete: fin })
+      .to(haut, { yPercent: -135 * dir, duration: .26, ease: 'power2.in' }, 0)
+      .to(lettres, { yPercent: -155 * dir, rotate: -7 * dir, duration: .28, ease: 'power2.in', stagger: { each: .008, from: dir > 0 ? 'start' : 'end' } }, 0)
+      .to(phrase, { yPercent: -135 * dir, duration: .26, ease: 'power2.in', stagger: .02 * dir }, 0)
+      .to(o.extras, { clipPath: dir > 0 ? 'inset(-20% -6% -60% 100%)' : 'inset(-20% 100% -60% -6%)', duration: .22, ease: 'power2.in' }, 0);
+  }
+  function entrer(o, dir, retard) {
+    if (o.tl) o.tl.kill();
+    o.li.classList.remove('sortie'); o.li.classList.add('actif');
+    if (!o.li.classList.contains('decoupe')) { o.tl = gsap.fromTo(o.li, { autoAlpha: 0, y: 22 * dir }, { autoAlpha: 1, y: 0, duration: .55, delay: retard, ease: 'power3.out', clearProps: 'transform,opacity,visibility' }); o.vu = true; return; }
+    const { haut, lettres, phrase } = pieces(o);
+    if (!o.vu) {
+      gsap.set([...haut, ...phrase], { yPercent: 135 * dir });
+      gsap.set(lettres, { yPercent: 155 * dir, rotate: 9 * dir, transformOrigin: '0% 100%' });
+      gsap.set(o.extras, { clipPath: dir > 0 ? 'inset(-20% 100% -60% -6%)' : 'inset(-20% -6% -60% 100%)' });
+    }
+    o.vu = true;
+    o.tl = gsap.timeline({ delay: retard })
+      .to(haut, { yPercent: 0, duration: .6, ease: 'power3.out' }, 0)
+      .to(lettres, { yPercent: 0, rotate: 0, duration: .75, ease: 'back.out(1.5)', stagger: { each: .026, from: dir > 0 ? 'start' : 'end' } }, .05)
+      .to(phrase, { yPercent: 0, duration: .75, ease: 'power3.out', stagger: .075 * dir }, .2)
+      .to(o.extras, { clipPath: 'inset(-20% -6% -60% -6%)', duration: .6, ease: 'power3.inOut', stagger: .1, onComplete: () => gsap.set(o.extras, { clearProps: 'clipPath' }) }, .36);
+  }
+  function relais(avant, apres) {
+    const dir = apres > avant ? 1 : -1;
+    if (avant >= 0 && morceaux[avant]) sortir(morceaux[avant], dir);
+    if (apres >= 0 && morceaux[apres]) entrer(morceaux[apres], dir, avant >= 0 ? .12 : 0);
   }
 
   /* ----- Boucle unique : progression lissée, ressort de la tuile, dessin ----- */
@@ -588,7 +644,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=7'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=8'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */

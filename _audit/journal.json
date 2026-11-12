@@ -249,6 +249,28 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 8,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil (plongée)"
+   ],
+   "etapes": [
+    {
+     "etape": "relais des légendes de la plongée et entrée du fil",
+     "budget": 25,
+     "debut": "2026-11-12T19:55:00+01:00",
+     "fin": "2026-11-12T20:12:00+01:00"
+    },
+    {
+     "etape": "audit de contrôle et livraison",
+     "budget": 10,
+     "debut": "2026-11-12T20:12:00+01:00",
+     "fin": "2026-11-12T20:18:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

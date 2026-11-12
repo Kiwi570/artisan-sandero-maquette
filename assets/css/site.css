@@ -742,7 +742,6 @@ html { overflow-x: clip; }
 .plongee-indice span { position: relative; width: 2px; height: 34px; background: var(--ligne); overflow: hidden; }
 .plongee-indice span::after { content: ""; position: absolute; left: 0; top: -40%; width: 100%; height: 40%; background: var(--tuile); animation: plongee-indice 1.8s cubic-bezier(.6, 0, .3, 1) infinite; }
 @keyframes plongee-indice { to { top: 100%; } }
-.plongee-couche { will-change: transform, opacity; }
 .une-titre .mot { text-shadow: 0 calc(2px + var(--o, 0) * 26px) calc(3px + var(--o, 0) * 18px) rgba(34, 24, 15, calc(.12 + var(--o, 0) * .05)); }
 .plongee-une .une-actions { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center; margin: 0; }
 .plongee-une .bouton { font-size: 1.02rem; padding-inline: 1.25em; min-height: 52px; }
@@ -750,12 +749,14 @@ html { overflow-x: clip; }
 
 /* Les cinq couches : grand nom, une phrase, au bas à gauche ; une seule à la fois. */
 .plongee-couches ol { list-style: none; margin: 0; padding: 0; }
-.plongee-couche { position: absolute; z-index: 6; left: var(--gouttiere); bottom: clamp(28px, 8vh, 84px); width: min(560px, calc(100% - 2 * var(--gouttiere))); margin: 0;
-  opacity: 0; visibility: hidden; transform: translateY(26px); transition: opacity .45s ease, transform .6s cubic-bezier(.2, .7, .2, 1), visibility 0s linear .45s; }
-.plongee-couche.actif { opacity: 1; visibility: visible; transform: none; transition: opacity .5s ease .08s, transform .7s cubic-bezier(.2, .7, .2, 1) .05s, visibility 0s; }
+.plongee-couche { position: absolute; z-index: 5; left: var(--gouttiere); bottom: clamp(28px, 8vh, 84px); width: min(560px, calc(100% - 2 * var(--gouttiere))); margin: 0; visibility: hidden; }
+.plongee-couche.actif, .plongee-couche.sortie { visibility: visible; }
+/* Relais des légendes : chaque ligne glisse dans son masque (découpe clip-path, l'ombre du texte n'est pas rognée). */
+.plongee-couche .pc-ligne-mask, .plongee-couche .pc-titre-mask { overflow: visible !important; clip-path: inset(-.3em -1.2em -.22em -1.2em); }
+.plongee-couche .pc-lettre { transform-origin: 0% 100%; }
 .plongee-n { margin: 0 0 12px; font-size: .8125rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #eadbc8; font-variant-numeric: tabular-nums; }
 .plongee-n span { color: var(--liteau); }
-.plongee-couche h3 { font-size: clamp(3rem, min(7.4vw, 12vh), 7.4rem); line-height: .9; letter-spacing: -.035em; margin: 0 0 16px; color: #fbf7f1; text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.plongee-couche h3 { font-size: clamp(3rem, min(7.4vw, 12vh), 7.4rem); line-height: .9; letter-spacing: -.035em; margin: 0 0 16px; color: #fbf7f1; text-shadow: 0 2px 14px rgba(0,0,0,.32); }
 .plongee-couche h3 em { color: #f0a37c; }
 .plongee-phrase { margin: 0 0 14px; font-size: clamp(1.05rem, .98rem + .35vw, 1.28rem); line-height: 1.5; max-width: 34ch; color: #f2e9dd; text-shadow: 0 1px 12px rgba(0,0,0,.4); }
 .plongee-lien { margin: 0; }
@@ -875,3 +876,17 @@ html.js:not(.secours) .plan-couche { display: none; }
   .finition:not(.choisie) .finition-texte { padding: 12px 14px; }
   .finition .mention-ia { top: 8px; right: 8px; bottom: auto; }
 }
+
+/* ---------- v8 · Relais des textes de la plongée ---------- */
+/* Le fil des couches entre ligne après ligne depuis la droite (jamais de fondu) ; en remontant au titre, il s'efface d'un coup. */
+.plongee-rail { opacity: 1; visibility: hidden; transition: none; }
+.plongee.dessous .plongee-rail { visibility: visible; transition: none; }
+.plongee-rail li { transform: translate3d(calc(100% + 8px), 0, 0); transition: none; }
+.plongee.dessous .plongee-rail li { transform: none; transition: transform .75s cubic-bezier(.16, 1, .3, 1); }
+.plongee.dessous .plongee-rail li:nth-child(2) { transition-delay: .05s; }
+.plongee.dessous .plongee-rail li:nth-child(3) { transition-delay: .1s; }
+.plongee.dessous .plongee-rail li:nth-child(4) { transition-delay: .15s; }
+.plongee.dessous .plongee-rail li:nth-child(5) { transition-delay: .2s; }
+.plongee.dessous .plongee-rail li:nth-child(6) { transition-delay: .25s; }
+/* Couche en cours : le liteau jaune glisse d'une ligne à l'autre. */
+.plongee-rail a::after { transition: width .5s cubic-bezier(.16, 1, .3, 1), background-color .3s; }

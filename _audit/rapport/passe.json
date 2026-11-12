@@ -1,14 +1,14 @@
 {
- "id": "20261112-183704-standard-cible-partiel",
- "date": "2026-11-12T18:37:55.088Z",
- "niveau": "standard",
+ "id": "20261112-191451-rapide-cible-partiel",
+ "date": "2026-11-12T19:15:07.288Z",
+ "niveau": "rapide",
  "pages": "/",
  "etapes": [
-  "fluidite"
+  "mesures"
  ],
- "version": "7",
+ "version": "8",
  "echecs": 0,
- "aRegarder": 1,
+ "aRegarder": 14,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

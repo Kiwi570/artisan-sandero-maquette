@@ -2,6 +2,20 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v8 — relais des textes de la plongée
+
+- **Accueil, plongée : jamais d'écran sans texte.**
+  - Chaque légende reste à l'écran jusqu'à ce que la suivante arrive, au milieu du passage d'une couche à l'autre. Avant, il y avait un long trou : la tuile se soulevait et s'envolait sans texte.
+  - « La tuile » arrive pendant que le panneau du titre glisse : elle est déjà dessous et le panneau la découvre.
+  - La dernière légende (« Les chevrons », avec le diagnostic et le numéro) reste jusqu'à l'arrivée de la section suivante.
+- **Accueil, plongée : sortie et entrée des légendes.**
+  - En descendant, les lettres du nom se soulèvent l'une après l'autre et sortent par le haut, comme des tuiles. Pendant ce temps, les lettres du nom suivant montent par le bas et se posent avec un léger rebond.
+  - Le surtitre et les lignes de la phrase glissent dans leur masque. Le lien se pose de gauche à droite, comme un liteau.
+  - En remontant, tout se fait dans l'autre sens.
+  - Le texte n'est jamais à moitié transparent : il est entier, ou masqué.
+- **Accueil, plongée : le fil des couches** entre ligne après ligne depuis la droite, en même temps que la première légende. Le liteau jaune de la couche en cours glisse d'une ligne à l'autre. Il suit maintenant exactement la légende affichée.
+- **Restent signalés par l'audit, comme prévu** : les contrôles du mode calme (retiré à la demande du client).
+
 ## v7 — audit complet et finitions
 
 Audit automatique standard sur toutes les pages (6 tailles, sans JavaScript, films, fluidité, parcours), puis revue de chaque page en captures sur ordinateur et téléphone.
