@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=1';
+import { demarrer, etat, versObjet } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -442,7 +442,10 @@ function couches() {
       if (compte) compte.textContent = String(actif + 1);
     }
   };
-  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (s) => maj(s.progress), onRefresh: (s) => maj(s.progress) });
+  /* Progression amortie : les couches suivent le défilement avec un léger retard, sans à-coups. */
+  const suivi = { p: 0 };
+  const vers = (p) => gsap.to(suivi, { p, duration: .7, ease: 'power2.out', overwrite: true, onUpdate: () => maj(suivi.p) });
+  const st = window.ScrollTrigger.create({ trigger: sec, start: 'top top', end: 'bottom bottom', onUpdate: (s) => vers(s.progress), onRefresh: (s) => { suivi.p = s.progress; maj(s.progress); } });
   /* Couches à la main (souris) : tirer la couche vers le haut la soulève ; on avance dans la scène du même geste. */
   const pile = $('.couches-pile', sec);
   let tire = null;
@@ -533,7 +536,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=1'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=2'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */

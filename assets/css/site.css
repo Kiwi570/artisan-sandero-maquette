@@ -180,7 +180,7 @@ html.js:not(.calme) .une-orage.orage { opacity: 1; }
 .plaque .plaque-nom { margin: 0; position: absolute; left: 14px; bottom: 14px; z-index: 3; font-family: var(--police-titres); font-style: italic; font-size: 1.3rem; background: var(--chaux); color: var(--encre); padding: 4px 12px; border-radius: 2px; }
 .couches-compte { font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--liteau); margin: 0 0 10px; font-variant-numeric: tabular-nums; }
 /* Avec JavaScript et animations : section haute, cadre collant, plaques empilées qui se soulèvent. */
-html.js:not(.calme):not(.secours) .couches { height: 160svh; }
+html.js:not(.calme):not(.secours) .couches { height: 300svh; }
 html.js:not(.calme):not(.secours) .couches-collant { position: sticky; top: 0; height: 100svh; }
 html.js:not(.calme):not(.secours) .couches-pile { aspect-ratio: 3 / 2; max-height: calc(100svh - var(--entete-h) - 80px); perspective: 1400px; perspective-origin: 50% -10%; }
 html.js:not(.calme):not(.secours) .couches-pile .plaque { position: absolute; inset: 0; transform-origin: 50% 0; }

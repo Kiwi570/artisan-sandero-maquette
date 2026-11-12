@@ -1,16 +1,13 @@
 {
- "id": "20261112-154823-standard-cible-partiel",
- "date": "2026-11-12T15:50:03.021Z",
- "niveau": "standard",
- "pages": "/couverture,/zinguerie-charpente",
- "etapes": [
-  "films",
-  "bords"
- ],
- "version": "1",
+ "id": "20261112-155907-rapide-cible",
+ "date": "2026-11-12T16:03:49.596Z",
+ "niveau": "rapide",
+ "pages": "/",
+ "etapes": "toutes",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 4,
- "nonLances": 0,
+ "aRegarder": 7,
+ "nonLances": 1,
  "manquants": 0,
  "statut": "complet"
 }

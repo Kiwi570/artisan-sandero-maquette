@@ -2,6 +2,11 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v2 — la scène des couches, plus lente
+
+- **Accueil, « Cinq couches, un seul toit »** : la scène défile beaucoup plus lentement. Elle mesure 300 svh au lieu de 160, soit environ un demi-écran de défilement par couche, et les couches suivent le défilement avec un léger amorti, sans à-coups.
+- **Toutes les pages** : le numéro de version des fichiers passe à 2, pour que les navigateurs chargent la nouvelle version.
+
 ## v1 — la base
 
 - **Pages** : Accueil, Couverture, Zinguerie et charpente, Peinture et façades, Devis et contact, page 404 (« Cette page a glissé du toit »). Français seul.
