@@ -1,0 +1,7761 @@
+{
+  "dossier": "/Users/paul/Downloads/artisan-sandero-recu",
+  "date": "2026-11-11T17:16:54.200Z",
+  "detection": "Vision (macOS) + mesures sharp",
+  "planches": [
+    "planche.jpg",
+    "planche-2.jpg",
+    "planche-3.jpg",
+    "planche-4.jpg",
+    "planche-5.jpg",
+    "planche-6.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [
+    {
+      "garder": "pose-faitage-professionnel-entreprise.webp",
+      "ecarter": "artisan-sandero-couvreurs-40-3.webp",
+      "type": "doublon",
+      "distance": 4,
+      "ressemblance": 0.99
+    },
+    {
+      "garder": "logo-logotype-blanc-1920w.webp",
+      "ecarter": "logo-logotype-blanc-288w.webp",
+      "type": "doublon",
+      "distance": 11,
+      "ressemblance": 1
+    }
+  ],
+  "images": [
+    {
+      "fichier": "logo-logotype-2024-1920w.webp",
+      "nom": "logo-logotype-2024-1920w",
+      "drapeau": "logo",
+      "largeur": 1530,
+      "hauteur": 702,
+      "ratio": "2.18",
+      "ratio_valeur": 2.179,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 39390,
+      "transparence": false,
+      "sujet": {
+        "x": 4.7,
+        "y": 10.5,
+        "l": 71.9,
+        "h": 78.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        57
+      ],
+      "cadrage_css": "40% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.33
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.7
+        }
+      ],
+      "qualite": {
+        "nettete": 31.3,
+        "bruit": 0.37,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "ARTISAN SANDERO · COUVERTURE - PEINTURE - ZINGUERIE",
+        "blocs": 2,
+        "surface": 21.3,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERTURE - PEINTURE - ZINGUERIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "129a1d2d6d516d00",
+      "drapeaux": [
+        "logo",
+        "texte du logo"
+      ]
+    },
+    {
+      "fichier": "logo-logotype-top-1920w-sombre.webp",
+      "nom": "logo-logotype-top-1920w-sombre",
+      "drapeau": "logo",
+      "largeur": 799,
+      "hauteur": 368,
+      "ratio": "2.17",
+      "ratio_valeur": 2.171,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 34060,
+      "transparence": true,
+      "sujet": {
+        "x": 23.6,
+        "y": 8.4,
+        "l": 52.1,
+        "h": 55.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        42
+      ],
+      "cadrage_css": "49% 42%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "haut",
+          "score": 0.06,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        }
+      ],
+      "qualite": {
+        "nettete": 58.8,
+        "bruit": 0.25,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0e8f17173316b2e8",
+      "drapeaux": [
+        "logo"
+      ]
+    },
+    {
+      "fichier": "logo-logotype-blanc-288w.webp",
+      "nom": "logo-logotype-blanc-288w",
+      "drapeau": "logo",
+      "largeur": 290,
+      "hauteur": 142,
+      "ratio": "2:1",
+      "ratio_valeur": 2.042,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 17550,
+      "transparence": true,
+      "sujet": {
+        "x": 15.1,
+        "y": 1.9,
+        "l": 84.4,
+        "h": 98,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        67
+      ],
+      "cadrage_css": "56% 67%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "clair",
+          "recouvre_sujet": 0.84
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 46.8,
+        "bruit": 0.47,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "ARTISAN · SANDERO",
+        "blocs": 2,
+        "surface": 17.9,
+        "details": [
+          {
+            "texte": "ARTISAN",
+            "niveau": "marque"
+          },
+          {
+            "texte": "SANDERO",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "0e8e171715298485",
+      "doublon_de": {
+        "fichier": "logo-logotype-blanc-1920w.webp",
+        "type": "doublon",
+        "distance": 11,
+        "ressemblance": 1
+      },
+      "drapeaux": [
+        "logo",
+        "texte du logo",
+        "doublon de logo-logotype-blanc-1920w.webp"
+      ]
+    },
+    {
+      "fichier": "logo-logotype-blanc-1920w.webp",
+      "nom": "logo-logotype-blanc-1920w",
+      "drapeau": "logo",
+      "largeur": 1020,
+      "hauteur": 499,
+      "ratio": "2:1",
+      "ratio_valeur": 2.044,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 41746,
+      "transparence": true,
+      "sujet": {
+        "x": 16.2,
+        "y": 3.3,
+        "l": 71.3,
+        "h": 68.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        54
+      ],
+      "cadrage_css": "47% 54%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "droite",
+          "score": 0.06,
+          "ton": "clair",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 25.8,
+        "bruit": 0.15,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "logo",
+        "a_verifier": false,
+        "texte": "ARTISAN SANDERO",
+        "blocs": 1,
+        "surface": 17.9,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "0c8e9617150a0125",
+      "drapeaux": [
+        "logo",
+        "texte du logo"
+      ]
+    },
+    {
+      "fichier": "fenetre-toit-nouvellement-posee.webp",
+      "nom": "fenetre-toit-nouvellement-posee",
+      "drapeau": "lieu",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 529274,
+      "transparence": false,
+      "sujet": {
+        "x": 28.9,
+        "y": 10.3,
+        "l": 59.6,
+        "h": 62.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        41
+      ],
+      "cadrage_css": "55% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.45
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        }
+      ],
+      "qualite": {
+        "nettete": 36.1,
+        "bruit": 1.21,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "1271f173bb86e1ae",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "renovation-toiture-professionnel.webp",
+      "nom": "renovation-toiture-professionnel",
+      "drapeau": "lieu",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 567786,
+      "transparence": false,
+      "sujet": {
+        "x": 39.6,
+        "y": 33.9,
+        "l": 55.2,
+        "h": 48.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        50
+      ],
+      "cadrage_css": "59% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        }
+      ],
+      "qualite": {
+        "nettete": 34.7,
+        "bruit": 1.34,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "DIFB• R · HIA · DIFB",
+        "blocs": 3,
+        "surface": 2.9,
+        "details": [
+          {
+            "texte": "DIFB• R",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "HIA",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "DIFB",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "8cfc16e2c6e74d90",
+      "drapeaux": [
+        "lieu",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "pose-tuiles-orange.webp",
+      "nom": "pose-tuiles-orange",
+      "drapeau": "autre",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 540398,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 1.3,
+        "l": 67.4,
+        "h": 98.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        39
+      ],
+      "cadrage_css": "50% 39%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "bas",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "haut",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 33.2,
+        "bruit": 0.9,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "696ad7b033b4e686",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "professionnel-batisse.webp",
+      "nom": "professionnel-batisse",
+      "drapeau": "autre",
+      "largeur": 1500,
+      "hauteur": 2000,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 599600,
+      "transparence": false,
+      "sujet": {
+        "x": 45.2,
+        "y": 17.4,
+        "l": 14.7,
+        "h": 23.4,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        24
+      ],
+      "cadrage_css": "53% 24%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 34.6,
+        "bruit": 1.92,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "54ccef4ba0c9254b",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "adobestock-785175771-1920w.webp",
+      "nom": "adobestock-785175771-1920w",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 109156,
+      "transparence": false,
+      "sujet": {
+        "x": 9,
+        "y": 33.9,
+        "l": 90.8,
+        "h": 54.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        52
+      ],
+      "cadrage_css": "52% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.94,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "bas",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.61
+        }
+      ],
+      "qualite": {
+        "nettete": 22.7,
+        "bruit": 0.49,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8102190f80246ccc",
+      "drapeaux": [
+        "oeuvre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "adobestock-353866511-2880w.webp",
+      "nom": "adobestock-353866511-2880w",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 104222,
+      "transparence": false,
+      "sujet": {
+        "x": 23.7,
+        "y": 11.6,
+        "l": 20.4,
+        "h": 21.5,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        34,
+        18
+      ],
+      "cadrage_css": "34% 18%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.56,
+          "ton": "moyen",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "moyen",
+          "recouvre_sujet": 0.09
+        }
+      ],
+      "qualite": {
+        "nettete": 12.4,
+        "bruit": 0.34,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "004526f0490b872e",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "charpente-bois.webp",
+      "nom": "charpente-bois",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1275,
+      "ratio": "3:2",
+      "ratio_valeur": 1.506,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 318794,
+      "transparence": false,
+      "sujet": {
+        "x": 25,
+        "y": 25,
+        "l": 45.6,
+        "h": 32.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        41
+      ],
+      "cadrage_css": "47% 41%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        }
+      ],
+      "qualite": {
+        "nettete": 26.9,
+        "bruit": 1.3,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "ddc84e2c9c3759b3",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "adobestock-480329143-1920w.webp",
+      "nom": "adobestock-480329143-1920w",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1200,
+      "ratio": "16:10",
+      "ratio_valeur": 1.6,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 72372,
+      "transparence": false,
+      "sujet": {
+        "x": 20.1,
+        "y": 25.3,
+        "l": 78.9,
+        "h": 74.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        50
+      ],
+      "cadrage_css": "59% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "sombre",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 30.5,
+        "bruit": 0.38,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "183228ec90f1fce0",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "adobestock-232941696-1200h.webp",
+      "nom": "adobestock-232941696-1200h",
+      "drapeau": "autre",
+      "largeur": 1800,
+      "hauteur": 1200,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 136768,
+      "transparence": false,
+      "sujet": {
+        "x": 19.4,
+        "y": 18.8,
+        "l": 32.2,
+        "h": 81.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        45
+      ],
+      "cadrage_css": "37% 45%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.35,
+          "ton": "moyen",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "droite",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        }
+      ],
+      "qualite": {
+        "nettete": 28.9,
+        "bruit": 0.58,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "d8c0c2c2d2e2c6c6",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "adobestock-167121625-1200h.webp",
+      "nom": "adobestock-167121625-1200h",
+      "drapeau": "autre",
+      "largeur": 1800,
+      "hauteur": 1200,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 232676,
+      "transparence": false,
+      "sujet": {
+        "x": 39.7,
+        "y": 17.6,
+        "l": 20.6,
+        "h": 52.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        43
+      ],
+      "cadrage_css": "50% 43%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.48,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "haut",
+          "score": 0.44,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.9,
+        "bruit": 1.18,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "e48ec8868e973317",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40.webp",
+      "nom": "artisan-sandero-couvreurs-40",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 3776,
+      "transparence": false,
+      "sujet": {
+        "x": 39.7,
+        "y": 27.9,
+        "l": 20.6,
+        "h": 29.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        42
+      ],
+      "cadrage_css": "50% 42%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 1,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 1,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 1,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.99,
+          "ton": "sombre",
+          "recouvre_sujet": 0.04
+        }
+      ],
+      "qualite": {
+        "nettete": 0,
+        "bruit": 0,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "0000000000000000",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "calme gauche/droite/bas/haut"
+      ]
+    },
+    {
+      "fichier": "adobestock-27244023-1200h.webp",
+      "nom": "adobestock-27244023-1200h",
+      "drapeau": "autre",
+      "largeur": 1600,
+      "hauteur": 1200,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 104394,
+      "transparence": false,
+      "sujet": {
+        "x": 4.8,
+        "y": 24.6,
+        "l": 94.5,
+        "h": 58.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        54
+      ],
+      "cadrage_css": "43% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.72,
+          "ton": "moyen",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "gauche",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "droite",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 25.8,
+        "bruit": 0.54,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "820248e4b2a6b7a0",
+      "drapeaux": [
+        "autre",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "adobestock-715359085-1920w.webp",
+      "nom": "adobestock-715359085-1920w",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 976,
+      "ratio": "2:1",
+      "ratio_valeur": 1.967,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 154652,
+      "transparence": false,
+      "sujet": {
+        "x": 2.2,
+        "y": 15.4,
+        "l": 95.7,
+        "h": 84.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        54
+      ],
+      "cadrage_css": "50% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.8
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 44.8,
+        "bruit": 1.18,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f8cdcf96962b374d",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule.png",
+      "nom": "cliquer-voir-actualite-seule",
+      "drapeau": "lieu",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1514678,
+      "transparence": true,
+      "sujet": {
+        "x": 85.9,
+        "y": 31.9,
+        "l": 13.9,
+        "h": 46.8,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        94,
+        44
+      ],
+      "cadrage_css": "94% 44%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "gauche",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        }
+      ],
+      "qualite": {
+        "nettete": 48.2,
+        "bruit": 0.53,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "Des Gouttières · Prêtes Pour · L'automne · Des gouttières · bien entretenues · permettent de · mieux évacuer les · pluies et de · protéger la toiture · des infi",
+        "blocs": 13,
+        "surface": 15.9,
+        "details": [
+          {
+            "texte": "Des Gouttières",
+            "niveau": "marque"
+          },
+          {
+            "texte": "Prêtes Pour",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "L'automne",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Des gouttières",
+            "niveau": "marque"
+          },
+          {
+            "texte": "bien entretenues",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "permettent de",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "mieux évacuer les",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "pluies et de",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "protéger la toiture",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "des infiltrations.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "CONSERVI",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "3270313676121313",
+      "drapeaux": [
+        "lieu",
+        "visage",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-2.png",
+      "nom": "cliquer-voir-actualite-seule-2",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1444858,
+      "transparence": true,
+      "sujet": {
+        "x": 68,
+        "y": 38.4,
+        "l": 14.5,
+        "h": 15.4,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        75,
+        45
+      ],
+      "cadrage_css": "75% 45%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.26,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.06
+        }
+      ],
+      "qualite": {
+        "nettete": 69.5,
+        "bruit": 0.34,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERIURE D · PRINTURE - ZINGUERIE · CONSEIL DE · PRO · Confiez toujours la modification · d'une charpente en fermettes à · un spécialiste po",
+        "blocs": 9,
+        "surface": 24.2,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERIURE D",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PRINTURE - ZINGUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "CONSEIL DE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PRO",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Confiez toujours la modification",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "d'une charpente en fermettes à",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "un spécialiste pour éviter le",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "risque d'écroulement du toit.",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "26c6f03131715747",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "document lisible"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-3.png",
+      "nom": "cliquer-voir-actualite-seule-3",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 3649285,
+      "transparence": true,
+      "sujet": {
+        "x": 28.9,
+        "y": 36.1,
+        "l": 25.9,
+        "h": 56.3,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        40,
+        49
+      ],
+      "cadrage_css": "40% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "bas",
+          "score": 0.17,
+          "ton": "sombre",
+          "recouvre_sujet": 0.2
+        }
+      ],
+      "qualite": {
+        "nettete": 35.6,
+        "bruit": 1.1,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · PEINTURE - ZINGUERIE",
+        "blocs": 2,
+        "surface": 0.2,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "PEINTURE - ZINGUERIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "2e98c4a18985d1e1",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "refection-toiture-garage.webp",
+      "nom": "refection-toiture-garage",
+      "drapeau": "lieu",
+      "largeur": 1000,
+      "hauteur": 1333,
+      "ratio": "3:4",
+      "ratio_valeur": 0.75,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 221744,
+      "transparence": false,
+      "sujet": {
+        "x": 14.1,
+        "y": 14.3,
+        "l": 64.9,
+        "h": 52.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        45
+      ],
+      "cadrage_css": "50% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 40.7,
+        "bruit": 1.59,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "f0f0b0ababd9ccc5",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "pose-faitage-professionnel-entreprise.webp",
+      "nom": "pose-faitage-professionnel-entreprise",
+      "drapeau": "autre",
+      "largeur": 1600,
+      "hauteur": 719,
+      "ratio": "2.23",
+      "ratio_valeur": 2.225,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 200858,
+      "transparence": false,
+      "sujet": {
+        "x": 34.7,
+        "y": 20.9,
+        "l": 27.8,
+        "h": 77.9,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        44
+      ],
+      "cadrage_css": "49% 44%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "bas",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        }
+      ],
+      "qualite": {
+        "nettete": 44.5,
+        "bruit": 1.97,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDER · WW.ALTILAN-JAXDBION",
+        "blocs": 2,
+        "surface": 1.3,
+        "details": [
+          {
+            "texte": "ARTISAN SANDER",
+            "niveau": "marque"
+          },
+          {
+            "texte": "WW.ALTILAN-JAXDBION",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "ec93cf4c2ccccccc",
+      "drapeaux": [
+        "autre",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40-2.webp",
+      "nom": "artisan-sandero-couvreurs-40-2",
+      "drapeau": "autre",
+      "largeur": 955,
+      "hauteur": 1200,
+      "ratio": "4:5",
+      "ratio_valeur": 0.796,
+      "orientation": "portrait",
+      "format": "webp",
+      "poids": 62448,
+      "transparence": false,
+      "sujet": {
+        "x": 20.4,
+        "y": 7.7,
+        "l": 67.1,
+        "h": 58.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        33
+      ],
+      "cadrage_css": "53% 33%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.57,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.52
+        }
+      ],
+      "qualite": {
+        "nettete": 15.4,
+        "bruit": 0.54,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "955 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "c9ccdadbf8f0f2ff",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "nettoyage-facade.webp",
+      "nom": "nettoyage-facade",
+      "drapeau": "oeuvre",
+      "largeur": 1595,
+      "hauteur": 716,
+      "ratio": "2.23",
+      "ratio_valeur": 2.228,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 73044,
+      "transparence": false,
+      "sujet": {
+        "x": 16.1,
+        "y": 27.7,
+        "l": 10.5,
+        "h": 53.9,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        21,
+        44
+      ],
+      "cadrage_css": "21% 44%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.14
+        }
+      ],
+      "qualite": {
+        "nettete": 33.8,
+        "bruit": 0.42,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "feee88a0b0b29292",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "pose-isolant-impermeabilisant-sous.webp",
+      "nom": "pose-isolant-impermeabilisant-sous",
+      "drapeau": "lieu",
+      "largeur": 1000,
+      "hauteur": 1000,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 144390,
+      "transparence": false,
+      "sujet": {
+        "x": 65.5,
+        "y": 45.8,
+        "l": 34.5,
+        "h": 29.9,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        83,
+        55
+      ],
+      "cadrage_css": "83% 55%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.42,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.42,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.26
+        }
+      ],
+      "qualite": {
+        "nettete": 51,
+        "bruit": 1.37,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "SOPRE · SOPREMA · SCH RECOUVREMENT PENTE ≤ 30% · 10 CI RECOUVREMENT PENTE > 30% · 10 CH RES · OUVREMENT PENTE > 30%",
+        "blocs": 6,
+        "surface": 9.7,
+        "details": [
+          {
+            "texte": "SOPRE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "SOPREMA",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "SCH RECOUVREMENT PENTE ≤ 30%",
+            "niveau": "marque"
+          },
+          {
+            "texte": "10 CI RECOUVREMENT PENTE > 30%",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "10 CH RES",
+            "niveau": "marque"
+          },
+          {
+            "texte": "OUVREMENT PENTE > 30%",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "f8d2a3d1800431aa",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "peintre-2-1920w.webp",
+      "nom": "peintre-2-1920w",
+      "drapeau": "autre",
+      "largeur": 1200,
+      "hauteur": 800,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 153676,
+      "transparence": true,
+      "sujet": {
+        "x": 6,
+        "y": 25,
+        "l": 36.5,
+        "h": 74.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        30,
+        51
+      ],
+      "cadrage_css": "30% 51%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.87,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "clair",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 31.2,
+        "bruit": 0.58,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "0203613131637360",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme droite/haut"
+      ]
+    },
+    {
+      "fichier": "travaux-cours-chez-particulier.webp",
+      "nom": "travaux-cours-chez-particulier",
+      "drapeau": "lieu",
+      "largeur": 1000,
+      "hauteur": 667,
+      "ratio": "3:2",
+      "ratio_valeur": 1.499,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 116208,
+      "transparence": false,
+      "sujet": {
+        "x": 12.2,
+        "y": 18.8,
+        "l": 87.6,
+        "h": 81.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        53
+      ],
+      "cadrage_css": "48% 53%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.31,
+          "ton": "clair",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.88
+        }
+      ],
+      "qualite": {
+        "nettete": 100.5,
+        "bruit": 1.05,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1000 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "0800879b9ffed6f6",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "professionnel-plein-ravalement-facade.webp",
+      "nom": "professionnel-plein-ravalement-facade",
+      "drapeau": "lieu",
+      "largeur": 640,
+      "hauteur": 640,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 37696,
+      "transparence": true,
+      "sujet": {
+        "x": 0.4,
+        "y": 10.6,
+        "l": 93.1,
+        "h": 89.4,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        37
+      ],
+      "cadrage_css": "47% 37%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "clair",
+          "recouvre_sujet": 0.93
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.75
+        }
+      ],
+      "qualite": {
+        "nettete": 47.8,
+        "bruit": 0.66,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "640 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "051f9b0b47470505",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "gouttiere-2-1920w.webp",
+      "nom": "gouttiere-2-1920w",
+      "drapeau": "autre",
+      "largeur": 1200,
+      "hauteur": 263,
+      "ratio": "4.56",
+      "ratio_valeur": 4.563,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 14286,
+      "transparence": true,
+      "sujet": {
+        "x": 3.2,
+        "y": 0.5,
+        "l": 93.6,
+        "h": 54.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        24
+      ],
+      "cadrage_css": "40% 24%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.81,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "gauche",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.92
+        }
+      ],
+      "qualite": {
+        "nettete": 30.2,
+        "bruit": 0.28,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1200 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "d098426868686868",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "logotype-label-artisan.webp",
+      "nom": "logotype-label-artisan",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 560,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 5714,
+      "transparence": true,
+      "sujet": {
+        "x": 11,
+        "y": 19.5,
+        "l": 59.4,
+        "h": 53.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        43
+      ],
+      "cadrage_css": "43% 43%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.86,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "droite",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.63,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "haut",
+          "score": 0.58,
+          "ton": "clair",
+          "recouvre_sujet": 0.26
+        }
+      ],
+      "qualite": {
+        "nettete": 30.4,
+        "bruit": 0.08,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN",
+        "blocs": 1,
+        "surface": 1.2,
+        "details": [
+          {
+            "texte": "ARTISAN",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "001647060f0f0c41",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque",
+        "calme bas/droite"
+      ]
+    },
+    {
+      "fichier": "qualibat-68e578df-640w.webp",
+      "nom": "qualibat-68e578df-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 560,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 11760,
+      "transparence": true,
+      "sujet": {
+        "x": 6.1,
+        "y": 8,
+        "l": 85.8,
+        "h": 88.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        61
+      ],
+      "cadrage_css": "47% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "clair",
+          "recouvre_sujet": 0.66
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "clair",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "clair",
+          "recouvre_sujet": 0.78
+        }
+      ],
+      "qualite": {
+        "nettete": 41.7,
+        "bruit": 0.14,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "QUALIBAT · Votre label de fiabilité",
+        "blocs": 2,
+        "surface": 11.9,
+        "details": [
+          {
+            "texte": "QUALIBAT",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Votre label de fiabilité",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "0f33336171296917",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "toutes-hauteurs-640w.webp",
+      "nom": "toutes-hauteurs-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 560,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 7606,
+      "transparence": true,
+      "sujet": {
+        "x": 4.7,
+        "y": 23.1,
+        "l": 91,
+        "h": 49.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        49
+      ],
+      "cadrage_css": "45% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.8,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "bas",
+          "score": 0.51,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "clair",
+          "recouvre_sujet": 0.44
+        }
+      ],
+      "qualite": {
+        "nettete": 72.1,
+        "bruit": 0.09,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "TOUTES · HAUTEURS",
+        "blocs": 2,
+        "surface": 13.5,
+        "details": [
+          {
+            "texte": "TOUTES",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "HAUTEURS",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "02210257252b0028",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "garantie-decennale-640w.webp",
+      "nom": "garantie-decennale-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 560,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 9434,
+      "transparence": true,
+      "sujet": {
+        "x": 14.3,
+        "y": 20.4,
+        "l": 55.9,
+        "h": 55.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        47
+      ],
+      "cadrage_css": "43% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.82,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "haut",
+          "score": 0.65,
+          "ton": "clair",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "gauche",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.36
+        }
+      ],
+      "qualite": {
+        "nettete": 46.4,
+        "bruit": 0.11,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "GARANTIE · DECENNALE",
+        "blocs": 2,
+        "surface": 5.9,
+        "details": [
+          {
+            "texte": "GARANTIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "DECENNALE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "000c0e27230f0c00",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme bas/droite/haut"
+      ]
+    },
+    {
+      "fichier": "pose-nouvelle-couverture-professionnels.webp",
+      "nom": "pose-nouvelle-couverture-professionnels",
+      "drapeau": "lieu",
+      "largeur": 584,
+      "hauteur": 510,
+      "ratio": "1.15",
+      "ratio_valeur": 1.145,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 56766,
+      "transparence": false,
+      "sujet": {
+        "x": 34.1,
+        "y": 25.9,
+        "l": 30.4,
+        "h": 27.4,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        34
+      ],
+      "cadrage_css": "49% 34%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "haut",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        }
+      ],
+      "qualite": {
+        "nettete": 128.1,
+        "bruit": 1.23,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "584 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "cdaaa24a08aca4bc",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "unnamed-640w.webp",
+      "nom": "unnamed-640w",
+      "drapeau": "autre",
+      "largeur": 640,
+      "hauteur": 452,
+      "ratio": "1.42",
+      "ratio_valeur": 1.416,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 89176,
+      "transparence": false,
+      "sujet": {
+        "x": 38.2,
+        "y": 19.1,
+        "l": 25,
+        "h": 32.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        36
+      ],
+      "cadrage_css": "51% 36%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 96.6,
+        "bruit": 2.74,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "640 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "cdf3eee96af4c6cc",
+      "drapeaux": [
+        "autre",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "travaux-cours-realisation-chez.webp",
+      "nom": "travaux-cours-realisation-chez",
+      "drapeau": "lieu",
+      "largeur": 510,
+      "hauteur": 510,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 34500,
+      "transparence": false,
+      "sujet": {
+        "x": 16,
+        "y": 6.8,
+        "l": 60.1,
+        "h": 93.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        63
+      ],
+      "cadrage_css": "47% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.48
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.6
+        }
+      ],
+      "qualite": {
+        "nettete": 74.3,
+        "bruit": 1.06,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "510 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERTURE - PEINTURE - ZANGUERIE · 06 26 88 62 93",
+        "blocs": 3,
+        "surface": 7.2,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERTURE - PEINTURE - ZANGUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "06 26 88 62 93",
+            "niveau": "document"
+          }
+        ]
+      },
+      "empreinte": "0020b0b188bc2c36",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "sep-1920w.webp",
+      "nom": "sep-1920w",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 119,
+      "ratio": "16.13",
+      "ratio_valeur": 16.134,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 15116,
+      "transparence": true,
+      "sujet": {
+        "x": 46.9,
+        "y": 20,
+        "l": 48.9,
+        "h": 80,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        67,
+        46
+      ],
+      "cadrage_css": "67% 46%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.9,
+          "ton": "clair",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "bas",
+          "score": 0.83,
+          "ton": "clair",
+          "recouvre_sujet": 0.49
+        },
+        {
+          "cote": "droite",
+          "score": 0.73,
+          "ton": "clair",
+          "recouvre_sujet": 0.72
+        }
+      ],
+      "qualite": {
+        "nettete": 0.3,
+        "bruit": 0,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "floue"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "310e-3900319",
+        "blocs": 1,
+        "surface": 40.5,
+        "details": [
+          {
+            "texte": "310e-3900319",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "0a0105080848d880",
+      "drapeaux": [
+        "autre",
+        "floue",
+        "filigrane ou marque",
+        "calme gauche/haut/bas/droite"
+      ]
+    },
+    {
+      "fichier": "sikkens-640w.webp",
+      "nom": "sikkens-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 5276,
+      "transparence": true,
+      "sujet": {
+        "x": 0.7,
+        "y": 43.8,
+        "l": 90.9,
+        "h": 40.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        39,
+        63
+      ],
+      "cadrage_css": "39% 63%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.11,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "gauche",
+          "score": 0.06,
+          "ton": "clair",
+          "recouvre_sujet": 0.4
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 52,
+        "bruit": 0.05,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "SikkeNS",
+        "blocs": 1,
+        "surface": 35.5,
+        "details": [
+          {
+            "texte": "SikkeNS",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "00000139b52ed400",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "velux-640w.webp",
+      "nom": "velux-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 6350,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 30.6,
+        "l": 100,
+        "h": 47.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        50
+      ],
+      "cadrage_css": "52% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 35.4,
+        "bruit": 0.09,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "VELUX®",
+        "blocs": 1,
+        "surface": 28.4,
+        "details": [
+          {
+            "texte": "VELUX®",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "0000848ecac20000",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "tollens-640w.webp",
+      "nom": "tollens-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 6866,
+      "transparence": true,
+      "sujet": {
+        "x": 57.3,
+        "y": 35.4,
+        "l": 42.7,
+        "h": 29,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        68,
+        47
+      ],
+      "cadrage_css": "68% 47%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 1,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 31,
+        "bruit": 0.1,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "TOLLENS",
+        "blocs": 1,
+        "surface": 31.4,
+        "details": [
+          {
+            "texte": "TOLLENS",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "000066b132060000",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme haut/bas"
+      ]
+    },
+    {
+      "fichier": "maestria-640w.webp",
+      "nom": "maestria-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 23194,
+      "transparence": true,
+      "sujet": {
+        "x": 4.5,
+        "y": 42,
+        "l": 77.3,
+        "h": 30,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        54
+      ],
+      "cadrage_css": "40% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.93,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.26,
+          "ton": "clair",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 34,
+        "bruit": 0.3,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "Maestria · PEINTURES & SYSTÈMES",
+        "blocs": 2,
+        "surface": 27.6,
+        "details": [
+          {
+            "texte": "Maestria",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PEINTURES & SYSTÈMES",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "000081cc79650000",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme haut/bas"
+      ]
+    },
+    {
+      "fichier": "duralex-640w.webp",
+      "nom": "duralex-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 13100,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 29.8,
+        "l": 51.7,
+        "h": 46.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        30,
+        51
+      ],
+      "cadrage_css": "30% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.76,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 23.3,
+        "bruit": 0.19,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "OURALEX®",
+        "blocs": 1,
+        "surface": 54.8,
+        "details": [
+          {
+            "texte": "OURALEX®",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "00081e3bfc4ca700",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "cimentol-640w.webp",
+      "nom": "cimentol-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 5990,
+      "transparence": true,
+      "sujet": {
+        "x": 0,
+        "y": 32.9,
+        "l": 99.8,
+        "h": 34,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        48
+      ],
+      "cadrage_css": "49% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.98,
+          "ton": "clair",
+          "recouvre_sujet": 0.06
+        },
+        {
+          "cote": "bas",
+          "score": 0.98,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "droite",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "gauche",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 54.4,
+        "bruit": 0.13,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "CIMENTOL",
+        "blocs": 1,
+        "surface": 15.9,
+        "details": [
+          {
+            "texte": "CIMENTOL",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "000001d4d24b0000",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "texte décoratif",
+        "calme haut/bas"
+      ]
+    },
+    {
+      "fichier": "dalep-640w.webp",
+      "nom": "dalep-640w",
+      "drapeau": "autre",
+      "largeur": 560,
+      "hauteur": 360,
+      "ratio": "1.56",
+      "ratio_valeur": 1.556,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 12294,
+      "transparence": true,
+      "sujet": {
+        "x": 0.1,
+        "y": 25.5,
+        "l": 70.8,
+        "h": 50.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        36,
+        49
+      ],
+      "cadrage_css": "36% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.82,
+          "ton": "clair",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "bas",
+          "score": 0.65,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "clair",
+          "recouvre_sujet": 0.5
+        }
+      ],
+      "qualite": {
+        "nettete": 72.6,
+        "bruit": 0.2,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "560 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "DALEP · DALEP' · TRAITEMENTS POUR LE BÂTIMENT",
+        "blocs": 3,
+        "surface": 24.7,
+        "details": [
+          {
+            "texte": "DALEP",
+            "niveau": "marque"
+          },
+          {
+            "texte": "DALEP'",
+            "niveau": "marque"
+          },
+          {
+            "texte": "TRAITEMENTS POUR LE BÂTIMENT",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "0040648d65694000",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque",
+        "calme haut/bas"
+      ]
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40-3.webp",
+      "nom": "artisan-sandero-couvreurs-40-3",
+      "drapeau": "autre",
+      "largeur": 640,
+      "hauteur": 288,
+      "ratio": "2.22",
+      "ratio_valeur": 2.222,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 47186,
+      "transparence": false,
+      "sujet": {
+        "x": 35.3,
+        "y": 21.5,
+        "l": 27.3,
+        "h": 76.3,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        44
+      ],
+      "cadrage_css": "49% 44%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "bas",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 78.1,
+        "bruit": 2.7,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "640 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "ec9bcf4c2ccccded",
+      "doublon_de": {
+        "fichier": "pose-faitage-professionnel-entreprise.webp",
+        "type": "doublon",
+        "distance": 4,
+        "ressemblance": 0.99
+      },
+      "drapeaux": [
+        "autre",
+        "petite",
+        "doublon de pose-faitage-professionnel-entreprise.webp"
+      ]
+    },
+    {
+      "fichier": "insecte-xylophage-gros-plan.webp",
+      "nom": "insecte-xylophage-gros-plan",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 108948,
+      "transparence": false,
+      "sujet": {
+        "x": 16,
+        "y": 21,
+        "l": 49.4,
+        "h": 32.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        38
+      ],
+      "cadrage_css": "45% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.68,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.37,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "droite",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0.04
+        }
+      ],
+      "qualite": {
+        "nettete": 17.2,
+        "bruit": 0.46,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "e4705c8c9eaac8e8",
+      "drapeaux": [
+        "lieu",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "changement-charpente-chez-particulier.webp",
+      "nom": "changement-charpente-chez-particulier",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 173436,
+      "transparence": false,
+      "sujet": {
+        "x": 17.9,
+        "y": 20.3,
+        "l": 56.6,
+        "h": 55.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        50
+      ],
+      "cadrage_css": "52% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "moyen",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.17
+        }
+      ],
+      "qualite": {
+        "nettete": 24.9,
+        "bruit": 0.66,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "d28284d4b4f1e1a0",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "pose-nouvelle-charpente.webp",
+      "nom": "pose-nouvelle-charpente",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1272,
+      "ratio": "3:2",
+      "ratio_valeur": 1.509,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 180916,
+      "transparence": false,
+      "sujet": {
+        "x": 40.2,
+        "y": 35,
+        "l": 52.9,
+        "h": 37.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        52
+      ],
+      "cadrage_css": "60% 52%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.56,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.46,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "haut",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.31
+        }
+      ],
+      "qualite": {
+        "nettete": 26.9,
+        "bruit": 0.74,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "fefb7d7a3cb63458",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "travaux-charpente-assurer-solidite.webp",
+      "nom": "travaux-charpente-assurer-solidite",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 146842,
+      "transparence": false,
+      "sujet": {
+        "x": 38.2,
+        "y": 26.5,
+        "l": 36.8,
+        "h": 27.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        41
+      ],
+      "cadrage_css": "56% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.32,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "gauche",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "haut",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.09
+        }
+      ],
+      "qualite": {
+        "nettete": 20.5,
+        "bruit": 0.71,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "7a5454d134c8b18e",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "jeune-homme-telephone-mains.webp",
+      "nom": "jeune-homme-telephone-mains",
+      "drapeau": "lieu",
+      "largeur": 1281,
+      "hauteur": 1281,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 105914,
+      "transparence": true,
+      "sujet": {
+        "x": 25.9,
+        "y": 3.8,
+        "l": 43.6,
+        "h": 57.4,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        48,
+        29
+      ],
+      "cadrage_css": "48% 29%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.53,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "haut",
+          "score": 0.44,
+          "ton": "clair",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "bas",
+          "score": 0.35,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 12,
+        "bruit": 0.7,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0c4e0d1613231717",
+      "drapeaux": [
+        "lieu",
+        "visage"
+      ]
+    },
+    {
+      "fichier": "tres-gros-plan-fissure.webp",
+      "nom": "tres-gros-plan-fissure",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1440,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 776764,
+      "transparence": false,
+      "sujet": {
+        "x": 33.8,
+        "y": 25,
+        "l": 29.4,
+        "h": 32.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        41
+      ],
+      "cadrage_css": "49% 41%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "moyen",
+          "recouvre_sujet": 0.05
+        }
+      ],
+      "qualite": {
+        "nettete": 55.7,
+        "bruit": 3.13,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "6c64b8fcc694e482",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "application-nouvelle-peinture.webp",
+      "nom": "application-nouvelle-peinture",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1285,
+      "ratio": "3:2",
+      "ratio_valeur": 1.494,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 145658,
+      "transparence": false,
+      "sujet": {
+        "x": 32.1,
+        "y": 38.3,
+        "l": 28.2,
+        "h": 61.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        58
+      ],
+      "cadrage_css": "48% 58%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.65,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.36,
+          "ton": "clair",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "haut",
+          "score": 0.28,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        }
+      ],
+      "qualite": {
+        "nettete": 29.9,
+        "bruit": 0.56,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8d67ffdb1e5a5858",
+      "drapeaux": [
+        "oeuvre",
+        "calme droite"
+      ]
+    },
+    {
+      "fichier": "ravalement-facade-embellissez-valorisez.webp",
+      "nom": "ravalement-facade-embellissez-valorisez",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 59000,
+      "transparence": false,
+      "sujet": {
+        "x": 7.8,
+        "y": 12.5,
+        "l": 34.5,
+        "h": 86.3,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        32,
+        37
+      ],
+      "cadrage_css": "32% 37%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.85,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "moyen",
+          "recouvre_sujet": 0.33
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 10.5,
+        "bruit": 0.2,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "274fdf9f9f9f8f8f",
+      "drapeaux": [
+        "lieu",
+        "visage",
+        "calme droite/haut"
+      ]
+    },
+    {
+      "fichier": "nettoyage-facade-professionnel.webp",
+      "nom": "nettoyage-facade-professionnel",
+      "drapeau": "lieu",
+      "largeur": 680,
+      "hauteur": 306,
+      "ratio": "2.22",
+      "ratio_valeur": 2.222,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 25126,
+      "transparence": false,
+      "sujet": {
+        "x": 27.9,
+        "y": 45.6,
+        "l": 16.2,
+        "h": 22.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        36,
+        57
+      ],
+      "cadrage_css": "36% 57%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.61,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 62.5,
+        "bruit": 0.96,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "680 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "bceccc929010b670",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "cheminee-alliage-metallique.webp",
+      "nom": "cheminee-alliage-metallique",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 235296,
+      "transparence": false,
+      "sujet": {
+        "x": 6,
+        "y": 61.3,
+        "l": 56,
+        "h": 38.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        71
+      ],
+      "cadrage_css": "48% 71%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "clair",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.33
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        }
+      ],
+      "qualite": {
+        "nettete": 40.9,
+        "bruit": 0.83,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "e7f7f6e4f676d6ce",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "maison-bicolore-blanche-grise.webp",
+      "nom": "maison-bicolore-blanche-grise",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 161404,
+      "transparence": false,
+      "sujet": {
+        "x": 15.5,
+        "y": 3.4,
+        "l": 78.7,
+        "h": 90,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        49
+      ],
+      "cadrage_css": "52% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "gauche",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.77
+        }
+      ],
+      "qualite": {
+        "nettete": 29.3,
+        "bruit": 0.68,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "32334d4f65e7accc",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "zinguerie-toiture-solutions-mesure.webp",
+      "nom": "zinguerie-toiture-solutions-mesure",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 54308,
+      "transparence": false,
+      "sujet": {
+        "x": 27.1,
+        "y": 7,
+        "l": 48.5,
+        "h": 66.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        38
+      ],
+      "cadrage_css": "52% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.63,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "droite",
+          "score": 0.36,
+          "ton": "moyen",
+          "recouvre_sujet": 0.26
+        },
+        {
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "haut",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 0.39
+        }
+      ],
+      "qualite": {
+        "nettete": 8.7,
+        "bruit": 0.26,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "c5e1296ce2e24999",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "creation-cheneaux-entreprise.webp",
+      "nom": "creation-cheneaux-entreprise",
+      "drapeau": "lieu",
+      "largeur": 510,
+      "hauteur": 510,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 44680,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 1,
+        "l": 81.5,
+        "h": 99,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        42,
+        41
+      ],
+      "cadrage_css": "42% 41%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.53
+        },
+        {
+          "cote": "bas",
+          "score": 0.05,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "haut",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.79
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.99
+        }
+      ],
+      "qualite": {
+        "nettete": 55.9,
+        "bruit": 1.82,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "510 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "decoratif",
+        "a_verifier": false,
+        "texte": "OUANEL",
+        "blocs": 1,
+        "surface": 0.7,
+        "details": [
+          {
+            "texte": "OUANEL",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "1394949c4f4f87a3",
+      "drapeaux": [
+        "lieu",
+        "petite",
+        "texte décoratif"
+      ]
+    },
+    {
+      "fichier": "changement-cheneaux-chez-particulier.webp",
+      "nom": "changement-cheneaux-chez-particulier",
+      "drapeau": "lieu",
+      "largeur": 510,
+      "hauteur": 510,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 64698,
+      "transparence": false,
+      "sujet": {
+        "x": 28.7,
+        "y": 0,
+        "l": 45.2,
+        "h": 80.1,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        35
+      ],
+      "cadrage_css": "50% 35%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.45
+        }
+      ],
+      "qualite": {
+        "nettete": 72.4,
+        "bruit": 2.49,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "510 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "e454749252599969",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "focus-maison-bois.webp",
+      "nom": "focus-maison-bois",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1282,
+      "ratio": "3:2",
+      "ratio_valeur": 1.498,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 391592,
+      "transparence": false,
+      "sujet": {
+        "x": 22.8,
+        "y": 16.2,
+        "l": 76.3,
+        "h": 83.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        52
+      ],
+      "cadrage_css": "56% 52%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        }
+      ],
+      "qualite": {
+        "nettete": 52.4,
+        "bruit": 1.17,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "3c3cbe4e9f9f97b7",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "maison-moderne-partie-bois.webp",
+      "nom": "maison-moderne-partie-bois",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 242208,
+      "transparence": false,
+      "sujet": {
+        "x": 5.9,
+        "y": 14.1,
+        "l": 84.8,
+        "h": 61.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        44
+      ],
+      "cadrage_css": "44% 44%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "haut",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.51
+        },
+        {
+          "cote": "gauche",
+          "score": 0.28,
+          "ton": "sombre",
+          "recouvre_sujet": 0.52
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 31,
+        "bruit": 0.78,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0736746cec7dc08a",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "maison-bardage-bois-vue.webp",
+      "nom": "maison-bardage-bois-vue",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 232198,
+      "transparence": false,
+      "sujet": {
+        "x": 29.4,
+        "y": 13.2,
+        "l": 51.5,
+        "h": 75,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        53
+      ],
+      "cadrage_css": "55% 53%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.56,
+          "ton": "clair",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "moyen",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "moyen",
+          "recouvre_sujet": 0.34
+        }
+      ],
+      "qualite": {
+        "nettete": 40.1,
+        "bruit": 1.76,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0c0c0e1e3763e1a9",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "maison-bardage-bois.webp",
+      "nom": "maison-bardage-bois",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 377808,
+      "transparence": false,
+      "sujet": {
+        "x": 29.9,
+        "y": 16.2,
+        "l": 70.1,
+        "h": 60.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        58,
+        49
+      ],
+      "cadrage_css": "58% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "gauche",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "bas",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.24
+        }
+      ],
+      "qualite": {
+        "nettete": 58,
+        "bruit": 1.26,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "49630764cd858592",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "adobestock-174270513-2880w.webp",
+      "nom": "adobestock-174270513-2880w",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 189276,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 67.4,
+        "h": 100,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        18,
+        30
+      ],
+      "cadrage_css": "18% 30%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0.19
+        },
+        {
+          "cote": "haut",
+          "score": 0.08,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 25.5,
+        "bruit": 0.76,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "445969253f375f79",
+      "drapeaux": [
+        "oeuvre",
+        "visage"
+      ]
+    },
+    {
+      "fichier": "application-peinture-facade.webp",
+      "nom": "application-peinture-facade",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1468,
+      "ratio": "4:3",
+      "ratio_valeur": 1.308,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 195472,
+      "transparence": false,
+      "sujet": {
+        "x": 29.8,
+        "y": 46.8,
+        "l": 13.7,
+        "h": 39.4,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        59
+      ],
+      "cadrage_css": "37% 59%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.24,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        }
+      ],
+      "qualite": {
+        "nettete": 25.3,
+        "bruit": 0.61,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "3691f1d90c4e6df2",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "maison-moderne-facade-bicolore.webp",
+      "nom": "maison-moderne-facade-bicolore",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 162900,
+      "transparence": false,
+      "sujet": {
+        "x": 3,
+        "y": 8.6,
+        "l": 81.1,
+        "h": 72,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        40,
+        56
+      ],
+      "cadrage_css": "40% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.38,
+          "ton": "moyen",
+          "recouvre_sujet": 0.61
+        },
+        {
+          "cote": "droite",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "bas",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.36
+        },
+        {
+          "cote": "gauche",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.67
+        }
+      ],
+      "qualite": {
+        "nettete": 37.3,
+        "bruit": 0.52,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "120b193d4c4c4ac3",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "immeuble-facade-orange.webp",
+      "nom": "immeuble-facade-orange",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 239450,
+      "transparence": false,
+      "sujet": {
+        "x": 30.9,
+        "y": 25,
+        "l": 44.1,
+        "h": 52.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        48
+      ],
+      "cadrage_css": "53% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "haut",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.2
+        }
+      ],
+      "qualite": {
+        "nettete": 46.2,
+        "bruit": 0.82,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "03070b2f6ce2caab",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "adobestock-263509220-2880w.webp",
+      "nom": "adobestock-263509220-2880w",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 111380,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 6.4,
+        "l": 90.5,
+        "h": 78.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        54
+      ],
+      "cadrage_css": "50% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.35,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.6
+        },
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.78
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.51
+        }
+      ],
+      "qualite": {
+        "nettete": 40.3,
+        "bruit": 0.41,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0d18b272e3cbc3e2",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "nettoyage-facade-2.webp",
+      "nom": "nettoyage-facade-2",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1275,
+      "ratio": "3:2",
+      "ratio_valeur": 1.506,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 649068,
+      "transparence": false,
+      "sujet": {
+        "x": 31,
+        "y": 33,
+        "l": 19.4,
+        "h": 45.6,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        41,
+        47
+      ],
+      "cadrage_css": "41% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.41,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.39,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        }
+      ],
+      "qualite": {
+        "nettete": 56.5,
+        "bruit": 2.42,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "646818424859191b",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "bardage-bois-noir.webp",
+      "nom": "bardage-bois-noir",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1337,
+      "ratio": "1.44",
+      "ratio_valeur": 1.436,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 148842,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 19.1,
+        "l": 92.9,
+        "h": 75.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        55
+      ],
+      "cadrage_css": "43% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.54,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.62
+        },
+        {
+          "cote": "gauche",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.76
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 36.4,
+        "bruit": 0.57,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "438100f3b3ccd3d3",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "tres-gros-plan-application.webp",
+      "nom": "tres-gros-plan-application",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 190862,
+      "transparence": false,
+      "sujet": {
+        "x": 25.3,
+        "y": 17.8,
+        "l": 51.6,
+        "h": 47.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        51
+      ],
+      "cadrage_css": "48% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.62,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "droite",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "gauche",
+          "score": 0.52,
+          "ton": "clair",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 32.2,
+        "bruit": 1.18,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "9393938fcbcff7dd",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "travaux-peinture-redonnez-vie.webp",
+      "nom": "travaux-peinture-redonnez-vie",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1013,
+      "ratio": "1.9",
+      "ratio_valeur": 1.895,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 290166,
+      "transparence": false,
+      "sujet": {
+        "x": 19.1,
+        "y": 7,
+        "l": 54.1,
+        "h": 93,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        44
+      ],
+      "cadrage_css": "46% 44%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "haut",
+          "score": 0.24,
+          "ton": "moyen",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "gauche",
+          "score": 0.19,
+          "ton": "sombre",
+          "recouvre_sujet": 0.49
+        }
+      ],
+      "qualite": {
+        "nettete": 58.5,
+        "bruit": 1.53,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f0b2b2b2e6cecaca",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "pose-nouvelle-fenetre-toit.webp",
+      "nom": "pose-nouvelle-fenetre-toit",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1281,
+      "ratio": "3:2",
+      "ratio_valeur": 1.499,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 239062,
+      "transparence": false,
+      "sujet": {
+        "x": 38.3,
+        "y": 6,
+        "l": 10.8,
+        "h": 21.2,
+        "source": "visage"
+      },
+      "visages": 1,
+      "cadrage": [
+        44,
+        15
+      ],
+      "cadrage_css": "44% 15%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "bas",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        }
+      ],
+      "qualite": {
+        "nettete": 35.9,
+        "bruit": 0.9,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8a159c9ba72e7e9c",
+      "drapeaux": [
+        "lieu",
+        "visage"
+      ]
+    },
+    {
+      "fichier": "jeune-enfant-regardant-pluie.webp",
+      "nom": "jeune-enfant-regardant-pluie",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 117720,
+      "transparence": false,
+      "sujet": {
+        "x": 23,
+        "y": 32.2,
+        "l": 56.1,
+        "h": 66.9,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        52,
+        53
+      ],
+      "cadrage_css": "52% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.45,
+          "ton": "sombre",
+          "recouvre_sujet": 0.28
+        },
+        {
+          "cote": "bas",
+          "score": 0.33,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "haut",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.32
+        }
+      ],
+      "qualite": {
+        "nettete": 17.6,
+        "bruit": 0.59,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "60a2f0f0f5f87770",
+      "drapeaux": [
+        "lieu",
+        "visage"
+      ]
+    },
+    {
+      "fichier": "remplacement-fenetre-toit.webp",
+      "nom": "remplacement-fenetre-toit",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 282612,
+      "transparence": false,
+      "sujet": {
+        "x": 30.3,
+        "y": 0,
+        "l": 55.7,
+        "h": 99.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        52,
+        41
+      ],
+      "cadrage_css": "52% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "bas",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "haut",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.56
+        },
+        {
+          "cote": "droite",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.65
+        }
+      ],
+      "qualite": {
+        "nettete": 43.5,
+        "bruit": 1.09,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "de2e623e1e0c2604",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "adobestock-198984002-2880w.webp",
+      "nom": "adobestock-198984002-2880w",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1230,
+      "ratio": "16:10",
+      "ratio_valeur": 1.561,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 207924,
+      "transparence": false,
+      "sujet": {
+        "x": 38.2,
+        "y": 20.6,
+        "l": 29.4,
+        "h": 54.4,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        49
+      ],
+      "cadrage_css": "54% 49%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "haut",
+          "score": 0.27,
+          "ton": "clair",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        }
+      ],
+      "qualite": {
+        "nettete": 36.7,
+        "bruit": 1.24,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "e0f64e676fe7fd87",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "isolation-combles-interieur.webp",
+      "nom": "isolation-combles-interieur",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 251182,
+      "transparence": false,
+      "sujet": {
+        "x": 8.8,
+        "y": 28.2,
+        "l": 61.6,
+        "h": 41.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        54
+      ],
+      "cadrage_css": "47% 54%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.36,
+          "ton": "moyen",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 29.9,
+        "bruit": 1.03,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "9831d8e8e4647474",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "isolant-exterieur.webp",
+      "nom": "isolant-exterieur",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 326598,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 29.5,
+        "l": 43.6,
+        "h": 70.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        33,
+        57
+      ],
+      "cadrage_css": "33% 57%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "clair",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "gauche",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 0.71
+        }
+      ],
+      "qualite": {
+        "nettete": 42.1,
+        "bruit": 1.32,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f9e1010283032124",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "isolant-tres-gros-plan.webp",
+      "nom": "isolant-tres-gros-plan",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 83958,
+      "transparence": false,
+      "sujet": {
+        "x": 21.5,
+        "y": 26.9,
+        "l": 65.7,
+        "h": 42.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        46
+      ],
+      "cadrage_css": "56% 46%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "bas",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "haut",
+          "score": 0.4,
+          "ton": "moyen",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "droite",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 8.2,
+        "bruit": 0.36,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f2e5f707138696c1",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "application-traitement-hydrofuge.webp",
+      "nom": "application-traitement-hydrofuge",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1281,
+      "ratio": "3:2",
+      "ratio_valeur": 1.499,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 425358,
+      "transparence": false,
+      "sujet": {
+        "x": 32.4,
+        "y": 23.5,
+        "l": 29.4,
+        "h": 58.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        52
+      ],
+      "cadrage_css": "46% 52%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "haut",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 44.4,
+        "bruit": 1.62,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "0cd873b9aad5ca5d",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "application-traitement-revetement.webp",
+      "nom": "application-traitement-revetement",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 387140,
+      "transparence": false,
+      "sujet": {
+        "x": 62.4,
+        "y": 29.2,
+        "l": 15.4,
+        "h": 70.6,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        70,
+        50
+      ],
+      "cadrage_css": "70% 50%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.19,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "sombre",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "droite",
+          "score": 0.1,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        }
+      ],
+      "qualite": {
+        "nettete": 48.3,
+        "bruit": 1.61,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8caca63783833353",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "entretien-toiture-prevoir.webp",
+      "nom": "entretien-toiture-prevoir",
+      "drapeau": "lieu",
+      "largeur": 510,
+      "hauteur": 510,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 59480,
+      "transparence": false,
+      "sujet": {
+        "x": 32.4,
+        "y": 33.8,
+        "l": 32.4,
+        "h": 25,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        46
+      ],
+      "cadrage_css": "49% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "gauche",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0.05
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        }
+      ],
+      "qualite": {
+        "nettete": 91.7,
+        "bruit": 2.16,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "510 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "0e3cb1f9bb4bd5ad",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "utilisation-brosse-metallique-nettoyer.webp",
+      "nom": "utilisation-brosse-metallique-nettoyer",
+      "drapeau": "lieu",
+      "largeur": 472,
+      "hauteur": 471,
+      "ratio": "1:1",
+      "ratio_valeur": 1.002,
+      "orientation": "carre",
+      "format": "webp",
+      "poids": 67604,
+      "transparence": false,
+      "sujet": {
+        "x": 46.7,
+        "y": 1.6,
+        "l": 28.1,
+        "h": 31.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        57,
+        24
+      ],
+      "cadrage_css": "57% 24%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "bas",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.25
+        }
+      ],
+      "qualite": {
+        "nettete": 72.4,
+        "bruit": 2.81,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "472 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "6c0d42698c8e9f9f",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "tuile-felee-laissant-eau.webp",
+      "nom": "tuile-felee-laissant-eau",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 109904,
+      "transparence": false,
+      "sujet": {
+        "x": 35.3,
+        "y": 32.4,
+        "l": 22.1,
+        "h": 23.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        44
+      ],
+      "cadrage_css": "46% 44%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.7,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.67,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.65,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.64,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        }
+      ],
+      "qualite": {
+        "nettete": 9.6,
+        "bruit": 0.41,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "9acca7c9c2e46831",
+      "drapeaux": [
+        "lieu",
+        "calme bas/droite/haut"
+      ]
+    },
+    {
+      "fichier": "pose-faitage-professionnel-entreprise-2.webp",
+      "nom": "pose-faitage-professionnel-entreprise-2",
+      "drapeau": "lieu",
+      "largeur": 680,
+      "hauteur": 510,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 36174,
+      "transparence": false,
+      "sujet": {
+        "x": 65.8,
+        "y": 31.3,
+        "l": 15.5,
+        "h": 28.2,
+        "source": "corps"
+      },
+      "visages": 0,
+      "cadrage": [
+        74,
+        40
+      ],
+      "cadrage_css": "74% 40%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.63,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 58.5,
+        "bruit": 0.97,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "680 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "80e0fa591bf5731d",
+      "drapeaux": [
+        "lieu",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "prise-vue-drone-refection.webp",
+      "nom": "prise-vue-drone-refection",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1440,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 666862,
+      "transparence": false,
+      "sujet": {
+        "x": 31.9,
+        "y": 22,
+        "l": 45.6,
+        "h": 78,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        51
+      ],
+      "cadrage_css": "53% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "bas",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.46
+        }
+      ],
+      "qualite": {
+        "nettete": 79.4,
+        "bruit": 2.59,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "4c71707231991a1b",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "focus-toiture-zinc.webp",
+      "nom": "focus-toiture-zinc",
+      "drapeau": "plat",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 171098,
+      "transparence": false,
+      "sujet": {
+        "x": 30.9,
+        "y": 29.4,
+        "l": 33.8,
+        "h": 30.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        45
+      ],
+      "cadrage_css": "48% 45%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.53,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0.04
+        },
+        {
+          "cote": "gauche",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.07
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0.05
+        }
+      ],
+      "qualite": {
+        "nettete": 27.9,
+        "bruit": 1.05,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "7f3e98cb3b363536",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "professionnel-travaillant-toiture-plate.webp",
+      "nom": "professionnel-travaillant-toiture-plate",
+      "drapeau": "plat",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 209952,
+      "transparence": false,
+      "sujet": {
+        "x": 31.8,
+        "y": 20.9,
+        "l": 35,
+        "h": 46.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        50
+      ],
+      "cadrage_css": "53% 50%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.45,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "haut",
+          "score": 0.44,
+          "ton": "moyen",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "bas",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.03
+        }
+      ],
+      "qualite": {
+        "nettete": 43.6,
+        "bruit": 0.85,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "9dee2c777ff6cd58",
+      "drapeaux": [
+        "plat"
+      ]
+    },
+    {
+      "fichier": "pose-toiture-protegez-habitation.webp",
+      "nom": "pose-toiture-protegez-habitation",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 124622,
+      "transparence": false,
+      "sujet": {
+        "x": 39,
+        "y": 22.6,
+        "l": 30.5,
+        "h": 55.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        46
+      ],
+      "cadrage_css": "53% 46%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.58,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "moyen",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "haut",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 17.9,
+        "bruit": 0.46,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f1c7069c959c9b3b",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "nettoyage-toiture.webp",
+      "nom": "nettoyage-toiture",
+      "drapeau": "oeuvre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 338228,
+      "transparence": false,
+      "sujet": {
+        "x": 0.4,
+        "y": 11.1,
+        "l": 71.1,
+        "h": 87.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        43
+      ],
+      "cadrage_css": "50% 43%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "haut",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.49
+        },
+        {
+          "cote": "bas",
+          "score": 0.03,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        }
+      ],
+      "qualite": {
+        "nettete": 45.7,
+        "bruit": 1.28,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "34b6f2e6f6736063",
+      "drapeaux": [
+        "oeuvre"
+      ]
+    },
+    {
+      "fichier": "pose-nouvelle-fenetre-toit-2.webp",
+      "nom": "pose-nouvelle-fenetre-toit-2",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 338888,
+      "transparence": false,
+      "sujet": {
+        "x": 26.6,
+        "y": 0,
+        "l": 68.5,
+        "h": 93.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        59,
+        45
+      ],
+      "cadrage_css": "59% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.57
+        }
+      ],
+      "qualite": {
+        "nettete": 46.9,
+        "bruit": 1.34,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "43213113050565a1",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "travaux-toiture-neuf-renovation.webp",
+      "nom": "travaux-toiture-neuf-renovation",
+      "drapeau": "lieu",
+      "largeur": 1920,
+      "hauteur": 1080,
+      "ratio": "16:9",
+      "ratio_valeur": 1.778,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 46894,
+      "transparence": false,
+      "sujet": {
+        "x": 0.1,
+        "y": 29.1,
+        "l": 99.9,
+        "h": 65.6,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.33,
+          "ton": "sombre",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "bas",
+          "score": 0.33,
+          "ton": "moyen",
+          "recouvre_sujet": 0.85
+        },
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.66
+        }
+      ],
+      "qualite": {
+        "nettete": 8.5,
+        "bruit": 0.19,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "ffdfb76e398ec7f1",
+      "drapeaux": [
+        "lieu"
+      ]
+    },
+    {
+      "fichier": "pose-tuiles-lors-reparation.webp",
+      "nom": "pose-tuiles-lors-reparation",
+      "drapeau": "plat",
+      "largeur": 680,
+      "hauteur": 510,
+      "ratio": "4:3",
+      "ratio_valeur": 1.333,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 56506,
+      "transparence": false,
+      "sujet": {
+        "x": 20.5,
+        "y": 50.3,
+        "l": 70.9,
+        "h": 49.7,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        66
+      ],
+      "cadrage_css": "53% 66%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.25,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "moyen",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "bas",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        }
+      ],
+      "qualite": {
+        "nettete": 64.2,
+        "bruit": 1.4,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "680 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "f8229630cb64dcea",
+      "drapeaux": [
+        "plat",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "profesionnel-entreprise-pointant-doigt.webp",
+      "nom": "profesionnel-entreprise-pointant-doigt",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1454,
+      "ratio": "4:3",
+      "ratio_valeur": 1.32,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 530230,
+      "transparence": false,
+      "sujet": {
+        "x": 4.9,
+        "y": 47.6,
+        "l": 64.5,
+        "h": 51.8,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        34,
+        65
+      ],
+      "cadrage_css": "34% 65%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.05,
+          "ton": "clair",
+          "recouvre_sujet": 0.45
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.63
+        }
+      ],
+      "qualite": {
+        "nettete": 95.7,
+        "bruit": 1.35,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · NEURRE ZINGURRIE · WWW.ARTISAN-SANDBRO.FR",
+        "blocs": 3,
+        "surface": 1.6,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "NEURRE ZINGURRIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "WWW.ARTISAN-SANDBRO.FR",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "3e8c888c24694a4a",
+      "drapeaux": [
+        "autre",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "travaux-couverture-realises-entreprise.webp",
+      "nom": "travaux-couverture-realises-entreprise",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1358,
+      "ratio": "1.41",
+      "ratio_valeur": 1.414,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 398788,
+      "transparence": false,
+      "sujet": {
+        "x": 38.2,
+        "y": 17.6,
+        "l": 48.5,
+        "h": 30.9,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        33
+      ],
+      "cadrage_css": "56% 33%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.21
+        }
+      ],
+      "qualite": {
+        "nettete": 60.5,
+        "bruit": 1.23,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "f3f2e2e6c69390b1",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "professionnel-attache-harnais-train.webp",
+      "nom": "professionnel-attache-harnais-train",
+      "drapeau": "autre",
+      "largeur": 1920,
+      "hauteur": 1280,
+      "ratio": "3:2",
+      "ratio_valeur": 1.5,
+      "orientation": "paysage",
+      "format": "webp",
+      "poids": 326108,
+      "transparence": false,
+      "sujet": {
+        "x": 43.9,
+        "y": 1.4,
+        "l": 43.6,
+        "h": 98.3,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        31
+      ],
+      "cadrage_css": "62% 31%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.31,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.42
+        },
+        {
+          "cote": "bas",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.43
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        }
+      ],
+      "qualite": {
+        "nettete": 39.3,
+        "bruit": 1.29,
+        "compression": 1,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": false,
+      "empreinte": "8486edf3eafafbd5",
+      "drapeaux": [
+        "autre"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-4.png",
+      "nom": "cliquer-voir-actualite-seule-4",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 2084749,
+      "transparence": true,
+      "sujet": {
+        "x": 30.8,
+        "y": 30.4,
+        "l": 63.2,
+        "h": 68.5,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        62,
+        51
+      ],
+      "cadrage_css": "62% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "droite",
+          "score": 0.11,
+          "ton": "sombre",
+          "recouvre_sujet": 0.58
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.61
+        }
+      ],
+      "qualite": {
+        "nettete": 26.4,
+        "bruit": 0.55,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERI LURE · PEINTURE - ZINGUERIE",
+        "blocs": 3,
+        "surface": 0.3,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERI LURE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PEINTURE - ZINGUERIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "929e8b92c1a1850d",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-5.png",
+      "nom": "cliquer-voir-actualite-seule-5",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1845395,
+      "transparence": true,
+      "sujet": {
+        "x": 33.3,
+        "y": 39.9,
+        "l": 19.9,
+        "h": 52.3,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        45,
+        52
+      ],
+      "cadrage_css": "45% 52%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0.15
+        },
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.09
+        },
+        {
+          "cote": "droite",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        }
+      ],
+      "qualite": {
+        "nettete": 63.6,
+        "bruit": 0.46,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERIURE • PRINTURE - ZINCHUERIE · CONSEIL DE · PRO · Prévoyez un démoussage de · toiture tous les 3 ans avec un · produit antimousse · biod",
+        "blocs": 8,
+        "surface": 23.3,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERIURE • PRINTURE - ZINCHUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "CONSEIL DE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PRO",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Prévoyez un démoussage de",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "toiture tous les 3 ans avec un",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "produit antimousse",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "biodégradable adapté.",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "1686f2335c550551",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-6.png",
+      "nom": "cliquer-voir-actualite-seule-6",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 101104,
+      "transparence": true,
+      "sujet": {
+        "x": 9.9,
+        "y": 21.4,
+        "l": 74.2,
+        "h": 51,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        37,
+        48
+      ],
+      "cadrage_css": "37% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.49,
+          "ton": "moyen",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "moyen",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.26,
+          "ton": "moyen",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 36.2,
+        "bruit": 0.07,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "CONSEIL DE · PRO · Confier l'insufflation à un · professionnel qualifié · garantit une densité · d'isolant suffisante pour · rester efficace. · ARTISAN SANDERO ",
+        "blocs": 9,
+        "surface": 18.8,
+        "details": [
+          {
+            "texte": "CONSEIL DE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "PRO",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Confier l'insufflation à un",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "professionnel qualifié",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "garantit une densité",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "d'isolant suffisante pour",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "rester efficace.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERTURE • PEINTURE - ANGUERIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "0555c98191b1a717",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-7.png",
+      "nom": "cliquer-voir-actualite-seule-7",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 2803154,
+      "transparence": true,
+      "sujet": {
+        "x": 24.9,
+        "y": 33,
+        "l": 35.2,
+        "h": 57.6,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        35,
+        50
+      ],
+      "cadrage_css": "35% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.51,
+          "ton": "moyen",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "gauche",
+          "score": 0.35,
+          "ton": "sombre",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.14,
+          "ton": "sombre",
+          "recouvre_sujet": 0.26
+        }
+      ],
+      "qualite": {
+        "nettete": 26.1,
+        "bruit": 0.7,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": false,
+      "empreinte": "faf0dcbc7886cc78",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-8.png",
+      "nom": "cliquer-voir-actualite-seule-8",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 3451715,
+      "transparence": true,
+      "sujet": {
+        "x": 22.4,
+        "y": 40.9,
+        "l": 58.3,
+        "h": 31.3,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        52,
+        50
+      ],
+      "cadrage_css": "52% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.21,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.21,
+          "ton": "moyen",
+          "recouvre_sujet": 0.12
+        },
+        {
+          "cote": "gauche",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "moyen",
+          "recouvre_sujet": 0.16
+        }
+      ],
+      "qualite": {
+        "nettete": 42.2,
+        "bruit": 1.19,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERTURE - PHAVIURE - ZINGUERIE",
+        "blocs": 2,
+        "surface": 0.3,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERTURE - PHAVIURE - ZINGUERIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "7992cbc8322b61f0",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-9.png",
+      "nom": "cliquer-voir-actualite-seule-9",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 2747101,
+      "transparence": true,
+      "sujet": {
+        "x": 0.6,
+        "y": 3.7,
+        "l": 99,
+        "h": 96.3,
+        "source": "corps"
+      },
+      "visages": 3,
+      "cadrage": [
+        52,
+        34
+      ],
+      "cadrage_css": "52% 34%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.95
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.95
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.99
+        }
+      ],
+      "qualite": {
+        "nettete": 46.6,
+        "bruit": 0.71,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "LE DÉTAIL QUI CHANGE · TOUT · Isoler une toiture avec des matériaux · naturels représente un surcoût estimé · entre 10 et 15% maximum. · ARTISAN SANDERC",
+        "blocs": 6,
+        "surface": 9.5,
+        "details": [
+          {
+            "texte": "LE DÉTAIL QUI CHANGE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "TOUT",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Isoler une toiture avec des matériaux",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "naturels représente un surcoût estimé",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "entre 10 et 15% maximum.",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "ARTISAN SANDERC",
+            "niveau": "marque"
+          }
+        ]
+      },
+      "empreinte": "d6c48c4c2ee2a687",
+      "drapeaux": [
+        "autre",
+        "3 visages",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-10.png",
+      "nom": "cliquer-voir-actualite-seule-10",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 1269898,
+      "transparence": true,
+      "sujet": {
+        "x": 29.5,
+        "y": 15.4,
+        "l": 51.3,
+        "h": 30.5,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        34
+      ],
+      "cadrage_css": "51% 34%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.8,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.3,
+          "ton": "sombre",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "droite",
+          "score": 0.15,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        }
+      ],
+      "qualite": {
+        "nettete": 56.5,
+        "bruit": 0.31,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · CONMPRILERM · TURE TANGUERIE · CONSEIL DE PRO · Vérifier les règles · d'urbanisme avant de · choisir la couleur des · tuiles évite un choix · ",
+        "blocs": 9,
+        "surface": 18.9,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "CONMPRILERM",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "TURE TANGUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "CONSEIL DE PRO",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Vérifier les règles",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "d'urbanisme avant de",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "choisir la couleur des",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "tuiles évite un choix",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "non conforme.",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "1beef666523c2504",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-11.png",
+      "nom": "cliquer-voir-actualite-seule-11",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 2616806,
+      "transparence": true,
+      "sujet": {
+        "x": 21.8,
+        "y": 45.9,
+        "l": 37.4,
+        "h": 46.7,
+        "source": "corps"
+      },
+      "visages": 1,
+      "cadrage": [
+        79,
+        55
+      ],
+      "cadrage_css": "79% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "moyen",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.35,
+          "ton": "sombre",
+          "recouvre_sujet": 0.29
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.2,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        }
+      ],
+      "qualite": {
+        "nettete": 56.2,
+        "bruit": 0.58,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "document",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERTURE • PEINTURE - ANGUERIE · 25 % DE PENTE : LA TUILE · DEVIENT LE BON CHOIX · AU-DELÀ DE 25 % DE PENTE, LA · TUILE DEVIENT LE CHOIX · R",
+        "blocs": 8,
+        "surface": 16.1,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERTURE • PEINTURE - ANGUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "25 % DE PENTE : LA TUILE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "DEVIENT LE BON CHOIX",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "AU-DELÀ DE 25 % DE PENTE, LA",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "TUILE DEVIENT LE CHOIX",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "RECOMMANDÉ POUR UNE MAISON",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "INDIVIDUELLE TRADITIONNELLE.",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "e766e4f5f0969898",
+      "drapeaux": [
+        "autre",
+        "visage",
+        "petite",
+        "document lisible"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-12.png",
+      "nom": "cliquer-voir-actualite-seule-12",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 83753,
+      "transparence": true,
+      "sujet": {
+        "x": 1.8,
+        "y": 2.3,
+        "l": 98.2,
+        "h": 74.2,
+        "source": "saillance"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        44
+      ],
+      "cadrage_css": "48% 44%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "haut",
+          "score": 0.41,
+          "ton": "moyen",
+          "recouvre_sujet": 0.92
+        },
+        {
+          "cote": "gauche",
+          "score": 0.29,
+          "ton": "moyen",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "droite",
+          "score": 0.13,
+          "ton": "moyen",
+          "recouvre_sujet": 0.74
+        }
+      ],
+      "qualite": {
+        "nettete": 32.5,
+        "bruit": 0.07,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · COUVERIURE • PRINTURE - ZINCHUERIE · Une bonne évacuation des · eaux de pluie passe aussi · par des gouttières dégagées · et bien entretenues.",
+        "blocs": 6,
+        "surface": 20,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "COUVERIURE • PRINTURE - ZINCHUERIE",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "Une bonne évacuation des",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "eaux de pluie passe aussi",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "par des gouttières dégagées",
+            "niveau": "decoratif"
+          },
+          {
+            "texte": "et bien entretenues.",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "03432798e4cc4500",
+      "drapeaux": [
+        "autre",
+        "petite",
+        "filigrane ou marque"
+      ]
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-13.png",
+      "nom": "cliquer-voir-actualite-seule-13",
+      "drapeau": "autre",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "ratio": "4:5",
+      "ratio_valeur": 0.8,
+      "orientation": "portrait",
+      "format": "png",
+      "poids": 3175715,
+      "transparence": true,
+      "sujet": {
+        "x": 24.8,
+        "y": 18.5,
+        "l": 56.5,
+        "h": 71.3,
+        "source": "corps"
+      },
+      "visages": 2,
+      "cadrage": [
+        48,
+        39
+      ],
+      "cadrage_css": "48% 39%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "haut",
+          "score": 0.11,
+          "ton": "moyen",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "droite",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.38
+        },
+        {
+          "cote": "bas",
+          "score": 0.07,
+          "ton": "moyen",
+          "recouvre_sujet": 0.4
+        }
+      ],
+      "qualite": {
+        "nettete": 32.3,
+        "bruit": 0.79,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "1080 px de large"
+        ]
+      },
+      "lisible": {
+        "niveau": "marque",
+        "a_verifier": true,
+        "texte": "ARTISAN SANDERO · FEINTURE • ZINGUFRIE",
+        "blocs": 2,
+        "surface": 0.2,
+        "details": [
+          {
+            "texte": "ARTISAN SANDERO",
+            "niveau": "marque"
+          },
+          {
+            "texte": "FEINTURE • ZINGUFRIE",
+            "niveau": "decoratif"
+          }
+        ]
+      },
+      "empreinte": "8e07999c1612169e",
+      "drapeaux": [
+        "autre",
+        "2 visages",
+        "petite",
+        "filigrane ou marque"
+      ]
+    }
+  ]
+}

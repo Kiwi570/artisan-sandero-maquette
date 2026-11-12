@@ -1,0 +1,104 @@
+{
+  "client": "Artisan Sandero",
+  "depot": "artisan-sandero-maquette",
+  "site_actuel": "https://www.artisan-sandero.fr",
+  "activite": "couvreur-zingueur, peinture, ravalement et charpente, entreprise familiale à Taverny (95)",
+  "constat": "Le site actuel parle en texte et en banques d'images : on ne voit presque jamais les vrais chantiers, ni le père et le fils au travail, ni les toits de la zone. Les cinq métiers sont posés au même niveau, sans montrer ce qui se passe vraiment sur un toit. Attention : la bibliothèque contient déjà H-Renovation (même nom de famille, Herblay) : sombre ardoise, pluie sur la vitre, toit SVG rang par rang, gouttière, ardoises empilées. Rien de cela ne revient ici.",
+  "directions": [
+    {
+      "nom": "Sous les tuiles",
+      "idee": "Le magazine du toit : ce qui se passe sous les tuiles, une famille le sait. L'accueil est un pan de vraies tuiles que le visiteur soulève à la main pour voir dessous (liteaux, écran, isolant, chevrons), comme le père et le fils au diagnostic. Puis une mise en page éditoriale sur fond de chaux, rubriques numérotées, vrais chantiers, conseils de pro.",
+      "plan": "magazine",
+      "palette": ["#f2ebe1", "#22180f", "#bd522a", "#1b1c1e", "#e2b95c"],
+      "polices": ["Newsreader", "Schibsted Grotesk"],
+      "grille": {
+        "objet": "pan de tuiles qu'on soulève à la main (souris ou doigt), chaque tuile pivote sur son liteau et retombe avec son poids",
+        "fil": "la trame des liteaux en pin clair : chaque section est posée sur un liteau, la trame continue d'une page à l'autre",
+        "voile": "rangs de tuiles qui recouvrent l'écran de haut en bas, puis se soulèvent sur la page suivante",
+        "forme_voile": "propre",
+        "familles": ["profondeur", "recomposition", "empilement"],
+        "signature": "profondeur",
+        "modernes": ["tuiles soulevées qui découvrent les couches du toit en profondeur", "rubriques et chantiers qui se recomposent comme des tuiles quand on choisit un métier", "étapes de la méthode qui se recouvrent comme des rangs de tuiles"]
+      },
+      "modules": ["formulaire-par-etapes", "planches-empilees"],
+      "deja_vu_voulu": "Forme de voile propre comme les Jardins de l'Hacienda, mais ni la même forme ni le même motif : des rangs de tuiles qui se recouvrent.",
+      "sections": [
+        { "role": "ouverture", "reprend": "laure-polin-maquette/hero", "plus": "au lieu d'une œuvre recomposée, un vrai pan de tuiles qu'on soulève : dessous, les liteaux et l'écran des chantiers de l'entreprise" },
+        { "role": "services", "reprend": "gwenanou-print-maquette/matieres", "plus": "les cinq métiers en rubriques de magazine, qui se recomposent comme des tuiles au choix du métier" },
+        { "role": "étapes", "reprend": "btp-confort-avenir-maquette/isolation-coupe", "plus": "les six vraies étapes de la méthode, chaque étape recouvre la précédente comme un rang de tuiles" },
+        { "role": "témoignages", "reprend": "loeilsingulier-maquette/liner", "plus": "les neuf vrais avis en page de courrier des lecteurs, avec leurs vrais noms" },
+        { "role": "contact", "reprend": "budgetravaux-maquette/devis-en-ligne-estimateur", "plus": "devis en étapes repris du vrai formulaire (étages, échelle, type de toiture), retour : un tampon « reçu » sur la fiche" }
+      ],
+      "ancrage": [
+        { "element": "la trame des liteaux en pin clair sur l'écran sous-toiture noir", "source": "photo:pose-tuiles-orange.webp" },
+        { "element": "un Velux posé entre les liteaux, tuiles mécaniques brunes", "source": "photo:fenetre-toit-nouvellement-posee.webp" },
+        { "element": "diagnostic du toit et de la charpente avant les travaux", "source": "site:/a-propos" },
+        { "element": "la rubrique actualité « Conseil de pro » de l'entreprise", "source": "site:/actualite" },
+        { "element": "la méthode en six étapes, du besoin au suivi", "source": "site:/" }
+      ],
+      "invente": ["la mise en page de magazine", "le geste de soulever les tuiles", "un pan de tuiles vu de face et les couches du toit en images Grok (mêmes tuiles que les chantiers, mention Illustration générée)"]
+    },
+    {
+      "nom": "Vu du faîtage",
+      "idee": "Le site vu d'où travaille la famille : du faîtage, sur les toits de Taverny, Saint-Leu-la-Forêt, Ermont, Eaubonne et Cormeilles-en-Parisis jusqu'à la ligne des arbres. Le panorama des toits sert de sommaire : chaque métier est posé sur un toit, chaque commune est un point. On plonge dans un toit pour arriver au chantier.",
+      "plan": "territoire",
+      "palette": ["#e9eef0", "#1b2024", "#b24b27", "#2c5bd3", "#fbfaf7"],
+      "polices": ["Young Serif", "Hanken Grotesk"],
+      "grille": {
+        "objet": "cordeau à tracer bleu qu'on tire et qu'on lâche : il claque et marque à la craie la ligne des toits",
+        "fil": "la ligne des toits (silhouette des faîtages) qui se prolonge d'une section à l'autre, une commune par page",
+        "voile": "deux pans de toit qui se ferment en pignon depuis les côtés, puis s'ouvrent au faîtage",
+        "forme_voile": "rideau",
+        "familles": ["plongee", "profondeur", "ambiance-qui-change"],
+        "signature": "plongee",
+        "modernes": ["plongée du panorama dans un toit jusqu'au chantier", "toits découpés en plans qui glissent au défilement et au pointeur", "ciel d'orage qui s'éclaircit le long de la page (la tuile cassée après l'orage, réparée)"]
+      },
+      "modules": ["formulaire-par-etapes", "carte-a-calques"],
+      "sections": [
+        { "role": "ouverture", "reprend": "les-plus-hautes-eaux-maquette/haut", "plus": "un vrai panorama de toits vu du faîtage, repères des métiers posés sur les toits, cordeau à tirer" },
+        { "role": "carte", "reprend": "surffm-maquette/nous-capter-couverture", "plus": "les cinq communes posées sur les toits du panorama, pas sur une carte plate" },
+        { "role": "services", "reprend": "btp-confort-avenir-maquette/metiers", "plus": "chaque métier s'ouvre en plongeant dans son toit" },
+        { "role": "contact", "reprend": "budgetravaux-maquette/devis-en-ligne-estimateur", "plus": "devis prérempli par la commune et le toit choisis" }
+      ],
+      "ancrage": [
+        { "element": "toits de tuiles mécaniques et ligne des arbres vus depuis un faîtage refait", "source": "photo:travaux-couverture-realises-entreprise.webp" },
+        { "element": "vue de drone d'un toit ouvert sur ses liteaux, dans les jardins", "source": "photo:prise-vue-drone-refection.webp" },
+        { "element": "Taverny, Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis", "source": "site:/a-propos" },
+        { "element": "entreprise familiale, de père en fils, depuis 2006", "source": "site:/a-propos" },
+        { "element": "remplacement des tuiles cassées après un orage", "source": "site:/couverture" }
+      ],
+      "invente": ["le cordeau à tracer comme objet à tirer (vrai outil du couvreur, absent des photos)", "le ciel d'orage qui s'éclaircit", "le panorama large en image Grok du même paysage (mention Illustration générée)"]
+    },
+    {
+      "nom": "Toutes hauteurs",
+      "idee": "Une seule maison, de la façade au faîtage. Le visiteur tire une échelle coulissante jusqu'à la hauteur de sa maison, puis monte le long d'un pavillon : ravalement et peinture en bas, zinguerie à la gouttière, couverture sur le toit, charpente dessous. Chaque hauteur est un métier, la jauge en mètres sert de repère.",
+      "plan": "objet-unique",
+      "palette": ["#f5f3ee", "#121518", "#d3261d", "#b9c0c5", "#565b60"],
+      "polices": ["Epilogue", "Martian Mono"],
+      "grille": {
+        "objet": "échelle coulissante en aluminium qu'on tire jusqu'à la hauteur de sa maison (elle préremplit étages et échelle du devis)",
+        "fil": "la jauge des hauteurs, de 0 à 12 m, un palier par section, qui suit d'une page à l'autre",
+        "voile": "plateau de monte-charge qui monte du bas et redescend sur la page suivante",
+        "forme_voile": "glisse",
+        "familles": ["video-pilotee", "profondeur", "empilement"],
+        "signature": "video-pilotee",
+        "modernes": ["montée le long de la façade menée par le défilement", "plans de la maison découpés en profondeur", "étapes qui se recouvrent comme des rangs de tuiles"]
+      },
+      "modules": ["formulaire-par-etapes", "schema-epingle-etapes"],
+      "sections": [
+        { "role": "ouverture", "reprend": "winsbike-maquette/top", "plus": "titre géant et vraie photo de l'artisan au gilet Artisan Sandero, échelle à tirer" },
+        { "role": "étapes", "reprend": "agence-ae-maquette/maquette", "plus": "la maison se parcourt de bas en haut, un métier par hauteur, au lieu d'une maison qui se monte" },
+        { "role": "étapes", "reprend": "observatoire-des-cse-maquette/participer", "plus": "les six vraies étapes posées sur les barreaux" },
+        { "role": "contact", "reprend": "budgetravaux-maquette/devis-en-ligne-estimateur", "plus": "devis prérempli par l'échelle tirée (étages, hauteur)" }
+      ],
+      "ancrage": [
+        { "element": "le label « Toutes hauteurs » affiché par l'entreprise", "source": "site:/" },
+        { "element": "le formulaire demande le nombre d'étages et l'échelle à prévoir", "source": "site:/contact" },
+        { "element": "couvreurs harnachés pour travailler en sécurité", "source": "site:/a-propos" },
+        { "element": "un artisan au gilet Artisan Sandero montre la gouttière d'un pavillon", "source": "photo:profesionnel-entreprise-pointant-doigt.webp" },
+        { "element": "échelle posée contre la façade d'un pavillon", "source": "photo:nettoyage-facade.webp" }
+      ],
+      "invente": ["l'échelle dessinée en 3D", "la montée le long d'un pavillon en vidéo Grok (mention Illustration générée)", "la jauge des hauteurs"]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+ {
+  "cle": "couverture",
+  "nom": "Couverture",
+  "image": "chantier-velux",
+  "texte": "Pose, rénovation, nettoyage et démoussage, sur tuiles, ardoises, zinc ou béton.",
+  "sous": [
+   "Isolation",
+   "Fenêtres de toit"
+  ],
+  "tags": [
+   "toit"
+  ],
+  "page": "couverture",
+  "cadrage": "50% 50%",
+  "lienTexte": "Pose, rénovation, démoussage"
+ },
+ {
+  "cle": "zinguerie",
+  "nom": "Zinguerie",
+  "image": "chantier-soudure",
+  "texte": "Gouttières soudées, chéneaux, noues, solins et rives sur mesure.",
+  "sous": [
+   "Cheminées"
+  ],
+  "tags": [
+   "gouttieres",
+   "toit"
+  ],
+  "page": "zinguerie-charpente",
+  "lienTexte": "Gouttières et cheminées"
+ },
+ {
+  "cle": "charpente",
+  "nom": "Charpente",
+  "image": "chantier-ciel",
+  "texte": "Diagnostic, renforcement, remplacement et traitement des charpentes en bois.",
+  "sous": [
+   "Xylophages et mérule"
+  ],
+  "tags": [
+   "charpente",
+   "toit"
+  ],
+  "page": "zinguerie-charpente",
+  "ancre": "charpente",
+  "lienTexte": "Diagnostic de charpente"
+ },
+ {
+  "cle": "peinture",
+  "nom": "Peinture",
+  "image": "grok/facade-pavillon",
+  "texte": "Façades, boiseries, volets, portes, clôtures et portails, en deux couches.",
+  "sous": [
+   "Toitures"
+  ],
+  "tags": [
+   "facade"
+  ],
+  "page": "facades",
+  "ancre": "peinture",
+  "lienTexte": "Peinture en deux couches"
+ },
+ {
+  "cle": "ravalement",
+  "nom": "Ravalement",
+  "image": "chantier-facade",
+  "texte": "Diagnostic, nettoyage, rebouchage des fissures et peinture, sur béton, brique ou pierre.",
+  "sous": [
+   "Enduits"
+  ],
+  "tags": [
+   "facade"
+  ],
+  "page": "facades",
+  "ancre": "ravalement",
+  "lienTexte": "Ravalement en quatre temps"
+ }
+]

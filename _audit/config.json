@@ -1,0 +1,29 @@
+{
+  "siteActuel": "artisan-sandero.fr",
+  "pagesTypes": [
+    "/",
+    "/couverture",
+    "/zinguerie-charpente",
+    "/facades",
+    "/devis"
+  ],
+  "effets": [
+    "tuiles-levees",
+    "couches",
+    "metiers-recompose",
+    "methode-rangs",
+    "liteau-fil",
+    "titre-pose",
+    "nuancier",
+    "cordon-etain",
+    "signes-gouttiere",
+    "charpente-profondeur",
+    "coup-taloche",
+    "finitions",
+    "tampon-recu",
+    "demoussage"
+  ],
+  "grille": {
+    "dispenses": {}
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "sansJs",
+      "selecteur": "div#debut > div.une-scene > div.une-cote:nth-of-type(3) > p.une-info:nth-of-type(3) « Lun.–sam. 8 h–20 h · Devis gratuit »",
+      "lieux": [
+        "1366×768 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/404",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.introuvable-grille > div > p.une-info:nth-of-type(4) « 01 76 29 26 34 · Lun.–sam. 8 h–20 h »",
+      "lieux": [
+        "844×390 normal",
+        "844×390 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/couverture",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#debut > div.rubrique-une-grille > div.rubrique-une-texte:nth-of-type(1) > p.une-info:nth-of-type(3) « Devis gratuit · lun.–sam. 8 h–20 h »",
+      "lieux": [
+        "844×390 normal",
+        "844×390 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.conteneur > div.prestations-grille:nth-of-type(3) > figure.media.prestations-photo > figcaption.mention-ia « Illustration générée »",
+      "etape": "mesures",
+      "page": "/couverture",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "div.rubrique-une-grille > div.pente.ouverte:nth-of-type(2) > figure.media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "844×390 normal",
+        "844×390 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/facades",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "section#debut > div.conteneur.facade-tete:nth-of-type(1) > p.une-info:nth-of-type(3) « Devis gratuit · lun.–sam. 8 h–20 h »",
+      "lieux": [
+        "844×390 normal",
+        "844×390 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/zinguerie-charpente",
+      "taille": "320×568",
+      "mode": "normal",
+      "selecteur": "section#debut > div.zinc-grille > div.zinc-texte:nth-of-type(1) > p.une-info:nth-of-type(3) « Devis gratuit · lun.–sam. 8 h–20 h »",
+      "lieux": [
+        "320×568 normal",
+        "844×390 normal",
+        "320×568 sansJs",
+        "844×390 calme"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "clearProps « all »",
+      "detail": "assets/js/modules/formulaire-par-etapes/module.js : efface aussi les variables CSS posées dans le HTML ; nommer les propriétés (clearProps: 'transform,opacity')",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : galerie horizontale générique (point 6)",
+      "detail": "le métier a-t-il son geste (feuilleter un bac, empiler des planches, tourner les pages, ouvrir un tiroir) ? Modules bac-a-feuilleter, planches-empilees ; si la rangée qui défile est le geste du métier, ajouter data-grille=\"scene\"",
+      "etape": "grille",
+      "page": "/",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour arrière : changement brusque",
+      "detail": "à 154 ms (différence 26 %) (films/retour-arrière-1366.png)",
+      "etape": "films",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "retour arrière",
+      "lieux": [
+        "1366×768 retour arrière"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 79 ms (différence 25 %) (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/couverture",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant le voile",
+      "detail": "bande d’environ 15 px en rgb(168, 74, 38) à côté du voile en rgb(133, 57, 29), sur 1 image(s) sur 2 (films/bords-voile-zinguerie-charpente-1366.png)",
+      "etape": "bords",
+      "page": "/couverture",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord droit pendant le voile",
+      "detail": "bande d’environ 15 px en rgb(169, 73, 39) à côté du voile en rgb(133, 57, 29), sur 1 image(s) sur 2 (films/bords-voile-1920.png)",
+      "etape": "bords",
+      "page": "/couverture",
+      "taille": "1920×1080",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1920×1080 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (12.6 %), voir comparaisons/rechargement-*.png",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "trace : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/devis",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "svg",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "finitions : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/facades",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "ul.finitions",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "effet qui ne bouge pas au défilement",
+      "detail": "signes-gouttiere : il ne bouge ni au défilement ni tout seul à cette taille (effet au survol, au clic, ou réservé à l'ordinateur ?) ; il ne compte pas comme effet de section",
+      "etape": "mouvement",
+      "page": "/zinguerie-charpente",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.signes",
+      "lieux": [
+        "1366×768 normal",
+        "390×844 normal"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 6,
+    "mesures": 84,
+    "balayage": 5,
+    "films d’ouverture": 10,
+    "films de transition": 10,
+    "bords de l’écran": 6,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 6,
+    "liens et boutons": 6,
+    "liens profonds": 12,
+    "liens vers la page en cours": 5,
+    "changements de hauteur": 2,
+    "mode calme": 10,
+    "bouton du mode calme": 2,
+    "tient dans l’écran": 5,
+    "films des épinglages": 1,
+    "fluidité": 10,
+    "défilement selon l’appareil": 5,
+    "mouvement": 10,
+    "effets du plan": 13,
+    "souris immobile": 5,
+    "vitesse": 5,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 5 étape(s) notée(s), 1284 min de travail pour 125 min de budget, 1166 min d’attente de l’utilisateur.",
+    "Journal : « construction : accueil » 1222 min pour 45 prévues.",
+    "Journal : « construction : pages d'onglet » 35 min pour 25 prévues.",
+    "Audit standard : étapes lourdes sur /, /couverture, /devis, /facades, /zinguerie-charpente.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Ouverture / (1366×768) : 1544 ms depuis le premier octet",
+    "Ouverture /couverture (1366×768) : 1802 ms depuis le premier octet",
+    "Ouverture /devis (1366×768) : 1761 ms depuis le premier octet",
+    "Ouverture /facades (1366×768) : 1870 ms depuis le premier octet",
+    "Ouverture /zinguerie-charpente (1366×768) : 1753 ms depuis le premier octet",
+    "Ouverture / (390×844) : 1498 ms depuis le premier octet",
+    "Ouverture /couverture (390×844) : 1787 ms depuis le premier octet",
+    "Ouverture /devis (390×844) : 1771 ms depuis le premier octet",
+    "Ouverture /facades (390×844) : 1736 ms depuis le premier octet",
+    "film de l'ouverture /facades 390×844 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Ouverture /zinguerie-charpente (390×844) : 1734 ms depuis le premier octet",
+    "bords de l’écran /facades 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 222 images d’intro, 17 de voile et 125 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Changements de hauteur /couverture : aucun effet ScrollTrigger, rien à recalculer.",
+    "Changements de hauteur /facades : aucun effet ScrollTrigger, rien à recalculer.",
+    "Changements de hauteur /zinguerie-charpente : aucun effet ScrollTrigger, rien à recalculer.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.",
+    "Tient dans l'écran /couverture : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /devis : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /facades : aucune section épinglée ou plein écran.",
+    "Tient dans l'écran /zinguerie-charpente : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 3 % d'images lentes sur 370, tâche la plus longue 107 ms",
+    "Fluidité /couverture 1366×768 (molette) : 0 % d'images lentes sur 287, tâche la plus longue 0 ms",
+    "Fluidité /devis 1366×768 (molette) : 0 % d'images lentes sur 137, tâche la plus longue 0 ms",
+    "Fluidité /facades 1366×768 (molette) : 0 % d'images lentes sur 241, tâche la plus longue 64 ms",
+    "Fluidité /zinguerie-charpente 1366×768 (molette) : 0 % d'images lentes sur 242, tâche la plus longue 0 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1349, tâche la plus longue 0 ms",
+    "Fluidité /couverture 390×844 (doigt) : 0 % d'images lentes sur 1344, tâche la plus longue 0 ms",
+    "Fluidité /devis 390×844 (doigt) : 0 % d'images lentes sur 1345, tâche la plus longue 0 ms",
+    "Fluidité /facades 390×844 (doigt) : 0 % d'images lentes sur 1346, tâche la plus longue 0 ms",
+    "Fluidité /zinguerie-charpente 390×844 (doigt) : 0 % d'images lentes sur 1347, tâche la plus longue 0 ms",
+    "Vitesse / : 0.70 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /couverture : 0.52 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /devis : 0.55 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /facades : 0.50 s de calcul au chargement (téléphone ralenti).",
+    "Vitesse /zinguerie-charpente : 0.59 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil et 2 autre(s) page(s)"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en tuiles"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "présent",
+      "detail": "sur les 5 page(s)"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "à regarder",
+      "detail": "galerie générique sur / ; geste du métier sur /"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /devis"
+    }
+  ]
+}

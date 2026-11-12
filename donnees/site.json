@@ -1,0 +1,40 @@
+{
+  "nom": "Artisan Sandero",
+  "adresse": "https://artisan-sandero-maquette.vercel.app",
+  "siteActuel": "artisan-sandero.fr",
+  "version": 1,
+  "langues": [
+    "fr"
+  ],
+  "navigation": [
+    "accueil",
+    "couverture",
+    "zinguerie-charpente",
+    "facades",
+    "devis"
+  ],
+  "actionEntete": {
+    "page": "devis",
+    "ancre": "demande"
+  },
+  "couleurs": {
+    "fond": "#f2ebe1",
+    "texte": "#22180f",
+    "voile": "#85391d",
+    "ouverture": "#f2ebe1",
+    "menu": "#1b1c1e",
+    "theme": "#f2ebe1"
+  },
+  "formeVoile": "tuiles",
+  "contact": {
+    "telephone": "01 76 29 26 34",
+    "telephoneLien": "+33176292634",
+    "email": "sandero.artisan95@gmail.com",
+    "adresse": "105 rue du Maréchal-Foch, 95150 Taverny"
+  },
+  "polices": [
+    "/assets/fonts/newsreader-latin-500-normal.woff2"
+  ],
+  "imagePartage": "grok/tuiles-face-1280.webp",
+  "curseur": false
+}

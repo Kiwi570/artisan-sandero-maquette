@@ -1,0 +1,37 @@
+{
+ "prestations": [
+  {
+   "v": "couverture",
+   "nom": "Couverture"
+  },
+  {
+   "v": "zinguerie",
+   "nom": "Zinguerie"
+  },
+  {
+   "v": "charpente",
+   "nom": "Charpente"
+  },
+  {
+   "v": "peinture",
+   "nom": "Peinture"
+  },
+  {
+   "v": "ravalement",
+   "nom": "Ravalement de façade"
+  }
+ ],
+ "toitures": [
+  "Tuile béton",
+  "Terre cuite",
+  "Ardoise",
+  "Zinc",
+  "Autre ou je ne sais pas"
+ ],
+ "etages": [
+  "Plain-pied",
+  "1 étage",
+  "2 étages",
+  "3 étages ou plus"
+ ]
+}

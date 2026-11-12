@@ -1,0 +1,1349 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/couverture-fr.jpg",
+      "etape": "fichiers",
+      "page": "couverture.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/devis-fr.jpg",
+      "etape": "fichiers",
+      "page": "devis.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/facades-fr.jpg",
+      "etape": "fichiers",
+      "page": "facades.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/accueil-fr.jpg",
+      "etape": "fichiers",
+      "page": "index.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "image de partage",
+      "detail": "fichier introuvable : /assets/partage/zinguerie-charpente-fr.jpg",
+      "etape": "fichiers",
+      "page": "zinguerie-charpente.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div#debut > p.ligne-magazine > span:nth-of-type(1) « TAVERNY · VAL-D'OISE »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div#debut > p.ligne-magazine > span:nth-of-type(3) « 01 76 29 26 34 »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div.une-grille > div.toit:nth-of-type(2) > span.toit-geste > span.tactile:nth-of-type(2) « GLISSEZ LE DOIGT SUR LES TUILES »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div.couches-collant > div.couches-texte:nth-of-type(1) > div.liteau.liteau--clair > span.rubrique:nth-of-type(1) « RUBRIQUE 01 · SOUS LA TUILE »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#metiers > div.liteau.pose:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 02 · LES MÉTIERS »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#chantiers > div.conteneur > div.liteau.pose:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 03 · LES CHANTIERS »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#methode > div.conteneur > div.liteau.pose:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 04 · LA MÉTHODE »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#famille > div.conteneur > div.liteau.liteau--clair:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 05 · DE PÈRE EN FILS »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#avis > div.liteau.pose:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 06 · LE COURRIER ET LES LABELS »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > div.liteau.liteau--clair > span.rubrique:nth-of-type(1) « RUBRIQUE 07 · LA ZONE »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.une-grille > div.toit:nth-of-type(2) > span.toit-geste > span.tactile:nth-of-type(2) « GLISSEZ LE DOIGT SUR LES TUILES »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div.une-grille > div.toit:nth-of-type(2) > figure.media.toit-dessus:nth-of-type(2) > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "390×844 calme",
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.53:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > div.liteau.liteau--clair > span.rubrique:nth-of-type(1) « RUBRIQUE 07 · LA ZONE »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "h2#zone-titre > span.mot:nth-of-type(1) « De »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "h2#zone-titre > span.mot:nth-of-type(2) « Taverny »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "h2#zone-titre > span.mot:nth-of-type(3) « aux »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "h2#zone-titre > span.mot:nth-of-type(4) « communes »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "h2#zone-titre > span.mot:nth-of-type(5) « voisines »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.00:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > p:nth-of-type(1) « Taverny et alentour : Saint-Leu-la-Forêt, Ermont,  »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "4.47:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > ul.communes.fx-fini > li.siege:nth-of-type(1) « Taverny »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > ul.communes.fx-fini > li:nth-of-type(2) « Saint-Leu-la-Forêt »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > ul.communes.fx-fini > li:nth-of-type(3) « Ermont »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > ul.communes.fx-fini > li:nth-of-type(4) « Eaubonne »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > ul.communes.fx-fini > li:nth-of-type(5) « Cormeilles-en-Parisis »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "section#zone > div.conteneur > p.zone-actions:nth-of-type(2) > a.bouton.bouton--contour:nth-of-type(2) « 01 76 29 26 34 »",
+      "lieux": [
+        "390×844 calme",
+        "1366×768 normal",
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansJs",
+        "320×568 sansJs",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "mention « Illustration générée » absente",
+      "detail": "liteaux-ecran-mobile-640.webp",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": "div.toit:nth-of-type(2) > figure.media.toit-dessous:nth-of-type(1) > picture > img",
+      "lieux": [
+        "390×844 calme",
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : link-name",
+      "detail": "Links must have discernible text",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".entete-logo",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "accessibilité (axe) : scrollable-region-focusable",
+      "detail": "Scrollable region must have keyboard access",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "calme",
+      "selecteur": ".avis-liste",
+      "lieux": [
+        "390×844 calme"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div#debut > p.ligne-magazine > span:nth-of-type(2) « ENTREPRISE FAMILIALE DEPUIS 2006 »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.une-grille > div.toit.decoupe:nth-of-type(2) > span.toit-geste > span.souris:nth-of-type(1) « SOULEVEZ LES TUILES »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/materiau-terre-cuite (4/5, faible, 31 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.plaque:nth-of-type(1) > figure.media > picture > img « La tuile »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/liteaux-toit (4/5, faible, 29 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.plaque:nth-of-type(2) > figure.media > picture > img « Le liteau »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/couche-ecran (4/5, faible, 28 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.plaque:nth-of-type(3) > figure.media > picture > img « L'écran sous-toiture »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/couche-isolant (4/5, faible, 26 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.plaque:nth-of-type(4) > figure.media > picture > img « L'isolant »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "chantier-faitage (3/5, faible, 32 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "div.famille-photos:nth-of-type(2) > figure.media.portrait:nth-of-type(1) > picture > img « Un couvreur de l’entreprise pose le faîtage, les p »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/faitage-vue (5/5, faible, 100 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1366×768",
+      "mode": "normal",
+      "selecteur": "section#zone > figure.media.zone-fond > picture > img « Toits de tuiles et jardins vus depuis un faîtage,  »",
+      "lieux": [
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.une-grille > div.toit.decoupe:nth-of-type(2) > span.toit-geste > span.tactile:nth-of-type(2) « GLISSEZ LE DOIGT SUR LES TUILES »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.une-grille > div.toit.decoupe:nth-of-type(2) > span.toit-geste > span.tactile:nth-of-type(2) « GLISSEZ LE DOIGT SUR LES TUILES »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "div.une-grille > div.toit.decoupe:nth-of-type(2) > figure.media.toit-dessus:nth-of-type(2) > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "390×844 normal",
+        "844×390 normal",
+        "390×844 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "photo faible affichée en grand",
+      "detail": "grok/faitage-vue (5/5, faible, 83 % de l'écran) : en vignette, ou une meilleure image",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "section#zone > figure.media.zone-fond > picture > img « Toits de tuiles et jardins vus depuis un faîtage,  »",
+      "lieux": [
+        "390×844 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#metiers > div.liteau:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 02 · LES MÉTIERS »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#chantiers > div.conteneur > div.liteau:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 03 · LES CHANTIERS »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#methode > div.conteneur > div.liteau:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 04 · LA MÉTHODE »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte sous 12 px",
+      "detail": "11.8 px",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#avis > div.liteau:nth-of-type(1) > span.rubrique:nth-of-type(1) « RUBRIQUE 06 · LE COURRIER ET LES LABELS »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 3:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "h2#zone-titre « De Taverny aux communes voisines »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "4.47:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#zone > div.conteneur > ul.communes > li.siege:nth-of-type(1) « Taverny »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#zone > div.conteneur > ul.communes > li:nth-of-type(2) « Saint-Leu-la-Forêt »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#zone > div.conteneur > ul.communes > li:nth-of-type(3) « Ermont »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#zone > div.conteneur > ul.communes > li:nth-of-type(4) « Eaubonne »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "contraste insuffisant",
+      "detail": "1.11:1 (minimum 4.5:1)",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "sansJs",
+      "selecteur": "section#zone > div.conteneur > ul.communes > li:nth-of-type(5) « Cormeilles-en-Parisis »",
+      "lieux": [
+        "390×844 sansJs",
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier.grande:nth-of-type(1) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier.grande:nth-of-type(1) > div.metier-corps > h3 « Couverture »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(2) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(2) > div.metier-corps > h3 « Isolation »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(3) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(3) > div.metier-corps > h3 « Fenêtres de toit »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(4) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(4) > div.metier-corps > h3 « Zinguerie »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(5) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(5) > div.metier-corps > h3 « Charpente »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(6) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(6) > div.metier-corps > h3 « Peinture »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "élément recouvert",
+      "detail": "par ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(7) > div.metier-corps > a « Voir le métier »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "390×844",
+      "mode": "normal",
+      "selecteur": "ul.metiers-grille.fx-fini:nth-of-type(2) > li.metier:nth-of-type(7) > div.metier-corps > h3 « Ravalement »",
+      "lieux": [
+        "390×844 normal",
+        "1366×768 normal"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div#debut > div.une-grille > div.une-texte:nth-of-type(1) > p.une-info:nth-of-type(4) « Lun.–sam. 8 h–20 h · Devis gratuit · 01 76 29 26 3 »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.couches-collant > div.couches-pile:nth-of-type(2) > div.plaque:nth-of-type(3) > p.plaque-nom « L'écran sous-toiture »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.couches-pile:nth-of-type(2) > div.plaque:nth-of-type(3) > figure.media > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(1) > cite « Berhouet Thierry »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(1) > span.etoiles « ★★★★★ »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(4) > cite « Joseph Sebag »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(4) > span.etoiles « ★★★★★ »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(6) > cite « Azaoui Cheikh »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.avis-grille:nth-of-type(3) > ul.avis-liste > li:nth-of-type(6) > span.etoiles « ★★★★★ »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "bords de l’écran : bande d’une autre couleur le long du bord du bas pendant le voile",
+      "detail": "bande en rgb(197, 97, 48) à côté du voile en rgb(158, 75, 42), sur 3 image(s) sur 3 (films/bords-voile-1366.png)",
+      "etape": "bords",
+      "page": "/couverture",
+      "taille": "1366×768",
+      "mode": "barre de défilement classique (15 px)",
+      "lieux": [
+        "1366×768 barre de défilement classique (15 px)"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/zinguerie-charpente#charpente",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "03Charpente",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/facades#peinture",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "04Peinture",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/facades#ravalement",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "05Ravalement",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/zinguerie-charpente#charpente",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Charpente →",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/couverture#isolation",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Voir le métier",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/couverture#fenetres",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Voir le métier",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/zinguerie-charpente#charpente",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Voir le métier",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/facades#peinture",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Voir le métier",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "ancre introuvable",
+      "detail": "/facades#ravalement",
+      "etape": "parcours",
+      "page": "/",
+      "selecteur": "Voir le métier",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "section introuvable à l’arrivée",
+      "etape": "parcours",
+      "page": "/ → /zinguerie-charpente#charpente",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond",
+        "390×844 lien profond"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "section introuvable à l’arrivée",
+      "etape": "parcours",
+      "page": "/ → /facades#peinture",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond",
+        "390×844 lien profond"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "section introuvable à l’arrivée",
+      "etape": "parcours",
+      "page": "/ → /facades#ravalement",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond",
+        "390×844 lien profond"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "section introuvable à l’arrivée",
+      "etape": "parcours",
+      "page": "/ → /couverture#isolation",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond",
+        "390×844 lien profond"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "lien profond",
+      "detail": "section introuvable à l’arrivée",
+      "etape": "parcours",
+      "page": "/ → /couverture#fenetres",
+      "taille": "1366×768",
+      "mode": "lien profond",
+      "lieux": [
+        "1366×768 lien profond"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "« à compléter » visible",
+      "detail": "1 fois hors du pied de page : remplacer par une phrase vraie qui oriente le visiteur (« Tarifs selon la saison, donnés à la réservation ») ou retirer l'élément, et le noter dans la fiche du README (sauf sens propre : « dossier à compléter »)",
+      "etape": "fichiers",
+      "page": "devis.html",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "clearProps « all »",
+      "detail": "assets/js/modules/formulaire-par-etapes/module.js : efface aussi les variables CSS posées dans le HTML ; nommer les propriétés (clearProps: 'transform,opacity')",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "absent de cette page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "page": "/couverture",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "absent de cette page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "page": "/facades",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : rien ne relie les sections (point 4)",
+      "detail": "absent de cette page : élément du métier qui relie les sections et les pages (fil dans la marge, objet unique qui change, lumière qui passe, carte, folio, frise), marqué data-grille=\"fil\"",
+      "etape": "grille",
+      "page": "/zinguerie-charpente",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/couverture",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/facades",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "grille : aucun titre ne fait l’événement (point 5)",
+      "detail": "absent de cette page : titre fabriqué par le métier, axe de police animé ou titre joué avec l’image (modules axes-au-defilement, titre-cousu, texte-grave-en-direct), marqué data-grille=\"typo\"",
+      "etape": "grille",
+      "page": "/zinguerie-charpente",
+      "lieux": [
+        ""
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 65 ms (différence 29 %) (films/retour-avant-1366.png)",
+      "etape": "films",
+      "page": "/couverture",
+      "taille": "1366×768",
+      "mode": "retour avant",
+      "lieux": [
+        "1366×768 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "retour avant : changement brusque",
+      "detail": "à 63 ms (différence 21 %) (films/retour-avant-390.png)",
+      "etape": "films",
+      "page": "/couverture",
+      "taille": "390×844",
+      "mode": "retour avant",
+      "lieux": [
+        "390×844 retour avant"
+      ]
+    },
+    {
+      "niveau": "regarder",
+      "controle": "rechargement au milieu de la page",
+      "detail": "écran différent à la même position après rechargement (23.4 %), voir comparaisons/rechargement-*.png",
+      "etape": "parcours",
+      "page": "/",
+      "taille": "1366×768",
+      "lieux": [
+        "1366×768"
+      ]
+    }
+  ],
+  "nonLances": [
+    {
+      "controle": "Safari (WebKit)",
+      "raison": "WebKit ne peut pas s’installer ici : vérification à faire dans Safari sur le Mac (liste dans le rapport)",
+      "etape": "safari"
+    }
+  ],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "grille wouahou": 5,
+    "mesures": 7,
+    "films d’ouverture": 2,
+    "films de transition": 2,
+    "bords de l’écran": 1,
+    "intro accélérable et passable": 7,
+    "menu": 1,
+    "clavier": 1,
+    "liens et boutons": 1,
+    "liens profonds": 9,
+    "liens vers la page en cours": 1,
+    "changements de hauteur": 1,
+    "mode calme": 2,
+    "bouton du mode calme": 2,
+    "fluidité": 2,
+    "défilement selon l’appareil": 5,
+    "mouvement": 2,
+    "effets du plan": 6,
+    "souris immobile": 2,
+    "vitesse": 1,
+    "captures": 1
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 2 étape(s) notée(s), 24 min de travail pour 50 min de budget, 60 min d’attente de l’utilisateur.",
+    "Audit rapide : étapes lourdes sur /.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
+    "Balayage des largeurs : non fait en audit rapide.",
+    "Ouverture / (1366×768) : 2670 ms depuis le premier octet",
+    "Ouverture / (390×844) : 2546 ms depuis le premier octet",
+    "bords de l’écran / 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)",
+    "Bords de l’écran : 66 images d’intro, 3 de voile et 22 de menu jugées (panneau immobile couvrant tout l’écran), barre de défilement classique de 15 px.",
+    "Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.",
+    "Tient dans l'écran / : aucune section épinglée ou plein écran.",
+    "Fluidité / 1366×768 (molette) : 3 % d'images lentes sur 426, tâche la plus longue 62 ms",
+    "Fluidité / 390×844 (doigt) : 0 % d'images lentes sur 1384, tâche la plus longue 0 ms",
+    "Vitesse / : 0.60 s de calcul au chargement (téléphone ralenti)."
+  ],
+  "grille": [
+    {
+      "cle": "manipuler",
+      "nom": "1. L’effet signature se manipule",
+      "statut": "présent",
+      "detail": "accueil"
+    },
+    {
+      "cle": "intro",
+      "nom": "2. L’intro devient la page",
+      "statut": "présent",
+      "detail": "objet d’ouverture sur 5 page(s), versObjet dans l’intro"
+    },
+    {
+      "cle": "voile",
+      "nom": "3. La transition reprend le motif",
+      "statut": "présent",
+      "detail": "voile en tuiles"
+    },
+    {
+      "cle": "fil",
+      "nom": "4. Quelque chose relie les sections et les pages",
+      "statut": "à regarder",
+      "detail": "présent sur /devis, / ; absent sur /couverture, /facades, /zinguerie-charpente"
+    },
+    {
+      "cle": "typo",
+      "nom": "5. Un titre fait l’événement sur chaque page",
+      "statut": "à regarder",
+      "detail": "présent sur /devis, / ; absent sur /couverture, /facades, /zinguerie-charpente"
+    },
+    {
+      "cle": "scene",
+      "nom": "6. La scène est un geste du métier",
+      "statut": "présent",
+      "detail": "geste du métier sur /"
+    },
+    {
+      "cle": "retour",
+      "nom": "7. L’action principale a un retour physique",
+      "statut": "présent",
+      "detail": "sur /devis"
+    }
+  ]
+}

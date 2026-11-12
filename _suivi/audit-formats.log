@@ -1,0 +1,20 @@
+… mesures
+  19/312
+  46/312
+  72/312
+  110/312
+  136/312
+  166/312
+  203/312
+  229/312
+  263/312
+  291/312
+  fait en 321 s
+… mesures:balayage
+  fait en 41 s
+… ecran
+  fait en 34 s
+
+Échecs : 15 · À regarder : 0 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/404,/couverture,/devis,/zinguerie-charpente --seulement=fichiers,mesures
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261112-152227-complet-partiel)

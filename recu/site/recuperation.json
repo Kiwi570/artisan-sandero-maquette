@@ -1,0 +1,3086 @@
+{
+  "site": "https://www.artisan-sandero.fr/",
+  "date": "2026-11-11T17:16:28.487Z",
+  "pages": [
+    "https://www.artisan-sandero.fr/",
+    "https://www.artisan-sandero.fr/contact",
+    "https://www.artisan-sandero.fr/charpente",
+    "https://www.artisan-sandero.fr/ravalement-facade",
+    "https://www.artisan-sandero.fr/zinguerie",
+    "https://www.artisan-sandero.fr/boiserie",
+    "https://www.artisan-sandero.fr/facade",
+    "https://www.artisan-sandero.fr/peinture",
+    "https://www.artisan-sandero.fr/fenetre-toit",
+    "https://www.artisan-sandero.fr/isolation",
+    "https://www.artisan-sandero.fr/nettoyage",
+    "https://www.artisan-sandero.fr/renovation",
+    "https://www.artisan-sandero.fr/pose",
+    "https://www.artisan-sandero.fr/couverture",
+    "https://www.artisan-sandero.fr/a-propos",
+    "https://www.artisan-sandero.fr/actualite",
+    "https://www.artisan-sandero.fr/mentions-legales",
+    "https://www.artisan-sandero.fr/vie-privee",
+    "https://www.artisan-sandero.fr/privacy",
+    "https://www.artisan-sandero.fr/saint-leu-la-foret",
+    "https://www.artisan-sandero.fr/ermont",
+    "https://www.artisan-sandero.fr/eaubonne",
+    "https://www.artisan-sandero.fr/cormeilles-en-parisis",
+    "https://www.artisan-sandero.fr/actualite?p=null",
+    "https://www.artisan-sandero.fr/actualite?p=2",
+    "https://www.artisan-sandero.fr/actualite?p=4",
+    "https://www.artisan-sandero.fr/actualite?p=1",
+    "https://www.artisan-sandero.fr/actualite?p=3"
+  ],
+  "images": [
+    {
+      "fichier": "logo-logotype-2024-1920w.webp",
+      "nom": "logo-logotype-2024-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 28,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Vers la page Accueil",
+        "legende": "",
+        "titre": "Accueil",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Logotype+-+2024-1920w"
+      },
+      "largeur": 1530,
+      "hauteur": 702,
+      "poids": 39390,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "logo",
+      "marque": "partenaire"
+    },
+    {
+      "fichier": "logo-logotype-top-1920w-sombre.webp",
+      "nom": "logo-logotype-top-1920w-sombre",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+top-1920w.png",
+      "page": "https://www.artisan-sandero.fr/saint-leu-la-foret",
+      "pages": 5,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Logotype Artisan Sandero",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero : faites appel à notre couvreur à Saint-Leu-la-Forêt",
+        "fichier_origine": "Logotype+-+top-1920w"
+      },
+      "largeur": 799,
+      "hauteur": 368,
+      "poids": 34060,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "logo",
+      "marque": "partenaire"
+    },
+    {
+      "fichier": "logo-logotype-blanc-288w.webp",
+      "nom": "logo-logotype-blanc-288w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+blanc-288w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 2,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Logotype d'Artisan Sandero - blanc",
+        "legende": "",
+        "titre": "Accueil",
+        "section": "Actualité",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Logotype+-+blanc-288w"
+      },
+      "largeur": 290,
+      "hauteur": 142,
+      "poids": 17550,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "logo",
+      "marque": "partenaire"
+    },
+    {
+      "fichier": "logo-logotype-blanc-1920w.webp",
+      "nom": "logo-logotype-blanc-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+blanc-1920w.png",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 26,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Logotype d'Artisan Sandero - blanc",
+        "legende": "",
+        "titre": "Accueil",
+        "section": "Comment protéger ma charpente contre les parasites et l’humidité ?",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "Logotype+-+blanc-1920w"
+      },
+      "largeur": 1020,
+      "hauteur": 499,
+      "poids": 41746,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "logo",
+      "marque": "partenaire"
+    },
+    {
+      "fichier": "fenetre-toit-nouvellement-posee.webp",
+      "nom": "fenetre-toit-nouvellement-posee",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/CD905229_C3FD_490C_8D3D_58455AB55FEB-1920w-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/fenetre-toit",
+      "pages": 6,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Fenêtre de toit nouvellement posée et installation de tuiles",
+        "legende": "",
+        "titre": "",
+        "section": "Quels sont les avantages d’une fenêtre de toit bien posée ?",
+        "page": "Pose de fenêtre de toit : une solution lumineuse pour votre maison à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1500,
+      "hauteur": 2000,
+      "largeur_origine": 1512,
+      "hauteur_origine": 2016,
+      "poids": 529274,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "renovation-toiture-professionnel.webp",
+      "nom": "renovation-toiture-professionnel",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FB555D47_D0BA_465F_8C52_3D058FC06DD2-1920w-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/renovation",
+      "pages": 6,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Rénovation de la toiture par un professionnel",
+        "legende": "",
+        "titre": "",
+        "section": "Comment se déroule le remplacement des tuiles sur un toit ?",
+        "page": "Rénovation de toiture : une solution complète pour une toiture impeccable à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1500,
+      "hauteur": 2000,
+      "largeur_origine": 1512,
+      "hauteur_origine": 2016,
+      "poids": 567786,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "pose-tuiles-orange.webp",
+      "nom": "pose-tuiles-orange",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-1920w.webp",
+      "page": "https://www.artisan-sandero.fr/pose",
+      "pages": 6,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose de tuiles orange",
+        "legende": "",
+        "titre": "",
+        "section": "Tuiles, ardoises, zinc, béton… Quelle couverture pour le toit ?",
+        "page": "Pose de toiture : protégez votre habitation des intempéries à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1500,
+      "hauteur": 2000,
+      "largeur_origine": 1512,
+      "hauteur_origine": 2016,
+      "poids": 540398,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "professionnel-batisse.webp",
+      "nom": "professionnel-batisse",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-1920w.webp",
+      "page": "https://www.artisan-sandero.fr/a-propos",
+      "pages": 6,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Professionnel sur une bâtisse",
+        "legende": "",
+        "titre": "",
+        "section": "Bénéficiez des 40 ans d'expérience de nos couvreurs",
+        "page": "Découvrez Artisan Sandero, notre entreprise de couverture située à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1500,
+      "hauteur": 2000,
+      "largeur_origine": 1512,
+      "hauteur_origine": 2016,
+      "poids": 599600,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adobestock-785175771-1920w.webp",
+      "nom": "adobestock-785175771-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_785175771-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Les travaux de peinture sur façades, toitures et boiseries extérieures",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_785175771-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 109156,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "adobestock-353866511-2880w.webp",
+      "nom": "adobestock-353866511-2880w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_353866511-2880w.jpeg",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 13,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Traitement contre les insectes xylophages et le mérule",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "AdobeStock_353866511-2880w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 104222,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "charpente-bois.webp",
+      "nom": "charpente-bois",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108153291-1920w-1600h.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Charpente en bois",
+        "legende": "",
+        "titre": "",
+        "section": "La rénovation et le traitement de charpente en bois",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_108153291-1920w-1600h"
+      },
+      "largeur": 1920,
+      "hauteur": 1275,
+      "poids": 318794,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "adobestock-480329143-1920w.webp",
+      "nom": "adobestock-480329143-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_480329143-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Actualité",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_480329143-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1200,
+      "poids": 72372,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adobestock-232941696-1200h.webp",
+      "nom": "adobestock-232941696-1200h",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_232941696-1200h.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_232941696-1200h"
+      },
+      "largeur": 1800,
+      "hauteur": 1200,
+      "poids": 136768,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adobestock-167121625-1200h.webp",
+      "nom": "adobestock-167121625-1200h",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167121625-1200h.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_167121625-1200h"
+      },
+      "largeur": 1800,
+      "hauteur": 1200,
+      "poids": 232676,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40.webp",
+      "nom": "artisan-sandero-couvreurs-40",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4Y35ILhQnKHFF3qlCcKt_Vid%C3%A9o+Home+-+compressed.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 3776,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adobestock-27244023-1200h.webp",
+      "nom": "adobestock-27244023-1200h",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_27244023-1200h.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_27244023-1200h"
+      },
+      "largeur": 1600,
+      "hauteur": 1200,
+      "poids": 104394,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "adobestock-715359085-1920w.webp",
+      "nom": "adobestock-715359085-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_715359085-1920w.jpeg?jxl=",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Le ravalement de façades sur tous types de revêtements",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_715359085-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 976,
+      "poids": 154652,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule.png",
+      "nom": "cliquer-voir-actualite-seule",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/d3b1ff9f-b60c-4f31-87aa-5de670f31e62.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 4,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "La rénovation et le traitement de charpente en bois",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 1514678,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-2.png",
+      "nom": "cliquer-voir-actualite-seule-2",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/4ccfd995-cd1b-44d3-a242-754bda474f31.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 4,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Actualité",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 1444858,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-3.png",
+      "nom": "cliquer-voir-actualite-seule-3",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/298dad47-ae46-497c-a583-96f3fcb063bf.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 4,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Actualité",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 3649285,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "refection-toiture-garage.webp",
+      "nom": "refection-toiture-garage",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/DFFBEE00_D4F4_47BF_BEBE_FE910F4F60AC-1920w-1000w.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Réfection d'une toiture d'un garage",
+        "legende": "",
+        "titre": "",
+        "section": "La rénovation et le traitement de charpente en bois",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 1333,
+      "poids": 221744,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "pose-faitage-professionnel-entreprise.webp",
+      "nom": "pose-faitage-professionnel-entreprise",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/s1-1920w-2880w.webp",
+      "page": "https://www.artisan-sandero.fr/contact",
+      "pages": 16,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Pose de faîtage par un professionnel de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Contactez notre entreprise de couverture Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1600,
+      "hauteur": 719,
+      "poids": 200858,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40-2.webp",
+      "nom": "artisan-sandero-couvreurs-40-2",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Screenshot_20241014_132204_Gallery-1-38ff07f5-499570c0-1200h.jpg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 955,
+      "hauteur": 1200,
+      "poids": 62448,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "nettoyage-facade.webp",
+      "nom": "nettoyage-facade",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/S2-1920w-2880w.PNG",
+      "page": "https://www.artisan-sandero.fr/ravalement-facade",
+      "pages": 6,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Nettoyage d'une façade",
+        "legende": "",
+        "titre": "",
+        "section": "Application de peinture de façade : la touche finale pour une façade éclatante",
+        "page": "Ravalement de façade : embellissez et valorisez votre maison à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1595,
+      "hauteur": 716,
+      "poids": 73044,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "pose-isolant-impermeabilisant-sous.webp",
+      "nom": "pose-isolant-impermeabilisant-sous",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2519F9DE_1BC9_415F_ABF4_7F6497EB7960-85117fc4-1920w-1000w.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Pose d'un isolant et d'un imperméabilisant sur sous une couverture",
+        "legende": "",
+        "titre": "",
+        "section": "La rénovation et le traitement de charpente en bois",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1000,
+      "hauteur": 1000,
+      "poids": 144390,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "peintre-2-1920w.webp",
+      "nom": "peintre-2-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Peintre-2-1920w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Les travaux de couverture : tuiles, ardoises, zinc et béton",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Peintre-2-1920w"
+      },
+      "largeur": 1200,
+      "hauteur": 800,
+      "poids": 153676,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "travaux-cours-chez-particulier.webp",
+      "nom": "travaux-cours-chez-particulier",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_41312485-1920w-1000w.jpeg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Travaux en cours chez un particulier",
+        "legende": "",
+        "titre": "",
+        "section": "La rénovation et le traitement de charpente en bois",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "AdobeStock_41312485-1920w-1000w"
+      },
+      "largeur": 1000,
+      "hauteur": 667,
+      "poids": 116208,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "professionnel-plein-ravalement-facade.webp",
+      "nom": "professionnel-plein-ravalement-facade",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Ravalement-de-fa%C3%A7ade-720h.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Professionnel en plein ravalement de façade",
+        "legende": "",
+        "titre": "",
+        "section": "Le ravalement de façades sur tous types de revêtements",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Ravalement-de-façade-720h"
+      },
+      "largeur": 640,
+      "hauteur": 640,
+      "poids": 37696,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "gouttiere-2-1920w.webp",
+      "nom": "gouttiere-2-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Goutti%C3%A8re-2-1920w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "Les travaux de zinguerie : zinc, aluminium, PVC et acier galvanisé",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Gouttière-2-1920w"
+      },
+      "largeur": 1200,
+      "hauteur": 263,
+      "poids": 14286,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "logotype-label-artisan.webp",
+      "nom": "logotype-label-artisan",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 24,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Logotype du label Artisan",
+        "legende": "",
+        "titre": "",
+        "section": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "Artisan-1920w"
+      },
+      "largeur": 560,
+      "hauteur": 560,
+      "poids": 5714,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "qualibat-68e578df-640w.webp",
+      "nom": "qualibat-68e578df-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/qualibat-68e578df-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "qualibat-68e578df-640w"
+      },
+      "largeur": 560,
+      "hauteur": 560,
+      "poids": 11760,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "toutes-hauteurs-640w.webp",
+      "nom": "toutes-hauteurs-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Toutes-Hauteurs-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Toutes-Hauteurs-640w"
+      },
+      "largeur": 560,
+      "hauteur": 560,
+      "poids": 7606,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "garantie-decennale-640w.webp",
+      "nom": "garantie-decennale-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Garantie-d%C3%A9cennale-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Garantie-décennale-640w"
+      },
+      "largeur": 560,
+      "hauteur": 560,
+      "poids": 9434,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "pose-nouvelle-couverture-professionnels.webp",
+      "nom": "pose-nouvelle-couverture-professionnels",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/renovation",
+      "pages": 3,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose d'une nouvelle couverture par des professionnels de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Comment se déroule le remplacement des tuiles sur un toit ?",
+        "page": "Rénovation de toiture : une solution complète pour une toiture impeccable à Taverny",
+        "fichier_origine": "Rénovation+toiture-1920w"
+      },
+      "largeur": 584,
+      "hauteur": 510,
+      "poids": 56766,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "unnamed-640w.webp",
+      "nom": "unnamed-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed-640w.jpg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "unnamed-640w"
+      },
+      "largeur": 640,
+      "hauteur": 452,
+      "poids": 89176,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "travaux-cours-realisation-chez.webp",
+      "nom": "travaux-cours-realisation-chez",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%287%29-600h.jpg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "Travaux en cours de réalisation chez un particulier et focus sur un véhicule floqué au nom de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Les travaux de couverture : tuiles, ardoises, zinc et béton",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 510,
+      "hauteur": 510,
+      "poids": 34500,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "sep-1920w.webp",
+      "nom": "sep-1920w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/sep-1920w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 5,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "sep-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 119,
+      "poids": 15116,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "sikkens-640w.webp",
+      "nom": "sikkens-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Sikkens-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Sikkens-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 5276,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "velux-640w.webp",
+      "nom": "velux-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Velux-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Velux-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 6350,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "tollens-640w.webp",
+      "nom": "tollens-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Tollens-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Tollens-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 6866,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "maestria-640w.webp",
+      "nom": "maestria-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Maestria-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Maestria-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 23194,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "duralex-640w.webp",
+      "nom": "duralex-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Duralex-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Duralex-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 13100,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cimentol-640w.webp",
+      "nom": "cimentol-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Cimentol-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Cimentol-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 5990,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "dalep-640w.webp",
+      "nom": "dalep-640w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Dalep-640w.png",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": "Dalep-640w"
+      },
+      "largeur": 560,
+      "hauteur": 360,
+      "poids": 12294,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "artisan-sandero-couvreurs-40-3.webp",
+      "nom": "artisan-sandero-couvreurs-40-3",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-05-14+%284%29-640w.jpg",
+      "page": "https://www.artisan-sandero.fr/",
+      "pages": 1,
+      "emplacement": "reseau",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Artisan Sandero, des couvreurs avec 40 ans d'expérience à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 640,
+      "hauteur": 288,
+      "poids": 47186,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "insecte-xylophage-gros-plan.webp",
+      "nom": "insecte-xylophage-gros-plan",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_61645177-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Insecte xylophage en gros plan",
+        "legende": "",
+        "titre": "",
+        "section": "Traitement contre les insectes xylophages et le mérule",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "AdobeStock_61645177-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 108948,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "changement-charpente-chez-particulier.webp",
+      "nom": "changement-charpente-chez-particulier",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_168528465-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Changement de charpente chez un particulier",
+        "legende": "",
+        "titre": "",
+        "section": "Travaux sur charpente en bois traditionnelle : rénovation et renforcement",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "AdobeStock_168528465-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 173436,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "pose-nouvelle-charpente.webp",
+      "nom": "pose-nouvelle-charpente",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_313251628-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose d'une nouvelle charpente",
+        "legende": "",
+        "titre": "",
+        "section": "Travaux sur charpente en bois traditionnelle : rénovation et renforcement",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "AdobeStock_313251628-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1272,
+      "poids": 180916,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "travaux-charpente-assurer-solidite.webp",
+      "nom": "travaux-charpente-assurer-solidite",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FyQtA2msRAu62zSAceY2_AdobeStock_1017556838.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 146842,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "jeune-homme-telephone-mains.webp",
+      "nom": "jeune-homme-telephone-mains",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_548613258-91222acc-1920w.png",
+      "page": "https://www.artisan-sandero.fr/charpente",
+      "pages": 13,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Jeune homme avec son téléphone dans les mains",
+        "legende": "",
+        "titre": "",
+        "section": "Traitement contre les insectes xylophages et le mérule",
+        "page": "Travaux de charpente pour assurer solidité et longévité à votre toiture à Taverny",
+        "fichier_origine": "AdobeStock_548613258-91222acc-1920w"
+      },
+      "largeur": 1281,
+      "hauteur": 1281,
+      "poids": 105914,
+      "format": "webp",
+      "transparence": true,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "tres-gros-plan-fissure.webp",
+      "nom": "tres-gros-plan-fissure",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_481159101-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/ravalement-facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Très gros plan sur une fissure de façade",
+        "legende": "",
+        "titre": "",
+        "section": "Diagnostic et nettoyage de façade : une étape essentielle pour une façade impeccable",
+        "page": "Ravalement de façade : embellissez et valorisez votre maison à Taverny",
+        "fichier_origine": "AdobeStock_481159101-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1440,
+      "poids": 776764,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "application-nouvelle-peinture.webp",
+      "nom": "application-nouvelle-peinture",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_242821955-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/ravalement-facade",
+      "pages": 4,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Application d'une nouvelle peinture par un professionnel",
+        "legende": "",
+        "titre": "",
+        "section": "Application de peinture de façade : la touche finale pour une façade éclatante",
+        "page": "Ravalement de façade : embellissez et valorisez votre maison à Taverny",
+        "fichier_origine": "AdobeStock_242821955-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1285,
+      "poids": 145658,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "ravalement-facade-embellissez-valorisez.webp",
+      "nom": "ravalement-facade-embellissez-valorisez",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/dp3aircdQxGxiOvaCDIE_AdobeStock_499866284.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/ravalement-facade",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Ravalement de façade : embellissez et valorisez votre maison à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 59000,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "nettoyage-facade-professionnel.webp",
+      "nom": "nettoyage-facade-professionnel",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-05-14-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/ravalement-facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Nettoyage d'une façade par un professionnel de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Diagnostic et nettoyage de façade : une étape essentielle pour une façade impeccable",
+        "page": "Ravalement de façade : embellissez et valorisez votre maison à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 680,
+      "hauteur": 306,
+      "poids": 25126,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "cheminee-alliage-metallique.webp",
+      "nom": "cheminee-alliage-metallique",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_521872330-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/zinguerie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Cheminée en alliage métallique",
+        "legende": "",
+        "titre": "",
+        "section": "Renforcez la sécurité de votre cheminée avec notre service de zinguerie",
+        "page": "Zinguerie de toiture : des solutions sur mesure pour votre toit à Taverny",
+        "fichier_origine": "AdobeStock_521872330-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 235296,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "maison-bicolore-blanche-grise.webp",
+      "nom": "maison-bicolore-blanche-grise",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_211889510-2880w.jpeg",
+      "page": "https://www.artisan-sandero.fr/peinture",
+      "pages": 2,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Maison bicolore blanche et grise",
+        "legende": "",
+        "titre": "",
+        "section": "Des travaux de peinture avec des marques de qualité : un résultat durable",
+        "page": "Travaux de peinture : redonnez vie à vos façades et boiseries à Taverny",
+        "fichier_origine": "AdobeStock_211889510-2880w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 161404,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "zinguerie-toiture-solutions-mesure.webp",
+      "nom": "zinguerie-toiture-solutions-mesure",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/vPo6KCoSGz2g63yZ0alQ_AdobeStock_558711478.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/zinguerie",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Zinguerie de toiture : des solutions sur mesure pour votre toit à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 54308,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "creation-cheneaux-entreprise.webp",
+      "nom": "creation-cheneaux-entreprise",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%2810%29-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/zinguerie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Création de chéneaux par l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Pose, remplacement et entretien de gouttières pour une meilleure étanchéité",
+        "page": "Zinguerie de toiture : des solutions sur mesure pour votre toit à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 510,
+      "hauteur": 510,
+      "poids": 44680,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "changement-cheneaux-chez-particulier.webp",
+      "nom": "changement-cheneaux-chez-particulier",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%287%29-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/zinguerie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Changement des chéneaux chez un particulier",
+        "legende": "",
+        "titre": "",
+        "section": "Pose, remplacement et entretien de gouttières pour une meilleure étanchéité",
+        "page": "Zinguerie de toiture : des solutions sur mesure pour votre toit à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 510,
+      "hauteur": 510,
+      "poids": 64698,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "focus-maison-bois.webp",
+      "nom": "focus-maison-bois",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_113832855-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/boiserie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Focus sur une maison en bois",
+        "legende": "",
+        "titre": "",
+        "section": "Les normes à respecter pour la peinture de boiseries extérieures",
+        "page": "Peinture sur boiseries : améliorez l'apparence de votre extérieur à Taverny",
+        "fichier_origine": "AdobeStock_113832855-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1282,
+      "poids": 391592,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "maison-moderne-partie-bois.webp",
+      "nom": "maison-moderne-partie-bois",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_144015087-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/boiserie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Maison moderne avec une partie en bois et une en aggloméré",
+        "legende": "",
+        "titre": "",
+        "section": "Les avantages de la peinture sur boiseries pour votre maison",
+        "page": "Peinture sur boiseries : améliorez l'apparence de votre extérieur à Taverny",
+        "fichier_origine": "AdobeStock_144015087-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 242208,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "maison-bardage-bois-vue.webp",
+      "nom": "maison-bardage-bois-vue",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108595035-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/boiserie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Maison avec un bardage en bois vue du dessous",
+        "legende": "",
+        "titre": "",
+        "section": "Comment préparer vos boiseries pour une peinture optimale ?",
+        "page": "Peinture sur boiseries : améliorez l'apparence de votre extérieur à Taverny",
+        "fichier_origine": "AdobeStock_108595035-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 232198,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "maison-bardage-bois.webp",
+      "nom": "maison-bardage-bois",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_53357596-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/boiserie",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Maison avec un bardage en bois",
+        "legende": "",
+        "titre": "",
+        "section": "Les avantages de la peinture sur boiseries pour votre maison",
+        "page": "Peinture sur boiseries : améliorez l'apparence de votre extérieur à Taverny",
+        "fichier_origine": "AdobeStock_53357596-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 377808,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "adobestock-174270513-2880w.webp",
+      "nom": "adobestock-174270513-2880w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_174270513-2880w.jpeg",
+      "page": "https://www.artisan-sandero.fr/boiserie",
+      "pages": 1,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Peinture sur boiseries : améliorez l'apparence de votre extérieur à Taverny",
+        "fichier_origine": "AdobeStock_174270513-2880w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 189276,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "application-peinture-facade.webp",
+      "nom": "application-peinture-facade",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167531395-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Application d'une peinture sur une façade",
+        "legende": "",
+        "titre": "",
+        "section": "Les façades en crépi minéral et en enduit : les avantages",
+        "page": "Application de peinture sur façade pour valoriser votre bien à Taverny",
+        "fichier_origine": "AdobeStock_167531395-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1468,
+      "poids": 195472,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "maison-moderne-facade-bicolore.webp",
+      "nom": "maison-moderne-facade-bicolore",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_85256708-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Maison moderne avec une façade bicolore rouge et blanche",
+        "legende": "",
+        "titre": "",
+        "section": "Comment préparer votre façade avant la peinture pour un résultat optimal ?",
+        "page": "Application de peinture sur façade pour valoriser votre bien à Taverny",
+        "fichier_origine": "AdobeStock_85256708-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 162900,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "immeuble-facade-orange.webp",
+      "nom": "immeuble-facade-orange",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_318839344-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Immeuble avec une façade orange",
+        "legende": "",
+        "titre": "",
+        "section": "Des travaux de peinture dans le respect de la réglementation",
+        "page": "Application de peinture sur façade pour valoriser votre bien à Taverny",
+        "fichier_origine": "AdobeStock_318839344-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 239450,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "adobestock-263509220-2880w.webp",
+      "nom": "adobestock-263509220-2880w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_263509220-2880w.jpeg",
+      "page": "https://www.artisan-sandero.fr/facade",
+      "pages": 1,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Application de peinture sur façade pour valoriser votre bien à Taverny",
+        "fichier_origine": "AdobeStock_263509220-2880w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 111380,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "nettoyage-facade-2.webp",
+      "nom": "nettoyage-facade-2",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_19151197-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/facade",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Nettoyage d'une façade",
+        "legende": "",
+        "titre": "",
+        "section": "Comment préparer votre façade avant la peinture pour un résultat optimal ?",
+        "page": "Application de peinture sur façade pour valoriser votre bien à Taverny",
+        "fichier_origine": "AdobeStock_19151197-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1275,
+      "poids": 649068,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "bardage-bois-noir.webp",
+      "nom": "bardage-bois-noir",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_278054449-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/peinture",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Bardage en bois noir",
+        "legende": "",
+        "titre": "",
+        "section": "Valorisez et protégez votre maison grâce à notre expertise en peinture de façade",
+        "page": "Travaux de peinture : redonnez vie à vos façades et boiseries à Taverny",
+        "fichier_origine": "AdobeStock_278054449-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1337,
+      "poids": 148842,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "tres-gros-plan-application.webp",
+      "nom": "tres-gros-plan-application",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_385934384-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/peinture",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Très gros plan sur l'application d'une nouvelle couche de peinture",
+        "legende": "",
+        "titre": "",
+        "section": "Valorisez et protégez votre maison grâce à notre expertise en peinture de façade",
+        "page": "Travaux de peinture : redonnez vie à vos façades et boiseries à Taverny",
+        "fichier_origine": "AdobeStock_385934384-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 190862,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "travaux-peinture-redonnez-vie.webp",
+      "nom": "travaux-peinture-redonnez-vie",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/UD4sHseyRzGcYyWkAQGo_AdobeStock_357173413.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/peinture",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Travaux de peinture : redonnez vie à vos façades et boiseries à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1013,
+      "poids": 290166,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "pose-nouvelle-fenetre-toit.webp",
+      "nom": "pose-nouvelle-fenetre-toit",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_234755117-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/fenetre-toit",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose d'une nouvelle fenêtre de toit",
+        "legende": "",
+        "titre": "",
+        "section": "Quels sont les avantages d’une fenêtre de toit bien posée ?",
+        "page": "Pose de fenêtre de toit : une solution lumineuse pour votre maison à Taverny",
+        "fichier_origine": "AdobeStock_234755117-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1281,
+      "poids": 239062,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "jeune-enfant-regardant-pluie.webp",
+      "nom": "jeune-enfant-regardant-pluie",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_499977538-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/fenetre-toit",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Jeune enfant regardant la pluie par la fenêtre de toit",
+        "legende": "",
+        "titre": "",
+        "section": "L’importance de l’étanchéité pour la pose d’une fenêtre de toit",
+        "page": "Pose de fenêtre de toit : une solution lumineuse pour votre maison à Taverny",
+        "fichier_origine": "AdobeStock_499977538-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 117720,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "remplacement-fenetre-toit.webp",
+      "nom": "remplacement-fenetre-toit",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_221603202-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/fenetre-toit",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Remplacement d'une fenêtre de toit",
+        "legende": "",
+        "titre": "",
+        "section": "Installation de fenêtres de toit Velux® et châssis parisiens",
+        "page": "Pose de fenêtre de toit : une solution lumineuse pour votre maison à Taverny",
+        "fichier_origine": "AdobeStock_221603202-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 282612,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "adobestock-198984002-2880w.webp",
+      "nom": "adobestock-198984002-2880w",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_198984002-2880w.jpeg",
+      "page": "https://www.artisan-sandero.fr/fenetre-toit",
+      "pages": 1,
+      "emplacement": "fond",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Pose de fenêtre de toit : une solution lumineuse pour votre maison à Taverny",
+        "fichier_origine": "AdobeStock_198984002-2880w"
+      },
+      "largeur": 1920,
+      "hauteur": 1230,
+      "poids": 207924,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "isolation-combles-interieur.webp",
+      "nom": "isolation-combles-interieur",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_194010676-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/isolation",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Isolation des combles par l'intérieur",
+        "legende": "",
+        "titre": "",
+        "section": "Les avantages des isolants en laine de verre et de roche",
+        "page": "Isolation de toiture : améliorez votre confort et réalisez des économies d’énergie à Taverny",
+        "fichier_origine": "AdobeStock_194010676-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 251182,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "isolant-exterieur.webp",
+      "nom": "isolant-exterieur",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_224358003-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/isolation",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Isolant par l'extérieur",
+        "legende": "",
+        "titre": "",
+        "section": "Pourquoi choisir l’isolation des combles par l’intérieur ?",
+        "page": "Isolation de toiture : améliorez votre confort et réalisez des économies d’énergie à Taverny",
+        "fichier_origine": "AdobeStock_224358003-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 326598,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "isolant-tres-gros-plan.webp",
+      "nom": "isolant-tres-gros-plan",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_237039316-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/isolation",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Isolant en très gros plan",
+        "legende": "",
+        "titre": "",
+        "section": "Quelles sont les normes d’isolation pour les combles et toitures ?",
+        "page": "Isolation de toiture : améliorez votre confort et réalisez des économies d’énergie à Taverny",
+        "fichier_origine": "AdobeStock_237039316-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 83958,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "application-traitement-hydrofuge.webp",
+      "nom": "application-traitement-hydrofuge",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_440115567-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/nettoyage",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Application d'un traitement hydrofuge",
+        "legende": "",
+        "titre": "",
+        "section": "Pourquoi faut-il éviter le nettoyeur haute pression pour une toiture ?",
+        "page": "Nettoyage de toiture : protégez votre maison efficacement à Taverny",
+        "fichier_origine": "AdobeStock_440115567-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1281,
+      "poids": 425358,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "application-traitement-revetement.webp",
+      "nom": "application-traitement-revetement",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_13601277-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/nettoyage",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Application d'un traitement sur un revêtement de toiture",
+        "legende": "",
+        "titre": "",
+        "section": "Le traitement hydrofuge : une protection préventive et curative",
+        "page": "Nettoyage de toiture : protégez votre maison efficacement à Taverny",
+        "fichier_origine": "AdobeStock_13601277-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 387140,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "entretien-toiture-prevoir.webp",
+      "nom": "entretien-toiture-prevoir",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%281%29-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/nettoyage",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Entretien de toiture à prévoir",
+        "legende": "",
+        "titre": "",
+        "section": "Entretien régulier : la clé pour une toiture en bon état",
+        "page": "Nettoyage de toiture : protégez votre maison efficacement à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 510,
+      "hauteur": 510,
+      "poids": 59480,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "utilisation-brosse-metallique-nettoyer.webp",
+      "nom": "utilisation-brosse-metallique-nettoyer",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/0910-1920w.PNG",
+      "page": "https://www.artisan-sandero.fr/nettoyage",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Utilisation d'une brosse métallique pour nettoyer la toiture de la mousse",
+        "legende": "",
+        "titre": "",
+        "section": "Pourquoi faut-il éviter le nettoyeur haute pression pour une toiture ?",
+        "page": "Nettoyage de toiture : protégez votre maison efficacement à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 472,
+      "hauteur": 471,
+      "poids": 67604,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "tuile-felee-laissant-eau.webp",
+      "nom": "tuile-felee-laissant-eau",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_21960405-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/renovation",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Tuile fêlée laissant l'eau s'infiltrer",
+        "legende": "",
+        "titre": "",
+        "section": "Pourquoi est-il important de rénover sa toiture régulièrement ?",
+        "page": "Rénovation de toiture : une solution complète pour une toiture impeccable à Taverny",
+        "fichier_origine": "AdobeStock_21960405-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 109904,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "pose-faitage-professionnel-entreprise-2.webp",
+      "nom": "pose-faitage-professionnel-entreprise-2",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Pose+de+faitage+%282%29-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/renovation",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose de faîtage par un professionnel de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "L’importance de la réparation de la maçonnerie de votre toiture",
+        "page": "Rénovation de toiture : une solution complète pour une toiture impeccable à Taverny",
+        "fichier_origine": "Pose+de+faitage+(2)-1920w"
+      },
+      "largeur": 680,
+      "hauteur": 510,
+      "poids": 36174,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "prise-vue-drone-refection.webp",
+      "nom": "prise-vue-drone-refection",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_ebc67838578dc20b_1664872832000-1-d6ddc94d-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/pose",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Prise de vue par drone d'une réfection de toiture par les professionnels de l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Nous intervenons sur toutes les hauteurs de toit à Taverny",
+        "page": "Pose de toiture : protégez votre habitation des intempéries à Taverny",
+        "fichier_origine": "org_ebc67838578dc20b_1664872832000-1-d6ddc94d-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1440,
+      "poids": 666862,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "focus-toiture-zinc.webp",
+      "nom": "focus-toiture-zinc",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_370554446-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/pose",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Focus sur une toiture en zinc",
+        "legende": "",
+        "titre": "",
+        "section": "Toitures arrondies, plates ou en pente : quels avantages ?",
+        "page": "Pose de toiture : protégez votre habitation des intempéries à Taverny",
+        "fichier_origine": "AdobeStock_370554446-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 171098,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "plat"
+    },
+    {
+      "fichier": "professionnel-travaillant-toiture-plate.webp",
+      "nom": "professionnel-travaillant-toiture-plate",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_164780620-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/pose",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Professionnel travaillant sur une toiture plate",
+        "legende": "",
+        "titre": "",
+        "section": "Tuiles, ardoises, zinc, béton… Quelle couverture pour le toit ?",
+        "page": "Pose de toiture : protégez votre habitation des intempéries à Taverny",
+        "fichier_origine": "AdobeStock_164780620-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 209952,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "plat"
+    },
+    {
+      "fichier": "pose-toiture-protegez-habitation.webp",
+      "nom": "pose-toiture-protegez-habitation",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/uGyk0DzcQPmckbH9x2OQ_AdobeStock_91427539.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/pose",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Pose de toiture : protégez votre habitation des intempéries à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 124622,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "nettoyage-toiture.webp",
+      "nom": "nettoyage-toiture",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_91936521-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/couverture",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Nettoyage d'une toiture",
+        "legende": "",
+        "titre": "",
+        "section": "Nettoyage, traitement hydrofuge et application de peinture sur la toiture",
+        "page": "Travaux de toiture en neuf et rénovation à Taverny et alentour",
+        "fichier_origine": "AdobeStock_91936521-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 338228,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "oeuvre"
+    },
+    {
+      "fichier": "pose-nouvelle-fenetre-toit-2.webp",
+      "nom": "pose-nouvelle-fenetre-toit-2",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_181941093-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/couverture",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose d'une nouvelle fenêtre de toit en gros plan",
+        "legende": "",
+        "titre": "",
+        "section": "Pose, réparation et étanchéité de fenêtres de toit Velux",
+        "page": "Travaux de toiture en neuf et rénovation à Taverny et alentour",
+        "fichier_origine": "AdobeStock_181941093-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 338888,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "travaux-toiture-neuf-renovation.webp",
+      "nom": "travaux-toiture-neuf-renovation",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/LxoBXS90T6mw7L3EcAd1_AdobeStock_98703153.v2.0000000-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/couverture",
+      "pages": 1,
+      "emplacement": "affiche",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "",
+        "section": "",
+        "page": "Travaux de toiture en neuf et rénovation à Taverny et alentour",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1080,
+      "poids": 46894,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "lieu"
+    },
+    {
+      "fichier": "pose-tuiles-lors-reparation.webp",
+      "nom": "pose-tuiles-lors-reparation",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed+%281%29-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/couverture",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Pose de tuiles lors de la réparation de toiture",
+        "legende": "",
+        "titre": "",
+        "section": "Pose de couvertures sur des toitures arrondies, plates ou en pente",
+        "page": "Travaux de toiture en neuf et rénovation à Taverny et alentour",
+        "fichier_origine": "unnamed+(1)-1920w"
+      },
+      "largeur": 680,
+      "hauteur": 510,
+      "poids": 56506,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "plat"
+    },
+    {
+      "fichier": "profesionnel-entreprise-pointant-doigt.webp",
+      "nom": "profesionnel-entreprise-pointant-doigt",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/20241005_093135-1-06ad7792-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/a-propos",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Profesionnel de l'entreprise pointant du doigt un problème de couverture",
+        "legende": "",
+        "titre": "",
+        "section": "Bénéficiez des 40 ans d'expérience de nos couvreurs",
+        "page": "Découvrez Artisan Sandero, notre entreprise de couverture située à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1920,
+      "hauteur": 1454,
+      "poids": 530230,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "travaux-couverture-realises-entreprise.webp",
+      "nom": "travaux-couverture-realises-entreprise",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_e74efc4996761e7b_1665151724000-1-c7236e01-aa558822-1920w.jpg",
+      "page": "https://www.artisan-sandero.fr/a-propos",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Travaux de couverture réalisés par l'entreprise",
+        "legende": "",
+        "titre": "",
+        "section": "Profitez de travaux de couverture complets et sur mesure",
+        "page": "Découvrez Artisan Sandero, notre entreprise de couverture située à Taverny",
+        "fichier_origine": "org_e74efc4996761e7b_1665151724000-1-c7236e01-aa558822-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1358,
+      "poids": 398788,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "professionnel-attache-harnais-train.webp",
+      "nom": "professionnel-attache-harnais-train",
+      "origine": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_386826360-1920w.jpeg",
+      "page": "https://www.artisan-sandero.fr/a-propos",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "Professionnel attaché par un harnais en train de nettoyer une toiture",
+        "legende": "",
+        "titre": "",
+        "section": "Une entreprise familiale, un savoir-faire transmis de père en fils",
+        "page": "Découvrez Artisan Sandero, notre entreprise de couverture située à Taverny",
+        "fichier_origine": "AdobeStock_386826360-1920w"
+      },
+      "largeur": 1920,
+      "hauteur": 1280,
+      "poids": 326108,
+      "format": "webp",
+      "transparence": false,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-4.png",
+      "nom": "cliquer-voir-actualite-seule-4",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/0472de81-33a9-4c99-9063-f758443914f0.png",
+      "page": "https://www.artisan-sandero.fr/actualite",
+      "pages": 3,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 2084749,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-5.png",
+      "nom": "cliquer-voir-actualite-seule-5",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/3a708f1c-9e62-49d9-9c10-603c58eb15f1.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=2",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 1845395,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-6.png",
+      "nom": "cliquer-voir-actualite-seule-6",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/3045ba56-6881-4746-8b46-f253c0b84fc3.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=2",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 101104,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-7.png",
+      "nom": "cliquer-voir-actualite-seule-7",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/568e9873-754a-4f27-ad40-a147e33a3e90.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=2",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 2803154,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-8.png",
+      "nom": "cliquer-voir-actualite-seule-8",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/1570f8e3-31f5-4636-9ef8-180a9ac01994.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=2",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 3451715,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-9.png",
+      "nom": "cliquer-voir-actualite-seule-9",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/8f7b77cf-2f20-49a2-b549-d12b42f959df.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=4",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 2747101,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-10.png",
+      "nom": "cliquer-voir-actualite-seule-10",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/b3597143-74d6-4574-b232-67d57d523413.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=3",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 1269898,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-11.png",
+      "nom": "cliquer-voir-actualite-seule-11",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/e4c91745-75c5-4d61-992f-e18e22ddb318.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=3",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 2616806,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-12.png",
+      "nom": "cliquer-voir-actualite-seule-12",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/05b8b313-d4c2-487c-86b3-c3df38826d75.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=3",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 83753,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    },
+    {
+      "fichier": "cliquer-voir-actualite-seule-13.png",
+      "nom": "cliquer-voir-actualite-seule-13",
+      "origine": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/9d9885a3-fe32-4b5d-8a33-1cfa92e358a2.png",
+      "page": "https://www.artisan-sandero.fr/actualite?p=3",
+      "pages": 1,
+      "emplacement": "img",
+      "contexte": {
+        "alt": "",
+        "legende": "",
+        "titre": "Cliquer pour voir cette actualité seule",
+        "section": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "page": "Découvrez l’actualité de notre entreprise Artisan Sandero à Taverny",
+        "fichier_origine": ""
+      },
+      "largeur": 1080,
+      "hauteur": 1350,
+      "poids": 3175715,
+      "format": "png",
+      "transparence": true,
+      "drapeau": "autre"
+    }
+  ],
+  "ecartees": [
+    {
+      "url": "https://www.artisan-sandero.fr/contact",
+      "raison": "pas une image"
+    },
+    {
+      "url": "https://www.artisan-sandero.fr/contact",
+      "raison": "pas une image"
+    },
+    {
+      "url": "https://www.artisan-sandero.fr/contact",
+      "raison": "pas une image"
+    },
+    {
+      "url": "https://www.artisan-sandero.fr/contact",
+      "raison": "pas une image"
+    },
+    {
+      "url": "https://www.artisan-sandero.fr/contact",
+      "raison": "pas une image"
+    },
+    {
+      "url": "https://www.gstatic.com/recaptcha/api2/logo_48.png",
+      "raison": "suivi"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-200h.png",
+      "raison": "repetee sur 24/28 pages"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/qualibat-68e578df-200h.png",
+      "raison": "repetee sur 24/28 pages"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Garantie-d%C3%A9cennale-300h.png",
+      "raison": "repetee sur 24/28 pages"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Toutes-Hauteurs-200h.png",
+      "raison": "repetee sur 24/28 pages"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/favicon-1920w.png",
+      "raison": "icone"
+    },
+    {
+      "url": "https://www.artisan-sandero.fr/editor/ed/vendor/leaflet/images/marker-icon.png",
+      "raison": "icone"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Google-96w.png",
+      "raison": "100 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/PagesJaunes-96w.png",
+      "raison": "100 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Fa%C3%AEtage-400h.jpg",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-03-09-600h.jpg",
+      "raison": "230 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Velux-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Tollens-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Sikkens-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Maestria-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Duralex-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Cimentol-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Dalep-300w.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/sep-pa-865b1eed.svg",
+      "raison": "svg decoratif"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-06-05-1920w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-06-05-2880w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2022-04-13+%283%29-1920w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2022-04-13+%283%29-2880w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Google-1920w.png",
+      "raison": "320 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/PagesJaunes-1920w.png",
+      "raison": "320 px de large"
+    },
+    {
+      "url": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/Clic+%281%29-c945a425.svg",
+      "raison": "svg decoratif"
+    },
+    {
+      "url": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/Clic+%281%29.svg",
+      "raison": "svg decoratif"
+    },
+    {
+      "url": "https://collector.appconsent.io/t2.gif?a=eb586bf5-d267-41a0-be6d-72b257b7e8a0&b=81203acf-7bd4-dfa6-178a-a9d6ebd08efe&n=display",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Couvreur%20%C3%A0%20Taverny%20%E2%80%93%20Faites%20appel%20%C3%A0%20Artisan%20Sandero&dtm=1794417199403&tid=227613&vp=1440x900&ds=1440x11874&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2F",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://static.cdn-website.com/editor/ed/vendor/mapbox/images/earth_thumb.png",
+      "raison": "120 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-03-09-640w.jpg",
+      "raison": "230 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Fa%C3%AEtage-640w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-03-22+%283%29-640w.jpg",
+      "raison": "230 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed+%283%29-640w.jpg",
+      "raison": "382 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-01-20+%282%29-640w.jpg",
+      "raison": "287 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed+%283%29-400h.jpg",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-01-20+%282%29-400h.jpg",
+      "raison": "225 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-03-22+%283%29-400h.jpg",
+      "raison": "180 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Contactez%20Artisan%20Sandero%20%E2%80%93%20Artisan%20couvreur%20%C3%A0%20Taverny&dtm=1794417206773&tid=682910&vp=1440x900&ds=1440x3131&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fcontact",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Ravalement%20de%20fa%C3%A7ade%20%C3%A0%20Taverny%20par%20nos%20artisans%20exp%C3%A9riment%C3%A9s&dtm=1794417213434&tid=550091&vp=1440x900&ds=1440x3773&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fravalement-facade",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Travaux%20de%20charpente%20%C3%A0%20Taverny%20pour%20une%20structure%20solide&dtm=1794417209856&tid=607921&vp=1440x900&ds=1440x3630&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fcharpente",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Zinguerie%20de%20toiture%20%C3%A0%20Taverny%20%E2%80%93%20Installation%20et%20r%C3%A9novation&dtm=1794417222738&tid=122488&vp=1440x900&ds=1440x3749&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fzinguerie",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Pose%20de%20peinture%20sur%20boiserie%20contre%20l%27usure%20%C3%A0%20Taverny&dtm=1794417227386&tid=993900&vp=1440x900&ds=1440x3877&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fboiserie",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Pose%20de%20fen%C3%AAtre%20de%20toit%20%C3%A0%20Taverny%20%E2%80%93%20Installation%20et%20r%C3%A9paration&dtm=1794417237088&tid=847737&vp=1440x900&ds=1440x3866&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Ffenetre-toit",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Isolation%20de%20toiture%20%C3%A0%20Taverny%20%E2%80%93%20R%C3%A9duction%20des%20pertes%20de%20chaleur&dtm=1794417242949&tid=075075&vp=1440x900&ds=1440x3914&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fisolation",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Toutes-Hauteurs-300h.png",
+      "raison": "300 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Nettoyage%20de%20toiture%20et%20traitement%20hydrofuge%20%C3%A0%20Taverny&dtm=1794417246189&tid=578331&vp=1440x900&ds=1440x3866&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fnettoyage",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Pose%20de%20toiture%20%C3%A0%20Taverny%20%E2%80%93%20Service%20professionnel%20et%20local&dtm=1794417255301&tid=871297&vp=1440x900&ds=1440x3963&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fpose",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Pose%20de%20peinture%20sur%20fa%C3%A7ade%20%C3%A0%20Taverny%20par%20notre%20artisan&dtm=1794417230593&tid=445139&vp=1440x900&ds=1440x3866&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Ffacade",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Entreprise%20de%20couverture%20%C3%A0%20Taverny%20%E2%80%93%20Artisan%20Sandero&dtm=1794417274158&tid=083642&vp=1440x900&ds=1440x3877&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fa-propos",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Travaux%20de%20peinture%20%C3%A0%20Taverny%20sur%20fa%C3%A7ades%20et%20boiseries&dtm=1794417233802&tid=232165&vp=1440x900&ds=1440x4226&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fpeinture",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417277533&tid=892886&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Page%20de%20mentions%20l%C3%A9gales%20du%20site%20artisan-sandero.fr&dtm=1794417281411&tid=123523&vp=1440x900&ds=1440x1764&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fmentions-legales",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Protection%20de%20la%20vie%20priv%C3%A9e%20%E2%80%93%20Artisan%20Sandero%20%C3%A0%20Taverny&dtm=1794417283729&tid=361003&vp=1440x900&ds=1440x3500&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fvie-privee",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Politique%20de%20gestion%20de%20cookies%20%E2%80%93%20Artisan%20Sandero%20%C3%A0%20Taverny&dtm=1794417286697&tid=745271&vp=1440x900&ds=1440x1618&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fprivacy",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Couvreur%20%C3%A0%20proximit%C3%A9%20de%20Saint-Leu-la-For%C3%AAt%20%3A%20Artisan%20Sandero&dtm=1794417289198&tid=232869&vp=1440x900&ds=1440x10992&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fsaint-leu-la-foret",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=R%C3%A9novation%20de%20toiture%20%C3%A0%20Taverny%20%E2%80%93%20Service%20professionnel&dtm=1794417249556&tid=337957&vp=1440x900&ds=1440x3986&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Frenovation",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Travaux%20de%20toiture%20%C3%A0%20Taverny%2C%20de%20la%20pose%20au%20nettoyage&dtm=1794417270869&tid=992519&vp=1440x900&ds=1440x4346&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fcouverture",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Couvreur%20%C3%A0%20Ermont%20%E2%80%93%20Faites%20appel%20%C3%A0%20Artisan%20Sandero&dtm=1794417307679&tid=365570&vp=1440x900&ds=1440x10932&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fermont",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Couvreur%20pr%C3%A8s%20d%27Eaubonne%20%E2%80%93%20Contactez%20Artisan%20Sandero&dtm=1794417326396&tid=094595&vp=1440x900&ds=1440x10809&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Feaubonne",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Couvreur%20%C3%A0%20Cormeilles-en-Parisis%20%3A%20Artisan%20Sandero&dtm=1794417345057&tid=697199&vp=1440x900&ds=1440x11091&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Fcormeilles-en-parisis",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417363745&tid=983745&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite%3Fp%3Dnull",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417367596&tid=064506&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite%3Fp%3D2",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417371524&tid=814320&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite%3Fp%3D4",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417374255&tid=229822&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite%3Fp%3D1",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://d3uzsv7k2lpopp.cloudfront.net/i?e=pv&page=Actualit%C3%A9s%20%E2%80%93%20Retrouvez%20toute%20l%27actu%20d%27Artisan%20Sandero&dtm=1794417378083&tid=390009&vp=1440x900&ds=1440x1649&vid=1&duid=9990c6ce4da9894b&p=web&tv=js-2.0.0&fp=3781504412&aid=c02c4711e1564850ae86f73d0b942fe1&lang=fr-FR&cs=UTF-8&tz=Europe%2FBerlin&tna=cf&res=1440x900&cd=24&cookie=1&url=https%3A%2F%2Fwww.artisan-sandero.fr%2Factualite%3Fp%3D3",
+      "raison": "1 px de large"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/CD905229_C3FD_490C_8D3D_58455AB55FEB-1920w-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/CD905229_C3FD_490C_8D3D_58455AB55FEB-1920w-1920w.jpeg en 1512x2016"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FB555D47_D0BA_465F_8C52_3D058FC06DD2-1920w-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FB555D47_D0BA_465F_8C52_3D058FC06DD2-1920w-1920w.jpeg en 1512x2016"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-2880w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-1920w.webp en 1512x2016"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-2880w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-1920w.webp en 1512x2016"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167531395-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167531395-1920w.jpeg en 1920x1468"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/20241005_093135-1-06ad7792-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/20241005_093135-1-06ad7792-1920w.jpg en 1920x1454"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_481159101-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_481159101-1920w.jpeg en 1920x1440"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_ebc67838578dc20b_1664872832000-1-d6ddc94d-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_ebc67838578dc20b_1664872832000-1-d6ddc94d-1920w.jpg en 1920x1440"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_e74efc4996761e7b_1665151724000-1-c7236e01-aa558822-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/org_e74efc4996761e7b_1665151724000-1-c7236e01-aa558822-1920w.jpg en 1920x1358"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_278054449-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_278054449-1920w.jpeg en 1920x1337"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_242821955-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_242821955-1920w.jpeg en 1920x1285"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_113832855-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_113832855-1920w.jpeg en 1920x1282"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_234755117-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_234755117-1920w.jpeg en 1920x1281"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_440115567-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_440115567-1920w.jpeg en 1920x1281"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_168528465-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_168528465-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_61645177-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_61645177-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_521872330-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_521872330-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_144015087-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_144015087-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108595035-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108595035-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_53357596-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_53357596-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_85256708-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_85256708-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_318839344-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_318839344-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_385934384-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_385934384-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_499977538-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_499977538-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_221603202-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_221603202-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_194010676-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_194010676-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_237039316-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_237039316-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_224358003-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_224358003-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_13601277-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_13601277-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_21960405-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_21960405-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_370554446-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_370554446-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_164780620-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_164780620-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_91936521-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_91936521-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_181941093-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_181941093-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_386826360-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_386826360-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_785175771-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_785175771-1920w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_211889510-1920w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_211889510-2880w.jpeg en 1920x1280"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_19151197-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_19151197-1920w.jpeg en 1920x1275"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_313251628-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_313251628-1920w.jpeg en 1920x1272"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_480329143-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_480329143-1920w.jpeg en 1920x1200"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_353866511-1200h.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_353866511-2880w.jpeg en 1800x1200"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/CD905229_C3FD_490C_8D3D_58455AB55FEB-1920w-1600h.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/CD905229_C3FD_490C_8D3D_58455AB55FEB-1920w-1920w.jpeg en 1200x1600"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_715359085-2880w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_715359085-1920w.jpeg?jxl= en 1920x976"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_548613258-91222acc-2880w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_548613258-91222acc-1920w.png en 1281x1281"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-1000w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-1920w.webp en 1000x1333"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-1000w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-1920w.webp en 1000x1333"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FB555D47_D0BA_465F_8C52_3D058FC06DD2-1920w-1000w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/FB555D47_D0BA_465F_8C52_3D058FC06DD2-1920w-1920w.jpeg en 1000x1333"
+    },
+    {
+      "url": "https://de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/s1-1920w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/s1-1920w-2880w.webp en 1600x719"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png en 1530x702"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png en 1530x702"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-2880w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png en 1530x702"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Peintre-2-2880w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Peintre-2-1920w.png en 1200x800"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-640w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/515356CF_BBA5_4730_9D02_B359EB449D86-1920w-1920w.webp en 640x853"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-640w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/4007E7CD_1B7B_4A7F_9667_4435EB301FBF-1920w-1920w.webp en 640x853"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Screenshot_20241014_132204_Gallery-1-38ff07f5-499570c0-640w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Screenshot_20241014_132204_Gallery-1-38ff07f5-499570c0-1200h.jpg en 640x804"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/S2-1920w-1000w.PNG",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/S2-1920w-2880w.PNG en 1000x449"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/s1-1920w-1000w.webp",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/s1-1920w-2880w.webp en 1000x449"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Ravalement-de-fa%C3%A7ade-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Ravalement-de-fa%C3%A7ade-720h.png en 640x640"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2519F9DE_1BC9_415F_ABF4_7F6497EB7960-85117fc4-1920w-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2519F9DE_1BC9_415F_ABF4_7F6497EB7960-85117fc4-1920w-1000w.jpeg en 640x640"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Pose+de+faitage+%282%29-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Pose+de+faitage+%282%29-1920w.jpg en 680x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed+%281%29-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed+%281%29-1920w.jpg en 680x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Goutti%C3%A8re-2-2880w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Goutti%C3%A8re-2-1920w.png en 1200x263"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-640w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Artisan-1920w.png en 560x560"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_27244023-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_27244023-1200h.jpeg en 640x480"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-1920w.jpg en 584x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-640w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-1920w.jpg en 584x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+top-841w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+top-1920w.png en 799x368"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_353866511-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_353866511-2880w.jpeg en 640x427"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_232941696-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_232941696-1200h.jpeg en 640x427"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167121625-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_167121625-1200h.jpeg en 640x427"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_41312485-1920w-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_41312485-1920w-1000w.jpeg en 640x427"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108153291-1920w-640w.jpeg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/AdobeStock_108153291-1920w-1600h.jpeg en 640x425"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%2810%29-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%2810%29-1920w.jpg en 510x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%287%29-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-11-02+%287%29-1920w.jpg en 510x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%281%29-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%281%29-1920w.jpg en 510x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%287%29-640w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2024-01-05+%287%29-600h.jpg en 510x510"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/sep-2880w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/sep-1920w.png en 1920x119"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed-400h.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/unnamed-640w.jpg en 567x400"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/0910-2880w.PNG",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/0910-1920w.PNG en 472x471"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-05-14+%284%29-400h.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/s1-1920w-2880w.webp en 680x306"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-05-14-2880w.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/2023-05-14-1920w.jpg en 680x306"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-400h.jpg",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/R%C3%A9novation+toiture-1920w.jpg en 458x400"
+    },
+    {
+      "url": "https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-240w.png",
+      "raison": "meme image que https://le-de.cdn-website.com/c02c4711e1564850ae86f73d0b942fe1/dms3rep/multi/opt/Logotype+-+2024-1920w.png en 240x110"
+    }
+  ]
+}

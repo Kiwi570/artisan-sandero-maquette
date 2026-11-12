@@ -1,0 +1,507 @@
+[
+ {
+  "source": "recu/site/logo-logotype-top-1920w-sombre.webp",
+  "nom": "logo-marque",
+  "role": "logo",
+  "alt": "Artisan Sandero"
+ },
+ {
+  "source": "recu/site/logo-logotype-blanc-1920w.webp",
+  "nom": "logo-blanc",
+  "role": "logo",
+  "alt": "Artisan Sandero"
+ },
+ {
+  "source": "recu/grok/hd/ouverture-faitage-telephone.jpg",
+  "nom": "grok/ouverture-toit",
+  "role": "produit",
+  "ratio": "784:1168",
+  "largeurs": [
+   800,
+   1200,
+   1568
+  ],
+  "beaute": 5,
+  "alt": "Pan de toit en tuiles neuves vu depuis le faîtage, les pavillons et la forêt en contrebas",
+  "page": "accueil",
+  "emplacement": "Ouverture : le toit vu du faîtage, tuiles à soulever"
+ },
+ {
+  "source": "recu/grok/hd/ouverture-faitage.jpg",
+  "nom": "grok/zone-faitage",
+  "role": "produit",
+  "ratio": "1168:784",
+  "largeurs": [
+   800,
+   1280,
+   1920
+  ],
+  "beaute": 5,
+  "alt": "Faîtage d'un toit de tuiles neuves au milieu des pavillons, la forêt à l'horizon",
+  "page": "accueil",
+  "emplacement": "Zone d'intervention : vue depuis le faîtage"
+ },
+ {
+  "source": "recu/grok/hd/tuiles-face.jpg",
+  "nom": "grok/tuiles-face",
+  "role": "produit",
+  "page": "accueil",
+  "emplacement": "Ouverture : le pan de tuiles qu'on soulève (couche du dessus)",
+  "priorite": "Indispensable",
+  "gabarit": "texture",
+  "alt": "Pan de tuiles mécaniques en terre cuite vu de face",
+  "mobile": true,
+  "consigne_scene": "Straight-on, perfectly frontal view of a pitched roof surface covered with new interlocking terracotta roof tiles (French mechanical tiles, warm orange-red), rows perfectly horizontal and parallel to the frame, each tile clearly readable with its interlocking ribs and lower nose, the tiled surface fills the whole frame edge to edge, low raking late-afternoon sunlight from the left revealing relief and soft shadows under each row, no sky, no ridge, no roof window, no moss, no people, no tools.",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/liteaux-ecran-cadre.jpg",
+  "nom": "grok/liteaux-ecran",
+  "role": "produit",
+  "page": "accueil",
+  "emplacement": "Ouverture : sous les tuiles, la trame des liteaux (couche du dessous, même cadrage que tuiles-face)",
+  "priorite": "Indispensable",
+  "gabarit": "texture",
+  "alt": "Liteaux en pin clair posés sur l'écran sous-toiture noir",
+  "mobile": true,
+  "consigne_scene": "Straight-on, perfectly frontal view of a pitched roof before tiling: fresh pale pine roofing battens fixed in perfectly horizontal parallel rows at regular spacing over vertical counter-battens, on top of a smooth matte black breathable roofing membrane, the grid fills the whole frame edge to edge with the same scale and framing as a tiled roof seen head-on, low raking late-afternoon sunlight from the left casting thin shadows under each batten, no printing or logo on the membrane, no sky, no people, no tools.",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/liteaux-ecran.jpg",
+  "nom": "grok/liteaux-toit",
+  "role": "produit",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4,
+  "alt": "Toit ouvert sur ses liteaux, avant la pose des tuiles"
+ },
+ {
+  "source": "recu/grok/hd/couche-ecran.jpg",
+  "nom": "grok/couche-ecran",
+  "role": "produit",
+  "page": "accueil",
+  "emplacement": "Scène des couches : l'écran sous-toiture",
+  "priorite": "Indispensable",
+  "gabarit": "texture",
+  "alt": "Écran sous-toiture tendu sur les chevrons",
+  "consigne_scene": "Close three-quarter view of a matte black breathable roofing membrane neatly stretched over wooden rafters, overlapping horizontal strips with clean straight laps, a few stainless staples catching the light, raking warm sunlight, shallow depth of field, no printing, no logo, no people.",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/couche-isolant.jpg",
+  "nom": "grok/couche-isolant",
+  "role": "produit",
+  "page": "accueil",
+  "emplacement": "Scène des couches : l'isolant entre les chevrons",
+  "priorite": "Indispensable",
+  "gabarit": "texture",
+  "alt": "Laine minérale posée entre les chevrons",
+  "consigne_scene": "Close view of thick golden-yellow mineral wool insulation fitted tightly and neatly between parallel wooden rafters in an attic roof, seen from inside under the slope, soft daylight from a small roof window off-frame, fine fibrous texture, tidy finished work, no people, no packaging, no printing.",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/couche-chevrons.jpg",
+  "nom": "grok/couche-chevrons",
+  "role": "produit",
+  "page": "accueil",
+  "emplacement": "Scène des couches : les chevrons de la charpente",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "alt": "Chevrons de charpente en bois vus sous le toit ouvert",
+  "mobile": "4:5",
+  "consigne_scene": "Looking up through an open pitched roof at a sound traditional wooden roof frame, parallel rafters and a ridge beam in warm golden timber against a clear pale blue sky, strong graphic converging lines, late-afternoon light on the wood, no people, no scaffolding.",
+  "ratio": "3:2",
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ],
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/faitage-vue.jpg",
+  "nom": "grok/faitage-vue",
+  "role": "section-fond",
+  "page": "accueil",
+  "emplacement": "Zone d'intervention et appel final : vue depuis un faîtage sur les toits",
+  "priorite": "Indispensable",
+  "gabarit": "ouverture",
+  "alt": "Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin",
+  "mobile": "4:5",
+  "zone_texte": "haut",
+  "consigne_scene": "View from the ridge of a terracotta tiled roof looking over a quiet suburb of detached houses with orange-red tiled roofs, chimneys and green gardens, a long line of forest on the horizon, golden late-afternoon light, wide calm sky occupying the upper third, the ridge of the roof in the foreground at the bottom edge, no people, no recognizable landmark.",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/hd/couverture-ouverture.jpg",
+  "nom": "grok/couverture-ouverture",
+  "role": "ouverture",
+  "page": "couverture",
+  "emplacement": "Ouverture de la page Couverture",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "alt": "Pente de toit en tuiles neuves et sa fenêtre de toit",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "consigne_scene": "Three-quarter close view of a freshly tiled pitched roof of interlocking terracotta tiles with a neat ridge line of half-round ridge tiles and one unbranded roof window flashed with grey metal, clean finished workmanship, warm low sunlight, blue sky in the top right, generous calm area on the left side, no people, no brand name.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/materiau-terre-cuite.jpg",
+  "nom": "grok/materiau-terre-cuite",
+  "role": "carte-service",
+  "page": "couverture",
+  "emplacement": "Nuancier des matériaux : terre cuite",
+  "priorite": "Conseillée",
+  "gabarit": "texture",
+  "alt": "Tuiles en terre cuite, gros plan",
+  "consigne_scene": "Straight-on macro texture of overlapping terracotta roof tiles, warm orange-red with subtle natural colour variation, raking light revealing the clay grain, filling the frame, no objects.",
+  "beaute": 4,
+  "largeurs": [
+   480,
+   800,
+   1280
+  ]
+ },
+ {
+  "source": "recu/grok/materiau-ardoise.jpg",
+  "nom": "grok/materiau-ardoise",
+  "role": "carte-service",
+  "page": "couverture",
+  "emplacement": "Nuancier des matériaux : ardoise",
+  "priorite": "Conseillée",
+  "gabarit": "texture",
+  "alt": "Ardoises naturelles, gros plan",
+  "consigne_scene": "Straight-on macro texture of natural blue-grey slate roof tiles laid in neat overlapping rows with copper-free nails hidden, fine layered slate grain catching raking light, filling the frame, no objects.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/materiau-zinc.jpg",
+  "nom": "grok/materiau-zinc",
+  "role": "carte-service",
+  "page": "couverture",
+  "emplacement": "Nuancier des matériaux : zinc",
+  "priorite": "Conseillée",
+  "gabarit": "texture",
+  "alt": "Couverture en zinc à joints debout, gros plan",
+  "consigne_scene": "Straight-on texture of a natural pre-weathered zinc standing-seam roof, vertical seams evenly spaced, soft matte grey with a gentle sheen in raking light, filling the frame, no objects.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/materiau-beton.jpg",
+  "nom": "grok/materiau-beton",
+  "role": "carte-service",
+  "page": "couverture",
+  "emplacement": "Nuancier des matériaux : tuile béton",
+  "priorite": "Conseillée",
+  "gabarit": "texture",
+  "alt": "Tuiles en béton, gros plan",
+  "consigne_scene": "Straight-on macro texture of overlapping concrete roof tiles in a dark charcoal-brown, slightly granular surface, raking light, filling the frame, no moss, no objects.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/zinc-soudure.jpg",
+  "nom": "grok/zinc-soudure",
+  "role": "ouverture",
+  "page": "zinguerie-charpente",
+  "emplacement": "Ouverture de la page Zinguerie et charpente",
+  "priorite": "Indispensable",
+  "gabarit": "scene-metier",
+  "alt": "Fer à souder sur une gouttière en zinc",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "consigne_scene": "Close-up of a roofer's soldering iron sealing the seam of a new natural zinc half-round gutter on a roof edge, a bright fresh line of tin solder along the joint, a leather-gloved hand entering from the right edge of the frame only, warm late-afternoon light and soft terracotta tiles out of focus behind, calm area on the left, no face, no body.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/charpente-neuve.jpg",
+  "nom": "grok/charpente-neuve",
+  "role": "section-fond",
+  "page": "zinguerie-charpente",
+  "emplacement": "Section charpente : une charpente saine",
+  "priorite": "Indispensable",
+  "gabarit": "lieu",
+  "alt": "Charpente traditionnelle en bois sous la toiture",
+  "mobile": "4:5",
+  "consigne_scene": "Inside a clean attic under a traditional wooden roof frame, rafters, purlins and a king post in warm sound timber, soft daylight from a small roof window, swept wooden floor, calm and orderly, no people.",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1280,
+   1920
+  ]
+ },
+ {
+  "source": "recu/grok/hd/facade-pavillon.jpg",
+  "nom": "grok/facade-pavillon",
+  "role": "ouverture",
+  "page": "facades",
+  "emplacement": "Ouverture de la page Peinture et façades",
+  "priorite": "Indispensable",
+  "gabarit": "ouverture",
+  "alt": "Façade claire d'un pavillon fraîchement ravalée",
+  "mobile": "4:5",
+  "zone_texte": "gauche",
+  "consigne_scene": "Front three-quarter view of a detached suburban house with a freshly rendered pale lime-white facade, painted wooden shutters in soft sage green, a terracotta tiled roof with a zinc gutter, a small front garden and low hedge, clear late-afternoon light, calm sky, generous calm area on the left, no people, no car, no house number.",
+  "beaute": 5
+ },
+ {
+  "source": "recu/grok/finition-lisse.jpg",
+  "nom": "grok/finition-lisse",
+  "role": "carte-service",
+  "page": "facades",
+  "emplacement": "Finitions d'enduit : lisse",
+  "priorite": "Facultative",
+  "gabarit": "texture",
+  "alt": "Enduit de façade lisse, gros plan",
+  "consigne_scene": "Straight-on texture of a smooth mineral facade render in warm off-white, very fine grain, raking light, filling the frame.",
+  "beaute": 3
+ },
+ {
+  "source": "recu/grok/finition-grattee.jpg",
+  "nom": "grok/finition-grattee",
+  "role": "carte-service",
+  "page": "facades",
+  "emplacement": "Finitions d'enduit : grattée",
+  "priorite": "Facultative",
+  "gabarit": "texture",
+  "alt": "Enduit de façade gratté, gros plan",
+  "consigne_scene": "Straight-on texture of a scraped mineral facade render in warm off-white, fine open granular surface, raking light, filling the frame.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/finition-talochee.jpg",
+  "nom": "grok/finition-talochee",
+  "role": "carte-service",
+  "page": "facades",
+  "emplacement": "Finitions d'enduit : talochée",
+  "priorite": "Facultative",
+  "gabarit": "texture",
+  "alt": "Enduit de façade taloché, gros plan",
+  "consigne_scene": "Straight-on texture of a float-finished facade render in warm off-white with soft circular trowel swirls, raking light, filling the frame.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/finition-projetee.jpg",
+  "nom": "grok/finition-projetee",
+  "role": "carte-service",
+  "page": "facades",
+  "emplacement": "Finitions d'enduit : projetée",
+  "priorite": "Facultative",
+  "gabarit": "texture",
+  "alt": "Enduit de façade projeté, gros plan",
+  "consigne_scene": "Straight-on texture of a sprayed facade render in warm off-white with a coarse droplet relief, raking light, filling the frame.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/hd/tuile-glissee.jpg",
+  "nom": "grok/tuile-glissee",
+  "role": "404",
+  "page": "404",
+  "emplacement": "Page 404",
+  "priorite": "Conseillée",
+  "gabarit": "404",
+  "alt": "Une tuile posée dans l'herbe au pied d'un mur",
+  "zone_texte": "gauche",
+  "consigne_scene": "A single intact terracotta roof tile lying gently on a neat green lawn at the foot of a pale rendered wall, soft late-afternoon light, humorous but calm, calm area on the left, no people, nothing broken.",
+  "beaute": 4
+ },
+ {
+  "source": "recu/site/prise-vue-drone-refection.webp",
+  "nom": "chantier-drone",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins"
+ },
+ {
+  "source": "recu/site/travaux-couverture-realises-entreprise.webp",
+  "nom": "chantier-faitage-vue",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Faîtage et rive en zinc refaits, les toits voisins et les arbres au loin"
+ },
+ {
+  "source": "recu/site/pose-faitage-professionnel-entreprise.webp",
+  "nom": "chantier-faitage",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Un couvreur de l'entreprise pose le faîtage"
+ },
+ {
+  "source": "recu/site/pose-tuiles-orange.webp",
+  "nom": "chantier-liteaux",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser"
+ },
+ {
+  "source": "recu/site/professionnel-batisse.webp",
+  "nom": "chantier-ciel",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Un couvreur sur la charpente ouverte, sous un ciel de nuages"
+ },
+ {
+  "source": "recu/site/fenetre-toit-nouvellement-posee.webp",
+  "nom": "chantier-velux",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Fenêtre de toit posée entre les liteaux"
+ },
+ {
+  "source": "recu/site/artisan-sandero-couvreurs-40-2.webp",
+  "nom": "chantier-soudure",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Soudure d'une gouttière en zinc au fer à souder"
+ },
+ {
+  "source": "recu/site/renovation-toiture-professionnel.webp",
+  "nom": "chantier-renovation",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit"
+ },
+ {
+  "source": "recu/site/pose-isolant-impermeabilisant-sous.webp",
+  "nom": "chantier-ecran",
+  "role": "galerie",
+  "beaute": 3,
+  "alt": "Pose de l'écran sous-toiture par un couvreur de l'entreprise"
+ },
+ {
+  "source": "recu/site/profesionnel-entreprise-pointant-doigt.webp",
+  "nom": "artisan-gilet",
+  "role": "portrait",
+  "beaute": 3,
+  "alt": "Un artisan de l'entreprise, de dos, montre la gouttière d'une maison",
+  "cadrage": [
+   30,
+   55
+  ]
+ },
+ {
+  "source": "recu/site/travaux-cours-realisation-chez.webp",
+  "nom": "camion",
+  "role": "vignette",
+  "beaute": 2,
+  "alt": "Utilitaire floqué Artisan Sandero devant un chantier"
+ },
+ {
+  "source": "recu/site/creation-cheneaux-entreprise.webp",
+  "nom": "chantier-cheneau-pliage",
+  "role": "vignette",
+  "beaute": 2,
+  "alt": "Création d'un chéneau en zinc par l'entreprise"
+ },
+ {
+  "source": "recu/site/changement-cheneaux-chez-particulier.webp",
+  "nom": "chantier-cheneau",
+  "role": "vignette",
+  "beaute": 2,
+  "alt": "Chéneau en zinc neuf posé chez un particulier"
+ },
+ {
+  "source": "recu/site/nettoyage-facade.webp",
+  "nom": "chantier-facade",
+  "role": "vignette",
+  "beaute": 2,
+  "alt": "Nettoyage de la façade d'un pavillon, échelle contre le mur"
+ },
+ {
+  "source": "recu/site/travaux-cours-chez-particulier.webp",
+  "nom": "chantier-echafaudage",
+  "role": "vignette",
+  "beaute": 2,
+  "alt": "Échafaudage contre la façade d'une maison pendant les travaux"
+ },
+ {
+  "source": "recu/site/logotype-label-artisan.webp",
+  "nom": "label-artisan",
+  "role": "logo",
+  "alt": "Label Artisan"
+ },
+ {
+  "source": "recu/site/qualibat-68e578df-640w.webp",
+  "nom": "label-qualibat",
+  "role": "logo",
+  "alt": "Qualibat"
+ },
+ {
+  "source": "recu/site/garantie-decennale-640w.webp",
+  "nom": "label-decennale",
+  "role": "logo",
+  "alt": "Garantie décennale"
+ },
+ {
+  "source": "recu/site/toutes-hauteurs-640w.webp",
+  "nom": "label-toutes-hauteurs",
+  "role": "logo",
+  "alt": "Toutes hauteurs"
+ },
+ {
+  "source": "recu/site/velux-640w.webp",
+  "nom": "marque-velux",
+  "role": "logo",
+  "alt": "Velux"
+ },
+ {
+  "source": "recu/site/tollens-640w.webp",
+  "nom": "marque-tollens",
+  "role": "logo",
+  "alt": "Tollens"
+ },
+ {
+  "source": "recu/site/sikkens-640w.webp",
+  "nom": "marque-sikkens",
+  "role": "logo",
+  "alt": "Sikkens"
+ },
+ {
+  "source": "recu/site/maestria-640w.webp",
+  "nom": "marque-maestria",
+  "role": "logo",
+  "alt": "Maestria"
+ },
+ {
+  "source": "recu/site/cimentol-640w.webp",
+  "nom": "marque-cimentol",
+  "role": "logo",
+  "alt": "Cimentol"
+ },
+ {
+  "source": "recu/site/dalep-640w.webp",
+  "nom": "marque-dalep",
+  "role": "logo",
+  "alt": "Dalep"
+ }
+]

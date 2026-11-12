@@ -1,0 +1,66 @@
+{
+ "mission": "prix",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.4,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8359,
+   "titres": [
+    "h1 Ce qui se passe sous les tuiles, une famille le sait."
+   ],
+   "actions": [
+    "Artisan Sandero, accueil",
+    "Menu",
+    "Demander un devis gratuit",
+    "Appeler",
+    "Devis gratuit"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Devis gratuit",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 4.7,
+   "adresse": "/devis",
+   "y": 0,
+   "hauteurPage": 3600,
+   "titres": [
+    "h1 Votre chantier, en quelques étapes.",
+    "h2 Demande de devis"
+   ],
+   "actions": [
+    "Artisan Sandero, accueil",
+    "Menu",
+    "01 76 29 26 34",
+    "Demande de devis"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-1.png"
+  }
+ ]
+}

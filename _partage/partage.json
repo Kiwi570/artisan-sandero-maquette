@@ -1,0 +1,180 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/zone-faitage-1280.webp",
+      "poids": 84567,
+      "sujet": {
+        "x": 600,
+        "y": 57,
+        "l": 600,
+        "h": 544
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "couverture",
+      "langue": "fr",
+      "fichier": "assets/partage/couverture-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/couverture-ouverture-1280.webp",
+      "poids": 80188,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 630
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 299,
+          "l": 480,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "devis",
+      "langue": "fr",
+      "fichier": "assets/partage/devis-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/faitage-vue-1280.webp",
+      "poids": 75417,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 606
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 299,
+          "l": 480,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "facades",
+      "langue": "fr",
+      "fichier": "assets/partage/facades-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/facade-pavillon-1280.webp",
+      "poids": 93190,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 611
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "zinguerie-charpente",
+      "langue": "fr",
+      "fichier": "assets/partage/zinguerie-charpente-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/zinc-soudure-1280.webp",
+      "poids": 53129,
+      "sujet": {
+        "x": 600,
+        "y": 11,
+        "l": 600,
+        "h": 619
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}

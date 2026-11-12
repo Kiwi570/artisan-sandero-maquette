@@ -1,0 +1,1334 @@
+{
+  "dossier": "/home/claude/artisan-sandero-maquette/recu/grok",
+  "date": "2026-11-11T18:21:00.559Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "charpente-neuve.jpg",
+      "nom": "charpente-neuve",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 347509,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        50
+      ],
+      "cadrage_css": "48% 50%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.16,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 32,
+        "bruit": 1.27,
+        "compression": 1.11,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "b3c1c1ce828700c0",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "couche-chevrons.jpg",
+      "nom": "couche-chevrons",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 251159,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 27.3,
+        "l": 100,
+        "h": 63.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        58
+      ],
+      "cadrage_css": "51% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.69,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "clair",
+          "recouvre_sujet": 0.64
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.74
+        }
+      ],
+      "qualite": {
+        "nettete": 34.2,
+        "bruit": 0.88,
+        "compression": 1.13,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "ff79960f1171e8e9",
+      "drapeaux": [
+        "petite",
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "couche-ecran.jpg",
+      "nom": "couche-ecran",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 342159,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        52
+      ],
+      "cadrage_css": "43% 52%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 35.7,
+        "bruit": 1.46,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "10c0e06041c187c1",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "couche-isolant.jpg",
+      "nom": "couche-isolant",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 267299,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        44
+      ],
+      "cadrage_css": "55% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.05,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.5,
+        "bruit": 0.94,
+        "compression": 1.15,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "777c9cfffff7fff2",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "couverture-ouverture.jpg",
+      "nom": "couverture-ouverture",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 331297,
+      "transparence": false,
+      "sujet": {
+        "x": 6.3,
+        "y": 4.5,
+        "l": 93.8,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        49
+      ],
+      "cadrage_css": "55% 49%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.3,
+          "ton": "clair",
+          "recouvre_sujet": 0.82
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "clair",
+          "recouvre_sujet": 0.77
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.81
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 36.4,
+        "bruit": 1.36,
+        "compression": 1.08,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3820478a1471e3ce",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "facade-pavillon.jpg",
+      "nom": "facade-pavillon",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 362051,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 100,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        56
+      ],
+      "cadrage_css": "47% 56%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.42,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 54.7,
+        "bruit": 1.35,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "0806278d95e068c3",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "faitage-vue.jpg",
+      "nom": "faitage-vue",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 338321,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 38.6,
+        "bruit": 1.23,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9881e20d6aa6bfeb",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "finition-grattee.jpg",
+      "nom": "finition-grattee",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 470341,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 3.1,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        60
+      ],
+      "cadrage_css": "48% 60%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "haut",
+          "score": 0.43,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0.39,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        }
+      ],
+      "qualite": {
+        "nettete": 39,
+        "bruit": 2.88,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "acac988c4eeeffc7",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "finition-lisse.jpg",
+      "nom": "finition-lisse",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 370505,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        41
+      ],
+      "cadrage_css": "45% 41%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.61,
+          "ton": "clair",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0.56,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0.55,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 24.3,
+        "bruit": 2.62,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d9cc4e4f4d4c4c4c",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "finition-projetee.jpg",
+      "nom": "finition-projetee",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 509598,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 77.3,
+        "h": 31.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        30,
+        13
+      ],
+      "cadrage_css": "30% 13%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.64,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "clair",
+          "recouvre_sujet": 0.14
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "clair",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 42.2,
+        "bruit": 2.95,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "8f7ce00840400000",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "finition-talochee.jpg",
+      "nom": "finition-talochee",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 329618,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 6.3,
+        "l": 95.5,
+        "h": 25,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        47,
+        21
+      ],
+      "cadrage_css": "47% 21%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.89,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.5,
+          "ton": "clair",
+          "recouvre_sujet": 0.22
+        },
+        {
+          "cote": "gauche",
+          "score": 0.48,
+          "ton": "clair",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.68
+        }
+      ],
+      "qualite": {
+        "nettete": 27.9,
+        "bruit": 2.05,
+        "compression": 1.07,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "fdff00f6f0ffbff0",
+      "drapeaux": [
+        "petite",
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "liteaux-ecran-cadre.jpg",
+      "nom": "liteaux-ecran-cadre",
+      "drapeau": null,
+      "largeur": 1254,
+      "hauteur": 849,
+      "ratio": "3:2",
+      "ratio_valeur": 1.477,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 253023,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 32.9,
+        "bruit": 0.63,
+        "compression": 0.96,
+        "faible": true,
+        "raisons": [
+          "1254 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "a442405101010003",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "liteaux-ecran.jpg",
+      "nom": "liteaux-ecran",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 347467,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        44
+      ],
+      "cadrage_css": "50% 44%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 43.7,
+        "bruit": 0.98,
+        "compression": 1.12,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "33331b11018582a2",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "materiau-ardoise.jpg",
+      "nom": "materiau-ardoise",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 485415,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        48
+      ],
+      "cadrage_css": "43% 48%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "bas",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 42,
+        "bruit": 2.69,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "5a20400610002008",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "materiau-beton.jpg",
+      "nom": "materiau-beton",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 485369,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        48
+      ],
+      "cadrage_css": "50% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0.18,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 51,
+        "bruit": 2.7,
+        "compression": 1.01,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "6c6c6c6c6c6c4c4c",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "materiau-terre-cuite.jpg",
+      "nom": "materiau-terre-cuite",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 431805,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 100,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        48
+      ],
+      "cadrage_css": "49% 48%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.09,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0.04,
+          "ton": "moyen",
+          "recouvre_sujet": 0.89
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "sombre",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 31.8,
+        "bruit": 2.31,
+        "compression": 1.05,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "aa2a2a6a6a6b6b4b",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "materiau-zinc.jpg",
+      "nom": "materiau-zinc",
+      "drapeau": null,
+      "largeur": 784,
+      "hauteur": 1168,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 279592,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 95.5,
+        "h": 96.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        38
+      ],
+      "cadrage_css": "43% 38%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.28,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0.17,
+          "ton": "moyen",
+          "recouvre_sujet": 0.86
+        },
+        {
+          "cote": "gauche",
+          "score": 0.04,
+          "ton": "clair",
+          "recouvre_sujet": 0.97
+        },
+        {
+          "cote": "haut",
+          "score": 0.01,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        }
+      ],
+      "qualite": {
+        "nettete": 20.9,
+        "bruit": 1,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "784 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "000080c0f0b0b2b2",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "tuile-glissee.jpg",
+      "nom": "tuile-glissee",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 319231,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        43,
+        50
+      ],
+      "cadrage_css": "43% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.1,
+          "ton": "clair",
+          "recouvre_sujet": 1
+        },
+        {
+          "cote": "droite",
+          "score": 0.02,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "clair",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "bas",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        }
+      ],
+      "qualite": {
+        "nettete": 39.3,
+        "bruit": 1.15,
+        "compression": 1.06,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "002183dadaffc700",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "tuiles-face.jpg",
+      "nom": "tuiles-face",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 400371,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 0,
+        "l": 100,
+        "h": 95.5,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        49,
+        47
+      ],
+      "cadrage_css": "49% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.01,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "gauche",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.96
+        },
+        {
+          "cote": "haut",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 1
+        }
+      ],
+      "qualite": {
+        "nettete": 19.5,
+        "bruit": 1.68,
+        "compression": 1.04,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "3db999999adada5a",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "zinc-soudure.jpg",
+      "nom": "zinc-soudure",
+      "drapeau": null,
+      "largeur": 1168,
+      "hauteur": 784,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 230079,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 4.5,
+        "l": 100,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        48,
+        45
+      ],
+      "cadrage_css": "48% 45%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.16,
+          "ton": "clair",
+          "recouvre_sujet": 0.91
+        },
+        {
+          "cote": "haut",
+          "score": 0.12,
+          "ton": "clair",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "bas",
+          "score": 0.12,
+          "ton": "moyen",
+          "recouvre_sujet": 0.87
+        },
+        {
+          "cote": "droite",
+          "score": 0,
+          "ton": "moyen",
+          "recouvre_sujet": 0.91
+        }
+      ],
+      "qualite": {
+        "nettete": 21.5,
+        "bruit": 0.71,
+        "compression": 1.14,
+        "faible": true,
+        "raisons": [
+          "1168 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "080121a1a0383858",
+      "drapeaux": [
+        "petite"
+      ]
+    }
+  ]
+}

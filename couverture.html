@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Couverture à Taverny · Artisan Sandero</title>
+<meta name="description" content="Pose, rénovation, nettoyage, isolation et fenêtres de toit, en tuiles, ardoises, zinc ou béton. Devis gratuit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://artisan-sandero-maquette.vercel.app/couverture">
+<style>:root{--fond:#f2ebe1;--texte:#22180f;--voile-fond:#85391d;--ouverture-fond:#f2ebe1;--menu-fond:#1b1c1e}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ebe1">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artisan Sandero">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Couverture à Taverny · Artisan Sandero">
+<meta property="og:description" content="Pose, rénovation, nettoyage, isolation et fenêtres de toit, en tuiles, ardoises, zinc ou béton. Devis gratuit.">
+<meta property="og:url" content="https://artisan-sandero-maquette.vercel.app/couverture">
+<meta property="og:image" content="https://artisan-sandero-maquette.vercel.app/assets/partage/couverture-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Couverture : pente de toit en tuiles neuves">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"Artisan Sandero","legalName":"HORTICA DANY (SANDERO ARTISAN)","url":"https://artisan-sandero-maquette.vercel.app/","telephone":"+33176292634","email":"sandero.artisan95@gmail.com","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"105 rue du Maréchal-Foch","postalCode":"95150","addressLocality":"Taverny","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"}],"areaServed":["Taverny","Saint-Leu-la-Forêt","Ermont","Eaubonne","Cormeilles-en-Parisis"],"description":"Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Entreprise familiale depuis 2006."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="tuiles" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-marque-240.webp" alt="" width="96" height="44"><span data-voile-libelle>Couverture</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-marque-480.webp" alt="" width="160" height="74" data-ouverture-objet>
+  <p class="ouverture-nom">ARTISAN <b>SANDERO</b></p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Couvreur-zingueur · Taverny · depuis 2006</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Artisan Sandero, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-marque-240.webp" alt="" width="72" height="33"><span class="entete-nom">ARTISAN <b>SANDERO</b></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/couverture" data-libelle="Couverture" aria-current="page">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/couverture" class="menu-lien" data-libelle="Couverture" aria-current="page">Couverture</a></li><li style="--i:2"><a href="/zinguerie-charpente" class="menu-lien" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li style="--i:3"><a href="/facades" class="menu-lien" data-libelle="Peinture et façades">Peinture et façades</a></li><li style="--i:4"><a href="/devis" class="menu-lien" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33176292634">Appeler 01 76 29 26 34</a></p>
+  <p class="menu-adresse">105 rue du Maréchal-Foch, 95150 Taverny<br>Lundi au samedi, 8 h à 20 h · dimanche fermé<br><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=105%20rue%20du%20Mar%C3%A9chal-Foch%2C%2095150%20Taverny" target="_blank" rel="noopener">Itinéraire →</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-une rubrique-une" id="debut">
+  <div class="rubrique-une-grille">
+    <div class="rubrique-une-texte">
+      <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique · Couverture</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+      <h1 class="titre-geant" data-titre-pose="intro" data-grille="typo" data-effet="titre-pose">Couverture</h1>
+      <p class="chapo">Pose, rénovation, nettoyage, isolation et fenêtres de toit, sur toitures arrondies, plates ou en pente, en tuiles, ardoises, zinc ou béton.</p>
+      <p class="une-actions">
+        <a href="/devis?prestation=couverture#demande" class="bouton" data-libelle="Devis et contact" data-action-principale data-survol="magnetique">Demander un devis couverture</a>
+        <a class="bouton bouton--contour" href="tel:+33176292634">01 76 29 26 34</a>
+      </p>
+      <p class="une-info" data-info-cle>Devis gratuit · lun.–sam. 8 h–20 h</p>
+    </div>
+    <div class="pente" data-iris-centre data-effet="pente-rangs">
+      <figure class="media " data-grok style="--cadrage:55% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/couverture-ouverture-mobile-640.webp 640w, /assets/images/grok/couverture-ouverture-mobile-1080.webp 1080w" sizes="(max-width: 899px) 100vw, 58vw">
+    <img src="/assets/images/grok/couverture-ouverture-1280.webp" srcset="/assets/images/grok/couverture-ouverture-640.webp 640w, /assets/images/grok/couverture-ouverture-1280.webp 1280w, /assets/images/grok/couverture-ouverture-1920.webp 1920w" sizes="(max-width: 899px) 100vw, 58vw" alt="Pente de toit en tuiles neuves et sa fenêtre de toit" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <canvas class="mousse" data-effet="demoussage" data-grille="manipuler" data-souris aria-hidden="true"></canvas>
+      <p class="mousse-geste" aria-hidden="true"><span class="souris">Passez la brosse : démoussage</span><span class="tactile">Frottez la mousse du doigt</span></p>
+      <div class="pente-rangs" aria-hidden="true"><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span><span style="--i:5"></span><span style="--i:6"></span></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="interventions" aria-labelledby="interventions-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Sur le toit</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="interventions-titre" data-titre-pose data-effet="titre-pose">Ce que l&#39;on fait sur un toit</h2>
+      <p>Cinq interventions, sur toutes les formes de toit. Chacune commence par un diagnostic sur place.</p>
+    </div>
+    <div class="prestations-grille">
+    <figure class="media prestations-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/liteaux-toit-1280.webp" srcset="/assets/images/grok/liteaux-toit-640.webp 640w, /assets/images/grok/liteaux-toit-1280.webp 1280w, /assets/images/grok/liteaux-toit-1920.webp 1920w" sizes="(max-width: 899px) 100vw, 30vw" alt="Liteaux posés sur l&#39;écran d&#39;une toiture en cours de réfection" width="1280" height="853" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <ol class="prestations" data-anime="cascade">
+      <li class="prestation" id="pose">
+        <span class="prestation-n">01</span>
+        <h3>Pose</h3>
+        <p>Couvertures neuves sur toitures arrondies, plates ou en pente, en tuiles, ardoises, zinc ou béton, pour une maison neuve ou une réfection complète.</p>
+        <a href="/devis?prestation=couverture#demande" class="prestation-lien" data-libelle="Devis et contact">Devis pour ce travail <span aria-hidden="true">→</span></a>
+      </li><li class="prestation" id="renovation">
+        <span class="prestation-n">02</span>
+        <h3>Rénovation</h3>
+        <p>Tuiles cassées remplacées après un orage, faîtages, pieds de cheminée et arêtiers remis en état.</p>
+        <a href="/devis?prestation=couverture#demande" class="prestation-lien" data-libelle="Devis et contact">Devis pour ce travail <span aria-hidden="true">→</span></a>
+      </li><li class="prestation" id="nettoyage">
+        <span class="prestation-n">03</span>
+        <h3>Nettoyage</h3>
+        <p>Démoussage, traitement hydrofuge et peinture de toiture, sur tuiles en terre cuite.</p>
+        <a href="/devis?prestation=couverture#demande" class="prestation-lien" data-libelle="Devis et contact">Devis pour ce travail <span aria-hidden="true">→</span></a>
+      </li><li class="prestation" id="isolation">
+        <span class="prestation-n">04</span>
+        <h3>Isolation</h3>
+        <p>Toiture, combles perdus et combles aménageables, par l&#39;intérieur ou par l&#39;extérieur, en laine de verre ou de roche.</p>
+        <a href="/devis?prestation=couverture#demande" class="prestation-lien" data-libelle="Devis et contact">Devis pour ce travail <span aria-hidden="true">→</span></a>
+      </li><li class="prestation" id="fenetres">
+        <span class="prestation-n">05</span>
+        <h3>Fenêtres de toit</h3>
+        <p>Pose, réparation et étanchéité des fenêtres de toit Velux, pose de châssis « parisien ».</p>
+        <a href="/devis?prestation=couverture#demande" class="prestation-lien" data-libelle="Devis et contact">Devis pour ce travail <span aria-hidden="true">→</span></a>
+      </li>
+    </ol>
+    </div>
+  </div>
+</section>
+<section class="section nuancier-section" id="materiaux" aria-labelledby="nuancier-titre">
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Le nuancier</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="nuancier-titre" data-titre-pose data-effet="titre-pose">Quatre matériaux, quatre durées de vie</h2>
+      <p>Durées de vie indicatives données par l&#39;entreprise. Faites défiler : les échantillons s&#39;empilent.</p>
+    </div>
+    <ol class="nuancier" data-effet="nuancier">
+      <li class="echantillon" style="--i:0">
+        <div class="echantillon-tete"><span class="echantillon-n">01 / 04</span><h3>Terre cuite</h3><p class="echantillon-duree"><b>50</b> ans environ</p></div>
+        <div class="echantillon-corps">
+          <figure class="media echantillon-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/materiau-terre-cuite-1280.webp" srcset="/assets/images/grok/materiau-terre-cuite-480.webp 480w, /assets/images/grok/materiau-terre-cuite-800.webp 800w, /assets/images/grok/materiau-terre-cuite-1280.webp 1280w" sizes="(max-width: 760px) 100vw, 60vw" alt="" width="1280" height="1921" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="echantillon-texte"><p>La tuile des pavillons alentour.</p><p class="echantillon-detail">Sur la plupart des pavillons de Taverny. L&#39;équipe la pose, remplace les tuiles cassées et la démousse au printemps ou à l&#39;automne.</p></div>
+        </div>
+      </li><li class="echantillon" style="--i:1">
+        <div class="echantillon-tete"><span class="echantillon-n">02 / 04</span><h3>Ardoise</h3><p class="echantillon-duree"><b>75</b> ans environ</p></div>
+        <div class="echantillon-corps">
+          <figure class="media echantillon-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/materiau-ardoise-784.webp" srcset="/assets/images/grok/materiau-ardoise-480.webp 480w, /assets/images/grok/materiau-ardoise-640.webp 640w, /assets/images/grok/materiau-ardoise-784.webp 784w" sizes="(max-width: 760px) 100vw, 60vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="echantillon-texte"><p>La plus durable des quatre.</p><p class="echantillon-detail">Posée au crochet, ardoise par ardoise. L&#39;équipe remplace les ardoises cassées et reprend faîtages et rives.</p></div>
+        </div>
+      </li><li class="echantillon" style="--i:2">
+        <div class="echantillon-tete"><span class="echantillon-n">03 / 04</span><h3>Zinc</h3><p class="echantillon-duree"><b>40</b> ans environ</p></div>
+        <div class="echantillon-corps">
+          <figure class="media echantillon-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/materiau-zinc-784.webp" srcset="/assets/images/grok/materiau-zinc-480.webp 480w, /assets/images/grok/materiau-zinc-640.webp 640w, /assets/images/grok/materiau-zinc-784.webp 784w" sizes="(max-width: 760px) 100vw, 60vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="echantillon-texte"><p>Aussi pour les toits plats et arrondis.</p><p class="echantillon-detail">Pour les toits plats ou arrondis, avec des joints soudés. C&#39;est aussi le métier de la zinguerie de l&#39;entreprise.</p></div>
+        </div>
+      </li><li class="echantillon" style="--i:3">
+        <div class="echantillon-tete"><span class="echantillon-n">04 / 04</span><h3>Béton</h3><p class="echantillon-duree"><b>30 à 50</b> ans environ</p></div>
+        <div class="echantillon-corps">
+          <figure class="media echantillon-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/materiau-beton-784.webp" srcset="/assets/images/grok/materiau-beton-480.webp 480w, /assets/images/grok/materiau-beton-640.webp 640w, /assets/images/grok/materiau-beton-784.webp 784w" sizes="(max-width: 760px) 100vw, 60vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="echantillon-texte"><p>La durée dépend du modèle.</p><p class="echantillon-detail">Plus lourde et plus économique. Nettoyage, traitement hydrofuge et peinture de toiture par l&#39;équipe.</p></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="section" id="chantiers" aria-labelledby="chantiers-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 03 · Sur les chantiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="chantiers-titre" data-titre-pose data-effet="titre-pose">Couvertures refaites par l&#39;équipe</h2>
+      <p>Photos prises par l&#39;équipe sur ses chantiers de Taverny et des communes voisines.</p>
+    </div>
+<ul class="vignettes" data-anime="cascade">
+  <li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 760px) 50vw, 22vw" alt="Vue de drone d&#39;un toit refait sur ses liteaux, au milieu des jardins" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Toit refait, vu du drone</b> · chantier de l&#39;entreprise</p></li><li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-liteaux-960.webp" srcset="/assets/images/chantier-liteaux-480.webp 480w, /assets/images/chantier-liteaux-640.webp 640w, /assets/images/chantier-liteaux-960.webp 960w" sizes="(max-width: 760px) 50vw, 22vw" alt="Liteaux posés sur l&#39;écran, tuiles neuves prêtes à poser" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Liteaux neufs</b> · chantier de l&#39;entreprise</p></li><li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-velux-960.webp" srcset="/assets/images/chantier-velux-480.webp 480w, /assets/images/chantier-velux-640.webp 640w, /assets/images/chantier-velux-960.webp 960w" sizes="(max-width: 760px) 50vw, 22vw" alt="Fenêtre de toit posée entre les liteaux" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Fenêtre de toit</b> · chantier de l&#39;entreprise</p></li><li><figure class="media " style="--cadrage:55% 45%">
+  <picture>
+    <img src="/assets/images/chantier-faitage-640.webp" srcset="/assets/images/chantier-faitage-480.webp 480w, /assets/images/chantier-faitage-640.webp 640w" sizes="(max-width: 760px) 50vw, 22vw" alt="Un couvreur de l&#39;entreprise pose le faîtage" width="640" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Pose du faîtage</b> · chantier de l&#39;entreprise</p></li>
+</ul>
+    <aside class="conseil" aria-labelledby="conseil-titre">
+      <p class="surtitre" id="conseil-titre">Conseil de couvreur</p>
+      <p class="conseil-texte">Le démoussage se fait de préférence au printemps ou à l&#39;automne, quand les températures sont douces et l&#39;humidité suffisante.</p>
+    </aside>
+  </div>
+</section>
+<section class="section fin" aria-labelledby="fin-titre">
+  <div class="fin-fond" aria-hidden="true"></div>
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Devis gratuit · Artisan Sandero</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="fin-page">
+      <div>
+        <h2 id="fin-titre" data-titre-pose data-effet="titre-pose">Un toit à regarder de près ?</h2>
+        <p>Diagnostic sur place, devis détaillé et gratuit.</p>
+      </div>
+      <p class="actions">
+        <a href="/devis?prestation=couverture#demande" class="bouton" data-libelle="Devis et contact" data-survol="magnetique">Devis gratuit</a>
+        <a class="bouton bouton--contour" href="tel:+33176292634">01 76 29 26 34</a>
+        <span class="joignable" data-joignable hidden></span>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo-blanc-480.webp" alt="Artisan Sandero" width="160" height="78" loading="lazy">
+      <p>105 rue du Maréchal-Foch, 95150 Taverny<br><a href="tel:+33176292634">01 76 29 26 34</a><br><a href="mailto:sandero.artisan95@gmail.com">sandero.artisan95@gmail.com</a></p>
+      <p class="pied-horaires">Lundi au samedi, 8 h à 20 h · dimanche fermé</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/couverture" data-libelle="Couverture" aria-current="page">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : les formulaires sont simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter</p><p>Politique de confidentialité · à compléter</p><p>© 2026 Artisan Sandero</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33176292634">Appeler</a>
+  <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+</div>
+</body>
+</html>

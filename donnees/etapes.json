@@ -1,0 +1,32 @@
+[
+ {
+  "nom": "Vos besoins",
+  "texte": "On discute ensemble de vos envies et de vos besoins.",
+  "visuel": "grok/materiau-ardoise"
+ },
+ {
+  "nom": "Le diagnostic",
+  "texte": "Toiture ou façade : chaque élément est inspecté sur place.",
+  "visuel": "grok/materiau-zinc"
+ },
+ {
+  "nom": "Le devis détaillé",
+  "texte": "Un devis gratuit qui reprend toutes les interventions, expliqué point par point.",
+  "visuel": "grok/finition-lisse"
+ },
+ {
+  "nom": "Les matériaux",
+  "texte": "Tuiles, zinc et peintures de qualité, choisis avec vous.",
+  "visuel": "grok/finition-talochee"
+ },
+ {
+  "nom": "Les travaux",
+  "texte": "Des travaux sur mesure, personnalisés et dans les délais.",
+  "visuel": "grok/finition-projetee"
+ },
+ {
+  "nom": "Conseils et suivi",
+  "texte": "Après le chantier, comptez sur nos conseils et notre aide.",
+  "visuel": "artisan-gilet"
+ }
+]

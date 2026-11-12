@@ -1,0 +1,74 @@
+{
+ "mission": "regard-404",
+ "taille": "1366x768",
+ "depart": "/cette-page-nexiste-pas",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.4,
+   "adresse": "/cette-page-nexiste-pas",
+   "y": 0,
+   "hauteurPage": 1196,
+   "titres": [
+    "h1 Cette page a glissé du toit."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "Revenir à l'accueil",
+    "Demander un devis"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "attendre 2500",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 4.9,
+   "adresse": "/cette-page-nexiste-pas",
+   "y": 0,
+   "hauteurPage": 1196,
+   "titres": [
+    "h1 Cette page a glissé du toit."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "Revenir à l'accueil",
+    "Demander un devis"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-1.png"
+  }
+ ]
+}

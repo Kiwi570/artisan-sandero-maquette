@@ -1,0 +1,46 @@
+{
+ "labels": [
+  {
+   "image": "label-artisan",
+   "nom": "Label Artisan"
+  },
+  {
+   "image": "label-qualibat",
+   "nom": "Qualibat"
+  },
+  {
+   "image": "label-decennale",
+   "nom": "Garantie décennale"
+  },
+  {
+   "image": "label-toutes-hauteurs",
+   "nom": "Toutes hauteurs"
+  }
+ ],
+ "marques": [
+  {
+   "image": "marque-velux",
+   "nom": "Velux"
+  },
+  {
+   "image": "marque-tollens",
+   "nom": "Tollens"
+  },
+  {
+   "image": "marque-sikkens",
+   "nom": "Sikkens"
+  },
+  {
+   "image": "marque-maestria",
+   "nom": "Maestria"
+  },
+  {
+   "image": "marque-cimentol",
+   "nom": "Cimentol"
+  },
+  {
+   "image": "marque-dalep",
+   "nom": "Dalep"
+  }
+ ]
+}

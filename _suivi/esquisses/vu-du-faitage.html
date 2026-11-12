@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquisse · Vu du faîtage</title>
+<style>
+@font-face{font-family:"Young Serif";src:url(polices/young-serif-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Hanken Grotesk";src:url(polices/hanken-grotesk-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Hanken Grotesk";src:url(polices/hanken-grotesk-latin-600-normal.woff2) format("woff2");font-weight:600}
+@font-face{font-family:"Hanken Grotesk";src:url(polices/hanken-grotesk-latin-700-normal.woff2) format("woff2");font-weight:700}
+:root{--ciel:#e9eef0;--ciel2:#dfe7ea;--encre:#1b2024;--doux:#4b555b;--tuile:#b24b27;--tuile-f:#8f3a1d;--cordeau:#2c5bd3;--blanc:#fbfaf7}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--ciel)}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;color:var(--encre);overflow:hidden}
+header{position:absolute;inset:0 0 auto;display:flex;align-items:center;gap:28px;padding:22px 40px;z-index:5}
+.marque{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--encre)}
+.marque img{height:34px;mix-blend-mode:multiply}
+.marque b{font-family:"Young Serif";font-weight:400;font-size:19px;letter-spacing:.02em}
+.marque b span{color:var(--tuile)}
+nav{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:600}
+nav a{color:var(--encre);text-decoration:none}
+.tel{font-variant-numeric:tabular-nums;font-weight:600;font-size:15px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--tuile);color:#fff;border-radius:999px;padding:13px 22px;font-weight:700;font-size:15px;text-decoration:none}
+.btn.clair{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.haut{position:absolute;left:40px;right:40px;top:112px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end;z-index:4}
+.sur{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tuile)}
+h1{font-family:"Young Serif";font-weight:400;font-size:clamp(54px,7.6vw,118px);line-height:.94;letter-spacing:-.02em;margin-top:14px}
+h1 em{font-style:normal;color:var(--tuile)}
+.cote p{font-size:17px;line-height:1.5;color:var(--doux);max-width:36ch}
+.cote .actions{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.info{margin-top:18px;font-size:14px;color:var(--doux);display:flex;gap:10px;align-items:center}
+.info i{width:8px;height:8px;border-radius:50%;background:#2f9a5b;display:inline-block}
+.pano{position:absolute;left:0;right:0;bottom:0;height:52vh;overflow:hidden}
+.pano img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.pano::before{content:"";position:absolute;inset:0 0 auto;height:40%;background:linear-gradient(var(--ciel),rgba(233,238,240,0));z-index:1}
+.repere{position:absolute;z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;transform:translate(-50%,-100%)}
+.repere span{background:var(--blanc);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.18);white-space:nowrap}
+.repere span small{font-weight:600;color:var(--doux);margin-left:6px}
+.repere i{width:1.5px;height:38px;background:var(--blanc);box-shadow:0 0 0 .5px rgba(0,0,0,.15)}
+.repere b{width:11px;height:11px;border-radius:50%;background:var(--tuile);border:2.5px solid var(--blanc);box-shadow:0 2px 6px rgba(0,0,0,.3)}
+.cordeau{position:absolute;left:0;right:0;bottom:0;height:52vh;z-index:2;pointer-events:none}
+.communes{position:absolute;left:0;right:0;bottom:0;z-index:4;display:flex;gap:34px;padding:16px 40px;background:rgba(27,32,36,.86);color:#fff;font-size:14px;font-weight:600;letter-spacing:.02em}
+.communes span{opacity:.72}.communes span.ici{opacity:1}
+.communes span.ici::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#f0b48f;margin-right:8px;vertical-align:1px}
+.poignee{position:absolute;z-index:4;left:4.5%;bottom:calc(52vh * .58);display:flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+@media (max-width:760px){
+  header{padding:16px 18px;gap:12px}
+  nav,.tel{display:none}
+  .marque img{height:28px}.marque b{font-size:16px}
+  header .btn{margin-left:auto;padding:10px 14px;font-size:13px}
+  .haut{left:18px;right:18px;top:84px;grid-template-columns:1fr;gap:16px}
+  h1{font-size:52px}
+  .cote p{font-size:15.5px}
+  .cote .actions .clair{display:none}
+  .pano,.cordeau{height:36vh}
+  .poignee{bottom:calc(36vh * .55);left:18px}
+  .communes{gap:18px;padding:12px 18px;font-size:12.5px;overflow:hidden;white-space:nowrap}
+  .repere span small{display:none}
+  .r2,.r3,.r4{display:none}
+  .r1{top:calc(100% - 36vh * .45)!important;left:30%!important}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="marque" href="#"><img src="/recu/site/logo-logotype-top-1920w-sombre.webp" alt=""><b>ARTISAN <span>SANDERO</span></b></a>
+  <nav><a href="#">Couverture</a><a href="#">Zinguerie</a><a href="#">Charpente</a><a href="#">Peinture et façades</a><a href="#">La famille</a><a href="#">Contact</a></nav>
+  <span class="tel">01 76 29 26 34</span>
+  <a class="btn" href="#">Devis gratuit</a>
+</header>
+
+<div class="haut">
+  <div>
+    <p class="sur">Couvreur-zingueur à Taverny · depuis 2006</p>
+    <h1>Vos toits,<br><em>de père en fils.</em></h1>
+  </div>
+  <div class="cote">
+    <p>Couverture, zinguerie, charpente, peinture et ravalement : la famille Sandero monte sur les toits de Taverny et des communes voisines, du diagnostic au dernier faîtage.</p>
+    <div class="actions"><a class="btn" href="#">Demander un devis gratuit</a><a class="btn clair" href="#">Voir les chantiers</a></div>
+    <p class="info"><i></i>Lundi au samedi, 8 h à 20 h · Devis gratuit</p>
+  </div>
+</div>
+
+<div class="pano">
+  <img src="/recu/site/travaux-couverture-realises-entreprise.webp" alt="Les toits de tuiles vus depuis un faîtage refait par l'entreprise">
+</div>
+
+<svg class="cordeau" viewBox="0 0 1440 470" preserveAspectRatio="none" aria-hidden="true">
+  <defs><filter id="craie"><feTurbulence type="fractalNoise" baseFrequency="1.6" numOctaves="2" seed="4"/><feDisplacementMap in="SourceGraphic" scale="2.2"/></filter></defs>
+  <path d="M60 205 C 520 236, 980 236, 1440 214" fill="none" stroke="rgba(44,91,211,.28)" stroke-width="9" filter="url(#craie)"/>
+  <path d="M60 205 C 520 236, 980 236, 1440 214" fill="none" stroke="#3a69e0" stroke-width="2"/>
+  <circle cx="60" cy="205" r="7" fill="#c9a24a" stroke="#6e5420" stroke-width="2"/>
+</svg>
+<div class="poignee">↔ Tirez le cordeau</div>
+
+<div class="repere r1" style="left:23%;top:calc(100% - 52vh * .58)"><span>Couverture<small>tuiles, ardoise, zinc</small></span><i></i><b></b></div>
+<div class="repere r2" style="left:46%;top:calc(100% - 52vh * .70)"><span>Zinguerie<small>rives, gouttières</small></span><i></i><b></b></div>
+<div class="repere r3" style="left:66%;top:calc(100% - 52vh * .80)"><span>Charpente</span><i></i><b></b></div>
+<div class="repere r4" style="left:84%;top:calc(100% - 52vh * .66)"><span>Peinture et façades</span><i></i><b></b></div>
+
+<div class="communes"><span class="ici">Taverny</span><span>Saint-Leu-la-Forêt</span><span>Ermont</span><span>Eaubonne</span><span>Cormeilles-en-Parisis</span></div>
+</body>
+</html>

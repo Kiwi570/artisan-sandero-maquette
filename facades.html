@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Peinture et ravalement de façades à Taverny · Artisan Sandero</title>
+<meta name="description" content="Peinture de façades, boiseries et toitures ; ravalement complet sur béton, brique ou pierre. Devis gratuit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://artisan-sandero-maquette.vercel.app/facades">
+<style>:root{--fond:#f2ebe1;--texte:#22180f;--voile-fond:#85391d;--ouverture-fond:#f2ebe1;--menu-fond:#1b1c1e}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ebe1">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artisan Sandero">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Peinture et ravalement de façades à Taverny · Artisan Sandero">
+<meta property="og:description" content="Peinture de façades, boiseries et toitures ; ravalement complet sur béton, brique ou pierre. Devis gratuit.">
+<meta property="og:url" content="https://artisan-sandero-maquette.vercel.app/facades">
+<meta property="og:image" content="https://artisan-sandero-maquette.vercel.app/assets/partage/facades-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Peinture et façades : façade claire d&#39;un pavillon">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"Artisan Sandero","legalName":"HORTICA DANY (SANDERO ARTISAN)","url":"https://artisan-sandero-maquette.vercel.app/","telephone":"+33176292634","email":"sandero.artisan95@gmail.com","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"105 rue du Maréchal-Foch","postalCode":"95150","addressLocality":"Taverny","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"}],"areaServed":["Taverny","Saint-Leu-la-Forêt","Ermont","Eaubonne","Cormeilles-en-Parisis"],"description":"Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Entreprise familiale depuis 2006."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="tuiles" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-marque-240.webp" alt="" width="96" height="44"><span data-voile-libelle>Peinture et façades</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-marque-480.webp" alt="" width="160" height="74" data-ouverture-objet>
+  <p class="ouverture-nom">ARTISAN <b>SANDERO</b></p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Couvreur-zingueur · Taverny · depuis 2006</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Artisan Sandero, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-marque-240.webp" alt="" width="72" height="33"><span class="entete-nom">ARTISAN <b>SANDERO</b></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades" aria-current="page">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/couverture" class="menu-lien" data-libelle="Couverture">Couverture</a></li><li style="--i:2"><a href="/zinguerie-charpente" class="menu-lien" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li style="--i:3"><a href="/facades" class="menu-lien" data-libelle="Peinture et façades" aria-current="page">Peinture et façades</a></li><li style="--i:4"><a href="/devis" class="menu-lien" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33176292634">Appeler 01 76 29 26 34</a></p>
+  <p class="menu-adresse">105 rue du Maréchal-Foch, 95150 Taverny<br>Lundi au samedi, 8 h à 20 h · dimanche fermé<br><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=105%20rue%20du%20Mar%C3%A9chal-Foch%2C%2095150%20Taverny" target="_blank" rel="noopener">Itinéraire →</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-une facade-une" id="debut">
+  <div class="conteneur facade-tete">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique · Peinture et façades</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <h1 class="titre-geant" data-titre-pose="intro" data-grille="typo" data-effet="titre-pose">Peinture <em>et</em> façades</h1>
+    <p class="chapo">Façades, boiseries, volets, portes, clôtures, portails et toitures repeints en deux couches ; ravalement complet sur béton, brique ou pierre.</p>
+    <p class="une-actions">
+      <a href="/devis?prestation=ravalement#demande" class="bouton" data-libelle="Devis et contact" data-action-principale data-survol="magnetique">Demander un devis façade</a>
+      <a class="bouton bouton--contour" href="tel:+33176292634">01 76 29 26 34</a>
+    </p>
+    <p class="une-info" data-info-cle>Devis gratuit · lun.–sam. 8 h–20 h</p>
+  </div>
+  <div class="taloche" data-iris-centre data-effet="coup-taloche">
+    <figure class="media " data-grok style="--cadrage:50% 46%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="100vw" alt="Façade claire d&#39;un pavillon fraîchement ravalée" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <div class="taloche-enduit" aria-hidden="true"></div>
+  </div>
+</section>
+<section class="section" id="peinture" aria-labelledby="peinture-titre">
+  <div class="conteneur peinture-grille">
+    <div>
+      <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · La peinture</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+      <h2 id="peinture-titre" data-titre-pose data-effet="titre-pose">La peinture, préparée avant d&#39;être posée</h2>
+      <p class="peinture-texte">Nettoyage de la surface, rebouchage des fissures et des trous, sous-couche adaptée, primaire d&#39;accrochage sur la tuile, puis deux couches. Peintures acryliques ou siloxanes pour les façades, microporeuses pour les boiseries.</p>
+      <p class="peinture-marques">Peintures Tollens, Sikkens, Maestria et Dulux Valentine</p>
+    </div>
+    <div class="couches-peinture">
+      <p class="surtitre">Avant les deux couches</p>
+      <ol data-anime="cascade" data-visuel><li style="--i:0"><span>01</span>Nettoyage de la surface</li><li style="--i:1"><span>02</span>Rebouchage des fissures et des trous</li><li style="--i:2"><span>03</span>Sous-couche adaptée au support</li><li style="--i:3"><span>04</span>Primaire d&#39;accrochage sur la tuile</li><li style="--i:4"><span>05</span>Deux couches de finition</li></ol>
+    </div>
+  </div>
+</section>
+<section class="section ravalement" id="ravalement" aria-labelledby="ravalement-titre">
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Le ravalement</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="ravalement-titre" data-titre-pose data-effet="titre-pose">Le ravalement en quatre temps</h2>
+      <p>Sur béton, brique ou pierre · Enduits minéraux, organiques ou à la chaux.</p>
+    </div>
+    <ol class="temps" data-anime="cascade">
+      <li><span class="temps-n">1</span><h3>Diagnostic</h3><p>Analyse complète de la façade pour repérer les zones à traiter.</p></li><li><span class="temps-n">2</span><h3>Nettoyage</h3><p>Salissures, mousses et impuretés retirées, pour que les traitements accrochent.</p></li><li><span class="temps-n">3</span><h3>Rebouchage</h3><p>Fissures de toutes tailles reprises, enduits grattés puis projetés.</p></li><li><span class="temps-n">4</span><h3>Peinture</h3><p>Une peinture adaptée au support : acrylique, siloxane ou pliolite.</p></li>
+    </ol>
+<ul class="vignettes" data-anime="cascade">
+  <li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-facade-800.webp" srcset="/assets/images/chantier-facade-480.webp 480w, /assets/images/chantier-facade-640.webp 640w, /assets/images/chantier-facade-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="Nettoyage de la façade d&#39;un pavillon, échelle contre le mur" width="800" height="533" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Nettoyage de façade</b> · chantier de l&#39;entreprise</p></li><li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-echafaudage-800.webp" srcset="/assets/images/chantier-echafaudage-480.webp 480w, /assets/images/chantier-echafaudage-640.webp 640w, /assets/images/chantier-echafaudage-800.webp 800w" sizes="(max-width: 760px) 50vw, 22vw" alt="Échafaudage contre la façade d&#39;une maison pendant les travaux" width="800" height="534" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Échafaudage posé</b> · chantier de l&#39;entreprise</p></li>
+</ul>
+    <details class="faq">
+      <summary>Le ravalement est-il obligatoire ?</summary>
+      <p>Pas partout. Le code de la construction et de l&#39;habitation permet à une commune d&#39;imposer un ravalement au moins tous les dix ans, sur injonction de la mairie, là où la règle s&#39;applique. Renseignez-vous auprès de votre mairie.</p>
+    </details>
+  </div>
+</section>
+<section class="section" id="finitions" aria-labelledby="finitions-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 03 · Les finitions</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="finitions-titre" data-titre-pose data-effet="titre-pose">Quatre finitions d&#39;enduit</h2>
+      <p>Touchez une finition : la grille se recompose autour d&#39;elle.</p>
+    </div>
+    <ul class="finitions" data-effet="finitions" data-grille="manipuler">
+      <li class="finition" data-finition="lisse">
+        <figure class="media finition-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/finition-lisse-784.webp" srcset="/assets/images/grok/finition-lisse-480.webp 480w, /assets/images/grok/finition-lisse-640.webp 640w, /assets/images/grok/finition-lisse-784.webp 784w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <button type="button" class="finition-bouton" aria-pressed="false">
+          <span class="finition-texte"><b>Lisse</b><span>Une surface fine et régulière.</span></span>
+        </button>
+      </li><li class="finition choisie" data-finition="grattee">
+        <figure class="media finition-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/finition-grattee-784.webp" srcset="/assets/images/grok/finition-grattee-480.webp 480w, /assets/images/grok/finition-grattee-640.webp 640w, /assets/images/grok/finition-grattee-784.webp 784w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <button type="button" class="finition-bouton" aria-pressed="true">
+          <span class="finition-texte"><b>Grattée</b><span>Un grain ouvert, qui accroche la lumière.</span></span>
+        </button>
+      </li><li class="finition" data-finition="talochee">
+        <figure class="media finition-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/finition-talochee-784.webp" srcset="/assets/images/grok/finition-talochee-480.webp 480w, /assets/images/grok/finition-talochee-640.webp 640w, /assets/images/grok/finition-talochee-784.webp 784w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <button type="button" class="finition-bouton" aria-pressed="false">
+          <span class="finition-texte"><b>Talochée</b><span>Les arcs de la taloche, à la main.</span></span>
+        </button>
+      </li><li class="finition" data-finition="projetee">
+        <figure class="media finition-photo" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/finition-projetee-784.webp" srcset="/assets/images/grok/finition-projetee-480.webp 480w, /assets/images/grok/finition-projetee-640.webp 640w, /assets/images/grok/finition-projetee-784.webp 784w" sizes="(max-width: 760px) 100vw, 50vw" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <button type="button" class="finition-bouton" aria-pressed="false">
+          <span class="finition-texte"><b>Projetée</b><span>Un relief en gouttelettes.</span></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="section fin" aria-labelledby="fin-titre">
+  <div class="fin-fond" aria-hidden="true"></div>
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Devis gratuit · Artisan Sandero</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="fin-page">
+      <div>
+        <h2 id="fin-titre" data-titre-pose data-effet="titre-pose">Une façade à reprendre ?</h2>
+        <p>Diagnostic, devis détaillé et gratuit, deux couches de peinture.</p>
+      </div>
+      <p class="actions">
+        <a href="/devis?prestation=ravalement#demande" class="bouton" data-libelle="Devis et contact" data-survol="magnetique">Devis gratuit</a>
+        <a class="bouton bouton--contour" href="tel:+33176292634">01 76 29 26 34</a>
+        <span class="joignable" data-joignable hidden></span>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo-blanc-480.webp" alt="Artisan Sandero" width="160" height="78" loading="lazy">
+      <p>105 rue du Maréchal-Foch, 95150 Taverny<br><a href="tel:+33176292634">01 76 29 26 34</a><br><a href="mailto:sandero.artisan95@gmail.com">sandero.artisan95@gmail.com</a></p>
+      <p class="pied-horaires">Lundi au samedi, 8 h à 20 h · dimanche fermé</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades" aria-current="page">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : les formulaires sont simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter</p><p>Politique de confidentialité · à compléter</p><p>© 2026 Artisan Sandero</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33176292634">Appeler</a>
+  <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+</div>
+</body>
+</html>

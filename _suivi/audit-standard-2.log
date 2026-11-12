@@ -1,0 +1,44 @@
+… fichiers
+  fait en 0 s
+… grille
+  fait en 4 s
+… mesures
+  22/84
+  47/84
+  74/84
+  fait en 104 s
+… mesures:balayage
+  fait en 26 s
+… films
+  fait en 137 s
+… bords
+  fait en 79 s
+… parcours:intro
+  fait en 41 s
+… parcours:menu
+  fait en 3 s
+… parcours:liens
+  fait en 92 s
+… parcours:hauteur
+  fait en 21 s
+… parcours:calme
+  fait en 48 s
+… parcours:projet
+  fait en 0 s
+… ecran
+  fait en 27 s
+… fluidite
+  fait en 163 s
+… mouvement
+  fait en 113 s
+… vitesse
+  fait en 20 s
+… captures
+  fait en 108 s
+… safari
+  fait en 0 s
+
+Échecs : 6 · À regarder : 10 · Non lancé : 1
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --pages=/,/404,/couverture,/facades,/zinguerie-charpente --seulement=fichiers,mesures
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261112-150325-standard)
+FINI

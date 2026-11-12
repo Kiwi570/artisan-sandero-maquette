@@ -1,0 +1,63 @@
+{
+ "mission": "regard-devis-arrivee",
+ "taille": "390x844",
+ "depart": "/devis",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.4,
+   "adresse": "/devis",
+   "y": 0,
+   "hauteurPage": 3625,
+   "titres": [
+    "h1 Votre chantier, en quelques étapes.",
+    "h2 Demande de devis"
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Menu",
+    "01 76 29 26 34",
+    "Demande de devis"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "defiler 1",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 3.6,
+   "adresse": "/devis",
+   "y": 717,
+   "hauteurPage": 3625,
+   "titres": [
+    "h2 Demande de devis",
+    "h3 Quel métier pour votre chantier ?"
+   ],
+   "actions": [
+    "Continuer"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-1.png"
+  }
+ ]
+}

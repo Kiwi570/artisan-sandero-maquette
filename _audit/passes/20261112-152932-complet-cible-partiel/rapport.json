@@ -1,0 +1,103 @@
+{
+  "echecs": [
+    {
+      "niveau": "echec",
+      "controle": "premier écran : information clé hors de l’écran",
+      "detail": "",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1000×560",
+      "mode": "normal",
+      "selecteur": "div#debut > div.une-scene > div.une-cote:nth-of-type(3) > p.une-info:nth-of-type(3) « Lun.–sam. 8 h–20 h · Devis gratuit »",
+      "lieux": [
+        "1000×560 normal",
+        "1000×560 calme",
+        "1000×560 sansWebgl"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par div#debut > div.une-scene « Toit de tuiles vu du faîtage, les pavillons de Tav »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "320×568",
+      "mode": "sansJs",
+      "selecteur": "div.une-scene > div.toit:nth-of-type(1) > figure.media.toit-photo > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "320×568 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div.une-scene > div.une-cote:nth-of-type(3) > p.une-actions:nth-of-type(2) > a.bouton:nth-of-type(1) « Demander un devis gratuit »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "844×390",
+      "mode": "sansJs",
+      "selecteur": "div#debut > div.une-scene > div.une-texte:nth-of-type(2) > h1.une-titre « Ce qui se passe sous les tuiles, une famille le sa »",
+      "lieux": [
+        "844×390 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "textes qui se chevauchent",
+      "detail": "avec div#debut > div.une-scene > div.une-cote:nth-of-type(3) > p.chapo:nth-of-type(1) « Couverture, zinguerie, charpente, peinture et rava »",
+      "etape": "mesures",
+      "page": "/",
+      "taille": "1280×720",
+      "mode": "sansJs",
+      "selecteur": "div#debut > div.une-scene > div.une-texte:nth-of-type(2) > h1.une-titre « Ce qui se passe sous les tuiles, une famille le sa »",
+      "lieux": [
+        "1280×720 sansJs"
+      ]
+    },
+    {
+      "niveau": "echec",
+      "controle": "texte coupé",
+      "detail": "coupé par section#materiaux > div.conteneur > ol.nuancier > li.echantillon:nth-of-type(3) « 03 / 04 Zinc 40 ans environ Illustration générée A »",
+      "etape": "mesures",
+      "page": "/couverture",
+      "taille": "844×390",
+      "mode": "normal",
+      "selecteur": "li.echantillon:nth-of-type(3) > div.echantillon-corps:nth-of-type(2) > figure.media.echantillon-photo > figcaption.mention-ia « Illustration générée »",
+      "lieux": [
+        "844×390 normal",
+        "844×390 sansJs",
+        "844×390 calme",
+        "844×390 sansWebgl"
+      ]
+    }
+  ],
+  "aRegarder": [
+    {
+      "niveau": "regarder",
+      "controle": "clearProps « all »",
+      "detail": "assets/js/modules/formulaire-par-etapes/module.js : efface aussi les variables CSS posées dans le HTML ; nommer les propriétés (clearProps: 'transform,opacity')",
+      "etape": "fichiers",
+      "lieux": [
+        ""
+      ]
+    }
+  ],
+  "nonLances": [],
+  "oks": {
+    "vercel.json": 1,
+    ".vercelignore": 1,
+    "robots.txt": 1,
+    "numéro de version": 1,
+    "langues": 1,
+    "mesures": 312,
+    "balayage": 5
+  },
+  "infos": [
+    "Numéro de version des fichiers : ?v=1",
+    "Journal v1 : 5 étape(s) notée(s), 1284 min de travail pour 125 min de budget, 1166 min d’attente de l’utilisateur.",
+    "Journal : « construction : accueil » 1222 min pour 45 prévues.",
+    "Journal : « construction : pages d'onglet » 35 min pour 25 prévues.",
+    "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés."
+  ],
+  "grille": []
+}

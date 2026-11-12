@@ -1,0 +1,40 @@
+{
+ "@context": "https://schema.org",
+ "@type": "RoofingContractor",
+ "name": "Artisan Sandero",
+ "legalName": "HORTICA DANY (SANDERO ARTISAN)",
+ "url": "https://artisan-sandero-maquette.vercel.app/",
+ "telephone": "+33176292634",
+ "email": "sandero.artisan95@gmail.com",
+ "foundingDate": "2006",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "105 rue du Maréchal-Foch",
+  "postalCode": "95150",
+  "addressLocality": "Taverny",
+  "addressCountry": "FR"
+ },
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+   ],
+   "opens": "08:00",
+   "closes": "20:00"
+  }
+ ],
+ "areaServed": [
+  "Taverny",
+  "Saint-Leu-la-Forêt",
+  "Ermont",
+  "Eaubonne",
+  "Cormeilles-en-Parisis"
+ ],
+ "description": "Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Entreprise familiale depuis 2006."
+}

@@ -1,0 +1,38 @@
+{
+ "elements": [
+  "Gouttières",
+  "Chéneaux",
+  "Noues",
+  "Solins",
+  "Rives",
+  "Bandes d'égout",
+  "Cheminées"
+ ],
+ "signes": [
+  "Elle déborde (bouchée ou trop petite)",
+  "Des fuites fréquentes",
+  "De la rouille",
+  "Des déformations visibles",
+  "Des joints abîmés"
+ ],
+ "signesCharpente": [
+  "Fissures",
+  "Déformations",
+  "Traces d'humidité",
+  "Sciure de bois",
+  "Toit qui s'affaisse",
+  "Bruits inhabituels"
+ ],
+ "chantiers": [
+  {
+   "image": "chantier-soudure",
+   "alt": "Soudure d'une gouttière en zinc au fer à souder",
+   "titre": "Gouttière soudée"
+  },
+  {
+   "image": "chantier-cheneau-pliage",
+   "alt": "Création d'un chéneau en zinc par l'entreprise",
+   "titre": "Chéneau façonné"
+  }
+ ]
+}

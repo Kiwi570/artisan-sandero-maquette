@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zinguerie et charpente à Taverny · Artisan Sandero</title>
+<meta name="description" content="Gouttières soudées, chéneaux, noues, solins, cheminées ; charpentes diagnostiquées, renforcées et traitées. Devis gratuit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://artisan-sandero-maquette.vercel.app/zinguerie-charpente">
+<style>:root{--fond:#f2ebe1;--texte:#22180f;--voile-fond:#85391d;--ouverture-fond:#f2ebe1;--menu-fond:#1b1c1e}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ebe1">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artisan Sandero">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Zinguerie et charpente à Taverny · Artisan Sandero">
+<meta property="og:description" content="Gouttières soudées, chéneaux, noues, solins, cheminées ; charpentes diagnostiquées, renforcées et traitées. Devis gratuit.">
+<meta property="og:url" content="https://artisan-sandero-maquette.vercel.app/zinguerie-charpente">
+<meta property="og:image" content="https://artisan-sandero-maquette.vercel.app/assets/partage/zinguerie-charpente-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Zinguerie et charpente : soudure d&#39;une gouttière en zinc">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"Artisan Sandero","legalName":"HORTICA DANY (SANDERO ARTISAN)","url":"https://artisan-sandero-maquette.vercel.app/","telephone":"+33176292634","email":"sandero.artisan95@gmail.com","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"105 rue du Maréchal-Foch","postalCode":"95150","addressLocality":"Taverny","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"}],"areaServed":["Taverny","Saint-Leu-la-Forêt","Ermont","Eaubonne","Cormeilles-en-Parisis"],"description":"Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Entreprise familiale depuis 2006."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="tuiles" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-marque-240.webp" alt="" width="96" height="44"><span data-voile-libelle>Zinguerie et charpente</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-marque-480.webp" alt="" width="160" height="74" data-ouverture-objet>
+  <p class="ouverture-nom">ARTISAN <b>SANDERO</b></p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Couvreur-zingueur · Taverny · depuis 2006</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Artisan Sandero, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-marque-240.webp" alt="" width="72" height="33"><span class="entete-nom">ARTISAN <b>SANDERO</b></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente" aria-current="page">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/couverture" class="menu-lien" data-libelle="Couverture">Couverture</a></li><li style="--i:2"><a href="/zinguerie-charpente" class="menu-lien" data-libelle="Zinguerie et charpente" aria-current="page">Zinguerie et charpente</a></li><li style="--i:3"><a href="/facades" class="menu-lien" data-libelle="Peinture et façades">Peinture et façades</a></li><li style="--i:4"><a href="/devis" class="menu-lien" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33176292634">Appeler 01 76 29 26 34</a></p>
+  <p class="menu-adresse">105 rue du Maréchal-Foch, 95150 Taverny<br>Lundi au samedi, 8 h à 20 h · dimanche fermé<br><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=105%20rue%20du%20Mar%C3%A9chal-Foch%2C%2095150%20Taverny" target="_blank" rel="noopener">Itinéraire →</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-une zinc-une" id="debut">
+  <div class="zinc-grille">
+    <div class="zinc-texte">
+      <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique · Zinguerie et charpente</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+      <div class="zinc-titre-bloc">
+        <h1 data-titre-pose="intro" data-grille="typo" data-effet="titre-pose">Zinguerie <em>et</em> charpente</h1>
+        <svg class="cordon" data-effet="cordon-etain" viewBox="0 0 600 30" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="etain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f7"/><stop offset=".45" stop-color="#b9c1c4"/><stop offset="1" stop-color="#6d767a"/></linearGradient>
+            <radialGradient id="chaud"><stop offset="0" stop-color="#fff6d8"/><stop offset=".35" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6a00" stop-opacity="0"/></radialGradient>
+          </defs>
+          <path class="cordon-ombre" d="M4 17 C 70 13, 130 20, 200 16 S 330 12, 400 17 S 530 14, 596 16"/>
+          <path class="cordon-trait" d="M4 15 C 70 11, 130 18, 200 14 S 330 10, 400 15 S 530 12, 596 14"/>
+          <circle class="cordon-pointe" r="12" cx="4" cy="15" fill="url(#chaud)"/>
+        </svg>
+      </div>
+      <p class="chapo">Gouttières soudées, chéneaux, noues, solins et rives sur mesure ; charpentes diagnostiquées, renforcées et traitées.</p>
+      <p class="une-actions">
+        <a href="/devis?prestation=zinguerie#demande" class="bouton" data-libelle="Devis et contact" data-action-principale data-survol="magnetique">Demander un devis zinguerie</a>
+        <a class="bouton bouton--contour bouton--clair" href="tel:+33176292634">01 76 29 26 34</a>
+      </p>
+      <p class="une-info" data-info-cle>Devis gratuit · lun.–sam. 8 h–20 h</p>
+    </div>
+    <div class="zinc-photo" data-iris-centre>
+      <figure class="media " data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/zinc-soudure-mobile-640.webp 640w, /assets/images/grok/zinc-soudure-mobile-1080.webp 1080w" sizes="(max-width: 899px) 100vw, 55vw">
+    <img src="/assets/images/grok/zinc-soudure-1280.webp" srcset="/assets/images/grok/zinc-soudure-640.webp 640w, /assets/images/grok/zinc-soudure-1280.webp 1280w, /assets/images/grok/zinc-soudure-1920.webp 1920w" sizes="(max-width: 899px) 100vw, 55vw" alt="Fer à souder sur une gouttière en zinc" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    </div>
+  </div>
+</section>
+<section class="section signes-section" id="signes" aria-labelledby="signes-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Les signes</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="signes" data-effet="signes-gouttiere" data-grille="manipuler" data-signes>
+      <div>
+        <h2 id="signes-titre" data-titre-pose data-effet="titre-pose">Votre gouttière vous fait signe ?</h2>
+        <p>Cochez ce que vous voyez : la demande de devis sera préparée avec.</p>
+        <figure class="media signes-photo" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 899px) 100vw, 30vw" alt="Chéneau en zinc neuf posé par l’entreprise" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      </div>
+      <fieldset class="signes-liste">
+        <legend class="visuellement-cache">Votre gouttière vous fait signe ?</legend>
+        <label class="signe"><input class="signe-case" type="checkbox" name="signe" value="Elle déborde (bouchée ou trop petite)"><span>Elle déborde (bouchée ou trop petite)</span></label><label class="signe"><input class="signe-case" type="checkbox" name="signe" value="Des fuites fréquentes"><span>Des fuites fréquentes</span></label><label class="signe"><input class="signe-case" type="checkbox" name="signe" value="De la rouille"><span>De la rouille</span></label><label class="signe"><input class="signe-case" type="checkbox" name="signe" value="Des déformations visibles"><span>Des déformations visibles</span></label><label class="signe"><input class="signe-case" type="checkbox" name="signe" value="Des joints abîmés"><span>Des joints abîmés</span></label>
+      </fieldset>
+      <p class="signes-fin">
+        <a href="/devis?prestation=zinguerie#demande" class="bouton signes-lien" data-libelle="Devis et contact">Demander un devis avec ces signes</a>
+        <span class="signes-compte" aria-live="polite">Aucun signe coché : le devis reste ouvert.</span>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section zinc-section" id="zinguerie" aria-labelledby="zinc-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Le zinc</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="zinc-colonnes">
+      <div>
+        <h2 id="zinc-titre" data-titre-pose data-effet="titre-pose">Le zinc, soudé sur mesure</h2>
+        <p class="zinc-texte-long">Installation, remplacement et entretien des gouttières, soudées à chaud ou à froid. Chéneaux, noues, solins, rives et bandes d&#39;égout façonnés sur mesure. Cheminées déposées, reposées puis enduites ou habillées de zinc.</p>
+        <p class="zinc-materiaux">Zinc, aluminium, PVC ou acier galvanisé</p>
+      </div>
+      <div>
+        <p class="surtitre">Façonné sur mesure</p>
+        <ul class="pieces" data-anime="cascade"><li>Gouttières</li><li>Chéneaux</li><li>Noues</li><li>Solins</li><li>Rives</li><li>Bandes d&#39;égout</li><li>Cheminées</li></ul>
+      </div>
+    </div>
+<ul class="vignettes" data-anime="cascade">
+  <li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-soudure-960.webp" srcset="/assets/images/chantier-soudure-480.webp 480w, /assets/images/chantier-soudure-640.webp 640w, /assets/images/chantier-soudure-960.webp 960w" sizes="(max-width: 760px) 50vw, 22vw" alt="Soudure d&#39;une gouttière en zinc au fer à souder" width="960" height="1280" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Gouttière soudée</b> · chantier de l&#39;entreprise</p></li><li><figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-cheneau-pliage-640.webp" srcset="/assets/images/chantier-cheneau-pliage-480.webp 480w, /assets/images/chantier-cheneau-pliage-640.webp 640w" sizes="(max-width: 760px) 50vw, 22vw" alt="Création d&#39;un chéneau en zinc par l&#39;entreprise" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure><p class="vignette-legende"><b>Chéneau façonné</b> · chantier de l&#39;entreprise</p></li>
+</ul>
+  </div>
+</section>
+<section class="section charpente" id="charpente" aria-labelledby="charpente-titre">
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 03 · La charpente</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="charpente-titre" data-titre-pose data-effet="titre-pose">La charpente, sous le toit</h2>
+      <p>Renforcement, remplacement des voliges, chevrons et liteaux selon l&#39;état constaté, traitement préventif et curatif contre les insectes xylophages et la mérule, par pulvérisation et injection. Tout commence par un diagnostic.</p>
+    </div>
+  </div>
+  <div class="charpente-scene" data-effet="charpente-profondeur">
+    <div class="charpente-plan charpente-fond"><figure class="media " data-grok style="--cadrage:50% 40%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/charpente-neuve-mobile-640.webp 640w, /assets/images/grok/charpente-neuve-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/charpente-neuve-1280.webp" srcset="/assets/images/grok/charpente-neuve-640.webp 640w, /assets/images/grok/charpente-neuve-1280.webp 1280w, /assets/images/grok/charpente-neuve-1920.webp 1920w" sizes="100vw" alt="Charpente traditionnelle en bois sous la toiture" width="1280" height="853" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure></div>
+    <div class="charpente-plan charpente-avant conteneur">
+      <h3>Les signes qui doivent alerter</h3>
+      <fieldset class="alertes" data-signes>
+        <legend class="visuellement-cache">Les signes qui doivent alerter</legend>
+        <label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Fissures"><span>Fissures</span></label><label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Déformations"><span>Déformations</span></label><label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Traces d&#39;humidité"><span>Traces d&#39;humidité</span></label><label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Sciure de bois"><span>Sciure de bois</span></label><label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Toit qui s&#39;affaisse"><span>Toit qui s&#39;affaisse</span></label><label class="alerte"><input class="signe-case" type="checkbox" name="signe" value="Bruits inhabituels"><span>Bruits inhabituels</span></label>
+        <p class="signes-fin"><a href="/devis?prestation=charpente#demande" class="bouton signes-lien" data-libelle="Devis et contact">Demander un diagnostic de charpente</a> <span class="signes-compte" aria-live="polite">Aucun signe coché : le devis reste ouvert.</span></p>
+      </fieldset>
+    </div>
+  </div>
+</section>
+<section class="section fin" aria-labelledby="fin-titre">
+  <div class="fin-fond" aria-hidden="true"></div>
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Devis gratuit · Artisan Sandero</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="fin-page">
+      <div>
+        <h2 id="fin-titre" data-titre-pose data-effet="titre-pose">Une fuite, une poutre qui travaille ?</h2>
+        <p>On monte, on regarde, on vous explique.</p>
+      </div>
+      <p class="actions">
+        <a href="/devis?prestation=zinguerie#demande" class="bouton" data-libelle="Devis et contact" data-survol="magnetique">Devis gratuit</a>
+        <a class="bouton bouton--contour" href="tel:+33176292634">01 76 29 26 34</a>
+        <span class="joignable" data-joignable hidden></span>
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo-blanc-480.webp" alt="Artisan Sandero" width="160" height="78" loading="lazy">
+      <p>105 rue du Maréchal-Foch, 95150 Taverny<br><a href="tel:+33176292634">01 76 29 26 34</a><br><a href="mailto:sandero.artisan95@gmail.com">sandero.artisan95@gmail.com</a></p>
+      <p class="pied-horaires">Lundi au samedi, 8 h à 20 h · dimanche fermé</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente" aria-current="page">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact">Devis et contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : les formulaires sont simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter</p><p>Politique de confidentialité · à compléter</p><p>© 2026 Artisan Sandero</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33176292634">Appeler</a>
+  <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+</div>
+</body>
+</html>

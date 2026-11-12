@@ -1,0 +1,21 @@
+… fichiers
+  fait en 0 s
+… mesures
+  19/312
+  46/312
+  75/312
+  112/312
+  139/312
+  167/312
+  206/312
+  233/312
+  265/312
+  296/312
+  fait en 317 s
+… mesures:balayage
+  fait en 41 s
+
+Échecs : 5 · À regarder : 1 · Non lancé : 0
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --complet --pages=/,/couverture --seulement=fichiers,mesures
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261112-152932-complet-cible-partiel)
+FINI

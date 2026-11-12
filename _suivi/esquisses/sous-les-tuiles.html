@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquisse · Sous les tuiles</title>
+<style>
+@font-face{font-family:"Newsreader";src:url(polices/newsreader-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:"Newsreader";src:url(polices/newsreader-latin-500-italic.woff2) format("woff2");font-weight:500;font-style:italic}
+@font-face{font-family:"Schibsted Grotesk";src:url(polices/schibsted-grotesk-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:"Schibsted Grotesk";src:url(polices/schibsted-grotesk-latin-700-normal.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"Schibsted Grotesk";src:url(polices/schibsted-grotesk-latin-800-normal.woff2) format("woff2");font-weight:800}
+:root{--chaux:#f2ebe1;--encre:#22180f;--doux:#5e5045;--tuile:#bd522a;--ecran:#1b1c1e;--liteau:#e2b95c;--trait:rgba(34,24,15,.16)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--chaux)}
+body{font-family:"Schibsted Grotesk",system-ui,sans-serif;color:var(--encre);overflow:hidden}
+header{display:flex;align-items:center;gap:26px;padding:18px 40px;border-bottom:1px solid var(--trait)}
+.marque{display:flex;align-items:center;gap:10px;color:var(--encre);text-decoration:none;font-weight:800;letter-spacing:.06em;font-size:15px}
+.marque img{height:30px;mix-blend-mode:multiply}
+.marque span{color:var(--tuile)}
+nav{display:flex;gap:24px;font-size:14.5px;font-weight:500;margin-left:auto}
+nav a{color:var(--encre);text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--encre);color:var(--chaux);border-radius:4px;padding:12px 18px;font-weight:700;font-size:14.5px;text-decoration:none}
+.btn.tuile{background:var(--tuile);color:#fff}
+.ligne{display:flex;justify-content:space-between;padding:10px 40px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--doux);border-bottom:1px solid var(--trait)}
+main{display:grid;grid-template-columns:5fr 7fr;height:calc(100vh - 108px)}
+.texte{padding:44px 40px 30px;display:flex;flex-direction:column;border-right:1px solid var(--trait)}
+h1{font-family:"Newsreader";font-weight:500;font-size:clamp(52px,6.2vw,96px);line-height:.95;letter-spacing:-.025em}
+h1 em{font-style:italic;color:var(--tuile)}
+.chapo{margin-top:22px;font-size:17px;line-height:1.5;color:var(--doux);max-width:40ch}
+.actions{display:flex;gap:12px;margin-top:24px;align-items:center;flex-wrap:wrap}
+.info{font-size:13.5px;color:var(--doux)}
+.sommaire{margin-top:auto;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--trait)}
+.sommaire a{padding:14px 10px 0 0;text-decoration:none;color:var(--encre);font-size:13.5px;font-weight:700;line-height:1.25}
+.sommaire a small{display:block;font-family:"Newsreader";font-style:italic;font-weight:500;font-size:22px;color:var(--tuile);margin-bottom:2px}
+.toit{position:relative;overflow:hidden;background:var(--ecran);perspective:1100px}
+.dessous{position:absolute;inset:0;background:url(/recu/site/pose-tuiles-orange.webp) 40% 70%/175% auto}
+.dessous::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 62% 48%,rgba(0,0,0,0),rgba(0,0,0,.35))}
+.tuiles{position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(11,1fr);transform-style:preserve-3d}
+.tuiles i{display:block;position:relative;background-image:url(/recu/site/fenetre-toit-nouvellement-posee.webp);background-size:900% 800%;transform-origin:50% 0;box-shadow:inset 0 -6px 8px -6px rgba(0,0,0,.45);backface-visibility:hidden}
+.tuiles i.leve{transform:translateZ(18px) rotateX(-64deg);filter:brightness(.9) saturate(1.1);border-bottom:7px solid #6e2a12;border-radius:0 0 10px 10px;box-shadow:0 34px 26px -10px rgba(0,0,0,.75),inset 0 -14px 16px -6px rgba(0,0,0,.5)}
+.tuiles i.mi{transform:translateZ(8px) rotateX(-26deg);border-bottom:4px solid #6e2a12;border-radius:0 0 8px 8px;box-shadow:0 18px 16px -8px rgba(0,0,0,.6)}
+.legende{position:absolute;left:24px;bottom:22px;z-index:3;background:var(--chaux);padding:12px 14px;border-radius:3px;max-width:300px;font-size:13px;line-height:1.4;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.legende b{display:block;font-family:"Newsreader";font-style:italic;font-weight:500;font-size:19px;color:var(--tuile)}
+.geste{position:absolute;right:22px;top:20px;z-index:3;color:#fff;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:rgba(27,28,30,.7);padding:8px 12px;border-radius:999px}
+@media (max-width:760px){
+  header{padding:14px 18px;gap:10px}nav{display:none}
+  header .btn{margin-left:auto;padding:10px 12px;font-size:13px}
+  .ligne{padding:8px 18px;font-size:10.5px}.ligne span:last-child{display:none}
+  main{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:calc(100vh - 95px)}
+  .texte{padding:22px 18px 18px;border-right:0}
+  h1{font-size:46px}.chapo{font-size:15px;margin-top:14px}
+  .actions{margin-top:16px}.actions .btn:not(.tuile){display:none}
+  .sommaire{display:none}
+  .legende{left:14px;bottom:14px;max-width:250px}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="marque" href="#"><img src="/recu/site/logo-logotype-top-1920w-sombre.webp" alt="">ARTISAN <span>SANDERO</span></a>
+  <nav><a href="#">Couverture</a><a href="#">Zinguerie</a><a href="#">Charpente</a><a href="#">Peinture</a><a href="#">Ravalement</a><a href="#">Conseils de pro</a></nav>
+  <a class="btn tuile" href="#">Devis gratuit</a>
+</header>
+<div class="ligne"><span>Taverny · Val-d'Oise</span><span>Entreprise familiale depuis 2006</span><span>01 76 29 26 34</span></div>
+<main>
+  <section class="texte">
+    <h1>Ce qui se passe <em>sous les tuiles</em>, une famille le sait.</h1>
+    <p class="chapo">Liteaux, écran, isolant, chevrons : le père et le fils regardent tout avant de reposer la moindre tuile. Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour.</p>
+    <div class="actions"><a class="btn tuile" href="#">Demander un devis gratuit</a><a class="btn" href="#">Les chantiers</a><span class="info">Lun.–sam. 8 h–20 h</span></div>
+    <nav class="sommaire">
+      <a href="#"><small>01</small>Couverture</a><a href="#"><small>02</small>Zinguerie</a><a href="#"><small>03</small>Charpente</a><a href="#"><small>04</small>Peinture</a><a href="#"><small>05</small>Ravalement</a>
+    </nav>
+  </section>
+  <div class="toit">
+    <div class="dessous"></div>
+    <div class="tuiles" id="t"></div>
+    <span class="geste">Soulevez les tuiles</span>
+    <p class="legende"><b>Sous la tuile : le liteau</b>Pin posé à l'écartement des tuiles, sur l'écran sous-toiture. Chantier de l'entreprise.</p>
+  </div>
+</main>
+<script>
+const t=document.getElementById('t'),C=7,R=11;
+const leve=new Set(['3-4','4-4','2-5','3-5','4-5','3-6']),mi=new Set(['2-4','5-4','1-5','5-5','2-6','4-6','3-3','3-7']);
+for(let r=0;r<R;r++)for(let c=0;c<C;c++){const i=document.createElement('i');const k=c+'-'+r;if(leve.has(k))i.className='leve';else if(mi.has(k))i.className='mi';t.appendChild(i)}
+function poser(){const w=t.clientWidth,h=t.clientHeight;const W=Math.max(w*1.25,h/0.42*0.75),H=W*2000/1500;const ox=(W-w)/2,oy=H-h-4;
+for(const i of t.children){i.style.backgroundSize=`${W}px ${H}px`;i.style.backgroundPosition=`${-(i.offsetLeft+ox)}px ${-(i.offsetTop+oy)}px`}}
+poser();addEventListener('resize',poser);
+</script>
+</body>
+</html>

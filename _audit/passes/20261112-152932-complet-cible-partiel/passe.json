@@ -1,0 +1,16 @@
+{
+ "id": "20261112-152932-complet-cible-partiel",
+ "date": "2026-11-12T15:35:30.086Z",
+ "niveau": "complet",
+ "pages": "/,/404,/couverture,/devis,/zinguerie-charpente,/facades",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 5,
+ "aRegarder": 1,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

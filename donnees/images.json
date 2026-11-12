@@ -1,0 +1,3141 @@
+{
+  "logo-marque": {
+    "nom": "logo-marque",
+    "source": "recu/site/logo-logotype-top-1920w-sombre.webp",
+    "role": "logo",
+    "alt": "Artisan Sandero",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "610038ed6d200e78",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-marque-240.webp",
+      "logo-marque-480.webp"
+    ],
+    "poids": {
+      "logo-marque-240.webp": 13282,
+      "logo-marque-480.webp": 31580
+    },
+    "media": "c.media({ nom: 'logo-marque', alt: \"Artisan Sandero\", sizes: '240px' })"
+  },
+  "logo-blanc": {
+    "nom": "logo-blanc",
+    "source": "recu/site/logo-logotype-blanc-1920w.webp",
+    "role": "logo",
+    "alt": "Artisan Sandero",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "a408ed5c7a974398",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-blanc-240.webp",
+      "logo-blanc-480.webp"
+    ],
+    "poids": {
+      "logo-blanc-240.webp": 13502,
+      "logo-blanc-480.webp": 33994
+    },
+    "media": "c.media({ nom: 'logo-blanc', alt: \"Artisan Sandero\", sizes: '240px' })"
+  },
+  "grok/ouverture-toit": {
+    "nom": "grok/ouverture-toit",
+    "source": "recu/grok/hd/ouverture-faitage-telephone.jpg",
+    "role": "produit",
+    "alt": "Pan de toit en tuiles neuves vu depuis le faîtage, les pavillons et la forêt en contrebas",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "d9778171a77a35d5",
+    "ratio": "784:1168",
+    "largeurs": [
+      800,
+      1200,
+      1568
+    ],
+    "mobile": null,
+    "cadrage": "51% 46%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 95.5,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.49,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.03,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1568,
+      "height": 2336,
+      "source": [
+        1568,
+        2336
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/ouverture-toit-800.webp",
+      "grok/ouverture-toit-1200.webp",
+      "grok/ouverture-toit-1568.webp"
+    ],
+    "poids": {
+      "grok/ouverture-toit-800.webp": 106054,
+      "grok/ouverture-toit-1200.webp": 177706,
+      "grok/ouverture-toit-1568.webp": 246556
+    },
+    "media": "c.media({ nom: 'grok/ouverture-toit', alt: \"Pan de toit en tuiles neuves vu depuis le faîtage, les pavillons et la forêt en contrebas\", cadrage: '51% 46%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '784 / 1168' })"
+  },
+  "grok/zone-faitage": {
+    "nom": "grok/zone-faitage",
+    "source": "recu/grok/hd/ouverture-faitage.jpg",
+    "role": "produit",
+    "alt": "Faîtage d'un toit de tuiles neuves au milieu des pavillons, la forêt à l'horizon",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "5c32801808efbf48",
+    "ratio": "1168:784",
+    "largeurs": [
+      800,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "50% 46%",
+    "sujet": {
+      "x": 0,
+      "y": 9.1,
+      "l": 100,
+      "h": 86.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.55,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1289,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/zone-faitage-800.webp",
+      "grok/zone-faitage-1280.webp",
+      "grok/zone-faitage-1920.webp"
+    ],
+    "poids": {
+      "grok/zone-faitage-800.webp": 63250,
+      "grok/zone-faitage-1280.webp": 127996,
+      "grok/zone-faitage-1920.webp": 220104
+    },
+    "media": "c.media({ nom: 'grok/zone-faitage', alt: \"Faîtage d'un toit de tuiles neuves au milieu des pavillons, la forêt à l'horizon\", cadrage: '50% 46%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '1168 / 784' })"
+  },
+  "grok/tuiles-face": {
+    "nom": "grok/tuiles-face",
+    "source": "recu/grok/hd/tuiles-face.jpg",
+    "role": "produit",
+    "alt": "Pan de tuiles mécaniques en terre cuite vu de face",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "5debf624da871a77",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "49% 47%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/tuiles-face-640.webp",
+      "grok/tuiles-face-1280.webp",
+      "grok/tuiles-face-1920.webp",
+      "grok/tuiles-face-mobile-640.webp",
+      "grok/tuiles-face-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/tuiles-face-640.webp": 36848,
+      "grok/tuiles-face-1280.webp": 131982,
+      "grok/tuiles-face-1920.webp": 223804,
+      "grok/tuiles-face-mobile-640.webp": 72588,
+      "grok/tuiles-face-mobile-1080.webp": 135600
+    },
+    "media": "c.media({ nom: 'grok/tuiles-face', alt: \"Pan de tuiles mécaniques en terre cuite vu de face\", cadrage: '49% 47%', cadrageMobile: '50% 47%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/liteaux-ecran": {
+    "nom": "grok/liteaux-ecran",
+    "source": "recu/grok/liteaux-ecran-cadre.jpg",
+    "role": "produit",
+    "alt": "Liteaux en pin clair posés sur l'écran sous-toiture noir",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "09eeaa1011f2b064",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 48%"
+    },
+    "cadrage": "50% 49%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 97
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1254,
+      "height": 836,
+      "source": [
+        1254,
+        849
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1254 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)"
+    ],
+    "fichiers": [
+      "grok/liteaux-ecran-640.webp",
+      "grok/liteaux-ecran-1280.webp",
+      "grok/liteaux-ecran-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/liteaux-ecran-640.webp": 25256,
+      "grok/liteaux-ecran-1280.webp": 62786,
+      "grok/liteaux-ecran-mobile-640.webp": 36142
+    },
+    "media": "c.media({ nom: 'grok/liteaux-ecran', alt: \"Liteaux en pin clair posés sur l'écran sous-toiture noir\", cadrage: '50% 49%', cadrageMobile: '50% 48%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/liteaux-toit": {
+    "nom": "grok/liteaux-toit",
+    "source": "recu/grok/hd/liteaux-ecran.jpg",
+    "role": "produit",
+    "alt": "Toit ouvert sur ses liteaux, avant la pose des tuiles",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "ca5b226ab792fcdd",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/liteaux-toit-640.webp",
+      "grok/liteaux-toit-1280.webp",
+      "grok/liteaux-toit-1920.webp"
+    ],
+    "poids": {
+      "grok/liteaux-toit-640.webp": 32256,
+      "grok/liteaux-toit-1280.webp": 82216,
+      "grok/liteaux-toit-1920.webp": 145860
+    },
+    "media": "c.media({ nom: 'grok/liteaux-toit', alt: \"Toit ouvert sur ses liteaux, avant la pose des tuiles\", cadrage: '50% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/couche-ecran": {
+    "nom": "grok/couche-ecran",
+    "source": "recu/grok/hd/couche-ecran.jpg",
+    "role": "produit",
+    "alt": "Écran sous-toiture tendu sur les chevrons",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "9a71f64fb0216aae",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "43% 52%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.09,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/couche-ecran-640.webp",
+      "grok/couche-ecran-1280.webp",
+      "grok/couche-ecran-1920.webp"
+    ],
+    "poids": {
+      "grok/couche-ecran-640.webp": 43670,
+      "grok/couche-ecran-1280.webp": 132532,
+      "grok/couche-ecran-1920.webp": 222332
+    },
+    "media": "c.media({ nom: 'grok/couche-ecran', alt: \"Écran sous-toiture tendu sur les chevrons\", cadrage: '43% 52%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/couche-isolant": {
+    "nom": "grok/couche-isolant",
+    "source": "recu/grok/hd/couche-isolant.jpg",
+    "role": "produit",
+    "alt": "Laine minérale posée entre les chevrons",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "e9872e5505b37103",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": null,
+    "cadrage": "55% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.05,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/couche-isolant-640.webp",
+      "grok/couche-isolant-1280.webp",
+      "grok/couche-isolant-1920.webp"
+    ],
+    "poids": {
+      "grok/couche-isolant-640.webp": 24180,
+      "grok/couche-isolant-1280.webp": 67768,
+      "grok/couche-isolant-1920.webp": 117814
+    },
+    "media": "c.media({ nom: 'grok/couche-isolant', alt: \"Laine minérale posée entre les chevrons\", cadrage: '55% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/couche-chevrons": {
+    "nom": "grok/couche-chevrons",
+    "source": "recu/grok/couche-chevrons.jpg",
+    "role": "produit",
+    "alt": "Chevrons de charpente en bois vus sous le toit ouvert",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "b4b0eb37dded46d2",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 58%"
+    },
+    "cadrage": "51% 58%",
+    "sujet": {
+      "x": 0,
+      "y": 26.8,
+      "l": 100,
+      "h": 64
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.69,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 5,
+      "width": 1168,
+      "height": 779,
+      "source": [
+        1168,
+        784
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 1920",
+      "1168 px de large"
+    ],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,1 fois (source de 1168 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/couche-chevrons-640.webp",
+      "grok/couche-chevrons-1280.webp",
+      "grok/couche-chevrons-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/couche-chevrons-640.webp": 23032,
+      "grok/couche-chevrons-1280.webp": 56450,
+      "grok/couche-chevrons-mobile-640.webp": 28346
+    },
+    "media": "c.media({ nom: 'grok/couche-chevrons', alt: \"Chevrons de charpente en bois vus sous le toit ouvert\", cadrage: '51% 58%', cadrageMobile: '50% 58%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "grok/faitage-vue": {
+    "nom": "grok/faitage-vue",
+    "source": "recu/grok/hd/faitage-vue.jpg",
+    "role": "section-fond",
+    "alt": "Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "e8e0cfddfb6998f8",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 48%"
+    },
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.57,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/faitage-vue-640.webp",
+      "grok/faitage-vue-1280.webp",
+      "grok/faitage-vue-1920.webp",
+      "grok/faitage-vue-mobile-640.webp",
+      "grok/faitage-vue-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/faitage-vue-640.webp": 42152,
+      "grok/faitage-vue-1280.webp": 114964,
+      "grok/faitage-vue-1920.webp": 187558,
+      "grok/faitage-vue-mobile-640.webp": 55556,
+      "grok/faitage-vue-mobile-1080.webp": 104386
+    },
+    "media": "c.media({ nom: 'grok/faitage-vue', alt: \"Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin\", cadrage: '50% 48%', cadrageMobile: '50% 48%', sizes: '100vw' })"
+  },
+  "grok/couverture-ouverture": {
+    "nom": "grok/couverture-ouverture",
+    "source": "recu/grok/hd/couverture-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Pente de toit en tuiles neuves et sa fenêtre de toit",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "dee40e2eee238b26",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 49%"
+    },
+    "cadrage": "55% 50%",
+    "sujet": {
+      "x": 6.3,
+      "y": 0,
+      "l": 93.7,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.3,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 92,
+      "width": 1920,
+      "height": 1080,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/couverture-ouverture-640.webp",
+      "grok/couverture-ouverture-1280.webp",
+      "grok/couverture-ouverture-1920.webp",
+      "grok/couverture-ouverture-mobile-640.webp",
+      "grok/couverture-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/couverture-ouverture-640.webp": 36946,
+      "grok/couverture-ouverture-1280.webp": 99278,
+      "grok/couverture-ouverture-1920.webp": 171788,
+      "grok/couverture-ouverture-mobile-640.webp": 62532,
+      "grok/couverture-ouverture-mobile-1080.webp": 121734
+    },
+    "media": "c.media({ nom: 'grok/couverture-ouverture', alt: \"Pente de toit en tuiles neuves et sa fenêtre de toit\", cadrage: '55% 50%', cadrageMobile: '50% 49%', sizes: '100vw', priorite: true })"
+  },
+  "grok/materiau-terre-cuite": {
+    "nom": "grok/materiau-terre-cuite",
+    "source": "recu/grok/hd/materiau-terre-cuite.jpg",
+    "role": "carte-service",
+    "alt": "Tuiles en terre cuite, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "31790864faca7580",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      800,
+      1280
+    ],
+    "mobile": null,
+    "cadrage": "49% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.09,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1271,
+      "height": 1907,
+      "source": [
+        1280,
+        1907
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/materiau-terre-cuite-480.webp",
+      "grok/materiau-terre-cuite-800.webp",
+      "grok/materiau-terre-cuite-1280.webp"
+    ],
+    "poids": {
+      "grok/materiau-terre-cuite-480.webp": 61840,
+      "grok/materiau-terre-cuite-800.webp": 168872,
+      "grok/materiau-terre-cuite-1280.webp": 302554
+    },
+    "media": "c.media({ nom: 'grok/materiau-terre-cuite', alt: \"Tuiles en terre cuite, gros plan\", cadrage: '49% 48%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/materiau-ardoise": {
+    "nom": "grok/materiau-ardoise",
+    "source": "recu/grok/materiau-ardoise.jpg",
+    "role": "carte-service",
+    "alt": "Ardoises naturelles, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "4fb3068654fc22e7",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "43% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/materiau-ardoise-480.webp",
+      "grok/materiau-ardoise-640.webp",
+      "grok/materiau-ardoise-784.webp"
+    ],
+    "poids": {
+      "grok/materiau-ardoise-480.webp": 89528,
+      "grok/materiau-ardoise-640.webp": 150356,
+      "grok/materiau-ardoise-784.webp": 191520
+    },
+    "media": "c.media({ nom: 'grok/materiau-ardoise', alt: \"Ardoises naturelles, gros plan\", cadrage: '43% 48%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/materiau-zinc": {
+    "nom": "grok/materiau-zinc",
+    "source": "recu/grok/materiau-zinc.jpg",
+    "role": "carte-service",
+    "alt": "Couverture en zinc à joints debout, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "e101ee16a2777725",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "43% 38%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.01,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/materiau-zinc-480.webp",
+      "grok/materiau-zinc-640.webp",
+      "grok/materiau-zinc-784.webp"
+    ],
+    "poids": {
+      "grok/materiau-zinc-480.webp": 15954,
+      "grok/materiau-zinc-640.webp": 29908,
+      "grok/materiau-zinc-784.webp": 45102
+    },
+    "media": "c.media({ nom: 'grok/materiau-zinc', alt: \"Couverture en zinc à joints debout, gros plan\", cadrage: '43% 38%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/materiau-beton": {
+    "nom": "grok/materiau-beton",
+    "source": "recu/grok/materiau-beton.jpg",
+    "role": "carte-service",
+    "alt": "Tuiles en béton, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "773146e2ffab2edc",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 48%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/materiau-beton-480.webp",
+      "grok/materiau-beton-640.webp",
+      "grok/materiau-beton-784.webp"
+    ],
+    "poids": {
+      "grok/materiau-beton-480.webp": 93098,
+      "grok/materiau-beton-640.webp": 158318,
+      "grok/materiau-beton-784.webp": 202714
+    },
+    "media": "c.media({ nom: 'grok/materiau-beton', alt: \"Tuiles en béton, gros plan\", cadrage: '50% 48%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/zinc-soudure": {
+    "nom": "grok/zinc-soudure",
+    "source": "recu/grok/hd/zinc-soudure.jpg",
+    "role": "ouverture",
+    "alt": "Fer à souder sur une gouttière en zinc",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "8f01518e9cd1e297",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 45%"
+    },
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 1.7,
+      "l": 100,
+      "h": 98.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.16,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.12,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.12,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 40,
+      "width": 1920,
+      "height": 1080,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/zinc-soudure-640.webp",
+      "grok/zinc-soudure-1280.webp",
+      "grok/zinc-soudure-1920.webp",
+      "grok/zinc-soudure-mobile-640.webp",
+      "grok/zinc-soudure-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/zinc-soudure-640.webp": 19810,
+      "grok/zinc-soudure-1280.webp": 56212,
+      "grok/zinc-soudure-1920.webp": 95550,
+      "grok/zinc-soudure-mobile-640.webp": 27458,
+      "grok/zinc-soudure-mobile-1080.webp": 54958
+    },
+    "media": "c.media({ nom: 'grok/zinc-soudure', alt: \"Fer à souder sur une gouttière en zinc\", cadrage: '48% 50%', cadrageMobile: '50% 45%', sizes: '100vw', priorite: true })"
+  },
+  "grok/charpente-neuve": {
+    "nom": "grok/charpente-neuve",
+    "source": "recu/grok/hd/charpente-neuve.jpg",
+    "role": "section-fond",
+    "alt": "Charpente traditionnelle en bois sous la toiture",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "1490655963cf014a",
+    "ratio": "3:2",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 50%"
+    },
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 96.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1280,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/charpente-neuve-640.webp",
+      "grok/charpente-neuve-1280.webp",
+      "grok/charpente-neuve-1920.webp",
+      "grok/charpente-neuve-mobile-640.webp",
+      "grok/charpente-neuve-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/charpente-neuve-640.webp": 39190,
+      "grok/charpente-neuve-1280.webp": 102886,
+      "grok/charpente-neuve-1920.webp": 175242,
+      "grok/charpente-neuve-mobile-640.webp": 52888,
+      "grok/charpente-neuve-mobile-1080.webp": 101384
+    },
+    "media": "c.media({ nom: 'grok/charpente-neuve', alt: \"Charpente traditionnelle en bois sous la toiture\", cadrage: '48% 50%', cadrageMobile: '50% 50%', sizes: '100vw' })"
+  },
+  "grok/facade-pavillon": {
+    "nom": "grok/facade-pavillon",
+    "source": "recu/grok/hd/facade-pavillon.jpg",
+    "role": "ouverture",
+    "alt": "Façade claire d'un pavillon fraîchement ravalée",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "d533f626124ee73c",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "4:5",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "50% 56%"
+    },
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 97
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.42,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.04,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 182,
+      "width": 1920,
+      "height": 1080,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/facade-pavillon-640.webp",
+      "grok/facade-pavillon-1280.webp",
+      "grok/facade-pavillon-1920.webp",
+      "grok/facade-pavillon-mobile-640.webp",
+      "grok/facade-pavillon-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/facade-pavillon-640.webp": 48034,
+      "grok/facade-pavillon-1280.webp": 137586,
+      "grok/facade-pavillon-1920.webp": 224736,
+      "grok/facade-pavillon-mobile-640.webp": 72160,
+      "grok/facade-pavillon-mobile-1080.webp": 133004
+    },
+    "media": "c.media({ nom: 'grok/facade-pavillon', alt: \"Façade claire d'un pavillon fraîchement ravalée\", cadrage: '47% 50%', cadrageMobile: '50% 56%', sizes: '100vw', priorite: true })"
+  },
+  "grok/finition-lisse": {
+    "nom": "grok/finition-lisse",
+    "source": "recu/grok/finition-lisse.jpg",
+    "role": "carte-service",
+    "alt": "Enduit de façade lisse, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 3,
+    "empreinte": "d51c45f66876cdea",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "45% 41%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 96.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.61,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.59,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.56,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.55,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/finition-lisse-480.webp",
+      "grok/finition-lisse-640.webp",
+      "grok/finition-lisse-784.webp"
+    ],
+    "poids": {
+      "grok/finition-lisse-480.webp": 37088,
+      "grok/finition-lisse-640.webp": 85526,
+      "grok/finition-lisse-784.webp": 115832
+    },
+    "media": "c.media({ nom: 'grok/finition-lisse', alt: \"Enduit de façade lisse, gros plan\", cadrage: '45% 41%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/finition-grattee": {
+    "nom": "grok/finition-grattee",
+    "source": "recu/grok/finition-grattee.jpg",
+    "role": "carte-service",
+    "alt": "Enduit de façade gratté, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "db00a3fdd4b00d08",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "48% 60%",
+    "sujet": {
+      "x": 0,
+      "y": 3.1,
+      "l": 96.1,
+      "h": 96.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.45,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.39,
+        "ton": "clair"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/finition-grattee-480.webp",
+      "grok/finition-grattee-640.webp",
+      "grok/finition-grattee-784.webp"
+    ],
+    "poids": {
+      "grok/finition-grattee-480.webp": 87494,
+      "grok/finition-grattee-640.webp": 151332,
+      "grok/finition-grattee-784.webp": 191646
+    },
+    "media": "c.media({ nom: 'grok/finition-grattee', alt: \"Enduit de façade gratté, gros plan\", cadrage: '48% 60%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/finition-talochee": {
+    "nom": "grok/finition-talochee",
+    "source": "recu/grok/finition-talochee.jpg",
+    "role": "carte-service",
+    "alt": "Enduit de façade taloché, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "404d4b8114270600",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "47% 21%",
+    "sujet": {
+      "x": 0,
+      "y": 6.3,
+      "l": 96.1,
+      "h": 25
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.89,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.5,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.48,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/finition-talochee-480.webp",
+      "grok/finition-talochee-640.webp",
+      "grok/finition-talochee-784.webp"
+    ],
+    "poids": {
+      "grok/finition-talochee-480.webp": 32060,
+      "grok/finition-talochee-640.webp": 68686,
+      "grok/finition-talochee-784.webp": 92092
+    },
+    "media": "c.media({ nom: 'grok/finition-talochee', alt: \"Enduit de façade taloché, gros plan\", cadrage: '47% 21%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/finition-projetee": {
+    "nom": "grok/finition-projetee",
+    "source": "recu/grok/finition-projetee.jpg",
+    "role": "carte-service",
+    "alt": "Enduit de façade projeté, gros plan",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "1259888fd2c43e53",
+    "ratio": "2:3",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "30% 13%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 77.8,
+      "h": 31.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.64,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.46,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "clair"
+      },
+      {
+        "cote": "haut",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 779,
+      "height": 1168,
+      "source": [
+        784,
+        1168
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "784 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "grok/finition-projetee-480.webp",
+      "grok/finition-projetee-640.webp",
+      "grok/finition-projetee-784.webp"
+    ],
+    "poids": {
+      "grok/finition-projetee-480.webp": 105926,
+      "grok/finition-projetee-640.webp": 172536,
+      "grok/finition-projetee-784.webp": 215420
+    },
+    "media": "c.media({ nom: 'grok/finition-projetee', alt: \"Enduit de façade projeté, gros plan\", cadrage: '30% 13%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '2 / 3' })"
+  },
+  "grok/tuile-glissee": {
+    "nom": "grok/tuile-glissee",
+    "source": "recu/grok/hd/tuile-glissee.jpg",
+    "role": "404",
+    "alt": "Une tuile posée dans l'herbe au pied d'un mur",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "4be972926d558f8e",
+    "ratio": "16:9",
+    "largeurs": [
+      800,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "43% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 100,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.1,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 105,
+      "width": 1920,
+      "height": 1080,
+      "source": [
+        1920,
+        1289
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/tuile-glissee-800.webp",
+      "grok/tuile-glissee-1600.webp"
+    ],
+    "poids": {
+      "grok/tuile-glissee-800.webp": 49140,
+      "grok/tuile-glissee-1600.webp": 132482
+    },
+    "media": "c.media({ nom: 'grok/tuile-glissee', alt: \"Une tuile posée dans l'herbe au pied d'un mur\", cadrage: '43% 50%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "chantier-drone": {
+    "nom": "chantier-drone",
+    "source": "recu/site/prise-vue-drone-refection.webp",
+    "role": "galerie",
+    "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "20b2fc99421831b8",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 51%",
+    "sujet": {
+      "x": 12.5,
+      "y": 22,
+      "l": 81.1,
+      "h": 78
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 478,
+      "top": 0,
+      "width": 1080,
+      "height": 1440,
+      "source": [
+        1920,
+        1440
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-drone-480.webp",
+      "chantier-drone-640.webp",
+      "chantier-drone-960.webp"
+    ],
+    "poids": {
+      "chantier-drone-480.webp": 98458,
+      "chantier-drone-640.webp": 160262,
+      "chantier-drone-960.webp": 298908
+    },
+    "media": "c.media({ nom: 'chantier-drone', alt: \"Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins\", cadrage: '50% 51%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-faitage-vue": {
+    "nom": "chantier-faitage-vue",
+    "source": "recu/site/travaux-couverture-realises-entreprise.webp",
+    "role": "galerie",
+    "alt": "Faîtage et rive en zinc refaits, les toits voisins et les arbres au loin",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "737a3271c2d3b878",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "42% 33%",
+    "sujet": {
+      "x": 8.6,
+      "y": 17.6,
+      "l": 91.4,
+      "h": 30.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.18,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 646,
+      "top": 0,
+      "width": 1019,
+      "height": 1358,
+      "source": [
+        1920,
+        1358
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-faitage-vue-480.webp",
+      "chantier-faitage-vue-640.webp",
+      "chantier-faitage-vue-960.webp"
+    ],
+    "poids": {
+      "chantier-faitage-vue-480.webp": 45346,
+      "chantier-faitage-vue-640.webp": 79188,
+      "chantier-faitage-vue-960.webp": 166334
+    },
+    "media": "c.media({ nom: 'chantier-faitage-vue', alt: \"Faîtage et rive en zinc refaits, les toits voisins et les arbres au loin\", cadrage: '42% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-faitage": {
+    "nom": "chantier-faitage",
+    "source": "recu/site/pose-faitage-professionnel-entreprise.webp",
+    "role": "galerie",
+    "alt": "Un couvreur de l'entreprise pose le faîtage",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f10c4cdc5f212d12",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 44%",
+    "sujet": {
+      "x": 7.5,
+      "y": 20.9,
+      "l": 82.5,
+      "h": 77.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.43,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.26,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 515,
+      "top": 0,
+      "width": 539,
+      "height": 719,
+      "source": [
+        1600,
+        719
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 960"
+    ],
+    "avertissements": [
+      "agrandie 1,19 fois (source de 539 px après recadrage)",
+      "recadrage fort (34 % de l'image gardée) sur une image qui contient du texte (marque) : texte coupé probable, choisir un autre rôle ou une autre image"
+    ],
+    "fichiers": [
+      "chantier-faitage-480.webp",
+      "chantier-faitage-640.webp"
+    ],
+    "poids": {
+      "chantier-faitage-480.webp": 55896,
+      "chantier-faitage-640.webp": 78032
+    },
+    "media": "c.media({ nom: 'chantier-faitage', alt: \"Un couvreur de l'entreprise pose le faîtage\", cadrage: '50% 44%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-liteaux": {
+    "nom": "chantier-liteaux",
+    "source": "recu/site/pose-tuiles-orange.webp",
+    "role": "galerie",
+    "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "bec6f61f8b8cb549",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 39%",
+    "sujet": {
+      "x": 4.5,
+      "y": 1.3,
+      "l": 67.4,
+      "h": 98.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.04,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-liteaux-480.webp",
+      "chantier-liteaux-640.webp",
+      "chantier-liteaux-960.webp"
+    ],
+    "poids": {
+      "chantier-liteaux-480.webp": 66926,
+      "chantier-liteaux-640.webp": 105174,
+      "chantier-liteaux-960.webp": 188488
+    },
+    "media": "c.media({ nom: 'chantier-liteaux', alt: \"Liteaux posés sur l'écran, tuiles neuves prêtes à poser\", cadrage: '50% 39%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-ciel": {
+    "nom": "chantier-ciel",
+    "source": "recu/site/professionnel-batisse.webp",
+    "role": "galerie",
+    "alt": "Un couvreur sur la charpente ouverte, sous un ciel de nuages",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "102cc54b4a8ba704",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "53% 24%",
+    "sujet": {
+      "x": 45.2,
+      "y": 17.4,
+      "l": 14.7,
+      "h": 23.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-ciel-480.webp",
+      "chantier-ciel-640.webp",
+      "chantier-ciel-960.webp"
+    ],
+    "poids": {
+      "chantier-ciel-480.webp": 61944,
+      "chantier-ciel-640.webp": 102210,
+      "chantier-ciel-960.webp": 192810
+    },
+    "media": "c.media({ nom: 'chantier-ciel', alt: \"Un couvreur sur la charpente ouverte, sous un ciel de nuages\", cadrage: '53% 24%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-velux": {
+    "nom": "chantier-velux",
+    "source": "recu/site/fenetre-toit-nouvellement-posee.webp",
+    "role": "galerie",
+    "alt": "Fenêtre de toit posée entre les liteaux",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "a7e2632038244e33",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "55% 41%",
+    "sujet": {
+      "x": 28.9,
+      "y": 10.3,
+      "l": 59.6,
+      "h": 62.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.27,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.21,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.1,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.1,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-velux-480.webp",
+      "chantier-velux-640.webp",
+      "chantier-velux-960.webp"
+    ],
+    "poids": {
+      "chantier-velux-480.webp": 71408,
+      "chantier-velux-640.webp": 108602,
+      "chantier-velux-960.webp": 189746
+    },
+    "media": "c.media({ nom: 'chantier-velux', alt: \"Fenêtre de toit posée entre les liteaux\", cadrage: '55% 41%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-soudure": {
+    "nom": "chantier-soudure",
+    "source": "recu/site/artisan-sandero-couvreurs-40-2.webp",
+    "role": "galerie",
+    "alt": "Soudure d'une gouttière en zinc au fer à souder",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "4db39a0b7e787ca8",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "50% 33%",
+    "sujet": {
+      "x": 15.5,
+      "y": 7.7,
+      "l": 71.2,
+      "h": 58.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.57,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.46,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 55,
+      "top": 0,
+      "width": 900,
+      "height": 1200,
+      "source": [
+        955,
+        1200
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "955 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,07 fois (source de 900 px après recadrage)"
+    ],
+    "fichiers": [
+      "chantier-soudure-480.webp",
+      "chantier-soudure-640.webp",
+      "chantier-soudure-960.webp"
+    ],
+    "poids": {
+      "chantier-soudure-480.webp": 25240,
+      "chantier-soudure-640.webp": 35612,
+      "chantier-soudure-960.webp": 57154
+    },
+    "media": "c.media({ nom: 'chantier-soudure', alt: \"Soudure d'une gouttière en zinc au fer à souder\", cadrage: '50% 33%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-renovation": {
+    "nom": "chantier-renovation",
+    "source": "recu/site/renovation-toiture-professionnel.webp",
+    "role": "galerie",
+    "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "87124c0f72acb558",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "59% 50%",
+    "sujet": {
+      "x": 39.6,
+      "y": 33.9,
+      "l": 55.2,
+      "h": 48.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.28,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.13,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1500,
+      "height": 2000,
+      "source": [
+        1500,
+        2000
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-renovation-480.webp",
+      "chantier-renovation-640.webp",
+      "chantier-renovation-960.webp"
+    ],
+    "poids": {
+      "chantier-renovation-480.webp": 67792,
+      "chantier-renovation-640.webp": 106266,
+      "chantier-renovation-960.webp": 192792
+    },
+    "media": "c.media({ nom: 'chantier-renovation', alt: \"Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit\", cadrage: '59% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "chantier-ecran": {
+    "nom": "chantier-ecran",
+    "source": "recu/site/pose-isolant-impermeabilisant-sous.webp",
+    "role": "galerie",
+    "alt": "Pose de l'écran sous-toiture par un couvreur de l'entreprise",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2fda9daa61a98903",
+    "ratio": "3:4",
+    "largeurs": [
+      480,
+      640,
+      960
+    ],
+    "mobile": null,
+    "cadrage": "77% 55%",
+    "sujet": {
+      "x": 54,
+      "y": 45.8,
+      "l": 46,
+      "h": 29.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.42,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.2,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 250,
+      "top": 0,
+      "width": 750,
+      "height": 1000,
+      "source": [
+        1000,
+        1000
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,28 fois (source de 750 px après recadrage)"
+    ],
+    "fichiers": [
+      "chantier-ecran-480.webp",
+      "chantier-ecran-640.webp",
+      "chantier-ecran-960.webp"
+    ],
+    "poids": {
+      "chantier-ecran-480.webp": 52830,
+      "chantier-ecran-640.webp": 85726,
+      "chantier-ecran-960.webp": 136054
+    },
+    "media": "c.media({ nom: 'chantier-ecran', alt: \"Pose de l'écran sous-toiture par un couvreur de l'entreprise\", cadrage: '77% 55%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '3 / 4' })"
+  },
+  "artisan-gilet": {
+    "nom": "artisan-gilet",
+    "source": "recu/site/profesionnel-entreprise-pointant-doigt.webp",
+    "role": "portrait",
+    "alt": "Un artisan de l'entreprise, de dos, montre la gouttière d'une maison",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "011bbc57c110911e",
+    "ratio": "4:5",
+    "largeurs": [
+      480,
+      640,
+      784
+    ],
+    "mobile": null,
+    "cadrage": "50% 55%",
+    "sujet": {
+      "x": 8.1,
+      "y": 47.6,
+      "l": 91.9,
+      "h": 51.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.2,
+        "ton": "clair"
+      },
+      {
+        "cote": "droite",
+        "score": 0.16,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.05,
+        "ton": "clair"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1163,
+      "height": 1454,
+      "source": [
+        1920,
+        1454
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "artisan-gilet-480.webp",
+      "artisan-gilet-640.webp",
+      "artisan-gilet-784.webp"
+    ],
+    "poids": {
+      "artisan-gilet-480.webp": 49218,
+      "artisan-gilet-640.webp": 85782,
+      "artisan-gilet-784.webp": 123618
+    },
+    "media": "c.media({ nom: 'artisan-gilet', alt: \"Un artisan de l'entreprise, de dos, montre la gouttière d'une maison\", cadrage: '50% 55%', sizes: '(max-width: 760px) 100vw, 40vw', ratio: '4 / 5' })"
+  },
+  "camion": {
+    "nom": "camion",
+    "source": "recu/site/travaux-cours-realisation-chez.webp",
+    "role": "vignette",
+    "alt": "Utilitaire floqué Artisan Sandero devant un chantier",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "503bbc64ab82763f",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "47% 50%",
+    "sujet": {
+      "x": 16,
+      "y": 0,
+      "l": 60.1,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.19,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0.17,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.01,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 151,
+      "width": 510,
+      "height": 340,
+      "source": [
+        510,
+        510
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 800",
+      "510 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 510 px après recadrage)"
+    ],
+    "fichiers": [
+      "camion-480.webp",
+      "camion-640.webp"
+    ],
+    "poids": {
+      "camion-480.webp": 21820,
+      "camion-640.webp": 30346
+    },
+    "media": "c.media({ nom: 'camion', alt: \"Utilitaire floqué Artisan Sandero devant un chantier\", cadrage: '47% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "chantier-cheneau-pliage": {
+    "nom": "chantier-cheneau-pliage",
+    "source": "recu/site/creation-cheneaux-entreprise.webp",
+    "role": "vignette",
+    "alt": "Création d'un chéneau en zinc par l'entreprise",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "981142b007925d55",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "42% 50%",
+    "sujet": {
+      "x": 0,
+      "y": 0,
+      "l": 81.5,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.14,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.05,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.02,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 39,
+      "width": 510,
+      "height": 340,
+      "source": [
+        510,
+        510
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 800",
+      "510 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 510 px après recadrage)"
+    ],
+    "fichiers": [
+      "chantier-cheneau-pliage-480.webp",
+      "chantier-cheneau-pliage-640.webp"
+    ],
+    "poids": {
+      "chantier-cheneau-pliage-480.webp": 22118,
+      "chantier-cheneau-pliage-640.webp": 30856
+    },
+    "media": "c.media({ nom: 'chantier-cheneau-pliage', alt: \"Création d'un chéneau en zinc par l'entreprise\", cadrage: '42% 50%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "chantier-cheneau": {
+    "nom": "chantier-cheneau",
+    "source": "recu/site/changement-cheneaux-chez-particulier.webp",
+    "role": "vignette",
+    "alt": "Chéneau en zinc neuf posé chez un particulier",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "18b9bd05e945330f",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640
+    ],
+    "mobile": null,
+    "cadrage": "50% 50%",
+    "sujet": {
+      "x": 28.7,
+      "y": 0,
+      "l": 45.2,
+      "h": 100
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.22,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.2,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.18,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.11,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 9,
+      "width": 510,
+      "height": 340,
+      "source": [
+        510,
+        510
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "largeurs retirées (source trop petite) : 800",
+      "510 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,25 fois (source de 510 px après recadrage)"
+    ],
+    "fichiers": [
+      "chantier-cheneau-480.webp",
+      "chantier-cheneau-640.webp"
+    ],
+    "poids": {
+      "chantier-cheneau-480.webp": 36686,
+      "chantier-cheneau-640.webp": 52754
+    },
+    "media": "c.media({ nom: 'chantier-cheneau', alt: \"Chéneau en zinc neuf posé chez un particulier\", sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "chantier-facade": {
+    "nom": "chantier-facade",
+    "source": "recu/site/nettoyage-facade.webp",
+    "role": "vignette",
+    "alt": "Nettoyage de la façade d'un pavillon, échelle contre le mur",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "dfda424b9955e3ce",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "31% 44%",
+    "sujet": {
+      "x": 23.9,
+      "y": 27.7,
+      "l": 15.6,
+      "h": 53.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.45,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0.45,
+        "ton": "moyen"
+      },
+      {
+        "cote": "haut",
+        "score": 0.25,
+        "ton": "moyen"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.23,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1074,
+      "height": 716,
+      "source": [
+        1595,
+        716
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-facade-480.webp",
+      "chantier-facade-640.webp",
+      "chantier-facade-800.webp"
+    ],
+    "poids": {
+      "chantier-facade-480.webp": 18048,
+      "chantier-facade-640.webp": 27898,
+      "chantier-facade-800.webp": 38500
+    },
+    "media": "c.media({ nom: 'chantier-facade', alt: \"Nettoyage de la façade d'un pavillon, échelle contre le mur\", cadrage: '31% 44%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "chantier-echafaudage": {
+    "nom": "chantier-echafaudage",
+    "source": "recu/site/travaux-cours-chez-particulier.webp",
+    "role": "vignette",
+    "alt": "Échafaudage contre la façade d'une maison pendant les travaux",
+    "grok": false,
+    "mention": null,
+    "beaute": 2,
+    "empreinte": "8ff7d3cb960ba5cb",
+    "ratio": "3:2",
+    "largeurs": [
+      480,
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "48% 53%",
+    "sujet": {
+      "x": 12.2,
+      "y": 18.8,
+      "l": 87.6,
+      "h": 81.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.31,
+        "ton": "clair"
+      },
+      {
+        "cote": "gauche",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "droite",
+        "score": 0,
+        "ton": "moyen"
+      },
+      {
+        "cote": "bas",
+        "score": 0,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 1000,
+      "height": 667,
+      "source": [
+        1000,
+        667
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "1000 px de large"
+    ],
+    "avertissements": [],
+    "fichiers": [
+      "chantier-echafaudage-480.webp",
+      "chantier-echafaudage-640.webp",
+      "chantier-echafaudage-800.webp"
+    ],
+    "poids": {
+      "chantier-echafaudage-480.webp": 31216,
+      "chantier-echafaudage-640.webp": 51576,
+      "chantier-echafaudage-800.webp": 74432
+    },
+    "media": "c.media({ nom: 'chantier-echafaudage', alt: \"Échafaudage contre la façade d'une maison pendant les travaux\", cadrage: '48% 53%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '3 / 2' })"
+  },
+  "label-artisan": {
+    "nom": "label-artisan",
+    "source": "recu/site/logotype-label-artisan.webp",
+    "role": "logo",
+    "alt": "Label Artisan",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "22fecf4be3de3822",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "label-artisan-240.webp",
+      "label-artisan-480.webp"
+    ],
+    "poids": {
+      "label-artisan-240.webp": 2486,
+      "label-artisan-480.webp": 5294
+    },
+    "media": "c.media({ nom: 'label-artisan', alt: \"Label Artisan\", sizes: '240px' })"
+  },
+  "label-qualibat": {
+    "nom": "label-qualibat",
+    "source": "recu/site/qualibat-68e578df-640w.webp",
+    "role": "logo",
+    "alt": "Qualibat",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "95cf49c6b26ce622",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "label-qualibat-240.webp",
+      "label-qualibat-480.webp"
+    ],
+    "poids": {
+      "label-qualibat-240.webp": 5018,
+      "label-qualibat-480.webp": 10380
+    },
+    "media": "c.media({ nom: 'label-qualibat', alt: \"Qualibat\", sizes: '240px' })"
+  },
+  "label-decennale": {
+    "nom": "label-decennale",
+    "source": "recu/site/garantie-decennale-640w.webp",
+    "role": "logo",
+    "alt": "Garantie décennale",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "12903d8390b1780b",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "label-decennale-240.webp",
+      "label-decennale-480.webp"
+    ],
+    "poids": {
+      "label-decennale-240.webp": 4278,
+      "label-decennale-480.webp": 8592
+    },
+    "media": "c.media({ nom: 'label-decennale', alt: \"Garantie décennale\", sizes: '240px' })"
+  },
+  "label-toutes-hauteurs": {
+    "nom": "label-toutes-hauteurs",
+    "source": "recu/site/toutes-hauteurs-640w.webp",
+    "role": "logo",
+    "alt": "Toutes hauteurs",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "3b356203250e12b0",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "label-toutes-hauteurs-240.webp",
+      "label-toutes-hauteurs-480.webp"
+    ],
+    "poids": {
+      "label-toutes-hauteurs-240.webp": 3998,
+      "label-toutes-hauteurs-480.webp": 7420
+    },
+    "media": "c.media({ nom: 'label-toutes-hauteurs', alt: \"Toutes hauteurs\", sizes: '240px' })"
+  },
+  "marque-velux": {
+    "nom": "marque-velux",
+    "source": "recu/site/velux-640w.webp",
+    "role": "logo",
+    "alt": "Velux",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "5c7ceb94693c3482",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-velux-240.webp",
+      "marque-velux-480.webp"
+    ],
+    "poids": {
+      "marque-velux-240.webp": 2936,
+      "marque-velux-480.webp": 5246
+    },
+    "media": "c.media({ nom: 'marque-velux', alt: \"Velux\", sizes: '240px' })"
+  },
+  "marque-tollens": {
+    "nom": "marque-tollens",
+    "source": "recu/site/tollens-640w.webp",
+    "role": "logo",
+    "alt": "Tollens",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "dfdfb3c25bef97b1",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-tollens-240.webp",
+      "marque-tollens-480.webp"
+    ],
+    "poids": {
+      "marque-tollens-240.webp": 5708,
+      "marque-tollens-480.webp": 11126
+    },
+    "media": "c.media({ nom: 'marque-tollens', alt: \"Tollens\", sizes: '240px' })"
+  },
+  "marque-sikkens": {
+    "nom": "marque-sikkens",
+    "source": "recu/site/sikkens-640w.webp",
+    "role": "logo",
+    "alt": "Sikkens",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "b457f2efb9e0ece1",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-sikkens-240.webp",
+      "marque-sikkens-480.webp"
+    ],
+    "poids": {
+      "marque-sikkens-240.webp": 5284,
+      "marque-sikkens-480.webp": 9466
+    },
+    "media": "c.media({ nom: 'marque-sikkens', alt: \"Sikkens\", sizes: '240px' })"
+  },
+  "marque-maestria": {
+    "nom": "marque-maestria",
+    "source": "recu/site/maestria-640w.webp",
+    "role": "logo",
+    "alt": "Maestria",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "5e464ceadc1f3632",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-maestria-240.webp",
+      "marque-maestria-480.webp"
+    ],
+    "poids": {
+      "marque-maestria-240.webp": 12724,
+      "marque-maestria-480.webp": 34322
+    },
+    "media": "c.media({ nom: 'marque-maestria', alt: \"Maestria\", sizes: '240px' })"
+  },
+  "marque-cimentol": {
+    "nom": "marque-cimentol",
+    "source": "recu/site/cimentol-640w.webp",
+    "role": "logo",
+    "alt": "Cimentol",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "ba3fa4ebc4c84d71",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-cimentol-240.webp",
+      "marque-cimentol-480.webp"
+    ],
+    "poids": {
+      "marque-cimentol-240.webp": 2856,
+      "marque-cimentol-480.webp": 5758
+    },
+    "media": "c.media({ nom: 'marque-cimentol', alt: \"Cimentol\", sizes: '240px' })"
+  },
+  "marque-dalep": {
+    "nom": "marque-dalep",
+    "source": "recu/site/dalep-640w.webp",
+    "role": "logo",
+    "alt": "Dalep",
+    "grok": false,
+    "mention": null,
+    "beaute": null,
+    "empreinte": "367dacadc3cd82fc",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "marque-dalep-240.webp",
+      "marque-dalep-480.webp"
+    ],
+    "poids": {
+      "marque-dalep-240.webp": 6758,
+      "marque-dalep-480.webp": 14888
+    },
+    "media": "c.media({ nom: 'marque-dalep', alt: \"Dalep\", sizes: '240px' })"
+  }
+}

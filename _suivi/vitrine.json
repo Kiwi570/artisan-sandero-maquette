@@ -1,0 +1,222 @@
+{
+ "explication": "Vitrine du projet : des ouvertures de la bibliothèque à dépasser, jamais à imiter (ni leur idée, ni leur mise en page).",
+ "activite": [
+  "bâtiment"
+ ],
+ "metier": "couvreur",
+ "besoin": [
+  "devis",
+  "zone-d-intervention"
+ ],
+ "ton": [
+  "chaleureux"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "artisan-sandero-maquette",
+ "ecartees": [],
+ "ouvertures": [
+  {
+   "rang": 1,
+   "id": "h-renovation-maquette/haut",
+   "maquette": "h-renovation-maquette",
+   "client": "couvreur et entreprise de rénovation (toiture, façade, isolation) dans le Val-d'Oise",
+   "metier": "couvreur, rénovation",
+   "activite": [
+    "bâtiment"
+   ],
+   "pourquoi": [
+    "même métier",
+    "besoin devis, zone-d-intervention",
+    "clair et sombre alternés (73 % sombre)",
+    "webgl"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 73,
+   "note_section": 5,
+   "note_maquette": 89,
+   "titre": "Pluie sur la vitre",
+   "description": "Héros sombre : la photo est vue à travers la vitre d'une fenêtre de toit où la pluie ruisselle en WebGL (OGL), gouttelettes de buée et traînées claires ; on essuie la buée du doigt ou de la souris, et la pluie se raréfie jusqu'à l'éclaircie au défilement. Titre en capitales cuivre, deux boutons. Repli sur la photo seule sans WebGL.",
+   "familles": [
+    "webgl"
+   ],
+   "plan": null,
+   "module": "pluie-sur-vitre",
+   "fiche": "sections/h-renovation-maquette/haut.json",
+   "capture": "medias/h-renovation-maquette/haut-p1440.jpg",
+   "video": "medias/h-renovation-maquette/haut-p720.mp4",
+   "en_ligne": "https://h-renovation-maquette.vercel.app"
+  },
+  {
+   "rang": 2,
+   "id": "budgetravaux-maquette/debut",
+   "maquette": "budgetravaux-maquette",
+   "client": "dépannage plomberie, chauffage, électricité et rénovation tous corps d'état dans l'Oise",
+   "metier": "plombier dépanneur",
+   "activite": [
+    "bâtiment"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin devis, zone-d-intervention",
+    "clair et sombre alternés (73 % sombre)",
+    "lumiere-pointeur",
+    "webgl",
+    "masque"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 73,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Une fuite. Une panne. On arrive.",
+   "description": "« Une fuite. Une panne. On arrive. » : lampe torche WebGL qui suit la souris et révèle le réseau de tuyaux et de câbles derrière le mur, ticket du premier forfait",
+   "familles": [
+    "lumiere-pointeur",
+    "webgl",
+    "masque"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/budgetravaux-maquette/debut.json",
+   "capture": "medias/budgetravaux-maquette/debut-p1440.jpg",
+   "video": "medias/budgetravaux-maquette/debut-p720.mp4",
+   "en_ligne": "https://budgetravaux-maquette.vercel.app"
+  },
+  {
+   "rang": 3,
+   "id": "swiss-cloisons-solutions-maquette/hero",
+   "maquette": "swiss-cloisons-solutions-maquette",
+   "client": "entreprise d'aménagement intérieur de bureaux (cloisons, faux-plafonds, planchers techniques) à Genève",
+   "metier": "aménagement de bureaux",
+   "activite": [
+    "bâtiment",
+    "services-b2b"
+   ],
+   "pourquoi": [
+    "même activité",
+    "besoin devis, zone-d-intervention",
+    "clair et sombre alternés (36 % sombre)",
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "lumiere": "mixte",
+   "part_sombre": 36,
+   "note_section": 5,
+   "note_maquette": 85,
+   "titre": "Vitre coulissante",
+   "description": "Sur la photo d'un plateau de bureaux, deux panneaux vitrés bord à bord rendus en WebGL (OGL) avec réfraction sur les chants, liseré chromatique, reflet, bande dépolie et profilés alu ; la vitre suit le pointeur puis se referme au défilement. Sans WebGL ou en mode calme, une vitre CSS reste et la photo est intacte.",
+   "familles": [
+    "lumiere-pointeur",
+    "webgl"
+   ],
+   "plan": null,
+   "module": null,
+   "fiche": "sections/swiss-cloisons-solutions-maquette/hero.json",
+   "capture": "medias/swiss-cloisons-solutions-maquette/hero-p1440.jpg",
+   "video": "medias/swiss-cloisons-solutions-maquette/hero-p720.mp4",
+   "en_ligne": "https://swiss-cloisons-solutions-maquette.vercel.app"
+  },
+  {
+   "rang": 4,
+   "id": "sequoia-studio-maquette/debut",
+   "maquette": "sequoia-studio-maquette",
+   "client": "galerie en ligne d'œuvres d'art mural en éditions limitées (impressions FineArt, caisses américaines, certificats d'authenticité)",
+   "metier": "galerie d'art en ligne",
+   "activite": [
+    "culture",
+    "commerce"
+   ],
+   "pourquoi": [
+    "style sombre (100 % sombre)",
+    "lumiere-pointeur",
+    "masque",
+    "curseur-vivant"
+   ],
+   "lumiere": "sombre",
+   "part_sombre": 100,
+   "note_section": 5,
+   "note_maquette": 87,
+   "titre": "Des œuvres originales prêtes à sublimer vos espaces.",
+   "description": "« Des œuvres originales prêtes à sublimer vos espaces » : une œuvre accrochée dans le noir, éclairée par un projecteur qui suit la souris",
+   "familles": [
+    "lumiere-pointeur",
+    "masque",
+    "curseur-vivant"
+   ],
+   "plan": "recit-lineaire",
+   "module": null,
+   "fiche": "sections/sequoia-studio-maquette/debut.json",
+   "capture": "medias/sequoia-studio-maquette/debut-p1440.jpg",
+   "video": null,
+   "en_ligne": "https://sequoia-studio-maquette.vercel.app"
+  },
+  {
+   "rang": 5,
+   "id": "nolanis-maquette/debut",
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "activite": [
+    "services-b2b",
+    "média"
+   ],
+   "pourquoi": [
+    "besoin devis",
+    "style clair (0 % sombre)",
+    "objet-manipulable",
+    "vitesse",
+    "webgl"
+   ],
+   "lumiere": "clair",
+   "part_sombre": 0,
+   "note_section": 5,
+   "note_maquette": 86,
+   "titre": "Votre agence de communication visuelle à Strasbourg",
+   "description": "Épreuve plein cadre de nuanciers et encres ; repère de calage à faire tourner (élan, doigt, clavier) : plus il tourne vite, plus la photo se décale en quatre couleurs, puis tout se cale ; gouttes d'encre quand on le lance fort",
+   "familles": [
+    "objet-manipulable",
+    "vitesse",
+    "webgl"
+   ],
+   "plan": "recit-lineaire",
+   "module": "objet-a-faire-tourner",
+   "fiche": "sections/nolanis-maquette/debut.json",
+   "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+   "video": "medias/nolanis-maquette/debut-p720.mp4",
+   "en_ligne": "https://nolanis-maquette.vercel.app"
+  },
+  {
+   "rang": 6,
+   "id": "nelis-maquette/haut",
+   "maquette": "nelis-maquette",
+   "client": "froid industriel (vente, location et service de groupes frigorifiques)",
+   "metier": "froid industriel",
+   "activite": [
+    "industrie",
+    "services-b2b"
+   ],
+   "pourquoi": [
+    "activité proche",
+    "besoin devis",
+    "style sombre (92 % sombre)",
+    "webgl"
+   ],
+   "lumiere": "sombre",
+   "part_sombre": 92,
+   "note_section": 5,
+   "note_maquette": 89,
+   "titre": "Héros givré en WebGL",
+   "description": "Photo produit plein cadre recouverte d'un givre en shader (OGL : bruit fractal, crêtes et cellules de Voronoï) qui pousse depuis les bords et autour du titre, puis fond le long du titre ; la souris fait fondre le givre (texture de fonte dessinée en canvas 2D qui se regèle lentement). Titre découpé en lignes qui montent, repli en givre statique sans WebGL.",
+   "familles": [
+    "webgl"
+   ],
+   "plan": null,
+   "module": "givre-webgl",
+   "fiche": "sections/nelis-maquette/haut.json",
+   "capture": "medias/nelis-maquette/haut-p1440.jpg",
+   "video": "medias/nelis-maquette/haut-p720.mp4",
+   "en_ligne": "https://nelis-maquette.vercel.app"
+  }
+ ]
+}

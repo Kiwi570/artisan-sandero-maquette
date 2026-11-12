@@ -1,0 +1,75 @@
+{
+ "mission": "prix",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.2,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 9295,
+   "titres": [
+    "h1 Ce qui se passe sous les tuiles, une famille le sait."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "Demander un devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Devis gratuit",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 5,
+   "adresse": "/devis",
+   "y": 0,
+   "hauteurPage": 2206,
+   "titres": [
+    "h1 Votre chantier, en quelques étapes.",
+    "h2 Demande de devis"
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "01 76 29 26 34",
+    "Demande de devis"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-1.png"
+  }
+ ]
+}

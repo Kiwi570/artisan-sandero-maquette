@@ -1,0 +1,186 @@
+{
+ "mission": "signes-charpente",
+ "taille": "1440x900",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.3,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 9295,
+   "titres": [
+    "h1 Ce qui se passe sous les tuiles, une famille le sait."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "Demander un devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "cliquer Zinguerie et charpente",
+   "resultat": "ok",
+   "gestes": 1,
+   "secondes": 4.6,
+   "adresse": "/zinguerie-charpente",
+   "y": 0,
+   "hauteurPage": 4513,
+   "titres": [
+    "h1 Zinguerie et charpente"
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Couverture",
+    "Zinguerie et charpente",
+    "Peinture et façades",
+    "Devis et contact",
+    "Devis gratuit",
+    "Demander un devis zinguerie",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 2,
+   "geste": "defiler 4",
+   "resultat": "ok",
+   "gestes": 5,
+   "secondes": 7.6,
+   "adresse": "/zinguerie-charpente",
+   "y": 3060,
+   "hauteurPage": 4513,
+   "titres": [
+    "h3 Les signes qui doivent alerter",
+    "h2 Une fuite, une poutre qui travaille ?"
+   ],
+   "actions": [
+    "Demander un diagnostic de charpente",
+    "Devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 3,
+   "geste": "cliquer Traces d'humidité",
+   "resultat": "introuvable dans l'écran : « Traces d'humidité »",
+   "gestes": 6,
+   "secondes": 7.6,
+   "adresse": "/zinguerie-charpente",
+   "y": 3060,
+   "hauteurPage": 4513,
+   "titres": [
+    "h3 Les signes qui doivent alerter",
+    "h2 Une fuite, une poutre qui travaille ?"
+   ],
+   "actions": [
+    "Demander un diagnostic de charpente",
+    "Devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 4,
+   "geste": "attendre 1500",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 9.1,
+   "adresse": "/zinguerie-charpente",
+   "y": 3060,
+   "hauteurPage": 4513,
+   "titres": [
+    "h3 Les signes qui doivent alerter",
+    "h2 Une fuite, une poutre qui travaille ?"
+   ],
+   "actions": [
+    "Demander un diagnostic de charpente",
+    "Devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false
+  },
+  {
+   "k": 5,
+   "geste": "capture",
+   "resultat": "ok",
+   "gestes": 6,
+   "secondes": 9.1,
+   "adresse": "/zinguerie-charpente",
+   "y": 3060,
+   "hauteurPage": 4513,
+   "titres": [
+    "h3 Les signes qui doivent alerter",
+    "h2 Une fuite, une poutre qui travaille ?"
+   ],
+   "actions": [
+    "Demander un diagnostic de charpente",
+    "Devis gratuit",
+    "01 76 29 26 34"
+   ],
+   "prixVus": [],
+   "telephonesVus": [
+    "01 76 29 26 34"
+   ],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-5.png"
+  }
+ ]
+}

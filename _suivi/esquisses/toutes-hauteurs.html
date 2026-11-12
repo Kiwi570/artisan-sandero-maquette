@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Esquisse · Toutes hauteurs</title>
+<style>
+@font-face{font-family:"Epilogue";src:url(polices/epilogue-latin-900-normal.woff2) format("woff2");font-weight:900}
+@font-face{font-family:"Epilogue";src:url(polices/epilogue-latin-500-normal.woff2) format("woff2");font-weight:500}
+@font-face{font-family:"Epilogue";src:url(polices/epilogue-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Martian Mono";src:url(polices/martian-mono-latin-400-normal.woff2) format("woff2");font-weight:400}
+@font-face{font-family:"Martian Mono";src:url(polices/martian-mono-latin-500-normal.woff2) format("woff2");font-weight:500}
+:root{--enduit:#f5f3ee;--encre:#121518;--doux:#565b60;--rouge:#d3261d;--alu:#b9c0c5;--ombre:rgba(18,21,24,.14)}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:var(--enduit)}
+body{font-family:"Epilogue",system-ui,sans-serif;color:var(--encre);overflow:hidden}
+header{position:absolute;inset:0 0 auto;display:flex;align-items:center;gap:26px;padding:18px 40px;z-index:6;background:var(--enduit);box-shadow:0 1px 0 var(--ombre)}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--encre);font-weight:900;letter-spacing:.04em;font-size:16px}
+.marque img{height:30px;mix-blend-mode:multiply}.marque span{color:var(--rouge)}
+nav{display:flex;gap:24px;margin-left:auto;font-size:14.5px;font-weight:500}
+nav a{color:var(--encre);text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rouge);color:#fff;padding:13px 20px;font-weight:500;font-size:15px;text-decoration:none;border-radius:2px}
+.btn.trait{background:transparent;color:var(--encre);box-shadow:inset 0 0 0 1.5px var(--encre)}
+.photo{position:absolute;top:70px;bottom:0;right:0;width:58%;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:38% 40%}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--enduit) 0,rgba(245,243,238,0) 16%)}
+.jauge{position:absolute;top:0;bottom:0;left:40%;width:120px;z-index:3;font-family:"Martian Mono";font-size:11px;color:var(--doux)}
+.jauge::before{content:"";position:absolute;left:52px;top:96px;bottom:40px;width:1.5px;background:var(--encre)}
+.jauge span{position:absolute;left:0;width:52px;text-align:right;padding-right:10px;transform:translateY(-50%)}
+.jauge span::after{content:"";position:absolute;left:52px;top:50%;width:14px;height:1.5px;background:var(--encre)}
+.jauge span.ici{color:var(--rouge);font-weight:500}.jauge span.ici::after{width:26px;background:var(--rouge);height:2.5px}
+.texte{position:absolute;left:40px;top:122px;width:38%;z-index:4}
+.sur{font-family:"Martian Mono";font-size:12px;letter-spacing:.06em;color:var(--rouge)}
+h1{font-weight:900;font-size:clamp(60px,7.6vw,124px);line-height:.86;letter-spacing:-.035em;margin-top:18px;text-transform:uppercase}
+p.chapo{margin-top:24px;font-size:17px;line-height:1.5;color:var(--doux);max-width:34ch}
+.actions{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.lecture{margin-top:26px;display:inline-grid;grid-template-columns:auto auto;gap:4px 18px;font-family:"Martian Mono";font-size:12px;color:var(--doux);padding:14px 16px;border:1.5px solid var(--encre);background:rgba(245,243,238,.9)}
+.lecture b{font-family:"Epilogue";font-weight:900;font-size:26px;color:var(--encre)}
+.echelle{position:absolute;z-index:4;right:22%;bottom:-24px;height:80%;width:132px;transform:rotate(-9deg);transform-origin:50% 100%;filter:drop-shadow(14px 18px 10px rgba(0,0,0,.28))}
+.poignee{position:absolute;z-index:5;right:calc(21% + 160px);top:24%;font-family:"Martian Mono";font-size:11px;letter-spacing:.06em;background:var(--encre);color:#fff;padding:8px 11px}
+.poignee::after{content:"";position:absolute;right:-30px;top:50%;width:30px;height:1.5px;background:var(--encre)}
+.label{position:absolute;z-index:5;left:40px;bottom:28px;display:flex;gap:18px;align-items:center;font-size:13px;color:var(--doux)}
+.label img{height:42px;mix-blend-mode:multiply}
+@media (max-width:760px){
+  header{padding:14px 18px;gap:10px}nav{display:none}
+  .marque img{height:24px}.marque{font-size:14px}
+  header .btn{margin-left:auto;padding:10px 12px;font-size:13px}
+  .photo{width:100%;top:auto;height:44%}
+  .photo::after{background:linear-gradient(180deg,var(--enduit) 0,rgba(245,243,238,0) 24%)}
+  .texte{left:18px;right:18px;width:auto;top:78px}
+  h1{font-size:58px}p.chapo{font-size:15px;margin-top:14px}
+  .actions .trait{display:none}.lecture{display:none}
+  .jauge{left:auto;right:0;width:70px;top:44%;font-size:9.5px}.jauge::before{left:40px;top:10px}
+  .jauge span{width:40px}.jauge span::after{left:40px;width:10px}
+  .echelle{right:30%;height:40%;width:90px}
+  .poignee{right:12px;top:auto;bottom:34%}.poignee::after{display:none}
+  .label{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="marque" href="#"><img src="/recu/site/logo-logotype-top-1920w-sombre.webp" alt="">ARTISAN <span>SANDERO</span></a>
+  <nav><a href="#">Du sol au faîtage</a><a href="#">Couverture</a><a href="#">Zinguerie</a><a href="#">Charpente</a><a href="#">Façades</a><a href="#">Contact</a></nav>
+  <a class="btn" href="#">Devis gratuit</a>
+</header>
+
+<div class="photo"><img src="/recu/site/profesionnel-entreprise-pointant-doigt.webp" alt="Un artisan de l'entreprise montre la gouttière d'une maison"></div>
+
+<div class="jauge" aria-hidden="true">
+  <span style="top:14%">12 m</span><span style="top:30%" class="ici">9 m</span><span style="top:47%">6 m</span><span style="top:64%">3 m</span><span style="top:84%">0 m</span>
+</div>
+
+<div class="texte">
+  <p class="sur">Taverny · 95 · depuis 2006 · de père en fils</p>
+  <h1>Toutes<br>hauteurs.</h1>
+  <p class="chapo">De la façade au faîtage : ravalement, peinture, zinguerie, couverture et charpente. On monte, on regarde, on vous explique.</p>
+  <div class="actions"><a class="btn" href="#">Demander un devis gratuit</a><a class="btn trait" href="#">01 76 29 26 34</a></div>
+  <div class="lecture"><span>Votre maison</span><span>Échelle</span><b>2 étages</b><b>≈ 9 m</b></div>
+</div>
+
+<svg class="echelle" viewBox="0 0 150 1000" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="alu" x1="0" x2="1"><stop offset="0" stop-color="#7f878d"/><stop offset=".35" stop-color="#e9edef"/><stop offset=".55" stop-color="#c3c9cd"/><stop offset="1" stop-color="#6d757b"/></linearGradient>
+    <linearGradient id="barreau" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2f4f5"/><stop offset=".5" stop-color="#aab1b6"/><stop offset="1" stop-color="#6c7378"/></linearGradient>
+  </defs>
+  <g id="plan">
+    <rect x="14" y="0" width="16" height="1000" rx="2" fill="url(#alu)"/>
+    <rect x="120" y="0" width="16" height="1000" rx="2" fill="url(#alu)"/>
+  </g>
+  <rect x="30" y="0" width="90" height="1000" fill="none"/>
+  <g fill="url(#barreau)">
+    <rect x="28" y="40" width="94" height="11" rx="5"/><rect x="28" y="110" width="94" height="11" rx="5"/><rect x="28" y="180" width="94" height="11" rx="5"/><rect x="28" y="250" width="94" height="11" rx="5"/><rect x="28" y="320" width="94" height="11" rx="5"/><rect x="28" y="390" width="94" height="11" rx="5"/><rect x="28" y="460" width="94" height="11" rx="5"/><rect x="28" y="530" width="94" height="11" rx="5"/><rect x="28" y="600" width="94" height="11" rx="5"/><rect x="28" y="670" width="94" height="11" rx="5"/><rect x="28" y="740" width="94" height="11" rx="5"/><rect x="28" y="810" width="94" height="11" rx="5"/><rect x="28" y="880" width="94" height="11" rx="5"/>
+  </g>
+  <rect x="8" y="455" width="28" height="40" rx="3" fill="#2a2e31"/><rect x="114" y="455" width="28" height="40" rx="3" fill="#2a2e31"/>
+  <rect x="10" y="968" width="24" height="32" rx="3" fill="#1d2022"/><rect x="116" y="968" width="24" height="32" rx="3" fill="#1d2022"/>
+</svg>
+<div class="poignee">↕ Tirez l'échelle</div>
+
+<div class="label"><img src="/recu/site/toutes-hauteurs-640w.webp" alt="Label Toutes hauteurs"><span>Couvreurs harnachés · garantie décennale</span></div>
+</body>
+</html>

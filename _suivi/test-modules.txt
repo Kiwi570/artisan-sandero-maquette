@@ -1,0 +1,11 @@
+{
+ "formats": "ok",
+ "reduire-animations": "ok",
+ "sans-webgl": "n/a",
+ "console": "0 erreur",
+ "cls": 0,
+ "scenario": "ok",
+ "texte-12px": "ok",
+ "cibles-44px": "ok"
+}
+ressources d'autres sites non chargées (réseau de la session, sans effet sur les tests) : fonts.googleapis.com

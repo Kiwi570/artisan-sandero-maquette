@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devis gratuit et contact · Artisan Sandero</title>
+<meta name="description" content="Décrivez votre chantier en quelques étapes. Lundi au samedi, 8 h à 20 h, au 01 76 29 26 34.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://artisan-sandero-maquette.vercel.app/devis">
+<style>:root{--fond:#f2ebe1;--texte:#22180f;--voile-fond:#85391d;--ouverture-fond:#f2ebe1;--menu-fond:#1b1c1e}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#f2ebe1">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Artisan Sandero">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Devis gratuit et contact · Artisan Sandero">
+<meta property="og:description" content="Décrivez votre chantier en quelques étapes. Lundi au samedi, 8 h à 20 h, au 01 76 29 26 34.">
+<meta property="og:url" content="https://artisan-sandero-maquette.vercel.app/devis">
+<meta property="og:image" content="https://artisan-sandero-maquette.vercel.app/assets/partage/devis-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Devis gratuit Artisan Sandero">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RoofingContractor","name":"Artisan Sandero","legalName":"HORTICA DANY (SANDERO ARTISAN)","url":"https://artisan-sandero-maquette.vercel.app/","telephone":"+33176292634","email":"sandero.artisan95@gmail.com","foundingDate":"2006","address":{"@type":"PostalAddress","streetAddress":"105 rue du Maréchal-Foch","postalCode":"95150","addressLocality":"Taverny","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"}],"areaServed":["Taverny","Saint-Leu-la-Forêt","Ermont","Eaubonne","Cormeilles-en-Parisis"],"description":"Couverture, zinguerie, charpente, peinture et ravalement à Taverny et alentour. Entreprise familiale depuis 2006."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="tuiles" aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-marque-240.webp" alt="" width="96" height="44"><span data-voile-libelle>Devis et contact</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <img class="ouverture-logo" src="/assets/images/logo-marque-480.webp" alt="" width="160" height="74" data-ouverture-objet>
+  <p class="ouverture-nom">ARTISAN <b>SANDERO</b></p>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Couvreur-zingueur · Taverny · depuis 2006</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" aria-label="Artisan Sandero, accueil" data-libelle="Accueil">
+      <img src="/assets/images/logo-marque-240.webp" alt="" width="72" height="33"><span class="entete-nom">ARTISAN <b>SANDERO</b></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact" aria-current="page">Devis et contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/couverture" class="menu-lien" data-libelle="Couverture">Couverture</a></li><li style="--i:2"><a href="/zinguerie-charpente" class="menu-lien" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li style="--i:3"><a href="/facades" class="menu-lien" data-libelle="Peinture et façades">Peinture et façades</a></li><li style="--i:4"><a href="/devis" class="menu-lien" data-libelle="Devis et contact" aria-current="page">Devis et contact</a></li></ul>
+  <p><a class="bouton" href="tel:+33176292634">Appeler 01 76 29 26 34</a></p>
+  <p class="menu-adresse">105 rue du Maréchal-Foch, 95150 Taverny<br>Lundi au samedi, 8 h à 20 h · dimanche fermé<br><a class="lien" href="https://www.google.com/maps/search/?api=1&amp;query=105%20rue%20du%20Mar%C3%A9chal-Foch%2C%2095150%20Taverny" target="_blank" rel="noopener">Itinéraire →</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-une devis-une" id="debut" data-sans-visuel>
+  <div class="conteneur devis-tete">
+    <div>
+      <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Devis gratuit · Artisan Sandero</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+      <h1 data-titre-pose="intro" data-grille="typo" data-effet="titre-pose">Votre chantier, <em>en quelques étapes</em>.</h1>
+      <p class="chapo">Dites-nous ce qui se passe sur votre toit ou votre façade : l&#39;entreprise revient vers vous pour le diagnostic et le devis, gratuit.</p>
+    </div>
+    <div class="devis-appel" data-iris-centre>
+      <p class="surtitre">Ou par téléphone · lun.–sam. 8 h–20 h</p>
+      <a class="devis-tel" href="tel:+33176292634" data-info-cle>01 76 29 26 34</a>
+      <p class="joignable" data-joignable hidden></p>
+      <a class="bouton" href="#demande" data-action-principale data-sans-transition>Demande de devis</a>
+    </div>
+  </div>
+</section>
+<section class="section devis-corps" id="demande" aria-labelledby="demande-titre">
+  <div class="conteneur devis-grille">
+    <div class="fpe devis-form" data-module="formulaire-par-etapes" data-grille="retour" data-effet="tampon-recu">
+      <div class="fpe__carton">
+        <h2 id="demande-titre" class="devis-form-titre">Demande de devis</h2>
+        <p class="devis-simule">Formulaire de démonstration : rien n&#39;est envoyé.</p>
+        <p class="devis-choix" hidden>Prestation choisie : <b></b> · <button type="button" class="lien" data-aller="0">modifier</button></p>
+        <form class="fpe__form" novalidate data-formulaire>
+          <fieldset class="fpe__etape" data-etape="Prestation">
+            <legend class="fpe__legende"><h3 class="fpe__titre">Quel métier pour votre chantier ?</h3></legend>
+            <div class="fpe__groupe fpe__cartes" data-libelle="Prestation">
+              <label class="fpe__carte"><input type="radio" name="prestation" value="couverture" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 20 L16 8 L28 20 M8 17 V26 H24 V17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="fpe__carte-titre">Couverture</span></label><label class="fpe__carte"><input type="radio" name="prestation" value="zinguerie" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 10 H28 V14 Q28 18 24 18 H8 Q4 18 4 14 Z M22 18 V28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="fpe__carte-titre">Zinguerie</span></label><label class="fpe__carte"><input type="radio" name="prestation" value="charpente" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M3 22 L16 6 L29 22 M9 22 L16 13 L23 22 M16 6 V22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="fpe__carte-titre">Charpente</span></label><label class="fpe__carte"><input type="radio" name="prestation" value="peinture" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M6 6 H22 V12 H6 Z M14 12 V18 M12 18 H16 V28 H12 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="fpe__carte-titre">Peinture</span></label><label class="fpe__carte"><input type="radio" name="prestation" value="ravalement" required><svg class="fpe__icone" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27 V5 H27 V27 M5 12 H27 M5 19 H27 M14 5 V12 M20 12 V19 M11 19 V27" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg><span class="fpe__carte-titre">Ravalement de façade</span></label>
+            </div>
+            <p class="fpe__note devis-signes" hidden></p>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Votre maison">
+            <legend class="fpe__legende"><h3 class="fpe__titre">Comment est votre maison ?</h3></legend>
+            <p class="fpe__sous">Type de toiture</p>
+            <div class="fpe__groupe fpe__puces" data-libelle="Type de toiture">
+              <label class="fpe__puce"><input type="radio" name="toiture" value="Tuile béton"><span>Tuile béton</span></label><label class="fpe__puce"><input type="radio" name="toiture" value="Terre cuite"><span>Terre cuite</span></label><label class="fpe__puce"><input type="radio" name="toiture" value="Ardoise"><span>Ardoise</span></label><label class="fpe__puce"><input type="radio" name="toiture" value="Zinc"><span>Zinc</span></label><label class="fpe__puce"><input type="radio" name="toiture" value="Autre ou je ne sais pas"><span>Autre ou je ne sais pas</span></label>
+            </div>
+            <p class="fpe__sous">Nombre d&#39;étages</p>
+            <div class="fpe__groupe fpe__puces" data-libelle="Nombre d&#39;étages">
+              <label class="fpe__puce"><input type="radio" name="etages" value="Plain-pied"><span>Plain-pied</span></label><label class="fpe__puce"><input type="radio" name="etages" value="1 étage"><span>1 étage</span></label><label class="fpe__puce"><input type="radio" name="etages" value="2 étages"><span>2 étages</span></label><label class="fpe__puce"><input type="radio" name="etages" value="3 étages ou plus"><span>3 étages ou plus</span></label>
+            </div>
+            <div class="fpe__champ"><label for="hauteur">Hauteur sous gouttière, si vous la connaissez</label><input id="hauteur" name="hauteur" type="text" inputmode="decimal" autocomplete="off" data-libelle="Hauteur"></div>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Adresse">
+            <legend class="fpe__legende"><h3 class="fpe__titre">Où se trouve le chantier ?</h3></legend>
+            <div class="fpe__champ"><label for="adresse">Adresse</label><input id="adresse" name="adresse" type="text" autocomplete="street-address" required></div>
+            <div class="fpe__ligne">
+              <div class="fpe__champ"><label for="cp">Code postal</label><input id="cp" name="cp" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" required></div>
+              <div class="fpe__champ"><label for="ville">Ville</label><input id="ville" name="ville" type="text" autocomplete="address-level2" required></div>
+            </div>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Coordonnées">
+            <legend class="fpe__legende"><h3 class="fpe__titre">Comment vous joindre ?</h3></legend>
+            <div class="fpe__champ"><label for="nom">Votre nom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+            <div class="fpe__ligne">
+              <div class="fpe__champ"><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" autocomplete="tel" required></div>
+              <div class="fpe__champ"><label for="email">E-mail (facultatif)</label><input id="email" name="email" type="email" autocomplete="email"></div>
+            </div>
+            <div class="fpe__champ"><label for="message">Votre message (facultatif)</label><textarea id="message" name="message" rows="3"></textarea></div>
+            <label class="fpe__case"><input type="checkbox" name="accord" required data-hors-recap><span>J&#39;accepte que mes données servent à répondre à ma demande.</span></label>
+            <p class="fpe__note">Vos données servent seulement à répondre à votre demande. Elles sont traitées par HORTICA DANY, la société qui exploite Artisan Sandero, et ne sont transmises à personne.</p>
+          </fieldset>
+          <fieldset class="fpe__etape" data-etape="Récapitulatif" data-recap>
+            <legend class="fpe__legende"><h3 class="fpe__titre">Tout est juste ?</h3></legend>
+            <div class="fpe__recap"></div>
+          </fieldset>
+          <div class="fpe__nav">
+            <button type="button" class="bouton bouton--contour" data-precedent>Retour</button>
+            <button type="button" class="bouton" data-suivant>Continuer</button>
+            <button type="submit" class="bouton">Envoyer la demande</button>
+          </div>
+        </form>
+        <div class="fpe__fin" hidden>
+          <h3 tabindex="-1">Demande reçue</h3>
+          <p>Démonstration : rien n&#39;a été envoyé. Sur le site en ligne, l&#39;entreprise vous recontactera.</p>
+          <p data-resume></p>
+          <button type="button" class="bouton bouton--contour" data-recommencer>Nouvelle demande</button>
+        </div>
+        <span class="tampon-recu" aria-hidden="true">Demande posée</span>
+      </div>
+    </div>
+    <aside class="devis-cote" aria-label="L&#39;entreprise">
+      <figure class="media devis-photo" data-fx="parallaxe" data-fx-force="6" style="--cadrage:30% 55%">
+  <picture>
+    <img src="/assets/images/artisan-gilet-784.webp" srcset="/assets/images/artisan-gilet-480.webp 480w, /assets/images/artisan-gilet-640.webp 640w, /assets/images/artisan-gilet-784.webp 784w" sizes="(max-width: 900px) 100vw, 30vw" alt="Un artisan de l&#39;entreprise, de dos, montre la gouttière d&#39;une maison" width="784" height="980" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <div class="devis-carte">
+        <h2>L&#39;entreprise</h2>
+        <p>105 rue du Maréchal-Foch, 95150 Taverny<br><a href="tel:+33176292634">01 76 29 26 34</a><br><a href="mailto:sandero.artisan95@gmail.com">sandero.artisan95@gmail.com</a><br><a href="https://www.google.com/maps/search/?api=1&amp;query=105%20rue%20du%20Mar%C3%A9chal-Foch%2C%2095150%20Taverny" target="_blank" rel="noopener">Itinéraire →</a></p>
+        <p>Lundi au samedi, 8 h à 20 h · dimanche fermé</p>
+      </div>
+      <div class="devis-carte">
+        <h2>Où intervient l&#39;entreprise</h2>
+        <svg class="schema-zone" viewBox="0 0 300 280" role="img" aria-label="Schéma des communes, sans échelle" data-fx="trace">
+          <path d="M20 260 C 75 175, 125 200, 175 135 S 260 75, 285 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 5" opacity=".5" data-fx-trait/>
+          <g class="siege"><circle cx="55" cy="91.25" r="10"/><text x="68" y="96.25" text-anchor="start">Taverny</text></g><g class=""><circle cx="130" cy="124.5" r="6.5"/><text x="143" y="129.5" text-anchor="start">Saint-Leu-la-Forêt</text></g><g class=""><circle cx="165" cy="195.75" r="6.5"/><text x="152" y="200.75" text-anchor="end">Ermont</text></g><g class=""><circle cx="215" cy="186.25" r="6.5"/><text x="228" y="191.25" text-anchor="start">Eaubonne</text></g><g class=""><circle cx="70" cy="243.25" r="6.5"/><text x="83" y="248.25" text-anchor="start">Cormeilles-en-Parisis</text></g>
+        </svg>
+        <p class="schema-note">Schéma des communes, sans échelle</p>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div>
+      <img class="pied-logo" src="/assets/images/logo-blanc-480.webp" alt="Artisan Sandero" width="160" height="78" loading="lazy">
+      <p>105 rue du Maréchal-Foch, 95150 Taverny<br><a href="tel:+33176292634">01 76 29 26 34</a><br><a href="mailto:sandero.artisan95@gmail.com">sandero.artisan95@gmail.com</a></p>
+      <p class="pied-horaires">Lundi au samedi, 8 h à 20 h · dimanche fermé</p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p><strong>Sommaire</strong></p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/couverture" data-libelle="Couverture">Couverture</a></li><li><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Zinguerie et charpente</a></li><li><a href="/facades" data-libelle="Peinture et façades">Peinture et façades</a></li><li><a href="/devis" data-libelle="Devis et contact" aria-current="page">Devis et contact</a></li></ul>
+    </nav>
+    <div>
+      <p><strong>Confort de lecture</strong></p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas"><p>Maquette de démonstration : les formulaires sont simulés, rien n&#39;est envoyé.</p><p>Mentions légales · à compléter</p><p>Politique de confidentialité · à compléter</p><p>© 2026 Artisan Sandero</p></div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33176292634">Appeler</a>
+  <a class="bouton" href="/devis#demande" data-libelle="Devis et contact">Devis gratuit</a>
+</div>
+</body>
+</html>

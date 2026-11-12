@@ -1,0 +1,65 @@
+{
+ "mission": "regard",
+ "taille": "390x844",
+ "depart": "/",
+ "erreurs": [],
+ "etapes": [
+  {
+   "k": 0,
+   "geste": "arrivée",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 2.1,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8375,
+   "titres": [
+    "h1 Ce qui se passe sous les tuiles, une famille le sait."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Menu",
+    "Demander un devis gratuit",
+    "Appeler",
+    "Devis gratuit"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-0.png"
+  },
+  {
+   "k": 1,
+   "geste": "attendre 3000",
+   "resultat": "ok",
+   "gestes": 0,
+   "secondes": 5.1,
+   "adresse": "/",
+   "y": 0,
+   "hauteurPage": 8375,
+   "titres": [
+    "h1 Ce qui se passe sous les tuiles, une famille le sait."
+   ],
+   "actions": [
+    "ARTISAN SANDERO",
+    "Menu",
+    "Un doute sur la vôtre ? Diagnostic gratuit →",
+    "Demander un devis gratuit",
+    "Appeler",
+    "Devis gratuit"
+   ],
+   "prixVus": [],
+   "telephonesVus": [],
+   "prixDansLaPage": [],
+   "telephones": [
+    "01 76 29 26 34"
+   ],
+   "menuOuvert": false,
+   "capture": "etape-1.png"
+  }
+ ]
+}

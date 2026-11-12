@@ -1,0 +1,43 @@
+[
+ {
+  "cle": "tuile",
+  "nom": "La tuile",
+  "image": "grok/tuiles-face",
+  "texte": "Terre cuite, ardoise, zinc ou béton : tuiles cassées remplacées, faîtages, arêtiers et pieds de cheminée refaits.",
+  "page": "couverture",
+  "lien": "Couverture"
+ },
+ {
+  "cle": "liteau",
+  "nom": "Le liteau",
+  "image": "grok/liteaux-toit",
+  "texte": "Les liteaux portent les tuiles à leur écartement. Voliges, chevrons et liteaux sont remplacés selon l'état constaté.",
+  "page": "couverture",
+  "lien": "Couverture"
+ },
+ {
+  "cle": "ecran",
+  "nom": "L'écran sous-toiture",
+  "image": "grok/couche-ecran",
+  "texte": "Sous les liteaux, la membrane qui protège la toiture de l'eau et du vent.",
+  "page": "couverture",
+  "lien": "Couverture"
+ },
+ {
+  "cle": "isolant",
+  "nom": "L'isolant",
+  "image": "grok/couche-isolant",
+  "texte": "Toiture, combles perdus ou aménageables, par l'intérieur ou l'extérieur, en laine de verre ou de roche.",
+  "page": "couverture",
+  "lien": "Isolation"
+ },
+ {
+  "cle": "chevrons",
+  "nom": "Les chevrons",
+  "image": "grok/couche-chevrons",
+  "texte": "La charpente est diagnostiquée, renforcée ou remplacée, et traitée contre les insectes xylophages et la mérule.",
+  "page": "zinguerie-charpente",
+  "ancre": "charpente",
+  "lien": "Charpente"
+ }
+]

@@ -1,0 +1,34 @@
+[
+ {
+  "image": "chantier-drone",
+  "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins",
+  "titre": "Réfection vue du ciel"
+ },
+ {
+  "image": "chantier-liteaux",
+  "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser",
+  "titre": "Liteaux neufs",
+  "cadrage": "50% 100%"
+ },
+ {
+  "image": "chantier-faitage-vue",
+  "alt": "Faîtage et rive en zinc refaits, les toits voisins et les arbres au loin",
+  "titre": "Rive en zinc et faîtage"
+ },
+ {
+  "image": "chantier-renovation",
+  "alt": "Rénovation d'une toiture : liteaux neufs autour d'une fenêtre de toit",
+  "titre": "Liteaux autour du Velux",
+  "cadrage": "45% 74%"
+ },
+ {
+  "image": "chantier-ecran",
+  "alt": "Pose de l'écran sous-toiture par un couvreur de l'entreprise",
+  "titre": "Écran sous-toiture"
+ },
+ {
+  "image": "chantier-cheneau",
+  "alt": "Chéneau en zinc neuf posé chez un particulier",
+  "titre": "Chéneau en zinc"
+ }
+]

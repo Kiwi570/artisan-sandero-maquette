@@ -1,0 +1,82 @@
+{
+ "prestations": [
+  {
+   "cle": "pose",
+   "nom": "Pose",
+   "texte": "Couvertures neuves sur toitures arrondies, plates ou en pente, en tuiles, ardoises, zinc ou béton, pour une maison neuve ou une réfection complète."
+  },
+  {
+   "cle": "renovation",
+   "nom": "Rénovation",
+   "texte": "Tuiles cassées remplacées après un orage, faîtages, pieds de cheminée et arêtiers remis en état."
+  },
+  {
+   "cle": "nettoyage",
+   "nom": "Nettoyage",
+   "texte": "Démoussage, traitement hydrofuge et peinture de toiture, sur tuiles en terre cuite."
+  },
+  {
+   "cle": "isolation",
+   "nom": "Isolation",
+   "texte": "Toiture, combles perdus et combles aménageables, par l'intérieur ou par l'extérieur, en laine de verre ou de roche."
+  },
+  {
+   "cle": "fenetres",
+   "nom": "Fenêtres de toit",
+   "texte": "Pose, réparation et étanchéité des fenêtres de toit Velux, pose de châssis « parisien »."
+  }
+ ],
+ "materiaux": [
+  {
+   "nom": "Terre cuite",
+   "duree": "50",
+   "image": "grok/materiau-terre-cuite",
+   "texte": "La tuile des pavillons alentour.",
+   "detail": "Sur la plupart des pavillons de Taverny. L'équipe la pose, remplace les tuiles cassées et la démousse au printemps ou à l'automne."
+  },
+  {
+   "nom": "Ardoise",
+   "duree": "75",
+   "image": "grok/materiau-ardoise",
+   "texte": "La plus durable des quatre.",
+   "detail": "Posée au crochet, ardoise par ardoise. L'équipe remplace les ardoises cassées et reprend faîtages et rives."
+  },
+  {
+   "nom": "Zinc",
+   "duree": "40",
+   "image": "grok/materiau-zinc",
+   "texte": "Aussi pour les toits plats et arrondis.",
+   "detail": "Pour les toits plats ou arrondis, avec des joints soudés. C'est aussi le métier de la zinguerie de l'entreprise."
+  },
+  {
+   "nom": "Béton",
+   "duree": "30 à 50",
+   "image": "grok/materiau-beton",
+   "texte": "La durée dépend du modèle.",
+   "detail": "Plus lourde et plus économique. Nettoyage, traitement hydrofuge et peinture de toiture par l'équipe."
+  }
+ ],
+ "chantiers": [
+  {
+   "image": "chantier-drone",
+   "alt": "Vue de drone d'un toit refait sur ses liteaux, au milieu des jardins",
+   "titre": "Toit refait, vu du drone"
+  },
+  {
+   "image": "chantier-liteaux",
+   "alt": "Liteaux posés sur l'écran, tuiles neuves prêtes à poser",
+   "titre": "Liteaux neufs"
+  },
+  {
+   "image": "chantier-velux",
+   "alt": "Fenêtre de toit posée entre les liteaux",
+   "titre": "Fenêtre de toit"
+  },
+  {
+   "image": "chantier-faitage",
+   "alt": "Un couvreur de l'entreprise pose le faîtage",
+   "titre": "Pose du faîtage",
+   "cadrage": "55% 45%"
+  }
+ ]
+}

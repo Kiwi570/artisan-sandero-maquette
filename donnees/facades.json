@@ -1,0 +1,71 @@
+{
+ "ravalement": [
+  {
+   "nom": "Diagnostic",
+   "texte": "Analyse complète de la façade pour repérer les zones à traiter."
+  },
+  {
+   "nom": "Nettoyage",
+   "texte": "Salissures, mousses et impuretés retirées, pour que les traitements accrochent."
+  },
+  {
+   "nom": "Rebouchage",
+   "texte": "Fissures de toutes tailles reprises, enduits grattés puis projetés."
+  },
+  {
+   "nom": "Peinture",
+   "texte": "Une peinture adaptée au support : acrylique, siloxane ou pliolite."
+  }
+ ],
+ "supports": [
+  "Béton",
+  "Brique",
+  "Pierre"
+ ],
+ "finitions": [
+  {
+   "cle": "lisse",
+   "nom": "Lisse",
+   "image": "grok/finition-lisse",
+   "texte": "Une surface fine et régulière."
+  },
+  {
+   "cle": "grattee",
+   "nom": "Grattée",
+   "image": "grok/finition-grattee",
+   "texte": "Un grain ouvert, qui accroche la lumière."
+  },
+  {
+   "cle": "talochee",
+   "nom": "Talochée",
+   "image": "grok/finition-talochee",
+   "texte": "Les arcs de la taloche, à la main."
+  },
+  {
+   "cle": "projetee",
+   "nom": "Projetée",
+   "image": "grok/finition-projetee",
+   "texte": "Un relief en gouttelettes."
+  }
+ ],
+ "enduits": "Enduits minéraux, organiques ou à la chaux",
+ "chantiers": [
+  {
+   "image": "chantier-facade",
+   "alt": "Nettoyage de la façade d'un pavillon, échelle contre le mur",
+   "titre": "Nettoyage de façade"
+  },
+  {
+   "image": "chantier-echafaudage",
+   "alt": "Échafaudage contre la façade d'une maison pendant les travaux",
+   "titre": "Échafaudage posé"
+  }
+ ],
+ "preparation": [
+  "Nettoyage de la surface",
+  "Rebouchage des fissures et des trous",
+  "Sous-couche adaptée au support",
+  "Primaire d'accrochage sur la tuile",
+  "Deux couches de finition"
+ ]
+}
