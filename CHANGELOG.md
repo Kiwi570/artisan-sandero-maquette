@@ -2,6 +2,12 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v6 — l'image de Couverture sans raccord visible
+
+- **Couverture, image d'ouverture** : le village derrière le toit commençait par un bord vertical net, un défaut de l'image générée qui faisait croire à un bug d'affichage. Les arbres et les maisons se fondent maintenant doucement dans la brume du ciel, sur ordinateur comme sur téléphone. Le toit, ses tuiles et la mousse n'ont pas changé.
+- **Image de partage de la page Couverture** : refaite avec l'image corrigée.
+- **Toutes les pages** : le numéro de version des fichiers passe à 6.
+
 ## v5 — la plongée plus fluide, le fil des couches lisible
 
 - **Accueil, fluidité de la plongée** :

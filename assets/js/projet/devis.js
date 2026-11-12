@@ -1,7 +1,7 @@
 /* Demande de devis Artisan Sandero : formulaire par étapes (module de la bibliothèque), prérempli par l'adresse
    (?prestation=couverture, ?signes=…) ; retour physique de l'action (grille wouahou, point 7) : la fiche se pose sur un
    liteau et reçoit le tampon « Reçu ». Démonstration : rien n'est envoyé. */
-import { init } from '../modules/formulaire-par-etapes/module.js?v=5';
+import { init } from '../modules/formulaire-par-etapes/module.js?v=6';
 
 export async function devis(root) {
   const params = new URLSearchParams(location.search);

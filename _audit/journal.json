@@ -211,6 +211,22 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 6,
+   "skill": "v10.10",
+   "perimetre": [
+    "couverture"
+   ],
+   "etapes": [
+    {
+     "etape": "raccord de l'image d'ouverture de Couverture",
+     "budget": 15,
+     "debut": "2026-11-12T18:58:00+01:00",
+     "fin": "2026-11-12T19:01:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }
