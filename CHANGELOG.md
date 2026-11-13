@@ -2,6 +2,19 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v15 — l'animation d'ouverture ne rame plus
+
+Le client trouvait que l'animation de l'accueil « lague ». Mesures faites avec un processeur ralenti quatre fois, pour simuler un ordinateur plus modeste :
+- pendant l'intro, le navigateur n'affichait que 12 images en 3,5 s ;
+- une tâche bloquait tout pendant 0,9 s : la préparation des six grandes images de la plongée (`createImageBitmap` depuis l'image affichée) ;
+- la photo était redessinée en haute qualité à chaque image de l'intro.
+
+- **Décodage des images hors du fil principal** : chaque image est décodée depuis son fichier (déjà en cache), en tâche de fond. Toutes partent dès l'arrivée, en parallèle. Seul leur envoi à la carte graphique attend la fin de l'intro, quand le navigateur est libre.
+- **Qualité rapide pendant l'intro et en mouvement** ; la haute qualité n'est appliquée qu'une fois la scène à l'arrêt.
+- **Découpage des textes animés** (légendes, fiches du diagnostic, avis) fait après l'intro, quand le navigateur est libre, au lieu de pendant.
+- **Moins de retard sur le défilement** : sous Windows à la molette, le défilement est déjà adouci et la plongée ajoutait son propre amorti (environ 0,2 s de retard au total). Cet amorti tombe à 0,025 s dans ce cas, et à 0,07 s ailleurs (au lieu de 0,12 s).
+- **Résultat, processeur ralenti** : l'intro affiche 129 images au lieu de 12 en 3,5 s, sans aucune tâche de plus de 0,3 s. Pendant la plongée, les images lentes (plus de 34 ms) passent de 21 à 16, et les couches sont prêtes même en défilant vite.
+
 ## v14 — ça démarre tout de suite
 
 Mesure faite en simulant un pavé tactile dès l'arrivée, sur un écran de 1288 × 626. Le premier geste ne faisait défiler que 42 px : il servait à accélérer l'intro, puis le défilement restait bloqué jusqu'à la fin de l'élan (jusqu'à 1,5 s). Il fallait ensuite environ trois gestes pour atteindre la première couche.

@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=14';
+import { demarrer, etat, versObjet } from './socle/index.js?v=15';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -131,6 +131,17 @@ const HEROS_C = [HEROS_P.reduce((s, a) => s + a[0], 0) / 4, HEROS_P.reduce((s, a
 const HEROS_NEZ = Math.hypot(HEROS_P[2][0] - HEROS_P[3][0], HEROS_P[2][1] - HEROS_P[3][1]);
 
 let plongee = null;
+/* Quand le navigateur est libre (sans dépasser 1,2 s), et après l'intro. */
+const libre = (fn) => (window.requestIdleCallback ? requestIdleCallback(() => fn(), { timeout: 1200 }) : setTimeout(fn, 60));
+const apresIntro = (fn) => {
+  const h = document.documentElement;
+  let fait = false; const une = () => { if (fait) return; fait = true; o.disconnect(); fn(); };
+  const o = new MutationObserver(() => { if (h.classList.contains('intro-finie')) une(); });
+  if (h.classList.contains('intro-finie')) { une(); return; }
+  o.observe(h, { attributes: true, attributeFilter: ['class'] });
+  setTimeout(une, 4000);
+};
+const adouci = () => document.documentElement.dataset.defilement === 'adouci';
 function plongeeScene() {
   const sec = $('.plongee');
   if (!sec || !gsap || !window.ScrollTrigger) return;
@@ -140,11 +151,17 @@ function plongeeScene() {
   const legende = $('.toit-soleil', sec);
   const ctx = toile.getContext('2d', { alpha: false });
   /* Images décodées d'avance (ImageBitmap) : aucun décodage ni envoi au processeur graphique pendant le défilement. */
-  const charge = (url) => {
+  /* Le décodage se fait hors du fil principal : depuis le fichier (déjà en cache), pas depuis l'image affichée,
+     sinon le navigateur bloque l'intro (mesuré : 0,9 s sur un processeur lent). */
+  const charge = (url, differer = false) => {
     const im = new Image(); im.decoding = 'async'; im.src = url;
     im.addEventListener('load', () => {
-      const fini = (b) => { if (b) im.bmp = b; try { ctx.drawImage(im.bmp || im, 0, 0, 2, 2); } catch {} salir(); };
-      if (window.createImageBitmap) createImageBitmap(im).then(fini, () => fini(null)); else fini(null);
+      /* Envoi à la carte graphique (petit dessin d'essai) : tout de suite pour la photo du toit, après l'intro pour le reste. */
+      const envoyer = () => { try { ctx.drawImage(im.bmp || im, 0, 0, 2, 2); } catch {} salir(); };
+      const fini = (b) => { if (b) im.bmp = b; im.pret = true; if (differer) apresIntro(() => libre(envoyer)); else envoyer(); };
+      const repli = () => (im.decode ? im.decode().then(() => fini(null), () => fini(null)) : fini(null));
+      if (window.createImageBitmap && window.fetch) fetch(url).then((r) => r.blob()).then((b) => createImageBitmap(b)).then(fini, repli);
+      else repli();
     }, { once: true });
     return im;
   };
@@ -161,7 +178,7 @@ function plongeeScene() {
   let sale = true;
   const vu = { p: -1, k: -1, fin: null, i: 0 };
 
-  const pret = (im) => !!im && (!!im.bmp || (im.complete && im.naturalWidth > 0));
+  const pret = (im) => !!im && (!!im.bmp || !!im.pret);
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); };
   const dedans = ([x, y], p) => { let ok = false; for (let i = 0, j = p.length - 1; i < p.length; j = i++) { const [xi, yi] = p[i], [xj, yj] = p[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) ok = !ok; } return ok; };
   const vers = (c, [x, y]) => [c.tx + x * c.S, c.ty + y * c.S];
@@ -356,7 +373,7 @@ function plongeeScene() {
   function dessiner(p, fin = true) {
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     /* En mouvement, lissage simple (rapide) ; à l'arrêt, la dernière image est refaite en haute qualité. */
-    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = fin ? 'high' : 'low';
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = fin && etat.intro === 1 ? 'high' : 'low';
     const P = SCENE.passages.map(([d, f]) => lin(d, f, p));
     let fait = 0; while (fait < 4 && P[fait] >= 1) fait++;
     const enCours = fait < 4 && P[fait] > 0;
@@ -434,8 +451,9 @@ function plongeeScene() {
      comme des tuiles (vers le haut en descendant, vers le bas en remontant), les lignes glissent dans leur masque,
      le lien se pose comme un liteau. Le texte n'est jamais à moitié transparent : il est entier, ou masqué. ----- */
   const Decoupe = window.SplitText;
-  const morceaux = legendes.map((li) => {
-    const o = { li, extras: $$('.plongee-geste, .plongee-lien, .plongee-fin', li), tl: null, vu: false };
+  const morceaux = legendes.map((li) => ({ li, extras: $$('.plongee-geste, .plongee-lien, .plongee-fin', li), tl: null, vu: false }));
+  /* Découpage des légendes après l'intro, une par une quand le navigateur est libre (pas pendant l'intro). */
+  const decouper = (li) => {
     if (Decoupe) {
       const n = $('.plongee-n', li), h = $('h3', li), ph = $('.plongee-phrase', li);
       try {
@@ -445,8 +463,8 @@ function plongeeScene() {
         li.classList.add('decoupe');
       } catch {}
     }
-    return o;
-  });
+  };
+  apresIntro(() => legendes.forEach((li) => libre(() => { if (!li.classList.contains('actif') && !li.classList.contains('sortie')) decouper(li); else libre(() => decouper(li)); })));
   const pieces = (o) => ({
     haut: $$('.plongee-n .pc-ligne', o.li), lettres: $$('h3 .pc-lettre', o.li), phrase: $$('.plongee-phrase .pc-ligne', o.li),
   });
@@ -495,7 +513,7 @@ function plongeeScene() {
        le défilement à la main est suivi avec un léger amorti (constante de temps 0,12 s). */
     if (st) { etat.cible = borne((window.scrollY - st.start) / Math.max(1, st.end - st.start)); if (Math.abs(etat.cible - etat.p) > .15) etat.p = etat.cible; }
     const d = etat.cible - etat.p;
-    etat.p = Math.abs(d) < .00004 ? etat.cible : etat.p + d * (1 - Math.exp(-dt / .12));
+    etat.p = Math.abs(d) < .00004 ? etat.cible : etat.p + d * (1 - Math.exp(-dt / (adouci() ? .025 : .07)));
     const p = etat.p;
     const posee = doux(SCENE.repos[0], SCENE.repos[1], p) * (1 - doux(SCENE.leve[0], SCENE.leve[1], p));
     const cible = Math.max(.16 * posee, doux(SCENE.leve[0], SCENE.leve[1], p), interactif() && (etat.survol || etat.garde) ? 1 : 0);
@@ -560,10 +578,10 @@ function plongeeScene() {
   new ResizeObserver(() => { clearTimeout(attente); attente = setTimeout(mesurer, 100); }).observe(scene);
   /* Les couches et la version fine des tuiles se chargent une fois la photo du toit là. */
   const suite = () => {
-    hd = charge('/assets/images/grok/zone-faitage-tuiles.webp');
-    couches = COUCHES.map((c) => c && charge(`/assets/images/grok/${c.src}-1920.webp`));
-    [hd, ...couches].forEach((im) => im && im.addEventListener('load', salir));
     mesurer();
+    /* Toutes les images partent tout de suite, en parallèle : le décodage se fait hors du fil principal. */
+    hd = charge('/assets/images/grok/zone-faitage-tuiles.webp', true);
+    couches = COUCHES.map((c) => c && charge(`/assets/images/grok/${c.src}-1920.webp`, true));
   };
   if (pret(photo)) suite(); else photo.addEventListener('load', suite, { once: true });
   mesurer();
@@ -653,7 +671,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=14'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=15'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
@@ -959,7 +977,7 @@ function planches() {
     if (!fiches.length || !planche) return;
     planche.classList.add('planche-active');
     const Decoupe = window.SplitText;
-    if (Decoupe) fiches.forEach((f) => { try { new Decoupe($('h3', f), { type: 'lines,words,chars', mask: 'lines', linesClass: 'pc-titre', wordsClass: 'pc-mot', charsClass: 'pc-lettre', autoSplit: true }); f.classList.add('decoupe'); } catch {} });
+    if (Decoupe) apresIntro(() => fiches.forEach((f) => libre(() => { try { new Decoupe($('h3', f), { type: 'lines,words,chars', mask: 'lines', linesClass: 'pc-titre', wordsClass: 'pc-mot', charsClass: 'pc-lettre', autoSplit: true }); f.classList.add('decoupe'); } catch {} })));
     const corps = (f) => [...f.children].filter((e) => e.tagName !== 'H3');
     const anims = new Map();
     let courant = null;
@@ -1027,7 +1045,7 @@ function courrier() {
   const compte = $('.courrier-compte b', nav), barre = $('.courrier-progres span', nav), tampon = $('.lettre-tampon', lettre);
   lettre.classList.add('courrier-actif'); nav.hidden = false;
   const Decoupe = window.SplitText;
-  if (Decoupe) items.forEach((li) => { try { new Decoupe($('blockquote p', li), { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true, aria: 'none' }); } catch {} });
+  if (Decoupe) apresIntro(() => items.forEach((li) => libre(() => { try { new Decoupe($('blockquote p', li), { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true, aria: 'none' }); } catch {} })));
   const lignes = (li) => $$('.pc-ligne', li), signe = (li) => $('.lettre-signe', li);
   let i = 0, enVue = false, survol = false, prog = null;
   items.forEach((li, k) => li.classList.toggle('actif', k === 0));
