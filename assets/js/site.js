@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=11';
+import { demarrer, etat, versObjet } from './socle/index.js?v=12';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -439,9 +439,9 @@ function plongeeScene() {
     if (Decoupe) {
       const n = $('.plongee-n', li), h = $('h3', li), ph = $('.plongee-phrase', li);
       try {
-        if (n) new Decoupe(n, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true });
+        if (n) new Decoupe(n, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true, aria: 'none' });
         if (h) new Decoupe(h, { type: 'lines,words,chars', mask: 'lines', linesClass: 'pc-titre', wordsClass: 'pc-mot', charsClass: 'pc-lettre', autoSplit: true });
-        if (ph) new Decoupe(ph, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true });
+        if (ph) new Decoupe(ph, { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true, aria: 'none' });
         li.classList.add('decoupe');
       } catch {}
     }
@@ -653,7 +653,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=11'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=12'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
@@ -1017,6 +1017,53 @@ function planches() {
     new IntersectionObserver((es) => es.forEach((e) => planche.classList.toggle('vu', e.isIntersecting)), { threshold: .12 }).observe(planche);
   });
 }
+/* ---------- Le courrier : une lettre à la fois, en relais (les lignes de l'avis glissent dans leur masque),
+   avance seule toutes les 7 s quand elle est à l'écran ; s'arrête au survol ou quand on la manipule. ---------- */
+function courrier() {
+  const lettre = $('[data-courrier-lettre]'), nav = $('[data-courrier-nav]');
+  if (!lettre || !nav || !gsap) return;
+  const items = $$('.lettre-un', lettre);
+  if (items.length < 2) return;
+  const compte = $('.courrier-compte b', nav), barre = $('.courrier-progres span', nav), tampon = $('.lettre-tampon', lettre);
+  lettre.classList.add('courrier-actif'); nav.hidden = false;
+  const Decoupe = window.SplitText;
+  if (Decoupe) items.forEach((li) => { try { new Decoupe($('blockquote p', li), { type: 'lines', mask: 'lines', linesClass: 'pc-ligne', autoSplit: true, aria: 'none' }); } catch {} });
+  const lignes = (li) => $$('.pc-ligne', li), signe = (li) => $('.lettre-signe', li);
+  let i = 0, enVue = false, survol = false, prog = null;
+  items.forEach((li, k) => li.classList.toggle('actif', k === 0));
+  const DUREE = 7;
+  function relancer() {
+    if (prog) prog.kill();
+    prog = gsap.fromTo(barre, { scaleX: 0 }, { scaleX: 1, duration: DUREE, ease: 'none', onComplete: () => aller(i + 1, 1) });
+    if (!enVue || survol) prog.pause();
+  }
+  function aller(n, dir) {
+    const avant = items[i]; i = (n + items.length) % items.length; const apres = items[i];
+    compte.textContent = String(i + 1).padStart(2, '0');
+    gsap.killTweensOf([...lignes(avant), signe(avant), ...lignes(apres), signe(apres)]);
+    avant.classList.remove('actif'); avant.classList.add('sortie');
+    gsap.timeline({ onComplete: () => { avant.classList.remove('sortie'); gsap.set([...lignes(avant), signe(avant)], { clearProps: 'all' }); } })
+      .to(lignes(avant), { yPercent: -120 * dir, duration: .26, ease: 'power2.in', stagger: .03 * dir }, 0)
+      .to(signe(avant), { autoAlpha: 0, x: -10, duration: .2 }, 0);
+    apres.classList.add('actif');
+    gsap.set(lignes(apres), { yPercent: 120 * dir });
+    gsap.timeline({ delay: .3 })
+      .fromTo(lignes(apres), { yPercent: 120 * dir }, { yPercent: 0, duration: .7, ease: 'power3.out', stagger: .08 * dir }, 0)
+      .fromTo(signe(apres), { autoAlpha: 0, x: 12 }, { autoAlpha: 1, x: 0, duration: .5, ease: 'power3.out', clearProps: 'all' }, .3);
+    if (tampon) { tampon.classList.remove('frappe'); void tampon.offsetWidth; tampon.classList.add('frappe'); }
+    relancer();
+  }
+  $$('[data-courrier]', nav).forEach((b) => b.addEventListener('click', () => { const d = Number(b.dataset.courrier); aller(i + d, d); }));
+  /* Au clavier : flèches gauche et droite quand le focus est sur la navigation. */
+  nav.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight') aller(i + 1, 1); else if (e.key === 'ArrowLeft') aller(i - 1, -1); });
+  const zone = lettre.closest('.courrier') || lettre;
+  zone.addEventListener('pointerenter', () => { survol = true; prog && prog.pause(); });
+  zone.addEventListener('pointerleave', () => { survol = false; enVue && prog && prog.resume(); });
+  zone.addEventListener('focusin', () => { survol = true; prog && prog.pause(); });
+  zone.addEventListener('focusout', () => { survol = false; enVue && prog && prog.resume(); });
+  new IntersectionObserver((es) => es.forEach((e) => { enVue = e.isIntersecting; if (!prog) return; if (enVue && !survol) prog.resume(); else prog.pause(); }), { threshold: .4 }).observe(lettre);
+  relancer();
+}
 const premierTitre = () => $('[data-titre-pose="intro"]');
 demarrer({
   preparer() {
@@ -1033,6 +1080,7 @@ demarrer({
     profondeur();
     finitions();
     planches();
+    courrier();
     modules();
   },
   /* Intro (moins de 3 s) : le logo, un rang de tuiles qui se pose sous le nom, puis le logo glisse jusqu'à l'objet

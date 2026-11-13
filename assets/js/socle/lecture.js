@@ -1,6 +1,6 @@
 /* Pages longues : barre de lecture [data-barre-lecture] et sommaire qui suit la lecture [data-sommaire].
    La barre ne lit que window.scrollY et la hauteur gardée : aucune mesure pendant le défilement. */
-import { mesures } from './mesures.js?v=11';
+import { mesures } from './mesures.js?v=12';
 
 export function initLecture() {
   const barre = document.querySelector('[data-barre-lecture]');

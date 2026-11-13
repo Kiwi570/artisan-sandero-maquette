@@ -100,10 +100,8 @@ export default (c) => {
   <ul class="metiers-trio" data-anime="cascade">
     ${c.donnees.poles.poles.map((m, i) => html`<li class="pole">
       ${c.media({ nom: m.image, alt: '', cadrage: m.cadrage, sizes: '(max-width: 760px) 100vw, 32vw' })}
-      <p class="pole-metiers"><span>${String(i + 1).padStart(2, '0')}</span> ${m.metiers}</p>
-      <h3>${brut(m.nom)}</h3>
+      <h3>${c.lien(m.page, { classe: 'pole-lien', texte: html`<span class="pole-n">${String(i + 1).padStart(2, '0')}</span>${brut(m.nom)}&nbsp;<span class="pole-fleche" aria-hidden="true">→</span>` })}</h3>
       <p class="pole-texte">${m.texte}</p>
-      ${c.lien(m.page, { classe: 'pole-lien', texte: html`${c.t('accueil.metiers.voir')} <span aria-hidden="true">→</span>` })}
     </li>`)}
   </ul>
 </section>
@@ -147,18 +145,25 @@ export default (c) => {
 
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
   ${liteau(c, 'Rubrique 05 · Le courrier')}
-  <div class="section-tete">
-    <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.avis.titre')}</h2>
-    <p>${c.t('accueil.avis.intro')}</p>
-  </div>
-  <div class="avis-grille">
-    <div class="avis-cote">
-      <div class="avis-note" data-visuel data-anime><span class="avis-chiffre"><span data-compteur="9">9</span> avis</span><span class="etoiles" aria-hidden="true">★★★★★</span><span>tous à cinq étoiles</span></div>
-      <p>${c.t('accueil.avis.source')}</p>
+  <div class="courrier">
+    <div class="courrier-cote">
+      <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.avis.titre')}</h2>
+      <p class="courrier-note"><span class="courrier-chiffre">5,0</span><span class="courrier-sur">/ 5</span></p>
+      <p class="courrier-etoiles" role="img" aria-label="${c.s('accueil.avis.note')}">★★★★★</p>
+      <p class="courrier-source">${c.t('accueil.avis.intro')}</p>
+      <div class="courrier-nav" data-courrier-nav hidden>
+        <button type="button" class="courrier-btn" data-courrier="-1" aria-label="${c.s('accueil.avis.precedent')}"><span aria-hidden="true">←</span></button>
+        <p class="courrier-compte" aria-hidden="true"><b>01</b> / ${String(d.avis.length).padStart(2, '0')}</p>
+        <button type="button" class="courrier-btn" data-courrier="1" aria-label="${c.s('accueil.avis.suivant')}"><span aria-hidden="true">→</span></button>
+        <span class="courrier-progres" aria-hidden="true"><span></span></span>
+      </div>
     </div>
-    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Six des neuf avis, à faire défiler">
-      ${[...d.avis].sort((a, b) => b.texte.length - a.texte.length).slice(0, 6).map((a) => html`<li><blockquote>${a.texte}</blockquote><span class="etoiles" role="img" aria-label="${c.s('accueil.avis.note')}">★★★★★</span><cite>${a.nom}</cite></li>`)}
-    </ul>
+    <div class="lettre" data-courrier-lettre>
+      <span class="lettre-tampon" aria-hidden="true"><span>Taverny<br><small>★★★★★</small></span></span>
+      <ul class="lettre-avis" aria-label="${c.s('accueil.avis.liste')}">
+        ${d.avis.map((a, i) => html`<li class="lettre-un" data-avis="${i}"><blockquote><p><span class="guillemet">«</span>&nbsp;${a.texte}&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">${a.nom}</p></li>`)}
+      </ul>
+    </div>
   </div>
   <div class="labels" aria-labelledby="labels-titre">
     <h2 id="labels-titre" class="visuellement-cache">${c.t('accueil.labels.labels')}</h2>

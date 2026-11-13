@@ -1157,3 +1157,57 @@ h3.peinture-marques { margin: 30px 0 12px; font-family: var(--police-texte); fon
 @media (max-width: 560px) { .peinture-grille .logos--marques { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 /* Galerie des chantiers épinglée : elle doit tenir dans l'écran, même bas. */
 .chantiers .liteau { margin-top: 4px; }
+/* Métiers : la section tient dans un écran, même bas (photos en paysage, hauteur plafonnée ; le titre est le lien). */
+.metiers .section-tete { margin-bottom: clamp(24px, 3.4vw, 48px); }
+.pole .media { aspect-ratio: auto; height: clamp(150px, 28vh, 300px); margin-bottom: 18px; }
+.pole h3 { font-size: clamp(1.5rem, 1.05rem + 1.1vw, 2.15rem); margin: 0 0 8px; }
+.pole h3 .pole-lien { display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 0 .3em; min-height: 44px; padding-top: 4px; border: 0; color: var(--encre); text-decoration: none; font-weight: 500; }
+.pole-n { align-self: center; margin-right: .35em; font-family: var(--police-texte); font-size: .8125rem; font-weight: 800; letter-spacing: .14em; color: var(--tuile-texte); font-variant-numeric: tabular-nums; }
+.pole-fleche { font-family: var(--police-texte); font-size: .7em; color: var(--tuile-texte); transition: transform .3s var(--courbe); }
+.pole:hover .pole-fleche, .pole-lien:focus-visible .pole-fleche { transform: translateX(6px); }
+.pole h3 .pole-lien:hover { text-decoration: underline; text-decoration-color: var(--liteau); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.pole-texte { font-size: 1rem; line-height: 1.55; margin: 0; max-width: 38ch; }
+@media (max-width: 899px) { .pole .media { height: auto; aspect-ratio: 16 / 10; } }
+@media (max-height: 700px) and (min-width: 900px) { .pole .media { height: clamp(140px, 23vh, 300px); } .metiers .section-tete { margin-bottom: 22px; } }
+.pole h3 .pole-lien { display: inline; padding-block: 6px; }
+.pole-n { display: inline-block; vertical-align: .35em; }
+
+/* ---------- Le courrier : la note en grand, une lettre de client à la fois ---------- */
+.courrier { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(40px, 7vw, 120px); align-items: center; }
+.courrier-cote h2 { font-size: clamp(2.2rem, min(5vw, 9vh), 4.6rem); line-height: 1; margin: 0 0 clamp(24px, 3.4vw, 44px); text-wrap: balance; }
+.courrier-note { display: flex; align-items: baseline; gap: .18em; margin: 0; font-family: var(--police-titres); line-height: .8; }
+.courrier-chiffre { font-size: clamp(5rem, 2.6rem + 6.4vw, 9.5rem); font-weight: 500; letter-spacing: -.035em; }
+.courrier-sur { font-size: clamp(1.4rem, 1rem + 1vw, 2.1rem); color: var(--doux); }
+.courrier-etoiles { margin: 14px 0 10px; color: var(--tuile-texte); font-size: 1.45rem; letter-spacing: .14em; }
+.courrier-source { margin: 0 0 clamp(26px, 3.4vw, 40px); max-width: 34ch; color: var(--doux); font-size: 1.0625rem; line-height: 1.55; }
+.courrier-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 14px; }
+.courrier-btn { display: grid; place-items: center; width: 52px; height: 52px; padding: 0; border-radius: 50%; border: 1.5px solid var(--encre); background: transparent; color: var(--encre); font-size: 1.15rem; cursor: pointer; transition: background-color .25s, color .25s; }
+.courrier-btn:hover, .courrier-btn:focus-visible { background: var(--encre); color: var(--chaux); }
+.courrier-compte { margin: 0; min-width: 6ch; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--doux); }
+.courrier-compte b { color: var(--encre); }
+.courrier-progres { flex-basis: 100%; display: block; height: 3px; max-width: 182px; background: var(--ligne); overflow: hidden; border-radius: 2px; }
+.courrier-progres span { display: block; height: 100%; background: var(--liteau); transform-origin: 0 50%; transform: scaleX(0); }
+/* La lettre : papier posé un peu de biais, le tampon de Taverny. */
+.lettre { position: relative; padding: clamp(44px, 6vw, 88px) clamp(28px, 5.4vw, 84px) clamp(36px, 4.6vw, 64px); background: #fbf7f1; border-radius: 2px; box-shadow: 0 1px 0 var(--ligne), 0 34px 64px -40px rgba(34, 24, 15, .45); transform: rotate(-.7deg); }
+.lettre-tampon { position: absolute; top: clamp(16px, 2vw, 26px); right: clamp(16px, 2.4vw, 30px); display: grid; place-items: center; align-content: center; gap: 2px; width: 104px; height: 104px; border-radius: 50%; border: 2px solid rgba(189, 82, 42, .75); outline: 1px dashed rgba(189, 82, 42, .6); outline-offset: -8px; color: var(--tuile-texte); text-align: center; transform: rotate(-12deg); opacity: .85; }
+.lettre-tampon span { font-size: .78rem; line-height: 1.5; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.lettre-tampon small { font-size: .8rem; letter-spacing: .08em; font-weight: 400; }
+.lettre-avis { display: grid; list-style: none; margin: 0; padding: 0; }
+.lettre-un { min-width: 0; align-self: center; }
+.lettre-un + .lettre-un { margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--ligne); }
+.lettre blockquote { margin: 0; }
+.lettre blockquote p { margin: 0; padding-right: clamp(64px, 8vw, 110px); font-family: var(--police-titres); font-style: italic; font-weight: 500; font-size: clamp(1.9rem, 1.2rem + 2.3vw, 3.3rem); line-height: 1.1; letter-spacing: -.012em; text-wrap: balance; }
+.lettre .guillemet { color: var(--tuile-texte); font-style: normal; }
+.lettre-signe { display: flex; align-items: center; gap: 14px; margin: clamp(24px, 3vw, 36px) 0 0; font-weight: 700; font-size: 1rem; text-transform: capitalize; }
+.lettre-signe::before { content: ""; width: 34px; height: 3px; border-radius: 2px; background: var(--liteau); }
+.lettre .pc-ligne-mask { overflow: visible !important; clip-path: inset(-.25em -1em -.25em -1em); }
+html.js:not(.secours) .courrier-actif .lettre-un { grid-area: 1 / 1; margin: 0; padding: 0; border: 0; visibility: hidden; }
+html.js:not(.secours) .courrier-actif .lettre-un.actif, html.js:not(.secours) .courrier-actif .lettre-un.sortie { visibility: visible; }
+.lettre-tampon.frappe { animation: courrier-tampon .5s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes courrier-tampon { 0% { transform: rotate(-12deg) scale(1); } 35% { transform: rotate(-16deg) scale(1.14); } 100% { transform: rotate(-12deg) scale(1); } }
+@media (max-width: 899px) {
+  .courrier { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .lettre { transform: none; }
+  .lettre-tampon { width: 84px; height: 84px; }
+  .lettre blockquote p { padding-right: 0; padding-top: 52px; }
+}

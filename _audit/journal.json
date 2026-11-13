@@ -350,6 +350,22 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 12,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil : métiers, courrier"
+   ],
+   "etapes": [
+    {
+     "etape": "métiers dans un écran, courrier refait en lettre",
+     "budget": 35,
+     "debut": "2026-11-13T13:21:00+01:00",
+     "fin": "2026-11-13T13:32:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

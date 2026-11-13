@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="11">
+<html lang="fr" data-v="12">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=11">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=11">
-<link rel="stylesheet" href="/assets/css/site.css?v=11">
-<link rel="modulepreload" href="/assets/js/site.js?v=11">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=11">
+<link rel="stylesheet" href="/assets/css/socle.css?v=12">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=12">
+<link rel="stylesheet" href="/assets/css/site.css?v=12">
+<link rel="modulepreload" href="/assets/js/site.js?v=12">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=12">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=11"></script>
+<script type="module" src="/assets/js/site.js?v=12"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -382,30 +382,24 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="960" height="866" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <p class="pole-metiers"><span>01</span> Couverture</p>
-      <h3>Couverture</h3>
+      <h3><a href="/couverture" class="pole-lien" data-libelle="Couverture"><span class="pole-n">01</span>Couverture&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
       <p class="pole-texte">Pose, rénovation, démoussage, isolation et fenêtres de toit, sur tuiles, ardoises, zinc ou béton.</p>
-      <a href="/couverture" class="pole-lien" data-libelle="Couverture">Voir la page <span aria-hidden="true">→</span></a>
     </li><li class="pole">
       <figure class="media " style="--cadrage:50% 55%">
   <picture>
     <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="640" height="427" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <p class="pole-metiers"><span>02</span> Zinguerie · Charpente</p>
-      <h3>Zinguerie <em>et</em> charpente</h3>
+      <h3><a href="/zinguerie-charpente" class="pole-lien" data-libelle="Zinguerie et charpente"><span class="pole-n">02</span>Zinguerie <em>et</em> charpente&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
       <p class="pole-texte">Gouttières soudées, chéneaux, noues et solins sur mesure ; charpentes diagnostiquées, renforcées, traitées.</p>
-      <a href="/zinguerie-charpente" class="pole-lien" data-libelle="Zinguerie et charpente">Voir la page <span aria-hidden="true">→</span></a>
     </li><li class="pole">
       <figure class="media " data-grok style="--cadrage:55% 50%">
   <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 32vw">
     <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-      <p class="pole-metiers"><span>03</span> Peinture · Ravalement</p>
-      <h3>Peinture <em>et</em> façades</h3>
+      <h3><a href="/facades" class="pole-lien" data-libelle="Peinture et façades"><span class="pole-n">03</span>Peinture <em>et</em> façades&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
       <p class="pole-texte">Façades, boiseries et volets repeints en deux couches ; ravalement en quatre temps.</p>
-      <a href="/facades" class="pole-lien" data-libelle="Peinture et façades">Voir la page <span aria-hidden="true">→</span></a>
     </li>
   </ul>
 </section>
@@ -474,18 +468,25 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
   <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 05 · Le courrier</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
-  <div class="section-tete">
-    <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">Le courrier des clients</h2>
-    <p>Neuf avis publiés par des clients, tous à cinq étoiles. En voici six.</p>
-  </div>
-  <div class="avis-grille">
-    <div class="avis-cote">
-      <div class="avis-note" data-visuel data-anime><span class="avis-chiffre"><span data-compteur="9">9</span> avis</span><span class="etoiles" aria-hidden="true">★★★★★</span><span>tous à cinq étoiles</span></div>
-      <p>Avis repris du site de l&#39;entreprise, publiés sur Google et PagesJaunes.</p>
+  <div class="courrier">
+    <div class="courrier-cote">
+      <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">Le courrier des clients</h2>
+      <p class="courrier-note"><span class="courrier-chiffre">5,0</span><span class="courrier-sur">/ 5</span></p>
+      <p class="courrier-etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</p>
+      <p class="courrier-source">Neuf avis publiés par des clients sur Google et PagesJaunes, tous à cinq étoiles.</p>
+      <div class="courrier-nav" data-courrier-nav hidden>
+        <button type="button" class="courrier-btn" data-courrier="-1" aria-label="Avis précédent"><span aria-hidden="true">←</span></button>
+        <p class="courrier-compte" aria-hidden="true"><b>01</b> / 09</p>
+        <button type="button" class="courrier-btn" data-courrier="1" aria-label="Avis suivant"><span aria-hidden="true">→</span></button>
+        <span class="courrier-progres" aria-hidden="true"><span></span></span>
+      </div>
     </div>
-    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Six des neuf avis, à faire défiler">
-      <li><blockquote>Dany est un artisan très professionnel et digne de confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Carol Cazals</cite></li><li><blockquote>Très professionnel, ponctuel, je recommande vivement.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Kim ono</cite></li><li><blockquote>Entreprise familiale qui nous a inspiré confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Berhouet Thierry</cite></li><li><blockquote>Très accueillant, travail, soigné et exemplaire.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Joseph Sebag</cite></li><li><blockquote>Excellent travail personne très à l&#39;écoute.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Azaoui Cheikh</cite></li><li><blockquote>Entreprise très réactive sérieuse.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Lory</cite></li>
-    </ul>
+    <div class="lettre" data-courrier-lettre>
+      <span class="lettre-tampon" aria-hidden="true"><span>Taverny<br><small>★★★★★</small></span></span>
+      <ul class="lettre-avis" aria-label="Les neuf avis des clients">
+        <li class="lettre-un" data-avis="0"><blockquote><p><span class="guillemet">«</span>&nbsp;Entreprise familiale qui nous a inspiré confiance.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Berhouet Thierry</p></li><li class="lettre-un" data-avis="1"><blockquote><p><span class="guillemet">«</span>&nbsp;Dany est un artisan très professionnel et digne de confiance.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Carol Cazals</p></li><li class="lettre-un" data-avis="2"><blockquote><p><span class="guillemet">«</span>&nbsp;Très professionnel, ponctuel, je recommande vivement.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Kim ono</p></li><li class="lettre-un" data-avis="3"><blockquote><p><span class="guillemet">«</span>&nbsp;Très accueillant, travail, soigné et exemplaire.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Joseph Sebag</p></li><li class="lettre-un" data-avis="4"><blockquote><p><span class="guillemet">«</span>&nbsp;Excellent travail personne très à l&#39;écoute.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Azaoui Cheikh</p></li><li class="lettre-un" data-avis="5"><blockquote><p><span class="guillemet">«</span>&nbsp;Entreprise très réactive sérieuse.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">Lory</p></li><li class="lettre-un" data-avis="6"><blockquote><p><span class="guillemet">«</span>&nbsp;Très satisfaite, du bon travail.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">phil giard</p></li><li class="lettre-un" data-avis="7"><blockquote><p><span class="guillemet">«</span>&nbsp;Travail rapide et efficace.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">agnes</p></li><li class="lettre-un" data-avis="8"><blockquote><p><span class="guillemet">«</span>&nbsp;Il m&#39;a conseillé au mieux.&nbsp;<span class="guillemet">»</span></p></blockquote><p class="lettre-signe">rayane</p></li>
+      </ul>
+    </div>
   </div>
   <div class="labels" aria-labelledby="labels-titre">
     <h2 id="labels-titre" class="visuellement-cache">Labels affichés par l&#39;entreprise</h2>

@@ -1,6 +1,6 @@
 /* Adaptateur : les modules de la bibliothèque appellent pret([...]) ; ici on leur donne le GSAP et l'état du socle du site
    (mode calme, défilement natif, rafraîchissement regroupé) au lieu du socle de démonstration des modules. */
-import { etat, rafraichir } from '../socle/index.js?v=11';
+import { etat, rafraichir } from '../socle/index.js?v=12';
 
 export async function pret() {
   return {

@@ -136,9 +136,12 @@
   },
   "avis": {
    "titre": "Le courrier des clients",
-   "intro": "Neuf avis publiés par des clients, tous à cinq étoiles. En voici six.",
+   "intro": "Neuf avis publiés par des clients sur Google et PagesJaunes, tous à cinq étoiles.",
    "source": "Avis repris du site de l'entreprise, publiés sur Google et PagesJaunes.",
-   "note": "5 étoiles sur 5"
+   "note": "5 étoiles sur 5",
+   "precedent": "Avis précédent",
+   "suivant": "Avis suivant",
+   "liste": "Les neuf avis des clients"
   },
   "labels": {
    "titre": "Labels et fournisseurs",

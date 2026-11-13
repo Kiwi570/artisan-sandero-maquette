@@ -2,6 +2,21 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v12 — métiers dans un écran, le courrier refait
+
+- **Métiers** : la section tient dans un écran, même bas (vérifiée en 1288 × 626, 1366 × 768, 1440 × 900, 1920 × 1080 et 1024 × 768).
+  - Les photos passent en paysage, avec une hauteur plafonnée selon l'écran.
+  - Le titre de chaque bloc devient le lien (« 01 Couverture → »). Le surtitre qui répétait le titre et la ligne « Voir la page » disparaissent.
+- **Le courrier, refait** :
+  - Le pavé noir « 9 avis » et la grille à colonnes disparaissent.
+  - À gauche, la note en très grand (« 5,0 / 5 »), les étoiles et le nombre d'avis.
+  - À droite, une lettre de client sur papier, posée un peu de biais, avec un tampon « Taverny ». Un seul avis à la fois, en grand italique.
+  - Les neuf avis défilent seuls toutes les 7 secondes quand la lettre est à l'écran. Ils s'arrêtent au survol ou au clavier, et se pilotent avec les flèches, un compteur « 01 / 09 » et une barre de progression.
+  - Le changement suit l'effet de relais du site : les lignes sortent puis entrent dans leur masque, et le tampon frappe.
+  - L'avis « Entreprise familiale qui nous a inspiré confiance » ouvre la série.
+  - Sans JavaScript, les neuf avis se lisent l'un sous l'autre.
+- **Accessibilité** : les paragraphes découpés pour l'animation ne portent plus d'attribut ARIA interdit.
+
 ## v11 — un site plus aéré
 
 Audit de toutes les pages, sur ordinateur et téléphone. L'impression de fouillis venait de cinq choses : trop de rubriques à la suite sur l'accueil, des barres jaunes sur toute la largeur à chaque section, des sections serrées (environ 94 px entre elles), une mosaïque de cinq cartes avec filtres pour les métiers, et un bloc avis, labels et marques très dense.

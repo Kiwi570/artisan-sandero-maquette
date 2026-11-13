@@ -4,11 +4,11 @@
    Les liens vers la page en cours font défiler sans recharger (chemins normalisés, cleanUrls).
    Les grands sauts dans une même page passent aussi sous le voile.
    La forme du voile (glisse, iris, vague, rideau) est dans voile.js. */
-import { html, etat, chemin, stockage, emettre } from './etat.js?v=11';
-import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=11';
-import { fermerMenu } from './entete.js?v=11';
-import { suivre, lacher } from './gouttiere.js?v=11';
-import { voile, couvrir, decouvrir } from './voile.js?v=11';
+import { html, etat, chemin, stockage, emettre } from './etat.js?v=12';
+import { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=12';
+import { fermerMenu } from './entete.js?v=12';
+import { suivre, lacher } from './gouttiere.js?v=12';
+import { voile, couvrir, decouvrir } from './voile.js?v=12';
 
 const prechargees = new Set();
 let enDepart = false;
