@@ -1,0 +1,19 @@
+{
+ "id": "20261113-114605-rapide-partiel",
+ "date": "2026-11-13T11:49:46.256Z",
+ "niveau": "rapide",
+ "pages": "toutes",
+ "etapes": [
+  "fichiers",
+  "mesures",
+  "parcours",
+  "ecran",
+  "mouvement"
+ ],
+ "version": "11",
+ "echecs": 6,
+ "aRegarder": 18,
+ "nonLances": 1,
+ "manquants": 1,
+ "statut": "échecs"
+}

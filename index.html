@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="10">
+<html lang="fr" data-v="11">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=10">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=10">
-<link rel="stylesheet" href="/assets/css/site.css?v=10">
-<link rel="modulepreload" href="/assets/js/site.js?v=10">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=10">
+<link rel="stylesheet" href="/assets/css/socle.css?v=11">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=11">
+<link rel="stylesheet" href="/assets/css/site.css?v=11">
+<link rel="modulepreload" href="/assets/js/site.js?v=11">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=11">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=10"></script>
+<script type="module" src="/assets/js/site.js?v=11"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -191,7 +191,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Le diagnostic</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="section-tete">
       <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">Ce que vous voyez <em>d'en bas</em>.</h2>
-      <p>Choisissez ce qui ressemble à chez vous. On vous dit d&#39;où ça vient le plus souvent, quelle couche du toit est en cause, et la demande de devis est déjà prête.</p>
+      <p>Choisissez ce qui ressemble à chez vous : d&#39;où ça vient, ce qui est en cause, et la demande de devis est prête.</p>
     </div>
     <div class="planche planche--coupe">
       <div class="planche-dessin">
@@ -298,8 +298,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On cherche le point d&#39;entrée depuis le toit, on remplace les tuiles et on vérifie l&#39;écran dessous.</p>
-            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Tuiles cassées remplacées</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=couverture&amp;signes=Tache%20au%20plafond#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Tache%20au%20plafond#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Tuiles cassées remplacées <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="mousse" id="symptome-mousse" aria-labelledby="symptome-mousse-titre">
             <p class="fiche-n">Symptôme 02 / 08</p>
             <h3 id="symptome-mousse-titre">De la mousse <em>sur les tuiles</em></h3>
@@ -307,8 +307,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Démoussage, puis traitement hydrofuge pour que l&#39;eau glisse. De préférence au printemps ou à l&#39;automne.</p>
-            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Démoussage et hydrofuge</span> <span aria-hidden="true">→</span></a></li><li><a href="/couverture" data-libelle="Couverture"><span>Essayez : démoussez un toit vous-même</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=couverture&amp;signes=Mousse%20sur%20le%20toit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Mousse%20sur%20le%20toit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Démoussage et hydrofuge <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="gouttiere" id="symptome-gouttiere" aria-labelledby="symptome-gouttiere-titre">
             <p class="fiche-n">Symptôme 03 / 08</p>
             <h3 id="symptome-gouttiere-titre">La gouttière <em>déborde</em></h3>
@@ -316,8 +316,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a href="/couverture#piece-gouttiere" class="fiche-pastille" data-libelle="Couverture">La gouttière <span class="fiche-voir">· voir la pièce →</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, pente reprise, ou gouttière en zinc refaite sur mesure.</p>
-            <ul class="fiche-liens"><li><a href="/zinguerie-charpente#signes" data-libelle="Zinguerie et charpente"><span>Votre gouttière vous fait signe ?</span> <span aria-hidden="true">→</span></a></li><li><a href="/zinguerie-charpente#zinguerie" data-libelle="Zinguerie et charpente"><span>Zinguerie sur mesure</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=zinguerie&amp;signes=Goutti%C3%A8re%20qui%20d%C3%A9borde#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=zinguerie&amp;signes=Goutti%C3%A8re%20qui%20d%C3%A9borde#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/zinguerie-charpente#signes" class="fiche-lien" data-libelle="Zinguerie et charpente">Votre gouttière vous fait signe ? <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="cheminee" id="symptome-cheminee" aria-labelledby="symptome-cheminee-titre">
             <p class="fiche-n">Symptôme 04 / 08</p>
             <h3 id="symptome-cheminee-titre">De l'eau <em>le long de la cheminée</em></h3>
@@ -325,8 +325,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a href="/couverture#piece-solin" class="fiche-pastille" data-libelle="Couverture">Le solin <span class="fiche-voir">· voir la pièce →</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On refait le solin et, si besoin, le pied de cheminée et les tuiles autour.</p>
-            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Pieds de cheminée remis en état</span> <span aria-hidden="true">→</span></a></li><li><a href="/zinguerie-charpente#zinguerie" data-libelle="Zinguerie et charpente"><span>Solins en zinc</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=couverture&amp;signes=Eau%20le%20long%20de%20la%20chemin%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Eau%20le%20long%20de%20la%20chemin%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Pieds de cheminée remis en état <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="combles" id="symptome-combles" aria-labelledby="symptome-combles-titre">
             <p class="fiche-n">Symptôme 05 / 08</p>
             <h3 id="symptome-combles-titre">Des combles <em>humides</em></h3>
@@ -334,8 +334,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a class="fiche-pastille" href="#couche-3" data-couche="2"><b>03</b> L&#39;écran sous-toiture <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On vérifie l&#39;écran et l&#39;aération du toit (chatières, closoir), puis on le remplace là où il faut, souvent lors d&#39;une réfection.</p>
-            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Pose et réfection de couverture</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=couverture&amp;signes=Combles%20humides#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Combles%20humides#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Pose et réfection de couverture <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="froid" id="symptome-froid" aria-labelledby="symptome-froid-titre">
             <p class="fiche-n">Symptôme 06 / 08</p>
             <h3 id="symptome-froid-titre">Froide l'hiver, <em>étouffante l'été</em></h3>
@@ -343,8 +343,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a class="fiche-pastille" href="#couche-4" data-couche="3"><b>04</b> L&#39;isolant <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Isolation des combles perdus ou aménageables, par l&#39;intérieur ou par l&#39;extérieur, en laine de verre ou de roche.</p>
-            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Isolation de la toiture et des combles</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=couverture&amp;signes=Maison%20froide#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Maison%20froide#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Isolation de la toiture et des combles <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="charpente" id="symptome-charpente" aria-labelledby="symptome-charpente-titre">
             <p class="fiche-n">Symptôme 07 / 08</p>
             <h3 id="symptome-charpente-titre">Le toit se creuse, <em>une poutre fléchit</em></h3>
@@ -352,8 +352,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <a class="fiche-pastille" href="#couche-5" data-couche="4"><b>05</b> Les chevrons <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Diagnostic de la charpente, traitement contre les insectes et la mérule, renfort ou remplacement des pièces.</p>
-            <ul class="fiche-liens"><li><a href="/zinguerie-charpente#charpente" data-libelle="Zinguerie et charpente"><span>Charpente : diagnostic, traitement, renfort</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=charpente&amp;signes=Charpente%20qui%20fl%C3%A9chit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=charpente&amp;signes=Charpente%20qui%20fl%C3%A9chit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/zinguerie-charpente#charpente" class="fiche-lien" data-libelle="Zinguerie et charpente">Charpente : diagnostic, traitement, renfort <span aria-hidden="true">→</span></a></p>
           </article><article class="fiche" data-fiche="facade" id="symptome-facade" aria-labelledby="symptome-facade-titre">
             <p class="fiche-n">Symptôme 08 / 08</p>
             <h3 id="symptome-facade-titre">La façade se fissure <em>ou noircit</em></h3>
@@ -361,8 +361,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
             <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
               <span class="fiche-pastille fiche-pastille--simple">L&#39;enduit de la façade</span></p>
             <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, fissures traitées, puis ravalement ou peinture de façade.</p>
-            <ul class="fiche-liens"><li><a href="/facades#ravalement" data-libelle="Peinture et façades"><span>Ravalement de façade</span> <span aria-hidden="true">→</span></a></li><li><a href="/facades#finitions" data-libelle="Peinture et façades"><span>Choisir sa finition</span> <span aria-hidden="true">→</span></a></li></ul>
-            <a href="/devis?prestation=ravalement&amp;signes=Fa%C3%A7ade%20fissur%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+            <p class="fiche-actions"><a href="/devis?prestation=ravalement&amp;signes=Fa%C3%A7ade%20fissur%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+              <a href="/facades#ravalement" class="fiche-lien" data-libelle="Peinture et façades">Ravalement de façade <span aria-hidden="true">→</span></a></p>
           </article>
         </div>
       </div>
@@ -373,47 +373,39 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Les métiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
   <div class="section-tete">
     <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">Cinq métiers, une même famille.</h2>
-    <p>Choisissez où ça se passe chez vous : la grille se recompose.</p>
+    <p>Le toit, le zinc et le bois, la façade : une seule équipe pour les trois.</p>
   </div>
-  <ul class="filtres" aria-label="Filtrer les métiers">
-    <li><button type="button" data-filtre="tout" aria-pressed="true">Tout</button></li><li><button type="button" data-filtre="toit" aria-pressed="false">Toit</button></li><li><button type="button" data-filtre="gouttieres" aria-pressed="false">Gouttières</button></li><li><button type="button" data-filtre="facade" aria-pressed="false">Façade</button></li><li><button type="button" data-filtre="charpente" aria-pressed="false">Charpente</button></li>
-  </ul>
-  <ul class="metiers-grille" data-anime="cascade" data-effet="metiers-recompose">
-    <li class="metier grande" data-tags="toit">
+  <ul class="metiers-trio" data-anime="cascade">
+    <li class="pole">
       <figure class="media " style="--cadrage:50% 50%">
   <picture>
-    <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw" alt="Couverture" width="960" height="866" loading="lazy" decoding="async">
+    <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="960" height="866" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <div class="metier-corps"><p class="metier-n">01</p><h3>Couverture</h3><p>Pose, rénovation, nettoyage et démoussage, sur tuiles, ardoises, zinc ou béton.</p><p class="metier-sous">Isolation · Fenêtres de toit</p><a href="/couverture" data-libelle="Couverture">Pose, rénovation, démoussage →</a></div>
-    </li><li class="metier" data-tags="gouttieres toit">
+      <p class="pole-metiers"><span>01</span> Couverture</p>
+      <h3>Couverture</h3>
+      <p class="pole-texte">Pose, rénovation, démoussage, isolation et fenêtres de toit, sur tuiles, ardoises, zinc ou béton.</p>
+      <a href="/couverture" class="pole-lien" data-libelle="Couverture">Voir la page <span aria-hidden="true">→</span></a>
+    </li><li class="pole">
       <figure class="media " style="--cadrage:50% 55%">
   <picture>
-    <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw" alt="Zinguerie" width="640" height="427" loading="lazy" decoding="async">
+    <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="640" height="427" loading="lazy" decoding="async">
   </picture>
 </figure>
-      <div class="metier-corps"><p class="metier-n">02</p><h3>Zinguerie</h3><p>Gouttières soudées, chéneaux, noues, solins et rives sur mesure.</p><p class="metier-sous">Cheminées</p><a href="/zinguerie-charpente" data-libelle="Zinguerie et charpente">Gouttières et cheminées →</a></div>
-    </li><li class="metier" data-tags="charpente toit">
-      <figure class="media " style="--cadrage:50% 40%">
-  <picture>
-    <img src="/assets/images/chantier-ciel-960.webp" srcset="/assets/images/chantier-ciel-480.webp 480w, /assets/images/chantier-ciel-640.webp 640w, /assets/images/chantier-ciel-960.webp 960w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw" alt="Charpente" width="960" height="960" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <div class="metier-corps"><p class="metier-n">03</p><h3>Charpente</h3><p>Diagnostic, renforcement, remplacement et traitement des charpentes en bois.</p><p class="metier-sous">Xylophages et mérule</p><a href="/zinguerie-charpente#charpente" data-libelle="Zinguerie et charpente">Diagnostic de charpente →</a></div>
-    </li><li class="metier" data-tags="facade">
-      <figure class="media " data-grok style="--cadrage:50% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw">
-    <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw" alt="Peinture" width="1280" height="720" loading="lazy" decoding="async">
+      <p class="pole-metiers"><span>02</span> Zinguerie · Charpente</p>
+      <h3>Zinguerie <em>et</em> charpente</h3>
+      <p class="pole-texte">Gouttières soudées, chéneaux, noues et solins sur mesure ; charpentes diagnostiquées, renforcées, traitées.</p>
+      <a href="/zinguerie-charpente" class="pole-lien" data-libelle="Zinguerie et charpente">Voir la page <span aria-hidden="true">→</span></a>
+    </li><li class="pole">
+      <figure class="media " data-grok style="--cadrage:55% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 32vw">
+    <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-      <div class="metier-corps"><p class="metier-n">04</p><h3>Peinture</h3><p>Façades, boiseries, volets, portes, clôtures et portails, en deux couches.</p><p class="metier-sous">Toitures</p><a href="/facades#peinture" data-libelle="Peinture et façades">Peinture en deux couches →</a></div>
-    </li><li class="metier" data-tags="facade">
-      <figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/chantier-facade-800.webp" srcset="/assets/images/chantier-facade-480.webp 480w, /assets/images/chantier-facade-640.webp 640w, /assets/images/chantier-facade-800.webp 800w" sizes="(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw" alt="Ravalement" width="800" height="533" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <div class="metier-corps"><p class="metier-n">05</p><h3>Ravalement</h3><p>Diagnostic, nettoyage, rebouchage des fissures et peinture, sur béton, brique ou pierre.</p><p class="metier-sous">Enduits</p><a href="/facades#ravalement" data-libelle="Peinture et façades">Ravalement en quatre temps →</a></div>
+      <p class="pole-metiers"><span>03</span> Peinture · Ravalement</p>
+      <h3>Peinture <em>et</em> façades</h3>
+      <p class="pole-texte">Façades, boiseries et volets repeints en deux couches ; ravalement en quatre temps.</p>
+      <a href="/facades" class="pole-lien" data-libelle="Peinture et façades">Voir la page <span aria-hidden="true">→</span></a>
     </li>
   </ul>
 </section>
@@ -450,28 +442,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
   <div class="conteneur galerie-progres" aria-hidden="true"><span></span></div>
 </section>
-<section class="section methode" id="methode" aria-labelledby="methode-titre">
-  <div class="conteneur">
-    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 04 · La méthode</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
-    <div class="section-tete">
-      <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">La méthode, rang par rang.</h2>
-      <p>Six étapes, toujours dans le même ordre. Chacune recouvre la précédente, comme un rang de tuiles.</p>
-    </div>
-    <div class="methode-grille">
-      <figure class="media methode-photo" data-fx="parallaxe" data-fx-force="8" style="--cadrage:62% 50%">
-  <picture>
-    <img src="/assets/images/chantier-faitage-640.webp" srcset="/assets/images/chantier-faitage-480.webp 480w, /assets/images/chantier-faitage-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Un couvreur de l’entreprise pose le faîtage, les pavillons en contrebas" width="640" height="854" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <ol class="rangs" data-effet="methode-rangs">
-        <li class="rang-tuile" style="--i:0"><span class="rang-n">01</span><h3>Vos besoins</h3><p>On discute ensemble de vos envies et de vos besoins.</p></li><li class="rang-tuile" style="--i:1"><span class="rang-n">02</span><h3>Le diagnostic</h3><p>Toiture ou façade : chaque élément est inspecté sur place.</p></li><li class="rang-tuile" style="--i:2"><span class="rang-n">03</span><h3>Le devis détaillé</h3><p>Un devis gratuit qui reprend toutes les interventions, expliqué point par point.</p></li><li class="rang-tuile" style="--i:3"><span class="rang-n">04</span><h3>Les matériaux</h3><p>Tuiles, zinc et peintures de qualité, choisis avec vous.</p></li><li class="rang-tuile" style="--i:4"><span class="rang-n">05</span><h3>Les travaux</h3><p>Des travaux sur mesure, personnalisés et dans les délais.</p></li><li class="rang-tuile" style="--i:5"><span class="rang-n">06</span><h3>Conseils et suivi</h3><p>Après le chantier, comptez sur nos conseils et notre aide.</p></li>
-      </ol>
-    </div>
-  </div>
-</section>
 <section class="section famille sombre" id="famille" aria-labelledby="famille-titre">
   <div class="conteneur">
-    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 05 · De père en fils</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 04 · De père en fils</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="famille-grille">
       <div>
         <h2 id="famille-titre" class="visuellement-cache">De père en fils</h2>
@@ -500,22 +473,22 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
-  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 06 · Le courrier et les labels</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 05 · Le courrier</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
   <div class="section-tete">
     <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">Le courrier des clients</h2>
-    <p>Neuf avis publiés par des clients, tous à cinq étoiles.</p>
+    <p>Neuf avis publiés par des clients, tous à cinq étoiles. En voici six.</p>
   </div>
   <div class="avis-grille">
     <div class="avis-cote">
       <div class="avis-note" data-visuel data-anime><span class="avis-chiffre"><span data-compteur="9">9</span> avis</span><span class="etoiles" aria-hidden="true">★★★★★</span><span>tous à cinq étoiles</span></div>
       <p>Avis repris du site de l&#39;entreprise, publiés sur Google et PagesJaunes.</p>
     </div>
-    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Les neuf avis, à faire défiler">
-      <li><blockquote>Entreprise familiale qui nous a inspiré confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Berhouet Thierry</cite></li><li><blockquote>Dany est un artisan très professionnel et digne de confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Carol Cazals</cite></li><li><blockquote>Il m&#39;a conseillé au mieux.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>rayane</cite></li><li><blockquote>Très accueillant, travail, soigné et exemplaire.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Joseph Sebag</cite></li><li><blockquote>Très professionnel, ponctuel, je recommande vivement.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Kim ono</cite></li><li><blockquote>Excellent travail personne très à l&#39;écoute.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Azaoui Cheikh</cite></li><li><blockquote>Très satisfaite, du bon travail.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>phil giard</cite></li><li><blockquote>Entreprise très réactive sérieuse.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Lory</cite></li><li><blockquote>Travail rapide et efficace.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>agnes</cite></li>
+    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Six des neuf avis, à faire défiler">
+      <li><blockquote>Dany est un artisan très professionnel et digne de confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Carol Cazals</cite></li><li><blockquote>Très professionnel, ponctuel, je recommande vivement.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Kim ono</cite></li><li><blockquote>Entreprise familiale qui nous a inspiré confiance.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Berhouet Thierry</cite></li><li><blockquote>Très accueillant, travail, soigné et exemplaire.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Joseph Sebag</cite></li><li><blockquote>Excellent travail personne très à l&#39;écoute.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Azaoui Cheikh</cite></li><li><blockquote>Entreprise très réactive sérieuse.</blockquote><span class="etoiles" role="img" aria-label="5 étoiles sur 5">★★★★★</span><cite>Lory</cite></li>
     </ul>
   </div>
   <div class="labels" aria-labelledby="labels-titre">
-    <h2 id="labels-titre" class="visuellement-cache">Labels et fournisseurs</h2>
+    <h2 id="labels-titre" class="visuellement-cache">Labels affichés par l&#39;entreprise</h2>
     <div class="labels-grille">
       <div><h3>Labels affichés par l&#39;entreprise</h3><ul class="logos logos--labels" data-anime="cascade"><li><figure class="media " style="--cadrage:50% 50%">
   <picture>
@@ -534,31 +507,6 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/label-toutes-hauteurs-480.webp" srcset="/assets/images/label-toutes-hauteurs-240.webp 240w, /assets/images/label-toutes-hauteurs-480.webp 480w" sizes="120px" alt="" width="480" height="480" loading="lazy" decoding="async">
   </picture>
 </figure><span>Toutes hauteurs</span></li></ul></div>
-      <div><h3>Marques utilisées</h3><ul class="logos logos--marques" data-anime="cascade"><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-velux-480.webp" srcset="/assets/images/marque-velux-240.webp 240w, /assets/images/marque-velux-480.webp 480w" sizes="160px" alt="Velux" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-tollens-480.webp" srcset="/assets/images/marque-tollens-240.webp 240w, /assets/images/marque-tollens-480.webp 480w" sizes="160px" alt="Tollens" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-sikkens-480.webp" srcset="/assets/images/marque-sikkens-240.webp 240w, /assets/images/marque-sikkens-480.webp 480w" sizes="160px" alt="Sikkens" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-maestria-480.webp" srcset="/assets/images/marque-maestria-240.webp 240w, /assets/images/marque-maestria-480.webp 480w" sizes="160px" alt="Maestria" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-cimentol-480.webp" srcset="/assets/images/marque-cimentol-240.webp 240w, /assets/images/marque-cimentol-480.webp 480w" sizes="160px" alt="Cimentol" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li><li><figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/marque-dalep-480.webp" srcset="/assets/images/marque-dalep-240.webp 240w, /assets/images/marque-dalep-480.webp 480w" sizes="160px" alt="Dalep" width="480" height="309" loading="lazy" decoding="async">
-  </picture>
-</figure></li></ul></div>
     </div>
   </div>
 </section>
@@ -569,7 +517,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
   <div class="conteneur">
-    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 07 · La zone</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 06 · La zone</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <h2 id="zone-titre" data-titre-pose data-effet="titre-pose">De Taverny aux communes voisines</h2>
     <p>Taverny et alentour : Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis. Diagnostic sur place et devis gratuit.</p>
     <ul class="communes" data-anime="cascade"><li class="siege">Taverny</li><li>Saint-Leu-la-Forêt</li><li>Ermont</li><li>Eaubonne</li><li>Cormeilles-en-Parisis</li></ul>

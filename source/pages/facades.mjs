@@ -32,7 +32,8 @@ export default (c) => {
       ${liteau(c.s('facades.rubriquePeinture'))}
       <h2 id="peinture-titre" data-titre-pose data-effet="titre-pose">${c.t('facades.peintureTitre')}</h2>
       <p class="peinture-texte">${c.t('facades.peintureTexte')}</p>
-      <p class="peinture-marques">${c.t('facades.marques')}</p>
+      <h3 class="peinture-marques">${c.t('facades.marquesTitre')}</h3>
+      <ul class="logos logos--marques" data-anime="cascade">${c.donnees.labels.marques.filter((l) => !/velux/i.test(l.nom)).map((l) => html`<li>${c.media({ nom: l.image, alt: l.nom, sizes: '160px' })}</li>`)}</ul>
     </div>
     <div class="couches-peinture">
       <p class="surtitre">${c.t('facades.peintureEtapes')}</p>

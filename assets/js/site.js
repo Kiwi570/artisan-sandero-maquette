@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=10';
+import { demarrer, etat, versObjet } from './socle/index.js?v=11';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -653,7 +653,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=10'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=11'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */

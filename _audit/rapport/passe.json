@@ -1,14 +1,14 @@
 {
- "id": "20261112-201016-rapide-cible-partiel",
- "date": "2026-11-12T20:14:27.142Z",
+ "id": "20261113-115019-rapide-partiel",
+ "date": "2026-11-13T11:53:01.688Z",
  "niveau": "rapide",
- "pages": "/,/couverture.html",
+ "pages": "toutes",
  "etapes": [
-  "fluidite",
-  "films",
-  "parcours"
+  "fichiers",
+  "parcours",
+  "ecran"
  ],
- "version": "10",
+ "version": "11",
  "echecs": 3,
  "aRegarder": 2,
  "nonLances": 1,

@@ -1,0 +1,7 @@
+{
+ "poles": [
+  { "page": "couverture", "image": "chantier-drone", "cadrage": "50% 50%", "metiers": "Couverture", "nom": "Couverture", "texte": "Pose, rénovation, démoussage, isolation et fenêtres de toit, sur tuiles, ardoises, zinc ou béton." },
+  { "page": "zinguerie-charpente", "image": "chantier-cheneau", "cadrage": "50% 55%", "metiers": "Zinguerie · Charpente", "nom": "Zinguerie <em>et</em> charpente", "texte": "Gouttières soudées, chéneaux, noues et solins sur mesure ; charpentes diagnostiquées, renforcées, traitées." },
+  { "page": "facades", "image": "grok/facade-pavillon", "cadrage": "55% 50%", "metiers": "Peinture · Ravalement", "nom": "Peinture <em>et</em> façades", "texte": "Façades, boiseries et volets repeints en deux couches ; ravalement en quatre temps." }
+ ]
+}

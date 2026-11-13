@@ -2,6 +2,24 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v11 — un site plus aéré
+
+Audit de toutes les pages, sur ordinateur et téléphone. L'impression de fouillis venait de cinq choses : trop de rubriques à la suite sur l'accueil, des barres jaunes sur toute la largeur à chaque section, des sections serrées (environ 94 px entre elles), une mosaïque de cinq cartes avec filtres pour les métiers, et un bloc avis, labels et marques très dense.
+
+- **Accueil, de 7 à 6 rubriques** : diagnostic, métiers, chantiers, famille, courrier, zone.
+  - « La méthode, rang par rang » part sur la page Devis, sous le formulaire, rubrique « Après votre demande » : c'est là qu'on se demande comment se passe la suite.
+  - Les marques de peinture partent sur la page Peinture et façades.
+- **Métiers** : les cinq cartes en mosaïque et leurs filtres deviennent trois grands blocs, un par page (Couverture, Zinguerie et charpente, Peinture et façades). Chacun a une grande photo, les métiers concernés, une phrase et « Voir la page ». Tout le bloc est cliquable.
+- **Courrier** : six avis au lieu de neuf, plus espacés (le résumé indique toujours « 9 avis »). Les quatre labels sont seuls, plus grands, avec leur nom, séparés des avis par un filet.
+- **Diagnostic** : la fiche est allégée. La liste de liens disparaît ; il reste le bouton « Demander un diagnostic pour ça » et un seul lien à côté.
+- **Partout** :
+  - Les sections respirent : environ 130 px entre elles sur ordinateur (au lieu de 94), 76 px au téléphone (au lieu de 52).
+  - Plus d'espace entre le titre d'une section et son contenu.
+  - Le liteau de rubrique devient un court tasseau cloué sous le surtitre, au lieu d'une barre sur toute la largeur.
+  - Les textes d'introduction des sections sont plus grands (17 à 19 px) et moins larges.
+- **Page Devis** : le formulaire suit de près l'ouverture, et la méthode vient ensuite.
+- **Page Peinture et façades** : les logos Tollens, Sikkens, Maestria, Cimentol et Dalep remplacent la ligne de texte des marques.
+
 ## v10 — le diagnostic (accueil) et le toit pièce par pièce (Couverture)
 
 - **Accueil, nouvelle rubrique 01 « Ce que vous voyez d'en bas »**, juste après la plongée.

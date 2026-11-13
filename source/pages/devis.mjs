@@ -110,5 +110,21 @@ export default (c) => {
     </aside>
   </div>
 </section>
+
+<section class="section methode" id="methode" aria-labelledby="methode-titre">
+  <div class="conteneur">
+    ${liteau(c.s('devis.methodeRubrique'))}
+    <div class="section-tete">
+      <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.methode.titre')}</h2>
+      <p>${c.t('accueil.methode.intro')}</p>
+    </div>
+    <div class="methode-grille">
+      ${c.media({ nom: 'chantier-faitage', alt: 'Un couvreur de l’entreprise pose le faîtage, les pavillons en contrebas', classe: 'methode-photo', cadrage: '62% 50%', sizes: '(max-width: 760px) 100vw, 30vw', attrs: 'data-fx="parallaxe" data-fx-force="8"' })}
+      <ol class="rangs" data-effet="methode-rangs">
+        ${c.donnees.etapes.map((e, i) => html`<li class="rang-tuile" style="--i:${i}"><span class="rang-n">${String(i + 1).padStart(2, '0')}</span><h3>${e.nom}</h3><p>${e.texte}</p></li>`)}
+      </ol>
+    </div>
+  </div>
+</section>
 `;
 };

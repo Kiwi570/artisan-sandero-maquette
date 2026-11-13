@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="10">
+<html lang="fr" data-v="11">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=10">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=10">
-<link rel="stylesheet" href="/assets/css/site.css?v=10">
-<link rel="modulepreload" href="/assets/js/site.js?v=10">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=10">
+<link rel="stylesheet" href="/assets/css/socle.css?v=11">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=11">
+<link rel="stylesheet" href="/assets/css/site.css?v=11">
+<link rel="modulepreload" href="/assets/js/site.js?v=11">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=11">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=10"></script>
+<script type="module" src="/assets/js/site.js?v=11"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -209,6 +209,25 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         <p class="schema-note">Schéma des communes, sans échelle</p>
       </div>
     </aside>
+  </div>
+</section>
+<section class="section methode" id="methode" aria-labelledby="methode-titre">
+  <div class="conteneur">
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Après votre demande</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">La méthode, rang par rang.</h2>
+      <p>Six étapes, toujours dans le même ordre. Chacune recouvre la précédente, comme un rang de tuiles.</p>
+    </div>
+    <div class="methode-grille">
+      <figure class="media methode-photo" data-fx="parallaxe" data-fx-force="8" style="--cadrage:62% 50%">
+  <picture>
+    <img src="/assets/images/chantier-faitage-640.webp" srcset="/assets/images/chantier-faitage-480.webp 480w, /assets/images/chantier-faitage-640.webp 640w" sizes="(max-width: 760px) 100vw, 30vw" alt="Un couvreur de l’entreprise pose le faîtage, les pavillons en contrebas" width="640" height="854" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <ol class="rangs" data-effet="methode-rangs">
+        <li class="rang-tuile" style="--i:0"><span class="rang-n">01</span><h3>Vos besoins</h3><p>On discute ensemble de vos envies et de vos besoins.</p></li><li class="rang-tuile" style="--i:1"><span class="rang-n">02</span><h3>Le diagnostic</h3><p>Toiture ou façade : chaque élément est inspecté sur place.</p></li><li class="rang-tuile" style="--i:2"><span class="rang-n">03</span><h3>Le devis détaillé</h3><p>Un devis gratuit qui reprend toutes les interventions, expliqué point par point.</p></li><li class="rang-tuile" style="--i:3"><span class="rang-n">04</span><h3>Les matériaux</h3><p>Tuiles, zinc et peintures de qualité, choisis avec vous.</p></li><li class="rang-tuile" style="--i:4"><span class="rang-n">05</span><h3>Les travaux</h3><p>Des travaux sur mesure, personnalisés et dans les délais.</p></li><li class="rang-tuile" style="--i:5"><span class="rang-n">06</span><h3>Conseils et suivi</h3><p>Après le chantier, comptez sur nos conseils et notre aide.</p></li>
+      </ol>
+    </div>
   </div>
 </section>
 </main>

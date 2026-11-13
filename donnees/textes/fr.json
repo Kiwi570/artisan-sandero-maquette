@@ -104,13 +104,14 @@
   },
   "metiers": {
    "titre": "Cinq métiers, une même famille.",
-   "intro": "Choisissez où ça se passe chez vous : la grille se recompose.",
+   "intro": "Le toit, le zinc et le bois, la façade : une seule équipe pour les trois.",
    "filtres": "Filtrer les métiers",
    "tout": "Tout",
    "toit": "Toit",
    "gouttieres": "Gouttières",
    "facade": "Façade",
-   "charpente": "Charpente"
+   "charpente": "Charpente",
+   "voir": "Voir la page"
   },
   "chantiers": {
    "titre": "Sur les chantiers",
@@ -135,7 +136,7 @@
   },
   "avis": {
    "titre": "Le courrier des clients",
-   "intro": "Neuf avis publiés par des clients, tous à cinq étoiles.",
+   "intro": "Neuf avis publiés par des clients, tous à cinq étoiles. En voici six.",
    "source": "Avis repris du site de l'entreprise, publiés sur Google et PagesJaunes.",
    "note": "5 étoiles sur 5"
   },
@@ -152,7 +153,7 @@
   },
   "diagnostic": {
    "titre": "Ce que vous voyez <em>d'en bas</em>.",
-   "intro": "Choisissez ce qui ressemble à chez vous. On vous dit d'où ça vient le plus souvent, quelle couche du toit est en cause, et la demande de devis est déjà prête.",
+   "intro": "Choisissez ce qui ressemble à chez vous : d'où ça vient, ce qui est en cause, et la demande de devis est prête.",
    "choix": "Ce que vous voyez chez vous",
    "n": "Symptôme",
    "cause": "D'où ça vient.",
@@ -255,7 +256,8 @@
   "rubriqueFinitions": "Rubrique 03 · Les finitions",
   "peintureEtapes": "Avant les deux couches",
   "supportsTitre": "Sur béton, brique ou pierre",
-  "legende": "chantier de l'entreprise"
+  "legende": "chantier de l'entreprise",
+  "marquesTitre": "Les peintures et produits posés"
  },
  "devis": {
   "sur": "Devis gratuit",
@@ -295,7 +297,8 @@
   "tampon": "Demande posée",
   "zoneTitre": "Où intervient l'entreprise",
   "zoneSchema": "Schéma des communes, sans échelle",
-  "adresseTitre": "L'entreprise"
+  "adresseTitre": "L'entreprise",
+  "methodeRubrique": "Rubrique 02 · Après votre demande"
  },
  "introuvable": {
   "titre": "Cette page a glissé du toit.",

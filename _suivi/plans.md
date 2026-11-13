@@ -36,4 +36,7 @@ Plan de l'accueil : magazine. Voile : propre, rangs de tuiles (`formeVoile: "tui
 8. Effets modernes : profondeur (signature), recomposition, empilement ; chaque page intérieure en reprend au moins un.
 
 ## Effets propres (noms du plan, data-effet)
-tuiles-levees, couches, metiers-recompose, methode-rangs, liteau-fil, titre-pose, cordon-etain, coup-taloche, nuancier, finitions, tampon-recu, voile-tuiles
+tuiles-levees, couches, methode-rangs, liteau-fil, titre-pose, cordon-etain, coup-taloche, nuancier, finitions, tampon-recu, voile-tuiles
+
+
+v11 : effet « metiers-recompose » retiré du plan avec les filtres des métiers (trois blocs, un par page, à la place).

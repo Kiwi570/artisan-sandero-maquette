@@ -316,6 +316,40 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 11,
+   "skill": "v10.10",
+   "perimetre": [
+    "tout le site : organisation et respiration"
+   ],
+   "etapes": [
+    {
+     "etape": "relevé et captures de toutes les pages",
+     "budget": 15,
+     "debut": "2026-11-13T12:32:00+01:00",
+     "fin": "2026-11-13T12:45:00+01:00"
+    },
+    {
+     "etape": "analyse : organisation, densité, visuels",
+     "budget": 15,
+     "debut": "2026-11-13T12:45:00+01:00",
+     "fin": "2026-11-13T12:55:00+01:00"
+    },
+    {
+     "etape": "réorganisation et espacements",
+     "budget": 40,
+     "debut": "2026-11-13T12:55:00+01:00",
+     "fin": "2026-11-13T13:10:00+01:00"
+    },
+    {
+     "etape": "audit complet et livraison",
+     "budget": 30,
+     "debut": "2026-11-13T13:10:00+01:00",
+     "fin": "2026-11-13T13:40:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

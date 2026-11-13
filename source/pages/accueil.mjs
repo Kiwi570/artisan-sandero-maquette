@@ -82,8 +82,8 @@ export default (c) => {
                 : s.piece ? c.lien('couverture', { ancre: `piece-${s.piece}`, classe: 'fiche-pastille', texte: html`${pieceNom(s.piece)} <span class="fiche-voir">· ${c.t('accueil.diagnostic.piece')} →</span>` })
                 : html`<span class="fiche-pastille fiche-pastille--simple">${s.enCause}</span>`}</p>
             <p class="fiche-texte"><b>${c.t('accueil.diagnostic.action')}</b> ${s.action}</p>
-            <ul class="fiche-liens">${s.liens.map((l) => html`<li>${c.lien(l.page, { ancre: l.ancre, texte: html`<span>${l.texte}</span> <span aria-hidden="true">→</span>` })}</li>`)}</ul>
-            ${c.lien('devis', { ancre: 'demande', params: `prestation=${s.prestation}&signes=${encodeURIComponent(s.signe)}`, classe: 'bouton fiche-devis', texte: html`${c.t('accueil.diagnostic.devis')} <span aria-hidden="true">→</span>` })}
+            <p class="fiche-actions">${c.lien('devis', { ancre: 'demande', params: `prestation=${s.prestation}&signes=${encodeURIComponent(s.signe)}`, classe: 'bouton fiche-devis', texte: html`${c.t('accueil.diagnostic.devis')} <span aria-hidden="true">→</span>` })}
+              ${c.lien(s.liens[0].page, { ancre: s.liens[0].ancre, classe: 'fiche-lien', texte: html`${s.liens[0].texte} <span aria-hidden="true">→</span>` })}</p>
           </article>`)}
         </div>
       </div>
@@ -97,13 +97,13 @@ export default (c) => {
     <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.metiers.titre')}</h2>
     <p>${c.t('accueil.metiers.intro')}</p>
   </div>
-  <ul class="filtres" aria-label="${c.s('accueil.metiers.filtres')}">
-    ${metiers.map(([v, n], i) => html`<li><button type="button" data-filtre="${v}" aria-pressed="${i === 0 ? 'true' : 'false'}">${n}</button></li>`)}
-  </ul>
-  <ul class="metiers-grille" data-anime="cascade" data-effet="metiers-recompose">
-    ${d.metiers.map((m, i) => html`<li class="metier${i === 0 ? ' grande' : ''}" data-tags="${m.tags.join(' ')}">
-      ${c.media({ nom: m.image, alt: m.nom, cadrage: m.cadrage || '50% 50%', sizes: '(max-width: 560px) 100vw, (max-width: 1024px) 50vw, 25vw' })}
-      <div class="metier-corps"><p class="metier-n">${String(i + 1).padStart(2, '0')}</p><h3>${m.nom}</h3><p>${m.texte}</p>${m.sous ? html`<p class="metier-sous">${m.sous.join(' · ')}</p>` : ''}${c.lien(m.page, { ancre: m.ancre || '', texte: html`${m.lienTexte || m.nom} →` })}</div>
+  <ul class="metiers-trio" data-anime="cascade">
+    ${c.donnees.poles.poles.map((m, i) => html`<li class="pole">
+      ${c.media({ nom: m.image, alt: '', cadrage: m.cadrage, sizes: '(max-width: 760px) 100vw, 32vw' })}
+      <p class="pole-metiers"><span>${String(i + 1).padStart(2, '0')}</span> ${m.metiers}</p>
+      <h3>${brut(m.nom)}</h3>
+      <p class="pole-texte">${m.texte}</p>
+      ${c.lien(m.page, { classe: 'pole-lien', texte: html`${c.t('accueil.metiers.voir')} <span aria-hidden="true">→</span>` })}
     </li>`)}
   </ul>
 </section>
@@ -122,25 +122,9 @@ export default (c) => {
   <div class="conteneur galerie-progres" aria-hidden="true"><span></span></div>
 </section>
 
-<section class="section methode" id="methode" aria-labelledby="methode-titre">
-  <div class="conteneur">
-    ${liteau(c, 'Rubrique 04 · La méthode')}
-    <div class="section-tete">
-      <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.methode.titre')}</h2>
-      <p>${c.t('accueil.methode.intro')}</p>
-    </div>
-    <div class="methode-grille">
-      ${c.media({ nom: 'chantier-faitage', alt: 'Un couvreur de l’entreprise pose le faîtage, les pavillons en contrebas', classe: 'methode-photo', cadrage: '62% 50%', sizes: '(max-width: 760px) 100vw, 30vw', attrs: 'data-fx="parallaxe" data-fx-force="8"' })}
-      <ol class="rangs" data-effet="methode-rangs">
-        ${d.etapes.map((e, i) => html`<li class="rang-tuile" style="--i:${i}"><span class="rang-n">${String(i + 1).padStart(2, '0')}</span><h3>${e.nom}</h3><p>${e.texte}</p></li>`)}
-      </ol>
-    </div>
-  </div>
-</section>
-
 <section class="section famille sombre" id="famille" aria-labelledby="famille-titre">
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 05 · De père en fils', true)}
+    ${liteau(c, 'Rubrique 04 · De père en fils', true)}
     <div class="famille-grille">
       <div>
         <h2 id="famille-titre" class="visuellement-cache">${c.t('accueil.famille.sur')}</h2>
@@ -162,7 +146,7 @@ export default (c) => {
 </section>
 
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
-  ${liteau(c, 'Rubrique 06 · Le courrier et les labels')}
+  ${liteau(c, 'Rubrique 05 · Le courrier')}
   <div class="section-tete">
     <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.avis.titre')}</h2>
     <p>${c.t('accueil.avis.intro')}</p>
@@ -172,15 +156,14 @@ export default (c) => {
       <div class="avis-note" data-visuel data-anime><span class="avis-chiffre"><span data-compteur="9">9</span> avis</span><span class="etoiles" aria-hidden="true">★★★★★</span><span>tous à cinq étoiles</span></div>
       <p>${c.t('accueil.avis.source')}</p>
     </div>
-    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Les neuf avis, à faire défiler">
-      ${d.avis.map((a) => html`<li><blockquote>${a.texte}</blockquote><span class="etoiles" role="img" aria-label="${c.s('accueil.avis.note')}">★★★★★</span><cite>${a.nom}</cite></li>`)}
+    <ul class="avis-liste" data-anime="cascade" tabindex="0" aria-label="Six des neuf avis, à faire défiler">
+      ${[...d.avis].sort((a, b) => b.texte.length - a.texte.length).slice(0, 6).map((a) => html`<li><blockquote>${a.texte}</blockquote><span class="etoiles" role="img" aria-label="${c.s('accueil.avis.note')}">★★★★★</span><cite>${a.nom}</cite></li>`)}
     </ul>
   </div>
   <div class="labels" aria-labelledby="labels-titre">
-    <h2 id="labels-titre" class="visuellement-cache">${c.t('accueil.labels.titre')}</h2>
+    <h2 id="labels-titre" class="visuellement-cache">${c.t('accueil.labels.labels')}</h2>
     <div class="labels-grille">
       <div><h3>${c.t('accueil.labels.labels')}</h3><ul class="logos logos--labels" data-anime="cascade">${d.labels.labels.map((l) => html`<li>${c.media({ nom: l.image, alt: '', sizes: '120px' })}<span>${l.nom}</span></li>`)}</ul></div>
-      <div><h3>${c.t('accueil.labels.marques')}</h3><ul class="logos logos--marques" data-anime="cascade">${d.labels.marques.map((l) => html`<li>${c.media({ nom: l.image, alt: l.nom, sizes: '160px' })}</li>`)}</ul></div>
     </div>
   </div>
 </section>
@@ -188,7 +171,7 @@ export default (c) => {
 <section class="zone" id="zone" aria-labelledby="zone-titre">
   ${c.media({ nom: 'grok/faitage-vue', alt: 'Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin', classe: 'zone-fond', cadrage: '50% 74%', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="12"' })}
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 07 · La zone', true)}
+    ${liteau(c, 'Rubrique 06 · La zone', true)}
     <h2 id="zone-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.zone.titre')}</h2>
     <p>${c.t('accueil.zone.texte')}</p>
     <ul class="communes" data-anime="cascade">${d.communes.map((x) => html`<li${x.siege ? brut(' class="siege"') : ''}>${x.nom}</li>`)}</ul>
