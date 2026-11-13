@@ -1,0 +1,19 @@
+{
+ "id": "20261113-125550-rapide-cible-partiel",
+ "date": "2026-11-13T12:59:48.610Z",
+ "niveau": "rapide",
+ "pages": "/",
+ "etapes": [
+  "parcours",
+  "films",
+  "fluidite",
+  "mesures",
+  "ecran"
+ ],
+ "version": "14",
+ "echecs": 5,
+ "aRegarder": 15,
+ "nonLances": 1,
+ "manquants": 1,
+ "statut": "échecs"
+}

@@ -9,11 +9,11 @@
    - section : rechargement dû au bouton du mode calme : état final, retour à la section.
    - calme, secours : état final directement.
    Aucune attente ne peut bloquer l'écran : en cas d'erreur, la page passe dans son état final. */
-import { html, etat, emettre, stockage, prochaineImage, attendre } from './etat.js?v=13';
-import { bloquerDefilement, debloquerDefilement, aller } from './defilement.js?v=13';
-import { toutAfficher, demarrerApparitions } from './apparitions.js?v=13';
-import { suivre, lacher, lacherTout } from './gouttiere.js?v=13';
-import { voile, decouvrir, reinitialiser } from './voile.js?v=13';
+import { html, etat, emettre, stockage, prochaineImage, attendre } from './etat.js?v=14';
+import { bloquerDefilement, debloquerDefilement, aller } from './defilement.js?v=14';
+import { toutAfficher, demarrerApparitions } from './apparitions.js?v=14';
+import { suivre, lacher, lacherTout } from './gouttiere.js?v=14';
+import { voile, decouvrir, reinitialiser } from './voile.js?v=14';
 
 const MAX_ATTENTE = 1500;
 const BUDGET = 2900; /* ms depuis le premier octet jusqu'à la fin de l'intro */
@@ -66,6 +66,7 @@ function ecouterActions() {
     if (e.type === 'touchstart') { if (toucheEnCours) return; toucheEnCours = true; }
     if (e.type === 'pointerdown' && e.pointerType === 'touch') return; /* déjà compté par touchstart */
     ctl.n++;
+    ctl.type = e.type;
     if (!ctl.premiere) ctl.premiere = t;
     ctl.surAction && ctl.surAction(ctl.n);
   };
@@ -110,8 +111,8 @@ async function jouerIntro(jouer, ctl) {
   if (pilotable && typeof tl.duration === 'function') apparitions = setTimeout(lancerApparitions, Math.max(0, (tl.duration() / tl.timeScale()) * 1000 - 900));
   const appliquer = (n) => {
     if (!pilotable) return;
-    if (n === 1) tl.timeScale(Math.max(tl.timeScale(), 5));
-    else tl.progress(1);
+    /* Artisan Sandero : le premier geste termine l'intro tout de suite, et le défilement part aussitôt. */
+    tl.progress(1);
     lancerApparitions();
   };
   if (ctl.n) appliquer(Math.min(ctl.n, 2));
@@ -123,6 +124,8 @@ async function jouerIntro(jouer, ctl) {
   ctl.arreter();
   html.classList.remove('intro-en-cours');
   /* Intro passée par un geste : le défilement reste bloqué jusqu'à la fin de ce geste (doigt levé, molette arrêtée). */
+  /* (Projet) Au doigt, le glissement qui passe l'intro ne fait pas défiler ; à la molette ou au pavé tactile, le blocage
+     ne dure que 0,26 s : la suite du geste (l'élan) fait déjà défiler la page. */
   if (ctl.n && !restauree) {
     bloquerDefilement('fin-geste');
     await new Promise((ok) => {
@@ -134,7 +137,7 @@ async function jouerIntro(jouer, ctl) {
       };
       const encore = () => { clearTimeout(t); t = setTimeout(fin, 250); };
       const leve = () => { clearTimeout(t); t = setTimeout(fin, 60); };
-      const maxi = setTimeout(fin, 1500);
+      const maxi = setTimeout(fin, ctl.type === 'wheel' ? 260 : 1500);
       t = setTimeout(fin, 350);
       window.addEventListener('wheel', encore, { passive: true });
       window.addEventListener('touchmove', encore, { passive: true });

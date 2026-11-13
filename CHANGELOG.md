@@ -2,6 +2,14 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v14 — ça démarre tout de suite
+
+Mesure faite en simulant un pavé tactile dès l'arrivée, sur un écran de 1288 × 626. Le premier geste ne faisait défiler que 42 px : il servait à accélérer l'intro, puis le défilement restait bloqué jusqu'à la fin de l'élan (jusqu'à 1,5 s). Il fallait ensuite environ trois gestes pour atteindre la première couche.
+
+- **Le premier geste termine l'intro tout de suite.** Avant, il ne faisait que l'accélérer. À la molette ou au pavé tactile, le blocage ne dure plus que 0,26 s : la suite du geste fait déjà défiler (481 px au premier geste, au lieu de 42). Au doigt, sur téléphone, le glissement qui passe l'intro ne fait toujours pas défiler, pour éviter un saut.
+- **L'intro de l'accueil est raccourcie** : la photo du faîtage se pose en 0,95 s au lieu de 1,6 s.
+- **La plongée fait 5,8 écrans au lieu de 7** : chaque geste avance d'autant plus dans les couches. Les légendes se relaient toujours sans moment vide.
+
 ## v13 — métiers d'abord, diagnostic simplifié
 
 - **Accueil, nouvel ordre** :

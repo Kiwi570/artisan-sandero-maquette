@@ -382,6 +382,22 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 14,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil : arrivée et plongée"
+   ],
+   "etapes": [
+    {
+     "etape": "mesure de l'arrivée, intro et plongée raccourcies, geste non avalé",
+     "budget": 25,
+     "debut": "2026-11-13T13:51:00+01:00",
+     "fin": "2026-11-13T14:02:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

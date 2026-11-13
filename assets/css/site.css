@@ -785,7 +785,7 @@ html { overflow-x: clip; }
 .plongee-rail li.actif a::after { width: 46px; background: var(--liteau); }
 
 /* Avec JavaScript : la scène dure sept écrans, le cadre reste collé. */
-html.js:not(.secours) .plongee { height: 700svh; }
+html.js:not(.secours) .plongee { height: 580svh; }
 html.js:not(.secours) .plongee-collant { position: sticky; top: 0; height: 100vh; height: 100svh; }
 html.js:not(.secours) .plan-couche { display: none; }
 

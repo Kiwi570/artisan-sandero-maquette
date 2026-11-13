@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=13';
+import { demarrer, etat, versObjet } from './socle/index.js?v=14';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -569,7 +569,7 @@ function plongeeScene() {
   mesurer();
 
   plongee = {
-    intro(tl, a = .2) { const o = { z: 1.07 }; etat.intro = 1.07; demander(); tl.to(o, { z: 1, duration: 1.6, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
+    intro(tl, a = .2) { const o = { z: 1.07 }; etat.intro = 1.07; demander(); tl.to(o, { z: 1, duration: .95, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
     final() { etat.intro = 1; demander(); },
     aller(i) { window.scrollTo({ top: st.start + SCENE.arrets[i] * (st.end - st.start), behavior: 'smooth' }); },
     arriver() { const o = { z: 1.04 }; etat.intro = 1.04; gsap.to(o, { z: 1, duration: 1.3, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }); },
@@ -653,7 +653,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=13'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=14'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
