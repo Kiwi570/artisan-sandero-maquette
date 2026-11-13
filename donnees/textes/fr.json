@@ -156,7 +156,7 @@
   },
   "diagnostic": {
    "titre": "Ce que vous voyez <em>d'en bas</em>.",
-   "intro": "Choisissez ce qui ressemble à chez vous : d'où ça vient, ce qui est en cause, et la demande de devis est prête.",
+   "intro": "Choisissez ce que vous voyez chez vous : on vous dit d'où ça vient et ce qui est en cause.",
    "choix": "Ce que vous voyez chez vous",
    "n": "Symptôme",
    "cause": "D'où ça vient.",
@@ -165,7 +165,8 @@
    "piece": "voir la pièce",
    "action": "Ce qu'on fait.",
    "devis": "Demander un diagnostic pour ça",
-   "point": "Voir le symptôme"
+   "point": "Voir le symptôme",
+   "devisCourt": "Demander un diagnostic"
   }
  },
  "couverture": {

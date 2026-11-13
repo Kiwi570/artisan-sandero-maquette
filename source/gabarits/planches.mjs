@@ -49,7 +49,7 @@ export function coupe() {
     <radialGradient id="lune"><stop offset=".55" stop-color="#efe7db" stop-opacity=".18"/><stop offset="1" stop-color="#efe7db" stop-opacity="0"/></radialGradient>
     <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c66b" stop-opacity=".32"/><stop offset="1" stop-color="#f3c66b" stop-opacity="0"/></linearGradient>
   </defs>
-  <g class="ciel" aria-hidden="true">${etoiles}<circle cx="890" cy="74" r="54" fill="url(#lune)"/><circle class="lune" cx="890" cy="74" r="20"/><circle class="lune-ombre" cx="900" cy="68" r="17"/></g>
+  <g class="ciel" aria-hidden="true"><circle cx="890" cy="74" r="54" fill="url(#lune)"/><circle class="lune" cx="890" cy="74" r="20"/><circle class="lune-ombre" cx="900" cy="68" r="17"/></g>
   <g class="maison">
     <line class="sol" x1="30" y1="640" x2="970" y2="640"/>
     ${[60, 96, 128, 870, 910, 948].map((x) => `<path class="herbe" d="M${x},640 l3,-8 M${x + 6},640 l-2,-6"/>`).join('')}

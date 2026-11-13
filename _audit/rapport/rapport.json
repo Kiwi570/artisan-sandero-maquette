@@ -60,7 +60,7 @@
     {
       "niveau": "regarder",
       "controle": "journal du projet",
-      "detail": "aucune entrée pour la version 12 de donnees/site.json",
+      "detail": "aucune entrée pour la version 13 de donnees/site.json",
       "etape": "fichiers",
       "lieux": [
         ""
@@ -69,7 +69,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "1.09:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
+      "detail": "1.11:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -82,7 +82,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "1.14:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
+      "detail": "1.15:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -95,7 +95,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "1.60:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "detail": "2.44:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -108,7 +108,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "1.38:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "detail": "1.13:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -134,7 +134,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "1.50:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "detail": "1.51:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -160,7 +160,7 @@
     {
       "niveau": "regarder",
       "controle": "contraste sur image",
-      "detail": "2.87:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
+      "detail": "2.85:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier",
       "etape": "mesures",
       "page": "/",
       "taille": "390×844",
@@ -286,7 +286,7 @@
     "mode calme": 2
   },
   "infos": [
-    "Numéro de version des fichiers : ?v=12",
+    "Numéro de version des fichiers : ?v=13",
     "Audit rapide : étapes lourdes sur /.",
     "Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.",
     "Balayage des largeurs : non fait en audit rapide.",

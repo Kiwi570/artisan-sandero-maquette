@@ -51,48 +51,13 @@ export default (c) => {
     </div>
     <ol class="plongee-rail" aria-label="${c.s('accueil.couches.rail')}">
       ${d.couches.map((x, i) => html`<li data-rail><a href="#couche-${i + 1}" data-aller="${i}"><span>${String(i + 1).padStart(2, '0')}</span> ${x.court || x.nom}</a></li>`)}
-      <li class="plongee-passer"><a href="#diagnostic">${c.t('accueil.couches.passer')} ↓</a></li>
+      <li class="plongee-passer"><a href="#metiers">${c.t('accueil.couches.passer')} ↓</a></li>
     </ol>
   </div>
 </section>
 
-<section class="section diagnostic sombre" id="diagnostic" aria-labelledby="diagnostic-titre" data-planche>
-  <div class="conteneur">
-    ${liteau(c, 'Rubrique 01 · Le diagnostic', true)}
-    <div class="section-tete">
-      <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">${c.tb('accueil.diagnostic.titre')}</h2>
-      <p>${c.t('accueil.diagnostic.intro')}</p>
-    </div>
-    <div class="planche planche--coupe">
-      <div class="planche-dessin">
-        ${coupe()}
-        ${symptomes.map((s) => html`<button type="button" class="planche-point" data-choix="${s.id}" style="left:${((s.point[0] - COUPE.x) / COUPE.l * 100).toFixed(2)}%;top:${((s.point[1] - COUPE.y) / COUPE.h * 100).toFixed(2)}%" aria-hidden="true" tabindex="-1"><span></span></button>`)}
-      </div>
-      <div class="planche-cote">
-        <ul class="planche-choix" aria-label="${c.s('accueil.diagnostic.choix')}">
-          ${symptomes.map((s, i) => html`<li><button type="button" data-choix="${s.id}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="symptome-${s.id}">${s.choix}</button></li>`)}
-        </ul>
-        <div class="planche-fiches">
-          ${symptomes.map((s, i) => html`<article class="fiche" data-fiche="${s.id}" id="symptome-${s.id}" aria-labelledby="symptome-${s.id}-titre">
-            <p class="fiche-n">${c.t('accueil.diagnostic.n')} ${String(i + 1).padStart(2, '0')} / ${String(symptomes.length).padStart(2, '0')}</p>
-            <h3 id="symptome-${s.id}-titre">${brut(s.titre)}</h3>
-            <p class="fiche-texte"><b>${c.t('accueil.diagnostic.cause')}</b> ${s.cause}</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">${c.t('accueil.diagnostic.enCause')}</span>
-              ${s.couche ? html`<a class="fiche-pastille" href="#couche-${s.couche}" data-couche="${s.couche - 1}"><b>${String(s.couche).padStart(2, '0')}</b> ${d.couches[s.couche - 1].nom} <span class="fiche-voir">· ${c.t('accueil.diagnostic.plongee')} ↑</span></a>`
-                : s.piece ? c.lien('couverture', { ancre: `piece-${s.piece}`, classe: 'fiche-pastille', texte: html`${pieceNom(s.piece)} <span class="fiche-voir">· ${c.t('accueil.diagnostic.piece')} →</span>` })
-                : html`<span class="fiche-pastille fiche-pastille--simple">${s.enCause}</span>`}</p>
-            <p class="fiche-texte"><b>${c.t('accueil.diagnostic.action')}</b> ${s.action}</p>
-            <p class="fiche-actions">${c.lien('devis', { ancre: 'demande', params: `prestation=${s.prestation}&signes=${encodeURIComponent(s.signe)}`, classe: 'bouton fiche-devis', texte: html`${c.t('accueil.diagnostic.devis')} <span aria-hidden="true">→</span>` })}
-              ${c.lien(s.liens[0].page, { ancre: s.liens[0].ancre, classe: 'fiche-lien', texte: html`${s.liens[0].texte} <span aria-hidden="true">→</span>` })}</p>
-          </article>`)}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section metiers conteneur" id="metiers" aria-labelledby="metiers-titre">
-  ${liteau(c, 'Rubrique 02 · Les métiers')}
+  ${liteau(c, 'Rubrique 01 · Les métiers')}
   <div class="section-tete">
     <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.metiers.titre')}</h2>
     <p>${c.t('accueil.metiers.intro')}</p>
@@ -104,6 +69,38 @@ export default (c) => {
       <p class="pole-texte">${m.texte}</p>
     </li>`)}
   </ul>
+</section>
+
+<section class="section diagnostic sombre" id="diagnostic" aria-labelledby="diagnostic-titre" data-planche>
+  <div class="conteneur">
+    ${liteau(c, 'Rubrique 02 · Le diagnostic', true)}
+    <div class="section-tete">
+      <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">${c.tb('accueil.diagnostic.titre')}</h2>
+      <p>${c.t('accueil.diagnostic.intro')}</p>
+    </div>
+    <div class="planche planche--coupe">
+      <div class="planche-dessin">
+        ${coupe()}
+        ${symptomes.map((s) => html`<button type="button" class="planche-point" data-choix="${s.id}" style="left:${((s.point[0] - COUPE.x) / COUPE.l * 100).toFixed(2)}%;top:${((s.point[1] - COUPE.y) / COUPE.h * 100).toFixed(2)}%" aria-hidden="true" tabindex="-1"><span></span></button>`)}
+      </div>
+      <div class="planche-cote">
+        <ul class="planche-choix" aria-label="${c.s('accueil.diagnostic.choix')}">
+          ${symptomes.map((s, i) => html`<li><button type="button" data-choix="${s.id}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="symptome-${s.id}"><span class="choix-n">${String(i + 1).padStart(2, '0')}</span>${s.choix}</button></li>`)}
+        </ul>
+        <div class="planche-fiches">
+          ${symptomes.map((s) => html`<article class="fiche" data-fiche="${s.id}" id="symptome-${s.id}" aria-labelledby="symptome-${s.id}-titre">
+            <h3 id="symptome-${s.id}-titre" class="visuellement-cache">${s.choix}</h3>
+            <p class="fiche-texte">${s.cause}</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">${c.t('accueil.diagnostic.enCause')}</span>
+              ${s.couche ? html`<a class="fiche-cause-lien" href="#couche-${s.couche}" data-couche="${s.couche - 1}" title="${c.s('accueil.diagnostic.plongee')}">${String(s.couche).padStart(2, '0')} · ${d.couches[s.couche - 1].court || d.couches[s.couche - 1].nom} <span aria-hidden="true">↑</span></a>`
+                : s.piece ? c.lien('couverture', { ancre: `piece-${s.piece}`, classe: 'fiche-cause-lien', texte: html`${pieceNom(s.piece)} <span aria-hidden="true">→</span>` })
+                : html`<span class="fiche-cause-simple">${s.enCause}</span>`}</p>
+            <p class="fiche-actions">${c.lien('devis', { ancre: 'demande', params: `prestation=${s.prestation}&signes=${encodeURIComponent(s.signe)}`, classe: 'bouton fiche-devis', texte: html`${c.t('accueil.diagnostic.devisCourt')} <span aria-hidden="true">→</span>` })}</p></div>
+          </article>`)}
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section chantiers" id="chantiers" data-fx="galerie" aria-labelledby="chantiers-titre">

@@ -1,24 +1,15 @@
 # Rapport d’audit
 
-Projet : `artisan-sandero-maquette` · 13/11/2026 13:33:04 · 3 min · 1 page(s) · audit RAPIDE : ne vaut pas pour une livraison ciblé sur / (étapes : fichiers, mesures, parcours)
+Projet : `artisan-sandero-maquette` · 13/11/2026 13:50:03 · 3 min · 1 page(s) · audit RAPIDE : ne vaut pas pour une livraison ciblé sur / (étapes : mesures, parcours, fichiers)
 
 ## Résumé
 
 - Statut : **3 échec(s)**
-- Passe : `20261113-123013-rapide-cible-partiel` · version ?v=12
+- Passe : `20261113-124717-rapide-cible-partiel` · version ?v=13
 - Échecs : **3**
 - À regarder : **18**
 - Non lancé : **1**
 - Contrôles passés : vercel.json (1), .vercelignore (1), robots.txt (1), numéro de version (1), langues (1), mesures (7), intro accélérable et passable (7), menu (1), clavier (1), liens et boutons (1), liens profonds (16), liens vers la page en cours (1), changements de hauteur (1), mode calme (2)
-
-## Passes de cette version (?v=12)
-
-Chaque passe garde son rapport dans `_audit/passes/` : une relance ciblée ne fait pas disparaître la preuve d’une passe plus large.
-
-| Passe | Niveau | Pages | Étapes | Échecs | À regarder | Non lancé | Statut |
-|---|---|---|---|---:|---:|---:|---|
-| 20261113-122651-rapide-cible-partiel | rapide | / | mesures, parcours, fichiers, ecran | 7 | 18 | 1 | échecs |
-| **20261113-123013-rapide-cible-partiel** (celle-ci) | rapide | / | fichiers, mesures, parcours | 3 | 18 | 1 | échecs |
 
 ## Échecs
 
@@ -37,18 +28,18 @@ Chaque passe garde son rapport dans `_audit/passes/` : une relance ciblée ne fa
 
 ### journal du projet (1)
 
-- **journal du projet** — aucune entrée pour la version 12 de donnees/site.json
+- **journal du projet** — aucune entrée pour la version 13 de donnees/site.json
 
 ### contraste sur image (15)
 
-- **contraste sur image** — `/` — p.plongee-n:nth-of-type(1) > div.pc-ligne-mask > div.pc-ligne > span « 05 » — 1.09:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier _(390×844 normal)_
-- **contraste sur image** — `/` — li#couche-5 > p.plongee-n:nth-of-type(1) > div.pc-ligne-mask > div.pc-ligne « 05 / 05 · SOUS LES TUILES » — 1.14:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier _(390×844 normal)_
-- **contraste sur image** — `/` — div.pc-titre-mask > div.pc-titre > div.pc-mot > div.pc-lettre:nth-of-type(1) « L » — 1.60:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
-- **contraste sur image** — `/` — div.pc-titre-mask > div.pc-titre > div.pc-mot > div.pc-lettre:nth-of-type(2) « e » — 1.38:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — p.plongee-n:nth-of-type(1) > div.pc-ligne-mask > div.pc-ligne > span « 05 » — 1.11:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — li#couche-5 > p.plongee-n:nth-of-type(1) > div.pc-ligne-mask > div.pc-ligne « 05 / 05 · SOUS LES TUILES » — 1.15:1 sur les 10 % de la photo les moins favorables (minimum 4.5:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — div.pc-titre-mask > div.pc-titre > div.pc-mot > div.pc-lettre:nth-of-type(1) « L » — 2.44:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — div.pc-titre-mask > div.pc-titre > div.pc-mot > div.pc-lettre:nth-of-type(2) « e » — 1.13:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
 - **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(1) « c » — 1.23:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
-- **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(2) « h » — 1.50:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(2) « h » — 1.51:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
 - **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(3) « e » — 1.69:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
-- **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(4) « v » — 2.87:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
+- **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(4) « v » — 2.85:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
 - **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(5) « r » — 1.97:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
 - **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(6) « o » — 1.52:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
 - **contraste sur image** — `/` — div.pc-titre > em:nth-of-type(2) > div.pc-mot > div.pc-lettre:nth-of-type(7) « n » — 1.57:1 sur les 10 % de la photo les moins favorables (minimum 3:1), ombre portée à vérifier _(390×844 normal)_
@@ -63,7 +54,7 @@ Chaque passe garde son rapport dans `_audit/passes/` : une relance ciblée ne fa
 
 ## Repères
 
-- Numéro de version des fichiers : ?v=12
+- Numéro de version des fichiers : ?v=13
 - Audit rapide : étapes lourdes sur /.
 - Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.
 - Balayage des largeurs : non fait en audit rapide.

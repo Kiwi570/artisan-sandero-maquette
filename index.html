@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="12">
+<html lang="fr" data-v="13">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=12">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=12">
-<link rel="stylesheet" href="/assets/css/site.css?v=12">
-<link rel="modulepreload" href="/assets/js/site.js?v=12">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=12">
+<link rel="stylesheet" href="/assets/css/socle.css?v=13">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=13">
+<link rel="stylesheet" href="/assets/css/site.css?v=13">
+<link rel="modulepreload" href="/assets/js/site.js?v=13">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=13">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=12"></script>
+<script type="module" src="/assets/js/site.js?v=13"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -182,16 +182,50 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <ol class="plongee-rail" aria-label="Les cinq couches du toit">
       <li data-rail><a href="#couche-1" data-aller="0"><span>01</span> Tuile</a></li><li data-rail><a href="#couche-2" data-aller="1"><span>02</span> Liteau</a></li><li data-rail><a href="#couche-3" data-aller="2"><span>03</span> Écran</a></li><li data-rail><a href="#couche-4" data-aller="3"><span>04</span> Isolant</a></li><li data-rail><a href="#couche-5" data-aller="4"><span>05</span> Chevrons</a></li>
-      <li class="plongee-passer"><a href="#diagnostic">Passer la plongée ↓</a></li>
+      <li class="plongee-passer"><a href="#metiers">Passer la plongée ↓</a></li>
     </ol>
   </div>
 </section>
+<section class="section metiers conteneur" id="metiers" aria-labelledby="metiers-titre">
+  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Les métiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+  <div class="section-tete">
+    <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">Cinq métiers, une même famille.</h2>
+    <p>Le toit, le zinc et le bois, la façade : une seule équipe pour les trois.</p>
+  </div>
+  <ul class="metiers-trio" data-anime="cascade">
+    <li class="pole">
+      <figure class="media " style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="960" height="866" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3><a href="/couverture" class="pole-lien" data-libelle="Couverture"><span class="pole-n">01</span>Couverture&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
+      <p class="pole-texte">Pose, rénovation, démoussage, isolation et fenêtres de toit, sur tuiles, ardoises, zinc ou béton.</p>
+    </li><li class="pole">
+      <figure class="media " style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="640" height="427" loading="lazy" decoding="async">
+  </picture>
+</figure>
+      <h3><a href="/zinguerie-charpente" class="pole-lien" data-libelle="Zinguerie et charpente"><span class="pole-n">02</span>Zinguerie <em>et</em> charpente&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
+      <p class="pole-texte">Gouttières soudées, chéneaux, noues et solins sur mesure ; charpentes diagnostiquées, renforcées, traitées.</p>
+    </li><li class="pole">
+      <figure class="media " data-grok style="--cadrage:55% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 32vw">
+    <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <h3><a href="/facades" class="pole-lien" data-libelle="Peinture et façades"><span class="pole-n">03</span>Peinture <em>et</em> façades&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
+      <p class="pole-texte">Façades, boiseries et volets repeints en deux couches ; ravalement en quatre temps.</p>
+    </li>
+  </ul>
+</section>
 <section class="section diagnostic sombre" id="diagnostic" aria-labelledby="diagnostic-titre" data-planche>
   <div class="conteneur">
-    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Le diagnostic</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Le diagnostic</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="section-tete">
       <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">Ce que vous voyez <em>d'en bas</em>.</h2>
-      <p>Choisissez ce qui ressemble à chez vous : d&#39;où ça vient, ce qui est en cause, et la demande de devis est prête.</p>
+      <p>Choisissez ce que vous voyez chez vous : on vous dit d&#39;où ça vient et ce qui est en cause.</p>
     </div>
     <div class="planche planche--coupe">
       <div class="planche-dessin">
@@ -204,7 +238,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <radialGradient id="lune"><stop offset=".55" stop-color="#efe7db" stop-opacity=".18"/><stop offset="1" stop-color="#efe7db" stop-opacity="0"/></radialGradient>
     <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c66b" stop-opacity=".32"/><stop offset="1" stop-color="#f3c66b" stop-opacity="0"/></linearGradient>
   </defs>
-  <g class="ciel" aria-hidden="true"><circle class="etoile" style="--i:0" cx="640" cy="40" r="1.8"/><circle class="etoile" style="--i:1" cx="700" cy="86" r="1.2"/><circle class="etoile" style="--i:2" cx="770" cy="28" r="1.2"/><circle class="etoile" style="--i:3" cx="860" cy="130" r="1.8"/><circle class="etoile" style="--i:4" cx="960" cy="40" r="1.2"/><circle class="etoile" style="--i:5" cx="120" cy="60" r="1.2"/><circle class="etoile" style="--i:6" cx="60" cy="150" r="1.8"/><circle class="etoile" style="--i:7" cx="250" cy="30" r="1.2"/><circle class="etoile" style="--i:8" cx="960" cy="210" r="1.2"/><circle cx="890" cy="74" r="54" fill="url(#lune)"/><circle class="lune" cx="890" cy="74" r="20"/><circle class="lune-ombre" cx="900" cy="68" r="17"/></g>
+  <g class="ciel" aria-hidden="true"><circle cx="890" cy="74" r="54" fill="url(#lune)"/><circle class="lune" cx="890" cy="74" r="20"/><circle class="lune-ombre" cx="900" cy="68" r="17"/></g>
   <g class="maison">
     <line class="sol" x1="30" y1="640" x2="970" y2="640"/>
     <path class="herbe" d="M60,640 l3,-8 M66,640 l-2,-6"/><path class="herbe" d="M96,640 l3,-8 M102,640 l-2,-6"/><path class="herbe" d="M128,640 l3,-8 M134,640 l-2,-6"/><path class="herbe" d="M870,640 l3,-8 M876,640 l-2,-6"/><path class="herbe" d="M910,640 l3,-8 M916,640 l-2,-6"/><path class="herbe" d="M948,640 l3,-8 M954,640 l-2,-6"/>
@@ -288,120 +322,62 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       </div>
       <div class="planche-cote">
         <ul class="planche-choix" aria-label="Ce que vous voyez chez vous">
-          <li><button type="button" data-choix="plafond" aria-pressed="true" aria-controls="symptome-plafond">Une tache au plafond</button></li><li><button type="button" data-choix="mousse" aria-pressed="false" aria-controls="symptome-mousse">De la mousse sur le toit</button></li><li><button type="button" data-choix="gouttiere" aria-pressed="false" aria-controls="symptome-gouttiere">La gouttière déborde</button></li><li><button type="button" data-choix="cheminee" aria-pressed="false" aria-controls="symptome-cheminee">De l&#39;eau près de la cheminée</button></li><li><button type="button" data-choix="combles" aria-pressed="false" aria-controls="symptome-combles">Des combles humides</button></li><li><button type="button" data-choix="froid" aria-pressed="false" aria-controls="symptome-froid">Froid l&#39;hiver, chaud l&#39;été</button></li><li><button type="button" data-choix="charpente" aria-pressed="false" aria-controls="symptome-charpente">Le toit se creuse</button></li><li><button type="button" data-choix="facade" aria-pressed="false" aria-controls="symptome-facade">La façade se fissure</button></li>
+          <li><button type="button" data-choix="plafond" aria-pressed="true" aria-controls="symptome-plafond"><span class="choix-n">01</span>Une tache au plafond</button></li><li><button type="button" data-choix="mousse" aria-pressed="false" aria-controls="symptome-mousse"><span class="choix-n">02</span>De la mousse sur le toit</button></li><li><button type="button" data-choix="gouttiere" aria-pressed="false" aria-controls="symptome-gouttiere"><span class="choix-n">03</span>La gouttière déborde</button></li><li><button type="button" data-choix="cheminee" aria-pressed="false" aria-controls="symptome-cheminee"><span class="choix-n">04</span>De l&#39;eau près de la cheminée</button></li><li><button type="button" data-choix="combles" aria-pressed="false" aria-controls="symptome-combles"><span class="choix-n">05</span>Des combles humides</button></li><li><button type="button" data-choix="froid" aria-pressed="false" aria-controls="symptome-froid"><span class="choix-n">06</span>Froid l&#39;hiver, chaud l&#39;été</button></li><li><button type="button" data-choix="charpente" aria-pressed="false" aria-controls="symptome-charpente"><span class="choix-n">07</span>Le toit se creuse</button></li><li><button type="button" data-choix="facade" aria-pressed="false" aria-controls="symptome-facade"><span class="choix-n">08</span>La façade se fissure</button></li>
         </ul>
         <div class="planche-fiches">
           <article class="fiche" data-fiche="plafond" id="symptome-plafond" aria-labelledby="symptome-plafond-titre">
-            <p class="fiche-n">Symptôme 01 / 08</p>
-            <h3 id="symptome-plafond-titre">Une tache <em>au plafond</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Le plus souvent, une tuile cassée ou glissée laisse entrer la pluie. L&#39;eau passe sous les tuiles, traverse l&#39;isolant et marque le plafond, parfois loin de la tuile en cause.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On cherche le point d&#39;entrée depuis le toit, on remplace les tuiles et on vérifie l&#39;écran dessous.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Tache%20au%20plafond#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Tuiles cassées remplacées <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-plafond-titre" class="visuellement-cache">Une tache au plafond</h3>
+            <p class="fiche-texte">Le plus souvent, une tuile cassée ou glissée laisse entrer la pluie. L&#39;eau passe sous les tuiles, traverse l&#39;isolant et marque le plafond, parfois loin de la tuile en cause.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-cause-lien" href="#couche-1" data-couche="0" title="voir dans la plongée">01 · Tuile <span aria-hidden="true">↑</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Tache%20au%20plafond#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="mousse" id="symptome-mousse" aria-labelledby="symptome-mousse-titre">
-            <p class="fiche-n">Symptôme 02 / 08</p>
-            <h3 id="symptome-mousse-titre">De la mousse <em>sur les tuiles</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Côté nord ou sous les arbres, la mousse garde l&#39;humidité contre la tuile. L&#39;hiver, l&#39;eau gèle dans la terre cuite et la fait éclater ; la mousse finit aussi dans la gouttière.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Démoussage, puis traitement hydrofuge pour que l&#39;eau glisse. De préférence au printemps ou à l&#39;automne.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Mousse%20sur%20le%20toit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Démoussage et hydrofuge <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-mousse-titre" class="visuellement-cache">De la mousse sur le toit</h3>
+            <p class="fiche-texte">Côté nord ou sous les arbres, la mousse garde l&#39;humidité contre la tuile. L&#39;hiver, l&#39;eau gèle dans la terre cuite et la fait éclater ; la mousse finit aussi dans la gouttière.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-cause-lien" href="#couche-1" data-couche="0" title="voir dans la plongée">01 · Tuile <span aria-hidden="true">↑</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Mousse%20sur%20le%20toit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="gouttiere" id="symptome-gouttiere" aria-labelledby="symptome-gouttiere-titre">
-            <p class="fiche-n">Symptôme 03 / 08</p>
-            <h3 id="symptome-gouttiere-titre">La gouttière <em>déborde</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Feuilles et mousse la bouchent, ou elle a perdu sa pente : l&#39;eau passe par-dessus et coule le long du mur, qu&#39;elle salit puis abîme.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a href="/couverture#piece-gouttiere" class="fiche-pastille" data-libelle="Couverture">La gouttière <span class="fiche-voir">· voir la pièce →</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, pente reprise, ou gouttière en zinc refaite sur mesure.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=zinguerie&amp;signes=Goutti%C3%A8re%20qui%20d%C3%A9borde#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/zinguerie-charpente#signes" class="fiche-lien" data-libelle="Zinguerie et charpente">Votre gouttière vous fait signe ? <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-gouttiere-titre" class="visuellement-cache">La gouttière déborde</h3>
+            <p class="fiche-texte">Feuilles et mousse la bouchent, ou elle a perdu sa pente : l&#39;eau passe par-dessus et coule le long du mur, qu&#39;elle salit puis abîme.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a href="/couverture#piece-gouttiere" class="fiche-cause-lien" data-libelle="Couverture">La gouttière <span aria-hidden="true">→</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=zinguerie&amp;signes=Goutti%C3%A8re%20qui%20d%C3%A9borde#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="cheminee" id="symptome-cheminee" aria-labelledby="symptome-cheminee-titre">
-            <p class="fiche-n">Symptôme 04 / 08</p>
-            <h3 id="symptome-cheminee-titre">De l'eau <em>le long de la cheminée</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Le solin, le joint en zinc ou en mortier entre la cheminée et les tuiles, s&#39;est fissuré ou décollé. La pluie glisse le long du conduit jusque dans les combles.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a href="/couverture#piece-solin" class="fiche-pastille" data-libelle="Couverture">Le solin <span class="fiche-voir">· voir la pièce →</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On refait le solin et, si besoin, le pied de cheminée et les tuiles autour.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Eau%20le%20long%20de%20la%20chemin%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Pieds de cheminée remis en état <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-cheminee-titre" class="visuellement-cache">De l&#39;eau près de la cheminée</h3>
+            <p class="fiche-texte">Le solin, le joint en zinc ou en mortier entre la cheminée et les tuiles, s&#39;est fissuré ou décollé. La pluie glisse le long du conduit jusque dans les combles.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a href="/couverture#piece-solin" class="fiche-cause-lien" data-libelle="Couverture">Le solin <span aria-hidden="true">→</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Eau%20le%20long%20de%20la%20chemin%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="combles" id="symptome-combles" aria-labelledby="symptome-combles-titre">
-            <p class="fiche-n">Symptôme 05 / 08</p>
-            <h3 id="symptome-combles-titre">Des combles <em>humides</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Sans écran sous-toiture, ou avec un écran déchiré, la pluie poussée par le vent et la condensation se déposent sur l&#39;isolant et la charpente : traces noires, odeur de moisi.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a class="fiche-pastille" href="#couche-3" data-couche="2"><b>03</b> L&#39;écran sous-toiture <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On vérifie l&#39;écran et l&#39;aération du toit (chatières, closoir), puis on le remplace là où il faut, souvent lors d&#39;une réfection.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Combles%20humides#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Pose et réfection de couverture <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-combles-titre" class="visuellement-cache">Des combles humides</h3>
+            <p class="fiche-texte">Sans écran sous-toiture, ou avec un écran déchiré, la pluie poussée par le vent et la condensation se déposent sur l&#39;isolant et la charpente : traces noires, odeur de moisi.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-cause-lien" href="#couche-3" data-couche="2" title="voir dans la plongée">03 · Écran <span aria-hidden="true">↑</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Combles%20humides#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="froid" id="symptome-froid" aria-labelledby="symptome-froid-titre">
-            <p class="fiche-n">Symptôme 06 / 08</p>
-            <h3 id="symptome-froid-titre">Froide l'hiver, <em>étouffante l'été</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Un isolant ancien se tasse et laisse filer la chaleur : jusqu&#39;à 30 % des pertes d&#39;une maison passent par le toit.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a class="fiche-pastille" href="#couche-4" data-couche="3"><b>04</b> L&#39;isolant <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Isolation des combles perdus ou aménageables, par l&#39;intérieur ou par l&#39;extérieur, en laine de verre ou de roche.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Maison%20froide#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/couverture#interventions" class="fiche-lien" data-libelle="Couverture">Isolation de la toiture et des combles <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-froid-titre" class="visuellement-cache">Froid l&#39;hiver, chaud l&#39;été</h3>
+            <p class="fiche-texte">Un isolant ancien se tasse et laisse filer la chaleur : jusqu&#39;à 30 % des pertes d&#39;une maison passent par le toit.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-cause-lien" href="#couche-4" data-couche="3" title="voir dans la plongée">04 · Isolant <span aria-hidden="true">↑</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=couverture&amp;signes=Maison%20froide#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="charpente" id="symptome-charpente" aria-labelledby="symptome-charpente-titre">
-            <p class="fiche-n">Symptôme 07 / 08</p>
-            <h3 id="symptome-charpente-titre">Le toit se creuse, <em>une poutre fléchit</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Une charpente qui fléchit vient souvent d&#39;insectes (capricornes, vrillettes), d&#39;un champignon comme la mérule, ou d&#39;une couverture trop lourde. De la sciure au grenier doit alerter.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <a class="fiche-pastille" href="#couche-5" data-couche="4"><b>05</b> Les chevrons <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Diagnostic de la charpente, traitement contre les insectes et la mérule, renfort ou remplacement des pièces.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=charpente&amp;signes=Charpente%20qui%20fl%C3%A9chit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/zinguerie-charpente#charpente" class="fiche-lien" data-libelle="Zinguerie et charpente">Charpente : diagnostic, traitement, renfort <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-charpente-titre" class="visuellement-cache">Le toit se creuse</h3>
+            <p class="fiche-texte">Une charpente qui fléchit vient souvent d&#39;insectes (capricornes, vrillettes), d&#39;un champignon comme la mérule, ou d&#39;une couverture trop lourde. De la sciure au grenier doit alerter.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-cause-lien" href="#couche-5" data-couche="4" title="voir dans la plongée">05 · Chevrons <span aria-hidden="true">↑</span></a></p>
+            <p class="fiche-actions"><a href="/devis?prestation=charpente&amp;signes=Charpente%20qui%20fl%C3%A9chit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article><article class="fiche" data-fiche="facade" id="symptome-facade" aria-labelledby="symptome-facade-titre">
-            <p class="fiche-n">Symptôme 08 / 08</p>
-            <h3 id="symptome-facade-titre">La façade se fissure <em>ou noircit</em></h3>
-            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Avec les années, l&#39;enduit se fissure et se salit, surtout sous les appuis de fenêtre et là où la gouttière déborde. L&#39;eau entre alors dans le mur.</p>
-            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
-              <span class="fiche-pastille fiche-pastille--simple">L&#39;enduit de la façade</span></p>
-            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, fissures traitées, puis ravalement ou peinture de façade.</p>
-            <p class="fiche-actions"><a href="/devis?prestation=ravalement&amp;signes=Fa%C3%A7ade%20fissur%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
-              <a href="/facades#ravalement" class="fiche-lien" data-libelle="Peinture et façades">Ravalement de façade <span aria-hidden="true">→</span></a></p>
+            <h3 id="symptome-facade-titre" class="visuellement-cache">La façade se fissure</h3>
+            <p class="fiche-texte">Avec les années, l&#39;enduit se fissure et se salit, surtout sous les appuis de fenêtre et là où la gouttière déborde. L&#39;eau entre alors dans le mur.</p>
+            <div class="fiche-bas"><p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <span class="fiche-cause-simple">L&#39;enduit</span></p>
+            <p class="fiche-actions"><a href="/devis?prestation=ravalement&amp;signes=Fa%C3%A7ade%20fissur%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic <span aria-hidden="true">→</span></a></p></div>
           </article>
         </div>
       </div>
     </div>
   </div>
-</section>
-<section class="section metiers conteneur" id="metiers" aria-labelledby="metiers-titre">
-  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Les métiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
-  <div class="section-tete">
-    <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">Cinq métiers, une même famille.</h2>
-    <p>Le toit, le zinc et le bois, la façade : une seule équipe pour les trois.</p>
-  </div>
-  <ul class="metiers-trio" data-anime="cascade">
-    <li class="pole">
-      <figure class="media " style="--cadrage:50% 50%">
-  <picture>
-    <img src="/assets/images/chantier-drone-960.webp" srcset="/assets/images/chantier-drone-480.webp 480w, /assets/images/chantier-drone-640.webp 640w, /assets/images/chantier-drone-960.webp 960w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="960" height="866" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <h3><a href="/couverture" class="pole-lien" data-libelle="Couverture"><span class="pole-n">01</span>Couverture&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
-      <p class="pole-texte">Pose, rénovation, démoussage, isolation et fenêtres de toit, sur tuiles, ardoises, zinc ou béton.</p>
-    </li><li class="pole">
-      <figure class="media " style="--cadrage:50% 55%">
-  <picture>
-    <img src="/assets/images/chantier-cheneau-640.webp" srcset="/assets/images/chantier-cheneau-480.webp 480w, /assets/images/chantier-cheneau-640.webp 640w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="640" height="427" loading="lazy" decoding="async">
-  </picture>
-</figure>
-      <h3><a href="/zinguerie-charpente" class="pole-lien" data-libelle="Zinguerie et charpente"><span class="pole-n">02</span>Zinguerie <em>et</em> charpente&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
-      <p class="pole-texte">Gouttières soudées, chéneaux, noues et solins sur mesure ; charpentes diagnostiquées, renforcées, traitées.</p>
-    </li><li class="pole">
-      <figure class="media " data-grok style="--cadrage:55% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/facade-pavillon-mobile-640.webp 640w, /assets/images/grok/facade-pavillon-mobile-1080.webp 1080w" sizes="(max-width: 760px) 100vw, 32vw">
-    <img src="/assets/images/grok/facade-pavillon-1280.webp" srcset="/assets/images/grok/facade-pavillon-640.webp 640w, /assets/images/grok/facade-pavillon-1280.webp 1280w, /assets/images/grok/facade-pavillon-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 32vw" alt="" width="1280" height="720" loading="lazy" decoding="async">
-  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
-</figure>
-      <h3><a href="/facades" class="pole-lien" data-libelle="Peinture et façades"><span class="pole-n">03</span>Peinture <em>et</em> façades&nbsp;<span class="pole-fleche" aria-hidden="true">→</span></a></h3>
-      <p class="pole-texte">Façades, boiseries et volets repeints en deux couches ; ravalement en quatre temps.</p>
-    </li>
-  </ul>
 </section>
 <section class="section chantiers" id="chantiers" data-fx="galerie" aria-labelledby="chantiers-titre">
   <div class="conteneur">

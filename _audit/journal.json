@@ -366,6 +366,22 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 13,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil : ordre des rubriques, diagnostic"
+   ],
+   "etapes": [
+    {
+     "etape": "métiers avant le diagnostic, diagnostic simplifié dans un écran",
+     "budget": 30,
+     "debut": "2026-11-13T13:39:00+01:00",
+     "fin": "2026-11-13T13:50:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

@@ -1,0 +1,20 @@
+… mesures
+  fait en 16 s
+… mesures:balayage
+  fait en 0 s
+… parcours:intro
+  fait en 18 s
+… parcours:menu
+  fait en 4 s
+… parcours:liens
+  fait en 104 s
+… parcours:hauteur
+  fait en 14 s
+… parcours:calme
+  fait en 17 s
+… parcours:projet
+  fait en 0 s
+
+Échecs : 4 · À regarder : 14 · Non lancé : 1 (dont 1 requis : audit INCOMPLET)
+Relancer seulement ce qui a échoué : node _audit/audit.mjs --rapide --seulement=fichiers,parcours
+Rapport : /home/claude/artisan-sandero-maquette/_audit/rapport/rapport.md (passe 20261113-123955-rapide-cible-partiel)

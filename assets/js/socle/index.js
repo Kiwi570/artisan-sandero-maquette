@@ -1,6 +1,6 @@
 /* Socle commun à toutes les maquettes. Usage dans assets/js/site.js :
 
-   import { demarrer } from './socle/index.js?v=12';
+   import { demarrer } from './socle/index.js?v=13';
    demarrer({
      preparer() { ... },   // effets du projet : ScrollTrigger, SplitText, boucles (états de départ posés ici)
      jouer() { return gsap.timeline()... },   // intro complète, moins de 3 s
@@ -12,28 +12,28 @@
    Ordre : mesures, défilement, en-tête et menu, mode calme, transitions, boucles, formulaires,
    puis bibliothèque d'effets (effets.js : data-anime="lignes|mots|lettres|cascade|rideau", data-fx, data-survol),
    puis préparation du projet, scènes remises dans l'ordre de la page (ScrollTrigger.sort puis refresh), puis ouverture (intro, voile, retour, calme ou secours). */
-import { html, etat } from './etat.js?v=12';
-import { initMesures, rafraichir } from './mesures.js?v=12';
-import { initDefilement } from './defilement.js?v=12';
-import { initEntete } from './entete.js?v=12';
-import { initCalme } from './calme.js?v=12';
-import { initTransitions } from './transitions.js?v=12';
-import { initBoucles } from './boucles.js?v=12';
-import { initFormulaires } from './formulaires.js?v=12';
-import { initLecture } from './lecture.js?v=12';
-import { initCompteurs } from './compteurs.js?v=12';
-import { initCurseur } from './curseur.js?v=12';
-import { initEffets } from './effets.js?v=12';
-import { ouvrir } from './ouverture.js?v=12';
+import { html, etat } from './etat.js?v=13';
+import { initMesures, rafraichir } from './mesures.js?v=13';
+import { initDefilement } from './defilement.js?v=13';
+import { initEntete } from './entete.js?v=13';
+import { initCalme } from './calme.js?v=13';
+import { initTransitions } from './transitions.js?v=13';
+import { initBoucles } from './boucles.js?v=13';
+import { initFormulaires } from './formulaires.js?v=13';
+import { initLecture } from './lecture.js?v=13';
+import { initCompteurs } from './compteurs.js?v=13';
+import { initCurseur } from './curseur.js?v=13';
+import { initEffets } from './effets.js?v=13';
+import { ouvrir } from './ouverture.js?v=13';
 
 export { etat, rafraichir };
-export { boucle } from './boucles.js?v=12';
-export { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=12';
-export { allerAncre, partir } from './transitions.js?v=12';
-export { quand, emettre } from './etat.js?v=12';
-export { suivre, lacher } from './gouttiere.js?v=12';
-export { versObjet } from './vers-objet.js?v=12';
-export { centreOuverture, forme as formeVoile, ouvrirTrou } from './voile.js?v=12';
+export { boucle } from './boucles.js?v=13';
+export { aller, bloquerDefilement, debloquerDefilement } from './defilement.js?v=13';
+export { allerAncre, partir } from './transitions.js?v=13';
+export { quand, emettre } from './etat.js?v=13';
+export { suivre, lacher } from './gouttiere.js?v=13';
+export { versObjet } from './vers-objet.js?v=13';
+export { centreOuverture, forme as formeVoile, ouvrirTrou } from './voile.js?v=13';
 
 export async function demarrer(o = {}) {
   /* Le JavaScript prend la main : le délai de secours ne se déclenchera plus. */

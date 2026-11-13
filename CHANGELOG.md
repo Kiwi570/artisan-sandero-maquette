@@ -2,6 +2,19 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v13 — métiers d'abord, diagnostic simplifié
+
+- **Accueil, nouvel ordre** :
+  - Après la plongée viennent 01 Les métiers, puis 02 Le diagnostic.
+  - Les fonds alternent mieux : plongée sombre, métiers clairs, diagnostic sombre, chantiers clairs.
+  - « Passer la plongée » mène aux métiers.
+- **Diagnostic, simplifié** : il tient dans un écran, du titre au bouton (vérifié en 1288 × 626, 1366 × 768, 1440 × 900, 1920 × 1080 et 1024 × 768).
+  - Le titre tient sur une ligne, avec une introduction plus courte.
+  - Sur la coupe, seul le point du symptôme choisi reste ; les étoiles disparaissent. La coupe se dimensionne sur la hauteur de l'écran.
+  - Les huit pastilles bordées deviennent un sommaire numéroté en deux colonnes. Le choix en cours s'allume en jaune liteau.
+  - La fiche tient en trois éléments : d'où ça vient, ce qui est en cause (« 03 · Écran ↑ », qui ramène à la plongée) et le bouton « Demander un diagnostic », sur la même ligne. Le grand titre, qui répétait le choix, est retiré de l'affichage mais reste lu par les lecteurs d'écran.
+  - Sur téléphone : la coupe en pleine largeur, puis le sommaire en deux colonnes, puis la fiche.
+
 ## v12 — métiers dans un écran, le courrier refait
 
 - **Métiers** : la section tient dans un écran, même bas (vérifiée en 1288 × 626, 1366 × 768, 1440 × 900, 1920 × 1080 et 1024 × 768).
