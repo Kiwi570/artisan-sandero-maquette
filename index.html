@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="8">
+<html lang="fr" data-v="10">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -37,15 +37,15 @@ if (alt) location.replace(new URL(alt.href).pathname + location.search + locatio
 setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
 })();</script>
 <link rel="preload" href="/assets/fonts/newsreader-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=8">
-<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=8">
-<link rel="stylesheet" href="/assets/css/site.css?v=8">
-<link rel="modulepreload" href="/assets/js/site.js?v=8">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=8">
+<link rel="stylesheet" href="/assets/css/socle.css?v=10">
+<link rel="stylesheet" href="/assets/css/module-formulaire-par-etapes.css?v=10">
+<link rel="stylesheet" href="/assets/css/site.css?v=10">
+<link rel="modulepreload" href="/assets/js/site.js?v=10">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=10">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=8"></script>
+<script type="module" src="/assets/js/site.js?v=10"></script>
 <meta name="theme-color" content="#f2ebe1">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -182,12 +182,195 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     </div>
     <ol class="plongee-rail" aria-label="Les cinq couches du toit">
       <li data-rail><a href="#couche-1" data-aller="0"><span>01</span> Tuile</a></li><li data-rail><a href="#couche-2" data-aller="1"><span>02</span> Liteau</a></li><li data-rail><a href="#couche-3" data-aller="2"><span>03</span> Écran</a></li><li data-rail><a href="#couche-4" data-aller="3"><span>04</span> Isolant</a></li><li data-rail><a href="#couche-5" data-aller="4"><span>05</span> Chevrons</a></li>
-      <li class="plongee-passer"><a href="#metiers">Passer la plongée ↓</a></li>
+      <li class="plongee-passer"><a href="#diagnostic">Passer la plongée ↓</a></li>
     </ol>
   </div>
 </section>
+<section class="section diagnostic sombre" id="diagnostic" aria-labelledby="diagnostic-titre" data-planche>
+  <div class="conteneur">
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Le diagnostic</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="section-tete">
+      <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">Ce que vous voyez <em>d'en bas</em>.</h2>
+      <p>Choisissez ce qui ressemble à chez vous. On vous dit d&#39;où ça vient le plus souvent, quelle couche du toit est en cause, et la demande de devis est déjà prête.</p>
+    </div>
+    <div class="planche planche--coupe">
+      <div class="planche-dessin">
+        <svg class="coupe-svg" viewBox="70 28 900 632" role="img" aria-labelledby="coupe-titre" focusable="false">
+  <title id="coupe-titre">Coupe d'un pavillon la nuit : le toit et ses cinq couches, les combles, l'étage et le rez-de-chaussée.</title>
+  <defs>
+    <pattern id="hachure" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" class="hachure-trait"/></pattern>
+    <pattern id="laine" width="18" height="12" patternUnits="userSpaceOnUse"><path d="M0,6 q4.5,-6 9,0 t9,0" class="laine-trait"/></pattern>
+    <radialGradient id="lueur"><stop offset="0" stop-color="#f3c66b" stop-opacity=".55"/><stop offset="1" stop-color="#f3c66b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lune"><stop offset=".55" stop-color="#efe7db" stop-opacity=".18"/><stop offset="1" stop-color="#efe7db" stop-opacity="0"/></radialGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3c66b" stop-opacity=".32"/><stop offset="1" stop-color="#f3c66b" stop-opacity="0"/></linearGradient>
+  </defs>
+  <g class="ciel" aria-hidden="true"><circle class="etoile" style="--i:0" cx="640" cy="40" r="1.8"/><circle class="etoile" style="--i:1" cx="700" cy="86" r="1.2"/><circle class="etoile" style="--i:2" cx="770" cy="28" r="1.2"/><circle class="etoile" style="--i:3" cx="860" cy="130" r="1.8"/><circle class="etoile" style="--i:4" cx="960" cy="40" r="1.2"/><circle class="etoile" style="--i:5" cx="120" cy="60" r="1.2"/><circle class="etoile" style="--i:6" cx="60" cy="150" r="1.8"/><circle class="etoile" style="--i:7" cx="250" cy="30" r="1.2"/><circle class="etoile" style="--i:8" cx="960" cy="210" r="1.2"/><circle cx="890" cy="74" r="54" fill="url(#lune)"/><circle class="lune" cx="890" cy="74" r="20"/><circle class="lune-ombre" cx="900" cy="68" r="17"/></g>
+  <g class="maison">
+    <line class="sol" x1="30" y1="640" x2="970" y2="640"/>
+    <path class="herbe" d="M60,640 l3,-8 M66,640 l-2,-6"/><path class="herbe" d="M96,640 l3,-8 M102,640 l-2,-6"/><path class="herbe" d="M128,640 l3,-8 M134,640 l-2,-6"/><path class="herbe" d="M870,640 l3,-8 M876,640 l-2,-6"/><path class="herbe" d="M910,640 l3,-8 M916,640 l-2,-6"/><path class="herbe" d="M948,640 l3,-8 M954,640 l-2,-6"/>
+    <!-- murs coupés, planchers -->
+    <rect class="lueur-piece" x="240" y="510" width="520" height="130" fill="url(#lueur)" opacity=".35"/>
+    <polygon class="cone" points="420,548 380,640 460,640" fill="url(#cone)"/>
+    <path class="coupe-mur" d="M222,358 h18 v42 h-18 Z M222,456 h18 v184 h-18 Z M760,358 h18 v182 h-18 Z M760,600 h18 v40 h-18 Z"/>
+    <rect class="fenetre-lueur" x="214" y="400" width="34" height="56" fill="url(#lueur)"/><line class="vitre" x1="231" y1="400" x2="231" y2="456"/>
+    <rect class="fenetre-lueur" x="752" y="540" width="34" height="60" fill="url(#lueur)"/><line class="vitre" x1="769" y1="540" x2="769" y2="600"/>
+    <rect class="enduit" x="778" y="358" width="5" height="282"/>
+    <rect class="coupe-plancher" x="240" y="500" width="520" height="10"/>
+    <polyline class="escalier" points="560,640 575,640 575,625.6 575,625.6 590,625.6 590,611.2 590,611.2 605,611.2 605,596.8 605,596.8 620,596.8 620,582.4 620,582.4 635,582.4 635,568 635,568 650,568 650,553.6 650,553.6 665,553.6 665,539.2 665,539.2 680,539.2 680,524.8 680,524.8 695,524.8 695,510.4"/>
+    <path class="lampe" d="M420,510 v26 M406,548 l14,-12 l14,12 Z"/>
+    <path class="radiateur" d="M688,494 v-26 h44 v26 M697,468 v26 M706,468 v26 M715,468 v26 M724,468 v26"/>
+    <!-- combles : plancher, lit -->
+    <rect class="coupe-plancher" x="240" y="358" width="520" height="10"/>
+    <path class="lit" d="M430,358 v-14 h92 v14 M436,344 v-8 h22 v8"/>
+    <!-- le toit coupé : cinq couches -->
+    <polygon class="couche couche-5" points="191.4,367.2 500,135.8 808.6,367.2 797.8,381.6 500,158.3 202.2,381.6"/>
+    <polygon class="couche couche-4" points="233.7,358 500,158.3 766.3,358 728,358 500,187 272,358"/>
+    <polygon class="couche couche-4-laine" points="233.7,358 500,158.3 766.3,358 728,358 500,187 272,358" fill="url(#laine)"/>
+    <polyline class="plaque" points="275.3,358 500,189.5 724.7,358"/>
+    <polyline class="couche couche-3" points="190.5,366 500,133.9 809.5,366"/>
+    <polygon class="couche couche-2" points="199,349.7 204.5,345.6 208.6,351.1 203.1,355.2"/><polygon class="couche couche-2" points="507.5,129.6 513,133.7 508.9,139.2 503.4,135.1"/><polygon class="couche couche-2" points="220.8,333.4 226.2,329.3 230.3,334.8 224.9,338.8"/><polygon class="couche couche-2" points="529.3,146 534.7,150 530.6,155.5 525.2,151.4"/><polygon class="couche couche-2" points="242.6,317.1 248,313 252.1,318.4 246.6,322.5"/><polygon class="couche couche-2" points="551,162.3 556.5,166.4 552.4,171.8 547,167.7"/><polygon class="couche couche-2" points="264.3,300.8 269.8,296.7 273.8,302.1 268.4,306.2"/><polygon class="couche couche-2" points="572.8,178.6 578.2,182.7 574.2,188.1 568.7,184"/><polygon class="couche couche-2" points="286.1,284.4 291.5,280.4 295.6,285.8 290.2,289.9"/><polygon class="couche couche-2" points="594.6,194.9 600,199 595.9,204.4 590.5,200.4"/><polygon class="couche couche-2" points="307.8,268.1 313.3,264 317.4,269.5 311.9,273.6"/><polygon class="couche couche-2" points="616.3,211.2 621.8,215.3 617.7,220.8 612.2,216.7"/><polygon class="couche couche-2" points="329.6,251.8 335,247.7 339.1,253.2 333.7,257.2"/><polygon class="couche couche-2" points="638.1,227.6 643.5,231.6 639.4,237.1 634,233"/><polygon class="couche couche-2" points="351.4,235.5 356.8,231.4 360.9,236.8 355.4,240.9"/><polygon class="couche couche-2" points="659.8,243.9 665.3,248 661.2,253.4 655.8,249.3"/><polygon class="couche couche-2" points="373.1,219.2 378.6,215.1 382.6,220.5 377.2,224.6"/><polygon class="couche couche-2" points="681.6,260.2 687,264.3 683,269.7 677.5,265.6"/><polygon class="couche couche-2" points="394.9,202.8 400.3,198.8 404.4,204.2 399,208.3"/><polygon class="couche couche-2" points="703.4,276.5 708.8,280.6 704.7,286 699.3,282"/><polygon class="couche couche-2" points="416.6,186.5 422.1,182.4 426.2,187.9 420.7,192"/><polygon class="couche couche-2" points="725.1,292.8 730.6,296.9 726.5,302.4 721,298.3"/><polygon class="couche couche-2" points="438.4,170.2 443.8,166.1 447.9,171.6 442.5,175.6"/><polygon class="couche couche-2" points="746.9,309.2 752.3,313.2 748.2,318.7 742.8,314.6"/><polygon class="couche couche-2" points="460.2,153.9 465.6,149.8 469.7,155.2 464.2,159.3"/><polygon class="couche couche-2" points="768.6,325.5 774.1,329.6 770,335 764.6,330.9"/><polygon class="couche couche-2" points="481.9,137.6 487.4,133.5 491.4,138.9 486,143"/><polygon class="couche couche-2" points="790.4,341.8 795.8,345.9 791.8,351.3 786.3,347.2"/>
+    <polygon class="couche couche-1" points="180,352 500,112 820,352 814.6,359.2 500,123.3 185.4,359.2"/>
+    <path class="faitiere" d="M482,116 a18,15 0 0 1 36,0"/>
+    <!-- cheminée et solin, fenêtre de toit -->
+    <rect class="cheminee" x="330" y="124" width="34" height="376"/>
+    <rect class="cheminee" x="324" y="116" width="46" height="9"/>
+    <path class="solin" d="M316,250.5 L330,240 V226 M364,198 V214 L378,203.5"/>
+    <polygon class="velux" points="647,216 685.4,244.8 645.2,298.4 606.8,269.6"/>
+    <polygon class="velux-lueur" points="646,224 678,248 643.2,294.4 611.2,270.4"/>
+    <line class="vitre" x1="643.8" y1="223.6" x2="679" y2="250"/>
+    <!-- gouttières et descente -->
+    <path class="gouttiere" d="M165,356 a9,9 0 0 0 18,0 M817,356 a9,9 0 0 0 18,0"/>
+    <path class="descente" d="M826,366 L796,392 V628 l10,8"/>
+  </g>
+  <!-- traces des symptômes -->
+  <g class="trace" data-trace="plafond">
+    <polygon class="tr-couche" points="180,352 500,112 820,352 814.6,359.2 500,123.3 185.4,359.2"/>
+    <polygon class="tr-trou" points="412.4,176.5 423.2,168.3 429.8,177.1 419,185.3"/>
+    <polygon class="tr-tuile" points="392.3,177.8 405.1,168.2 411.1,176.2 398.3,185.8"/>
+    <ellipse class="tr-goutte" style="--i:0" cx="425.6" cy="182.8" rx="3.4" ry="4.8"/><ellipse class="tr-goutte" style="--i:1" cx="425.6" cy="182.8" rx="3.4" ry="4.8"/><ellipse class="tr-goutte" style="--i:2" cx="425.6" cy="182.8" rx="3.4" ry="4.8"/>
+    <g transform="rotate(-36.87 456.8 224.4)"><ellipse class="tr-tache" cx="456.8" cy="224.4" rx="30" ry="7"/></g>
+  </g>
+  <g class="trace" data-trace="mousse">
+    <polygon class="tr-couche" points="660,232 820,352 814.6,359.2 654.6,239.2"/>
+    <g transform="rotate(36.87 754.6 299.2)"><ellipse class="tr-mousse" style="--i:0" cx="754.6" cy="299.2" rx="9" ry="4.6"/></g><g transform="rotate(36.87 767.4 308.8)"><ellipse class="tr-mousse" style="--i:1" cx="767.4" cy="308.8" rx="6" ry="3.5999999999999996"/></g><g transform="rotate(36.87 778.6 317.2)"><ellipse class="tr-mousse" style="--i:2" cx="778.6" cy="317.2" rx="9" ry="4.6"/></g><g transform="rotate(36.87 789.8 325.6)"><ellipse class="tr-mousse" style="--i:3" cx="789.8" cy="325.6" rx="6" ry="3.5999999999999996"/></g><g transform="rotate(36.87 801 334)"><ellipse class="tr-mousse" style="--i:4" cx="801" cy="334" rx="9" ry="4.6"/></g>
+  </g>
+  <g class="trace" data-trace="gouttiere">
+    <path class="tr-zinc" d="M817,356 a9,9 0 0 0 18,0 M826,366 L796,392 V628 l10,8"/>
+    <ellipse class="tr-feuille" cx="822" cy="359" rx="4" ry="2"/><ellipse class="tr-feuille" cx="830" cy="360" rx="3.4" ry="1.8"/>
+    <path class="tr-debord" style="--i:0" d="M834,357 q8,4 9,34 v70"/><path class="tr-debord" style="--i:1" d="M837,357 q11,4 13,44 v100"/><path class="tr-debord" style="--i:2" d="M840,357 q14,4 17,54 v130"/>
+  </g>
+  <g class="trace" data-trace="cheminee">
+    <path class="tr-zinc" d="M316,250.5 L330,240 V226 M364,198 V214 L378,203.5"/>
+    <path class="tr-filet" d="M328,244 V356"/>
+    <ellipse class="tr-flaque" cx="322" cy="356" rx="16" ry="2.6"/>
+  </g>
+  <g class="trace" data-trace="combles">
+    <polyline class="tr-ecran" points="190.5,366 500,133.9 809.5,366"/>
+    <circle class="tr-perle" style="--i:0" cx="257.8" cy="322.4" r="2.2"/><circle class="tr-perle" style="--i:1" cx="742.2" cy="322.4" r="2.2"/><circle class="tr-perle" style="--i:2" cx="302.6" cy="288.8" r="2.2"/><circle class="tr-perle" style="--i:3" cx="697.4" cy="288.8" r="2.2"/><circle class="tr-perle" style="--i:4" cx="347.4" cy="255.2" r="2.2"/><circle class="tr-perle" style="--i:5" cx="652.6" cy="255.2" r="2.2"/><circle class="tr-perle" style="--i:6" cx="392.2" cy="221.6" r="2.2"/><circle class="tr-perle" style="--i:7" cx="607.8" cy="221.6" r="2.2"/><circle class="tr-perle" style="--i:8" cx="437" cy="188" r="2.2"/><circle class="tr-perle" style="--i:9" cx="563" cy="188" r="2.2"/>
+  </g>
+  <g class="trace" data-trace="froid">
+    <polygon class="tr-couche" points="233.7,358 500,158.3 766.3,358 728,358 500,187 272,358"/>
+    <polygon class="tr-tasse" points="676.2,290.4 721,324 712.6,335.2 667.8,301.6"/>
+    <path class="tr-chaleur" style="--i:0" d="M632,440 C626,410 650,392 646,372 S672,322 700,300 S728,262 742,244"/><path class="tr-chaleur" style="--i:1" d="M654,440 C648,410 672,392 668,372 S690,322 714,300 S740,262 752,244"/><path class="tr-chaleur" style="--i:2" d="M676,440 C670,410 694,392 690,372 S708,322 728,300 S752,262 762,244"/>
+  </g>
+  <g class="trace" data-trace="charpente">
+    <polygon class="tr-couche" points="191.4,367.2 500,135.8 808.6,367.2 797.8,381.6 500,158.3 202.2,381.6"/>
+    <path class="tr-affaisse" d="M176,346 Q330,232 500,128 Q670,232 824,346"/>
+    <circle class="tr-sciure" style="--i:0" cx="470" cy="355" r="1.6"/><circle class="tr-sciure" style="--i:1" cx="481" cy="353" r="1.6"/><circle class="tr-sciure" style="--i:2" cx="492" cy="355" r="1.6"/><circle class="tr-sciure" style="--i:3" cx="503" cy="353" r="1.6"/><circle class="tr-sciure" style="--i:4" cx="514" cy="355" r="1.6"/><circle class="tr-sciure" style="--i:5" cx="525" cy="353" r="1.6"/>
+  </g>
+  <g class="trace" data-trace="facade">
+    <rect class="tr-enduit" x="778" y="358" width="5" height="282"/>
+    <path class="tr-fissure" d="M781,604 l4,9 -4,8 5,9 -4,7 3,7"/>
+    <path class="tr-fissure" d="M781,470 l3,8 -3,7 4,9"/>
+  </g>
+</svg>
+        <button type="button" class="planche-point" data-choix="plafond" style="left:45.78%;top:37.03%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="mousse" style="left:80.22%;top:42.41%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="gouttiere" style="left:86.89%;top:53.80%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="cheminee" style="left:26.00%;top:33.54%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="combles" style="left:54.67%;top:27.22%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="froid" style="left:68.67%;top:46.52%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="charpente" style="left:47.78%;top:9.49%" aria-hidden="true" tabindex="-1"><span></span></button><button type="button" class="planche-point" data-choix="facade" style="left:82.00%;top:85.13%" aria-hidden="true" tabindex="-1"><span></span></button>
+      </div>
+      <div class="planche-cote">
+        <ul class="planche-choix" aria-label="Ce que vous voyez chez vous">
+          <li><button type="button" data-choix="plafond" aria-pressed="true" aria-controls="symptome-plafond">Une tache au plafond</button></li><li><button type="button" data-choix="mousse" aria-pressed="false" aria-controls="symptome-mousse">De la mousse sur le toit</button></li><li><button type="button" data-choix="gouttiere" aria-pressed="false" aria-controls="symptome-gouttiere">La gouttière déborde</button></li><li><button type="button" data-choix="cheminee" aria-pressed="false" aria-controls="symptome-cheminee">De l&#39;eau près de la cheminée</button></li><li><button type="button" data-choix="combles" aria-pressed="false" aria-controls="symptome-combles">Des combles humides</button></li><li><button type="button" data-choix="froid" aria-pressed="false" aria-controls="symptome-froid">Froid l&#39;hiver, chaud l&#39;été</button></li><li><button type="button" data-choix="charpente" aria-pressed="false" aria-controls="symptome-charpente">Le toit se creuse</button></li><li><button type="button" data-choix="facade" aria-pressed="false" aria-controls="symptome-facade">La façade se fissure</button></li>
+        </ul>
+        <div class="planche-fiches">
+          <article class="fiche" data-fiche="plafond" id="symptome-plafond" aria-labelledby="symptome-plafond-titre">
+            <p class="fiche-n">Symptôme 01 / 08</p>
+            <h3 id="symptome-plafond-titre">Une tache <em>au plafond</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Le plus souvent, une tuile cassée ou glissée laisse entrer la pluie. L&#39;eau passe sous les tuiles, traverse l&#39;isolant et marque le plafond, parfois loin de la tuile en cause.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On cherche le point d&#39;entrée depuis le toit, on remplace les tuiles et on vérifie l&#39;écran dessous.</p>
+            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Tuiles cassées remplacées</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=couverture&amp;signes=Tache%20au%20plafond#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="mousse" id="symptome-mousse" aria-labelledby="symptome-mousse-titre">
+            <p class="fiche-n">Symptôme 02 / 08</p>
+            <h3 id="symptome-mousse-titre">De la mousse <em>sur les tuiles</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Côté nord ou sous les arbres, la mousse garde l&#39;humidité contre la tuile. L&#39;hiver, l&#39;eau gèle dans la terre cuite et la fait éclater ; la mousse finit aussi dans la gouttière.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-pastille" href="#couche-1" data-couche="0"><b>01</b> La tuile <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Démoussage, puis traitement hydrofuge pour que l&#39;eau glisse. De préférence au printemps ou à l&#39;automne.</p>
+            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Démoussage et hydrofuge</span> <span aria-hidden="true">→</span></a></li><li><a href="/couverture" data-libelle="Couverture"><span>Essayez : démoussez un toit vous-même</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=couverture&amp;signes=Mousse%20sur%20le%20toit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="gouttiere" id="symptome-gouttiere" aria-labelledby="symptome-gouttiere-titre">
+            <p class="fiche-n">Symptôme 03 / 08</p>
+            <h3 id="symptome-gouttiere-titre">La gouttière <em>déborde</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Feuilles et mousse la bouchent, ou elle a perdu sa pente : l&#39;eau passe par-dessus et coule le long du mur, qu&#39;elle salit puis abîme.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a href="/couverture#piece-gouttiere" class="fiche-pastille" data-libelle="Couverture">La gouttière <span class="fiche-voir">· voir la pièce →</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, pente reprise, ou gouttière en zinc refaite sur mesure.</p>
+            <ul class="fiche-liens"><li><a href="/zinguerie-charpente#signes" data-libelle="Zinguerie et charpente"><span>Votre gouttière vous fait signe ?</span> <span aria-hidden="true">→</span></a></li><li><a href="/zinguerie-charpente#zinguerie" data-libelle="Zinguerie et charpente"><span>Zinguerie sur mesure</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=zinguerie&amp;signes=Goutti%C3%A8re%20qui%20d%C3%A9borde#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="cheminee" id="symptome-cheminee" aria-labelledby="symptome-cheminee-titre">
+            <p class="fiche-n">Symptôme 04 / 08</p>
+            <h3 id="symptome-cheminee-titre">De l'eau <em>le long de la cheminée</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Le solin, le joint en zinc ou en mortier entre la cheminée et les tuiles, s&#39;est fissuré ou décollé. La pluie glisse le long du conduit jusque dans les combles.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a href="/couverture#piece-solin" class="fiche-pastille" data-libelle="Couverture">Le solin <span class="fiche-voir">· voir la pièce →</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On refait le solin et, si besoin, le pied de cheminée et les tuiles autour.</p>
+            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Pieds de cheminée remis en état</span> <span aria-hidden="true">→</span></a></li><li><a href="/zinguerie-charpente#zinguerie" data-libelle="Zinguerie et charpente"><span>Solins en zinc</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=couverture&amp;signes=Eau%20le%20long%20de%20la%20chemin%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="combles" id="symptome-combles" aria-labelledby="symptome-combles-titre">
+            <p class="fiche-n">Symptôme 05 / 08</p>
+            <h3 id="symptome-combles-titre">Des combles <em>humides</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Sans écran sous-toiture, ou avec un écran déchiré, la pluie poussée par le vent et la condensation se déposent sur l&#39;isolant et la charpente : traces noires, odeur de moisi.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-pastille" href="#couche-3" data-couche="2"><b>03</b> L&#39;écran sous-toiture <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> On vérifie l&#39;écran et l&#39;aération du toit (chatières, closoir), puis on le remplace là où il faut, souvent lors d&#39;une réfection.</p>
+            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Pose et réfection de couverture</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=couverture&amp;signes=Combles%20humides#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="froid" id="symptome-froid" aria-labelledby="symptome-froid-titre">
+            <p class="fiche-n">Symptôme 06 / 08</p>
+            <h3 id="symptome-froid-titre">Froide l'hiver, <em>étouffante l'été</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Un isolant ancien se tasse et laisse filer la chaleur : jusqu&#39;à 30 % des pertes d&#39;une maison passent par le toit.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-pastille" href="#couche-4" data-couche="3"><b>04</b> L&#39;isolant <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Isolation des combles perdus ou aménageables, par l&#39;intérieur ou par l&#39;extérieur, en laine de verre ou de roche.</p>
+            <ul class="fiche-liens"><li><a href="/couverture#interventions" data-libelle="Couverture"><span>Isolation de la toiture et des combles</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=couverture&amp;signes=Maison%20froide#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="charpente" id="symptome-charpente" aria-labelledby="symptome-charpente-titre">
+            <p class="fiche-n">Symptôme 07 / 08</p>
+            <h3 id="symptome-charpente-titre">Le toit se creuse, <em>une poutre fléchit</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Une charpente qui fléchit vient souvent d&#39;insectes (capricornes, vrillettes), d&#39;un champignon comme la mérule, ou d&#39;une couverture trop lourde. De la sciure au grenier doit alerter.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <a class="fiche-pastille" href="#couche-5" data-couche="4"><b>05</b> Les chevrons <span class="fiche-voir">· voir dans la plongée ↑</span></a></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Diagnostic de la charpente, traitement contre les insectes et la mérule, renfort ou remplacement des pièces.</p>
+            <ul class="fiche-liens"><li><a href="/zinguerie-charpente#charpente" data-libelle="Zinguerie et charpente"><span>Charpente : diagnostic, traitement, renfort</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=charpente&amp;signes=Charpente%20qui%20fl%C3%A9chit#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article><article class="fiche" data-fiche="facade" id="symptome-facade" aria-labelledby="symptome-facade-titre">
+            <p class="fiche-n">Symptôme 08 / 08</p>
+            <h3 id="symptome-facade-titre">La façade se fissure <em>ou noircit</em></h3>
+            <p class="fiche-texte"><b>D&#39;où ça vient.</b> Avec les années, l&#39;enduit se fissure et se salit, surtout sous les appuis de fenêtre et là où la gouttière déborde. L&#39;eau entre alors dans le mur.</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">En cause</span>
+              <span class="fiche-pastille fiche-pastille--simple">L&#39;enduit de la façade</span></p>
+            <p class="fiche-texte"><b>Ce qu&#39;on fait.</b> Nettoyage, fissures traitées, puis ravalement ou peinture de façade.</p>
+            <ul class="fiche-liens"><li><a href="/facades#ravalement" data-libelle="Peinture et façades"><span>Ravalement de façade</span> <span aria-hidden="true">→</span></a></li><li><a href="/facades#finitions" data-libelle="Peinture et façades"><span>Choisir sa finition</span> <span aria-hidden="true">→</span></a></li></ul>
+            <a href="/devis?prestation=ravalement&amp;signes=Fa%C3%A7ade%20fissur%C3%A9e#demande" class="bouton fiche-devis" data-libelle="Devis et contact">Demander un diagnostic pour ça <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section metiers conteneur" id="metiers" aria-labelledby="metiers-titre">
-  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 01 · Les métiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Les métiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
   <div class="section-tete">
     <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">Cinq métiers, une même famille.</h2>
     <p>Choisissez où ça se passe chez vous : la grille se recompose.</p>
@@ -236,7 +419,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="section chantiers" id="chantiers" data-fx="galerie" aria-labelledby="chantiers-titre">
   <div class="conteneur">
-    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 02 · Les chantiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 03 · Les chantiers</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="section-tete">
       <h2 id="chantiers-titre" data-titre-pose data-effet="titre-pose">Sur les chantiers</h2>
       <p>Photos prises par l&#39;équipe, du drone au fer à souder.</p>
@@ -269,7 +452,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="section methode" id="methode" aria-labelledby="methode-titre">
   <div class="conteneur">
-    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 03 · La méthode</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 04 · La méthode</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="section-tete">
       <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">La méthode, rang par rang.</h2>
       <p>Six étapes, toujours dans le même ordre. Chacune recouvre la précédente, comme un rang de tuiles.</p>
@@ -288,7 +471,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="section famille sombre" id="famille" aria-labelledby="famille-titre">
   <div class="conteneur">
-    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 04 · De père en fils</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 05 · De père en fils</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <div class="famille-grille">
       <div>
         <h2 id="famille-titre" class="visuellement-cache">De père en fils</h2>
@@ -317,7 +500,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
-  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 05 · Le courrier et les labels</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+  <div class="liteau" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 06 · Le courrier et les labels</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
   <div class="section-tete">
     <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">Le courrier des clients</h2>
     <p>Neuf avis publiés par des clients, tous à cinq étoiles.</p>
@@ -386,7 +569,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
   <div class="conteneur">
-    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 06 · La zone</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
+    <div class="liteau liteau--clair" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">Rubrique 07 · La zone</span><span class="clou" style="left:8%;--i:0"></span><span class="clou" style="left:31%;--i:1"></span><span class="clou" style="left:54%;--i:2"></span><span class="clou" style="left:77%;--i:3"></span><span class="clou" style="left:96%;--i:4"></span></div>
     <h2 id="zone-titre" data-titre-pose data-effet="titre-pose">De Taverny aux communes voisines</h2>
     <p>Taverny et alentour : Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis. Diagnostic sur place et devis gratuit.</p>
     <ul class="communes" data-anime="cascade"><li class="siege">Taverny</li><li>Saint-Leu-la-Forêt</li><li>Ermont</li><li>Eaubonne</li><li>Cormeilles-en-Parisis</li></ul>

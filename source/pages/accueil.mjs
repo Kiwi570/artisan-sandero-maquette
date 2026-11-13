@@ -4,12 +4,15 @@
    soi-même la grande tuile du premier plan. Puis titres posés tuile par tuile (typo), trame des liteaux (fil),
    métiers qui se recomposent, méthode en rangs empilés. */
 import { html, brut } from '../../outils/gabarit.mjs';
+import { coupe, COUPE } from '../gabarits/planches.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index', imagePartage: 'grok/zone-faitage' };
 
 const liteau = (c, rubrique, clair = false) => html`<div class="liteau${clair ? ' liteau--clair' : ''}" data-grille="fil" data-effet="liteau-fil" aria-hidden="true"><span class="rubrique">${rubrique}</span>${[8, 31, 54, 77, 96].map((x, i) => html`<span class="clou" style="left:${x}%;--i:${i}"></span>`)}</div>`;
 
 export default (c) => {
+  const symptomes = c.donnees.diagnostic.symptomes;
+  const pieceNom = (id) => { const p = c.donnees.anatomie.pieces.find((x) => x.id === id); return p ? brut(p.nom.replace(/<\/?em>/g, '')) : id; };
   const d = c.donnees;
   const metiers = [['tout', 'Tout'], ['toit', 'Toit'], ['gouttieres', 'Gouttières'], ['facade', 'Façade'], ['charpente', 'Charpente']];
   return html`
@@ -48,13 +51,48 @@ export default (c) => {
     </div>
     <ol class="plongee-rail" aria-label="${c.s('accueil.couches.rail')}">
       ${d.couches.map((x, i) => html`<li data-rail><a href="#couche-${i + 1}" data-aller="${i}"><span>${String(i + 1).padStart(2, '0')}</span> ${x.court || x.nom}</a></li>`)}
-      <li class="plongee-passer"><a href="#metiers">${c.t('accueil.couches.passer')} ↓</a></li>
+      <li class="plongee-passer"><a href="#diagnostic">${c.t('accueil.couches.passer')} ↓</a></li>
     </ol>
   </div>
 </section>
 
+<section class="section diagnostic sombre" id="diagnostic" aria-labelledby="diagnostic-titre" data-planche>
+  <div class="conteneur">
+    ${liteau(c, 'Rubrique 01 · Le diagnostic', true)}
+    <div class="section-tete">
+      <h2 id="diagnostic-titre" data-titre-pose data-effet="titre-pose">${c.tb('accueil.diagnostic.titre')}</h2>
+      <p>${c.t('accueil.diagnostic.intro')}</p>
+    </div>
+    <div class="planche planche--coupe">
+      <div class="planche-dessin">
+        ${coupe()}
+        ${symptomes.map((s) => html`<button type="button" class="planche-point" data-choix="${s.id}" style="left:${((s.point[0] - COUPE.x) / COUPE.l * 100).toFixed(2)}%;top:${((s.point[1] - COUPE.y) / COUPE.h * 100).toFixed(2)}%" aria-hidden="true" tabindex="-1"><span></span></button>`)}
+      </div>
+      <div class="planche-cote">
+        <ul class="planche-choix" aria-label="${c.s('accueil.diagnostic.choix')}">
+          ${symptomes.map((s, i) => html`<li><button type="button" data-choix="${s.id}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="symptome-${s.id}">${s.choix}</button></li>`)}
+        </ul>
+        <div class="planche-fiches">
+          ${symptomes.map((s, i) => html`<article class="fiche" data-fiche="${s.id}" id="symptome-${s.id}" aria-labelledby="symptome-${s.id}-titre">
+            <p class="fiche-n">${c.t('accueil.diagnostic.n')} ${String(i + 1).padStart(2, '0')} / ${String(symptomes.length).padStart(2, '0')}</p>
+            <h3 id="symptome-${s.id}-titre">${brut(s.titre)}</h3>
+            <p class="fiche-texte"><b>${c.t('accueil.diagnostic.cause')}</b> ${s.cause}</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">${c.t('accueil.diagnostic.enCause')}</span>
+              ${s.couche ? html`<a class="fiche-pastille" href="#couche-${s.couche}" data-couche="${s.couche - 1}"><b>${String(s.couche).padStart(2, '0')}</b> ${d.couches[s.couche - 1].nom} <span class="fiche-voir">· ${c.t('accueil.diagnostic.plongee')} ↑</span></a>`
+                : s.piece ? c.lien('couverture', { ancre: `piece-${s.piece}`, classe: 'fiche-pastille', texte: html`${pieceNom(s.piece)} <span class="fiche-voir">· ${c.t('accueil.diagnostic.piece')} →</span>` })
+                : html`<span class="fiche-pastille fiche-pastille--simple">${s.enCause}</span>`}</p>
+            <p class="fiche-texte"><b>${c.t('accueil.diagnostic.action')}</b> ${s.action}</p>
+            <ul class="fiche-liens">${s.liens.map((l) => html`<li>${c.lien(l.page, { ancre: l.ancre, texte: html`<span>${l.texte}</span> <span aria-hidden="true">→</span>` })}</li>`)}</ul>
+            ${c.lien('devis', { ancre: 'demande', params: `prestation=${s.prestation}&signes=${encodeURIComponent(s.signe)}`, classe: 'bouton fiche-devis', texte: html`${c.t('accueil.diagnostic.devis')} <span aria-hidden="true">→</span>` })}
+          </article>`)}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section metiers conteneur" id="metiers" aria-labelledby="metiers-titre">
-  ${liteau(c, 'Rubrique 01 · Les métiers')}
+  ${liteau(c, 'Rubrique 02 · Les métiers')}
   <div class="section-tete">
     <h2 id="metiers-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.metiers.titre')}</h2>
     <p>${c.t('accueil.metiers.intro')}</p>
@@ -72,7 +110,7 @@ export default (c) => {
 
 <section class="section chantiers" id="chantiers" data-fx="galerie" aria-labelledby="chantiers-titre">
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 02 · Les chantiers')}
+    ${liteau(c, 'Rubrique 03 · Les chantiers')}
     <div class="section-tete">
       <h2 id="chantiers-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.chantiers.titre')}</h2>
       <p>${c.t('accueil.chantiers.intro')}</p>
@@ -86,7 +124,7 @@ export default (c) => {
 
 <section class="section methode" id="methode" aria-labelledby="methode-titre">
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 03 · La méthode')}
+    ${liteau(c, 'Rubrique 04 · La méthode')}
     <div class="section-tete">
       <h2 id="methode-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.methode.titre')}</h2>
       <p>${c.t('accueil.methode.intro')}</p>
@@ -102,7 +140,7 @@ export default (c) => {
 
 <section class="section famille sombre" id="famille" aria-labelledby="famille-titre">
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 04 · De père en fils', true)}
+    ${liteau(c, 'Rubrique 05 · De père en fils', true)}
     <div class="famille-grille">
       <div>
         <h2 id="famille-titre" class="visuellement-cache">${c.t('accueil.famille.sur')}</h2>
@@ -124,7 +162,7 @@ export default (c) => {
 </section>
 
 <section class="section avis conteneur" id="avis" aria-labelledby="avis-titre">
-  ${liteau(c, 'Rubrique 05 · Le courrier et les labels')}
+  ${liteau(c, 'Rubrique 06 · Le courrier et les labels')}
   <div class="section-tete">
     <h2 id="avis-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.avis.titre')}</h2>
     <p>${c.t('accueil.avis.intro')}</p>
@@ -150,7 +188,7 @@ export default (c) => {
 <section class="zone" id="zone" aria-labelledby="zone-titre">
   ${c.media({ nom: 'grok/faitage-vue', alt: 'Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin', classe: 'zone-fond', cadrage: '50% 74%', sizes: '100vw', attrs: 'data-fx="zoom" data-fx-force="12"' })}
   <div class="conteneur">
-    ${liteau(c, 'Rubrique 06 · La zone', true)}
+    ${liteau(c, 'Rubrique 07 · La zone', true)}
     <h2 id="zone-titre" data-titre-pose data-effet="titre-pose">${c.t('accueil.zone.titre')}</h2>
     <p>${c.t('accueil.zone.texte')}</p>
     <ul class="communes" data-anime="cascade">${d.communes.map((x) => html`<li${x.siege ? brut(' class="siege"') : ''}>${x.nom}</li>`)}</ul>

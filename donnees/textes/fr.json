@@ -149,6 +149,19 @@
    "texte": "Taverny et alentour : Saint-Leu-la-Forêt, Ermont, Eaubonne, Cormeilles-en-Parisis. Diagnostic sur place et devis gratuit.",
    "action": "Demander un devis gratuit",
    "alt": "Toits de tuiles et jardins vus depuis un faîtage, la forêt au loin"
+  },
+  "diagnostic": {
+   "titre": "Ce que vous voyez <em>d'en bas</em>.",
+   "intro": "Choisissez ce qui ressemble à chez vous. On vous dit d'où ça vient le plus souvent, quelle couche du toit est en cause, et la demande de devis est déjà prête.",
+   "choix": "Ce que vous voyez chez vous",
+   "n": "Symptôme",
+   "cause": "D'où ça vient.",
+   "enCause": "En cause",
+   "plongee": "voir dans la plongée",
+   "piece": "voir la pièce",
+   "action": "Ce qu'on fait.",
+   "devis": "Demander un diagnostic pour ça",
+   "point": "Voir le symptôme"
   }
  },
  "couverture": {
@@ -172,13 +185,23 @@
   "chantiersIntro": "Photos prises par l'équipe sur ses chantiers de Taverny et des communes voisines.",
   "legende": "chantier de l'entreprise",
   "rubriqueToit": "Rubrique 01 · Sur le toit",
-  "rubriqueNuancier": "Rubrique 02 · Le nuancier",
-  "rubriqueChantiers": "Rubrique 03 · Sur les chantiers",
+  "rubriqueNuancier": "Rubrique 03 · Le nuancier",
+  "rubriqueChantiers": "Rubrique 04 · Sur les chantiers",
   "prestationsAlt": "Liteaux posés sur l'écran d'une toiture en cours de réfection",
   "mousseGeste": "Passez la souris sur le toit pour le démousser",
   "mousseGesteTactile": "Frottez le toit du doigt pour le démousser",
   "mousseFini": "Toit démoussé",
-  "mousseLien": "Devis démoussage"
+  "mousseLien": "Devis démoussage",
+  "anatomie": {
+   "titre": "Le toit, <em>pièce par pièce</em>.",
+   "intro": "Touchez une pièce du croquis : son nom, son rôle, et quand s'en inquiéter. Ce sont les mots que vous lirez sur le devis.",
+   "choix": "Les pièces du toit",
+   "n": "Pièce",
+   "alerte": "Quand s'inquiéter.",
+   "qui": "Qui s'en occupe",
+   "doute": "Un doute sur la vôtre ? Diagnostic gratuit"
+  },
+  "rubriqueAnatomie": "Rubrique 02 · Pièce par pièce"
  },
  "zinguerie": {
   "sur": "Rubrique · Zinguerie et charpente",

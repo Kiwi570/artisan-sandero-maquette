@@ -1,0 +1,15 @@
+{
+ "id": "20261112-195233-rapide-cible-partiel",
+ "date": "2026-11-12T19:52:50.678Z",
+ "niveau": "rapide",
+ "pages": "/,/couverture.html",
+ "etapes": [
+  "mesures"
+ ],
+ "version": "10",
+ "echecs": 2,
+ "aRegarder": 15,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "échecs"
+}

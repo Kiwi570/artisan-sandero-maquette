@@ -1,0 +1,192 @@
+{
+ "symptomes": [
+  {
+   "id": "plafond",
+   "choix": "Une tache au plafond",
+   "titre": "Une tache <em>au plafond</em>",
+   "point": [
+    482,
+    262
+   ],
+   "cause": "Le plus souvent, une tuile cassée ou glissée laisse entrer la pluie. L'eau passe sous les tuiles, traverse l'isolant et marque le plafond, parfois loin de la tuile en cause.",
+   "couche": 1,
+   "action": "On cherche le point d'entrée depuis le toit, on remplace les tuiles et on vérifie l'écran dessous.",
+   "liens": [
+    {
+     "page": "couverture",
+     "ancre": "interventions",
+     "texte": "Tuiles cassées remplacées"
+    }
+   ],
+   "prestation": "couverture",
+   "signe": "Tache au plafond"
+  },
+  {
+   "id": "mousse",
+   "choix": "De la mousse sur le toit",
+   "titre": "De la mousse <em>sur les tuiles</em>",
+   "point": [
+    792,
+    296
+   ],
+   "cause": "Côté nord ou sous les arbres, la mousse garde l'humidité contre la tuile. L'hiver, l'eau gèle dans la terre cuite et la fait éclater ; la mousse finit aussi dans la gouttière.",
+   "couche": 1,
+   "action": "Démoussage, puis traitement hydrofuge pour que l'eau glisse. De préférence au printemps ou à l'automne.",
+   "liens": [
+    {
+     "page": "couverture",
+     "ancre": "interventions",
+     "texte": "Démoussage et hydrofuge"
+    },
+    {
+     "page": "couverture",
+     "ancre": "",
+     "texte": "Essayez : démoussez un toit vous-même"
+    }
+   ],
+   "prestation": "couverture",
+   "signe": "Mousse sur le toit"
+  },
+  {
+   "id": "gouttiere",
+   "choix": "La gouttière déborde",
+   "titre": "La gouttière <em>déborde</em>",
+   "point": [
+    852,
+    368
+   ],
+   "cause": "Feuilles et mousse la bouchent, ou elle a perdu sa pente : l'eau passe par-dessus et coule le long du mur, qu'elle salit puis abîme.",
+   "piece": "gouttiere",
+   "action": "Nettoyage, pente reprise, ou gouttière en zinc refaite sur mesure.",
+   "liens": [
+    {
+     "page": "zinguerie-charpente",
+     "ancre": "signes",
+     "texte": "Votre gouttière vous fait signe ?"
+    },
+    {
+     "page": "zinguerie-charpente",
+     "ancre": "zinguerie",
+     "texte": "Zinguerie sur mesure"
+    }
+   ],
+   "prestation": "zinguerie",
+   "signe": "Gouttière qui déborde"
+  },
+  {
+   "id": "cheminee",
+   "choix": "De l'eau près de la cheminée",
+   "titre": "De l'eau <em>le long de la cheminée</em>",
+   "point": [
+    304,
+    240
+   ],
+   "cause": "Le solin, le joint en zinc ou en mortier entre la cheminée et les tuiles, s'est fissuré ou décollé. La pluie glisse le long du conduit jusque dans les combles.",
+   "piece": "solin",
+   "action": "On refait le solin et, si besoin, le pied de cheminée et les tuiles autour.",
+   "liens": [
+    {
+     "page": "couverture",
+     "ancre": "interventions",
+     "texte": "Pieds de cheminée remis en état"
+    },
+    {
+     "page": "zinguerie-charpente",
+     "ancre": "zinguerie",
+     "texte": "Solins en zinc"
+    }
+   ],
+   "prestation": "couverture",
+   "signe": "Eau le long de la cheminée"
+  },
+  {
+   "id": "combles",
+   "choix": "Des combles humides",
+   "titre": "Des combles <em>humides</em>",
+   "point": [
+    562,
+    200
+   ],
+   "cause": "Sans écran sous-toiture, ou avec un écran déchiré, la pluie poussée par le vent et la condensation se déposent sur l'isolant et la charpente : traces noires, odeur de moisi.",
+   "couche": 3,
+   "action": "On vérifie l'écran et l'aération du toit (chatières, closoir), puis on le remplace là où il faut, souvent lors d'une réfection.",
+   "liens": [
+    {
+     "page": "couverture",
+     "ancre": "interventions",
+     "texte": "Pose et réfection de couverture"
+    }
+   ],
+   "prestation": "couverture",
+   "signe": "Combles humides"
+  },
+  {
+   "id": "froid",
+   "choix": "Froid l'hiver, chaud l'été",
+   "titre": "Froide l'hiver, <em>étouffante l'été</em>",
+   "point": [
+    688,
+    322
+   ],
+   "cause": "Un isolant ancien se tasse et laisse filer la chaleur : jusqu'à 30 % des pertes d'une maison passent par le toit.",
+   "couche": 4,
+   "action": "Isolation des combles perdus ou aménageables, par l'intérieur ou par l'extérieur, en laine de verre ou de roche.",
+   "liens": [
+    {
+     "page": "couverture",
+     "ancre": "interventions",
+     "texte": "Isolation de la toiture et des combles"
+    }
+   ],
+   "prestation": "couverture",
+   "signe": "Maison froide"
+  },
+  {
+   "id": "charpente",
+   "choix": "Le toit se creuse",
+   "titre": "Le toit se creuse, <em>une poutre fléchit</em>",
+   "point": [
+    500,
+    88
+   ],
+   "cause": "Une charpente qui fléchit vient souvent d'insectes (capricornes, vrillettes), d'un champignon comme la mérule, ou d'une couverture trop lourde. De la sciure au grenier doit alerter.",
+   "couche": 5,
+   "action": "Diagnostic de la charpente, traitement contre les insectes et la mérule, renfort ou remplacement des pièces.",
+   "liens": [
+    {
+     "page": "zinguerie-charpente",
+     "ancre": "charpente",
+     "texte": "Charpente : diagnostic, traitement, renfort"
+    }
+   ],
+   "prestation": "charpente",
+   "signe": "Charpente qui fléchit"
+  },
+  {
+   "id": "facade",
+   "choix": "La façade se fissure",
+   "titre": "La façade se fissure <em>ou noircit</em>",
+   "point": [
+    808,
+    566
+   ],
+   "cause": "Avec les années, l'enduit se fissure et se salit, surtout sous les appuis de fenêtre et là où la gouttière déborde. L'eau entre alors dans le mur.",
+   "enCause": "L'enduit de la façade",
+   "action": "Nettoyage, fissures traitées, puis ravalement ou peinture de façade.",
+   "liens": [
+    {
+     "page": "facades",
+     "ancre": "ravalement",
+     "texte": "Ravalement de façade"
+    },
+    {
+     "page": "facades",
+     "ancre": "finitions",
+     "texte": "Choisir sa finition"
+    }
+   ],
+   "prestation": "ravalement",
+   "signe": "Façade fissurée"
+  }
+ ]
+}

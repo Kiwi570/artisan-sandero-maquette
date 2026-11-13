@@ -2,6 +2,39 @@
 
 Chaque version ajoute sa partie en tête de ce fichier, construite en comparant l'archive précédente et la nouvelle, jamais de mémoire.
 
+## v10 — le diagnostic (accueil) et le toit pièce par pièce (Couverture)
+
+- **Accueil, nouvelle rubrique 01 « Ce que vous voyez d'en bas »**, juste après la plongée.
+  - Le dessin : la coupe d'un pavillon la nuit, dessinée en SVG. Le toit est coupé et montre les cinq couches de la plongée.
+  - Huit symptômes, à choisir sur le dessin ou dans la liste : tache au plafond, mousse, gouttière qui déborde, eau près de la cheminée, combles humides, froid l'hiver, toit qui se creuse, façade fissurée.
+  - Chaque symptôme a sa trace animée : la tuile glisse et les gouttes traversent les couches jusqu'à la tache, la mousse pousse, l'eau passe par-dessus la gouttière, la chaleur sort par l'isolant tassé, etc.
+  - La fiche dit d'où ça vient, ce qui est en cause et ce qu'on fait. Une couche (« 03 · L'écran sous-toiture ») ramène à sa couche dans la plongée ; une pièce (« Le solin ») mène à l'anatomie de la page Couverture.
+  - « Demander un diagnostic pour ça » ouvre le devis avec la prestation cochée et le symptôme déjà écrit dans le message.
+  - Les rubriques suivantes passent de 02 à 07. « Passer la plongée » mène au diagnostic.
+- **Couverture, nouvelle rubrique 02 « Le toit, pièce par pièce »**, entre les interventions et le nuancier.
+  - Le dessin : le pavillon vu de la rue, en croquis à l'encre sur une feuille de chaux.
+  - Dix pièces étiquetées, reliées au dessin par un trait : faîtage, noue, solin, abergement, arêtier, chatière, égout, cache-moineaux, gouttière, rive. La pièce choisie s'éclaire en terre cuite.
+  - La fiche donne le rôle de la pièce, quand s'en inquiéter, qui s'en occupe (lien vers la bonne rubrique) et un diagnostic gratuit prérempli.
+  - On arrive directement sur une pièce par l'adresse (par exemple `couverture#piece-solin`).
+- **Le changement de fiche** reprend le relais des légendes de la plongée : les lettres du titre se soulèvent et le texte suit.
+- **Téléphone** : on choisit dans une bande de boutons qui défile. Sur la coupe, seul le point choisi reste affiché ; le croquis se recadre sur la maison.
+- **Sans JavaScript**, toutes les fiches restent lisibles, l'une sous l'autre.
+- **Fluidité de tout l'accueil** : la toile de la plongée n'est plus redessinée à chaque défilement quand rien n'a changé ou qu'elle est hors de l'écran. Avec le processeur ralenti quatre fois, les images lentes tombent d'environ 10 % à environ 1 %, sur toute la page.
+- **Premier affichage et retour arrière** : une miniature floue de la photo du toit est posée dessous pendant le décodage. Plus d'image vide.
+- **Liens vers les interventions de Couverture** : ils mènent à la section entière, qui ne glisse pas sous l'en-tête à l'arrivée.
+- **Restent signalés par l'audit, comme prévu** : les contrôles du mode calme (retiré à la demande du client) et Safari, à vérifier sur le Mac.
+
+## v9 — légendes de la plongée plus aérées
+
+- **Accueil, plongée, sur ordinateur et tablette** :
+  - Les légendes quittent le coin de l'écran. Elles sont plus loin du bord gauche (7 % de la largeur, au lieu d'environ 30 px) et plus haut au-dessus du bas (12 % de la hauteur).
+  - La colonne est plus large : jusqu'à 860 px, et environ 50 caractères par ligne pour la phrase, au lieu de 34. Les phrases tiennent en deux lignes au lieu de trois. « Passez la souris sur la tuile » et l'heure du soleil tiennent sur une seule ligne.
+  - L'espace entre le surtitre, le nom, la phrase et le lien est plus grand.
+  - Le voile sombre s'élargit avec la colonne.
+  - Sur un écran bas (portable), le nom de la couche est un peu plus grand.
+- **La plaque « Diagnostic gratuit »** garde la largeur de ses deux boutons.
+- Téléphone : inchangé.
+
 ## v8 — relais des textes de la plongée
 
 - **Accueil, plongée : jamais d'écran sans texte.**

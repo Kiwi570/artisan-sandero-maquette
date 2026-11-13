@@ -271,6 +271,51 @@
     }
    ],
    "attentes": []
+  },
+  {
+   "version": 9,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil (plongée)"
+   ],
+   "etapes": [
+    {
+     "etape": "légendes de la plongée : marges et largeur",
+     "budget": 15,
+     "debut": "2026-11-12T20:18:00+01:00",
+     "fin": "2026-11-12T20:28:00+01:00"
+    }
+   ],
+   "attentes": []
+  },
+  {
+   "version": 10,
+   "skill": "v10.10",
+   "perimetre": [
+    "accueil (diagnostic)",
+    "couverture (anatomie)"
+   ],
+   "etapes": [
+    {
+     "etape": "analyse des deux sections de référence et proposition",
+     "budget": 10,
+     "debut": "2026-11-12T20:23:00+01:00",
+     "fin": "2026-11-12T20:30:00+01:00"
+    },
+    {
+     "etape": "contenus, dessins SVG, intégration, interactions",
+     "budget": 60,
+     "debut": "2026-11-12T20:30:00+01:00",
+     "fin": "2026-11-12T20:52:00+01:00"
+    },
+    {
+     "etape": "captures, audit et livraison",
+     "budget": 20,
+     "debut": "2026-11-12T20:52:00+01:00",
+     "fin": "2026-11-12T21:05:00+01:00"
+    }
+   ],
+   "attentes": []
   }
  ]
 }

@@ -1,7 +1,7 @@
 /* Effets propres à Artisan Sandero (« Sous les tuiles »). Le socle gère l'ouverture, le voile en rangs de tuiles,
    l'en-tête, le mode calme, les mesures et la bibliothèque d'effets. Ici seulement ce qui est propre au client ;
    chaque effet porte data-effet="nom-du-plan" dans les pages. */
-import { demarrer, etat, versObjet } from './socle/index.js?v=8';
+import { demarrer, etat, versObjet } from './socle/index.js?v=10';
 
 const gsap = window.gsap;
 const $ = (s, r = document) => r.querySelector(s);
@@ -143,7 +143,7 @@ function plongeeScene() {
   const charge = (url) => {
     const im = new Image(); im.decoding = 'async'; im.src = url;
     im.addEventListener('load', () => {
-      const fini = (b) => { if (b) im.bmp = b; try { ctx.drawImage(im.bmp || im, 0, 0, 2, 2); } catch {} demander(); };
+      const fini = (b) => { if (b) im.bmp = b; try { ctx.drawImage(im.bmp || im, 0, 0, 2, 2); } catch {} salir(); };
       if (window.createImageBitmap) createImageBitmap(im).then(fini, () => fini(null)); else fini(null);
     }, { once: true });
     return im;
@@ -157,6 +157,9 @@ function plongeeScene() {
   let base = null, region = null, etape = null, cam = { S: 1, tx: 0, ty: 0, a: 0 }, repos = [];
   const etat = { p: 0, cible: 0, intro: 1, k: 0, v: 0, survol: false, garde: false, invite: false, actif: -2, fil: -2 };
   let ombre = { x: -.3, y: .6, l: 1, nuit: false };
+  /* Dernière image dessinée : on ne redessine que si quelque chose a changé et que la scène est à l'écran. */
+  let sale = true;
+  const vu = { p: -1, k: -1, fin: null, i: 0 };
 
   const pret = (im) => !!im && (!!im.bmp || (im.complete && im.naturalWidth > 0));
   const poly = (pts) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath(); };
@@ -193,7 +196,7 @@ function plongeeScene() {
     repos = COUCHES.map((c) => c && couvrir(c.w, c.h, c.foyer, c.repos, 0, 0, W, H, mobile ? [W * .5, H * .42] : [W * .56, H * .48]));
     /* Redessiner tout de suite : une toile retaillée est vide. */
     if (pret(photo)) { dessiner(etat.p); zone.classList.add('toile-prete'); }
-    demander();
+    salir();
     return true;
   }
 
@@ -500,11 +503,16 @@ function plongeeScene() {
     if (etat.k < 0) { etat.k = 0; etat.v = -etat.v * .3; if (Math.abs(etat.v) < .2) etat.v = 0; }
     if (posee > .98 && !etat.invite) { etat.invite = true; etat.v = 3.2; }
     const bouge = Math.abs(cible - etat.k) > .002 || Math.abs(etat.v) > .003 || etat.p !== etat.cible;
-    if (W && pret(photo)) { dessiner(p, !bouge); if (!zone.classList.contains('toile-prete')) zone.classList.add('toile-prete'); }
+    const fin = !bouge, r = sec.getBoundingClientRect(), visible = r.bottom > 0 && r.top < innerHeight;
+    if (W && pret(photo) && visible && (sale || p !== vu.p || etat.k !== vu.k || fin !== vu.fin || etat.intro !== vu.i)) {
+      dessiner(p, fin); sale = false; vu.p = p; vu.k = etat.k; vu.fin = fin; vu.i = etat.intro;
+      if (!zone.classList.contains('toile-prete')) zone.classList.add('toile-prete');
+    }
     majTextes(p);
     if (bouge) demander(); else dernierT = 0;
   }
   function demander() { if (!raf) raf = requestAnimationFrame(rendre); }
+  function salir() { sale = true; demander(); }
 
   /* ----- Gestes sur la grande tuile ----- */
   const surTuile = (e) => {
@@ -532,7 +540,7 @@ function plongeeScene() {
       ombre = { x: 0, y: .4, l: .6, nuit: true };
       if (legende) legende.textContent = `Soleil couché sur Taverny, ${heure} : ombre douce.`.replace(' :', ' :');
     }
-    demander();
+    salir();
   }
   majSoleil();
   setInterval(majSoleil, 60000);
@@ -554,7 +562,7 @@ function plongeeScene() {
   const suite = () => {
     hd = charge('/assets/images/grok/zone-faitage-tuiles.webp');
     couches = COUCHES.map((c) => c && charge(`/assets/images/grok/${c.src}-1920.webp`));
-    [hd, ...couches].forEach((im) => im && im.addEventListener('load', demander));
+    [hd, ...couches].forEach((im) => im && im.addEventListener('load', salir));
     mesurer();
   };
   if (pret(photo)) suite(); else photo.addEventListener('load', suite, { once: true });
@@ -563,6 +571,7 @@ function plongeeScene() {
   plongee = {
     intro(tl, a = .2) { const o = { z: 1.07 }; etat.intro = 1.07; demander(); tl.to(o, { z: 1, duration: 1.6, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }, a); },
     final() { etat.intro = 1; demander(); },
+    aller(i) { window.scrollTo({ top: st.start + SCENE.arrets[i] * (st.end - st.start), behavior: 'smooth' }); },
     arriver() { const o = { z: 1.04 }; etat.intro = 1.04; gsap.to(o, { z: 1, duration: 1.3, ease: 'power3.out', onUpdate: () => { etat.intro = o.z; demander(); } }); },
   };
 }
@@ -644,7 +653,7 @@ function rangs() {
 
 async function modules() {
   const fpe = $('[data-module="formulaire-par-etapes"]');
-  if (fpe) { const m = await import('./projet/devis.js?v=8'); m.devis(fpe); }
+  if (fpe) { const m = await import('./projet/devis.js?v=10'); m.devis(fpe); }
 }
 
 /* ---------- Démarrage ---------- */
@@ -942,6 +951,72 @@ function demoussage() {
     },
   };
 }
+/* ---------- Planches (diagnostic de l'accueil, anatomie de Couverture) : un choix éclaire sa trace sur le dessin
+   et pose sa fiche ; la fiche change en relais, comme les légendes de la plongée (les lettres du titre se soulèvent). ---------- */
+function planches() {
+  $$('[data-planche]').forEach((sec) => {
+    const fiches = $$('[data-fiche]', sec), choix = $$('[data-choix]', sec), traces = $$('[data-trace]', sec), fils = $$('[data-fil]', sec), planche = $('.planche', sec);
+    if (!fiches.length || !planche) return;
+    planche.classList.add('planche-active');
+    const Decoupe = window.SplitText;
+    if (Decoupe) fiches.forEach((f) => { try { new Decoupe($('h3', f), { type: 'lines,words,chars', mask: 'lines', linesClass: 'pc-titre', wordsClass: 'pc-mot', charsClass: 'pc-lettre', autoSplit: true }); f.classList.add('decoupe'); } catch {} });
+    const corps = (f) => [...f.children].filter((e) => e.tagName !== 'H3');
+    const anims = new Map();
+    let courant = null;
+    function sortir(f, dir) {
+      if (anims.get(f)) anims.get(f).kill();
+      f.classList.remove('actif'); f.classList.add('sortie');
+      const fin = () => f.classList.remove('sortie');
+      if (!gsap) { fin(); return; }
+      const tl = gsap.timeline({ onComplete: fin });
+      tl.to($$('.pc-lettre', f), { yPercent: -155 * dir, rotate: -6 * dir, duration: .26, ease: 'power2.in', stagger: { each: .008, from: dir > 0 ? 'start' : 'end' } }, 0)
+        .to(corps(f), { y: -12 * dir, autoAlpha: 0, duration: .22, ease: 'power2.in', stagger: .02 }, 0);
+      anims.set(f, tl);
+    }
+    function entrer(f, dir, retard) {
+      if (anims.get(f)) anims.get(f).kill();
+      f.classList.remove('sortie'); f.classList.add('actif');
+      if (!gsap) return;
+      const tl = gsap.timeline({ delay: retard });
+      tl.fromTo($$('.pc-lettre', f), { yPercent: 155 * dir, rotate: 8 * dir }, { yPercent: 0, rotate: 0, duration: .7, ease: 'back.out(1.5)', stagger: { each: .022, from: dir > 0 ? 'start' : 'end' } }, 0)
+        .fromTo(corps(f), { y: 16 * dir, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: .5, ease: 'power3.out', stagger: .05, clearProps: 'transform,opacity,visibility' }, .12);
+      anims.set(f, tl);
+    }
+    function choisir(id, anime = true) {
+      if (id === courant) return;
+      const avant = fiches.find((f) => f.dataset.fiche === courant), apres = fiches.find((f) => f.dataset.fiche === id);
+      if (!apres) return;
+      const dir = !avant || fiches.indexOf(apres) > fiches.indexOf(avant) ? 1 : -1;
+      courant = id;
+      choix.forEach((b) => { const on = b.dataset.choix === id; if (b.hasAttribute('aria-pressed')) b.setAttribute('aria-pressed', String(on)); b.classList.toggle('actif', on); });
+      traces.forEach((t) => t.classList.toggle('actif', t.dataset.trace === id));
+      fils.forEach((t) => t.classList.toggle('actif', t.dataset.fil === id));
+      if (!anime || !avant) { fiches.forEach((f) => { f.classList.toggle('actif', f === apres); f.classList.remove('sortie'); }); return; }
+      sortir(avant, dir); entrer(apres, dir, .1);
+    }
+    choix.forEach((b) => {
+      b.addEventListener('click', () => {
+        choisir(b.dataset.choix);
+        /* Sur téléphone, le bouton choisi glisse dans la bande et la fiche reste en vue. */
+        if (b.closest('.planche-choix')) b.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'smooth' });
+      });
+      let attente;
+      b.addEventListener('pointerenter', (e) => { if (e.pointerType !== 'mouse' || b.closest('.planche-choix')) return; attente = setTimeout(() => choisir(b.dataset.choix), 90); });
+      b.addEventListener('pointerleave', () => clearTimeout(attente));
+    });
+    /* « En cause : 03 L'écran » : on remonte dans la plongée, à la bonne couche. */
+    $$('a[data-couche]', sec).forEach((a) => a.addEventListener('click', (e) => { if (!plongee) return; e.preventDefault(); plongee.aller(Number(a.dataset.couche)); }));
+    const depart = fiches.find((f) => location.hash === '#' + f.id);
+    choisir(depart ? depart.dataset.fiche : fiches[0].dataset.fiche, false);
+    if (depart) {
+      /* Arrivée par #piece-… : toute la planche à l'écran, sous l'en-tête. */
+      const caler = () => { const e = $('[data-entete]'); window.scrollTo({ top: planche.getBoundingClientRect().top + scrollY - ((e && e.offsetHeight) || 0) - 20, behavior: 'instant' }); };
+      requestAnimationFrame(caler); setTimeout(caler, 350);
+    }
+    /* Les traces s'animent quand la planche est à l'écran, et se mettent en pause quand elle le quitte. */
+    new IntersectionObserver((es) => es.forEach((e) => planche.classList.toggle('vu', e.isIntersecting)), { threshold: .12 }).observe(planche);
+  });
+}
 const premierTitre = () => $('[data-titre-pose="intro"]');
 demarrer({
   preparer() {
@@ -957,6 +1032,7 @@ demarrer({
     signes();
     profondeur();
     finitions();
+    planches();
     modules();
   },
   /* Intro (moins de 3 s) : le logo, un rang de tuiles qui se pose sous le nom, puis le logo glisse jusqu'à l'objet

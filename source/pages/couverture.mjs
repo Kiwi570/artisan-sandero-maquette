@@ -1,13 +1,17 @@
 /* Couverture : un très grand titre sur la chaux ; à droite, la pente neuve se découvre rang par rang, comme on dépose
    une vieille couverture. Les cinq interventions en rubriques. Signature : le nuancier des quatre matériaux, des
    échantillons qui s'empilent au défilement en se recouvrant comme des tuiles (empilement). */
-import { html } from '../../outils/gabarit.mjs';
+import { html, brut } from '../../outils/gabarit.mjs';
 import { liteau, tel, finPage, vignettes } from '../gabarits/morceaux.mjs';
+import { elevation, fils, ELEVATION } from '../gabarits/planches.mjs';
 
 export const page = { cle: 'couverture', fichier: 'couverture', imagePartage: 'grok/couverture-ouverture' };
 
 export default (c) => {
   const d = c.donnees.couverture;
+  const pieces = c.donnees.anatomie.pieces;
+  const pc = (v, l) => (v / l * 100).toFixed(2);
+  const zinc = ['noue', 'solin', 'gouttiere'];
   return html`
 <section class="page-une rubrique-une" id="debut">
   <div class="rubrique-une-grille">
@@ -52,6 +56,41 @@ export default (c) => {
         ${c.lien('devis', { ancre: 'demande', params: 'prestation=couverture', classe: 'prestation-lien', texte: html`${c.t('couverture.devisLien')} <span aria-hidden="true">→</span>` })}
       </li>`)}
     </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section anatomie" id="anatomie" aria-labelledby="anatomie-titre" data-planche>
+  <div class="conteneur">
+    ${liteau(c.s('couverture.rubriqueAnatomie'))}
+    <div class="section-tete">
+      <h2 id="anatomie-titre" data-titre-pose data-effet="titre-pose">${c.tb('couverture.anatomie.titre')}</h2>
+      <p>${c.t('couverture.anatomie.intro')}</p>
+    </div>
+    <div class="planche planche--croquis">
+      <div class="planche-dessin">
+        <div class="planche-feuille"><div class="planche-zone">
+          ${elevation()}
+          ${fils(pieces)}
+          ${pieces.map((p, i) => html`<button type="button" class="etiquette etiquette--${p.etiquette[2]}" data-choix="${p.id}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="piece-${p.id}" style="left:${pc(p.etiquette[0], ELEVATION.l)}%;top:${pc(p.etiquette[1], ELEVATION.h)}%">${p.court}</button>`)}
+        </div></div>
+      </div>
+      <div class="planche-cote">
+        <ul class="planche-choix planche-choix--tactile" aria-label="${c.s('couverture.anatomie.choix')}">
+          ${pieces.map((p, i) => html`<li><button type="button" data-choix="${p.id}" aria-pressed="${i === 0 ? 'true' : 'false'}" aria-controls="piece-${p.id}">${p.court}</button></li>`)}
+        </ul>
+        <div class="planche-fiches">
+          ${pieces.map((p, i) => html`<article class="fiche" data-fiche="${p.id}" id="piece-${p.id}" aria-labelledby="piece-${p.id}-titre">
+            <p class="fiche-n">${c.t('couverture.anatomie.n')} ${String(i + 1).padStart(2, '0')} / ${String(pieces.length).padStart(2, '0')}</p>
+            <h3 id="piece-${p.id}-titre">${brut(p.nom)}</h3>
+            <p class="fiche-texte fiche-role">${p.role}</p>
+            <p class="fiche-texte"><b>${c.t('couverture.anatomie.alerte')}</b> ${p.alerte}</p>
+            <p class="fiche-encause"><span class="fiche-etiquette">${c.t('couverture.anatomie.qui')}</span>
+              ${c.lien(p.lien.page, { ancre: p.lien.ancre, classe: 'fiche-pastille', texte: html`${p.lien.texte} <span aria-hidden="true">→</span>` })}</p>
+            ${c.lien('devis', { ancre: 'demande', params: `prestation=${zinc.includes(p.id) ? 'zinguerie' : 'couverture'}&signes=${encodeURIComponent(p.court + ' à vérifier')}`, classe: 'fiche-doute', texte: html`${c.t('couverture.anatomie.doute')} <span aria-hidden="true">→</span>` })}
+          </article>`)}
+        </div>
+      </div>
     </div>
   </div>
 </section>

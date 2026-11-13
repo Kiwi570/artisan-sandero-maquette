@@ -1,0 +1,214 @@
+{
+ "pieces": [
+  {
+   "id": "faitage",
+   "nom": "Le <em>faîtage</em>",
+   "court": "Faîtage",
+   "etiquette": [
+    660,
+    62,
+    "haut"
+   ],
+   "cible": [
+    672,
+    176
+   ],
+   "role": "La ligne du sommet, où les deux pans se rejoignent. Les tuiles faîtières la couvrent, posées sur un closoir qui laisse respirer le toit.",
+   "alerte": "Mortier qui s'effrite, faîtière déplacée après un coup de vent.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Faîtages refaits"
+   }
+  },
+  {
+   "id": "noue",
+   "nom": "La <em>noue</em>",
+   "court": "Noue",
+   "etiquette": [
+    800,
+    62,
+    "haut"
+   ],
+   "cible": [
+    782,
+    262
+   ],
+   "role": "L'angle rentrant où deux pans se rencontrent. Toute l'eau des deux pans y passe : on la garnit d'une bande de zinc.",
+   "alerte": "Feuilles accumulées, zinc percé ou décollé : c'est souvent là que naît une fuite.",
+   "lien": {
+    "page": "zinguerie-charpente",
+    "ancre": "zinguerie",
+    "texte": "Noues en zinc"
+   }
+  },
+  {
+   "id": "solin",
+   "nom": "Le <em>solin</em>",
+   "court": "Solin",
+   "etiquette": [
+    520,
+    62,
+    "haut"
+   ],
+   "cible": [
+    553,
+    226
+   ],
+   "role": "Le joint d'étanchéité entre le toit et ce qui le traverse, cheminée ou mur. En zinc ou en mortier.",
+   "alerte": "Solin fissuré ou décollé, traces d'eau le long du conduit dans les combles.",
+   "lien": {
+    "page": "zinguerie-charpente",
+    "ancre": "zinguerie",
+    "texte": "Solins en zinc"
+   }
+  },
+  {
+   "id": "abergement",
+   "nom": "L'<em>abergement</em>",
+   "court": "Abergement",
+   "etiquette": [
+    380,
+    62,
+    "haut"
+   ],
+   "cible": [
+    592,
+    258
+   ],
+   "role": "La pièce qui raccorde une fenêtre de toit aux tuiles et renvoie l'eau autour d'elle.",
+   "alerte": "Gouttes au-dessus de la fenêtre, auréole autour du cadre.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Fenêtres de toit"
+   }
+  },
+  {
+   "id": "aretier",
+   "nom": "L'<em>arêtier</em>",
+   "court": "Arêtier",
+   "etiquette": [
+    226,
+    196,
+    "gauche"
+   ],
+   "cible": [
+    332,
+    271
+   ],
+   "role": "L'arête qui descend en biais entre deux pans, quand le toit a une croupe. Des tuiles arêtières la couvrent, comme le faîtage.",
+   "alerte": "Arêtières décalées ou mortier fendu : le vent s'y engouffre.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Arêtiers remis en état"
+   }
+  },
+  {
+   "id": "chatiere",
+   "nom": "La <em>chatière</em>",
+   "court": "Chatière",
+   "etiquette": [
+    226,
+    258,
+    "gauche"
+   ],
+   "cible": [
+    404,
+    290
+   ],
+   "role": "Une tuile percée d'une grille. Elle fait circuler l'air sous les tuiles, pour que la charpente et l'isolant restent secs.",
+   "alerte": "Grille bouchée ou absente, combles qui sentent l'humidité.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Rénovation de couverture"
+   }
+  },
+  {
+   "id": "egout",
+   "nom": "L'<em>égout</em>",
+   "court": "Égout",
+   "etiquette": [
+    226,
+    320,
+    "gauche"
+   ],
+   "cible": [
+    338,
+    336
+   ],
+   "role": "Le bas du pan, d'où l'eau quitte la dernière rangée de tuiles pour tomber dans la gouttière.",
+   "alerte": "Tuiles d'égout cassées, planche d'égout pourrie : l'eau coule derrière la gouttière.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Rénovation de couverture"
+   }
+  },
+  {
+   "id": "moineaux",
+   "nom": "Le <em>cache-moineaux</em>",
+   "court": "Cache-moineaux",
+   "etiquette": [
+    226,
+    382,
+    "gauche"
+   ],
+   "cible": [
+    430,
+    350
+   ],
+   "role": "Le peigne posé à l'égout, entre le haut du mur et les tuiles. Il ferme le passage aux oiseaux et aux rongeurs sans couper l'air.",
+   "alerte": "Nids sous les tuiles, bruits dans les combles au printemps.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Rénovation de couverture"
+   }
+  },
+  {
+   "id": "gouttiere",
+   "nom": "La <em>gouttière</em>",
+   "court": "Gouttière",
+   "etiquette": [
+    226,
+    444,
+    "gauche"
+   ],
+   "cible": [
+    305,
+    440
+   ],
+   "role": "Elle recueille l'eau à l'égout et la mène à la descente. Chez Artisan Sandero, elle est en zinc, façonnée sur mesure.",
+   "alerte": "Elle déborde, goutte aux jonctions ou penche.",
+   "lien": {
+    "page": "zinguerie-charpente",
+    "ancre": "signes",
+    "texte": "Votre gouttière vous fait signe ?"
+   }
+  },
+  {
+   "id": "rive",
+   "nom": "La <em>rive</em>",
+   "court": "Rive",
+   "etiquette": [
+    1046,
+    270,
+    "droite"
+   ],
+   "cible": [
+    939,
+    270
+   ],
+   "role": "Le bord du toit côté pignon. Des tuiles de rive ou une bande de zinc le ferment, pour que le vent ne soulève pas les tuiles.",
+   "alerte": "Tuiles de rive descellées, planche de rive noircie.",
+   "lien": {
+    "page": "couverture",
+    "ancre": "interventions",
+    "texte": "Rives reprises"
+   }
+  }
+ ]
+}
